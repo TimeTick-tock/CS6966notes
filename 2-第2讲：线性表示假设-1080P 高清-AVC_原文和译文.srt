@@ -1,0 +1,1334 @@
+1
+00:00:18,040 --> 00:00:18,770
+Any questions about? 
+有什么问题吗？
+
+2
+00:00:23,070 --> 00:00:23,130
+Lectures? 
+讲座？
+
+3
+00:00:42,940 --> 00:00:47,120
+Right‚ and I have shown an experiment． 
+对，我展示了一个实验˳
+
+4
+00:00:47,120 --> 00:00:59,380
+And the key idea behind the experiment was to show that a best load and then hidden representation can be compressing a larger Fox representation． 
+实验背后的关键思想是展示最佳负载和隐藏表示可以压缩更大的狐狸表示˳
+
+5
+00:01:00,260 --> 00:01:16,826
+And that gave us an idea that‚ okay‚ our input to our view of memory of me‚ usually sparse‚ but maybe in two differently‚ these hidden representations will get from three neural networks are compressing a lot of response． 
+这给了我们一个想法，即我们对我的记忆视图的输入通常是稀疏的，但可能以不同的方式，这些隐藏的表示将从三个神经网络压缩很多响应中获得˳
+
+6
+00:01:16,826 --> 00:01:18,840
+So that was our superposition． 
+这就是我们的叠加˳
+
+7
+00:01:21,260 --> 00:01:24,829
+We are going to start with another hypothesis． 
+我们将从另一个假设开始˳
+
+8
+00:01:24,829 --> 00:01:32,900
+And these two hypotheses together will lead us to our first method for interpretable． 
+这两个假设一起将引导我们得出第一种可解释的方法˳
+
+9
+00:01:34,810 --> 00:01:38,200
+That's going to be called parts out． 
+这将被称为零件˳
+
+10
+00:01:38,530 --> 00:01:46,360
+So let's start with‚ I mean‚ what these Leonard representation hypothesis in research? 
+让我们从研究中的这些莱纳德表征假设开始吧？
+
+11
+00:01:50,240 --> 00:02:01,452
+Our human representations can be represented or decomposed as a as linear combination of feature directions． 
+我们的人类表征可以被表示或分解为特征方向的线性组合˳
+
+12
+00:02:01,452 --> 00:02:08,640
+Some vector is in our same vector space and that these feature direction list live． 
+有些向量在我们相同的向量空间中，并且这些特征方向列表是活动的˳
+
+13
+00:02:10,170 --> 00:02:19,820
+The most popular example of that that you probably know is where to work embeddings and arithmetic with the word embeddings． 
+你可能知道的最流行的例子是在哪里使用词嵌入和算术˳
+
+14
+00:02:21,060 --> 00:02:25,090
+So let's write down first the top． 
+所以让我们先写下顶部˳
+
+15
+00:03:04,820 --> 00:03:08,972
+That‚ first of all‚ already in 2014． 
+首先，已经在2014年了˳
+
+16
+00:03:08,972 --> 00:03:15,460
+So over 10 years ago‚ we were representing individual ctor there with high dimensional vector space． 
+十多年前，我们用高维向量空间表示单个的ctor˳
+
+17
+00:03:15,980 --> 00:03:20,564
+They smaller dimensional relative to token values of the day． 
+相对于当天的代币值，它们的尺寸更小˳
+
+18
+00:03:20,564 --> 00:03:23,620
+So level of size is 50 or 300． 
+所以尺寸级别是50或300˳
+
+19
+00:03:23,620 --> 00:03:28,920
+Today's token embeddings are going to be of sizes 4000‚ let's say． 
+今天的令牌嵌入将是4000的大小，让我们说˳
+
+20
+00:03:30,140 --> 00:03:35,580
+And when we use those ver embeddings‚ we could solve analogy problems of a kind． 
+当我们使用这些嵌入时，我们可以解决类似的问题˳
+
+21
+00:03:43,030 --> 00:03:44,520
+A is to B? 
+A是面向企业吗？
+
+22
+00:03:54,130 --> 00:03:56,170
+Do you know which example I'm going to give you here? 
+你知道我在这里要举什么例子吗？
+
+23
+00:04:00,520 --> 00:04:02,653
+In this case‚ would it be B star? 
+在这种情况下，它会是B星吗？
+
+24
+00:04:02,653 --> 00:04:15,840
+Yeah‚ I mean‚ in the most abstract form‚ but I'm asking‚ I just want to see whether you have this analogy problem before‚ And if so‚ what is the most prototypical example we have seen? 
+是的，我的意思是，以最抽象的形式，但我想问的是，我只是想看看你之前是否有这个类比问题，如果有的话，我们见过的最典型的例子是什么？
+
+25
+00:04:16,330 --> 00:04:16,840
+Man is the king． 
+人是王˳
+
+26
+00:04:17,190 --> 00:04:19,410
+What woman is the queen exactly? 
+女王到底是哪个女人？
+
+27
+00:04:22,790 --> 00:04:26,330
+The king is to man as． 
+国王对男人来说就像男人一样˳
+
+28
+00:04:36,020 --> 00:04:46,520
+And the answer here should be these analogy tests were done with people to test out analogical reasoning in psychology． 
+这里的答案应该是这些类比测试是与人一起完成的，以测试心理学中的类比推理˳
+
+29
+00:04:46,520 --> 00:04:53,746
+And then they were extended with to models to see whether they can understand analogical． 
+然后他们被扩展到模型，以查看它们是否能够理解类比˳
+
+30
+00:04:53,746 --> 00:05:04,170
+And the way you can use word embeddings to solve this analogy is to kind of work with the vector space that we have． 
+使用词嵌入来解决这个类比的方法是使用我们拥有的向量空间˳
+
+31
+00:05:06,980 --> 00:05:12,270
+Score‚ so we have a vector of man． 
+得分，因此我们有一个人类的向量˳
+
+32
+00:05:20,750 --> 00:05:20,770
+King? 
+国王？
+
+33
+00:05:24,200 --> 00:05:26,430
+And the‚ and we have vector of． 
+还有，我们有向量˳
+
+34
+00:05:30,840 --> 00:05:35,580
+The idea is that whatever is the offset between wearing and pink． 
+这个想法是，无论是穿着和粉色之间的抵消˳
+
+35
+00:05:39,700 --> 00:05:39,720
+We． 
+我们˳
+
+36
+00:05:42,700 --> 00:05:42,730
+Think． 
+思考˳
+
+37
+00:05:47,280 --> 00:05:48,192
+Of men． 
+关于男人˳
+
+38
+00:05:48,192 --> 00:05:57,380
+So this dash line that's‚ that's the dash vector‚ represents the difference between the vector an​‌​‌​​‌‌​​‌‌​​‌‌‌​‌‌​​‌‌​‌​‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​​‌‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌​​‌‌‌​‌‌​​‌​​‌‌‌‌​‌​​‌‌‌​​‌​​‌‌​‌​‌​​‌‌‌​‌‌‌‌​‌​​‌‌‌‌​‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌‌​​‌​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌‌‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌​​​‌​​‌‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​‌​‌‌‌​‌​‌​‌​​‌‌​​​‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌‌​‌‌​​‌‌​‌​‌‌‌​‌​​​‌​​‌‌​‌‌‌‌‌​‌‌​‌‌​​‌‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌‌​​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌​​​‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌‌‌​​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌​​‌‌‌​‌‌‌‌​​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌d the king and the vector． 
+所以这个虚线，即虚线向量，代表向量与国王和向量之间的差˳
+
+39
+00:05:58,180 --> 00:06:09,008
+And the idea is that this offset‚ when you add it to a woman‚ to the vector of a woman‚ is what should give you the vector of a queen． 
+这个想法是，当你将这个偏移量添加到一个女人的向量中时，应该给你一个女王的向量˳
+
+40
+00:06:09,008 --> 00:06:16,787
+So if I slide this vector here‚ so this is the same vector． 
+所以如果我将这个向量滑动到这里，那么这是相同的向量˳
+
+41
+00:06:16,787 --> 00:06:20,804
+The difference between the vector is of king and woman． 
+矢量之间的区别是国王和女人˳
+
+42
+00:06:20,804 --> 00:06:21,664
+In this way． 
+以这种方式˳
+
+43
+00:06:21,664 --> 00:06:23,960
+I'm going to come to a new point． 
+我将来到一个新的点˳
+
+44
+00:06:24,850 --> 00:06:28,920
+And if I look at the nearest neighbors． 
+如果我看最近的邻居˳
+
+45
+00:06:31,930 --> 00:06:38,912
+Of that point and find what is the nearest vector I actually have in my database? 
+然后找出我数据库中实际拥有的最近的向量是什么？
+
+46
+00:06:38,912 --> 00:06:42,420
+I will come to the vector of a query． 
+我将会来到一个查询的向量˳
+
+47
+00:06:43,760 --> 00:06:45,533
+Is this arithmetic clear? 
+这个算术清楚吗？
+
+48
+00:06:45,533 --> 00:06:51,700
+Why we would calculate the difference to the vector of woman idea? 
+为什么我们要计算女性观念向量的差异？
+
+49
+00:06:51,700 --> 00:06:59,980
+Is that differentiate feature that we need is what makes a difference between king and a man? 
+我们需要的差异化特征是国王和男人之间的区别吗？
+
+50
+00:07:00,300 --> 00:07:13,700
+And when we added that to a woman that we should get to the queen‚ you can kind of assume that this difference in resembles a direction that aligns with the feature of royalty． 
+当我们向女性添加这一点时，我们应该到达女王，你可以假设这种差异类似于与皇室特征一致的方向˳
+
+51
+00:07:13,820 --> 00:07:21,120
+So if you have a woman and then the future of royalty‚ your man might get to a queen‚ you might get to a princess or whatever． 
+所以，如果你有一个女人，那么皇室的未来，你的男人可能会得到一个女王，你可能会得到一个公主或其他东西˳
+
+52
+00:07:23,420 --> 00:07:41,195
+But if we have calculated bunch of such‚ such a difference vector‚ all of them will likely align with this feature that's associated with what we as people refer to as a broad． 
+但如果我们计算了一堆这样的差向量，所有这些向量都可能与我们所称的广义特征相一致˳
+
+53
+00:07:41,195 --> 00:07:41,480
+Okay? 
+好吗？
+
+54
+00:07:42,290 --> 00:07:54,400
+So this is one experiment where this hypothesis will stem for from just observing that we have these here bird embeddings that are produced by a neural network． 
+所以这是一个实验，这个假设将从观察到我们这里有这些由神经网络产生的鸟嵌入中词干˳
+
+55
+00:07:54,400 --> 00:08:09,900
+We don't understand what individual images of these word embeddings are‚ but we have observed empirically that they are appearing in the So there are some kind of feature directions‚ also the different． 
+我们不理解这些单词嵌入的个别图像是什么，但我们从经验上观察到它们出现在某些特征方向上，而且不同˳
+
+56
+00:08:12,240 --> 00:08:19,280
+The map also aligns with some kind of feature direction‚ like a feature royalty‚ right? 
+地图也与某种特征方向对齐，比如特征版税，对吗？
+
+57
+00:08:19,280 --> 00:08:27,930
+And if we are doing some kind of linear combinations of these vector‚ and we can represent‚ as we did queen here． 
+如果我们对这些向量进行某种线性组合，并且我们可以表示，就像我们在这里做的女王一样˳
+
+58
+00:08:27,930 --> 00:08:35,262
+So queen is a vector of women plus difference between VA of p and a map． 
+所以女王是女性的矢量加上p的VA和地图之间的差异˳
+
+59
+00:08:35,262 --> 00:08:54,388
+So this is just one experiment where this idea that features can be represented as featured directions in vector space and other concepts‚ high level concepts being represented as linear combination of there are other such experiments that involve using interpreter ability techniques． 
+所以这只是一个实验，其中特征可以表示为向量空间和其他概念中的特征方向，高级概念被表示为线性组合，还有其他涉及使用解释能力技术的实验˳
+
+60
+00:08:54,388 --> 00:08:56,994
+I haven't yet talked‚ so I won't go over them． 
+我还没有谈过，所以我不会超过他们˳
+
+61
+00:08:56,994 --> 00:09:05,238
+Those two other experiments are referring to methodologies called probing and steering that we are going to talk about in this course‚ but not yet． 
+这另外两个实验涉及的方法称为探测和转向，我们将在本课程中讨论，但还没有˳
+
+62
+00:09:05,238 --> 00:09:07,300
+So I won't go over that experiment． 
+所以我不会去做那个实验˳
+
+63
+00:09:09,210 --> 00:09:15,712
+But in those papers too‚ they have embraced and kind of realized this idea that features are vector of directions． 
+但在那些论文中，他们也接受并意识到特征是方向向量的想法˳
+
+64
+00:09:15,712 --> 00:09:26,380
+And the combination of those linear combinations of those can give you a whole other representation that's aligned with another concept． 
+这些线性组合的组合可以给你一个与另一个概念对齐的完全不同的表示˳
+
+65
+00:09:26,380 --> 00:09:43,880
+So since people have research been observing in making these‚ you know‚ views of what the features are‚ all of that had led to a hypothesis that here called a linear representation for hypothesis‚ which is very often． 
+因此，由于人们一直在研究观察这些特征是什么，所有这些都导致了一个假设，在这里称为假设的线性表示，这是非常常见的˳
+
+66
+00:09:47,030 --> 00:09:47,040
+RH? 
+RH?
+
+67
+00:09:52,820 --> 00:10:05,060
+This hypothesis and what you need to know about it is basically‚ this is a hypothesis that a bunch of these mechanistic interpretability work that we are going to talk about assume． 
+这个假设和你需要了解的基本上是，这是一个假设，我们将要谈论的一堆机械可解释性工作假设˳
+
+68
+00:10:05,950 --> 00:10:09,720
+So it's going to be the basis for a lot of things that we do． 
+所以这将成为我们做很多事情的基础˳
+
+69
+00:10:12,890 --> 00:10:15,200
+Before I move forward‚ are there any questions? 
+在我继续前进之前，有什么问题吗？
+
+70
+00:10:24,140 --> 00:10:25,740
+So let's write it down． 
+所以让我们把它写下来˳
+
+71
+00:10:25,740 --> 00:10:37,135
+It basically says that these hidden representations of our Ne can be represented as linear combinations‚ inations of feature directions． 
+它基本上说，我们的Ne的这些隐藏表示可以表示为线性组合，即特征方向的表示˳
+
+72
+00:10:37,135 --> 00:10:37,860
+Super simple． 
+超级简单˳
+
+73
+00:10:37,860 --> 00:10:43,506
+I'm going to write it mathematically because it's going to help us make with more see later． 
+我将用数学方法来写它，因为它将帮助我们在以后看到更多的东西˳
+
+74
+00:10:43,506 --> 00:10:47,540
+And it's good for you to start to be kind of comfortable with these mathematical． 
+这对你开始对这些数学感到舒适是有好处的˳
+
+75
+00:10:50,680 --> 00:10:57,720
+So we‚ this hypothesis‚ assume that our there are some feature alarm． 
+所以我们，这个假设，假设我们有一些特征警报˳
+
+76
+00:11:01,660 --> 00:11:05,600
+In our hidden dimensional space‚ RM? 
+在我们隐藏的维度空间中，RM？
+
+77
+00:11:17,240 --> 00:11:23,760
+So for example‚ in the case of Word to We‚ you could take a difference between． 
+因此，例如，在单词到我们的情况下，您可以区分˳
+
+78
+00:11:26,140 --> 00:11:28,470
+Let's say a woman and a man． 
+假设一个女人和一个男人˳
+
+79
+00:11:33,710 --> 00:11:34,730
+Or king Emma? 
+还是艾玛国王？
+
+80
+00:11:39,850 --> 00:11:40,000
+Queen? 
+女王？
+
+81
+00:11:42,360 --> 00:11:55,618
+And if you a bunch of such pairs and you draw them‚ you would start to get vector is that are all aligned in the same direction? 
+如果你把这样的一对画出来，你会开始得到向量，它们都在同一方向上对齐？
+
+82
+00:11:55,618 --> 00:12:01,487
+They might be offset‚ but they are all pointing into the same direction‚ right? 
+它们可能被抵消了，但它们都指向同一个方向，对吗？
+
+83
+00:12:01,487 --> 00:12:09,160
+And this shared direction‚ this one dimensional subspace‚ is direction representing that feature． 
+这个共享方向，这个一维子空间，是代表该特征的方向˳
+
+84
+00:12:09,160 --> 00:12:16,354
+And this feature that we are kind of encoding here‚ I mean‚ it's really silly to think about that． 
+我们在这里进行编码的这个功能，我的意思是，想到这个真的很傻˳
+
+85
+00:12:16,354 --> 00:12:23,416
+We can quote this difference or this feature of a gender or with the one dimensional vector． 
+我们可以引用性别的这种差异或特征，或者用一维向量引用˳
+
+86
+00:12:23,416 --> 00:12:26,940
+But that's kind of how you see it in the literature． 
+但这就是你在文献中的看待方式˳
+
+87
+00:12:27,580 --> 00:12:33,620
+So we have these feature align vector directions‚ I should say． 
+所以我们有这些特征对齐矢量方向，我应该说˳
+
+88
+00:12:34,920 --> 00:12:39,480
+As you can see here‚ we have multiple vector is‚ but they don't have the same direction． 
+正如你在这里看到的，我们有多个向量，但它们的方向不同˳
+
+89
+00:12:40,180 --> 00:12:42,460
+And we won't have just one of these． 
+我们不会只有其中一个˳
+
+90
+00:12:42,460 --> 00:12:44,740
+We are going to have a set of these． 
+我们将拥有一组这些˳
+
+91
+00:12:48,760 --> 00:12:53,320
+Like the last time‚ where the columns of the matters that move． 
+就像上次一样，移动事物的列˳
+
+92
+00:12:56,540 --> 00:13:07,973
+And we have some hidden representation‚ z x that represents some input‚ I should say‚ represent some input． 
+我们有一些隐藏的表示，z x代表一些输入，我应该说代表一些输入˳
+
+93
+00:13:07,973 --> 00:13:16,860
+And we have input representation of that‚ let's say‚ piece of text that lives in‚ let's say‚ RN． 
+我们有那个文本的输入表示，比如说生活在RN中的一段文本˳
+
+94
+00:13:17,380 --> 00:13:21,300
+So right here‚ input． 
+就在这里，输入˳
+
+95
+00:13:45,000 --> 00:13:46,730
+So it's a function of it． 
+所以这是它的一个功能˳
+
+96
+00:13:49,200 --> 00:13:52,494
+Okay‚ so this would be‚ for example‚ word depending． 
+好的，那么这将是，例如，单词依赖˳
+
+97
+00:13:52,494 --> 00:13:55,240
+And then we map it into a new vector． 
+然后我们将其映射到一个新的向量中˳
+
+98
+00:13:58,890 --> 00:14:11,180
+Representation hypo is that this hidden representation d x can be written linear combination of these feature vector is so． 
+表示hypo是指这个隐藏的表示d x可以写成这些特征向量的线性组合˳
+
+99
+00:14:14,180 --> 00:14:18,520
+So I take these feature aligned vector of directions． 
+所以我采用这些特征对齐的方向向量˳
+
+100
+00:14:18,520 --> 00:14:29,772
+I have some kind of coefficient that tells me how active that feature is in a given the representation． 
+我有某种系数可以告诉我在给定的表示中该特征的活跃程度˳
+
+101
+00:14:29,772 --> 00:14:33,000
+So you can call this activation‚ but． 
+所以你可以称之为激活，但是˳
+
+102
+00:14:46,750 --> 00:14:49,360
+Maybe right now? 
+也许现在？
+
+103
+00:14:54,220 --> 00:15:00,300
+It isn't‚ maybe I didn't mention that why this kind of is． 
+不是这样的，也许我没有提到为什么会这样˳
+
+104
+00:15:00,300 --> 00:15:05,100
+Well‚ of course‚ we have nonlinearities in our neural network． 
+当然，神经网络中存在非线性˳
+
+105
+00:15:05,100 --> 00:15:14,748
+So inpl an alternate linear transformation‚ the linear transformation and nonlinearity we do about a bunch of those‚ right? 
+所以在交替的线性变换中，线性变换和非线性我们做了很多，对吧？
+
+106
+00:15:14,748 --> 00:15:36,240
+And here we are saying‚ well‚ there some of them may not use wood in our Lar‚ so be it‚ but we will assume those these vector is might be some nonlinear functions of input‚ but how we combine them into a hidden representation is a line aromatics． 
+在这里，我们想说的是，它们中的一些可能在我们的Lar中不使用木材，就这样吧，但我们假设这些向量可能是一些输入的非线性函数，但是我们如何将它们组合成隐藏的表示是一个线芳烃˳
+
+107
+00:15:36,460 --> 00:15:46,790
+So map from features to hidden representation is linear‚ but the hidden is these features themselves might be obtained with nons． 
+因此，从特征到隐藏表示的映射是线性的，但隐藏的是这些特征本身可能是通过非函数获得的˳
+
+108
+00:15:49,440 --> 00:15:54,000
+Okay‚ now does anyone dare to write this in a matrix spectrum form? 
+好的，现在有人敢以矩阵谱的形式写这个吗？
+
+109
+00:15:59,250 --> 00:15:59,700
+For no． 
+因为没有˳
+
+110
+00:16:06,440 --> 00:16:07,500
+I'll keep trying． 
+我会继续尝试˳
+
+111
+00:16:07,500 --> 00:16:09,620
+Maybe one that you surprising． 
+也许是一个让你惊讶的事情˳
+
+112
+00:16:12,220 --> 00:16:16,320
+You can write Specter for‚ yeah‚ so can you write it here? 
+你可以写幽灵，是的，所以你可以在这里写吗？
+
+113
+00:16:16,320 --> 00:16:17,140
+I want to． 
+我想要˳
+
+114
+00:16:19,540 --> 00:16:24,540
+And we need to define some metrics and selector that whose? 
+我们需要定义一些度量标准和选择器，它们是谁的？
+
+115
+00:16:40,560 --> 00:16:50,880
+So we have the matrix of the shape and bar‚ and we have the vector of activation coefficients for each． 
+所以我们有形状和杆的矩阵，以及每个激活系数的向量˳
+
+116
+00:17:06,440 --> 00:17:11,560
+The product‚ we make that product． 
+产品，我们制造那个产品˳
+
+117
+00:17:13,620 --> 00:17:16,812
+Each with this vector‚ right? 
+每个都有这个向量，对吧？
+
+118
+00:17:16,812 --> 00:17:24,380
+To get the so here‚ z 1 is obtained by taking the dot rather for the first． 
+这里的z1是通过取点而不是第一个来获得的˳
+
+119
+00:17:26,220 --> 00:17:30,083
+And now this is the right interpretation of what's going on here． 
+现在这是对这里发生的事情的正确解释˳
+
+120
+00:17:30,083 --> 00:17:32,740
+So we have all of these future directions． 
+所以我们有了所有这些未来的方向˳
+
+121
+00:17:33,280 --> 00:17:38,855
+And for a moment dimension‚ we are working in a three dimensional space‚ right? 
+对于矩维度，我们是在三维空间中工作，对吗？
+
+122
+00:17:38,855 --> 00:17:43,830
+So this mentioned is what is going to be aligned with the． 
+所以这所提到的就是将要与之对齐的东西˳
+
+123
+00:17:46,720 --> 00:17:48,960
+With the dimension x‚ right? 
+在x的维度下，对吧？
+
+124
+00:17:48,960 --> 00:17:56,745
+So each one of these feature vector is has a corresponding value for first dimension‚ right? 
+所以这些特征向量中的每一个在第一维都有相应的值，对吗？
+
+125
+00:17:56,745 --> 00:18:02,616
+And these feature coefficients tell us how much each feature is important． 
+这些特征系数告诉我们每个特征的重要性˳
+
+126
+00:18:02,616 --> 00:18:14,901
+So when we are producing first for the height dimension of how the resulting vector‚ we are looking into I dimension of every single feature direction． 
+因此，当我们首先为结果向量的高度维度生成时，我们正在研究每个特征方向的I维度˳
+
+127
+00:18:14,901 --> 00:18:19,478
+And we are also considering how important that feature was． 
+我们也在考虑这个功能的重要性˳
+
+128
+00:18:19,478 --> 00:18:25,420
+So for example‚ for a moment in this three dimensional space‚ we would have three． 
+例如，在这个三维空间中的一个时刻，我们将有三个˳
+
+129
+00:18:27,220 --> 00:18:28,750
+And let's say only one is important． 
+让我们假设只有一个是重要的˳
+
+130
+00:18:29,450 --> 00:18:44,136
+So all of the values here are 0 for the one feature‚ then we would for producing the e dimension of the result of what is the other dimension of what is the value of that important feature? 
+所以这里所有的值对于一个特征都是0，那么我们会产生另一个维度的结果的e维度，这个重要特征的值是什么？
+
+131
+00:18:44,136 --> 00:18:48,996
+And we would record it here if there were only two features important． 
+如果只有两个重要的特征，我们会在这里记录下来˳
+
+132
+00:18:48,996 --> 00:19:00,471
+When we are producing the item we were looking to‚ what are the‚ what is the eye dimension of those two important feature direction? 
+当我们生产我们所寻找的物品时，这两个重要特征方向的眼睛尺寸是什么？
+
+133
+00:19:00,471 --> 00:19:07,800
+Combine it‚ and that's going to be the I dimension of we are producing? 
+将它们结合起来，这将是我们正在生产的I维度？
+
+134
+00:19:07,800 --> 00:19:11,580
+I think this is actually a great example of that‚ right? 
+我认为这实际上是一个很好的例子，对吗？
+
+135
+00:19:13,620 --> 00:19:19,458
+We vector of b‚ and let's again imagine just three coordinates‚ XYZ． 
+我们向量为b，让我们再想象三个坐标XYZ˳
+
+136
+00:19:19,458 --> 00:19:24,280
+We had to look into the x coordinate for． 
+我们必须查看x坐标˳
+
+137
+00:19:26,380 --> 00:19:30,186
+Woman‚ the coordinate for and for this difference between king and man． 
+女人，国王和男人之间差异的坐标˳
+
+138
+00:19:30,186 --> 00:19:33,920
+And we combine it‚ we add them together to the coordinate． 
+然后我们将它们组合在一起，将它们添加到坐标中˳
+
+139
+00:19:35,690 --> 00:19:38,460
+So is that clear? 
+那么清楚了吗？
+
+140
+00:19:51,420 --> 00:19:58,906
+To get high dimension‚ as we said‚ we are going to go over r from one to the end． 
+为了获得高维，正如我们所说，我们将从一个到最后超过r˳
+
+141
+00:19:58,906 --> 00:20:04,560
+And then we are going to keep I fixed here． 
+然后我们将保持我在这里的固定˳
+
+142
+00:20:26,140 --> 00:20:30,670
+Wouldn't the z's go from one to n‚ since we're doing n by n times n by one? 
+由于我们正在进行n乘1的操作，z不会从一到n吗？
+
+143
+00:20:30,670 --> 00:20:32,180
+So it's going to be an m? 
+所以它会是一个m？
+
+144
+00:20:49,280 --> 00:20:49,300
+So? 
+所以呢？
+
+145
+00:20:55,960 --> 00:20:59,160
+Is that the one over the C? 
+是在C上方的那个吗？
+
+146
+00:20:59,160 --> 00:21:02,210
+Or are you asking what this symbol means? 
+或者你是在问这个符号意味着什么？
+
+147
+00:21:04,920 --> 00:21:09,422
+Oh yeah‚ so this is just a notation that says vector． 
+哦，是的，这只是一个表示向量的符号˳
+
+148
+00:21:09,422 --> 00:21:11,500
+So vector of key‚ right? 
+关键向量，对吗？
+
+149
+00:21:12,220 --> 00:21:16,581
+Just saying that here‚ when I am making a difference between a vector of the key． 
+只是在这里说，当我在键的向量之间进行差异时˳
+
+150
+00:21:16,581 --> 00:21:22,350
+And so they're all like． 
+所以他们都像˳
+
+151
+00:21:24,950 --> 00:21:27,000
+Notation for? 
+符号为？
+
+152
+00:21:50,490 --> 00:21:54,410
+Yeah‚ so this is just what is written here． 
+是的，这就是这里写的˳
+
+153
+00:21:54,750 --> 00:21:55,270
+Forget about． 
+忘记这件事˳
+
+154
+00:21:58,540 --> 00:22:04,560
+Write up here is just a mathematical way of writing what we are stating with a linear． 
+写在这里只是一种用线性书写我们陈述的数学方式˳
+
+155
+00:22:06,620 --> 00:22:39,813
+And the linear hypersonic hypothesis is just a position that features are future directions in a vector space where your hidden representation is‚ and that by doing some kind of linear combinations of those feature directions‚ you can produce a whole new hidden representation that can represent a single contextualized token or large piece of text or some‚ hopefully‚ that concept that's a little bit higher． 
+线性高超声速假设只是一个位置，即特征是向量空间中隐藏的表示形式的未来方向，并且通过对这些特征方向进行某种线性组合，你可以生成一个全新的隐藏表示，它可以表示单个语境化的标记或大块文本或一些更高的概念˳
+
+156
+00:22:39,813 --> 00:22:41,140
+So it's just right up． 
+所以它就刚好上升˳
+
+157
+00:22:41,620 --> 00:22:53,440
+And the reason why people make a research and mix these assumptions come from experiments like these‚ where it just fixed the observations we see from those． 
+人们进行研究并混合这些假设的原因来自这样的实验，它只是修复了我们从这些实验中看到的观察结果˳
+
+158
+00:22:57,400 --> 00:23:05,020
+So in this new formulation‚ like are we are assuming that for the same feature vector‚ the activation could． 
+因此，在这个新配方中，我们是否假设对于相同的特征向量，激活可以˳
+
+159
+00:23:07,900 --> 00:23:21,220
+So in this new formulation‚ it looks like since we are sum over different dimensions‚ so these vector is are m dimensions of yes． 
+因此，在这个新的公式中，看起来因为我们是在不同维度上求和，所以这些向量是m个维度的yes˳
+
+160
+00:23:23,580 --> 00:23:29,478
+So you are looking at just one coordinate of the LHS and the activation． 
+所以你只看到LHS和激活的一个坐标˳
+
+161
+00:23:29,478 --> 00:23:36,760
+I am asking‚ can the activation values be different for different coordinates for the same feature vector? 
+我在问，同一特征向量的不同坐标的激活值是否可以不同？
+
+162
+00:23:36,760 --> 00:23:44,530
+That seems a bit counterintu‚ so you are asking for these． 
+这似乎有点反直觉，所以你要求这些˳
+
+163
+00:23:44,880 --> 00:23:53,210
+Yes‚ these‚ these should be‚ there are and there should be one per feature． 
+是的，这些，这些应该是，每个特性应该有一个˳
+
+164
+00:23:53,210 --> 00:23:56,720
+Let me see‚ by the way I've written it here． 
+顺便让我看看，我在这里写的˳
+
+165
+00:23:57,720 --> 00:24:00,493
+Okay‚ I think I think is OK． 
+好的，我想我认为是好的˳
+
+166
+00:24:00,493 --> 00:24:06,040
+You hear every f here corresponds to a single feature． 
+你在这里听到的每个f都对应于一个特征˳
+
+167
+00:24:06,580 --> 00:24:11,140
+That feature is accurate‚ so maybe it's just a little bit complicated． 
+这个功能是准确的，所以可能只是有点复杂˳
+
+168
+00:24:12,280 --> 00:24:30,738
+We are getting the I dimension here of Z and we are going over all and how active they are and depending on their activation‚ we are going to take the height dimension of the corresponding feature direction and combine． 
+我们在这里得到了Z的I维度，我们将全面了解它们的活跃程度，并根据它们的激活情况，我们将采用相应特征方向的高度维度并进行组合˳
+
+169
+00:24:30,738 --> 00:24:31,900
+Does this make sense? 
+这有感知吗？
+
+170
+00:24:32,380 --> 00:24:32,420
+Shared? 
+共享？
+
+171
+00:24:32,540 --> 00:24:33,180
+So basically． 
+基本上如此˳
+
+172
+00:24:36,860 --> 00:24:36,910
+Value? 
+价值？
+
+173
+00:24:41,300 --> 00:24:44,420
+For every dimension here we are going to． 
+对于我们要处理的每个维度˳
+
+174
+00:24:48,480 --> 00:24:49,020
+I don't think the connection． 
+我不认为有联系˳
+
+175
+00:24:51,420 --> 00:24:52,858
+For me‚ this is okay． 
+对我来说，这没关系˳
+
+176
+00:24:52,858 --> 00:25:07,160
+If I am going to produce the height dimension of the way I'm producing you here is by looking how important every feature is and taking the corresponding eye data． 
+如果我要生成我在这里生成你的方式的高度维度，那就是通过查看每个特征的重要性并获取相应的眼睛数据˳
+
+177
+00:25:09,040 --> 00:25:13,600
+We are still having different values f for different features‚ right? 
+对于不同的特征，我们仍然有不同的值f，对吗？
+
+178
+00:25:13,700 --> 00:25:15,304
+And that seems kind to me． 
+这对我来说似乎很好˳
+
+179
+00:25:15,304 --> 00:25:17,366
+Why do you think that's problem? 
+你为什么认为这是个问题？
+
+180
+00:25:17,366 --> 00:25:19,200
+No‚ I was going feel this bad． 
+不，我会感到很难过˳
+
+181
+00:25:20,600 --> 00:25:25,160
+I wanted to make sure that for each eye‚ we are the same‚ apologize． 
+我想确保每一只眼睛，我们都是一样的，道歉˳
+
+182
+00:25:30,530 --> 00:25:32,240
+Yeah‚ the values these． 
+是的，这些价值观˳
+
+183
+00:25:35,080 --> 00:25:37,850
+Activation values are set for each input that． 
+为每个输入设置激活值˳
+
+184
+00:25:40,300 --> 00:25:42,560
+Right‚ different inputs might have different activation values． 
+对，不同的输入可能具有不同的激活值˳
+
+185
+00:25:43,320 --> 00:25:45,130
+Yes‚ that's right‚ inputs． 
+是的，没错，输入˳
+
+186
+00:25:48,620 --> 00:25:50,051
+Important difference‚ right? 
+重要区别，对吧？
+
+187
+00:25:50,051 --> 00:25:51,840
+Because if I have one piece of text． 
+因为如果我有一段文字˳
+
+188
+00:25:53,930 --> 00:25:54,490
+Have different? 
+有不同吗？
+
+189
+00:25:57,350 --> 00:26:01,501
+Features that are activated‚ as we have seen in the first lecture． 
+激活的功能，正如我们在第一堂课中看到的那样˳
+
+190
+00:26:01,501 --> 00:26:10,200
+Pers to movies or something‚ text‚ piece of text‚ that feature won't be activated and this value will be 0‚ whereas someone． 
+对于电影或其他内容，文本，一段文本，该功能不会被激活，并且此值将为0，而对于某些人˳
+
+191
+00:26:12,500 --> 00:26:17,500
+These are input post specific‚ but this metric is． 
+这些是特定于输入岗位的，但这个指标是˳
+
+192
+00:26:19,860 --> 00:26:21,518
+One is global． 
+一个是全球性的˳
+
+193
+00:26:21,518 --> 00:26:24,420
+So this one‚ this one here is． 
+所以这一个，这一个在这里˳
+
+194
+00:26:51,260 --> 00:26:57,774
+That's a perfect segue into what I want to go in my nose． 
+那是一个完美的转换，进入我想要进入的东西˳
+
+195
+00:26:57,774 --> 00:27:02,046
+You can actually see how they're going to combine the two hypothesis． 
+你实际上可以看到他们将如何结合这两个假设˳
+
+196
+00:27:02,046 --> 00:27:09,886
+So what I understand is‚ is kind of how are we going to now use this linear representation hypothesis? 
+所以我的理解是，我们现在如何使用这种线性表示假设？
+
+197
+00:27:09,886 --> 00:27:15,241
+And our together‚ they sound awfully alike‚ right? 
+我们在一起，听起来非常相似，对吧？
+
+198
+00:27:15,241 --> 00:27:18,200
+But they are key differences． 
+但它们是关键的区别˳
+
+199
+00:27:18,380 --> 00:27:24,880
+So another key difference‚ but just we need to connect it． 
+所以另一个关键区别是，但我们只需要连接它˳
+
+200
+00:27:24,880 --> 00:27:29,440
+We know that the superposition‚ let's go over it one more time． 
+我们知道叠加态，让我们再讨论一遍˳
+
+201
+00:27:39,140 --> 00:27:44,084
+As a reminder‚ our superposition does that． 
+提醒一下，我们的叠加是这样做的˳
+
+202
+00:27:44,084 --> 00:27:50,460
+We have some low dimensional‚ lower dimensional dense representation． 
+我们有一些低维、低维的密集表示˳
+
+203
+00:27:53,200 --> 00:27:59,320
+We called it last time h‚ and it said‚ well‚ it might be compressing some． 
+我们上次叫它h，它说，嗯，它可能会压缩一些˳
+
+204
+00:28:02,420 --> 00:28:16,040
+H‚ this was called x in N‚ where n is much larger than the‚ and it also was scarce if we if this‚ you know‚ maybe one． 
+H，这被称为N中的x，其中n比，如果我们这样做，你知道，也许是一个，它也很少见˳
+
+205
+00:28:19,300 --> 00:28:23,423
+So that's what the superposition hypothesis told us． 
+这就是叠加假说告诉我们的˳
+
+206
+00:28:23,423 --> 00:28:33,690
+And it tells us that we can get to a linear mapping of x‚ and again‚ the column of x for those feature directions． 
+它告诉我们可以得到x的线性映射，再次得到这些特征方向的x列˳
+
+207
+00:28:34,560 --> 00:28:35,090
+Now the line． 
+现在的线˳
+
+208
+00:28:37,420 --> 00:28:48,930
+Hypothesis tells us‚ well‚ I can get the Iten dimension vector through this linear sum‚ as we say． 
+假设告诉我们，我可以通过这个线性和得到Iten维向量，就像我们所说的那样˳
+
+209
+00:28:58,080 --> 00:29:12,580
+So we have‚ and then we have written this in a max spectrum for Let's call this 1 v． 
+所以我们有，然后我们在最大频谱中写了这个，让我们称之为1 v˳
+
+210
+00:29:19,360 --> 00:29:20,880
+Okay‚ so this is what? 
+好吧，这是什么？
+
+211
+00:29:20,880 --> 00:29:23,920
+Linear representation hypothesis． 
+线性表示假设˳
+
+212
+00:29:24,700 --> 00:29:36,325
+So now maybe this implies that assuming that this is implicitly happening in neural networks‚ that superposition is happening． 
+所以现在也许这意味着假设这在神经网络中隐式发生，叠加正在发生˳
+
+213
+00:29:36,325 --> 00:29:40,600
+And we should believe that because we have that one experiment that I showed you． 
+我们应该相信，因为我们有一个我给你们看的实验˳
+
+214
+00:29:41,060 --> 00:29:45,204
+But there are many‚ many more experiments I haven't‚ over last time． 
+但上次还有很多很多实验我没有˳
+
+215
+00:29:45,204 --> 00:30:04,160
+So what this kind of suggests is that here‚ the our matrix V‚ which is of the shape‚ and it's such that m is when smaller than n‚ or n is way bigger than n‚ I really like． 
+所以这种情况表明，在这里，我们的矩阵V的形状是这样的，当m小于n，或者n大于n时，我真的很喜欢˳
+
+216
+00:30:04,160 --> 00:30:05,675
+So that's one thing． 
+所以这是一件事˳
+
+217
+00:30:05,675 --> 00:30:16,340
+So here I didn't say how many this feature aligned directions there are‚ but superposition implies there way more than there are hidden dimensions． 
+所以在这里我没有说这个特征对齐的方向有多少，但叠加意味着比隐藏维度更多˳
+
+218
+00:30:17,070 --> 00:30:27,040
+So the other range didn't say that we are enriching these linear representation hypotheses by insights from． 
+所以另一个范围并没有说我们正在通过来自的见解丰富这些线性表示假设˳
+
+219
+00:30:28,560 --> 00:30:39,180
+And also here‚ x is sparse‚ so our vector of other coefficient should also be sparse． 
+而且在这里，x是稀疏的，因此我们的其他系数的向量也应该是稀疏的˳
+
+220
+00:30:40,000 --> 00:31:01,725
+So I didn't say here anything about values of these coefficients that tell us how active each feature is‚ but superposition suggests that this is a quite sparse vector‚ meaning only a few features are active at a given moment for a given representation． 
+所以我在这里没有说这些系数的值可以告诉我们每个特征的活跃程度，但叠加表明这是一个相当稀疏的向量，这意味着在给定的表示下，只有少数特征在给定的时刻是活跃的˳
+
+221
+00:31:01,725 --> 00:31:20,616
+So just to go over that one more time‚ the linear representation hypothesis through insights‚ through empirical insights‚ has been formed to assume the hidden representations of neural networks can be written as linear of feature directions． 
+因此，为了再回顾一下，通过见解和经验见解的线性表示假设已经形成，以假设神经网络的隐藏表示可以写成特征方向的线性˳
+
+222
+00:31:20,616 --> 00:31:25,502
+I didn't say how many feature directions‚ and I didn't say how many are very often． 
+我没有说有多少个特征方向，也没有说经常有多少个˳
+
+223
+00:31:25,502 --> 00:31:32,520
+And active superposition suggests that we learn many feature directions‚ but only few． 
+而主动叠加表明我们学习了许多特征方向，但很少˳
+
+224
+00:31:33,480 --> 00:31:35,305
+So now we can combine them． 
+现在我们可以将它们结合起来˳
+
+225
+00:31:35,305 --> 00:31:53,180
+And this is foundation for a lot of mechanistic imperceptibility work‚ which is that we can decompose hidden representations as linear combinations of very few future directions when there are many at the disposal． 
+这是许多机械隐蔽性工作的基础，即当有许多可用时，我们可以将隐藏的表示分解为非常少的未来方向的线性组合˳
+
+226
+00:31:55,110 --> 00:31:56,770
+I'm going to write it down． 
+我要把它写下来˳
+
+227
+00:32:00,040 --> 00:32:00,760
+Here? 
+这里？
+
+228
+00:32:03,630 --> 00:32:03,920
+Our goal? 
+我们的目标？
+
+229
+00:32:09,460 --> 00:32:11,480
+Decompose‚ you know‚ say? 
+分解，你知道吗？
+
+230
+00:32:26,600 --> 00:32:28,220
+As linear? 
+线性的？
+
+231
+00:32:30,490 --> 00:32:34,720
+Combinations‚ so this comes from lrj． 
+组合，所以这来自lrj˳
+
+232
+00:32:37,260 --> 00:32:39,580
+Of a few． 
+一些˳
+
+233
+00:32:42,760 --> 00:32:43,670
+From superposition? 
+从叠加？
+
+234
+00:32:48,320 --> 00:32:55,750
+Feature Directions The fact that features are directional comes from． 
+特征方向是指特征是有方向的事实˳
+
+235
+00:32:58,570 --> 00:32:58,740
+The LRH． 
+LRH˳
+
+236
+00:33:01,300 --> 00:33:05,540
+View feature direction when there are many features． 
+当存在许多特征时查看特征方向˳
+
+237
+00:33:07,800 --> 00:33:12,360
+When this is not the good word‚ I would say and． 
+当这不是一个好词时，我会说˳
+
+238
+00:33:17,740 --> 00:33:18,530
+Many features learn． 
+学习了许多功能˳
+
+239
+00:33:23,010 --> 00:33:29,540
+By many‚ I mean more than a number of dimensions we have in our positions． 
+所谓多，我指的不仅仅是我们位置上的多个维度˳
+
+240
+00:33:29,970 --> 00:33:31,370
+And this comes from superposition． 
+这来自于叠加˳
+
+241
+00:33:48,810 --> 00:33:51,630
+We see how we use this to hypothesis． 
+我们看到我们如何使用它来进行假设˳
+
+242
+00:33:54,620 --> 00:34:03,756
+Okay‚ maybe it takes a little bit of time to fully settle in‚ but I hope the breakdown did help． 
+好吧，也许完全适应需要一点时间，但我希望这次崩溃确实有所帮助˳
+
+243
+00:34:03,756 --> 00:34:10,850
+We are going to move now‚ learn about methods that's built on this goal． 
+我们现在要移动，学习建立在这个目标上的方法˳
+
+244
+00:34:11,810 --> 00:34:12,650
+Just a second． 
+只需一秒钟˳
+
+245
+00:34:15,380 --> 00:34:20,291
+And we are going to move from this mentioning of these foundations． 
+我们将从提到这些基础开始˳
+
+246
+00:34:20,291 --> 00:34:38,372
+But this is a moment where you need to kind of preview these foundations whenever you read a survey or an overview of mechanism‚ you are going to see that it starts with polysemantic neurons‚ superposition‚ linear representation‚ hypotheses． 
+但是在这个时刻，每当你阅读综述或机制概述时，你都需要预览这些基础，你会发现它始于多义神经元、叠加、线性表示和假设˳
+
+247
+00:34:38,372 --> 00:34:41,880
+These are the key kind of ideas that then had motivated a lot． 
+这些是关键的想法，然后激发了很多动力˳
+
+248
+00:34:43,900 --> 00:34:53,260
+Of method there two questions with linear combination of a few a． 
+方法有两个问题，其中几个问题是线性组合的˳
+
+249
+00:34:58,130 --> 00:34:59,940
+Directions‚ yeah． 
+方向，是的˳
+
+250
+00:35:01,000 --> 00:35:03,465
+Yeah‚ so I will read it one more time． 
+是的，所以我会再读一遍˳
+
+251
+00:35:03,465 --> 00:35:13,890
+Our goal is now to decompose our humaner references as a linear combination of a few feature directions． 
+我们现在的目标是将我们的人类参考分解为几个特征方向的线性组合˳
+
+252
+00:35:14,480 --> 00:35:16,570
+And there are many features or feature directions learned． 
+并且学习了许多功能或功能方向˳
+
+253
+00:35:19,220 --> 00:35:21,188
+And then different pieces． 
+然后是不同的部分˳
+
+254
+00:35:21,188 --> 00:35:24,000
+Pieces come from different hypotheses． 
+碎片来自不同的假设˳
+
+255
+00:35:25,530 --> 00:35:41,047
+Yeah‚ I thought‚ I thought the idea behind his superposition with scarcity aspect of it was the fact that there were only a few features that were actually like being activated or impropriate or a given input． 
+是的，我想，我认为他的稀缺性叠加背后的想法是这样一个事实，即只有少数功能实际上像是被激活的、不恰当的或给定的输入˳
+
+256
+00:35:41,047 --> 00:35:46,386
+So then how are there consequently many features learned? 
+那么，如何学习许多特征呢？
+
+257
+00:35:46,386 --> 00:35:52,073
+Though we're dealing with spase‚ your get is just a small one． 
+虽然我们正在处理spase，但你的得到只是一个小的˳
+
+258
+00:35:52,073 --> 00:35:57,060
+So here‚ as as yourself said‚ each dimension is referring to a． 
+所以在这里，就像你自己说的，每个维度都指的是一个˳
+
+259
+00:36:00,000 --> 00:36:01,602
+Much larger than them‚ right? 
+比他们大得多，对吧？
+
+260
+00:36:01,602 --> 00:36:07,480
+So I learned many features‚ but then depending on the input‚ a feature may be active． 
+所以我学了很多功能，但是根据输入的不同，一个功能可能是活跃的˳
+
+261
+00:36:08,000 --> 00:36:13,775
+So for one input‚ let's say maybe only the first dimension here is active‚ everything else is there． 
+因此，对于一个输入，假设这里只有第一个维度处于活动状态，其他所有维度都在那里˳
+
+262
+00:36:13,775 --> 00:36:19,042
+For the next one‚ only the second dimension is active‚ everything else there． 
+对于下一个维度，只有第二个维度是活动的，其他所有维度都在那里˳
+
+263
+00:36:19,042 --> 00:36:26,540
+I have many features proposal that I learned‚ but only a few of them will be active for a given game． 
+我有很多功能建议，但只有少数功能会在给定的游戏中处于活动状态˳
+
+264
+00:36:27,010 --> 00:36:33,550
+Okay‚ so you're learning a whole lot of features‚ but those features may or may not be active for you． 
+好的，所以你正在学习很多功能，但这些功能可能对你来说是不活跃的，也可能不是˳
+
+265
+00:36:40,500 --> 00:36:41,210
+Other clarification questions? 
+其他澄清问题？
+
+266
+00:36:44,440 --> 00:37:02,280
+Okay‚ let's take two more minutes for this to settle down a little bit because now we're going to be talking about sparse sens orders‚ which is a way for us to implement this in one way‚ two minutes and then come back． 
+好的，让我们再花两分钟来安定下来一点，因为现在我们要谈论的是稀疏的sens命令，这是我们以一种方式实现它的方式，两分钟后再回来˳
+
+267
+00:37:02,280 --> 00:37:04,560
+Okay‚ maybe more important． 
+好吧，也许更重要˳

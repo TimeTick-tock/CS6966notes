@@ -1,0 +1,1624 @@
+1
+00:00:03,730 --> 00:00:06,380
+Let's go over this next topic． 
+让我们来讨论下一个话题˳
+
+2
+00:00:06,390 --> 00:00:16,114
+So as a part of our‚ when I give you a preview of what you are going to talk about‚ I have categorized everything into this questions． 
+因此，作为我们的一部分，当我给你预览你将要谈论的内容时，我已经将所有内容分类到这个问题中˳
+
+3
+00:00:16,114 --> 00:00:20,480
+And one of these big question is‚ what's encoded in representations? 
+其中一个重要问题是，在表征中编码的是什么？
+
+4
+00:00:20,600 --> 00:00:24,028
+What essays gives us a whole diary of features? 
+哪些论文给了我们一整本日记的特色？
+
+5
+00:00:24,028 --> 00:00:32,595
+Probability has given us a targeted test of whether one particular feature we are interested in is encoded in representation． 
+概率为我们提供了一个有针对性的测试，以确定我们感兴趣的一个特定特征是否被编码为表示形式˳
+
+6
+00:00:32,595 --> 00:00:46,289
+And then the last topic that I want to talk about in terms of what's encoded is the question of if I have two models‚ we might be wondering what is encoded in one model and not in the other． 
+然后，我想谈论的关于编码内容的最后一个话题是，如果我有两个模型，我们可能会想知道一个模型中编码了什么，而不是另一个模型中编码了什么˳
+
+7
+00:00:46,289 --> 00:00:50,560
+So what are exclusive features‚ as well as what are shared features? 
+那么什么是独家功能，以及什么是共享功能？
+
+8
+00:00:51,420 --> 00:01:05,580
+Does any pair of models‚ come to your mind for testing in this way for you want model what is shared and what different between them? 
+你是否想到了任何一对模型来以这种方式进行测试，因为你想要的模型有什么共享的以及它们之间有什么不同？
+
+9
+00:01:18,810 --> 00:01:20,520
+Yeah totally． 
+是的完全˳
+
+10
+00:01:20,570 --> 00:01:22,590
+So let's write this here． 
+让我们在这里写下这个˳
+
+11
+00:01:36,470 --> 00:01:51,687
+Emma has said that maybe we want to interest what are the differences after posttrading‚ whether those features that are exclusive to the are safety related because we are prostrated for safety‚ right? 
+艾玛说过，也许我们想感兴趣的是交易后的差异，那些独有的功能是否与安全有关，因为我们对安全感到困惑，对吧？
+
+12
+00:01:51,687 --> 00:01:53,243
+So that totally makes sense． 
+这样做完全感知˳
+
+13
+00:01:53,243 --> 00:01:55,930
+The part of our can say‚ say the audit． 
+我们的部分可以说，比如审计˳
+
+14
+00:01:55,930 --> 00:01:57,580
+So here we another side． 
+所以在这里，我们有另一面˳
+
+15
+00:01:59,710 --> 00:01:59,890
+Check version． 
+检查版本˳
+
+16
+00:02:03,840 --> 00:02:08,780
+One that's trained with like a malicious intent and then one that's hopefully not． 
+一个被训练有恶意的意图，然后一个希望不是˳
+
+17
+00:02:09,420 --> 00:02:16,060
+We can have‚ let's call it again‚ the bases and what was the late sleep region‚ right? 
+我们可以拥有，让我们再次称呼它，基础和晚期睡眠区域是什么，对吧？
+
+18
+00:02:21,580 --> 00:02:34,740
+Yeah‚ and we can see‚ okay‚ we have‚ I know this model was produced from this model and I can contrast them and see whether a differentiating feature is actually something that's deception like． 
+是的，我们可以看到，好的，我知道这个模型是从这个模型中产生的，我可以对比它们，看看一个区分特征是否真的是一种欺骗˳
+
+19
+00:02:41,100 --> 00:02:45,660
+Base model versus quantas model‚ or really? 
+基本模型与量子模型，还是真的？
+
+20
+00:02:47,390 --> 00:02:49,450
+So just for folks who don't． 
+所以只适合那些不喜欢的人˳
+
+21
+00:02:52,380 --> 00:02:55,400
+Our models are huge‚ right? 
+我们的模型很大，对吧？
+
+22
+00:02:55,400 --> 00:02:58,420
+We have so many parameters． 
+我们有这么多参数˳
+
+23
+00:02:58,970 --> 00:03:03,110
+Every parameter we like to save‚ ideally in a full precision． 
+我们想保存的每个参数，最好都在全精度下保存˳
+
+24
+00:03:03,880 --> 00:03:10,757
+And once you save hundreds of billions of numbers in full precision‚ you need a lot of memory． 
+一旦你以全精度保存了数千亿个数字，你需要大量的内存˳
+
+25
+00:03:10,757 --> 00:03:15,991
+And ideally‚ we would like to use this models and Gpu's because we get faster returns． 
+理想情况下，我们希望使用这些模型和Gpu，因为我们可以获得更快的回报˳
+
+26
+00:03:15,991 --> 00:03:25,200
+But the largest Gpu's today‚ we don't exceed GPU memory of 200 GB where this model in full precision will． 
+但是今天最大的Gpu，我们不会超过200 GB的GPU内存，而这个模型的全精度将会˳
+
+27
+00:03:25,200 --> 00:03:31,240
+You want to reduce their memory impact while retaining their performance? 
+你想在保持其性能的同时减少其内存影响吗？
+
+28
+00:03:31,240 --> 00:03:36,209
+And quantization is one method to do that． 
+量化是实现这一点的一种方法˳
+
+29
+00:03:36,209 --> 00:03:45,320
+And super‚ super often used everywhere‚ everyone is using quantized model so you can reduce the precision all the way to 2 b． 
+而且超级，超级经常在任何地方使用，每个人都在使用量化模型，因此您可以将精度一路降低到2 b˳
+
+30
+00:03:48,200 --> 00:03:51,259
+So if you haven't taken my public course‚ thank you． 
+所以如果你还没有上我的公开课程，谢谢˳
+
+31
+00:03:51,259 --> 00:03:51,965
+Next fall‚ then． 
+下一个秋天，然后˳
+
+32
+00:03:51,965 --> 00:03:53,848
+Then I'll think you how we do that． 
+然后我会思考我们如何做到这一点˳
+
+33
+00:03:53,848 --> 00:03:59,790
+But we do this heaven almost‚ I don't know where‚ using human models． 
+但我们几乎在天堂里，我不知道在哪里，使用人类模型˳
+
+34
+00:04:02,310 --> 00:04:14,940
+If it's a small‚ maybe‚ but for bigger ones with and usually one the biggest model you can have because most of the task you are trying to address are super simple． 
+如果它很小，也许吧，但对于具有最大模型的较大模型，通常你可以拥有一个，因为你试图解决的大多数任务都非常简单˳
+
+35
+00:04:15,730 --> 00:04:21,020
+So‚ and we correlate the visit points． 
+所以，我们将访问点关联起来˳
+
+36
+00:04:21,020 --> 00:04:29,100
+So the question of‚ well‚ now quantization by definition has to be removing some information‚ right? 
+因此，现在的问题是，量化的定义必须删除一些信息，对吧？
+
+37
+00:04:29,100 --> 00:04:35,485
+And now if I contrast these two version and learn‚ yeah‚ okay‚ what is shared? 
+现在，如果我对比这两个版本并学习，好的，什么是共享的？
+
+38
+00:04:35,485 --> 00:04:39,260
+What's different it‚ what did I lose with quantization? 
+有什么不同，量子化让我失去了什么？
+
+39
+00:04:39,260 --> 00:05:12,520
+The project we can call them‚ because if there is anyone without the project‚ some other‚ maybe the important things are again‚ smaller and right‚ Or if I training‚ maybe during training‚ I want to be checkpoint check checkpoint 1 and checkpoint 2 and understand training dynamics like what is between two iterations of not two iterations that we two smaller after thousand iterations of my model‚ what is now shared‚ what is? 
+我们可以称之为项目，因为如果有人没有这个项目，其他一些重要的事情可能会再次变得更小和正确，或者如果我在训练，也许在训练期间，我想成为检查点，检查检查点1和检查点2，并理解训练动态，就像在我的模型的一千次迭代后，我们两个更小的两个迭代之间的两次迭代，现在共享的是什么，什么是？
+
+40
+00:05:15,510 --> 00:05:17,410
+I mean‚ so checkpoint． 
+我的意思是，检查点˳
+
+41
+00:05:26,470 --> 00:05:52,080
+One thing we also see in the literature I would like to teach about unlearned learning‚ orning refers to taking a model and trying to remove some knowledge out of it so you can contrast pre‚ model before and after posting to check whether what is differentiating feature remove is what you intended to remove so． 
+我们在文献中也看到一件事，我想教授关于未学习的学习，那就是采用一个模型并试图从中删除一些知识，这样你就可以在发布之前、之前和之后对比模型，以检查区分特征删除是否是你想要删除的˳
+
+42
+00:05:54,560 --> 00:05:55,110
+Pretty unlearned． 
+相当没学识˳
+
+43
+00:06:00,000 --> 00:06:14,380
+And so on‚ so there is a lot of situations where being able to control to models‚ it could be helpful to understanding what is going． 
+等等，所以在很多情况下，能够控制模型，可能有助于理解正在发生的事情˳
+
+44
+00:06:15,020 --> 00:06:26,950
+And model diffing refers to doing exactly that to try to understand what is shared and what is different between two models． 
+而模型差异指的正是这样做，试图理解两个模型之间共享的内容和不同之处˳
+
+45
+00:06:41,190 --> 00:06:44,200
+Okay‚ so model‚ the thing is quite blue． 
+好的，所以模型，这个东西很蓝˳
+
+46
+00:06:44,440 --> 00:06:47,850
+It's also maybe like here‚ all or less and． 
+它也可能像这里一样，全部或更少˳
+
+47
+00:06:51,000 --> 00:07:02,330
+Today‚ it is done using another architecture that's very close to SAS and transgenders‚ more closer to essay‚ it's called a cross-cover． 
+今天，它是使用另一种非常接近SAS和跨性别的架构完成的，更接近于论文，它被称为交叉覆盖˳
+
+48
+00:07:06,610 --> 00:07:09,080
+Now‚ keep in mind． 
+现在，请记住˳
+
+49
+00:07:12,300 --> 00:07:15,690
+Because this is so new‚ you will almost always see model with． 
+因为这是如此之新，你几乎总是会看到模型带有˳
+
+50
+00:07:17,790 --> 00:07:29,378
+Cross holder conclude that cross holder is modeled this direct rather cross holder approach with which we will do modeling． 
+交叉持有者得出的结论是，我们将采用这种直接的交叉持有者方法进行建模˳
+
+51
+00:07:29,378 --> 00:07:39,260
+But you might come up with completely new approach‚ a lot of opportunity for improvement here． 
+但你可能会想出全新的方法，这里有很多改进的机会˳
+
+52
+00:07:39,260 --> 00:07:43,980
+Okay‚ so what I'm going to write are equations that are going to look hopefully alike． 
+好的，我要写的是希望看起来相似的方程˳
+
+53
+00:07:46,420 --> 00:07:49,450
+To kind of pig mentally prepare what to expect and． 
+有点像猪，在精神上做好期待的准备˳
+
+54
+00:07:51,620 --> 00:07:57,660
+And there is a lot of assumptions about what's going to increasingly happen． 
+而且对于将会越来越多地发生的事情有很多假设˳
+
+55
+00:07:58,420 --> 00:08:06,120
+One thing that I don't like about cross folders‚ so you will need to work‚ do a little medical gymnastics． 
+有一件事我不喜欢交叉文件夹，所以你需要工作，做一些医疗体操˳
+
+56
+00:08:07,520 --> 00:08:09,780
+We will need to imagine how something is going be happening． 
+我们需要想象一下事情将如何发生˳
+
+57
+00:08:14,120 --> 00:08:20,573
+As explicating‚ but before I even write the equation‚ so let's go over this visualization． 
+作为解释，但在我写方程之前，让我们来看看这个可视化˳
+
+58
+00:08:20,573 --> 00:08:45,602
+Since it's here remembered with sacas‚ we have a representation‚ and then we try to reconstruct it through linear combination of u feature direction weighted by the importance that we get through that encoder weight matrix‚ a product of the regional representation． 
+因为它在这里用sacas记住，所以我们有一个表示，然后我们尝试通过u特征方向的线性组合以及我们通过编码器权重矩阵 (区域表示的产物) 获得的重要性加权来重建它˳
+
+59
+00:08:45,602 --> 00:08:50,800
+And here we are doing kind of the same thing‚ but with two representation． 
+在这里，我们正在做同样的事情，但是有两个代表˳
+
+60
+00:08:51,310 --> 00:09:05,512
+One representation is coming for a model A‚ and the other representation is coming from the model B again‚ we are going to try to reconstruct to do the representations and we are going to use the same intuition． 
+一个表示是针对模型a而来的，另一个表示又是来自模型B，我们将尝试重构来进行表示，并将使用相同的直觉˳
+
+61
+00:09:05,512 --> 00:09:18,598
+We had the tests to produce very large vector‚ which is mostly sparse‚ and then do the reconstruction using that very sparse feature vector together with decoder with matrices． 
+我们进行了测试，生成了非常大的向量，其中大部分是稀疏的，然后使用非常稀疏的特征向量以及解码器和矩阵进行重建˳
+
+62
+00:09:18,598 --> 00:09:26,710
+So here we are going to have two encoder with matrices‚ one for model A and 1 for model B‚ as well as the decoder． 
+所以在这里，我们将有两个带有矩阵的编码器，一个用于模型A，一个用于模型B，还有解码器˳
+
+63
+00:09:28,950 --> 00:09:39,850
+Matrices again‚ for a‚ what is joined here is that once we produce a very‚ very high dimensional sparse feature vector‚ we are going to add them together． 
+再次使用矩阵，这里连接的是一旦我们产生一个非常高维度的稀疏特征向量，我们将把它们相加在一起˳
+
+64
+00:09:39,880 --> 00:10:02,520
+And from this joint sparse feature vector‚ we are going to reconstruct the representations of A and b‚ Now one thing that compute you personally is that since these two weight mattresses are working separately‚ how do I know that item dimension here? 
+从这个联合稀疏特征向量出发，我们将重建A和b的表示，现在需要计算你个人的一件事是，由于这两个重量床垫是分开工作的，我怎么知道这里的项目维度呢？
+
+65
+00:10:04,660 --> 00:10:10,230
+Is we know that they refer to the Iro in these two wave matrices‚ right? 
+我们知道它们指的是这两个波矩阵中的Iro，对吗？
+
+66
+00:10:10,230 --> 00:10:17,830
+But how do I know that these way‚ those rules are referring to the same information‚ right? 
+但是我怎么知道这些规则指的是相同的信息，对吧？
+
+67
+00:10:18,020 --> 00:10:29,690
+Like what if‚ you know 1 matrix is trained implicitly such that it it is active for dog and the other one is for cat‚ right? 
+比如，如果一个矩阵是隐式训练的，所以它对于狗是活跃的，另一个对于猫是活跃的，对吧？
+
+68
+00:10:30,010 --> 00:10:30,800
+For two different? 
+对于两个不同的？
+
+69
+00:10:33,230 --> 00:10:42,650
+The way I kind of made the sense out of this is that we‚ again‚ have that reconstruction sparsity trade‚ right? 
+我感知的方式是，我们再次进行重建稀疏交易，对吗？
+
+70
+00:10:43,220 --> 00:10:54,350
+And because there is this trade off‚ this whole architecture needs to figure out how to make best use of the available dimensions here． 
+由于存在这种权衡，整个架构需要弄清楚如何充分利用这里的可用维度˳
+
+71
+00:10:54,540 --> 00:11:12,050
+So if I allow it to use only 100 dimensions only‚ and it's out of 100000 dimensional vector‚ it will start to recognize‚ well‚ both this and this reconstruction need this information． 
+所以如果我允许它只使用100个维度，并且它是从100000个维度向量中出来的，它将开始识别，嗯，这个和这个重建都需要这个信息˳
+
+72
+00:11:14,160 --> 00:11:20,900
+If I place them here in the same index‚ they are going to refer to the same index here． 
+如果我将它们放在同一个索引中，它们将引用同一个索引˳
+
+73
+00:11:20,940 --> 00:11:24,221
+And I'm not losing two dimension 2 Las． 
+而且我不会失去二维的Las˳
+
+74
+00:11:24,221 --> 00:11:30,113
+Rather‚ I have one latent to capture information that I need for both of these． 
+相反，我有一个潜在的捕获信息，我需要这两个˳
+
+75
+00:11:30,113 --> 00:11:34,140
+But in this architecture and how we train it‚ we make that． 
+但在这个架构和我们如何训练它中，我们做到了这一点˳
+
+76
+00:11:34,140 --> 00:12:02,540
+But rather‚ it is‚ we assume‚ because there is this reconstruction sparsity de trigo‚ the model‚ this cross coder‚ will figure out that the best thing for this process reconstruction tradeoff is to place use the same index here‚ in here when you need to record information that is relevant both for A and B reconstruction． 
+但更确切地说，我们假设，因为有这种重构的稀疏性，这个模型，这个交叉编码器，会发现这个过程重构的最佳选择是在这里使用相同的索引，在这里，当您需要记录与A和B重建相关的信息时˳
+
+77
+00:12:02,540 --> 00:12:03,780
+Does this make sense? 
+这有感知吗？
+
+78
+00:12:03,780 --> 00:12:07,500
+This is a little bit of mental gymnastics． 
+这是一点点的心理体操˳
+
+79
+00:12:07,620 --> 00:12:11,707
+So I just want to make sure that kind it was first then． 
+所以我只是想确保那种是第一次˳
+
+80
+00:12:11,707 --> 00:12:20,880
+So I was usually saying like superposition‚ maybe I didn't understand it entirely． 
+所以我通常说像叠加，也许我没有完全理解它˳
+
+81
+00:12:22,020 --> 00:12:26,580
+It's quite superposition． 
+这完全是叠加˳
+
+82
+00:12:28,460 --> 00:12:33,460
+Let me visualize what I want to say‚ let me visualize‚ and then I'm going to take． 
+让我想象一下我想说什么，让我想象一下，然后我会采取行动˳
+
+83
+00:12:37,570 --> 00:12:40,330
+So imagine we have a． 
+想象一下，我们有一个˳
+
+84
+00:12:42,500 --> 00:12:44,390
+Is for both? 
+是为了双方吗？
+
+85
+00:12:53,200 --> 00:12:57,280
+One situation where situation one． 
+一种情况是情况一˳
+
+86
+00:12:59,700 --> 00:12:59,760
+Going to be?​‌​‌​​‌‌​​‌‌​​‌‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​‌‌​​​‌‌‌​‌‌‌‌​‌​‌​‌‌‌​‌‌​​‌‌‌​‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​​‌​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌​‌‌‌‌‌​‌​‌‌‌​​‌‌​​​‌​​‌‌​‌‌​​​‌‌​‌​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌​​‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​​‌​​‌‌‌‌‌​​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌​‌‌‌‌‌​‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌​​‌‌​​‌‌‌‌‌‌​​‌‌‌‌‌​​​‌‌​​​‌​​‌‌​​​‌​​‌‌‌​‌‌‌‌​‌​​​‌​​‌‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌​‌‌‌‌​‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌​‌​​‌‌‌​​‌‌‌​‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌‌‌‌​​​‌‌​‌​‌‌‌​‌‌​‌‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌​​‌‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌​‌‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​‌‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌​‌‌​​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌​‌‌​​​‌‌​‌​‌​​‌‌‌​​‌‌‌​‌‌‌‌‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌‌​​‌‌‌​‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ 
+会吗？
+
+87
+00:13:03,250 --> 00:13:07,220
+In both of these I'm going to learn． 
+在这两个方面我都要学习˳
+
+88
+00:13:09,580 --> 00:13:14,140
+That I need to record the emoji but in different indices? 
+我需要记录表情符号，但索引不同？
+
+89
+00:13:15,870 --> 00:13:19,530
+Original x a‚ and let's call this z of． 
+原始的x a，让我们称之为z of˳
+
+90
+00:13:24,860 --> 00:13:29,500
+And let's say that the dimension of 5． 
+让我们假设维度为5˳
+
+91
+00:13:31,820 --> 00:13:36,175
+Recording activation for energy Mo 2‚ right? 
+记录能量Mo 2的激活，对吧？
+
+92
+00:13:36,175 --> 00:13:50,292
+So here it emoji important for the representation going to have a high number at the fifth dimension in this vector at speed． 
+因此，在这里，表情符号对于表示在该向量的第五维度以速度具有很高的数字很重要˳
+
+93
+00:13:50,292 --> 00:13:51,812
+I also need emoji． 
+我也需要表情符号˳
+
+94
+00:13:51,812 --> 00:13:59,980
+That's what my encoder makes and it's going to be at the dimension A． 
+这就是我的编码器所做的，它将在A维度上˳
+
+95
+00:14:02,290 --> 00:14:04,470
+I can pay for emotion． 
+我可以为情感付出代价˳
+
+96
+00:14:06,480 --> 00:14:09,101
+Some these two right vector． 
+有些是这两个正确的向量˳
+
+97
+00:14:09,101 --> 00:14:17,350
+And then I will have in the‚ I called this z is x a plus FB‚ right? 
+然后我会在，我称之为z是xa加FB，对吧？
+
+98
+00:14:23,100 --> 00:14:24,410
+Energy and also at the． 
+能源，也是˳
+
+99
+00:14:28,480 --> 00:14:31,737
+Then I'm going to have an moji‚ right? 
+那么我要一个莫吉，对吧？
+
+100
+00:14:31,737 --> 00:14:33,040
+And this is what? 
+这是什么？
+
+101
+00:14:33,220 --> 00:14:47,100
+Because now in this vector here‚ I have two indices that both Activ and this is where that reconstruction sparsity in trade off comes in‚ didn? 
+因为现在在这个向量中，我有两个索引，它们都有效，这就是重建稀疏性权衡的来源，对吗？
+
+102
+00:14:50,020 --> 00:14:58,240
+Explicitly say anything to the model that it should place emoji on the same image． 
+明确地告诉模型应该在同一张图片上放置表情符号˳
+
+103
+00:14:58,240 --> 00:14:59,590
+So instead of． 
+所以而不是˳
+
+104
+00:15:07,000 --> 00:15:08,897
+It's going to place it at 5． 
+它将把它放在5˳
+
+105
+00:15:08,897 --> 00:15:24,424
+We didn't really explicitly ever say it should do that‚ but we assume that implicitly is going to figure out that because it is the best way to use the storage it has available to reconstruct in the best way． 
+我们并没有明确说过它应该这样做，但我们假设隐式地会解决这个问题，因为这是使用可用存储以最佳方式进行重建的最佳方式˳
+
+106
+00:15:24,424 --> 00:15:30,442
+And is something I emphasizing really clear to me‚ How are we achieving this? 
+我所强调的一点对我来说很清楚，那就是我们如何实现这一点？
+
+107
+00:15:30,442 --> 00:15:32,180
+And this is the best explanation． 
+这是最好的解释˳
+
+108
+00:15:33,600 --> 00:15:42,840
+So situation number 2 is where I will just write it like this‚ and I hope you guys follow． 
+所以情况2是我会这样写的，我希望你们能跟上˳
+
+109
+00:15:53,290 --> 00:15:54,830
+Such that it matches when? 
+匹配什么时候？
+
+110
+00:15:57,120 --> 00:15:58,560
+It is in this vector． 
+它在这个向量中˳
+
+111
+00:16:02,240 --> 00:16:12,730
+Okay‚ just to clarify‚ so we have the sparsity limit both on the output of encoders and on the sum we have． 
+好的，只是为了澄清一下，我们在编码器的输出和我们拥有的总和上都有稀疏度限制˳
+
+112
+00:16:13,200 --> 00:16:19,050
+The reconstruction laws will be on the reconstructing these two and sparse‚ it will be induced on this one． 
+重构规律将在重构这两个方面进行，而稀疏的则将在这一个方面进行诱导˳
+
+113
+00:16:19,320 --> 00:16:25,640
+Okay‚ yeah‚ okay‚ let's take a little break just because I'm afraid that I'm about to lose my voice． 
+好的，是的，好的，让我们休息一下，因为我担心我会失去声音˳
+
+114
+00:16:26,920 --> 00:16:31,480
+I want to show you just one thing in this paper． 
+我想在这篇论文中向您展示一件事情˳
+
+115
+00:16:31,820 --> 00:16:43,120
+In contrast‚ the base and the check version of the model‚ and these are the latent that they find to be exclusive to check only representations． 
+相比之下，模型的基础和检查版本，这些是他们发现仅检查表示所独有的潜在特征˳
+
+116
+00:16:43,120 --> 00:16:52,881
+So things like reusable‚ a‚ lots of reviews and stuff‚ personal questions‚ false information detection‚ and so on． 
+所以像可重复使用、大量评论之类的东西、个人问题、虚假信息检测等等˳
+
+117
+00:16:52,881 --> 00:16:59,980
+And these are kind of things you would a checked based a version of a Modelo rather than the base game． 
+这些是基于检查的Modelo版本而不是基础游戏的东西˳
+
+118
+00:17:01,600 --> 00:17:03,760
+Okay‚ so let's see． 
+好的，让我们看看˳
+
+119
+00:17:04,460 --> 00:17:11,253
+Our goal now is to go over to understand how can we get these strips right? 
+我们现在的目标是去了解如何正确地获得这些条带？
+
+120
+00:17:11,253 --> 00:17:12,900
+How do we get this discount? 
+我们如何获得这个折扣？
+
+121
+00:17:14,340 --> 00:17:28,860
+Okay‚ so the first thing is we are going to bring a patch top‚ a cross coder‚ as you have seen from the slides in‚ these have built on what we already know essay． 
+好的，第一件事是我们将带来一个补丁顶部，一个交叉编码器，正如你从幻灯片中看到的那样，这些都是基于我们已经知道的文章构建的˳
+
+122
+00:17:29,880 --> 00:17:31,160
+So let me just． 
+那就让我来吧˳
+
+123
+00:17:33,420 --> 00:17:35,985
+Let's call the representation． 
+让我们称之为代表˳
+
+124
+00:17:35,985 --> 00:17:37,980
+How do we call it here s? 
+我们在这里怎么称呼它为s？
+
+125
+00:17:41,860 --> 00:17:41,900
+A is a． 
+A是a˳
+
+126
+00:17:44,770 --> 00:17:45,390
+Representation from． 
+代表来自˳
+
+127
+00:17:47,660 --> 00:17:53,900
+A and Xb is a representation from? 
+A和Xb是代表吗？
+
+128
+00:17:58,480 --> 00:18:04,600
+Okay‚ then‚ our goal is to produce this main ctor‚ in the middle． 
+好的，那么，我们的目标是在中间产生这个主要的演员˳
+
+129
+00:18:04,600 --> 00:18:16,050
+So let's call it‚ it's going to have a real‚ you know‚ we know different versions like jump reel an option here． 
+所以让我们称之为它，它将有一个真正的，你知道，我们知道不同的版本，比如跳盘选项˳
+
+130
+00:18:17,710 --> 00:18:28,320
+We are going to have an encoder with and we are going to have encoder related BC‚ and we are going to have some． 
+我们将与编码器，我们将有编码器相关的BC，我们将有一些˳
+
+131
+00:18:30,660 --> 00:18:37,300
+Then in very sound‚ it's really important to use benchtop k cross-cover． 
+然后在非常声音的情况下，使用台式k交叉覆盖非常重要˳
+
+132
+00:18:37,420 --> 00:18:53,665
+So remember‚ batch Dok refer to inducing sparcity directly by basically zeroing out all the values in this vector z that are not in the top k times b ranked one‚ right? 
+所以记住，批处理Dok指的是直接诱导稀疏，基本上是将这个向量z中不在前k次b排名第一的所有值归零，对吧？
+
+133
+00:18:53,665 --> 00:18:55,660
+K refers to hyperparti． 
+K指的是超级党˳
+
+134
+00:18:58,680 --> 00:19:11,240
+And remember‚ relative to just top k‚ it gives us a little bit of flexibility to sometimes use A and then 100 or 1 representation and more than 100 in． 
+请记住，相对于前k，它为我们提供了一些灵活性，有时会使用100或1个表示和超过100个表示˳
+
+135
+00:19:13,210 --> 00:19:25,130
+Okay‚ so we have‚ it's going to be‚ it is going to be a vector where we are going to have either one or we are going to have． 
+好的，所以我们有，它将是一个向量，在这里我们将有一个或我们将会有˳
+
+136
+00:19:30,170 --> 00:19:40,600
+Z j‚ So we are going to keep the value here in the spectrum on the top key‚ top‚ back batch‚ top key． 
+Z j，所以我们将把值保留在光谱的顶部键、后退批、顶部键上˳
+
+137
+00:20:08,020 --> 00:20:21,452
+To read this denoting vector of the size‚ number of features and the values in that vector are going to be either Zj． 
+读取这个表示向量的大小、特征数量以及该向量中的值将为Zj˳
+
+138
+00:20:21,452 --> 00:20:22,680
+So what is here? 
+那么这里是什么？
+
+139
+00:20:22,680 --> 00:20:32,190
+If I'm multiplying this with either one or 0‚ is going to be one if that value is among the top‚ among the batch of k top ones． 
+如果我将这个与1或0相乘，如果该值位于前k个值中，则为1˳
+
+140
+00:20:32,380 --> 00:20:34,700
+And this is going to be 0 otherwise‚ therefore． 
+因此，这将为0，否则˳
+
+141
+00:20:43,470 --> 00:20:46,460
+Of k is important here and the whole． 
+k的重要性在这里和整体都很重要˳
+
+142
+00:20:53,870 --> 00:21:03,775
+So in this paper where I have the table from‚ so this 1‚ I showed you a sample． 
+所以在这篇论文中，我有一个表格，所以这1，我给你展示了一个样本˳
+
+143
+00:21:03,775 --> 00:21:27,470
+In this paper‚ they have the whole main point of this paper was to show that if you are not using this batch top cake version of cross-cover is if you are inducing sparsity‚ but let's say L 1 penalty‚ then you will have problems with your cross quarter training‚ namely． 
+在本文中，他们的主要观点是要表明，如果你不使用这个批量顶部蛋糕版本的交叉覆盖，如果你正在诱导稀疏，但让我们说L 1惩罚，那么你的交叉季度训练就会有问题，即˳
+
+144
+00:21:29,740 --> 00:21:34,530
+Going to be really hard to specify which features are exclusive to the chat model． 
+很难指定哪些功能是聊天模型独有的˳
+
+145
+00:21:34,530 --> 00:21:39,320
+You will have a lot of socca‚ the false positives where you mark something as check． 
+你会得到很多socca，误报，你将某些东西标记为检查˳
+
+146
+00:21:45,600 --> 00:21:49,140
+Then you are not going to have this problem． 
+那么你就不会有这个问题了˳
+
+147
+00:21:49,180 --> 00:22:09,434
+So although in‚ you know‚ SS we said‚ you know‚ today typically are going to use top K or batch top K‚ but you can still get a good Sae with no L 1 penalty if you train properly with in and out of the hyperparameters． 
+因此，尽管在SS中，你知道，我们说，你知道，今天通常会使用top K或batch top K，但是如果你正确地使用超参数进行训练，你仍然可以获得一个没有L 1惩罚的良好Sae˳
+
+148
+00:22:09,434 --> 00:22:11,758
+It's a strong recommendation． 
+这是一个强有力的建议˳
+
+149
+00:22:11,758 --> 00:22:16,900
+You do use that L 1 spars‚ okay? 
+你用那个L-1个桅杆，好吗？
+
+150
+00:22:17,680 --> 00:22:31,460
+Then once you have the Z tilde here‚ you are going to reconstruct the representation same way you would with the essay‚ except that you know of the special． 
+然后，一旦你在这里有了Z波浪号，你将以与论文相同的方式重建表征，除了你知道的特殊之处˳
+
+151
+00:22:34,350 --> 00:22:35,720
+Waits for two tool models． 
+等待两个刀具模型˳
+
+152
+00:22:51,190 --> 00:22:52,370
+Expected for our losses? 
+预计我们的损失？
+
+153
+00:22:54,780 --> 00:22:58,160
+We are going to have a reconstruction loss． 
+我们将有重建的损失˳
+
+154
+00:22:58,160 --> 00:23:03,390
+And it's going to consist reconstructing both． 
+这将包括重建两者˳
+
+155
+00:23:12,500 --> 00:23:15,980
+Losses I might introduce here． 
+我可以在这里介绍一下损失˳
+
+156
+00:23:20,850 --> 00:23:21,280
+Sorry‚ second． 
+抱歉，第二个˳
+
+157
+00:23:25,170 --> 00:23:26,690
+Auxiliary loss． 
+辅助损失˳
+
+158
+00:23:29,160 --> 00:23:30,920
+Right‚ why were you so shy to say? 
+对，你为什么这么害羞说呢？
+
+159
+00:23:40,140 --> 00:23:46,180
+It reduces dead features and features． 
+它减少了死特征和特征˳
+
+160
+00:24:00,000 --> 00:24:03,051
+Reconstruct the residual with the D? 
+用D重建残差？
+
+161
+00:24:03,051 --> 00:24:12,065
+So here‚ when you take the difference between these a．s．‚ we are going to have some residual vector． 
+所以在这里，当你计算这些a．s．之间的差值时，我们将会有一些残差向量˳
+
+162
+00:24:12,065 --> 00:24:20,071
+We are going to pour some top that features to work just a little bit more and try to reconstruct that residual． 
+我们将投入一些顶级功能，让它们更有效，并尝试重建残余物˳
+
+163
+00:24:20,071 --> 00:24:25,340
+In this way‚ they will become more active and they're going to have less than features． 
+这样，他们将变得更加活跃，他们将拥有更少的功能˳
+
+164
+00:24:25,620 --> 00:24:30,180
+Yeah‚ for the reconstruction launch‚ that'd be x a minus x hat a． 
+是的，对于重建发射，这将是x减x帽子a˳
+
+165
+00:24:33,220 --> 00:24:37,780
+With a Mes‚ you can see my focus is disappearing． 
+有了Mes，你可以看到我的注意力正在消失˳
+
+166
+00:24:40,760 --> 00:24:42,080
+Anything else? 
+还有什么吗？
+
+167
+00:24:45,400 --> 00:24:47,960
+Want to include sparsity loss? 
+想要包含稀疏性损失吗？
+
+168
+00:24:47,960 --> 00:24:53,779
+Or do we want to try and do one of the things of like injecting sparsity? 
+还是我们想尝试做注入稀疏性的事情？
+
+169
+00:24:53,779 --> 00:24:56,920
+Or is our top‚ is our bash top K already handling? 
+或者是我们的顶级，我们的bash top K已经处理好了吗？
+
+170
+00:24:58,860 --> 00:25:03,130
+I feel like you have answered process to you about it． 
+我觉得你已经回答了关于它的过程˳
+
+171
+00:25:03,130 --> 00:25:12,500
+Yeah‚ so one thought might be‚ well‚ it said sparsity loss‚ but we have explicitly introduce sparsity to part pressure of case． 
+是的，所以有一个想法可能是，它说的是稀疏性损失，但我们已经明确地将稀疏性引入案例的部分压力˳
+
+172
+00:25:12,500 --> 00:25:15,720
+So we don't mean sparsity because sparsity has． 
+所以我们并不是指稀疏，因为稀疏已经存在˳
+
+173
+00:25:17,820 --> 00:25:20,463
+And then you have to be to pay them． 
+然后你必须付钱给他们˳
+
+174
+00:25:20,463 --> 00:25:22,520
+You also will need this possible． 
+你也将需要这个可能˳
+
+175
+00:25:22,700 --> 00:25:23,002
+Okay? 
+好吗？
+
+176
+00:25:23,002 --> 00:25:28,740
+Now at the inference time‚ this is all about training the inference． 
+现在在推理时，这一切都是关于训练推理˳
+
+177
+00:25:31,220 --> 00:25:41,430
+We are going to use this value that I'm going to define to decide which one of these z's are Ergon． 
+我们将使用我要定义的这个值来决定这些z中的哪一个是Ergon˳
+
+178
+00:25:43,340 --> 00:25:46,870
+Not going to quite use Batch top． 
+不会完全使用批量顶部˳
+
+179
+00:25:54,390 --> 00:25:58,600
+We are going to use this function b? 
+我们要使用这个函数b？
+
+180
+00:26:02,800 --> 00:26:13,110
+Or given it can be ESA or XP that the member latent j‚ we are going to define the? 
+或者给定成员latent j可以是ESA或XP，我们将定义？
+
+181
+00:26:15,860 --> 00:26:18,880
+That J‚ or now I'm missing you? 
+那个J，还是现在我想念你？
+
+182
+00:26:20,620 --> 00:26:26,920
+Whether we use the tilde j or z j here‚ I need to check that detail． 
+无论我们在这里使用波浪号j还是z j，我都需要检查这个细节˳
+
+183
+00:26:41,980 --> 00:26:46,540
+So we consider‚ we consider what is the activation? 
+所以我们考虑，我们考虑什么是激活？
+
+184
+00:26:49,820 --> 00:26:58,620
+Compliant with the norm of the column in the weight decoder matrices corresponding to that length． 
+符合对应该长度的权重解码器矩阵中列的范数˳
+
+185
+00:26:58,620 --> 00:27:06,220
+Remember‚ those columns are basically feature direction that represented latent in the． 
+请记住，这些列基本上是代表潜在特征的方向˳
+
+186
+00:27:07,350 --> 00:27:17,380
+The idea here is that we the importance can come in different flavors come by ja? 
+这里的想法是，我们的重要性可以来自不同的口味，来自a？
+
+187
+00:27:20,620 --> 00:27:21,969
+Then it's latent． 
+那么它就是潜伏的˳
+
+188
+00:27:21,969 --> 00:27:25,680
+Won't a huge role in the reconstruction? 
+不会在重建中起到重要作用吗？
+
+189
+00:27:26,220 --> 00:27:33,293
+We want not only the activation‚ but also these norms to be at least one of these norms to be high． 
+我们不仅希望激活，而且希望这些规范中至少有一个规范是高的˳
+
+190
+00:27:33,293 --> 00:27:46,240
+So we are using this function here to decide at the inference time‚ what are the top‚ let's say‚ 100 latent I'm going to give to‚ you know． 
+所以我们在这里使用这个函数来决定在推理时，什么是顶部，比如说，我要给100个潜在的，你知道的˳
+
+191
+00:27:50,240 --> 00:27:50,270
+Okay? 
+好吗？
+
+192
+00:27:53,140 --> 00:27:59,075
+Now we‚ let's imagine we have two training that we have these as well． 
+现在我们，让我们想象一下我们有两个训练，我们也有这些˳
+
+193
+00:27:59,075 --> 00:28:05,847
+Nothing here really tells us what is chat and what is vague is only or you know‚ what is shared． 
+这里没有什么真正告诉我们什么是聊天，什么是模糊的只是或者你知道，什么是共享的˳
+
+194
+00:28:05,847 --> 00:28:21,600
+And to add kind of partition our latents into sets of latents that are shared among the models that are ex-csx‚ researchers had defined another function called a relative norm difference． 
+并且为了将我们的潜伏期划分为在ex-csx模型之间共享的一组潜伏期，研究人员定义了另一个函数，称为相对范数差˳
+
+195
+00:28:22,160 --> 00:28:25,969
+Now‚ in this version of the paper‚ there is a mistake． 
+现在，在这个版本的论文中，有一个错误˳
+
+196
+00:28:25,969 --> 00:28:28,900
+I did reach out to the authors about this． 
+我确实联系了作者˳
+
+197
+00:28:28,900 --> 00:28:32,868
+They have forget to do few things to this equation． 
+他们忘记对这个方程式做一些事情˳
+
+198
+00:28:32,868 --> 00:28:41,330
+So if you read this and this interpretation doesn't quite match what's written there that because a mistake equation． 
+所以如果你读到这个，而这个解释并不完全符合那里写的，因为一个错误方程˳
+
+199
+00:28:47,200 --> 00:28:49,340
+Relative to one infers? 
+相对于一个推断？
+
+200
+00:29:00,000 --> 00:29:03,480
+So you are going to measure this for every blaton． 
+所以你要为每个blaton测量这个˳
+
+201
+00:29:07,360 --> 00:29:09,748
+And it's going to‚ this is what there is． 
+它会的，这就是存在的˳
+
+202
+00:29:09,748 --> 00:29:19,610
+There is‚ in some normalization terms in our denominator‚ we are going to have the max between the norms． 
+在我们分母的一些规范化术语中，我们将有范数之间的最大值˳
+
+203
+00:30:04,640 --> 00:30:18,480
+So what this equation is within with terms such that this is actually found in‚ if you don't have this normal search‚ then it's not bounded． 
+那么这个方程在术语中是什么，如果你没有这种正常的搜索，那么它是没有边界的˳
+
+204
+00:30:22,000 --> 00:30:26,560
+First of all‚ the one assumption that is made here is that． 
+首先，这里所做的一个假设是˳
+
+205
+00:30:29,020 --> 00:30:37,070
+Latents direction is associated with how important latent it． 
+潜伏期的方向与潜伏期的重要性有关˳
+
+206
+00:30:38,850 --> 00:30:39,420
+So first assumption． 
+所以，第一个假设˳
+
+207
+00:30:44,560 --> 00:30:49,120
+I don't know whether this is my job as assumption because it really plays a role． 
+我不知道这是否是我的工作假设，因为它真的发挥了作用˳
+
+208
+00:30:50,130 --> 00:30:50,380
+Let me write． 
+让我来写˳
+
+209
+00:30:51,000 --> 00:30:54,120
+So again‚ when I write． 
+再一次，当我写作的时候˳
+
+210
+00:30:57,020 --> 00:31:08,300
+I'm saying I'm taking the J column of the decoder weight matrixx‚ and that column is a feature direction associated with that particular． 
+我是说我正在获取解码器权重矩阵的J列，而该列是与该特定相关联的特征方向˳
+
+211
+00:31:09,200 --> 00:31:11,830
+Like this is hard． 
+像这样很难˳
+
+212
+00:31:13,380 --> 00:31:28,120
+Then we know all that this will‚ then this ctor would have a lot of contribution to the reconstruction just through the proof． 
+那么我们就知道所有这些都会发生，那么这个ctor就会通过证明对重建做出很大的贡献˳
+
+213
+00:31:29,020 --> 00:31:35,200
+Like what the reconstruction is is the weighted sum of this feature direction if it's Nor． 
+像重建是什么，如果它不是，则此特征方向的加权总和˳
+
+214
+00:31:37,420 --> 00:31:41,060
+To have more contribution to the reconstruction． 
+为重建做出更多贡献˳
+
+215
+00:31:41,060 --> 00:31:47,620
+And in that sense‚ it's going to be jade plant latent‚ is important． 
+在这种感知下，它将是潜在的玉石植物，这很重要˳
+
+216
+00:31:58,900 --> 00:31:58,930
+Okay? 
+好吗？
+
+217
+00:32:01,360 --> 00:32:10,860
+Maybe assumption we make is that we assume that feature is exclusive to one model． 
+也许我们所做的假设是，我们假设该功能是一种模型所独有的˳
+
+218
+00:32:10,860 --> 00:32:19,980
+It is is really small for reconstructing one models representation‚ but really high． 
+对于重建一个模型的表示来说，它非常小，但非常高˳
+
+219
+00:32:22,000 --> 00:32:33,230
+And nothing of hyperbolicus‚ we just assume if this decoder a‚ it goes to 0‚ then J is． 
+并且没有双曲，我们只是假设如果这解码器a，它变为0，那么J就是˳
+
+220
+00:32:35,310 --> 00:32:39,600
+Be a another way around if the norm or． 
+如果是常态或者另一种方式˳
+
+221
+00:32:41,910 --> 00:32:53,180
+Was going to of the of the column if metric for the model B goes to zero‚ we assume it's a exclusive． 
+如果模型B的度量变为零，我们假设它是互斥的˳
+
+222
+00:32:53,290 --> 00:32:56,530
+And that's kind of embraced here so． 
+这在这里得到了认可˳
+
+223
+00:33:00,000 --> 00:33:08,812
+One thing that I kind of do for myself‚ I imagine‚ what do these two‚ whether these two norms are the same? 
+我为自己做的一件事是，想象一下，这两个规范是什么，这两个规范是否相同？
+
+224
+00:33:08,812 --> 00:33:14,831
+This is going to be 0‚ difference is going to be 0‚ right? 
+这将是0，差异将是0，对吗？
+
+225
+00:33:14,831 --> 00:33:19,266
+So when this is 0‚ we assume these are shared‚ right? 
+所以当这个值为0时，我们假设这些是共享的，对吗？
+
+226
+00:33:19,266 --> 00:33:23,730
+And the norm‚ it is suggesting that they are shared． 
+而规范则表明它们是共享的˳
+
+227
+00:33:23,730 --> 00:33:30,760
+If this is one‚ then the this one is going to be? 
+如果这是一个，那么这个将是什么？
+
+228
+00:33:35,980 --> 00:33:38,716
+We are going to have something -0． 
+我们会有一些-0˳
+
+229
+00:33:38,716 --> 00:33:39,856
+So it's something． 
+所以这是件事情˳
+
+230
+00:33:39,856 --> 00:33:42,301
+And we have positive． 
+我们有积极的˳
+
+231
+00:33:42,301 --> 00:33:44,866
+Then we are going to have the same value here． 
+那么我们将在这里拥有相同的价值˳
+
+232
+00:33:44,866 --> 00:33:46,363
+I'm going to cancel out． 
+我要取消˳
+
+233
+00:33:46,363 --> 00:33:51,812
+So I'm going to have 1‚ 1 plus 1 is two divided by 2 is one‚ right? 
+所以我要做1，1加1是2除以2是1，对吗？
+
+234
+00:33:51,812 --> 00:33:57,760
+So now‚ but some classics likes here‚ maybe you could be better rewrite yourself out． 
+所以现在，但有些经典喜欢这里，也许你可以更好地重写自己˳
+
+235
+00:34:02,120 --> 00:34:08,160
+So we are going to cover just three options when this is． 
+所以当这个时候，我们只会涵盖三个选项˳
+
+236
+00:34:09,150 --> 00:34:09,810
+So this is one． 
+所以这是一个˳
+
+237
+00:34:12,730 --> 00:34:13,090
+Hub‚ okay． 
+Hub，好的˳
+
+238
+00:34:15,610 --> 00:34:15,650
+So? 
+所以呢？
+
+239
+00:34:18,300 --> 00:34:27,670
+We put so option one‚ let's say J A is positive and． 
+我们选择选项一，假设J A是正的˳
+
+240
+00:34:31,180 --> 00:34:32,820
+Or b equals 0． 
+或者b等于0˳
+
+241
+00:34:36,020 --> 00:34:41,180
+With this assumption here‚ we assume this is a extrus． 
+有了这个假设，我们假设这是一个extrus˳
+
+242
+00:34:46,340 --> 00:34:49,320
+We assume if this is normal‚ 0． 
+假设这是正常的，0˳
+
+243
+00:34:51,380 --> 00:34:54,216
+We assume that this is a exclusive feature． 
+我们假设这是一个独家功能˳
+
+244
+00:34:54,216 --> 00:34:56,580
+So let's see what happens with the norm． 
+让我们看看这个标准会发生什么˳
+
+245
+00:35:01,280 --> 00:35:02,930
+One over two times． 
+一次超过两次˳
+
+246
+00:35:05,000 --> 00:35:07,020
+The cold J a? 
+寒冷的J a？
+
+247
+00:35:10,610 --> 00:35:11,150
+Divided by． 
+除以˳
+
+248
+00:35:14,960 --> 00:35:18,500
+Max of these two is going to be this if this 1 is 0． 
+如果这个1为0，这两个中的最大值将是这个˳
+
+249
+00:35:23,540 --> 00:35:23,830
+Plus one． 
+加上一个˳
+
+250
+00:35:24,080 --> 00:35:25,500
+Okay‚ so now these． 
+好的，现在这些˳
+
+251
+00:35:27,940 --> 00:35:28,802
+Out‚ right? 
+出去，对吧？
+
+252
+00:35:28,802 --> 00:35:30,528
+And I get one． 
+我得到一个˳
+
+253
+00:35:30,528 --> 00:35:33,980
+So this is one plus 1 is 2． 
+所以这是1加1是2˳
+
+254
+00:35:37,420 --> 00:35:56,180
+So basically‚ what you can then do‚ if you calculate this kind of difference for every single Lent‚ if latent‚ is really close to one‚ this exercise difference of the latent is really close to one‚ then you conclude this is model A ex feature． 
+基本上，你可以做的是，如果你计算每个单独出借的差异，如果潜在的，非常接近于1，潜在的这个练习差异非常接近于1，那么你就会得出结论，这是模型的一个特征˳
+
+255
+00:35:56,220 --> 00:36:04,780
+And with model A's chat model‚ for example‚ you would say‚ sorry‚ there is also something wrong here． 
+例如，对于模型A的聊天模型，你可能会说，抱歉，这里也有问题˳
+
+256
+00:36:05,550 --> 00:36:07,230
+See that? 
+看到了吗？
+
+257
+00:36:07,710 --> 00:36:09,720
+I switch here A and B? 
+我在这里切换A和B？
+
+258
+00:36:12,100 --> 00:36:24,180
+Yeah‚ so if my A was chat only model‚ then I would say all the Las which have the relative difference close to one are the chat． 
+是的，所以如果我的A是仅限聊天的模型，那么我会说所有相对差异接近一的Las都是聊天˳
+
+259
+00:36:26,740 --> 00:36:27,400
+Two norms are similar． 
+两个规范是相似的˳
+
+260
+00:36:32,090 --> 00:36:33,780
+These are shared latents‚ right? 
+这些是共享潜伏期，对吧？
+
+261
+00:36:34,310 --> 00:36:36,320
+The importance if the norm． 
+如果是规范的重要性˳
+
+262
+00:36:38,580 --> 00:36:39,290
+They are the same then． 
+他们那时是一样的˳
+
+263
+00:36:43,020 --> 00:36:44,743
+Is this going to be shared? 
+这个会被分享吗？
+
+264
+00:36:44,743 --> 00:36:47,760
+What's the relative norm difference going to be? 
+相对的标准差会是多少？
+
+265
+00:36:51,480 --> 00:36:52,589
+One‚ okay． 
+一个，好的˳
+
+266
+00:36:52,589 --> 00:36:57,580
+And then in the third situation‚ where? 
+然后在第三种情况下，在哪里？
+
+267
+00:37:02,740 --> 00:37:08,240
+We have this thing where the norm is positive for． 
+我们有这样的事情，规范是积极的˳
+
+268
+00:37:12,070 --> 00:37:21,040
+Zero for model A‚ we assume this is where to be equals in future‚ right? 
+对于模型A，我们假设这是将来相等的地方，对吧？
+
+269
+00:37:32,200 --> 00:37:36,629
+Okay‚ so this is exactly what's written here． 
+好的，这就是这里写的内容˳
+
+270
+00:37:36,629 --> 00:37:38,240
+Keep in mind this． 
+记住这一点˳
+
+271
+00:37:44,200 --> 00:37:59,010
+Equation‚ okay‚ now that you have this relative norm difference‚ and when we have this inform interpretation‚ when value‚ this relative norm difference are one‚ we are going to say this of a． 
+方程，好的，现在你有了这个相对范数差，当我们有了这个解释，当价值，这个相对范数差为1时，我们要说a˳
+
+272
+00:38:01,020 --> 00:38:07,250
+When the relative norm is roughly 0．5‚ we are going to say it's a shared feature． 
+当相对范数大约为0．5时，我们就说这是一个共享特征˳
+
+273
+00:38:07,250 --> 00:38:11,740
+When it's a the exposing feature． 
+当它是一个暴露特征时˳
+
+274
+00:38:11,750 --> 00:38:18,180
+So here you can make a histogram where you have． 
+所以在这里你可以制作一个直方图˳
+
+275
+00:38:21,680 --> 00:38:28,175
+Basically account of number of features that have certain relatable difference． 
+基本上考虑具有一定相关差异的特征数量˳
+
+276
+00:38:28,175 --> 00:38:42,190
+You can see that a lot of them are shared‚ which is to be expected if you have two model versions like check and base‚ you do expect that load the share‚ but you can then see in this tail end‚ you will have features． 
+你可以看到它们中的很多是共享的，如果你有两个模型版本，如check和base，这是可以预料的，你确实期望加载共享，但你可以在结尾看到你将拥有功能˳
+
+277
+00:38:42,190 --> 00:38:49,570
+And here‚ the values are really small‚ so you can't quite see them that are that have the relative norm difference one or close to 0． 
+在这里，这些值非常小，所以你不能完全看到它们的相对范数差是1或接近0˳
+
+278
+00:38:50,110 --> 00:38:58,860
+And this is where you zoom in and look‚ look for your chat only or based on features or one of these specific model． 
+这是您放大和查看的地方，仅查找您的聊天或基于功能或这些特定模型之一˳
+
+279
+00:39:01,080 --> 00:39:15,350
+Again‚ in this paper‚ they are contrasting L 1 cross holders for window you parts that with okay‚ but have is part and one can in the loss and they show that here you will have false positive． 
+再次，在本文中，他们对比了窗口的l1个交叉持有者，其中一部分是好的，但还有一部分和一个可以在损失中，他们表明在这里你会有假阳性˳
+
+280
+00:39:15,850 --> 00:39:23,230
+We will have latents whose relative norm difference is going to be close to one‚ but those aren't really check acidic features． 
+我们将有相对范数差接近于1的潜伏期，但这些并不是真正的酸性特征˳
+
+281
+00:39:23,980 --> 00:39:27,698
+If you use Batch Top K‚ you don't want to have this problem． 
+如果您使用批量Top K，您不希望遇到此问题˳
+
+282
+00:39:27,698 --> 00:39:30,886
+I decided not to go in that level of detail． 
+我决定不详细到那种程度˳
+
+283
+00:39:30,886 --> 00:39:55,567
+It's just a lot more matte‚ but they define these two values you see‚ and these values tell whether something is truly chat specific or model a specific‚ and they see that some of the latents that were placed in this interval where the relative known difference is close to one‚ then don't have these satisfactory values‚ which ensure these unity features． 
+它只是更多的遮光，但他们定义了这两个值，这些值告诉你某个东西是真正的聊天特定的还是模型特定的，他们看到一些放置在这个间隔中的潜伏期，其中相对已知的差异接近于一个，那么就没有这些令人满意的值，这可以确保这些统一特征˳
+
+284
+00:39:55,567 --> 00:40:16,900
+In this way‚ they figure it out that the L 1 crosscode has falsest square vegetable K did not‚ so takeaway is used cross quo now that you have basically now that you have this northern difference‚ you can zoom in and look which latents are having． 
+通过这种方式，他们发现L 1交叉编码具有最虚假的方形蔬菜K没有，所以外卖被使用cross quo，现在你基本上已经有了这个北方差异，你可以放大并查看哪些潜伏期正在发生˳
+
+285
+00:40:17,820 --> 00:40:20,823
+Let the norm difference goes to one． 
+让标准差异变为1˳
+
+286
+00:40:20,823 --> 00:40:28,720
+So if you look into all of those latents‚ and this gives you a set of lengthens． 
+所以，如果你观察所有这些潜伏期，这会给你一组延长的潜伏期˳
+
+287
+00:40:32,810 --> 00:40:34,160
+Are any exclusive? 
+有排他性吗？
+
+288
+00:40:38,110 --> 00:40:39,730
+What am I missing here for? 
+我在这里错过了什么？
+
+289
+00:40:45,180 --> 00:40:47,660
+I'm going to go back to table 1 5． 
+我要回到表1 5˳
+
+290
+00:40:51,800 --> 00:40:53,447
+Yeah‚ what the latency mean? 
+是的，延迟是什么意思？
+
+291
+00:40:53,447 --> 00:40:54,820
+Your description? 
+你的描述？
+
+292
+00:40:54,820 --> 00:40:56,467
+Yeah‚ the description． 
+是的，描述˳
+
+293
+00:40:56,467 --> 00:40:57,840
+So what can I do? 
+那我能做什么呢？
+
+294
+00:40:59,650 --> 00:41:03,680
+E watch out which part of A or the feature? 
+注意A或功能的哪一部分？
+
+295
+00:41:07,200 --> 00:41:09,430
+Over there‚ instead of detection． 
+在那里，而不是检测˳
+
+296
+00:41:11,980 --> 00:41:17,380
+Like where we kind of tell LMS or the different ways we use to learn what the feature description should be． 
+就像我们告诉LMS的地方或者我们用来学习功能描述应该是什么的不同方式˳
+
+297
+00:41:17,480 --> 00:41:18,707
+So descriptions‚ right? 
+所以是描述，对吧？
+
+298
+00:41:18,707 --> 00:41:21,513
+So feature description‚ that's the word you are looking for． 
+所以功能描述，这就是你要找的词˳
+
+299
+00:41:21,513 --> 00:41:23,920
+And you got exactly． 
+你得到了确切的˳
+
+300
+00:41:26,170 --> 00:41:29,680
+So we had as a final stage of essays‚ right? 
+所以我们有一个论文的最后阶段，对吧？
+
+301
+00:41:30,340 --> 00:41:32,020
+We found maybe latent‚ right? 
+我们可能发现了潜伏的东西，对吧？
+
+302
+00:41:32,020 --> 00:41:33,700
+But they're just latents． 
+但它们只是潜伏期˳
+
+303
+00:41:33,700 --> 00:41:35,940
+We don't know what they actually means． 
+我们不知道它们到底是什么意思˳
+
+304
+00:41:35,940 --> 00:41:49,460
+So we need to assign meaning to them‚ same way we assign feature description to the latency in AZ as we can use the same methodology here to describe what these latents are‚ right? 
+所以我们需要为它们分配含义，就像我们为AZ中的延迟分配特征描述一样，我们可以使用相同的方法来描述这些潜在的是什么，对吧？
+
+305
+00:41:49,460 --> 00:41:52,660
+And here you could have immediately． 
+在这里，你可以立刻拥有˳
+
+306
+00:41:55,520 --> 00:41:57,856
+But you have 100000 of them． 
+但是你有100000个˳
+
+307
+00:41:57,856 --> 00:42:04,020
+And maybe through this filter in your‚ So why waste resources? 
+也许通过这个过滤器，那么为什么要浪费资源呢？
+
+308
+00:42:04,460 --> 00:42:06,040
+Because those are all element calls． 
+因为这些都是元素调用˳
+
+309
+00:42:08,930 --> 00:42:11,780
+Of these‚ so remember‚ we call this ether automated． 
+其中，请记住，我们称这种为以太自动化˳
+
+310
+00:42:23,620 --> 00:42:25,966
+Are descriptions that are here‚ right? 
+这里有描述，对吗？
+
+311
+00:42:25,966 --> 00:42:30,138
+So we have things like requests for harmonical instructions． 
+所以我们有诸如谐波指令请求之类的事情˳
+
+312
+00:42:30,138 --> 00:42:38,311
+And so it suggest that‚ yeah‚ maybe I'm also missing with something． 
+所以这表明，是的，也许我也错过了一些东西˳
+
+313
+00:42:38,311 --> 00:42:42,648
+Could be I just point out here other than I expected numbers close to one． 
+可能我只是在这里指出，而不是我预期的接近一个的数字˳
+
+314
+00:42:42,648 --> 00:42:45,200
+So I think that I'm maybe showing one mind． 
+所以我认为我可能表现出了一个想法˳
+
+315
+00:42:51,460 --> 00:42:53,780
+You know‚ yeah‚ this is about communicating． 
+你知道，是的，这是关于沟通˳
+
+316
+00:42:58,410 --> 00:42:59,550
+I don't think I think that is． 
+我不这么认为˳
+
+317
+00:43:02,480 --> 00:43:06,026
+Because they wouldn't get bound between 0 and 1． 
+因为它们不会在0和1之间绑定˳
+
+318
+00:43:06,026 --> 00:43:07,040
+It's impossible． 
+这是不可能的˳
+
+319
+00:43:10,980 --> 00:43:18,050
+Themselves right here that their this function is bounded by 0 and 1‚ these histograms as well the womens． 
+它们本身就在这里，它们的函数被0和1所限定，这些直方图也被女性所限定˳
+
+320
+00:43:22,640 --> 00:43:25,791
+Here you see‚ you say it's bounded by 0 and 1． 
+在这里你可以看到，你说它的边界是0和1˳
+
+321
+00:43:25,791 --> 00:43:28,417
+So it has to be bounded by 0‚ 1． 
+所以它必须以0，1为界˳
+
+322
+00:43:28,417 --> 00:43:34,180
+And when you look at this histogram‚ then they're also bounded by 0 and 1． 
+当你看这个直方图时，它们也被0和1包围˳
+
+323
+00:43:34,620 --> 00:43:44,800
+We didn't have those extra terms in one way‚ so I think it was just a dipole in the code‚ what I recommend the board‚ so probably just deliver on． 
+我们没有那些额外的条款，所以我认为这只是代码中的一个偶极子，这是我推荐董事会的，所以可能只是兑现˳
+
+324
+00:43:48,140 --> 00:43:52,700
+Okay‚ so that's it about possible if we are out of time． 
+好的，如果我们没时间的话，这就是可能的˳
+
+325
+00:43:54,950 --> 00:43:57,010
+I want to say more about this． 
+关于这一点，我想多说一些˳

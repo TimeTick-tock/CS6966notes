@@ -1,0 +1,2864 @@
+1
+00:00:00,000 --> 00:00:09,860
+I finally we finished that paper on circuit‚ seing review of the first part of the course． 
+最后，我们完成了那篇关于电路的论文，复习了课程的第一部分˳
+
+2
+00:00:09,860 --> 00:00:13,440
+Since we are now in the last lecture before the spring break． 
+因为我们现在是在春假前的最后一节课˳
+
+3
+00:00:16,420 --> 00:00:21,020
+I don know how much time we are going to have‚ but basically I can show you how I start． 
+我不知道我们将会有多少时间，但基本上我可以向您展示我是如何开始的˳
+
+4
+00:00:23,080 --> 00:00:28,157
+So for every method we have kind of covered‚ we are going to go over from cars． 
+因此，对于我们所涵盖的每种方法，我们都将从汽车开始˳
+
+5
+00:00:28,157 --> 00:00:33,057
+You guys are gonna tell me‚ oh‚ what is this method or this assumption good for? 
+你们要告诉我，这种方法或假设有什么用？
+
+6
+00:00:33,057 --> 00:00:34,604
+What are its limitations? 
+它有什么局限性？
+
+7
+00:00:34,604 --> 00:00:38,568
+And I to discuss in a little bit like what to do then in practice? 
+我想在实践中稍微讨论一下该怎么做？
+
+8
+00:00:38,568 --> 00:00:40,940
+And you'll see‚ you know‚ there are many of these． 
+你会看到，你知道，有很多这样的东西˳
+
+9
+00:00:40,940 --> 00:00:42,880
+Those will be actually covered a lot． 
+这些实际上将被涵盖很多˳
+
+10
+00:00:43,320 --> 00:00:45,000
+So we'll see how much we cover． 
+所以我们会看看我们覆盖了多少˳
+
+11
+00:00:45,870 --> 00:00:48,470
+But that's basically what we are going to take． 
+但这基本上就是我们要采取的行动˳
+
+12
+00:00:49,200 --> 00:00:57,890
+Before I go into that paper‚ I do want to remind you of a bunch of announcements yesterday． 
+在我进入那篇论文之前，我确实想提醒你昨天的一堆公告˳
+
+13
+00:00:57,890 --> 00:01:11,260
+So every one of you now should have comments on your Google DOC for your proposal‚ depending most of you might have received a request for visions or not‚ a meeting or not‚ and so on． 
+所以现在你们每个人都应该对你的谷歌文档为你的建议发表评论，这取决于你们中的大多数人是否收到了愿景的请求，是否开会等等˳
+
+14
+00:01:11,260 --> 00:01:20,920
+If you have a meeting with me tomorrow‚ keep in mind that now I have a stack of 15 minutes meetings one after the other． 
+如果你明天要和我开会，请记住，现在我一个接一个地有一堆15分钟的会议˳
+
+15
+00:01:21,470 --> 00:01:26,010
+So you need to be ready to use those 15 minutes． 
+所以你需要准备好使用这15分钟˳
+
+16
+00:01:26,220 --> 00:01:31,050
+Well‚ just FYI‚ you can always‚ when you schedule meetings with me‚ take more than one meeting． 
+好吧，只是，当你和我安排会议时，你总是可以参加不止一次的会议˳
+
+17
+00:01:31,050 --> 00:01:36,216
+And then you have like‚ if you have it 30 minutes‚ take 2‚ 1 after the other． 
+然后你就会喜欢，如果你有30分钟，花2分钟，1分钟后另一个˳
+
+18
+00:01:36,216 --> 00:01:48,031
+So what I suggest is that to prepare just 1 slide where basically what we need to discuss is like‚ what is that you really want to do? 
+所以我的建议是只准备一张幻灯片，基本上我们需要讨论的是，你真正想做的是什么？
+
+19
+00:01:48,031 --> 00:01:54,223
+And I just want to give you my feedback of whether that sounds good so you can continue working on your project． 
+我只是想给你我的反馈，看这听起来是否不错，这样你就可以继续做你的项目了˳
+
+20
+00:01:54,223 --> 00:01:57,320
+I just want to make sure you are in a good spot tomorrow． 
+我只是想确保你明天处于一个好地方˳
+
+21
+00:01:57,380 --> 00:02:04,370
+So what I recommend is‚ you know‚ have a slide and tell in general one sentence． 
+所以我的建议是，你知道，有一个幻灯片，大体上讲一句话˳
+
+22
+00:02:04,560 --> 00:02:05,830
+This is what we are trying to achieve． 
+这就是我们正在努力实现的目标˳
+
+23
+00:02:06,580 --> 00:02:12,920
+These are the experiments we are planning for our goal‚ and I think that can take like 5 minutes and then we can have． 
+这些是我们为目标计划的实验，我认为这可能需要大约5分钟，然后我们就可以拥有了˳
+
+24
+00:02:17,280 --> 00:02:24,980
+Yeah‚ I definitely wasn't clear on what I expect from the proposal‚ so I received now． 
+是的，我肯定不清楚我对提案的期望，所以我现在收到了˳
+
+25
+00:02:30,010 --> 00:02:30,200
+It． 
+它˳
+
+26
+00:02:32,520 --> 00:02:33,720
+I get the point． 
+我明白了˳
+
+27
+00:02:33,720 --> 00:02:38,329
+But just moving forward‚ keep in mind that I'm looking for formal language． 
+但是继续前进，请记住我正在寻找形式语言˳
+
+28
+00:02:38,329 --> 00:02:42,420
+And that doesn't mean‚ oh‚ I need to use complicated words along with sentence． 
+这并不意味着，哦，我需要使用复杂的单词和句子˳
+
+29
+00:02:42,420 --> 00:02:48,306
+If anything gets the opposite‚ I want to have but clear‚ concise language‚ right? 
+如果有什么相反的情况，我想要的是清晰、简洁的语言，对吧？
+
+30
+00:02:48,306 --> 00:02:54,630
+So it is also your practice to kind of write more like scientific writing‚ right? 
+所以，你的写作方式也更像科学写作，对吗？
+
+31
+00:02:55,160 --> 00:03:10,270
+And when writing homes that have the level of many of you are working with‚ tracing sparse feature circuits and hot time code is going to come handy for that． 
+当编写具有许多人工作水平的homes时，跟踪稀疏的特征电路和热时间码将会很方便˳
+
+32
+00:03:10,740 --> 00:03:12,980
+So she shared here her reports． 
+她在这里分享了她的报告˳
+
+33
+00:03:16,710 --> 00:03:16,930
+Sorry for doing． 
+抱歉这样做了˳
+
+34
+00:03:20,420 --> 00:03:24,980
+Students have questions that can reach． 
+学生有可以触及的问题˳
+
+35
+00:03:26,220 --> 00:03:32,520
+Another thing I have noticed is that by the time I sent this announcement‚ one student had made a chpc． 
+我注意到的另一件事是，当我发送这个公告时，一名学生已经做了一个chpc˳
+
+36
+00:03:32,520 --> 00:03:34,595
+Many more have made sense there． 
+还有更多的人在那里取得了感知˳
+
+37
+00:03:34,595 --> 00:03:38,054
+So thank you for reacting to this message． 
+感谢您对这条信息的反应˳
+
+38
+00:03:38,054 --> 00:03:46,431
+Basically‚ now‚ I do request you to run something on chpc‚ and Fatima shared an announcement about that． 
+基本上，现在我确实要求你在chpc上运行一些东西，法蒂玛分享了一份公告˳
+
+39
+00:03:46,431 --> 00:03:59,980
+We would like you to do this‚ if possible‚ lay of this Friday‚ just to give you some sense of‚ you know‚ urgency if you have some other than this is impossible to‚ but the reason want to force you to run． 
+如果可能的话，我们希望你这样做，只是为了给你一些紧急的感知，如果你有其他的事情是不可能的，但原因是想强迫你逃跑˳
+
+40
+00:04:00,120 --> 00:04:07,160
+We see we really want to avoid the situation where you need to run jobs on chpc and that's the first time． 
+我们看到我们真的希望避免需要在chpc上运行作业的情况，这是第一次˳
+
+41
+00:04:09,950 --> 00:04:17,390
+When you want to run an experiment‚ you already want to have a mental model of how chpc works and what should you do to actually． 
+当你想要进行实验时，你已经想要一个关于chpc如何工作以及你应该怎么做的心理模型˳
+
+42
+00:04:22,720 --> 00:04:23,792
+So yeah‚ do that． 
+所以，是的，这样做˳
+
+43
+00:04:23,792 --> 00:04:27,280
+It should be pretty straightforward‚ you know? 
+应该很简单，你知道吗？
+
+44
+00:04:28,840 --> 00:04:41,410
+But then I have given you instructions‚ but we have a code that Ares going to run successfully scheduling the Sal job with it． 
+但是我已经给了你指示，但是我们有一个代码，可以成功地运行它来调度Sal作业˳
+
+45
+00:04:41,940 --> 00:04:51,918
+And then for what to expect next on March 23‚ which is Monday‚ you're going to submit your your intermediate report． 
+然后，对于接下来的3月23日，也就是周一，你将提交你的中间报告˳
+
+46
+00:04:51,918 --> 00:04:57,560
+And that intermediate report is basically‚ you already have questions． 
+这个中间报告基本上是，你已经有问题了˳
+
+47
+00:05:00,000 --> 00:05:15,520
+Questions we're going to answer and what we are going to do then going to pair 2 genes and you are going to read the proposal and report of the other team． 
+我们将要回答的问题，我们将要做什么，然后将要配对2个基因，你将要阅读另一个团队的提议和报告˳
+
+48
+00:05:18,790 --> 00:05:23,650
+When you come here‚ we are going to discuss with the other team‚ okay? 
+当你来这里的时候，我们会和其他团队讨论，好吗？
+
+49
+00:05:26,370 --> 00:05:29,830
+This you will try to conversation clarify anything． 
+你将尝试通过谈话澄清任何事情˳
+
+50
+00:05:33,220 --> 00:05:37,099
+Give suggestions of what you would maybe try and things like that． 
+给出你可能会尝试的建议和类似的事情˳
+
+51
+00:05:37,099 --> 00:05:55,310
+In this way‚ if I you really didn't understand why gives you a signal‚ motivation for this experiment isn't quite clear‚ and I should by the time I present this for a poster‚ I should really‚ you know‚ clarify for myself what is that I'm doing here‚ right? 
+这样，如果你真的不明白为什么会给你一个信号，这个实验的动机还不太清楚，我应该在展示这个海报的时候，给自己澄清一下我在这里做什么，对吧？
+
+52
+00:05:55,620 --> 00:05:58,786
+So you should think about it in that way． 
+所以你应该这样考虑˳
+
+53
+00:05:58,786 --> 00:06:05,120
+But after the class on Thursday‚ that Thursday‚ you are going to then submit this report． 
+但是在星期四下课之后，你就要提交这份报告˳
+
+54
+00:06:08,280 --> 00:06:12,840
+Report that the changes of the point ourselves‚ not the other students． 
+报告观点的变化是我们自己发生的，而不是其他学生˳
+
+55
+00:06:13,860 --> 00:06:17,462
+And I think that's it from the announcements here． 
+我认为这就是这里的公告˳
+
+56
+00:06:17,462 --> 00:06:20,234
+Are there any questions about any of this? 
+对此有什么问题吗？
+
+57
+00:06:20,234 --> 00:06:21,620
+This was quite a lot． 
+这是相当多的˳
+
+58
+00:06:28,980 --> 00:06:36,020
+Just to confirm‚ one suite‚ if we adapt here changes to the proposal‚ we just leave it in the dock‚ we don't resubmit． 
+只是为了确认，一个套房，如果我们在这里适应提案的更改，我们就把它留在被告席上，我们不会重新提交˳
+
+59
+00:06:36,420 --> 00:06:47,920
+Yeah‚ so‚ yeah‚ that's right for the proposal part‚ yeah‚ just let my Google DOC because‚ yeah‚ I don't need them because in the great school‚ because the story． 
+是的，所以，是的，这对于提议部分是正确的，是的，只是让我的谷歌文档，因为，是的，我不需要它们，因为在伟大的学校，因为故事˳
+
+60
+00:06:51,800 --> 00:06:57,230
+Okay‚ so my don't‚ let's get going with this． 
+好吧，我不这么认为，让我们开始吧˳
+
+61
+00:07:01,360 --> 00:07:08,466
+Remember that we are going over this paper and we are going over this paper because it's a great kind of use case． 
+请记住，我们正在研究这篇论文，我们正在研究这篇论文，因为它是一种很棒的用例˳
+
+62
+00:07:08,466 --> 00:07:12,767
+A bunch of things we have learned in the first part of this course． 
+我们在本课程的第一部分中学到了很多东西˳
+
+63
+00:07:12,767 --> 00:07:30,880
+So it's a super nice way to kind of see whether you understand things we have in talking about so far‚ basically‚ while you read the paper‚ you should have a sense of like‚ I know what here I'm kind of following why they use this method and how it was applied． 
+所以这是一个非常好的方式，看看你是否理解我们目前所谈论的内容，基本上，当你阅读论文时，你应该有这样的感知，我知道我在这里关注他们为什么使用这种方法以及它是如何应用的˳
+
+64
+00:07:31,560 --> 00:07:38,100
+So we are just going to go over it as a kind of a joint practice‚ and then we are going to go into the review． 
+所以我们只是将它作为一种联合实践进行讨论，然后我们将进行审查˳
+
+65
+00:07:38,420 --> 00:07:42,544
+So we have covered this slide‚ 1 slide about three times already． 
+所以我们已经涵盖了这张幻灯片，已经有一张幻灯片大约三次了˳
+
+66
+00:07:42,544 --> 00:07:46,080
+I did have a mistake the last time I said this． 
+上次我说这话的时候确实犯了一个错误˳
+
+67
+00:07:46,080 --> 00:07:48,884
+They‚ knowing whether they were‚ were doing no thing． 
+他们知道自己是否在做任何事情˳
+
+68
+00:07:48,884 --> 00:07:53,857
+So they made a clean run and they patch it with the car representation． 
+所以他们做了一个干净的运行，并用汽车表示修补它˳
+
+69
+00:07:53,857 --> 00:08:07,100
+And then I told you that instead using just a different of the logic of the corrects or that using this a little bit more complicated formula． 
+然后我告诉你，取而代之的是使用不同的更正逻辑，或者使用这个更复杂的公式˳
+
+70
+00:08:09,420 --> 00:08:19,560
+Even more common in the formula‚ they have notion of the clean prompt with the result r‚ so just a normal equation and a correct result‚ we have p? 
+在公式中更常见的是，它们有干净提示的概念，结果为r，所以只是一个普通方程和一个正确的结果，我们有p？
+
+71
+00:08:22,020 --> 00:08:25,040
+Arithmetic equation and result r prime． 
+算术方程和结果r素数˳
+
+72
+00:08:25,040 --> 00:08:30,737
+And then we have probability before time and probability p star after batch． 
+然后我们有时间之前的概率和批次之后的概率p星˳
+
+73
+00:08:30,737 --> 00:08:40,506
+And basically what it says is both of these sounds are going to increase if aging raises the probability of‚ right? 
+基本上它说的是，如果衰老增加了概率，这两种声音都会增加，对吧？
+
+74
+00:08:40,506 --> 00:08:42,224
+So you are noticing‚ right? 
+你注意到了，对吧？
+
+75
+00:08:42,224 --> 00:08:54,740
+Because the probability of wrong answer is being increased‚ or it decreases the probability of the just r‚ which is our C response‚ which again‚ is a signal． 
+因为错误答案的概率正在增加，或者它降低了r的概率，即我们的C响应，这又是一个信号˳
+
+76
+00:08:55,120 --> 00:08:59,980
+No‚ you want kind of both of these things to be happy． 
+不，你希望这两件事都能快乐˳
+
+77
+00:09:01,020 --> 00:09:11,990
+Kind of takeaway for you here is that remember that which function you choose for measuring change in behavior from a passion is up to you． 
+对你来说，这里的要点是，请记住，你选择哪种功能来衡量一个激情的行为变化是由你自己决定的˳
+
+78
+00:09:11,990 --> 00:09:20,040
+Now you have learned two variants‚ but if you feel like you have a third idea‚ which is particularly useful for your case． 
+现在你已经学了两个变体，但如果你觉得你有第三个想法，这对你的情况特别有用˳
+
+79
+00:09:23,810 --> 00:09:25,950
+Do something specific here． 
+在这里做一些具体的事情˳
+
+80
+00:09:27,620 --> 00:09:35,413
+We come to something that can be quite confusing given that we have these as sparse feature circuits． 
+我们遇到了一些可能非常令人困惑的事情，因为我们有这些稀疏的特征电路˳
+
+81
+00:09:35,413 --> 00:09:39,800
+And that's the idea that patching is now giving us a circuit． 
+这就是修补现在给我们一个电路的想法˳
+
+82
+00:09:40,080 --> 00:09:54,920
+And this isn't because if you are feeling a little bit confused of how did we now get the circuit thinking about Spa‚ which are you should keep in mind that they are using a whole different notion of what the circuit is． 
+这并不是因为你对我们现在是如何让电路想到水疗中心感到有点困惑，你应该记住，他们正在使用完全不同的电路概念˳
+
+83
+00:09:56,200 --> 00:10:07,180
+It is just a collection‚ a set‚ instead of like of model components that are important for specific task． 
+它只是一个集合，一组，而不是像对特定任务很重要的模型组件˳
+
+84
+00:10:09,900 --> 00:10:20,812
+Such‚ you know‚ attention head and Mpss and those that are deemed they think of as a set‚ and that's a circuit board‚ okay? 
+这样的，你知道的，注意力集中的头脑和Mpss，以及那些被认为是集合的东西，那就是电路板，好吗？
+
+85
+00:10:20,812 --> 00:10:27,180
+And then they need to do all these additional steps to actually understand what that circuit is． 
+然后他们需要做所有这些额外的步骤来真正理解那个电路是什么˳
+
+86
+00:10:27,660 --> 00:10:38,632
+And by doing this additional step‚ they will find out that for solving arithmetic tasks‚ this model is going to use that of the strike‚ okay? 
+通过这个额外的步骤，他们会发现，在解决算术任务时，这个模型将使用罢工的模型，好吗？
+
+87
+00:10:38,632 --> 00:10:45,700
+So it's really important from this first part of the course that you embrace that there are sparse feature circuits． 
+因此，从本课程的第一部分开始，您必须认识到稀疏的特征电路˳
+
+88
+00:10:45,840 --> 00:10:51,730
+And then there are just circuits where you don't care about what is a node‚ right? 
+然后还有一些电路，你并不关心什么是节点，对吧？
+
+89
+00:10:51,730 --> 00:10:58,730
+So when we say feature circuit‚ word feature‚ because node has to be feature‚ right? 
+所以当我们说特征电路，词特征时，因为节点必须是特征，对吧？
+
+90
+00:11:00,000 --> 00:11:08,660
+In Texas‚ Dallas‚ Austin‚ example feature was Texas an actual‚ you know‚ human understandable world? 
+在德克萨斯州，达拉斯州，澳大利亚，example feature是德克萨斯州一个实际的，你知道的，人类可以理解的世界？
+
+91
+00:11:10,160 --> 00:11:10,930
+Here? 
+这里？
+
+92
+00:11:10,970 --> 00:11:13,250
+Your future is an MLP head‚ right? 
+你的未来是一个MLP头，对吧？
+
+93
+00:11:13,730 --> 00:11:15,750
+It's an MLP or attention head． 
+这是一个MLP或注意头˳
+
+94
+00:11:15,810 --> 00:11:18,270
+It's much more coarse and less detail． 
+它更粗糙，细节更少˳
+
+95
+00:11:20,720 --> 00:11:29,530
+Now‚ given that collection of important components‚ which they call circuit‚ they check whether that circuit is faithful to the underlying model． 
+现在，考虑到这些重要组件的集合，他们称之为电路，他们会检查该电路是否忠实于基础模型˳
+
+96
+00:11:32,860 --> 00:11:38,000
+And to do that‚ they use this equation where we have this function． 
+为了做到这一点，他们使用这个方程，其中我们有这个函数˳
+
+97
+00:11:40,330 --> 00:11:44,760
+ML‚ which refers to the logic of the correct? 
+ML，它指的是正确的逻辑？
+
+98
+00:11:47,180 --> 00:11:53,220
+And it's normalized by the maximum log in the entire detector of． 
+它按照整个检测器的最大对数进行归一化˳
+
+99
+00:11:53,220 --> 00:11:55,988
+So if we have a correct answer‚ right? 
+如果我们有一个正确的答案，对吧？
+
+100
+00:11:55,988 --> 00:11:58,253
+The correct answer was predicted． 
+正确答案是预测的˳
+
+101
+00:11:58,253 --> 00:12:08,045
+Correct answer predict that we it has the max logic‚ and we use the token that has the max log‚ make a prediction． 
+正确的答案预测我们它具有max逻辑，并且我们使用具有max log的令牌进行预测˳
+
+102
+00:12:08,045 --> 00:12:15,230
+So whenever the answer is predicted‚ sir‚ this ML value will be one． 
+因此，每当预测到答案时，先生，这个ML值将是1˳
+
+103
+00:12:16,700 --> 00:12:26,052
+Okay‚ so now we can take this function with the circuit C with the Or here we use empty set． 
+好的，现在我们可以用电路C和空集来实现这个功能，或者在这里我们使用空集˳
+
+104
+00:12:26,052 --> 00:12:28,342
+But what we actually mean is the mean ablating． 
+但我们真正指的是平均消融˳
+
+105
+00:12:28,342 --> 00:12:30,280
+And we are going to cover all of these． 
+我们将涵盖所有这些˳
+
+106
+00:12:31,310 --> 00:12:42,580
+So first one is where we take only these important components and only using‚ then we are calculating what is the logic‚ the normalized． 
+所以第一个是我们只使用这些重要组件并仅使用，然后我们正在计算什么是逻辑，归一化˳
+
+107
+00:12:43,500 --> 00:12:53,804
+So for example‚ here‚ let's say we have chosen all the MLP that have value that's 6 or higher． 
+因此，例如，在这里，假设我们选择了所有值为6或更高的MLP˳
+
+108
+00:12:53,804 --> 00:12:57,683
+So maybe this on this one to the top． 
+所以也许在这个上面˳
+
+109
+00:12:57,683 --> 00:13:09,090
+And instead of passing the input token embedding through every single one of them‚ we are going to go from here to here to here‚ and so on． 
+而不是将输入令牌嵌入通过每个令牌，我们将从这里到这里，依此类推˳
+
+110
+00:13:09,220 --> 00:13:17,300
+So input to component is the output of the previous important component‚ right? 
+所以组件的输入是前一个重要组件的输出，对吗？
+
+111
+00:13:17,790 --> 00:13:18,380
+We are skipping the videos． 
+我们正在跳过视频˳
+
+112
+00:13:20,750 --> 00:13:22,000
+No‚ that was actually wrong． 
+不，那实际上是错误的˳
+
+113
+00:13:22,290 --> 00:13:26,514
+But I just said this is I'm so sorry‚ paper． 
+但我刚才说了，我很抱歉，纸质的˳
+
+114
+00:13:26,514 --> 00:13:29,166
+Actually‚ they are not going to skip those． 
+实际上，他们不会跳过这些˳
+
+115
+00:13:29,166 --> 00:13:33,290
+They are going to just everything that's not important． 
+他们将做所有不重要的事情˳
+
+116
+00:13:33,290 --> 00:13:46,845
+So you all these‚ you know‚ like like value‚ like components corresponding to light value‚ so they are more to set the representations of those components to the mean value． 
+所以你们所有这些，你知道，就像值，就像与光值相对应的组件，所以它们更多的是将这些组件的表示形式设置为平均值˳
+
+117
+00:13:46,845 --> 00:13:51,704
+And mean value is calculated using the entire entire data set． 
+而平均值是使用整个数据集计算的˳
+
+118
+00:13:51,704 --> 00:13:54,740
+So let me just specify this a little bit． 
+让我稍微说明一下˳
+
+119
+00:13:54,900 --> 00:14:14,349
+If I say‚ let's say here my first MRP‚ not important‚ I will pass my entire data set to model and collect all the representation coming out of that MLP and I'm going to arrange them and I'm going to say this is mean version of that representation． 
+如果我说，让我们在这里说我的第一个MRP，不重要，我会将我的整个数据集传递给模型，并收集来自该MLP的所有表示，我将排列它们，我将说这是该表示的平均版本˳
+
+120
+00:14:14,349 --> 00:14:25,435
+And I'm going to override whatever that module would actually say‚ the representation of a given token in a given prompt would be with that mean of the okay． 
+我将覆盖该模块实际说的任何内容，给定令牌在给定提示中的表示形式将是 “可以” 的意思˳
+
+121
+00:14:25,435 --> 00:14:32,510
+So I'm sorry people do this in different ways for a moment here． 
+所以我很抱歉人们在这里以不同的方式做这件事˳
+
+122
+00:14:32,520 --> 00:14:49,430
+They're not like skipping everything rather they're pressing the representation for‚ but if the component wasn't important based on activation crashing‚ they are going to use mean version of the representation rather than the actual one． 
+他们不是跳过所有的东西，而是按下表示，但是如果组件基于激活崩溃并不重要，他们将使用表示的平均版本而不是实际版本˳
+
+123
+00:14:51,500 --> 00:14:55,864
+Okay‚ then we have our ML for the full model． 
+好的，那么我们有完整模型的ML˳
+
+124
+00:14:55,864 --> 00:14:58,920
+That is just a normal log． 
+这只是一个普通的日志˳
+
+125
+00:15:01,830 --> 00:15:07,380
+We get what the model would say if all of the representations are replaced with the mean version． 
+如果所有的表示都被替换为平均版本，我们得到模型会说什么˳
+
+126
+00:15:08,000 --> 00:15:14,820
+And the idea here is that this probability‚ basically‚ this is not problem specific‚ right? 
+这里的想法是，这个概率基本上不是特定于问题的，对吧？
+
+127
+00:15:14,940 --> 00:15:20,980
+We're using some average version of the data set‚ and this probability actually won't be 0． 
+我们使用的是数据集的一些平均版本，这个概率实际上不会为0˳
+
+128
+00:15:20,980 --> 00:15:35,500
+So you are checking how much the this difference between the logic when you get using circuit only is different from where but would get from the mean of planting area? 
+所以你正在检查当你仅使用电路时逻辑之间的差异与从种植面积的平均值中获得的差异有多大？
+
+129
+00:15:35,700 --> 00:15:39,672
+Maybe even this will give us somehow high probability． 
+甚至这可能会给我们很高的概率˳
+
+130
+00:15:39,672 --> 00:15:42,320
+And we do the same thing in the． 
+我们在做同样的事情˳
+
+131
+00:15:45,840 --> 00:15:51,440
+And that's it‚ so if this value is close to one‚ meaning the logic for the correct answer is similar． 
+就是这样，所以如果这个值接近于1，意味着正确答案的逻辑是相似的˳
+
+132
+00:15:54,060 --> 00:16:04,620
+When we use a circle or the full‚ that means that it suggests that the circuit is a good replacement for the original model for this material problem． 
+当我们使用一个圆圈或完整的，这意味着它表明电路是这个材料问题原始模型的良好替代品˳
+
+133
+00:16:05,220 --> 00:16:10,997
+And then we average this across 20 prong and the value stays close to one． 
+然后我们在20个叉上平均这个值，值保持在接近1˳
+
+134
+00:16:10,997 --> 00:16:15,908
+Then my circuit is behaving roughly as the pool model． 
+那么我的电路表现大致与游泳池模型一样˳
+
+135
+00:16:15,908 --> 00:16:20,298
+And that's basically what they‚ I deleted it． 
+这基本上就是他们，我删除了它˳
+
+136
+00:16:20,298 --> 00:16:28,324
+Now at the top‚ I say in this work‚ the circuit accounts for 96% of the entire models perform． 
+现在在顶部，我说在这项工作中，电路占整个模型性能的96%˳
+
+137
+00:16:28,324 --> 00:16:31,520
+So the average H value here is very‚ very close． 
+所以这里的平均H值非常接近˳
+
+138
+00:16:31,520 --> 00:16:36,980
+And that's a good signal that components they have found are a good replacement for． 
+这是一个很好的信号，表明他们发现的组件是一个很好的替代品˳
+
+139
+00:16:39,460 --> 00:16:45,520
+Okay‚ so after that have done that‚ they also additionally do linear probing． 
+好的，所以在那之后，他们还另外进行线性探测˳
+
+140
+00:16:46,310 --> 00:16:57,720
+They first freeze the model that they are using Lama three and they drain linear cuff sfis on the component of So if we． 
+他们首先冻结他们使用的模型，然后在组件上消耗线性袖带sfis，如果我们这样做˳
+
+141
+00:17:00,700 --> 00:17:10,740
+MLP in layer 20‚ position 4‚ we will take the output of that Mlt and we are going to train． 
+MLP位于第20层，位置4，我们将采用该Mlt的输出并进行训练˳
+
+142
+00:17:13,120 --> 00:17:19,840
+Those representations for we going use prompt and correct． 
+这些表示我们使用提示和正确˳
+
+143
+00:17:20,620 --> 00:17:51,571
+And the idea here is if this linear probe that's linear can predict the correct answer from this representational‚ that as always‚ the problem suggests that information was already encoded in the representation itself because we assume that a simple linear model not have the capacity to solve these ariminum tasks unless there disinformation was raised‚ they are just too weak to do this on their own． 
+这里的想法是，如果这个线性的线性探针可以从这个表征中预测正确的答案，就像往常一样，问题表明信息已经编码在表征本身中，因为我们假设一个简单的线性模型没有能力解决这些任务，除非提出虚假信息˳他们太弱了，无法自己做这件事˳
+
+144
+00:17:51,571 --> 00:17:56,140
+So there must be information in the that gives them that power． 
+所以必须有信息赋予他们这种力量˳
+
+145
+00:17:56,140 --> 00:17:59,980
+That's just a premise of linear probability in general． 
+这通常只是线性概率的前提˳
+
+146
+00:18:02,420 --> 00:18:22,940
+And what I find is that in these layers that are really high here‚ high temperatures where the symbol for equal is‚ and this mid late layers‚ the linear probe is capable of predicting the correct sensor‚ which suggests that these layers are those that encode the correct． 
+我发现在这些非常高的层中，高温是表示相等的符号，而在这些中间晚期层中，线性探针能够预测正确的传感器，这表明这些层是编码正确的˳
+
+147
+00:18:25,400 --> 00:18:36,040
+Okay‚ so now they have these components and they have information on them‚ video you‚ but they don't really have information about what these components are doing． 
+好的，现在他们有了这些组件，他们有了关于它们的信息，视频给你，但他们并没有真正了解这些组件正在做什么˳
+
+148
+00:18:36,600 --> 00:18:46,200
+And in next sequences of He‚ they are going to try to make sense of what these components are doing to say what the model overall is doing． 
+在接下来的序列中，他们将尝试感知这些组件正在做什么，以说明模型整体正在做什么˳
+
+149
+00:18:46,820 --> 00:18:52,280
+So next thing they do is yet another activation touching． 
+所以他们接下来要做的是另一个激活触摸˳
+
+150
+00:18:52,280 --> 00:19:11,754
+But instead of taking full module MLP or intention head as a thing we are catching‚ they take these modules that they found important from the previous two experiments‚ and they look at their individual Na wounds． 
+但是，他们并没有将完整的模块MLP或意图头作为我们正在捕捉的东西，而是采用了他们在前两个实验中发现重要的这些模块，并观察了他们的个体创伤˳
+
+151
+00:19:11,754 --> 00:19:17,912
+And then they do activation patching per neuron in these representations． 
+然后他们在这些表征中对每个神经元进行激活修补˳
+
+152
+00:19:17,912 --> 00:19:23,650
+Quick question‚ just to see whether you remember what you were talking about last time． 
+快速的问题，看看你是否还记得上次你在说什么˳
+
+153
+00:19:24,640 --> 00:19:26,720
+What is the challenge here? 
+这里的挑战是什么？
+
+154
+00:19:26,730 --> 00:19:39,206
+Why would they want to take only the important than all modules and check everyone in every single module to be really slow? 
+为什么他们想要只取比所有模块都重要的模块，并检查每个模块中的每个人都很慢？
+
+155
+00:19:39,206 --> 00:19:43,536
+Really slow‚ yeah‚ really slow and really expensive‚ right? 
+真的很慢，是啊，很慢，而且很贵，对吧？
+
+156
+00:19:43,536 --> 00:19:46,320
+So maybe you don't even have resources． 
+所以也许你甚至没有资源˳
+
+157
+00:19:48,620 --> 00:19:57,814
+But it kind of comes down to slowness because at least you have a Cpu's a very‚ very long time． 
+但这有点归结为缓慢，因为至少你有一个Cpu是非常非常长的时间˳
+
+158
+00:19:57,814 --> 00:20:17,290
+So you kind of this pre filtering of components is really important here because just doing activation patching on a level of neurons for all the neurons would be to‚ so they do the same thing we have done with the full component with no． 
+所以组件的预过滤在这里真的很重要，因为只是在所有神经元的水平上进行激活修补，它们就像我们对整个组件所做的一样，没有˳
+
+159
+00:20:19,960 --> 00:20:26,500
+One thing they found is that we have a different operator plus min． 
+他们发现的一件事是我们有不同的运算符加上min˳
+
+160
+00:20:28,670 --> 00:20:33,270
+For different operator‚ they find different neurons accurate have． 
+对于不同的操作者，他们发现不同的神经元准确地有˳
+
+161
+00:20:35,900 --> 00:20:39,097
+Neurons specializing for the opera． 
+专攻歌剧的神经元˳
+
+162
+00:20:39,097 --> 00:20:42,300
+So they were doing analysis per oper‚ right? 
+所以他们每个都在做分析，对吧？
+
+163
+00:20:42,330 --> 00:20:53,830
+So here I think that they are looking only maybe at the I'm not sure‚ but here you can see how they have four lines for． 
+所以在这里我认为他们只是在看也许我不确定，但在这里你可以看到他们有四行˳
+
+164
+00:20:57,400 --> 00:21:05,400
+From this plot‚ what you can see is what is the patching effect of patching a me? 
+从这个图中，您可以看到修补我的修补效果是什么？
+
+165
+00:21:05,650 --> 00:21:07,640
+This is a neuron this． 
+这是一个神经元˳
+
+166
+00:21:07,810 --> 00:21:11,890
+And what you can see is that some of them have much higher values‚ right? 
+你可以看到的是，其中一些具有更高的价值，对吧？
+
+167
+00:21:14,020 --> 00:21:16,250
+That we deem to be more important‚ right? 
+我们认为更重要的东西，对吧？
+
+168
+00:21:18,820 --> 00:21:24,883
+Also here you can see like the same metric of base that we were using before． 
+在这里，您还可以看到我们之前使用的相同基准度量˳
+
+169
+00:21:24,883 --> 00:21:33,626
+Again‚ now you can define circuit out and you can use the same equation as we did before at the y axis． 
+再次强调，现在您可以定义电路输出，并且可以使用与之前在y轴处相同的方程˳
+
+170
+00:21:33,626 --> 00:21:41,562
+Here you are C‚ I do higher means closer to what the model is doing and what is desirable． 
+在这里你是C，I do更高意味着更接近模型正在做的事情以及期望的事情˳
+
+171
+00:21:41,562 --> 00:21:45,310
+And here is that a fraction of neurons we are using perly． 
+这里是我们正在使用的一小部分神经元˳
+
+172
+00:21:45,920 --> 00:22:09,320
+What you can see is that here‚ acceptable amount‚ when we hit 1% of neurons‚ we are already recovering most of the models we so for all of the operands except for the multiplication‚ we see that we need roughly 1．5% of the neurons to be able to recover the model's behavior． 
+你可以看到的是，在这里，可以接受的数量，当我们达到1% 的神经元时，我们已经恢复了大多数模型，所以对于除了乘法之外的所有操作数，我们看到我们需要大约1．5% 的神经元才能恢复模型的行为˳
+
+173
+00:22:14,160 --> 00:22:25,810
+So what they do next is that there are like conclusions so far is we have neurons are specializing for doing this a requesting． 
+所以他们接下来要做的是，到目前为止，我们有专门从事此请求的神经元得出类似的结论˳
+
+174
+00:22:28,100 --> 00:22:41,807
+Insert these prompts‚ that's okay‚ But we don't still have a level of like‚ what are‚ what is the model like what we say? 
+插入这些提示，没关系，但我们仍然没有像我们说的模型那样的级别？
+
+175
+00:22:41,807 --> 00:22:46,836
+Well‚ there are 1．5% of the neurons that can do division． 
+有1．5% 的神经元可以分裂˳
+
+176
+00:22:46,836 --> 00:22:50,980
+That's a nice finding‚ but I will tell you exactly what the model． 
+这是一个很好的发现，但我会告诉你确切的模型是什么˳
+
+177
+00:22:51,420 --> 00:22:57,460
+And now you need to do extra steps to understand the behavior of those neurons． 
+现在你需要做额外的步骤来理解这些神经元的行为˳
+
+178
+00:23:01,500 --> 00:23:05,530
+You see what is the output of of about? 
+你知道的输出是什么吗？
+
+179
+00:23:06,160 --> 00:23:10,627
+So usually we have the MLP aligned with the linear layer． 
+所以通常我们将MLP与线性层对齐˳
+
+180
+00:23:10,627 --> 00:23:35,226
+So this is just equation of p linear terms that in a transformer block‚ and they just rearrange it a little bit like this and write it in this way because‚ and I don't want to go too much into detail of this‚ you can see this as like a querying value vector is and then that are bright． 
+所以这只是一个变压器块中p线性项的方程，他们只是像这样重新排列它，然后用这种方式写出来，因为我不想过多地详细说明这一点˳你可以看到这就像一个查询值向量，然后它是明亮的˳
+
+181
+00:23:35,226 --> 00:23:36,335
+Look at the stream． 
+看看小溪˳
+
+182
+00:23:36,335 --> 00:23:39,660
+And those before them are having different behaviors． 
+而在他们之前的人有不同的行为˳
+
+183
+00:23:40,270 --> 00:23:42,090
+Not entirely important here． 
+在这里并不完全重要˳
+
+184
+00:23:42,200 --> 00:23:46,230
+What I want you to remember is how are they describing this? 
+我想让你记住的是他们是如何描述这件事的？
+
+185
+00:23:47,220 --> 00:23:57,597
+And this is basically what we have learned in this course before‚ so they are going to collect atop active for every single neuron individually． 
+这基本上就是我们之前在这门课程中学到的，因此它们将分别为每个神经元收集活动信息˳
+
+186
+00:23:57,597 --> 00:24:03,000
+They are going to record the activation across the this A grip． 
+他们将记录整个手柄的激活情况˳
+
+187
+00:24:03,000 --> 00:24:07,620
+So you have first operand and second operands． 
+所以你有第一个操作数和第二个操作数˳
+
+188
+00:24:07,620 --> 00:24:13,270
+If you have addition‚ the first operand and the second imagine together． 
+如果你有加运算，第一个操作数和第二个操作数想象在一起˳
+
+189
+00:24:13,270 --> 00:24:42,580
+So they are restricting occurrence to be from 0 to 990‚ and then this value means that if I have addition and I have a not necessarily addition in any operation‚ and I have the this high value‚ when I have 101 hundred‚ you can visualize when the neuron is activated using． 
+因此，它们将出现次数限制在0到990之间，然后此值意味着如果我在任何操作中都有加法，并且我的值很高，当我达到10100时，您可以使用可视化神经元被激活的时间˳
+
+190
+00:24:45,740 --> 00:24:48,960
+And it's going to be really fun for you． 
+这对你来说将会非常有趣˳
+
+191
+00:24:51,420 --> 00:24:58,560
+Visualize this activation heat map‚ and then you can themselves manually observe what's going on in this． 
+可视化这个激活热图，然后你可以自己手动观察其中发生了什么˳
+
+192
+00:25:00,000 --> 00:25:12,806
+I actually welcome you to go and check the I really‚ really‚ I know when I say do something without forcing you‚ usually you don't have time for it‚ but I would really welcome you to read this paper． 
+我实际上欢迎你去检查我真的，真的，我知道当我说在不强迫你的情况下做某事时，通常你没有时间做，但我真的欢迎你阅读这篇文章˳
+
+193
+00:25:12,806 --> 00:25:17,820
+As I said‚ it's a good way to kind see whether you understand all these methods． 
+正如我所说，这是一个很好的方式来看看你是否理解所有这些方法˳
+
+194
+00:25:17,820 --> 00:25:30,350
+But what I want you to point you to is in the appendix‚ we have something‚ we have all these nice visualizations of the kinds of‚ you know‚ they get the heat map． 
+但是我想让你指出的是，在附录中，我们有一些东西，我们有各种各样的漂亮的可视化，你知道，他们得到了热图˳
+
+195
+00:25:30,500 --> 00:25:40,546
+So this is for the Neuron 1463 level you have for this heat map． 
+这是用于此热图的神经元1463级别˳
+
+196
+00:25:40,546 --> 00:25:45,230
+So this means this is when this neuron is active or not． 
+这意味着这个神经元是否活跃˳
+
+197
+00:25:48,520 --> 00:25:50,492
+A little bit nicer patterns． 
+稍微好一点的图案˳
+
+198
+00:25:50,492 --> 00:25:59,980
+So these researchers were looking into these patterns‚ deciding what the kind of heuristic they are seeing here． 
+所以这些研究人员正在研究这些模式，决定他们在这里看到的那种启发式方法˳
+
+199
+00:26:01,120 --> 00:26:10,100
+For example‚ here‚ they say the opon 1 is a 0 to 50 or 0 200 and operating． 
+例如，在这里，他们说opon 1是0到50或0 200并且正在运行˳
+
+200
+00:26:13,680 --> 00:26:16,340
+This is always two numbers． 
+这总是两个数字˳
+
+201
+00:26:16,340 --> 00:26:18,240
+This is the set of． 
+这是一套˳
+
+202
+00:26:20,400 --> 00:26:24,960
+So two operands‚ and neither of them is higher than 900． 
+所以有两个操作数，它们都不高于900˳
+
+203
+00:26:26,480 --> 00:26:30,260
+Yeah‚ so all the problems are of the kind． 
+是的，所有的问题都是这样的˳
+
+204
+00:26:34,380 --> 00:26:37,530
+So plus‚ minus‚ multiply‚ or divide． 
+所以，加、减、乘或除˳
+
+205
+00:26:51,420 --> 00:26:55,586
+Yeah‚ let's not open that question to the skin． 
+是啊，让我们不要把这个问题公开˳
+
+206
+00:26:55,586 --> 00:26:59,760
+But there is a question of how to measure． 
+但有一个如何衡量的问题˳
+
+207
+00:27:01,970 --> 00:27:04,560
+Of this kind of circuit? 
+这种电路？
+
+208
+00:27:04,570 --> 00:27:07,640
+And there is a nice work if you are really‚ really interested． 
+如果你真的非常感兴趣，这是一件不错的工作˳
+
+209
+00:27:10,090 --> 00:27:10,760
+Find it? 
+找到了吗？
+
+210
+00:27:17,620 --> 00:27:19,980
+This one that kind of defines． 
+这是一种定义˳
+
+211
+00:27:23,020 --> 00:27:26,610
+What power operands have larger and larger digits? 
+什么幂操作数的数字更大更大？
+
+212
+00:27:26,720 --> 00:27:29,436
+So it's not about more and more rights． 
+所以这不是关于越来越多的权利˳
+
+213
+00:27:29,436 --> 00:27:33,053
+Rather‚ the rights themselves have larger digits． 
+相反，权利本身的位数更大˳
+
+214
+00:27:33,053 --> 00:27:46,391
+And if I find a circuit for certain range‚ whether that circuit will be stable and be something we observe‚ or any larger numbers they find‚ not really． 
+如果我找到一个特定范围的电路，无论这个电路是稳定的，是我们观察到的东西，还是他们找到的更大的数字，都不是真的˳
+
+215
+00:27:46,391 --> 00:27:49,806
+They don't see this general initial property． 
+他们没有看到这个一般的初始属性˳
+
+216
+00:27:49,806 --> 00:27:53,806
+The key contribution here is to define that stability． 
+这里的关键贡献在于定义这种稳定性˳
+
+217
+00:27:53,806 --> 00:28:04,560
+So you can see here how performance of Gemma decreases as the number of digits is becoming higher and higher． 
+因此，您可以在这里看到Gemma的性能如何随着数字位数的增加而降低˳
+
+218
+00:28:07,320 --> 00:28:17,769
+I hope we get to the point where we can kinds of works‚ but if you are interested‚ I recommend reading this one． 
+我希望我们能达到我们可以创作各种作品的地步，但如果你感兴趣，我建议你阅读这篇文章˳
+
+219
+00:28:17,769 --> 00:28:23,860
+Keep in mind that this transfer to sparse feature circuit because they have the notion of stability． 
+请记住，这转移到稀疏特征电路，因为它们具有稳定性的概念˳
+
+220
+00:28:26,700 --> 00:28:31,260
+And they are not assumed that the node is a feature of a component． 
+并且它们不假定节点是组件的特征˳
+
+221
+00:28:32,380 --> 00:28:43,450
+Okay‚ but just going back to this work‚ yeah‚ at one point you to kind of check these patterns to get a sense of these models are． 
+好的，回到这项工作，是的，在某一时刻，你需要检查这些模式，以获得这些模型的感知˳
+
+222
+00:28:49,760 --> 00:28:53,330
+So in this way‚ with this analysis up to here‚ they． 
+因此，通过到这里的分析，他们˳
+
+223
+00:28:55,620 --> 00:28:58,954
+Themselves manually assign a pattern to it． 
+它们自己手动为其分配模式˳
+
+224
+00:28:58,954 --> 00:29:21,720
+And then the final is to check for this specific number that‚ let's say‚ they zoom into this narrow‚ they have produced this heuristic map‚ and now they also want to see‚ well‚ if I have operance and operation that fires up‚ or in this way‚ how does it affect the logic? 
+然后最后是检查这个特定的数字，比如说，他们放大这个狭窄的范围，他们已经产生了这个启发式地图，现在他们也想看看，如果我有触发的可操作性和操作，或者以这种方式，它如何影响逻辑？
+
+225
+00:29:24,060 --> 00:29:28,220
+And this is where they use larger threats‚ where they take down memory． 
+这就是他们使用更大威胁的地方，他们会关闭内存˳
+
+226
+00:29:28,600 --> 00:29:31,932
+They take the all Di matrix． 
+他们采用所有的Di矩阵˳
+
+227
+00:29:31,932 --> 00:29:40,760
+And then you may manage to see which of the tokens will actively you be promoted or be promoted by this neuron． 
+然后你可以设法看看哪个代币会被这个神经元积极地提升或提升˳
+
+228
+00:29:40,760 --> 00:29:53,520
+And we see here that if the difference between these two options‚ 100 and 5080‚ then it promotes 158． 
+我们在这里看到，如果这两个选项之间的差异，100和5080，那么它会提升158˳
+
+229
+00:29:57,620 --> 00:30:02,573
+Okay‚ so now I have described neuron behavior． 
+好的，现在我已经描述了神经元的行为˳
+
+230
+00:30:02,573 --> 00:30:07,940
+We have said what kind of operand this neuron fires up? 
+我们已经说过，这个神经元会触发什么样的操作数？
+
+231
+00:30:07,940 --> 00:30:12,500
+What is the heuristic that can be used to describe the behavior? 
+可以用来描述行为的启发式方法是什么？
+
+232
+00:30:12,930 --> 00:30:30,920
+And using logic plants‚ we have also seen which tokens in the vocab this neuron‚ this firing level‚ and that all led them to kind of this big procedure here to kind of do global relation． 
+并使用逻辑植物，我们还看到了这个神经元中的哪些标记，这个放电水平，这一切都导致了他们在这里进行全局关系的大过程˳
+
+233
+00:30:32,300 --> 00:30:34,800
+So let me walk you what's going on here． 
+让我告诉你这里发生了什么˳
+
+234
+00:30:35,350 --> 00:31:04,517
+You have all these manuals‚ then layer 929‚ index 2008‚ you can write it in this way that comes from just rearranging this equation‚ then you can get the acting pattern like you see here‚ we just see if I have operands in this range‚ operands in this range‚ this shows the value of these neurons activation． 
+你有所有这些手册，然后是第929层，index 2008，你可以用这种方式来编写它，只需重新排列这个方程，然后你就可以得到像你在这里看到的行动模式，我们只是看看我是否有这个范围内的操作数，操作数在这个范围内，这显示了这些神经元激活的价值˳
+
+235
+00:31:04,517 --> 00:31:22,130
+So this is the‚ and then we have also‚ which logs is this nail roll‚ and then we want activating 4 and then turn on this large inspector again‚ this heat map． 
+这就是，然后我们还有这个钉子卷的日志，然后我们想要激活4，然后再次打开这个大型检查器，这个热图˳
+
+236
+00:31:24,820 --> 00:31:29,380
+So I'm trying to remember what they are showing you in this‚ this feedback here． 
+所以我试图记住他们在这里向您展示的反馈˳
+
+237
+00:31:32,410 --> 00:31:41,330
+Okay‚ so again‚ they have four operand ranges and they show I'm trying． 
+好的，那么再说一遍，它们有四个操作数范围，它们显示我正在尝试˳
+
+238
+00:31:46,140 --> 00:31:53,440
+I'm not sure whether they focus on just the single logics here and hand show this logic value． 
+我不确定他们是否只关注单个逻辑，并展示这个逻辑价值˳
+
+239
+00:31:53,440 --> 00:31:55,240
+I guess that would make sense． 
+我想这会让感知˳
+
+240
+00:31:55,240 --> 00:32:03,430
+So they know what the correct sensor is real‚ but I'm not quite sure what they are doing to produce this heat map． 
+所以他们知道正确的传感器是真实的，但我不太确定他们在做什么来制作这个热图˳
+
+241
+00:32:04,550 --> 00:32:19,480
+What I can tell you that the point here is that heat map here kind of shows what are the output logics that these nemrod is activating four relative from different choices of Cop and one． 
+我可以告诉你的是，这里的重点是热图有点显示了这些尼姆罗德正在激活的输出逻辑是什么，相对于不同的警察选择和一个˳
+
+242
+00:32:23,000 --> 00:32:32,410
+And the idea is that with this multiplication‚ they are kind of capturing not only we kind of‚ you know‚ operate this． 
+这个想法是，通过这种乘法，它们不仅捕捉到我们的操作˳
+
+243
+00:32:34,620 --> 00:32:39,420
+Neuron is activating for‚ but also what kind of tokens is promoted? 
+神经元被激活是为了什么，但什么样的代币被提升了呢？
+
+244
+00:32:39,700 --> 00:32:52,690
+And once they have these product of these two heat maps‚ they can then pass a lot of data and see what are the problems for which this resulting heat map is active for． 
+一旦他们有了这两个热力图的乘积，他们就可以传递大量数据，并查看由此产生的热力图存在哪些问题˳
+
+245
+00:32:52,850 --> 00:32:54,210
+And they can rank the brands． 
+他们可以对品牌进行排名˳
+
+246
+00:32:56,760 --> 00:32:57,670
+Okay‚ so they do that． 
+好的，所以他们这样做˳
+
+247
+00:32:58,140 --> 00:33:08,780
+Then they also separated from all the this lighting‚ this process they have． 
+然后它们也与所有这些照明分离，它们拥有的这个过程˳
+
+248
+00:33:10,820 --> 00:33:15,980
+Such as the difference of the occurrences in this ring． 
+例如这个环中出现的差异˳
+
+249
+00:33:17,340 --> 00:33:21,900
+And they are just checking whether any prompt in their data have fixed this characteristic． 
+他们只是在检查他们数据中的任何提示是否已经修复了这个特征˳
+
+250
+00:33:22,510 --> 00:33:27,520
+And then they check‚ well‚ here they got top K‚ and here they got some． 
+然后他们检查，这里他们得到了前K，这里他们得到了一些˳
+
+251
+00:33:28,460 --> 00:33:35,040
+This is larger than some threshold‚ then they can use this information． 
+这大于某个阈值，则他们可以使用此信息˳
+
+252
+00:33:36,020 --> 00:33:40,580
+So we are going to see how they are going to use that in a second． 
+所以我们将看看他们在一秒钟内将如何使用它˳
+
+253
+00:33:45,090 --> 00:33:50,840
+So try to keep remember what we were doing so far． 
+所以尽量记住我们到目前为止在做什么˳
+
+254
+00:33:50,850 --> 00:33:59,160
+So here‚ for each correctly answered‚ they identify the heuristic type associated with them． 
+因此，在这里，对于每个正确回答，他们会识别与之相关的启发式类型˳
+
+255
+00:34:00,000 --> 00:34:05,220
+So then a late neurons with a high specification force． 
+因此，具有高规格力的晚期神经元˳
+
+256
+00:34:07,600 --> 00:34:15,580
+So basically here in step 2‚ that using this threshold over here． 
+所以基本上在步骤2中，在这里使用这个阈值˳
+
+257
+00:34:15,960 --> 00:34:18,190
+So basically． 
+基本上如此˳
+
+258
+00:34:20,560 --> 00:34:29,960
+With this threshold‚ that threshold being that that intersection being high tells them that that neurons is implementing a certain heuristic． 
+在这个阈值下，交叉点很高的阈值告诉他们神经元正在执行某种启发式方法˳
+
+259
+00:34:33,450 --> 00:34:36,740
+Which is kind of visualized with what you see on the right? 
+这有点像你在右边看到的可视化？
+
+260
+00:34:36,740 --> 00:34:49,320
+If you have this prompt‚ we can use that intersection to check whether any of the heuristics is what is prompt is actively poor‚ and we can then compare average． 
+如果您有这个提示，我们可以使用该交叉点来检查是否有任何启发式方法提示积极较差，然后我们可以比较平均值˳
+
+261
+00:34:51,420 --> 00:34:55,683
+Applying errors and see what's going on． 
+应用错误并查看发生了什么˳
+
+262
+00:34:55,683 --> 00:35:02,532
+Okay‚ so here on the sexes‚ we're seeing the number that are ablated． 
+好的，那么在性别上，我们看到的是被切除的数字˳
+
+263
+00:35:02,532 --> 00:35:06,580
+And here you can see the accuracy when those． 
+在这里你可以看到那些的准确性˳
+
+264
+00:35:10,120 --> 00:35:26,910
+And what you can kind of observe is that usually the accuracy is dropping sharply when we have a certain number of neurons of so it's not just one‚ but multiple of them． 
+你可以观察到的是，当我们有一定数量的神经元时，准确性通常会急剧下降，因此它不是一个，而是多个˳
+
+265
+00:35:26,910 --> 00:35:31,835
+And this is the key result to say‚ well‚ we have errors． 
+这是关键的结果，可以说，我们有错误˳
+
+266
+00:35:31,835 --> 00:35:39,892
+We have classified into this heuristics‚ and we observe when we are of Laing‚ few of them． 
+我们已经将其归类为启发式方法，并且我们观察到当我们在Laing时，很少有人˳
+
+267
+00:35:39,892 --> 00:35:44,340
+At the same time‚ we are losing the model's behavior． 
+同时，我们正在失去模型的行为˳
+
+268
+00:35:44,500 --> 00:35:46,850
+So there are two key things to remember here． 
+这里有两件关键的事情需要记住˳
+
+269
+00:35:47,050 --> 00:35:59,443
+They know neurons are La to‚ and they know that a certain number of them together‚ when ablated‚ will drop the models performance． 
+他们知道神经元的数量是多少，并且知道一定数量的神经元在消融后会降低模型的性能˳
+
+270
+00:35:59,443 --> 00:36:15,320
+Here‚ these two insights together suggest that this model is using a bag of heuristics‚ meaning just a set of these heuristic mean‚ just a set of these thes simultaneously to do this arithmetic． 
+在这里，这两个见解一起表明，这个模型使用了一组启发式方法，这意味着只是一组这些启发式方法，只是一组这些方法同时进行算术运算˳
+
+271
+00:36:16,530 --> 00:36:17,470
+And that's basically it． 
+基本上就是这样˳
+
+272
+00:36:21,400 --> 00:36:27,840
+Right‚ but notice how we have kind of gotten just the population level behavior‚ right? 
+没错，但请注意我们是如何得到人口水平的行为的，对吧？
+
+273
+00:36:27,840 --> 00:36:35,680
+Like we have explained what this model is doing in general when dealing with these arithmetic tasks． 
+就像我们已经解释的那样，在处理这些算术任务时，这个模型一般是怎么做的˳
+
+274
+00:36:36,120 --> 00:36:40,846
+And this is in opposition to what we got out of sparse feature circuits． 
+这与我们从稀疏特征电路中得到的相反˳
+
+275
+00:36:40,846 --> 00:36:47,606
+So with sparse feature circuits‚ remember that we have constructed by first training transcoder． 
+因此，对于稀疏特征电路，请记住我们是通过首先训练转码器来构建的˳
+
+276
+00:36:47,606 --> 00:37:10,191
+Then from transcoder‚ we have built an attribution graph from‚ and then from the at-bus graph‚ we have that to get to something like this right here for a pro specific‚ for a specific prompt‚ you know how information is building up to reach． 
+然后从转码器开始，我们建立了一个归因图，然后从at-bus图开始，我们可以得到像这里这样的东西，针对特定的专业人士，针对特定的提示，你知道信息是如何建立的˳
+
+277
+00:37:10,191 --> 00:37:24,320
+The answer here is it first breaks it down into these 3 rough components from 13 tocane-saint-apre is roughly in the range of 40 of． 
+这里的答案是，它首先将其分解为这3个粗略的成分，从13个tocane-saint-apre大致在40的范围内˳
+
+278
+00:37:26,700 --> 00:37:31,520
+And this is similar heuristics kind that we have seen in this other paper． 
+这与我们在另一篇论文中看到的启发式方法类似˳
+
+279
+00:37:32,010 --> 00:37:36,890
+O is the range of this number in certain value． 
+O是此数字在特定值中的范围˳
+
+280
+00:37:37,460 --> 00:37:46,723
+You can see that we have roughly‚ roughly 50 is going to give us things like 92‚ 95． 
+你可以看到，我们大约有50个会给我们92、95个这样的东西˳
+
+281
+00:37:46,723 --> 00:38:02,120
+Again‚ this is maybe connected to logic lens result‚ where if we have two operas in a range of roughly 40 to 50‚ we then promote result that and so on． 
+再次强调，这可能与逻辑镜头结果有关，如果我们在大约40到50的范围内有两个操作数，那么我们就会推广结果，依此类推˳
+
+282
+00:38:02,120 --> 00:38:07,620
+But the point here is that we are getting this information． 
+但这里的重点是我们正在获取这些信息˳
+
+283
+00:38:07,620 --> 00:38:16,360
+It's in kind of more direct access to that information‚ and it's at the instant． 
+它在某种程度上更直接地访问那些信息，而且是即时的˳
+
+284
+00:38:18,400 --> 00:38:31,860
+You could from this other one also get the incidence level insight into which‚ you know‚ heuristics are important because you can tell which neurons are important for a given prompt． 
+你也可以从这个另一个中获得发生水平的洞察力，你知道，启发式很重要，因为你可以告诉哪些神经元对给定的提示很重要˳
+
+285
+00:38:31,860 --> 00:38:38,870
+And you know‚ you have described the behavior of the neurons‚ but it still doesn't give you this noise float‚ right? 
+你知道，你已经描述了神经元的行为，但它仍然没有给你这种噪音漂浮，对吧？
+
+286
+00:38:38,870 --> 00:38:45,452
+Like if you just give you how these three neurons live here‚ they behave like this for this prompt． 
+就像如果你只是告诉你这三个神经元是如何生活在这里的，它们在这个提示下的行为是这样的˳
+
+287
+00:38:45,452 --> 00:38:53,960
+And you can maybe assume that because‚ okay‚ this neuron appears in a lower layer than the next one‚ there is some kind of flow‚ right? 
+你可以假设，因为这个神经元出现在比下一个神经元更低的层次，所以存在某种流动，对吧？
+
+288
+00:38:57,020 --> 00:39:19,635
+This kind of wrap‚ this edge between one feature to another has‚ a very‚ very‚ very specific meaning that we have derived with a lot of me‚ which is to say‚ if I am reaching pre-activation of this target feature‚ if I change the activation of this source feature‚ how will that activation change? 
+这种环绕，一个功能到另一个功能之间的这种边缘，具有非常非常具体的含义，我们已经从我身上推导出了很多东西，也就是说，如果我达到了这个目标功能的预激活，如果我改变了这个源功能的激活，这种激活将如何改变？
+
+289
+00:39:19,635 --> 00:39:22,822
+And we have that edge wave with the previous work． 
+并且我们在之前的工作中拥有边缘波浪˳
+
+290
+00:39:22,822 --> 00:39:29,070
+You don't have that you have‚ you just assume there is an edge and you have no weight between them． 
+你没有你拥有的，你只是假设有一个边缘，你在它们之间没有重量˳
+
+291
+00:39:29,500 --> 00:39:31,846
+So it's quite‚ quite different． 
+所以它是非常非常不同的˳
+
+292
+00:39:31,846 --> 00:39:41,560
+But interestingly‚ both works came to the same conclusion‚ which is that the models are using some kind of heuristic students． 
+但有趣的是，这两部作品都得出了相同的结论，即模型使用了某种启发式学生˳
+
+293
+00:39:44,440 --> 00:39:53,063
+So to kind of contrast these two works‚ we have activation patch‚ and you use it for surface． 
+因此，为了对比这两种工作，我们有激活补丁，您可以将其用于表面˳
+
+294
+00:39:53,063 --> 00:39:57,520
+To do that‚ we first use the activation Pat to find more important． 
+要做到这一点，我们首先使用激活Pat来找到更重要的东西˳
+
+295
+00:40:00,000 --> 00:40:08,498
+But to find neurons‚ then the manual inspected these neurons to describe the heuristics‚ amplify them． 
+但是为了找到神经元，手册检查了这些神经元以描述启发式方法，放大它们˳
+
+296
+00:40:08,498 --> 00:40:12,880
+We can classify neurons in． 
+我们可以将神经元分类˳
+
+297
+00:40:15,020 --> 00:40:26,492
+Overlap and we have checked what's going on when we updated these with the Spar feature circuits‚ we are doing everything from bottom to up‚ right? 
+重叠，我们已经检查了当我们用晶石功能电路更新这些时发生了什么，我们正在从下到上做所有事情，对吗？
+
+298
+00:40:26,492 --> 00:40:31,182
+Like we are training the replacement model general‚ right? 
+就像我们正在训练替换模型一样，对吗？
+
+299
+00:40:31,182 --> 00:40:41,560
+Like not‚ you can think about activation patching results and components you get as a replacement model‚ but it's a per instance． 
+就像不是这样，你可以考虑将激活修补结果和组件作为替代模型，但它是针对每个实例的˳
+
+300
+00:40:45,080 --> 00:40:51,120
+Here you are training the A replacement model for the entirety of model in general． 
+在这里，您正在训练整个模型的替换模型˳
+
+301
+00:40:51,120 --> 00:41:12,444
+And then for a specific form‚ you create a motional graph‚ you prune it‚ you will be chosen to supernodes‚ you read computational flow manually with partners‚ work automatically‚ and then they also do some kinds of validations with patching and knocking out‚ for example‚ in a Dallas textile． 
+然后对于一个特定的表单，你创建一个动态图表，修剪它，你将被选择到超级节点，你与合作伙伴手动读取计算流程，自动工作，然后他们也会进行一些类型的验证，例如在dalas纺织品中˳
+
+302
+00:41:12,444 --> 00:41:24,740
+So in example‚ this oneb‚ maybe Texas was California‚ and then you expect the output to change from Muslim to Sacramento． 
+所以举个例子，这个oneb，可能是德克萨斯州是加利福尼亚州，然后你预计产量会从穆斯林变成萨克拉门托˳
+
+303
+00:41:25,100 --> 00:41:36,371
+So they are also doing various things to see‚ okay‚ now that they have this computational‚ can they steer a good paper‚ okay? 
+所以他们也在做各种各样的事情来看看，好吧，现在他们有了这个计算能力，他们能否指导一篇好论文，好吗？
+
+304
+00:41:36,371 --> 00:41:41,996
+So‚ this is also just a little bit more of the breakdown． 
+所以，这也只是更多的细分˳
+
+305
+00:41:42,348 --> 00:41:55,313
+Also notice that the first line of work is used with neurons‚ which may suffer for all semanticity 24‚ 2 things at the same time． 
+还注意到，第一行的工作与神经元一起使用，这可能会同时受到所有语义24，2件事情的影响˳
+
+306
+00:41:55,313 --> 00:42:09,758
+I‚ with people had kind of given insights into the global and as far as we circuits are starting from individual prompts because so far they didn't produce automatic way of producing these． 
+我，随着人们对全球和我们电路从个人提示开始的洞察，因为到目前为止，他们还没有产生自动产生这些提示的方式˳
+
+307
+00:42:09,758 --> 00:42:11,700
+They couldn't do the population． 
+他们无法控制人口˳
+
+308
+00:42:14,350 --> 00:42:14,870
+I think? 
+我想？
+
+309
+00:42:17,480 --> 00:42:24,200
+Here SC ability‚ this was down to thousands of neurons． 
+在这里，SC能力下降到数千个神经元˳
+
+310
+00:42:25,320 --> 00:42:43,460
+Sparse feature circuits‚ again‚ are labor intensive because they require this manual part‚ which I will soon change in terms of the detail‚ sparse features better because they give you the snacks‚ computational flow with edges having very particular meaning and weight． 
+稀疏特征电路再次强调，是劳动密集型的，因为它们需要这个手动部分，我很快就会在细节方面进行更改，稀疏特征更好，因为它们为您提供了具有非常特定意义和重量的边缘计算流程˳
+
+311
+00:42:44,180 --> 00:42:49,000
+And then in terms of faithfulness to the you know． 
+然后在忠诚方面，你知道的˳
+
+312
+00:42:54,400 --> 00:43:02,579
+Like cross layer transcoder‚ With Cross Layer Transcoder‚ we have the problem of that an open research problem‚ right? 
+就像跨层转码器一样，使用跨层转码器，我们面临的问题是一个开放的研究问题，对吗？
+
+313
+00:43:02,579 --> 00:43:11,080
+Like these cross layer transcoders are perfected‚ we are starting with something that already at the first place has a little bit of lawsuit． 
+就像这些跨层转码器已经完美一样，我们正在从已经有点官司的东西开始着手˳
+
+314
+00:43:14,020 --> 00:43:18,580
+Okay‚ so with all of that‚ I want to shift gears． 
+好的，所以在所有这些情况下，我想换个方向˳
+
+315
+00:43:19,440 --> 00:43:26,660
+I will ask you whether you have any questions‚ but I just want to say that this is basically a bunch of stuff we have learning in the course． 
+我会问你是否有任何问题，但我只想说这基本上是我们在课程中学到的一堆东西˳
+
+316
+00:43:27,340 --> 00:43:30,460
+We still have lots to do． 
+我们还有很多事情要做˳
+
+317
+00:43:30,460 --> 00:43:36,757
+I want over review what we have learned together before we move forward． 
+在我们继续前进之前，我想复习我们一起学到的东西˳
+
+318
+00:43:36,757 --> 00:43:38,620
+Are there any questions? 
+有什么问题吗？
+
+319
+00:43:50,400 --> 00:43:51,540
+Here's the plan． 
+计划是这样的˳
+
+320
+00:43:52,000 --> 00:43:54,030
+We are going to do this． 
+我们将会这样做˳
+
+321
+00:44:01,600 --> 00:44:06,640
+And Black is going to help us record the ideas we have． 
+而黑色将帮助我们记录我们的想法˳
+
+322
+00:44:07,160 --> 00:44:13,200
+So my idea for this is we go from topic to topic from the beginning of this． 
+所以我的想法是我们从一开始就从一个话题到一个话题˳
+
+323
+00:44:16,480 --> 00:44:22,520
+And talk about what are the pros and cons of each thing we have learned? 
+并谈论我们所学到的每件事的利弊是什么？
+
+324
+00:44:23,060 --> 00:44:26,780
+And the pros and cons are maybe not the best words． 
+并且利弊可能不是最好的词语˳
+
+325
+00:44:26,780 --> 00:44:29,823
+I mean‚ what are‚ for example‚ for pros? 
+我的意思是，比如说，对于专业人士来说是什么？
+
+326
+00:44:29,823 --> 00:44:39,138
+Let's cover also‚ if someone asks you about essays‚ should I use them? 
+让我们也看看，如果有人问你关于论文的事情，我应该使用它们吗？
+
+327
+00:44:39,138 --> 00:44:45,225
+Then we can talk about like when we would and so on to use NSA‚ right? 
+然后我们可以谈论什么时候使用NSA，对吧？
+
+328
+00:44:45,225 --> 00:44:52,382
+Or in general‚ what are the good things about‚ useful things about this method? 
+总的来说，这种方法有哪些好处和有用的地方？
+
+329
+00:44:52,382 --> 00:44:56,320
+And for homes‚ let's talk about limitations and open problems． 
+对于家庭，让我们来谈谈限制和未解决的问题˳
+
+330
+00:44:57,020 --> 00:45:03,033
+So let's start with superposition and linear representation hypotheses． 
+让我们从叠加和线性表示假设开始˳
+
+331
+00:45:03,033 --> 00:45:18,940
+So these are two hypotheses that were for key piece to almost every single method we have learned in this course‚ superpost to say when superposition hypothesis is． 
+这两个假设是我们在本课程中学到的几乎所有方法的关键部分，叠加说什么时候叠加假设是˳
+
+332
+00:45:23,780 --> 00:45:29,705
+Position or learn these more features that are‚ that's right． 
+定位或学习这些更多的功能，没错˳
+
+333
+00:45:29,705 --> 00:45:35,320
+So superposition hypothesis says that our Neal moments are using more features than they have． 
+因此，叠加假说认为我们的尼尔矩使用的特征比它们拥有的要多˳
+
+334
+00:45:37,420 --> 00:45:42,322
+And that causes a single neuron in a representation to fire up． 
+这将导致表示中的单个神经元启动˳
+
+335
+00:45:42,322 --> 00:45:48,840
+Or what is the downside of polysemantic word? 
+或者多义词的缺点是什么？
+
+336
+00:45:49,810 --> 00:45:50,480
+What is? 
+什么是什么？
+
+337
+00:45:52,980 --> 00:45:55,945
+The issue‚ right? 
+这个问题，对吧？
+
+338
+00:45:55,945 --> 00:46:09,780
+So if I‚ for example‚ if I'm passing data to see for neurons‚ for which example this neuron activates‚ then I have this confus behavior and concern． 
+所以，如果我，例如，如果我传递数据来查看神经元，例如这个神经元被激活，那么我有这种混淆行为和担忧˳
+
+339
+00:46:12,500 --> 00:46:20,810
+Okay‚ so for superposition‚ I would say it kind of explains poly-si manity‚ let's say‚ and for a calm of． 
+好的，对于叠加，我会说这有点解释了多晶硅性，比如说，以及冷静˳
+
+340
+00:46:23,400 --> 00:46:23,440
+Course? 
+当然？
+
+341
+00:46:26,220 --> 00:46:27,924
+Anything comes to mind． 
+任何事情都会想到˳
+
+342
+00:46:27,924 --> 00:46:40,120
+So maybe instead of thinking about the downside of polysemic city or some sphere‚ think about whether this is a hypothesis． 
+因此，也许不要考虑多义城市或某个领域的缺点，而要考虑这是否是一个假设˳
+
+343
+00:46:41,400 --> 00:46:43,700
+They're not calling it axiom． 
+他们不称之为公理˳
+
+344
+00:46:43,700 --> 00:46:50,667
+So this suggests that there is still discussion‚ and we haven't really talked about that one． 
+因此，这表明仍有讨论，而我们还没有真正谈论过这个问题˳
+
+345
+00:46:50,667 --> 00:47:03,680
+So I don't express how great it‚ but maybe you remind me what kind of models we use to make point that there is PO． 
+所以我不会表达它有多棒，但也许你会提醒我我们使用什么样的模型来强调采购订单存在的问题˳
+
+346
+00:47:07,620 --> 00:47:20,180
+Use other large language models to process what inputs we're giving it to try to group them Empirical evidence that things are firing up for multiple things． 
+使用其他大型语言模型来处理我们给它的输入，以尝试将它们分组经验证据，表明事物正在为多种事物触发˳
+
+347
+00:47:20,280 --> 00:47:34,583
+And that kind of suggests that polysoma it might be a real thing where we started to do more principle analysis‚ more kind of still experimental‚ but more kind of focused on polysemantic． 
+这表明多溶瘤可能是一件真实的事情，我们开始做更多的原理分析，更多的尚在实验中，但更多的关注多义词˳
+
+348
+00:47:34,583 --> 00:47:37,740
+But what kind of model that we use? 
+但是我们使用什么样的模型？
+
+349
+00:47:38,390 --> 00:47:53,441
+Remember the experiments where we was very at the very beginning‚ so long we have the varying levels of sparsity and we have those heat maps time model‚ the model wasn't really an llen‚ right? 
+还记得我们一开始做的实验吗，只要我们有不同程度的稀疏性，并且我们有热图时间模型，这个模型就不是真正的llen，对吧？
+
+350
+00:47:53,441 --> 00:48:04,560
+And we built this theory around a very simple model‚ so the full theoretical understanding of polysoma city and superpop elements‚ although we haven't． 
+我们围绕一个非常简单的模型建立了这个理论，因此我们对polysoma城市和超级流行元素有了完整的理论理解，尽管我们还没有˳
+
+351
+00:48:07,110 --> 00:48:09,130
+Understanding is still very much． 
+理解仍然非常多˳
+
+352
+00:48:12,610 --> 00:48:12,780
+Open now． 
+现在打开˳
+
+353
+00:48:12,850 --> 00:48:17,780
+I will show your paper‚ and I hope it won't make you hate everything． 
+我会显示你的论文，我希望它不会让你讨厌一切˳
+
+354
+00:48:20,910 --> 00:48:21,070
+Is． 
+是˳
+
+355
+00:48:23,340 --> 00:48:24,350
+So there has． 
+所以有˳
+
+356
+00:48:27,620 --> 00:48:30,801
+End of January‚ roughly month ago． 
+一月底，大约一个月前˳
+
+357
+00:48:30,801 --> 00:48:38,890
+That says that actually they managed to a sparse spaces in the Nen space‚ right? 
+这说明他们实际上设法在Nen空间中找到了稀疏空间，对吗？
+
+358
+00:48:38,930 --> 00:48:52,378
+So they say that the whole idea about superposition and everything that they are quite heavily written question in it and actually find experiments that suggest different． 
+所以他们说，关于叠加的整个想法以及他们写得相当多的所有问题，实际上发现实验表明不同˳
+
+359
+00:48:52,378 --> 00:48:57,358
+So I didn't read this paper carefully to talk you about point． 
+所以我没有仔细阅读这篇文章来谈论你的观点˳
+
+360
+00:48:57,358 --> 00:49:04,800
+I want to you to remember is that when looking to very‚ very recent works in this space by． 
+我想让你记住的是，当你在这个领域寻找非常非常近期的作品时˳
+
+361
+00:49:06,850 --> 00:49:11,120
+Known researchers in this space so． 
+这个领域的知名研究人员˳
+
+362
+00:49:13,660 --> 00:49:24,840
+They themselves say in this work‚ we questioned the belief that they were on circuits unlike the ones we have just seen right from historically are not spars． 
+他们自己在这项工作中说，我们质疑他们在电路上的信念，不像我们刚刚看到的历史上的那些不是火花˳
+
+363
+00:49:24,840 --> 00:49:31,040
+Specifically‚ we show that we can find circuits equally‚ scars and faithful． 
+具体来说，我们表明我们可以平等地找到电路，伤痕和忠诚˳
+
+364
+00:49:31,040 --> 00:49:33,830
+And also a big thing from S features． 
+这也是S功能的一件大事˳
+
+365
+00:49:33,830 --> 00:49:34,140
+Okay? 
+好吗？
+
+366
+00:49:34,140 --> 00:49:44,520
+So this is‚ you know‚ an issue when you start working in slide‚ things are changing and foundations are changing as well‚ right? 
+所以，你知道，当你开始在幻灯片上工作时，情况正在发生变化，基础也在变化，对吧？
+
+367
+00:49:44,520 --> 00:49:55,169
+So you need to be kind of acceptable‚ you know‚ you need to accept that things‚ even the very foundations came can change and you request and so on． 
+所以你需要接受，你知道，你需要接受事情，甚至是基础的到来都可能会改变，你会提出要求等等˳
+
+368
+00:49:55,169 --> 00:49:59,120
+And that can be sometimes a little bit hard to wrap your mind． 
+有时可能会有点难以包裹你的思想˳
+
+369
+00:50:01,250 --> 00:50:10,167
+If someone says‚ well‚ maybe you don't need a study and pre essays‚ it makes the question of‚ should I ever be using essays‚ right? 
+如果有人说，也许你不需要研究和准备论文，这就产生了一个问题，我是否应该使用论文，对吧？
+
+370
+00:50:10,167 --> 00:50:24,658
+So for me‚ I would recommend that you think about‚ okay‚ even with these shaky foundations‚ we are managing to use this method to get into interesting insights． 
+所以对我来说，我建议你考虑一下，即使基础不稳固，我们也正在设法使用这种方法来获得有趣的见解˳
+
+371
+00:50:24,658 --> 00:50:28,204
+For instance‚ entropic work with hidden objectives． 
+例如，具有隐藏目标的熵工作˳
+
+372
+00:50:28,204 --> 00:50:37,860
+I have shown you where I said the train‚ the reward model body‚ and then policy with the body reward model‚ and then the behavior pro there． 
+我已经向您展示了火车，奖励模型身体，然后是身体奖励模型的政策，然后是行为亲˳
+
+373
+00:50:37,860 --> 00:50:52,940
+What model was changed to never suggest going to a doctor and then the policy had never‚ if you asked me the question‚ reminded how serious it would suggest going to a doctor it the red team and the blue team． 
+什么模式被改变为永远不建议去看医生，而政策从来没有，如果你问我这个问题，会提醒红队和蓝队去看医生有多认真˳
+
+374
+00:50:52,940 --> 00:50:55,980
+The red team is the one who has injected this problem． 
+红队就是注入这个问题的人˳
+
+375
+00:50:56,640 --> 00:51:30,490
+He is the one that was given interpretability method to try to recover it and they said OK‚ the result wasn't super strong for ability protein‚ but we have given some suggestion that this can be written‚ so I want you to embrace that point Like things are developing‚ you are working with bugging methods very often‚ but you can still find interesting insights with them and things are‚ you know‚ are going to develop‚ they are going to change five years now． 
+他是那个被赋予可解释性方法来尝试恢复它的人，他们说好吧，结果对于蛋白质的能力并不是很强，但我们已经给出了一些建议，认为这可以写下来，所以我希望你能接受这一点，就像事情正在发展一样，你经常使用窃听方法，但你仍然可以通过它们找到有趣的见解，你知道，事情将会发展，它们现在将会改变五年˳
+
+376
+00:51:33,360 --> 00:51:35,531
+And the foundations might change． 
+基础可能会改变˳
+
+377
+00:51:35,531 --> 00:51:37,920
+And you should be thinking about it． 
+你应​‌​‌​​‌‌​​‌‌​​‌‌​‌‌‌‌‌​‌​​‌‌​​‌‌​​‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌​‌‌​​​‌‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌​‌​‌​​‌‌​‌‌‌‌‌​‌​‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌‌​‌‌‌‌​‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​​​‌​​‌‌​‌​‌‌‌​‌‌​​‌​​‌‌‌‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌​​‌‌‌​​‌‌‌​‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌​‌‌​​‌‌​‌‌‌‌‌​‌​​‌‌‌‌​‌​‌​‌‌‌​‌​​​‌​​‌‌​‌​‌​​‌‌​‌‌‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌​​‌‌​‌‌​​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌​‌​‌‌‌​‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌‌‌‌​‌​‌‌‌​​‌‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌​‌​​‌‌​​​‌​​‌‌​‌‌‌‌‌​‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌​​‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌‌​‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌该考虑一下˳
+
+378
+00:51:41,530 --> 00:51:42,970
+Why do we care whether an actual Ly weather? 
+我们为什么关心实际的天气呢？
+
+379
+00:51:51,060 --> 00:51:51,972
+Three point． 
+三点˳
+
+380
+00:51:51,972 --> 00:51:57,865
+Like you can think about‚ oh‚ maybe neurons‚ I can get one the neurons． 
+就像你可以想象的那样，也许是神经元，我可以得到一个神经元˳
+
+381
+00:51:57,865 --> 00:52:01,811
+But if it does that much work and I can just bring the ace． 
+但如果它做了那么多工作，我可以带来王牌˳
+
+382
+00:52:01,811 --> 00:52:04,348
+I'll train the A and get it faster． 
+我会训练A，让它更快˳
+
+383
+00:52:04,348 --> 00:52:05,758
+Right now it's a tool． 
+现在它只是一个工具˳
+
+384
+00:52:05,758 --> 00:52:16,340
+Yeah‚ so it just depends whether‚ you know‚ not everyone will characterize the same as you need to do this because the information is scrambled in the． 
+是的，所以这只取决于是否，你知道，不是每个人都会像你需要的那样描述，因为信息被打乱了˳
+
+385
+00:52:18,950 --> 00:52:20,460
+You can bypass essays． 
+你可以绕过论文˳
+
+386
+00:52:23,440 --> 00:52:26,246
+Or at least that's my fraction from reading the intro． 
+或者至少这是我阅读介绍的分数˳
+
+387
+00:52:26,246 --> 00:52:28,000
+We need to this prepared carefully． 
+我们需要对此认真准备˳
+
+388
+00:52:30,800 --> 00:52:35,360
+Explain policy and discipline‚ but empirical evidence on to． 
+解释政策和纪律，但要有实证证据˳
+
+389
+00:52:45,520 --> 00:52:52,190
+Okay‚ and then for linear representation hypothesis members for that one says． 
+好的，然后对于线性表示假设的成员说˳
+
+390
+00:52:55,660 --> 00:52:59,980
+We train something long enough that everything eventually has． 
+我们训练一些足够长的东西，最终一切都有˳
+
+391
+00:53:02,320 --> 00:53:05,360
+That might be that the Platonic hypothesis‚ right? 
+这可能是柏拉图假设，对吧？
+
+392
+00:53:05,360 --> 00:53:06,880
+That all the representation． 
+所有的代表˳
+
+393
+00:53:09,100 --> 00:53:10,402
+Okay‚ who knows? 
+好吧，谁知道呢？
+
+394
+00:53:10,402 --> 00:53:13,334
+Raise a hand on bit one person． 
+举起手放在一个人身上˳
+
+395
+00:53:13,334 --> 00:53:18,630
+Kagan‚ I could pick people who want to speak less‚ I think． 
+卡根，我认为我可以挑选那些想少说话的人˳
+
+396
+00:53:18,630 --> 00:53:30,407
+Isn't this one where there's almost logic to the vector is where if you do like woman minus queen or something will be king or something like that? 
+这不是一个几乎逻辑的向量，如果你像女人减去女王或某事将成为国王或类似的东西吗？
+
+397
+00:53:30,407 --> 00:53:38,839
+So let's take an example of the analysis in analogy problems‚ our features‚ what do we say there? 
+那么让我们举一个类比问题分析的例子，我们的特征，我们在那里说什么？
+
+398
+00:53:38,839 --> 00:53:44,514
+So the difference between all general direction． 
+所有大方向之间的差异˳
+
+399
+00:53:44,514 --> 00:53:50,289
+So I have to say that help myself‚ I wanted the last here‚ and the answer should be direction． 
+所以我不得不说，帮助自己，我想要最后一个，答案应该是方向˳
+
+400
+00:53:50,289 --> 00:54:01,690
+So for instance‚ is what I wanted to say in this example we have‚ this is one of these experiments where we notice that features are the activation space‚ right? 
+例如，在这个例子中，我想说的是，这是其中一个实验，我们注意到特征是激活空间，对吧？
+
+401
+00:54:01,690 --> 00:54:06,037
+So that's one part of the American representation hypothesis． 
+这就是美国表征假说的一部分˳
+
+402
+00:54:06,037 --> 00:54:09,412
+First‚ these features ares in your activation of head space． 
+首先，这些功能是在您激活头部空间时实现的˳
+
+403
+00:54:09,412 --> 00:54:14,320
+And if I want to get a representation of some concept‚ what do we assume? 
+如果我想要得到某个概念的表征，我们应该假设什么？
+
+404
+00:54:18,120 --> 00:54:25,909
+It can be combination of‚ yeah‚ so we say features of directions and new activations． 
+它可以是，是的，所以我们说方向和新激活的功能的组合˳
+
+405
+00:54:25,909 --> 00:54:32,540
+New concepts can be represented as a linear combination of‚ okay‚ so． 
+新概念可以表示为这样的线性组合˳
+
+406
+00:54:35,760 --> 00:54:48,805
+With linear data‚ basically the benefit of is that enable us a bunch of methods like sparse Al encoders‚ where the obvious effect step coming from hypothesis‚ right? 
+使用线性数据，基本上的好处是使我们能够使用一堆方法，例如稀疏编码器，其中明显的效应步骤来自假设，对吧？
+
+407
+00:54:48,805 --> 00:54:56,432
+So I would say linear representation is enabling a bunch of newer methods． 
+所以我会说线性表示正在启用许多更新的方法˳
+
+408
+00:54:56,432 --> 00:55:04,560
+What is potential downside or where the assumption hypothesis might break? 
+潜在的不利方面是什么，或者假设假设可能会在哪里被打破？
+
+409
+00:55:10,140 --> 00:55:13,920
+Let's just try to guess it． 
+让我们试着猜测一下˳
+
+410
+00:55:17,840 --> 00:55:18,451
+Yeah‚ right? 
+是的，对吧？
+
+411
+00:55:18,451 --> 00:55:27,320
+So it has been shown there is actually empirical evidence that linear representation hypothesis simply doesn't hold． 
+因此，已经证明实际上有经验证据表明线性表征假设根本不适用˳
+
+412
+00:55:28,200 --> 00:55:34,120
+There are things that can not be linear represented directions． 
+有些东西不能线性地表示方向˳
+
+413
+00:55:34,120 --> 00:55:35,920
+There are things that leave． 
+有些东西会离开˳
+
+414
+00:55:35,920 --> 00:55:46,800
+And the best way to think about this‚ and you will see instead of things living on a line‚ right‚ they live on a man‚ right? 
+最好的思考方式是，你会看到事物不是生活在一条线上，而是生活在一个男人身上，对吧？
+
+415
+00:55:48,240 --> 00:55:52,800
+Which means‚ for example‚ when we come after the screen break． 
+这意味着，例如，当我们在屏幕破裂之后到达˳
+
+416
+00:55:55,060 --> 00:56:07,167
+Which is‚ if I have now learned some important direction‚ such as direction for‚ I can add my direction for infusing loops in a vector space where my representation is． 
+也就是说，如果我现在已经学了一些重要的方向，比如方向，我可以在我的表示为的向量空间中添加注入循环的方向˳
+
+417
+00:56:07,167 --> 00:56:14,630
+So what if I just steer my representation‚ move it towards my review right direction? 
+那么，如果我只是引导我的陈述，将它移向我的评论正确的方向呢？
+
+418
+00:56:14,710 --> 00:56:19,620
+And now my whole model would start with refusing way is． 
+现在我的整个模型将从拒绝方式开始˳
+
+419
+00:56:22,430 --> 00:56:24,190
+Actually implemented it by assuming linearity． 
+实际上通过假设线性来实现它˳
+
+420
+00:56:24,930 --> 00:56:28,141
+And you are just moving‚ you know‚ linear directions． 
+而你只是在移动，你知道线性方向˳
+
+421
+00:56:28,141 --> 00:56:35,121
+But if things live on the manifold and you assume‚ oh I'm just going to go over the line‚ you go off the manifold‚ right? 
+但如果事情都在歧管上，而你假设，哦，我只是要过线，你就离开了歧管，对吗？
+
+422
+00:56:35,121 --> 00:56:41,920
+And you are not in the domain where your vector is‚ are‚ and that becomes problematic． 
+而你不在你的向量所在的领域，这就会出现问题˳
+
+423
+00:56:41,920 --> 00:56:46,620
+So there is an evidence that it doesn't cool． 
+所以有证据表明它并不酷˳
+
+424
+00:56:46,900 --> 00:56:49,080
+So my kind of practical． 
+所以我的实用性˳
+
+425
+00:56:54,100 --> 00:57:04,073
+You need to kind of consider whether whatever you are working in is or can not be linearly represented and so on． 
+你需要考虑你正在工作的任何东西是否可以线性表示等等˳
+
+426
+00:57:04,073 --> 00:57:07,240
+Or if you get negative results‚ you can't steer． 
+或者如果你得到了负面结果，你就无法转向˳
+
+427
+00:57:07,240 --> 00:57:09,520
+Although I expect a new kind theory． 
+尽管我期待一种新的理论˳
+
+428
+00:57:09,520 --> 00:57:12,720
+And it can be because things were on Manal‚ the line． 
+这可能是因为事情发生在Manal线上˳
+
+429
+00:57:13,790 --> 00:57:21,720
+And so yeah‚ with all of these‚ you need to kind of take them as a hypothesis‚ not axiom． 
+所以，对于所有这些，你需要把它们当作一种假设，而不是公理˳
+
+430
+00:57:22,020 --> 00:57:27,180
+Don't assume they are true‚ and then be surprised when things fall apart after． 
+不要认为它们是真的，然后当事情分崩离析时感到惊讶˳
+
+431
+00:57:28,760 --> 00:57:33,320
+Okay‚ let's move on to next‚ method‚ which is probably says． 
+好的，让我们进入下一个方法，可能是这样的˳
+
+432
+00:57:35,380 --> 00:57:42,110
+So with essays‚ we try to do not remember how I motivate the studies． 
+所以在论文中，我们尽量不记得我是如何激励学习的˳
+
+433
+00:57:42,200 --> 00:57:44,350
+Or let's put it like this． 
+或者让我们这样说˳
+
+434
+00:57:44,350 --> 00:57:52,560
+Know you mean that others‚ the interpretability class‚ heard about essays like when． 
+知道你的意思是其他人，解释性课程，听说过像什么时候这样的论文˳
+
+435
+00:58:01,380 --> 00:58:08,460
+Yeah‚ and can you add just one more adjective to those features or of what kind? 
+是的，你可以给这些特征再添加一个形容词吗？或者什么样的？
+
+436
+00:58:15,120 --> 00:58:17,930
+With SaaS‚ we are extracting features‚ right? 
+使用SaaS，我们正在提取特征，对吧？
+
+437
+00:58:19,060 --> 00:58:22,430
+And I like neurons‚ right? 
+我喜欢神经元，对吧？
+
+438
+00:58:22,430 --> 00:58:39,160
+That can be‚ yeah‚ these are going to be monosema the‚ right‚ so human interpretable features and decompose our representation into them． 
+这可能是，是的，这些将是单体，所以人类可解释的特征，并将我们的表征分解成它们˳
+
+439
+00:58:39,170 --> 00:58:46,438
+I would say Sae one nice thing is that they're really well studied‚ right? 
+我想说的是，它们被研究得很好，对吧？
+
+440
+00:58:46,438 --> 00:58:57,120
+Like we have when we talked about that same‚ different or sparse feature circuits‚ there wasn't that much development because maybe they were also younger． 
+就像我们在谈论相同、不同或稀疏的特征电路时一样，没有太多的发展，因为可能它们也更年轻˳
+
+441
+00:58:57,120 --> 00:59:09,762
+But with SaaS‚ we have already observed a dead features can happen and features printing‚ feature absorption‚ and in this and that． 
+但是对于SaaS，我们已经观察到可能发生死特征，特征打印，特征吸收等等˳
+
+442
+00:59:09,762 --> 00:59:18,460
+And oh‚ let's use jump ring instead of RI‚ let's use to instead of one sparsity that feature using zulo windows． 
+哦，让我们使用卡簧而不是RI，让我们使用使用zulo windows功能来代替一个稀疏性˳
+
+443
+00:59:18,460 --> 00:59:24,740
+We already have a lot of energy toolss under the cons． 
+我们已经有很多能源工具存在缺点˳
+
+444
+00:59:24,840 --> 00:59:26,850
+All of these issues that I just mentioned． 
+我刚才提到的所有这些问题˳
+
+445
+00:59:27,830 --> 00:59:32,150
+Remember at the core where they stem from? 
+还记得他们从哪里词干的核心吗？
+
+446
+00:59:40,220 --> 00:59:49,700
+We have as a byproduct that features features‚ clicking features‚ how you induce sparsity in the box． 
+我们有一个副产品，它具有功能，点击功能，如何在盒子中诱导稀疏性˳
+
+447
+00:59:49,700 --> 01:00:03,495
+Yeah‚ so with our loss is a tradeoff between sparsity and what is the other laws‚ reconstruction and this definitely at the odds within each other‚ right? 
+是的，所以我们的损失是稀疏性和其他法律之间的权衡，重建，这绝对是彼此之间的赔率，对吧？
+
+448
+01:00:03,495 --> 01:00:10,936
+Like reconstruction will be the best reconstruction if you can use sparsity will have best sparsity． 
+如果您可以使用稀疏性，那么像重构将是最好的重构˳
+
+449
+01:00:10,936 --> 01:00:12,760
+It doesn't use any‚ right? 
+它没有使用任何东西，对吧？
+
+450
+01:00:12,880 --> 01:00:37,875
+So because these two really extreme polar opposites‚ and when they fight against each other‚ we can optimization‚ we don't fully control it‚ we are immersive on the gradient descent‚ we end up somewhere and all these weird pathologies are the byproduct of this clash between these two optimizations． 
+所以，因为这两个非常极端的对立面，当它们相互对抗时，我们可以优化，但我们不能完全控制它，我们沉浸在梯度下降中，我们最终会在某个地方结束，所有这些奇怪的病理都是这两个优化之间冲突的副产品˳
+
+451
+01:00:37,875 --> 01:00:53,780
+So cons is‚ but then maybe not like maybe the tradeoff between reconstruction sparsity causes a bunch of problems and then we need to fix them． 
+所以缺点是，但也许不是重建稀疏之间的权衡会导致一系列问题，然后我们需要修复它们˳
+
+452
+01:00:54,580 --> 01:01:04,996
+Another thing I would say is a con is that do we really care about sparsity and constructions like that? 
+我想说的另一件事是一个骗局，我们真的关心稀疏性和类似的构造吗？
+
+453
+01:01:04,996 --> 01:01:07,000
+Is that our help goal? 
+这是我们的帮助目标吗？
+
+454
+01:01:07,000 --> 01:01:08,313
+Not really‚ right? 
+不是，对吧？
+
+455
+01:01:08,313 --> 01:01:18,910
+Like we want to decompose representations in future direction to do something useful with that‚ such as finding hidden objectives‚ right? 
+就像我们想要分解表示在未来方向上做一些有用的事情，比如找到隐藏的目标，对吧？
+
+456
+01:01:18,910 --> 01:01:24,700
+Or understanding data‚ or but the compression models for Is‚ right? 
+或者理解数据，或者压缩模型是，对吧？
+
+457
+01:01:24,700 --> 01:01:48,180
+So I would say the con is we also‚ by optimizing for the objective‚ that the key thing‚ we are also stuck with things that downstream are useful totch between and the downstream here suggest． 
+所以我想说的是，通过优化目标，关键的是，我们也被下游和下游之间的有用的东西所困扰˳
+
+458
+01:01:52,220 --> 01:01:54,155
+And then evaluation as well． 
+然后还有评估˳
+
+459
+01:01:54,155 --> 01:02:01,940
+We don't have‚ I mean‚ in general image in mechanistic interop ability‚ we don't have great about everything is so new． 
+我们没有，我是说，在机械互操作能力方面，我们对一切都没有很大的了解˳
+
+460
+01:02:01,960 --> 01:02:07,213
+And if you discover anything interesting‚ it becomes good enough． 
+如果你发现了什么有趣的东西，它就变得足够好了˳
+
+461
+01:02:07,213 --> 01:02:15,507
+But‚ and I will talk about this‚ how interpretability we had 10 years ago‚ and then we worked a lot． 
+但是，我会谈论这个问题，10年前我们有怎样的可解释性，然后我们做了很多工作˳
+
+462
+01:02:15,507 --> 01:02:31,420
+At some point‚ people have become really disappointed who see it being necessary were‚ you know‚ the best GP didn't emerge out of interpretability． 
+在某个时候，人们变得非常失望，因为他们认为这是必要的，你知道，最好的GP并没有出现在可解释性中˳
+
+463
+01:02:40,220 --> 01:02:46,360
+Momentum‚ but it's really important that we don't end up with a bunch of methods． 
+动量，但真正重要的是我们不要最终得到一堆方法˳
+
+464
+01:02:49,180 --> 01:02:50,086
+Down‚ right? 
+下来吧？
+
+465
+01:02:50,086 --> 01:02:55,220
+And just reconstructing well isn't the downstream use it‚ right? 
+只是重建井并不是下游使用它，对吗？
+
+466
+01:02:57,780 --> 01:03:00,235
+Okay‚ let's move on to the actually now． 
+好的，现在让我们继续进行实际操作˳
+
+467
+01:03:00,235 --> 01:03:01,599
+Wait just a second． 
+等一下˳
+
+468
+01:03:01,599 --> 01:03:04,600
+So with 4‚ 7 concoctions‚ I get my code． 
+所以用4、7种混合物，我得到了我的代码˳
+
+469
+01:03:06,760 --> 01:03:07,200
+And I can reconstruct． 
+我可以重建˳
+
+470
+01:03:09,530 --> 01:03:09,660
+A vector． 
+矢量˳
+
+471
+01:03:09,680 --> 01:03:13,720
+What is that next piece I need for interpretability? 
+下一个我需要的可解释性是什么？
+
+472
+01:03:26,340 --> 01:03:27,610
+Aha‚ and we called that you remember how? 
+我们叫它，你还记得吗？
+
+473
+01:03:31,180 --> 01:03:33,262
+Like‚ how do you call it? 
+就像，你怎么称呼它？
+
+474
+01:03:33,262 --> 01:03:35,691
+What are you doing by doing that? 
+你这样做是为了做什么？
+
+475
+01:03:35,691 --> 01:03:38,120
+What are you doing by doing that? 
+你这样做是为了做什么？
+
+476
+01:03:41,220 --> 01:03:43,753
+Try to predict feature description． 
+尝试预测特征描述˳
+
+477
+01:03:43,753 --> 01:03:45,780
+Generating feature description． 
+生成特征描述˳
+
+478
+01:03:45,900 --> 01:03:48,338
+That was the next thing we have talked about． 
+这是我们谈论的下一件事˳
+
+479
+01:03:48,338 --> 01:03:50,776
+And we generate a feature description． 
+然后我们生成一个特征描述˳
+
+480
+01:03:50,776 --> 01:04:04,590
+So‚ but we all experience Aine interpretability‚ what are the potential problems we might encounter encounter with it? 
+所以，我们都经历过可解释性，我们可能会遇到哪些潜在问题？
+
+481
+01:04:08,480 --> 01:04:11,780
+Because you have such a big dependence on what they． 
+因为你对他们有如此大的依赖˳
+
+482
+01:04:15,480 --> 01:04:19,550
+Guarantee that you have the right name． 
+确保你有正确的名字˳
+
+483
+01:04:31,800 --> 01:04:43,250
+So just as a reminder‚ we have original model has been trained in and very often we don't have access to free training data． 
+因此，提醒一下，我们已经训练了原始模型，但通常我们无法访问免费的训练数据˳
+
+484
+01:04:46,810 --> 01:04:57,680
+CIA and Omo‚ we have access to all the So‚ our Saes and transcodes and everything are trying to replace the original model． 
+CIA和Omo，我们可以访问所有的So，我们的Saes和转码，一切都在试图取代原始模型˳
+
+485
+01:04:58,420 --> 01:05:07,353
+So for me‚ it would be makes sense if I want to have a replacement model of the original model‚ I use the exact same reaching the data． 
+所以对我来说，如果我想要一个原始模型的替换模型，我会使用完全相同的方法来获得数据，这将是非常感知的˳
+
+486
+01:05:07,353 --> 01:05:12,920
+But then there is also a question‚ do I need to place this data in the exact same order? 
+但是还有一个问题，我需要以完全相同的顺序放置这些数据吗？
+
+487
+01:05:13,620 --> 01:05:18,006
+There are some potential behavior‚ behavior that will come out of it． 
+有一些潜在的行为，会产生一些行为˳
+
+488
+01:05:18,006 --> 01:05:21,640
+And after all I'm training my study different objectives． 
+毕竟我在训练我的学习目标是不同的˳
+
+489
+01:05:21,640 --> 01:05:25,409
+So just from that‚ the data also might be different capture． 
+因此，仅从这个角度来看，数据也可能是不同的捕获˳
+
+490
+01:05:25,409 --> 01:05:35,574
+So here there is a huge mismatch between printing data of the original‚ what we are using for essays and essay in training． 
+因此，在打印原始数据 (我们用于论文和训练论文的数据) 之间存在着巨大的不匹配˳
+
+491
+01:05:35,574 --> 01:05:46,260
+Data does not capture a bunch of features that the prestigious data can other S ever learn those features probably． 
+数据没有捕捉到一堆其他人可能能够学习到的特征，这些特征是久负盛名的数据所无法捕捉到的˳
+
+492
+01:05:51,910 --> 01:05:53,620
+That's one potential issue． 
+这是一个潜在的问题˳
+
+493
+01:05:55,030 --> 01:06:00,397
+Let's say we have similar this day for‚ getting this‚ descriptions． 
+假设我们今天有类似的描述，得到这个描述˳
+
+494
+01:06:00,397 --> 01:06:02,367
+We use a bunch of tokens． 
+我们使用了一堆代币˳
+
+495
+01:06:02,367 --> 01:06:22,563
+So think about 7 and three years later to his questioning‚ this is‚ I don't know how much for genes‚ if you didn't have enough of generate restrictions descriptions‚ you will catch that downward downstream‚ still checking those simulate ability scores and all of that． 
+所以想想七年和三年后他的提问，这是，我不知道基因的多少，如果你没有足够的生成限制描述，你会向下抓住它，仍然检查那些模拟能力分数和所有这些˳
+
+496
+01:06:22,563 --> 01:06:24,120
+We have extra checks for those． 
+我们有额外的检查˳
+
+497
+01:06:25,980 --> 01:06:28,620
+What else can be a compounder here? 
+这里还有什么可以成为混合者？
+
+498
+01:06:28,620 --> 01:06:29,200
+What is the generator? 
+发电机是什么？
+
+499
+01:06:33,220 --> 01:06:39,260
+Another element‚ and why could that be a problem‚ depend on its reliability． 
+另一个因素，以及为什么这会成为一个问题，取决于它的可靠性˳
+
+500
+01:06:39,620 --> 01:06:44,180
+Maybe examples are kind of vague‚ but one struggles to take off． 
+也许例子有点模糊，但一个人很难起飞˳
+
+501
+01:06:46,860 --> 01:06:57,680
+Yeah‚ so they might not have enough capacity to understand the pattern‚ which also hints to if I'm using a weaker or stronger model． 
+是的，所以他们可能没有足够的能力来理解这种模式，这也暗示了我是否使用了更弱或更强的模型˳
+
+502
+01:07:00,000 --> 01:07:10,650
+Descriptions also going back to the data‚ I‚ if I have a medical or legal or a job for the． 
+描述也回到数据，即，如果我有医疗或法律或工作˳
+
+503
+01:07:15,120 --> 01:07:17,300
+But who has also much of experience with this? 
+但谁也有很多这方面的经验？
+
+504
+01:07:17,300 --> 01:07:19,680
+I don't know whether anything else comes to． 
+我不知道还有什么其他的事情˳
+
+505
+01:07:26,630 --> 01:07:28,170
+The future is described． 
+未来被描述˳
+
+506
+01:07:48,620 --> 01:07:53,180
+Working specific or is it just like? 
+具体工作还是就像这样？
+
+507
+01:07:55,620 --> 01:08:02,073
+In the Texas Dallas example‚ there is one feature that says capital city‚ but it's not input． 
+在德克萨斯州的例子中，有一个特征是 “首都”，但不是 “输入”˳
+
+508
+01:08:02,073 --> 01:08:04,880
+It's not what's active‚ you know? 
+这不是活跃的东西，你知道吗？
+
+509
+01:08:09,000 --> 01:08:11,780
+Next‚ tokens are all capital cities． 
+接下来，代币都是首都城市˳
+
+510
+01:08:15,610 --> 01:08:20,150
+Carries whatever and others‚ so knowing where? 
+携带任何东西和其他东西，所以知道在哪里？
+
+511
+01:08:29,510 --> 01:08:32,530
+The ALS are first and then run． 
+先运行ALS，然后再运行˳
+
+512
+01:08:36,020 --> 01:08:44,780
+Is this like the main idea that and the elements are imper and so? 
+这是否就像主要思想以及元素是不重要的那样？
+
+513
+01:08:54,760 --> 01:08:56,400
+I don't know‚ I didn't read the paper． 
+我不知道，我没有看报纸˳
+
+514
+01:08:58,940 --> 01:09:02,545
+About the impounding conclusion they have． 
+关于他们的扣押结论˳
+
+515
+01:09:02,545 --> 01:09:05,680
+But let's you know if you want that paper and． 
+但是如果你想要那张纸，请告诉我们˳
+
+516
+01:09:08,020 --> 01:09:16,045
+Which is‚ we just need a better method to find these features in for the representations? 
+也就是说，我们只需要更好的方法来找到这些特征作为表示？
+
+517
+01:09:16,045 --> 01:09:26,480
+Then the question is‚ you know‚ that sometimes it can fire up the neuro for completely‚ it's completely different． 
+那么问题是，你知道，有时它可以完全激活神经，这是完全不同的˳
+
+518
+01:09:30,660 --> 01:09:40,160
+The 2021 paper with burn losing the features that they're never on fired up for are so portable． 
+2021年的报纸，由于烧毁而失去了它们从未被点燃的功能，它们非常便携˳
+
+519
+01:09:42,420 --> 01:09:47,423
+It's really hard to make sense of how you would govern the probability overdose． 
+很难感知如何控制过量的可能性˳
+
+520
+01:09:47,423 --> 01:09:59,980
+So just describing directly maximum activating examples and patterns dose probably isn an A‚ but now it could be that other method that makes sense of everything went on． 
+因此，仅仅直接描述最大激活例子和模式可能是一种方法，但现在可能是另一种方法，可以感知所有事情的发生˳
+
+521
+01:10:05,220 --> 01:10:08,037
+Next one‚ which is probing． 
+下一个是探索˳
+
+522
+01:10:08,037 --> 01:10:11,660
+So today we mentioned probing． 
+所以今天我们提到了探测˳
+
+523
+01:10:12,300 --> 01:10:17,670
+Remind me‚ what is‚ when would you use it? 
+提醒我，什么时候你会使用它？
+
+524
+01:10:21,110 --> 01:10:23,130
+A good moment to think of from． 
+这是一个很好的思考时刻˳
+
+525
+01:10:25,240 --> 01:10:34,920
+When you know what future you're searching for‚ you give me an example of a picture you might be searching for． 
+当你知道你在寻找什么样的未来时，你可以给我一个你可能在寻找的图片的例子˳
+
+526
+01:10:34,920 --> 01:10:55,860
+True‚ true or false school that we have seen a method for‚ you have an assumption that the model knows and you just want to check whether the concept of truth is encoded in the representative targeted test for a specific． 
+无论是真的还是假的学派，我们已经看到了一种方法，你有一个假设，即模型知道，你只是想检查真理的概念是否编码在针对特定目标的代表性测试中˳
+
+527
+01:10:59,060 --> 01:11:00,950
+Confirm‚ okay? 
+确认一下，好吗？
+
+528
+01:11:02,280 --> 01:11:11,440
+If you care about just a single concept‚ can you tell me why using Sag is maybe a worse option than Pro? 
+如果你只关心一个概念，你能告诉我为什么使用Sag可能比Pro更糟糕吗？
+
+529
+01:11:14,940 --> 01:11:22,991
+You have to create feature descriptions for all of them and then see if the single one matches dictionary of 100000 features． 
+你必须为所有特征创建特征描述，然后查看单个特征是否匹配100000个特征的字典˳
+
+530
+01:11:22,991 --> 01:11:25,180
+The point where there is one feature‚ right? 
+这里有一个特征，对吗？
+
+531
+01:11:25,280 --> 01:11:35,730
+So maybe if you already have an essay and it comes down to searching these features‚ then maybe it's okay‚ right? 
+所以也许如果你已经有一篇文章，它归结为搜索这些功能，那么也许没关系，对吧？
+
+532
+01:11:36,710 --> 01:11:43,600
+But if you don't‚ then having a targeted is better． 
+但如果你不这样做，那么有针对性更好˳
+
+533
+01:11:43,600 --> 01:11:46,260
+Now let's talk about cones． 
+现在让我们谈谈锥体˳
+
+534
+01:11:46,260 --> 01:11:49,005
+What people wrong? 
+人们错了什么？
+
+535
+01:11:49,005 --> 01:11:52,300
+Tell me one bad‚ bad exam． 
+告诉我一个糟糕的考试˳
+
+536
+01:11:56,930 --> 01:12:02,493
+Yeah‚ you need to have simple model doing your probate． 
+是的，你需要有一个简单的模式来做你的遗嘱认证˳
+
+537
+01:12:02,493 --> 01:12:06,520
+If you do anything more ​‌​‌​​‌‌​​‌‌​​‌‌​‌‌‌‌‌​‌​​‌‌​​‌‌​​‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌​‌‌​​​‌‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌​‌​‌​​‌‌​‌‌‌‌‌​‌​‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌‌​‌‌‌‌​‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​​​‌​​‌‌​‌​‌‌‌​‌‌​​‌​​‌‌‌‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌​​‌‌‌​​‌‌‌​‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌​‌‌​​‌‌​‌‌‌‌‌​‌​​‌‌‌‌​‌​‌​‌‌‌​‌​​​‌​​‌‌​‌​‌​​‌‌​‌‌‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌​​‌‌​‌‌​​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌​‌​‌‌‌​‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌‌‌‌​‌​‌‌‌​​‌‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌​‌​​‌‌​​​‌​​‌‌​‌‌‌‌‌​‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌​​‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌‌​‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌complex‚ you aren't going get any． 
+如果你做任何更复杂的事情，你不会得到任何东西˳
+
+538
+01:12:07,040 --> 01:12:13,080
+We're actually going to identify the concept that you're trying to． 
+我们实际上将确定您正在尝试的概念˳
+
+539
+01:12:15,040 --> 01:12:16,864
+The conclusion wasn't right． 
+结论不正确˳
+
+540
+01:12:17,092 --> 01:12:31,680
+Let's say I have chosen a complex model‚ I chose 3 layer MLP and it's really wide layer‚ we will be wide mattress and it has lots of capacity． 
+假设我选择了一个复杂的模型，我选择了3层MLP，它真的很宽，我们将是宽床垫，它有很多容量˳
+
+541
+01:12:31,680 --> 01:12:36,240
+Do I expect the pro big task will be actually successful with this kind? 
+我认为这种大任务会真正成功吗？
+
+542
+01:12:37,940 --> 01:12:43,980
+I mean‚ it might be successful‚ but it's not really okay． 
+我的意思是，这可能会成功，但实际上并不好˳
+
+543
+01:12:46,240 --> 01:12:49,152
+Instead of successful‚ let me be more to create． 
+与其成功，不如让我更多地去创造˳
+
+544
+01:12:49,152 --> 01:12:49,600
+Build that． 
+建立这个˳
+
+545
+01:12:51,420 --> 01:12:57,460
+It'll have high accuracy‚ but it's more because it's learning the task． 
+它将具有很高的准确性，但更多的是因为它正在学习任务˳
+
+546
+01:13:00,000 --> 01:13:01,384
+Three‚ exactly． 
+三个，没错˳
+
+547
+01:13:01,384 --> 01:13:03,460
+Yeah‚ So the nice? 
+是的，那么好吗？
+
+548
+01:13:10,460 --> 01:13:24,260
+And if you choose a complicated problem and magnet‚ I just said it can have high‚ a higher currency is because the information was already included in the original representation． 
+如果你选择一个复杂的问题和磁铁，我只是说它可以有很高的价值，更高的货币是因为信息已经包含在原始表示中˳
+
+549
+01:13:27,490 --> 01:13:28,780
+Or the model? 
+还是模型？
+
+550
+01:13:33,220 --> 01:13:46,520
+Was an so typically we would use Linear Pro‚ but it comes to the same VA with the if things are encoded moving normally‚ you need a little bit more calm now． 
+通常我们会使用Linear Pro，但如果事物编码正常移动，你现在需要更多的冷静˳
+
+551
+01:13:47,220 --> 01:13:55,967
+So some simply you kind of choose approve to avoid this issue‚ then you might never catch on． 
+所以有些人只是你选择批准避免这个问题，那么你可能永远不会明白˳
+
+552
+01:13:55,967 --> 01:13:59,930
+So you might have full snack to say with my． 
+所以你可能会跟我说吃饱的零食˳
+
+553
+01:14:02,420 --> 01:14:06,980
+It is encoded‚ but it actually is is just a different． 
+它是编码的，但实际上只是不同的˳
+
+554
+01:14:12,960 --> 01:14:15,380
+Let's say you read a paper and says． 
+假设你读了一篇论文并说˳
+
+555
+01:14:17,820 --> 01:14:29,174
+Pro‚ do you have fine high accuracy and the truth is encoded‚ Therefore the model is using truth to do the task． 
+亲，你是否有很高的准确性并且真相被编码，因此模型正在使用真相来完成任务˳
+
+556
+01:14:29,174 --> 01:14:30,900
+What is wrong with that? 
+这有什么问题吗？
+
+557
+01:14:48,530 --> 01:14:54,590
+But‚ you know‚ like‚ again‚ they say information is it． 
+但是，你知道，就像他们说的，信息就是它˳
+
+558
+01:14:55,620 --> 01:15:01,978
+And we conclude that the model is solving the task because of this information． 
+我们得出结论，由于这些信息，模型正在解决任务˳
+
+559
+01:15:01,978 --> 01:15:03,291
+What is flow variance? 
+流量方差是什么？
+
+560
+01:15:03,291 --> 01:15:06,180
+Maybe you make aqua correlation with causation． 
+也许你把aqua与因果关系联系起来˳
+
+561
+01:15:08,160 --> 01:15:13,053
+Yes‚ but I would like it to be a little bit more direct explanation． 
+是的，但我希望能给出更直接的解释˳
+
+562
+01:15:13,053 --> 01:15:19,843
+Let's say someone doesn't know what call it is‚ exactly what you just said． 
+假设有人不知道它叫什么，确切地说是你刚刚说的˳
+
+563
+01:15:19,843 --> 01:15:23,340
+Can you just say it a little bit more later? 
+你能稍后再说吗？
+
+564
+01:15:23,420 --> 01:15:27,980
+I would just say there could be other features or things that the model is doing to solve． 
+我只想说模型可能正在解决其他功能或问题˳
+
+565
+01:15:30,620 --> 01:15:34,646
+Okay‚ but yes‚ that's true． 
+好的，但是是的，这是真的˳
+
+566
+01:15:34,646 --> 01:15:54,180
+But let's say I'm trying to get to yet another possible situation‚ which is‚ is this feature necessarily here Just by being with the representation‚ it doesn't mean that the model will necessarily using it right for the for． 
+但是假设我正在尝试进入另一种可能的情况，即此功能是否必须仅通过与表示一起使用，这并不意味着模型必须正确地使用它˳
+
+567
+01:15:56,360 --> 01:15:59,120
+As if I gave you a huge book during your exam． 
+就好像我在你考试期间给了你一本大书一样˳
+
+568
+01:16:00,120 --> 01:16:03,935
+You have the entire book‚ but it's huge‚ and I give you only 10 minutes． 
+你有整本书，但它很大，我只给你10分钟˳
+
+569
+01:16:03,935 --> 01:16:06,180
+You have it‚ but you don't necessarily． 
+你拥有它，但不一定˳
+
+570
+01:16:10,960 --> 01:16:17,120
+So‚ and this is basically what you said‚ because correlation is there‚ but it doesn't mean it． 
+所以，这基本上就是你说的，因为相关性是存在的，但这并不意味着它˳
+
+571
+01:16:19,950 --> 01:16:23,723
+Okay‚ I say we are out of you． 
+好吧，我说我们离开你了˳
+
+572
+01:16:23,723 --> 01:16:28,580
+Have time to go over the rest of it‚ but I would welcome you． 
+我有时间把剩下的内容讲一遍，但我欢迎你˳
+
+573
+01:16:33,620 --> 01:16:38,180
+In 10 days‚ consider going well and thinking about the rest of the． 
+在10天内，考虑进展顺利并考虑其余的事情˳

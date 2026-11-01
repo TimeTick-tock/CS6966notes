@@ -1,0 +1,2719 @@
+1
+00:00:00,040 --> 00:00:05,185
+And of course I'm here if you need to chat with me about anything． 
+当然，如果你需要和我聊天，我就在这里˳
+
+2
+00:00:05,185 --> 00:00:12,618
+But now I'm going to the course stuff I got‚ release the practice quiz and maybe call it like that． 
+但是现在我要去参加我得到的课程内容，发布练习测验，也许可以这样称呼它˳
+
+3
+00:00:12,618 --> 00:00:14,320
+It's really‚ really short． 
+真的很短˳
+
+4
+00:00:15,520 --> 00:00:26,926
+It touches only the most many topics in the course so far‚ but it gives you kind of know a little bit of insight of how the quizzes could look like． 
+到目前为止，它只涉及课程中最多的主题，但它可以让你对测验的外观有一些了解˳
+
+5
+00:00:26,926 --> 00:00:36,460
+But please keep in mind that the qui from superposition until including the last lecture． 
+但请记住，从叠加到最后一课的qui˳
+
+6
+00:00:37,640 --> 00:00:41,870
+So the top‚ it still may appear‚ you know‚ in the quiz． 
+所以顶部仍然可能会出现，你知道的，在测验中˳
+
+7
+00:00:41,870 --> 00:00:45,898
+But yeah‚ it's going to be multiple shows‚ practice quiz． 
+但是是的，这将是多个节目，练习测验˳
+
+8
+00:00:45,898 --> 00:00:52,646
+And I think you can see that there are questions aren't‚ you know‚ what is in our representation? 
+我想你可以看到有问题不是，你知道，我们的代表是什么？
+
+9
+00:00:52,646 --> 00:00:56,603
+What is‚ but rather a little bit of understanding what it didn't have? 
+是什么，而是一点点理解它没有的东西？
+
+10
+00:00:56,603 --> 00:01:00,466
+Or blood‚ Are there any questions about it or the quiz? 
+或者血，关于它或者测验有什么问题吗？
+
+11
+00:01:00,466 --> 00:01:02,840
+We are going to have them through there． 
+我们将让他们通过那里˳
+
+12
+00:01:06,570 --> 00:01:08,080
+Okay‚ good‚ yeah． 
+好的，好的˳
+
+13
+00:01:10,820 --> 00:01:15,380
+Yeah‚ it's something on paper prints‚ something to write‚ follow along with． 
+是的，它是在纸上印刷的东西，写的东西，跟随˳
+
+14
+00:01:16,700 --> 00:01:21,689
+Yeah‚ bring me your ID as well because we should be checking those． 
+是的，也把你的账号带给我，因为我们应该检查一下˳
+
+15
+00:01:21,689 --> 00:01:24,924
+That's it‚ yeah‚ 4‚ 5． 
+就这样，是的，4，5˳
+
+16
+00:01:24,924 --> 00:01:30,740
+And then to start right away with the quiz‚ how 30 minutes for the quiz? 
+然后立即开始测验，测验需要30分钟？
+
+17
+00:01:30,920 --> 00:01:34,260
+I think there will be roughly 18‚ no more than 10 questions． 
+我想大概会有18个，不超过10个问题˳
+
+18
+00:01:35,980 --> 00:01:36,520
+Right now there are 8． 
+现在有8个˳
+
+19
+00:01:40,570 --> 00:01:40,880
+That's how? 
+就这样？
+
+20
+00:01:42,910 --> 00:01:43,970
+Yeah‚ so you will have enough time． 
+是的，所以你会有足够的时间˳
+
+21
+00:01:47,160 --> 00:01:47,797
+Nothing‚ yeah． 
+没什么，是的˳
+
+22
+00:01:47,797 --> 00:01:50,560
+You can't use your phone and understand the stuff． 
+你不能使用你的手机并理解这些东西˳
+
+23
+00:01:52,700 --> 00:01:57,260
+And then we are going to continue after the quiz with whatever we start to do． 
+然后我们将在测验后继续进行我们开始做的任何事情˳
+
+24
+00:02:00,560 --> 00:02:03,155
+Any other questions about the content? 
+关于内容还有其他问题吗？
+
+25
+00:02:03,155 --> 00:02:08,040
+If you have been reviewing and maybe you realize something‚ I so here． 
+如果你一直在复习，也许你意识到了什么，我在这里˳
+
+26
+00:02:12,220 --> 00:02:15,740
+Okay‚ if you remember anything‚ feel free to stop me． 
+好的，如果你还记得什么，随时阻止我˳
+
+27
+00:02:15,740 --> 00:02:19,260
+If not‚ we are going to continue where we left off． 
+如果没有，我们将继续我们中断的地方˳
+
+28
+00:02:26,740 --> 00:02:31,300
+Last time I'm talking about various ways to evaluate function quantum is which led us． 
+上次我谈论的是评估函数量子的各种方法，这些方法引导了我们˳
+
+29
+00:02:34,620 --> 00:02:39,620
+And that we don't really like‚ such as feature absorption‚ for example． 
+而我们不太喜欢的东西，比如特征吸收˳
+
+30
+00:02:41,020 --> 00:02:47,570
+Problems are the result of this sparsity versus Ress‚ right? 
+问题是这种稀疏性与rest的结果，对吧？
+
+31
+00:02:48,540 --> 00:02:50,560
+There is an inherent tension here． 
+这里有一种固有的紧张局势˳
+
+32
+00:02:52,060 --> 00:03:01,420
+Reconstruction wants to use as many of the available latents because of course‚ the more it better the reconstruction building‚ right? 
+重建想要尽可能多地使用可用的潜伏期，因为当然，重建建筑物越好，对吗？
+
+33
+00:03:01,420 --> 00:03:13,728
+While bar if tries to minimize the number of latents that are active‚ which works against that‚ let me use as many of these latents to reconstruct the input as so． 
+While bar如果试图最小化活动的潜伏期数量，这对其起作用，让我使用尽可能多的这些潜伏期来重建输入˳
+
+34
+00:03:13,728 --> 00:03:24,090
+There is an inherent pension here and we would like us to be balance in an exact way we would like‚ but things are at the mercy of the optimization． 
+这里有固有的养老金，我们希望以我们想要的精确方式平衡，但事情取决于优化的摆布˳
+
+35
+00:03:24,560 --> 00:03:29,910
+So whatever happens with the gradient descent happens and we have left with the outcome． 
+所以梯度下降发生的事情都会发生，我们只剩下结果˳
+
+36
+00:03:30,640 --> 00:03:38,010
+So last time we talked about how else we can induce spastic‚ which will lead to better evaluation metrics． 
+所以上次我们讨论了如何诱发痉挛，这将导致更好的评价标准˳
+
+37
+00:03:39,210 --> 00:03:56,490
+And one of the main advances there that we talked about are top K sparsity‚ where instead of inducing sparsity with the loss function‚ we drop the sparsity line stern‚ which have only the reconstruction of stern． 
+其中一个主要的进步是我们谈到的前K稀疏性，我们没有使用损失函数诱导稀疏性，而是放弃了只有重建的稀疏性线˳
+
+38
+00:03:56,490 --> 00:04:12,630
+And instead‚ when we produce the sparse feature vector‚ we 0 out not only the values that have the activation value low zero‚ but also every value that it's not in top k highest activation． 
+相反，当我们生成稀疏特征向量时，我们不仅将激活值为低零的值排除0，还将排除不在最高激活值的每个值˳
+
+39
+00:04:14,740 --> 00:04:16,430
+So we are‚ it's like real monster． 
+所以我们就像真正的怪物一样˳
+
+40
+00:04:16,770 --> 00:04:18,360
+It's a little bit more aggressive． 
+更具侵略性一点˳
+
+41
+00:04:19,590 --> 00:04:22,170
+So that was one big advancement． 
+这是一个很大的进步˳
+
+42
+00:04:22,410 --> 00:04:35,080
+And then it was also extended to patch to where we batch of activations and check how many bat size times k highest activations there are． 
+然后它也被扩展到补丁中，我们批量激活并检查蝙蝠大小乘以最高激活的次数˳
+
+43
+00:04:35,900 --> 00:04:41,780
+So one activation can have five of those and the other can have only two． 
+所以一个激活可以有五个，另一个只能有两个˳
+
+44
+00:04:41,820 --> 00:04:45,700
+So it's a little bit more dynamic across activations in a batch． 
+因此，在批量激活中，它更具动态性˳
+
+45
+00:04:49,420 --> 00:04:53,980
+Important events we have seen is the auxiliary loss． 
+我们看到的重要事件是辅助损失˳
+
+46
+00:04:54,700 --> 00:04:58,730
+Do we remember why we introduced this one? 
+我们还记得为什么引入这个吗？
+
+47
+00:05:05,270 --> 00:05:18,309
+But then there features‚ Yeah‚ so if about the problem of dead features‚ meaning the lates that do not activate for a large number of tokens in our data set． 
+但是还有一些功能，是的，关于死功能的问题，这意味着在我们的数据集中没有为大量令牌激活的late˳
+
+48
+00:05:18,309 --> 00:05:33,784
+And to prevent that features‚ we have introduced a new loss term that basically what the residual‚ which is the difference between the reconstruction and the original activation and tries to reconstruct it using top that features． 
+并且为了防止这种特征，我们引入了一个新的损失项，基本上就是残差，即重建和原始激活之间的区别，并尝试使用顶部的特征进行重建˳
+
+49
+00:05:33,784 --> 00:05:38,597
+But these dead features are sorted by their free calculations． 
+但这些死特征是按照它们的自由计算排序的˳
+
+50
+00:05:38,597 --> 00:05:42,960
+But okay‚ so those were two super important ones． 
+但好吧，那两个是非常重要的˳
+
+51
+00:05:43,580 --> 00:05:48,140
+I'm gonna go today over some kind of plan for today is． 
+我今天要讨论一些今天的计划˳
+
+52
+00:05:50,810 --> 00:05:52,050
+More of the Sav variants． 
+更多的Sav变体˳
+
+53
+00:05:55,970 --> 00:06:05,640
+I don't want to be pedantic here and try to tell you every single one of the things there is in the Sae world‚ but I do want to cover all of the things that are commonly encountered today． 
+我不想在这里迂腐，试图告诉你Sae世界中的每一件事情，但我确实想涵盖今天常见的所有事情˳
+
+54
+00:06:06,100 --> 00:06:08,870
+So we didn't go over just a few more things． 
+所以我们没有再多看几件事情˳
+
+55
+00:06:09,950 --> 00:06:12,370
+So we are going to go over those． 
+所以我们要讨论一下这些˳
+
+56
+00:06:13,720 --> 00:06:28,040
+We are starting‚ we're gonna start to survey into‚ if you remember‚ one of my first lecture was showing you those graphs where we had feature nodes and they were connected from inputs all the way to the output． 
+我们开始了，我们要开始调查，如果你还记得的话，我的第一个讲座向你展示了一些图表，其中我们有特征节点，它们从输入一直连接到输出˳
+
+57
+00:06:28,190 --> 00:06:47,574
+Right now‚ these sparse features‚ they give us only what is encoded in the activation representations of tokens‚ but they don't tell us how these features are then connected to make a process with which a neural network can allow it comes from the inputs all the way to the outputs． 
+现在，这些稀疏特征，它们只提供给我们在令牌激活表示中编码的内容，但它们没有告诉我们这些特征如何连接以形成一个过程，神经网络可以允许它从输入一直到输出˳
+
+58
+00:06:47,574 --> 00:06:52,800
+And that's going to be our next topic that we are going to kind of start talking about today． 
+这将是我们今天将要开始谈论的下一个话题˳
+
+59
+00:06:52,800 --> 00:07:04,360
+Today‚ my plan is to give you big overview with some technical details‚ and in the following lectures‚ we're going to talk a little bit more． 
+今天，我的计划是给你提供一些技术细节的大概述，在接下来的讲座中，我们将更多地谈论˳
+
+60
+00:07:04,670 --> 00:07:10,174
+How exactly do we know‚ calculate the edge length and things like that． 
+我们怎么知道，计算边缘长度之类的东西˳
+
+61
+00:07:10,174 --> 00:07:11,680
+Okay‚ any questions? 
+好的，有问题吗？
+
+62
+00:07:13,040 --> 00:07:17,070
+Okay‚ so Sa variants‚ and then we are going to． 
+好的，所以是变异的，然后我们要˳
+
+63
+00:07:19,300 --> 00:07:21,650
+About sparse feature circuits． 
+关于稀疏特征电路˳
+
+64
+00:07:33,220 --> 00:07:47,755
+So the first thing I want to mention regarding the Sa variant is another activation function where is real‚ right? 
+所以我想提到的关于Sa变体的第一件事是另一个激活函数在哪里是真实的，对吧？
+
+65
+00:07:47,755 --> 00:07:59,980
+When we calculate our sparse feature‚ we take the real or three activation values that obtain the encoder range matches． 
+当我们计算稀疏特征时，我们采用实际或三个激活值来获得编码器范围的匹配˳
+
+66
+00:08:12,220 --> 00:08:14,845
+Plus some in turbos． 
+加上一些涡轮增压器˳
+
+67
+00:08:14,845 --> 00:08:31,200
+So 1‚ one new advantage‚ instead of Re‚ we use something called jump wheels‚ draw it‚ and then it's going to immediately become clear your Y jump‚ our standard of the viewing． 
+所以1，一个新的优势，而不是Re，我们使用一种叫做跳跃轮的东西，绘制它，然后它就会立即变得清晰，这是我们观看的标准˳
+
+68
+00:08:34,620 --> 00:08:43,630
+Are our pre-activation values‚ let's call them z‚ is going to be 0 all the way to． 
+我们的预激活值，我们称之为z，将一直为0˳
+
+69
+00:08:46,280 --> 00:08:50,840
+And then it's going to be a identity function that's real． 
+然后它将成为一个真实的身份函数˳
+
+70
+00:08:51,460 --> 00:08:53,350
+I want to be a little epsilon． 
+我想成为一个小epsilon˳
+
+71
+00:08:53,350 --> 00:08:54,400
+I just wanted to． 
+我只是想˳
+
+72
+00:08:57,020 --> 00:09:04,560
+And with jump Relu‚ we are going to introduce a threshold data here． 
+对于跳跃Relu，我们将在这里介绍一个阈值数据˳
+
+73
+00:09:05,910 --> 00:09:12,560
+As soon as we reach Hepa‚ we are going to start 0 out‚ okay? 
+一旦我们到达Hepa，我们就会从0开始，好吗？
+
+74
+00:09:12,560 --> 00:09:17,320
+So this is why jump‚ we are going down‚ down‚ down‚ and suddenly we jump‚ right? 
+所以这就是为什么跳，我们往下走，往下，突然我们就跳了，对吧？
+
+75
+00:09:17,320 --> 00:09:18,440
+It's not so big． 
+它不是那么大˳
+
+76
+00:09:21,280 --> 00:09:32,391
+The idea behind this is that there might be some small values here that are positive‚ and we would think this latents to activate‚ but they are just noisy‚ right? 
+这背后的想法是，这里可能有一些小的正值，我们会认为这些潜伏期会被激活，但它们只是嘈杂的，对吧？
+
+77
+00:09:32,391 --> 00:09:34,860
+The other activation is too small． 
+另一个激活太小˳
+
+78
+00:09:35,790 --> 00:09:41,570
+So that's the first idea behind jumping to kind of cancel out those noisy activations． 
+所以这是跳跃背后的第一个想法，以抵消那些嘈杂的激活˳
+
+79
+00:09:42,480 --> 00:09:48,086
+But we won't predefined what the values of theta are going to be． 
+但我们不会预先定义theta的值是什么˳
+
+80
+00:09:48,086 --> 00:09:51,990
+Rather‚ theta is going to be learnable． 
+相反，theta将是可学习的˳
+
+81
+00:09:52,750 --> 00:09:59,788
+And we are not going to have just one setup for all values in the z pre-activation vector． 
+而且我们不会对z预激活向量中的所有值都只有一个设置˳
+
+82
+00:09:59,788 --> 00:10:04,998
+Rather‚ we are going to have theta for every single one of them． 
+相反，我们将为它们中的每一个都设置theta˳
+
+83
+00:10:04,998 --> 00:10:11,780
+So remember‚ this is‚ if I call this z 3‚ it's going to be the vector． 
+所以请记住，如果我称它为z3，它将是向量˳
+
+84
+00:10:14,960 --> 00:10:18,220
+Where n is the number of features? 
+其中，n是特征的数量？
+
+85
+00:10:23,340 --> 00:10:25,496
+So which I am bringing． 
+所以我带来的˳
+
+86
+00:10:25,496 --> 00:10:31,500
+I'm going to define Keta‚ which is also going to be vector． 
+我将定义Keta，它也将是向量˳
+
+87
+00:10:31,910 --> 00:10:45,650
+And each value in theta tells me how much that latent corresponding latent theta I‚ so for the latent eyes‚ how much that latent needs to activate to be D? 
+theta中的每个值都告诉我潜在对应的潜在theta I有多少，那么对于潜在的眼睛，需要激活多少才能得到D？
+
+88
+00:10:48,600 --> 00:10:58,530
+Right‚ so maybe for the first light‚ and this is ．1‚ maybe for the other light and is 0．2 together with our essay． 
+对，所以也许对于第一盏灯，这是．1，也许对于另一盏灯，和我们的论文一起是0．2˳
+
+89
+00:11:00,310 --> 00:11:03,530
+Okay‚ so let's just write what jump will is． 
+好的，那我们就来写一下跳跃意志是什么˳
+
+90
+00:11:03,710 --> 00:11:06,000
+So we have these parameters‚ right? 
+所以我们有这些参数，对吧？
+
+91
+00:11:09,990 --> 00:11:10,930
+It's going． 
+它在继续˳
+
+92
+00:11:13,410 --> 00:11:14,940
+To leave our pre-activation as they are． 
+保持我们的预激活状态˳
+
+93
+00:11:26,520 --> 00:11:31,080
+With the P Toch implementation of these things‚ you will see oh． 
+有了这些东西的实现，你会看到哦˳
+
+94
+00:11:34,750 --> 00:11:35,520
+Mostly for my ego． 
+主要是为了我的自我˳
+
+95
+00:11:35,880 --> 00:11:37,530
+If I fall over here． 
+如果我跌倒在这里˳
+
+96
+00:11:39,400 --> 00:11:49,315
+So what you are going to see is actually a product between the pre-activation vector with that's going to have ones or zeros． 
+所以你将看到的实际上是预激活向量与将有1或0的乘积˳
+
+97
+00:11:49,315 --> 00:11:52,040
+And the values are going to basically depend． 
+价值将基本上取决于˳
+
+98
+00:11:52,560 --> 00:11:57,040
+So I'm going to write this in a very mathy way． 
+所以我打算用一种非常数学的方式来写这篇文章˳
+
+99
+00:11:57,040 --> 00:12:04,730
+This is an indicator function one if condition is true． 
+这是一个指示函数，如果条件为真˳
+
+100
+00:12:12,100 --> 00:12:15,180
+You have amazing seen different symbols for this one． 
+你已经惊人地看到了这个的不同符号˳
+
+101
+00:12:16,860 --> 00:12:21,210
+So this vector is going to have one． 
+所以这个向量将有一个˳
+
+102
+00:12:21,600 --> 00:12:27,180
+If the z 3 I minus theta I is larger． 
+如果z 3 I减去theta I较大˳
+
+103
+00:12:27,840 --> 00:12:31,076
+So this is just another way of writing this‚ right? 
+所以这只是写这篇文章的另一种方式，对吧？
+
+104
+00:12:31,076 --> 00:12:38,890
+And the reason why it's written like this is because you have the teta vector inor you have the vector of reactivation． 
+它被写成这样的原因是因为你有teta向量或者有重新激活的向量˳
+
+105
+00:12:38,890 --> 00:12:45,350
+So you can just make a difference to get all of these values in one operation doing a loop or something． 
+因此，您可以在执行循环或其他操作的一次操作中获得所有这些值˳
+
+106
+00:12:45,460 --> 00:12:50,340
+So just vector is ands are‚ so it's easier to recognize． 
+所以只是向量是ands，这样更容易识别˳
+
+107
+00:12:51,420 --> 00:12:54,500
+And we are going to have n of these． 
+我们将会有n个这样的˳
+
+108
+00:12:54,500 --> 00:12:56,180
+So let me just read this． 
+那么让我读一下这个˳
+
+109
+00:13:00,000 --> 00:13:07,058
+I'm using these parentheses because I'm denoting the vector n values in this vector． 
+我使用这些括号是因为我在这个向量中表示向量的n值˳
+
+110
+00:13:07,058 --> 00:13:33,480
+And each value in this vector is going to be one or 0 function does‚ and it's going to be one when the difference between the pre-activation value for the platelet minus heta I for that latent‚ So threshold for latent equals‚ okay‚ so I think this is maybe more intuitive‚ but this is how you would see it in Bi． 
+并且这个向量中的每个值将是一个或0函数，当血小板的预激活值减去潜在的heta I之间的差值时，它将是一个，因此潜在的阈值等于，好吧，所以我认为这可能更直观˳但这就是你在Bi中看到的˳
+
+111
+00:13:34,680 --> 00:13:52,340
+Now‚ the issue with jump Relu is that these the want to learn this values theta‚ but theta here is almost like an external‚ it's using this stepwise function only as a threshold‚ right? 
+现在，跳跃Relu的问题是这些人想要学习这个值theta，但这里的theta几乎就像一个外部的，它只使用这个逐步函数作为阈值，对吗？
+
+112
+00:13:53,020 --> 00:14:12,050
+Directly included in the function‚ so if you would like to take a gradient of other reconstruction‚ your loss with respect to the jump re‚ you are not having an easy way to access thes‚ but you would like to because you want to change their values‚ you want to learn them． 
+直接包含在函数中，因此如果您想获取其他重建的梯度，您相对于跳跃的损失re，您没有一种简单的方法来访问它们，但您想要，因为您想更改它们的值，您想学习它们˳
+
+113
+00:14:12,380 --> 00:14:27,050
+So I will not teach you this because this is little bit more advanced‚ but you can calculate something which is called cellular radiance and then use something called straight to estimating to actually change this data． 
+所以我不会教你这个，因为这有点高级，但是你可以计算一些叫做细胞辐射率的东西，然后使用一些叫做直接估计的东西来实际改变这个数据˳
+
+114
+00:14:27,620 --> 00:14:29,313
+So there are ways to do this． 
+所以有办法做到这一点˳
+
+115
+00:14:29,313 --> 00:14:33,910
+I think it goes a little bit beyond the point of what we want to do here． 
+我认为这有点超出了我们想在这里做的事情的范围˳
+
+116
+00:14:33,910 --> 00:14:45,780
+So just remember that people are learned initially random‚ but they are learned together with the rest of these‚ which includes your encoder and decoder rates and biases． 
+所以请记住，人们最初是随机学习的，但他们是和其他人一起学习的，包括你的编码器和解码器率以及偏见˳
+
+117
+00:14:45,780 --> 00:14:51,640
+And to actually change header values‚ you can't use your vanilla gradient descent． 
+并且要实际更改标题值，您不能使用香草梯度下降˳
+
+118
+00:14:52,120 --> 00:14:56,070
+You need to calculate something called Sod gradients and use straight． 
+你需要计算一种叫做草皮梯度的东西并使用直线˳
+
+119
+00:15:00,480 --> 00:15:10,522
+In 2030‚ okay‚ so today‚ very often‚ if you're going to see jump ring and now you know what it is‚ right? 
+在2030年，好吧，所以今天，很多时候，如果你要看到卡簧，现在你知道它是什么了，对吧？
+
+120
+00:15:10,522 --> 00:15:23,560
+And remember that the core motivation that these small‚ really small activations don't throw the whole Sae off because now we are deeming something which is noise to be activation of the Li． 
+并记住，这些小的，非常小的激活的核心动机并不会让整个Sae消失，因为现在我们认为一些噪音是Li的激活˳
+
+121
+00:15:37,660 --> 00:15:42,220
+Information You have a pointer to jump real． 
+你有一个指针来跳转真实的信息˳
+
+122
+00:15:43,030 --> 00:15:47,530
+If you really know how this works‚ you can check it out． 
+如果你真的知道这是如何工作的，你可以去看看˳
+
+123
+00:15:48,360 --> 00:15:51,260
+Okay‚ so that's 1‚ 1 change． 
+好的，那就是1，1个变化˳
+
+124
+00:15:51,270 --> 00:15:58,934
+I'm going to mention two small changes and one big change amongst two small changes． 
+我要提到两个小变化和一个大变化中的两个小变化˳
+
+125
+00:15:59,256 --> 00:16:03,447
+You will see‚ something called free encoder bias． 
+你会看到，一种叫做自由编码器偏见的东西˳
+
+126
+00:16:03,447 --> 00:16:13,430
+So usually in the most basic formulation of Sa‚ we have pre activations that we applied and we have this bias here． 
+通常在最基本的Sa配方中，我们应用了预激活，并且在这里存在偏见˳
+
+127
+00:16:14,300 --> 00:16:15,840
+Let me repeat all of that． 
+让我重复一遍˳
+
+128
+00:16:19,220 --> 00:16:21,956
+You're not confused． 
+你不困惑˳
+
+129
+00:16:21,956 --> 00:16:23,780
+So basic essay． 
+非常基础的文章˳
+
+130
+00:16:44,420 --> 00:16:52,227
+Empirically‚ it has been shown that you can play around to improve the performance． 
+经验表明，你可以通过玩弄来提高表现˳
+
+131
+00:16:52,227 --> 00:16:55,180
+So there is something called free code． 
+所以有一种叫做免费代码的东西˳
+
+132
+00:16:59,020 --> 00:16:59,170
+Where? 
+在哪里？
+
+133
+00:17:02,420 --> 00:17:10,528
+We're going to‚ again‚ produce z‚ use reallu‚ and this is where the difference comes． 
+我们将再次生产z，使用reallu，这就是差异所在˳
+
+134
+00:17:10,528 --> 00:17:12,580
+Or maybe I will actually write． 
+或者我真的会写作˳
+
+135
+00:17:19,390 --> 00:17:23,330
+Their bias and subtracted it from? 
+他们的偏见并从中减去？
+
+136
+00:17:30,310 --> 00:17:35,060
+The I try to understand the motivation for this? 
+我试图理解这样做的动机吗？
+
+137
+00:17:35,060 --> 00:17:44,063
+I don't know and maybe know‚ but I couldn't really find what the motivation and intuition behind this all． 
+我不知道，也许也知道，但我真的找不到这一切背后的动机和直觉˳
+
+138
+00:17:44,063 --> 00:17:51,950
+I could find that empirically‚ it has been found that if this is done‚ it leads to better essay in metrics such as reconstruction as varsity． 
+我可以从经验上发现，如果这样做，它会导致更好的度量指标，如重建队打˳
+
+139
+00:17:51,950 --> 00:17:57,520
+So maybe I'm missing something out‚ but my search didn't bring me to the actual intuition of the health． 
+所以也许我错过了什么，但我的搜索并没有给我带来真正的健康直觉˳
+
+140
+00:17:57,520 --> 00:18:02,740
+What I did find is‚ yeah‚ we included this and it improved the results． 
+我发现的是，是的，我们包括了这个，它改善了结果˳
+
+141
+00:18:02,740 --> 00:18:09,022
+But typically‚ researchers have an idea of why this would I who results in the first place? 
+但通常情况下，研究人员有一个想法，为什么这将是谁的结果？
+
+142
+00:18:09,022 --> 00:18:19,960
+And I would love to know it‚ but unfortunately‚ but you will see this form in‚ for example‚ on topic and open a scale． 
+我很想知道它，但不幸的是，你会在主题和打开秤上看到这种形式˳
+
+143
+00:18:20,620 --> 00:18:23,107
+It is a newspaper． 
+这是一份报纸˳
+
+144
+00:18:23,107 --> 00:18:27,080
+You will see this form also for that features． 
+你也会看到这个表格的功能˳
+
+145
+00:18:27,080 --> 00:18:32,063
+We have mentioned a auxiliary law here． 
+我们在这里提到了一个辅助法˳
+
+146
+00:18:32,063 --> 00:18:46,080
+Another thing that the OpenAI researchers have introduced that helped with the Is they set the decoder weight matrices to be the transports of the encoder． 
+OpenAI研究人员介绍的另一件事是他们将解码器权重矩阵设置为编码器的传输˳
+
+147
+00:18:48,840 --> 00:18:50,610
+That also helped． 
+这也有所帮助˳
+
+148
+00:18:55,800 --> 00:18:59,840
+The encoder to the passport． 
+护照的编码器˳
+
+149
+00:19:09,140 --> 00:19:32,847
+I clarify the clear intuition behind this‚ but we do know that the columns of the coder representing what should be future directions and including the rows‚ the ways that we determine how much those feature directions are in this class feature vector‚ right? 
+我澄清了这背后的清晰直觉，但我们确实知道编码器的列代表未来方向，包括行，我们确定这些特征方向在这个类特征向量中有多少的方式，对吧？
+
+150
+00:19:32,847 --> 00:19:35,831
+So there is a connection between them． 
+所以它们之间有联系˳
+
+151
+00:19:35,831 --> 00:19:37,920
+So it makes sense to make them． 
+所以制造它们很感知˳
+
+152
+00:19:39,100 --> 00:19:46,710
+But just because we initialize one with the other doesn't mean that they continue to be the same‚ you know‚ transports of each other． 
+但是仅仅因为我们用另一个来初始化一个并不意味着它们继续是相同的，你知道的，彼此的传输˳
+
+153
+00:19:47,070 --> 00:19:50,910
+So they're just initialized‚ and then they are learned separate． 
+所以它们只是初始化，然后分别学习˳
+
+154
+00:19:51,700 --> 00:19:54,250
+Their weights are not type． 
+他们的体重不是类型˳
+
+155
+00:19:54,740 --> 00:19:59,720
+So these are two small changes and the last big change． 
+所以这是两个小变化和最后一个大变化˳
+
+156
+00:20:02,880 --> 00:20:04,030
+Whiteboard space for you． 
+白板空间给你˳
+
+157
+00:20:04,060 --> 00:20:05,100
+Do we have any questions? 
+我们有什么问题吗？
+
+158
+00:20:08,000 --> 00:20:14,600
+Feel throughout this deep learning machine learning initialization has kind of been． 
+在整个深度学习中，机器学习初始化一直都在进行˳
+
+159
+00:20:17,020 --> 00:20:22,320
+But is there research into how initialization impacts? 
+但是有研究初始化的影响吗？
+
+160
+00:20:26,000 --> 00:20:39,520
+I would say that in around 2014‚ it was actually very active of research because‚ of course‚ when networks were prescribing that initialization method． 
+我会说在2014年左右，它的研究实际上非常活跃，因为，当然，当网络开出初始化方法的处方时˳
+
+161
+00:20:40,620 --> 00:20:55,620
+But I think everything kin to xier Goro paper that given us the formula‚ I just take into account how many features‚ how many features come out of your layer and initialize uniformly with respect to that． 
+但我认为一切都类似于xier Goro论文，它给了我们这个公式，我只考虑有多少特征从你的层中出来，并统一初始化˳
+
+162
+00:20:55,620 --> 00:20:57,920
+And that simply works really well． 
+这真的很有效˳
+
+163
+00:20:57,920 --> 00:21:13,060
+I think maybe after that‚ there was a huge need to change in new organization and then pretrained‚ and then how you initialize your free train neural network‚ how you initialize it before you start． 
+我想可能在那之后，有一个巨大的需求来改变新的组织，然后预先训练，然后如何初始化你的自由训练神经网络，如何在开始之前初始化它˳
+
+164
+00:21:13,380 --> 00:21:19,420
+I mean‚ of course‚ matters‚ but that's something that almost none of us do‚ so we get the way． 
+我的意思是，当然，这很重要，但这是我们几乎没有人做的事情，所以我们找到了方法˳
+
+165
+00:21:21,500 --> 00:21:28,280
+Now‚ it's funny because we are in 2026 and now here have random initialize essays‚ right? 
+现在，这很有趣，因为我们处于2026年，现在这里有随机初始化的文章，对吧？
+
+166
+00:21:28,540 --> 00:21:30,730
+And we need to take care of all these． 
+我们需要照顾好所有这些˳
+
+167
+00:21:33,040 --> 00:21:41,090
+Certainly some things that have been learned in the past are now applied here as well‚ yeah． 
+当然，过去学到的一些东西现在也适用于这里˳
+
+168
+00:21:59,100 --> 00:22:15,240
+Okay‚ so one big change that happened last year is to kind of try to fix this issue of some features are too specialized‚ some features are too‚ some features selectively activate and so on． 
+好的，所以去年发生的一个大变化是尝试解决一些功能过于专业，一些功能过于专业，一些功能有选择性地激活等问题˳
+
+169
+00:22:15,240 --> 00:22:20,010
+So that has become kind of big research direction． 
+这已经成为一种重要的研究方向˳
+
+170
+00:22:21,520 --> 00:22:32,730
+Last year‚ everything I said before‚ I would say this was all necessary to actually it clear SS to the number of features that we need for real elements I talking about． 
+去年，我之前所说的一切，我想说这都是必要的，才能真正清楚地知道我们谈论的真实元素所需的功能数量˳
+
+171
+00:22:36,490 --> 00:22:40,020
+About all right now‚ we managed to scale them and they are not． 
+现在，我们设法扩大了它们的规模，但它们没有˳
+
+172
+00:22:42,080 --> 00:22:43,680
+But how to make them better‚ right? 
+但是如何让它们变得更好，对吧？
+
+173
+00:22:45,820 --> 00:22:51,240
+One of the big innovation last year was something called． 
+去年的重大创新之一是所谓的东西˳
+
+174
+00:23:00,820 --> 00:23:07,380
+First two‚ they the dolls that have a smaller one inside of them． 
+前两个是里面有一个较小的娃娃˳
+
+175
+00:23:07,440 --> 00:23:11,880
+Yeah‚ exactly‚ it's a Hearst or the Russian dolls where you can stack one inside． 
+是的，确切地说，它是一个赫斯特或俄罗斯娃娃，你可以在里面堆叠一个˳
+
+176
+00:23:14,060 --> 00:23:17,170
+The other‚ So any ideas how this could become relevant for essays? 
+另一个，那么你有什么想法这如何与论文相关吗？
+
+177
+00:23:22,500 --> 00:23:26,510
+It sounds‚ I don't know why． 
+听起来像是，我不知道为什么˳
+
+178
+00:23:29,320 --> 00:23:40,484
+So the idea here is that we have‚ we would like some features to be a little bit more specialize and some to be a little bit broader． 
+所以这里的想法是，我们希望一些功能更加专门化，一些功能更加广泛˳
+
+179
+00:23:40,484 --> 00:23:48,680
+For example‚ I‚ you‚ we have maybe feature for comma column period‚ but we don't have a broader feature of functional symbols． 
+例如，我，你，我们可能有逗号列期间的特征，但我们没有更广泛的功能符号特征˳
+
+180
+00:23:50,640 --> 00:23:59,546
+So the idea here is let's specialize future direction this hope in． 
+所以这里的想法是让我们将这个希望的未来方向专业化˳
+
+181
+00:23:59,546 --> 00:24:04,040
+So this is my decoder weighted matrix． 
+这是我的解码器加权矩阵˳
+
+182
+00:24:04,040 --> 00:24:11,200
+I said that each one of these columns corresponding to feature direction‚ right‚ so． 
+我说这些列中的每一列都对应于特征方向，对吧˳
+
+183
+00:24:20,620 --> 00:24:24,460
+To reconstruct our regional representation‚ right? 
+重建我们的区域代表性，对吧？
+
+184
+00:24:24,460 --> 00:24:33,420
+Remember‚ here we are doing is we take these columns and we consider how much the corresponding feature rate can accurately． 
+请记住，我们在这里做的是提取这些列，并考虑相应的特征速率可以准确地达到多少˳
+
+185
+00:24:34,600 --> 00:24:40,120
+We combine all of those feature direction relative to their importance for reconstruction． 
+我们将所有这些特征方向结合它们对于重建的重要性˳
+
+186
+00:24:40,220 --> 00:24:53,720
+So if you have only three latents that activate here‚ we would combine their three features and weight them by the activation of those features in the Spark． 
+因此，如果您在此处只有三个激活的潜伏期，我们将结合它们的三个功能，并通过在Spark中激活这些功能来对它们进行加权˳
+
+187
+00:25:00,700 --> 00:25:05,360
+Try to reconstruct the input not once with． 
+尝试重建输入而不是一次˳
+
+188
+00:25:09,860 --> 00:25:24,270
+We look first into maybe first‚ let's call it n 1 columns‚ then‚ next‚ and two combs‚ next‚ and three columns and so on． 
+我们首先看一下也许，让我们称它为n 1列，然后，下一个，两个梳子，下一个，三列等等˳
+
+189
+00:25:26,560 --> 00:25:49,540
+So why this can help if I have less amount possible feature directions to reconstruct a bunch of activations‚ those features need to be a little bit more general because they can not be ultra specialist‚ because if they are‚ they won't be able to reconstruct majority of the activations I give． 
+所以为什么这可以帮助如果我有更少的可能特征方向来重建一堆激活，这些特征需要更加普遍，因为它们不能超专业，因为如果它们是，它们将无法重建我给出的大部分激活˳
+
+190
+00:25:52,820 --> 00:26:01,115
+I take all‚ all of these columns‚ and some of them are forced to be a little bit more general． 
+我接受所有这些列，其中一些被迫更加笼统˳
+
+191
+00:26:01,115 --> 00:26:06,665
+Then the rest of them can be used to be for specializing‚ right? 
+那么其余的可以用来专攻，对吗？
+
+192
+00:26:06,665 --> 00:26:09,587
+So that's the idea behind t​‌​‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​‌​‌​​‌‌​​‌‌​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌​‌‌‌​​‌‌‌‌​‌​​‌‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​​‌​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌​​​‌‌‌​​‌​​‌‌​‌​‌​​‌‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌​​‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​‌‌‌‌‌​‌‌​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌​‌‌​​​‌‌‌‌‌​​​‌‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌​‌‌‌‌​‌​‌‌​​​‌‌​‌‌​​​‌‌​‌‌​​​‌‌​​​‌​​‌‌‌​‌‌‌‌​‌‌​​‌​​‌‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌​​‌‌​‌​‌​​‌‌‌‌‌‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌‌​‌​​‌‌​‌‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​​‌‌​​‌‌​‌‌‌‌‌​‌‌​​‌​​‌‌‌‌‌​​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌​‌‌​​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌​‌‌‌​​‌‌‌‌​‌​​‌‌​‌‌‌‌‌​‌‌‌‌​​​‌‌‌‌​‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌his． 
+这就是这背后的想法˳
+
+193
+00:26:09,587 --> 00:26:25,925
+All we are going to do is try to recon our X head‚ not just once‚ but as many times as we have these big con Pri‚ and then combine all of that information into our loss function． 
+我们要做的就是尝试重新定位我们的X头，不仅仅是一次，而是尽可能多次，因为我们有这些大的缺点，然后将所有这些信息合并到我们的损失函数中˳
+
+194
+00:26:25,925 --> 00:26:27,800
+Is that intuition clear? 
+这种直觉清楚吗？
+
+195
+00:26:35,980 --> 00:26:41,180
+So instead of just giving you an answer‚ let's try to see whether we can come to the answer． 
+所以，与其仅仅给你一个答案，让我们试着看看我们是否能得出答案˳
+
+196
+00:26:41,950 --> 00:26:58,706
+So if I have less columns and they need to‚ these few columns need to‚ few feature directions‚ need to‚ are forced to reconstruct a bunch of activations‚ what do you think? 
+所以，如果我有更少的列并且它们需要，那么这几列需要，几个特征方向需要，需要，被迫重建一堆激活，你认为呢？
+
+197
+00:26:58,706 --> 00:27:02,015
+Are they going to be more general or more specialized? 
+他们会更一般还是更专业？
+
+198
+00:27:02,015 --> 00:27:04,560
+I would say more general‚ so it's more wide． 
+我会说更一般，所以它更广泛˳
+
+199
+00:27:04,780 --> 00:27:06,345
+Yeah‚ exactly‚ right． 
+是的，没错˳
+
+200
+00:27:06,345 --> 00:27:18,127
+So because we have only few and they need to do and construct all of these different outputs‚ it's the best for them to be a little bit more general‚ right? 
+所以，因为我们只有很少的东西，它们需要做和构建所有这些不同的输出，所以最好让它们更通用一点，对吧？
+
+201
+00:27:18,127 --> 00:27:25,260
+If they are very otherwise‚ they can reconstruct really well‚ very few activations‚ but that will lead to really high reconstruction． 
+如果它们非常不同，它们可以重建得非常好，激活非常少，但这将导致非常高的重建˳
+
+202
+00:27:26,700 --> 00:27:31,260
+So these‚ they will become less general‚ less general． 
+所以这些，它们将变得不那么普遍，不那么普遍˳
+
+203
+00:27:33,620 --> 00:27:33,720
+To this． 
+为了这个˳
+
+204
+00:27:35,480 --> 00:27:45,900
+And it's a subtle way how these are becoming specialized because things are enforced to be general‚ it's basically up to essay what to do． 
+这是一种微妙的方式，这些变得专业化，因为事情被强制执行为一般的，基本上取决于文章该做什么˳
+
+205
+00:27:45,910 --> 00:27:59,402
+But if make this specialized in theory‚ this could be really general too‚ if only general features are sufficient to reconstruct all of our inputs． 
+但如果在理论上使其专门化，这也可能非常普遍，只要一般特征足以重建我们所有的输入˳
+
+206
+00:27:59,402 --> 00:28:06,040
+But if we have lots of lots of tokens‚ then some form of specialization will be implicitly． 
+但是如果我们有很多代币，那么某种形式的专业化将是隐含的˳
+
+207
+00:28:09,860 --> 00:28:11,500
+On the data would say‚ right? 
+关于数据会说，对吧？
+
+208
+00:28:11,680 --> 00:28:15,570
+If your data‚ yeah‚ I mean‚ we use this super large． 
+如果你的数据，是的，我的意思是，我们使用这个超大的数据˳
+
+209
+00:28:18,300 --> 00:28:22,028
+Even trillion subscriptions you can use for training essays． 
+甚至可以用于培训论文的万亿订阅˳
+
+210
+00:28:22,028 --> 00:28:27,220
+So if you want to reconstruct that much data‚ in the end‚ we specializing will be necessary． 
+因此，如果你想重建这么多数据，最终我们的专业将是必要的˳
+
+211
+00:28:28,910 --> 00:28:30,520
+Okay‚ let's write the equations． 
+好的，让我们写方程式˳
+
+212
+00:28:49,640 --> 00:28:57,775
+Okay‚ so first of all‚ we are going to need this nest set of sequences． 
+好的，首先，我们需要这个序列的嵌套集˳
+
+213
+00:28:57,775 --> 00:29:03,380
+So‚ and one and 2 all the way to‚ and let's say here． 
+所以，一和二一直到这里˳
+
+214
+00:29:05,460 --> 00:29:10,061
+And this is the last one will be all of the future directions． 
+这是最后一个，将是未来的所有方向˳
+
+215
+00:29:10,061 --> 00:29:11,500
+N is the number． 
+N是数字˳
+
+216
+00:29:17,250 --> 00:29:18,290
+These are called prefixes． 
+这些被称为前缀˳
+
+217
+00:29:22,020 --> 00:29:28,026
+N is the max number of latency． 
+N是最大延迟数˳
+
+218
+00:29:28,026 --> 00:29:32,240
+So that's the basically the number of． 
+这基本上就是数量˳
+
+219
+00:29:37,100 --> 00:29:42,340
+Okay‚ prefixes can be in this paper． 
+好的，前缀可以出现在这篇论文中˳
+
+220
+00:29:43,210 --> 00:29:46,870
+They have tried two ways of setting prefixes． 
+他们尝试了两种设置前缀的方法˳
+
+221
+00:29:46,930 --> 00:29:52,690
+One goes for every batch of data‚ randomly sampling them from a distribution． 
+每一批数据都有一个，从一个分布中随机抽样˳
+
+222
+00:29:52,690 --> 00:29:55,360
+So they are dynamics and different for batch． 
+所以它们是动态的，对于批处理来说是不同的˳
+
+223
+00:29:55,360 --> 00:30:06,040
+And they also try more simpler where we predefined them before the training NSA‚ and they found that this simpler version actually works a little bit better． 
+他们还尝试更简单的方式，在训练NSA之前预定义它们，他们发现这个更简单的版本实际上效果更好一些˳
+
+224
+00:30:06,040 --> 00:30:08,185
+Fixed group fixes are fine． 
+固定组修复很好˳
+
+225
+00:30:08,185 --> 00:30:20,320
+And just to give the sums up numbers‚ you can have‚ let's say 65K as the max number of features fixes could be． 
+并且只是为了总结数字，您可以拥有65k作为功能修复的最大数量˳
+
+226
+00:30:38,160 --> 00:30:40,340
+A set of these fres? 
+一组这些裂缝？
+
+227
+00:30:46,880 --> 00:30:48,489
+So we have prefixes． 
+所以我们有前缀˳
+
+228
+00:30:48,489 --> 00:30:57,980
+And these are some examples of what these we are going to produce our activations the same way we． 
+这些是我们将以相同的方式产生激活的一些例子˳
+
+229
+00:31:10,820 --> 00:31:15,380
+I'm going to have as many reconstructions as I have values in my． 
+我将有尽可能多的重建，因为我的价值在我的˳
+
+230
+00:31:20,860 --> 00:31:29,130
+Construction‚ so I'm going to denote every recon with the substrate and I to the prefix we used to reconstr． 
+构造，所以我将用基底和I来表示每个重新构造的前缀˳
+
+231
+00:31:32,730 --> 00:31:43,029
+I'm going to use the first and I columns of‚ so I'm going to denote that with zero column． 
+我将使用的第一列和I列，所以我将用零列表示它˳
+
+232
+00:31:43,029 --> 00:31:51,170
+And but you write this somewhere‚ so you know here． 
+但是你在某个地方写了这个，所以你知道这里˳
+
+233
+00:32:06,780 --> 00:32:09,060
+So I use those． 
+所以我用它们˳
+
+234
+00:32:09,060 --> 00:32:11,340
+And I also multiply． 
+我也乘法˳
+
+235
+00:32:11,440 --> 00:32:15,813
+I can multiply now with the entire vector z‚ which is n dimensional． 
+我现在可以与整个向量z相乘，这是n维的˳
+
+236
+00:32:15,813 --> 00:32:20,960
+If the number of columns here I‚ so I'm going to also take the first ni． 
+如果这里的列数是I，那么我也要取第一个ni˳
+
+237
+00:32:24,300 --> 00:32:32,231
+And the decoder will be shared across all of these reconstructions． 
+并且这些解码器将在所有这些重建中共享˳
+
+238
+00:32:32,231 --> 00:32:38,753
+Okay‚ so just to repeat‚ usually here we have a reconstruction． 
+好的，重复一遍，通常我们在这里进行重建˳
+
+239
+00:32:38,753 --> 00:32:40,753
+It's given here‚ right X hat． 
+这里给出的是右X帽子˳
+
+240
+00:32:40,753 --> 00:32:47,756
+But with Ro‚ we are going to have as many Re as we have values in our provinces． 
+但是有了Ro，我们将拥有尽可能多的Re，就像我们各省的价值观一样˳
+
+241
+00:32:47,756 --> 00:32:56,800
+And each one of the reconstruction‚ very simple‚ we just take the first N 9 values in our decoder wave Mas instead of the． 
+每一次重构都非常简单，我们只需要取解码器波中的前N个9值，而不是前N个9值˳
+
+242
+00:32:59,370 --> 00:33:09,112
+And now we need use change-o loss function‚ where outer lock's function pretty previously was just using a single reconstruction． 
+现在我们需要使用更改-o损失函数，其中外层锁的功能以前只是使用一次重建˳
+
+243
+00:33:09,112 --> 00:33:11,780
+Here we are going to sum the m．s．c． loss across． 
+在这里，我们将对m．s．c．进行求和˳ 横跨的损失˳
+
+244
+00:33:15,290 --> 00:33:17,300
+For every Ni in our system． 
+对于我们系统中的每一个Ni˳
+
+245
+00:33:21,050 --> 00:33:22,580
+The mean square loss． 
+均方损失˳
+
+246
+00:33:29,510 --> 00:33:33,530
+I'm going to have the auxiliary loss． 
+我将会有辅助损失˳
+
+247
+00:33:36,960 --> 00:33:39,980
+We don't have the sparsity term． 
+我们没有稀疏性项˳
+
+248
+00:33:39,980 --> 00:33:49,060
+If we‚ let's say we have used here‚ okay‚ since I didn't write top k here I'm going to add a spacier． 
+如果我们，假设我们在这里使用了，好吧，因为我没有在这里写top k，所以我要添加一个空间˳
+
+249
+00:33:53,800 --> 00:33:58,360
+In the actual paper‚ they do use stop K here and then． 
+在实际的论文中，他们确实在这里和那里使用stop K˳
+
+250
+00:34:04,520 --> 00:34:07,160
+Yes‚ the second one that would be． 
+是的，第二个会是˳
+
+251
+00:34:31,640 --> 00:34:39,440
+Okay‚ so Maters Co essays are somewhat like the state of the art right now‚ but things are． 
+好的，所以母校的论文有点像现在的艺术水平，但事情确实如此˳
+
+252
+00:34:40,600 --> 00:35:02,650
+I was contemplating whether we choose this‚ but I figured things haven't settled long enough for me to cover one more topic‚ The current current kind of advantages in SS are thinking of the fact that language is sequential and structure‚ right? 
+我正在考虑我们是否选择这个，但我觉得事情还没有解决得足够长，让我再讨论一个话题，目前SS的优势是考虑到语言是顺序和结构的事实，对吧？
+
+253
+00:35:03,320 --> 00:35:15,237
+So if we have certain features that activate for the next token‚ shouldn't have widely different feature activations‚ right? 
+因此，如果我们有某些功能可以激活下一个令牌，那么不应该有广泛不同的功能激活，对吧？
+
+254
+00:35:15,237 --> 00:35:25,792
+That languages‚ local things don't change dramatically all the time from one token to another‚ and you can exploit this information when you build essays． 
+语言，当地事物不会一直从一个令牌到另一个令牌发生巨大变化，你可以在撰写论文时利用这些信息˳
+
+255
+00:35:25,792 --> 00:35:29,900
+So today you will see things like essays． 
+所以今天你会看到像散文这样的东西˳
+
+256
+00:35:32,410 --> 00:35:47,060
+Or there is a work‚ which I don't think they have a name for the‚ but‚ but the title of the paper contain prior to time both of these other than them in the notes． 
+或者有一个作品，我不认为他们有一个名字，但是，论文的标题在笔记中包含了除了他们之外的其他两个˳
+
+257
+00:35:47,330 --> 00:36:10,533
+But both of these are trying to enhance essays such that information about locality of a language‚ meaning if I have certain features that are active in z for a given token‚ next token‚ it's z shouldn't be massively different that intuitive‚ since language doesn't change so much on the open to token． 
+但是这两个都试图增强文章，例如有关语言局部性的信息，这意味着如果我在z中有某些功能对于给定的令牌是活跃的，下一个令牌，它的z不应该与直观的，因为语言在公开代币上并没有太大变化˳
+
+258
+00:36:10,533 --> 00:36:15,281
+And these are papers are trying to and to bring that into a same tree． 
+这些文件正试图将它们带到同一棵树上˳
+
+259
+00:36:15,281 --> 00:36:19,520
+Now I'm going to show you just quickly as a benchmark． 
+现在我要快速地为您展示一个基准˳
+
+260
+00:37:22,200 --> 00:37:25,186
+So here what I'm showing you is the essay bench． 
+所以我在这里展示给你的是论文工作台˳
+
+261
+00:37:25,186 --> 00:37:31,981
+It includes a whole lot of metrics from those that I covered and those that I did not cover． 
+它包括了我所涵盖的和我没有涵盖的大量指标˳
+
+262
+00:37:31,981 --> 00:37:42,983
+What I want to show you here is‚ basically first point you that this is a place where you can check comparison of different as a variants． 
+我想在这里向您展示的是，基本上首先要告诉您，这是一个可以检查不同变体比较的地方˳
+
+263
+00:37:42,983 --> 00:37:56,517
+And here you'll see there are different kind of in some familiars‚ others because I didn't cover everything in the city‚ but we recognize batch of cave‚ right? 
+在这里你会看到一些熟悉的人有不同的类型，其他人因为我没有涵盖城市中的所有东西，但我们认识一批洞穴，对吧？
+
+264
+00:37:56,517 --> 00:37:57,520
+Jump relo much? 
+跳多少？
+
+265
+00:37:58,890 --> 00:38:02,790
+Okay‚ so a lot of these are familiar to you． 
+好的，这些对你来说都很熟悉˳
+
+266
+00:38:02,790 --> 00:38:10,971
+And here you can see the discourse for various various essays． 
+在这里，你可以看到各种文章的论述˳
+
+267
+00:38:10,971 --> 00:38:15,788
+So if you want to you can then change these values． 
+所以如果你愿意，你可以改变这些值˳
+
+268
+00:38:15,788 --> 00:38:19,740
+For example‚ we talk about cross Centro‚ we lost score． 
+例如，我们谈论cross Centro，我们失去了分数˳
+
+269
+00:38:19,740 --> 00:38:24,680
+That one is familiar and we know that higher is better‚ right? 
+那个很熟悉，我们知道越高越好，对吧？
+
+270
+00:38:24,680 --> 00:38:31,880
+One means that you have reconstructed all of the importance of the activation and lower sparsity is better． 
+这意味着你已经重建了激活的所有重要性，并且稀疏性越低越好˳
+
+271
+00:38:31,890 --> 00:38:33,380
+So here‚ no． 
+所以在这里，不˳
+
+272
+00:38:40,460 --> 00:38:40,490
+PIA? 
+皮娅？
+
+273
+00:38:47,340 --> 00:38:51,393
+What I want to proceed here is you want to have lower scars． 
+我想在这里进行的是你想要下疤痕˳
+
+274
+00:38:51,393 --> 00:38:55,751
+If you and you have also wanna have as high of this course． 
+如果你和你也想要这门课程的高分˳
+
+275
+00:38:55,751 --> 00:39:00,570
+And you can see‚ of course‚ there is trader． 
+你可以看到，当然有交易员˳
+
+276
+00:39:00,570 --> 00:39:15,380
+So for example‚ here‚ my first price is really good‚ recovering the importance of the activation and comes with relative to these other ones‚ reasonable spark． 
+因此，例如，在这里，我的第一个价格非常好，恢复了激活的重要性，并相对于其他价格具有合理的火花˳
+
+277
+00:39:18,300 --> 00:39:24,700
+So you can play around here and see how these different essays achieve different scores． 
+所以你可以在这里玩耍，看看这些不同的文章如何获得不同的分数˳
+
+278
+00:39:25,270 --> 00:39:27,400
+There are so many metrics here． 
+这里有这么多的指标˳
+
+279
+00:39:30,420 --> 00:39:34,204
+But you see‚ you have so many of the metrics． 
+但是你看，你有这么多的指标˳
+
+280
+00:39:34,204 --> 00:39:40,315
+So you can play and see how these Sass and these were Gemma‚ 2‚ $2 billion． 
+所以你可以玩看看这些Sass和这些是如何Gemma的，价值2，20亿美元˳
+
+281
+00:39:40,315 --> 00:39:42,320
+There are some few other models． 
+还有一些其他的模型˳
+
+282
+00:39:47,940 --> 00:39:57,540
+Okay‚ with that‚ I also want to just point you to a few more resources to kind of start wrapping essays． 
+好的，除此之外，我还想给你指出一些资源来开始包装文章˳
+
+283
+00:40:00,100 --> 00:40:03,010
+Be useful for you to go over at home． 
+你去家里看看会有用的˳
+
+284
+00:40:03,980 --> 00:40:07,890
+Is this tutorial for how to train? 
+这个教程是关于如何训练的吗？
+
+285
+00:40:09,400 --> 00:40:10,430
+And we stream． 
+我们直播˳
+
+286
+00:40:22,030 --> 00:40:24,070
+And it's like‚ oh‚ no‚ there is． 
+就像，哦，不，有˳
+
+287
+00:40:28,100 --> 00:40:32,140
+Okay‚ well‚ this is the topology． 
+好的，这就是拓扑结构˳
+
+288
+00:40:34,620 --> 00:40:36,980
+Let's now become coincided with the． 
+现在让我们变得恰逢其时˳
+
+289
+00:40:40,400 --> 00:40:42,779
+It doesn't matter‚ this is a little bit ugly． 
+没关系，这有点难看˳
+
+290
+00:40:42,779 --> 00:40:44,960
+Let me see whether there are two such as． 
+让我看看是否有两个这样的˳
+
+291
+00:41:09,270 --> 00:41:12,010
+Okay‚ now let's touch this thing． 
+好的，现在让我们碰一下这个东西˳
+
+292
+00:41:12,620 --> 00:41:15,020
+So here tutorial is linked． 
+所以这里的教程是链接的˳
+
+293
+00:41:15,020 --> 00:41:21,393
+When you go to no media‚ it's going to be the first thing you see here‚ tutorial notebook． 
+当你去没有媒体时，它将是你在这里看到的第一件事，教程笔记本˳
+
+294
+00:41:21,393 --> 00:41:28,660
+And I think it's nice to go this‚ it's just five-e boards‚ everything we have written on the board board． 
+我认为这样做很好，只有五个电子白板，我们在白板上写的所有东西˳
+
+295
+00:41:29,080 --> 00:41:37,220
+So first of all‚ the book itself says there are better resources for training Saes． 
+首先，这本书本身说训练Saes有更好的资源˳
+
+296
+00:41:37,470 --> 00:41:47,290
+The most popular one will be Sae lens‚ which is developed by the code research that has built Neuron media． 
+最受欢迎的将是Sae透镜，它是由构建了神经元媒体的代码研究开发的˳
+
+297
+00:41:48,060 --> 00:41:51,490
+And S lens itself is going to link to other esayi． 
+和S镜头本身将链接到其他esayi˳
+
+298
+00:41:53,180 --> 00:41:57,230
+Sparsity is one that's notable here‚ the level． 
+稀疏性是这里值得注意的一个方面，即水平˳
+
+299
+00:42:01,020 --> 00:42:09,360
+I think I don't know what exactly people are using these days‚ or I feel like I say it‚ people using both assailants and sparsity． 
+我想我不知道人们现在到底在用什么，或者我觉得我说的是，人们既使用攻击者又使用稀疏性˳
+
+300
+00:42:11,140 --> 00:42:15,438
+My main point is that's notebook to train your essays． 
+我的主要观点是那是训练你的论文的笔记本˳
+
+301
+00:42:15,438 --> 00:42:18,326
+This is just an exercise for you to go over． 
+这只是一个你需要练习的练习˳
+
+302
+00:42:18,326 --> 00:42:23,599
+You know how this is a nice thing about this long book? 
+你知道这本书有多好么？
+
+303
+00:42:23,599 --> 00:42:26,272
+It is connected with Hugging Face． 
+它与拥抱的脸有关˳
+
+304
+00:42:26,272 --> 00:42:32,691
+Hugging Face is a library that we use for training language models‚ mostly fine tuning them． 
+拥抱脸是我们用于训练语言模型的一个库，主要是对它们进行微调˳
+
+305
+00:42:32,691 --> 00:42:36,540
+So it's a gosto de library for a lot of stuff． 
+所以它是一个藏有很多东西的图书馆˳
+
+306
+00:42:36,930 --> 00:42:58,760
+And this Al model for causal LM is just a class from high‚ allows you to load a pretrained language model like Gema 3 without thinking about how to write the encoder only transformer‚ and then override the long waits with print train weights and all of the things you don't want to do yourself‚ right? 
+而这个因果LM模型只是从高层开始的一个类，允许您加载像Gema 3这样的预训练语言模型，而无需考虑如何编写仅编码器的转换器，然后使用打印火车重量和所有您不想自己做的事情来覆盖长时间的等待˳对吗？
+
+307
+00:42:58,860 --> 00:43:04,560
+Of course‚ every language model comes with its own tokenizer‚ So you also need to load the tokenizer． 
+当然，每种语言模型都有自己的tokenizer，因此您还需要加载tokenizer˳
+
+308
+00:43:05,020 --> 00:43:11,404
+Here is just an example of how prompts are by hugging face． 
+这里只是一个例子，说明拥抱脸部是如何提示的˳
+
+309
+00:43:11,404 --> 00:43:14,214
+So you have a front like this one here． 
+所以你在这里有一个像这样的正面˳
+
+310
+00:43:14,214 --> 00:43:27,052
+And then you use token to tokenize the front‚ which will then become a tensor of integers‚ where the integers are Ids in the vocabulary． 
+然后您使用token来标记前面，这将成为一个整数张量，其中整数是词汇表中的id˳
+
+311
+00:43:27,052 --> 00:43:35,370
+And when we have these i．s． in the vocab‚ that enables us to make the embedded token and lookout operation‚ we have two． 
+当我们有了这些i．s． 在词汇中，这使我们能够进行嵌入式标记和监视操作，我们有两个˳
+
+312
+00:43:35,630 --> 00:43:46,960
+We are going to extract the row with the index 2 in the embedding matrix‚ Then that's going to correspond to the token embedding of token‚ first token here‚ which has． 
+我们将提取嵌入矩阵中索引为2的行，然后这将对应于令牌的令牌嵌入，这里的第一个令牌具有˳
+
+313
+00:43:50,400 --> 00:43:55,640
+Once you have your encoded inputs‚ you can just call model dot generate． 
+一旦你有了编码的输入，你就可以调用model dot generate了˳
+
+314
+00:43:56,200 --> 00:44:02,800
+And this will give you‚ again‚ a sequence of vocabulary ideas which are predicted next tokens． 
+这将再次给你一系列的词汇想法，这些想法将被预测为下一个代币˳
+
+315
+00:44:02,800 --> 00:44:13,730
+And you just need to decode them back into the tokens and do a little bit of post processing to put some words together into like that． 
+你只需要将它们解码回令牌，并进行一点后期处理，将一些单词组合在一起˳
+
+316
+00:44:13,730 --> 00:44:25,400
+And for this prompt with Gemma 3‚ you would get‚ so this is just a background of how to use Lll lens with hard-faced． 
+对于Gemma 3的这个提示，你会得到，所以这只是如何使用硬面镜头的背景˳
+
+317
+00:44:25,400 --> 00:44:29,980
+Definitely not a recommend familiarizing yourself with this． 
+绝对不建议你熟悉这个˳
+
+318
+00:44:32,460 --> 00:44:35,220
+And then comes the spas of the border part． 
+然后是边境部分的水疗中心˳
+
+319
+00:44:36,510 --> 00:44:37,670
+Let me just show you whether． 
+让我向您展示是否˳
+
+320
+00:44:37,800 --> 00:44:49,630
+Yeah‚ so these days when we use also what the user says and what the output is is delineated the Ta． 
+是的，所以现在我们也使用用户所说和输出是描述Ta的˳
+
+321
+00:44:49,770 --> 00:44:53,120
+So for example‚ here‚ start of turn or end of term． 
+例如，在这里，学期的开始或结束˳
+
+322
+00:44:53,190 --> 00:45:01,340
+And here they are defining the function to more often in the categories‚ we have something called chat template． 
+在这里，他们更经常地定义函数，在品类中，我们有一个叫做聊天模板的东西˳
+
+323
+00:45:02,830 --> 00:45:04,850
+And you can call a function which token? 
+你可以调用一个函数哪个令牌？
+
+324
+00:45:10,240 --> 00:45:14,360
+What's then interesting for this class is this part‚ outer quarter part． 
+这门课有趣的是这一部分，外四分之一部分˳
+
+325
+00:45:17,390 --> 00:45:19,660
+Class of how to use a sparse Alco? 
+如何使用稀疏的Alco？
+
+326
+00:45:23,540 --> 00:45:25,560
+Face so they have really? 
+面对现实，他们真的有吗？
+
+327
+00:45:27,640 --> 00:45:37,470
+Now you can use it with just a few functions‚ but what maybe even more interesting‚ this implementation of three you Sae． 
+现在你可以通过几个函数来使用它，但也许更有趣的是，这三个实现是你所看到的˳
+
+328
+00:45:37,470 --> 00:45:40,880
+So here you see all the things that are not． 
+所以在这里你可以看到所有不是的东西˳
+
+329
+00:45:41,420 --> 00:45:48,760
+You see encoder‚ encoder weights‚ encoder decoder biases． 
+你看到了编码器，编码器权重，编码器解码器偏见˳
+
+330
+00:45:49,140 --> 00:45:59,961
+Now you see also that threshold‚ which I called heta‚ a vector of thresholds‚ as many as there are latents in our Sae． 
+现在你也看到了那个阈值，我称之为 “heta”，一个阈值的向量，就像我们的Sae中有潜伏期一样多˳
+
+331
+00:45:59,961 --> 00:46:04,013
+And it's also part of our trainable parameters． 
+这也是我们可训练参数的一部分˳
+
+332
+00:46:04,013 --> 00:46:06,040
+This you can ignore for． 
+你可以忽略这个˳
+
+333
+00:46:08,020 --> 00:46:12,313
+And what you can see here is calculate three activations． 
+你在这里看到的是计算三次激活˳
+
+334
+00:46:12,313 --> 00:46:15,380
+And now here comes that mask we had on the． 
+现在我们戴上的面具来了˳
+
+335
+00:46:18,080 --> 00:46:23,440
+It's going to be one if the pre-activation is larger than the threshold． 
+如果预激活大于阈值，它将是一个˳
+
+336
+00:46:26,300 --> 00:46:26,730
+Zero otherwise． 
+否则为零˳
+
+337
+00:46:27,150 --> 00:46:30,730
+And this is not very 5 to 2‚ right? 
+这不是5比2，对吗？
+
+338
+00:46:32,860 --> 00:46:38,470
+Vector and you do greater than an operation with the vector by itself． 
+向量，并且您对向量本身进行的操作大于操作˳(Vector，vector，Vector，vector本身，Vector，vector，Vector，，vector，Vector，vector，Vector，
+
+339
+00:46:38,470 --> 00:46:42,900
+Mathematically‚ what does this mean in pyth means you do it l? 
+从数学上讲，这在pyth中意味着什么，意味着你做了l？
+
+340
+00:46:47,220 --> 00:46:57,538
+So this will give you a vector mask is going to be a vector of the size of free activation threshold‚ which is the number of features with 0 cells． 
+因此，这将为您提供一个矢量掩码，它将是自由激活阈值大小的矢量，这是具有0个单元格的特征数量˳
+
+341
+00:46:57,538 --> 00:47:04,310
+And then you can use that mass to apply it on the． 
+然后您可以使用该质量将其应用于˳
+
+342
+00:47:07,760 --> 00:47:12,320
+I think here‚ I don't see how this is real‚ is necessary． 
+我认为在这里，我不明白这是真实的，是必要的˳
+
+343
+00:47:15,680 --> 00:47:19,603
+Thresholds are less than 0 in any case． 
+在任何情况下，阈值都小于0˳
+
+344
+00:47:19,603 --> 00:47:23,920
+Then you can do multiplication and get what? 
+然后你可以进行乘法运算并得到什么？
+
+345
+00:47:27,630 --> 00:47:30,630
+There‚ there‚ that's‚ that's all there is to it‚ I think． 
+那里，那里，那就是它的全部，我想˳
+
+346
+00:47:31,130 --> 00:47:43,740
+Yeah‚ and the coding is again‚ what we get enco so latent activation times the coder wave and that's it‚ right? 
+是的，编码又是，我们得到的是enco，所以潜在激活时间是编码器波的时间，对吧？
+
+347
+00:47:44,070 --> 00:47:48,305
+So you can actually then train it to train． 
+所以你实际上可以训练它去训练˳
+
+348
+00:47:48,305 --> 00:47:54,466
+This is where Pco Japan becomes a little bit important‚ you need all those activations‚ right? 
+这就是Pco Japan变得有点重要的地方，你需要所有这些激活，对吧？
+
+349
+00:47:54,466 --> 00:47:56,548
+You need to reconstruct the activation． 
+你需要重建激活˳
+
+350
+00:47:56,548 --> 00:48:05,616
+So you need to produce a Python hook to calculate and remember those activations so you can use them later． 
+所以你需要生成一个Python钩子来计算和记住这些激活，以便以后可以使用它们˳
+
+351
+00:48:05,616 --> 00:48:10,600
+So little pyrogel detail that becomes important． 
+如此少的焦胶细节变得重要˳
+
+352
+00:48:11,930 --> 00:48:19,987
+So yeah‚ if you run all of these‚ you can actually train an S‚ which it might be a good exercise． 
+所以，如果你运行所有这些，你实际上可以训练一个S，这可能是一个很好的练习˳
+
+353
+00:48:19,987 --> 00:48:29,640
+I would recommend doing it because I think it would nicely complement all the theory with‚ okay‚ this is how you actually implement all of this． 
+我建议这样做，因为我认为它会很好地补充所有理论，好吧，这就是你实际实现所有这些的方式˳
+
+354
+00:48:30,560 --> 00:48:31,081
+So yeah． 
+所以是的˳
+
+355
+00:48:31,081 --> 00:48:32,645
+I'm highly recommend． 
+我强烈推荐˳
+
+356
+00:48:32,645 --> 00:48:41,080
+I'm not evaluating you to do this‚ but I would highly recommend you to going over this tutorial up to． 
+我并不是要评估你这样做，但我强烈建议你阅读本教程˳
+
+357
+00:48:50,430 --> 00:48:58,260
+For your projects‚ if you choose to work on essays and for later if you s lenses that go to library． 
+对于你的项目，如果你选择在论文上工作，如果你选择在以后去图书馆的镜头˳
+
+358
+00:48:58,750 --> 00:49:04,510
+But remember‚ there are also these other resources over here． 
+但请记住，这里还有其他资源˳
+
+359
+00:49:04,510 --> 00:49:12,760
+And of course Don‚ we forget about neural PIA‚ these SS and their features that you can explore． 
+当然，我们忘记了神经障碍，这些SS及其特征你可以探索˳
+
+360
+00:49:13,360 --> 00:49:20,050
+So available just a couple years back‚ none of this was here‚ so you couldn't easily get started． 
+几年前就有这么多，这里没有这些东西，所以你不容易开始˳
+
+361
+00:49:20,980 --> 00:49:31,938
+Okay‚ so now we are going to take a little bit break‚ but when we come from the break‚ our next goal is to understand what is going on here． 
+好的，现在我们要休息一下，但是当我们从休息中回来时，我们的下一个目标是了解这里发生了什么˳
+
+362
+00:49:31,938 --> 00:49:35,723
+What are these brand‚ what are these graphs‚ how do we produce them? 
+这些是什么品牌，这些图表是什么，我们如何生产它们？
+
+363
+00:49:35,723 --> 00:49:38,480
+And you will see that a lot of methodology will learn． 
+你会发现很多方法论将会被学习˳
+
+364
+00:49:38,880 --> 00:49:41,572
+SaaS is going to come at hand here． 
+SaaS即将在这里出现˳
+
+365
+00:49:41,572 --> 00:49:52,192
+And so we are going to progress to this part actually faster then it may seem‚ given how much more complicated this looks than the S A L‚ okay? 
+因此，我们将以比看起来更快的速度进展到这部分，因为这看起来比SQL复杂得多，好吗？
+
+366
+00:49:52,192 --> 00:49:56,580
+So let's take a little break and come back at 11． 
+所以让我们休息一下，11点回来˳
+
+367
+00:50:29,500 --> 00:50:43,280
+Is when we choose values for n‚ I feel like there would be some unfortunate position here because generally really means of． 
+当我们为n选择值时，我觉得这里会有一些不幸的情况，因为通常真的意味着˳
+
+368
+00:50:48,220 --> 00:50:50,070
+They are more‚ you know‚ it． 
+他们更多，你知道的˳
+
+369
+00:50:50,160 --> 00:50:59,930
+The last feature or like M3 is very far away from M‚ so it doesn't mean that the． 
+最后一个特征或像M3这样的距离M非常远，所以这并不意味着它˳
+
+370
+00:51:05,870 --> 00:51:07,400
+And so? 
+所以呢？
+
+371
+00:51:13,620 --> 00:51:15,980
+Let me repeat your question just to be sure． 
+为了确定，让我重复你的问题˳
+
+372
+00:51:17,860 --> 00:51:21,136
+One last question first． 
+先回答最后一个问题˳
+
+373
+00:51:21,136 --> 00:51:34,255
+So we have earlier prefixes are something like two tiles‚ or let's say‚ and we have another thousand or more dimensions that we are trying to reconstruct． 
+因此，我们之前的前缀类似于两个瓷砖，或者说，我们还有另外一千个或更多维度正在尝试重建˳
+
+374
+00:51:34,255 --> 00:51:36,520
+So is your question‚ how does? 
+你的问题是，如何做到的？
+
+375
+00:51:40,430 --> 00:51:44,050
+Those‚ excuse me‚ first few columns． 
+对不起，前几列˳
+
+376
+00:51:48,620 --> 00:51:53,860
+We from the distributed‚ how do you choose those values? 
+我们从分布式中，你如何选择那些值？(distributed，distributed)
+
+377
+00:51:59,320 --> 00:52:00,460
+Was there how they have to them? 
+他们对他们有什么要求吗？
+
+378
+00:52:00,470 --> 00:52:02,550
+So I don't know． 
+所以我不知道˳
+
+379
+00:52:07,750 --> 00:52:10,290
+How they chose the fixed value? 
+他们如何选择固定值？
+
+380
+00:52:11,740 --> 00:52:13,720
+So it might be just empirical． 
+所以这可能只是经验性的˳
+
+381
+00:52:16,880 --> 00:52:22,920
+But yeah‚ I actually don't need to look into the paper． 
+但是，是的，我实际上不需要看报纸˳
+
+382
+00:52:26,010 --> 00:52:28,370
+I don't see that as a require． 
+我不认为这是一个要求˳
+
+383
+00:52:31,000 --> 00:52:34,020
+Feel like with uniformity? 
+有统一的感觉？
+
+384
+00:52:34,020 --> 00:52:42,466
+Then you are maybe stuck with having too many prefixes‚ and then your computation becomes intensive‚ right? 
+那么你可能会被太多的前缀所困扰，然后你的计算变得密集，对吗？
+
+385
+00:52:42,466 --> 00:52:54,790
+So if you had 2000 a window‚ then you would need 30000‚ sorry‚ and we would need how many turkey? 
+所以，如果你有2000个窗户，那么你需要30000个，抱歉，我们需要多少火鸡？
+
+386
+00:52:57,280 --> 00:53:01,691
+To get all of the reconstructions． 
+得到所有的重建˳
+
+387
+00:53:01,691 --> 00:53:10,770
+So remember‚ although in these derivations I always talk about single essays‚ there are as many essays as there． 
+所以请记住，虽然在这些推导中我总是谈论单个文章，但有尽可能多的文章˳
+
+388
+00:53:15,080 --> 00:53:21,160
+Re so how many computations we are doing actually becomes important‚ right? 
+那么，我们实际进行的计算有多少变得重要了，对吧？
+
+389
+00:53:21,780 --> 00:53:23,050
+If we can get away with less‚ we will do that． 
+如果我们能摆脱更少的东西，我们就会这样做˳
+
+390
+00:53:23,520 --> 00:53:32,360
+But I don't know whether they have tried more prefixes and then determine that certain number is sufficient to get． 
+但我不知道他们是否尝试了更多的前缀，然后确定某个数字足以获得˳
+
+391
+00:53:38,400 --> 00:53:41,440
+The first question about how does this help with the absorption? 
+第一个问题是这如何帮助吸收？
+
+392
+00:53:43,140 --> 00:53:53,417
+It's a very broad idea‚ and I think it's not targeted in a principle way how the absorption could be avoided here． 
+这是一个非常广泛的想法，我认为在这里避免吸收的原则方法上并不是有针对性的˳
+
+393
+00:53:53,417 --> 00:54:09,237
+The main idea is that if you do have general features and those are sufficient or reconstruction‚ then you wouldn't have that property where now you have learned that mega specialized features stuff just for the word stuff． 
+主要的想法是，如果你有一般的特征，而这些特征是足够的或重建的，那么你就不会有这个属性，现在你已经学会了巨型专门的特征只是为了单词的东西˳
+
+394
+00:54:09,237 --> 00:54:14,010
+And that features activation absorbs it starts with S‚ right? 
+这个特征激活吸收它从S开始，对吧？
+
+395
+00:54:14,010 --> 00:54:35,873
+So I think here they are just trying to avoid having those meta specialized features‚ which are literally tokens start as a word is a feature‚ and by forcing some generalit among features‚ you are losing the number of latents that can become extremely specialized and will be specialized column． 
+所以我认为他们只是在试图避免那些元专业化的功能，这些功能实际上是令牌作为一个单词开始是一个功能，并且通过在功能之间强制一些通用的功能，你正在失去可以变得非常专业化并将成为专门列的潜伏期的数量˳
+
+396
+00:54:35,873 --> 00:54:38,838
+But that has a function in language‚ right? 
+但这在语言中具有功能，对吗？
+
+397
+00:54:38,838 --> 00:54:42,100
+It's a little bit different than just in． 
+这和仅仅在里面有点不同˳
+
+398
+00:54:43,500 --> 00:55:00,888
+So yeah‚ long answer short‚ I think they are trying to more explicitly learn general specialized features‚ but because some of the latents will need to be general‚ you don't have that much space anymore to have mega specialized features． 
+所以，我想他们正在尝试更明确地学习通用的专业功能，但由于一些潜伏期需要是通用的，你没有那么多的空间来拥有大型的专业功能˳
+
+399
+00:55:00,888 --> 00:55:03,480
+That's my intuition about how to go back． 
+这是我关于如何回去的直觉˳
+
+400
+00:55:06,400 --> 00:55:12,030
+Yeah‚ I mean‚ probably just going back to your I‚ your second question‚ my time surface first． 
+是的，我的意思是，可能只是回到你的I，你的第二个问题，首先是我的时间表面˳
+
+401
+00:55:14,620 --> 00:55:21,820
+Probably there is a lot to experiment here in terms of what is the best price‚ but what is the best set of prefixes and so on? 
+可能在什么是最优惠的价格方面有很多可以尝试的地方，但是什么是最好的前缀集等等？
+
+402
+00:55:22,350 --> 00:55:37,800
+All of these experiments are no costly‚ So one needs to choose this bad bill and see‚ or could be that if you had experimented more‚ you would find even better setup． 
+所有这些实验都不花钱，所以需要选择这个坏的账单看看，或者如果你实验更多，你会找到更好的设置˳
+
+403
+00:55:45,820 --> 00:55:56,200
+So as I said‚ now we are going to go and see how‚ how can we move from essays to something like pro? 
+所以就像我说的，现在我们要去看看如何，我们如何从论文转向专业？
+
+404
+00:56:00,060 --> 00:56:17,380
+And I also said that a lot of what we learned about SaaS is actually is going to become really handy and to demonstrate that our is going to be just one week let and we are going to get a whole other． 
+我还说，我们学到的很多关于SaaS的东西实际上将变得非常方便，并证明我们将只需要一周的时间，而我们将得到一个完整的另一周˳
+
+405
+00:56:18,160 --> 00:56:21,434
+First of all‚ let me write something． 
+首先，让我写点东西˳
+
+406
+00:56:21,434 --> 00:56:29,680
+So in a transcoder‚ in a transformer‚ ignoring attention‚ basically what we have is a bunch of M? 
+所以在一个转码器，在一个变压器中，忽略注意力，基本上我们所拥有的是一堆M？
+
+407
+00:56:33,220 --> 00:56:37,780
+Let's say we have a three layer transformer in the number of MLP‚ layer． 
+假设我们有一个三层变压器，其数量为MLP，layer˳
+
+408
+00:56:39,140 --> 00:56:43,310
+Let this be layer 1‚ layer 2． 
+让这个是第一层，第二层˳
+
+409
+00:56:48,920 --> 00:56:53,480
+Let's call this MLP input 1． 
+我们称这个为MLP输入1˳
+
+410
+00:56:58,390 --> 00:57:03,678
+Of one becomes ML input for the second layer‚ right? 
+一个变成第二层的ML输入，对吗？
+
+411
+00:57:03,678 --> 00:57:10,640
+And what comes out of the output of the second layer becomes input． 
+第二层的输出结果成为输入˳
+
+412
+00:57:20,420 --> 00:57:23,511
+Okay‚ so this is going to become handy in a second． 
+好的，这将在一秒钟内变得方便˳
+
+413
+00:57:23,511 --> 00:57:25,160
+I'm going to yet again‚ right? 
+我又要去，对吧？
+
+414
+00:57:29,920 --> 00:57:34,480
+With a basic essay‚ we have sparse vector‚ which we get． 
+通过一篇基本的文章，我们得到了稀疏向量˳
+
+415
+00:57:38,820 --> 00:57:54,540
+Now I'm going to start to use this new terminology I introduced in a given layer z‚ let's say l I'm going to take the output‚ the output of that layer‚ and try to recover． 
+现在我将开始使用我在给定的z层中引入的这个新术语，假设我将采用该层的输出，并尝试恢复˳
+
+416
+00:57:57,780 --> 00:58:05,320
+So my reconstruction MLP head of the output in the layer． 
+所以我重建了层中输出的MLP头˳
+
+417
+00:58:08,900 --> 00:58:10,673
+The standard equation． 
+标准方程式˳
+
+418
+00:58:10,673 --> 00:58:13,460
+Okay‚ so I'm just changing the notation here． 
+好的，所以我只是在这里更改符号˳
+
+419
+00:58:13,790 --> 00:58:24,320
+Do anything fancy I had in a given layer‚ I had output‚ and I'm trying to reconstruct that output． 
+在给定的层中做任何幻想的事情，我有输出，并且我正在尝试重建该输出˳
+
+420
+00:58:31,780 --> 00:58:36,340
+The next idea is to try to reconstruct it． 
+下一个想法是尝试重建它˳
+
+421
+00:58:37,120 --> 00:58:44,160
+MLP block The behavior of this MLP block with something which is more interpreted． 
+MLP阻止了这个MLP块的行为，这更容易解释˳
+
+422
+00:58:45,120 --> 00:58:59,428
+And the simple idea here is to swap the output with the input to NLP and try to reconstruct the output of the MLP with that． 
+这里的简单想法是将输出与输入交换到NLP，并尝试用它重构MLP的输出˳
+
+423
+00:58:59,428 --> 00:59:02,184
+So let me write the equation． 
+那么让我写出方程式˳
+
+424
+00:59:02,184 --> 00:59:04,940
+This is called transcoder． 
+这被称为转码器˳
+
+425
+00:59:07,960 --> 00:59:13,360
+In transcoder‚ we are going to again have the same equation． 
+在代码转换中，我们将再次使用相同的方程式˳
+
+426
+00:59:15,540 --> 00:59:19,070
+We are going to take the input to the MLB． 
+我们将把输入带到MLB˳
+
+427
+00:59:26,220 --> 00:59:30,780
+We are going to try to reconstruct the output． 
+我们将尝试重建输出˳
+
+428
+00:59:51,870 --> 00:59:54,440
+Construction laws We are using the out construction． 
+我们正在使用建筑法律˳
+
+429
+00:59:54,900 --> 00:59:59,980
+So the loss‚ the reconstruction loss is still the same loss． 
+因此，重建损失仍然是相同的损失˳
+
+430
+01:00:01,020 --> 01:00:05,580
+I'm just going to write the slightly different foundation here． 
+我只是要在这里写稍微不同的基础˳
+
+431
+01:00:18,850 --> 01:00:21,420
+Output with whatever． 
+输出与任何东西˳
+
+432
+01:00:27,280 --> 01:00:30,014
+So let me go over this again． 
+让我再重述一遍˳
+
+433
+01:00:30,014 --> 01:00:41,082
+With the standard Sae‚ we take the output‚ which is a current representation of some token‚ and we try to reconstruct that representation‚ right? 
+使用标准Sae，我们获取输出，这是某些令牌的当前表示形式，并尝试重建该表示形式，对吗？
+
+434
+01:00:41,082 --> 01:00:47,200
+So the column is to reconstruct the representation with SCR． 
+所以该列是用SCR重建表示˳
+
+435
+01:00:47,200 --> 01:00:57,871
+Just a little tweak‚ we are trying to reconstruct the entire MLP block‚ meaning how does this MLP process inputs to produce the output? 
+只是稍微调整一下，我们正在尝试重建整个MLP块，这意味着这个MLP处理输入以产生输出？
+
+436
+01:00:57,871 --> 01:01:06,300
+And to do that‚ we are trying to reconstruct the MLP output given what we see in the MLP input． 
+为此，我们正在尝试根据我们在MLP输入中看到的内容重建MLP输出˳
+
+437
+01:01:06,680 --> 01:01:09,610
+So we just change this． 
+所以我们只是改变它˳
+
+438
+01:01:09,730 --> 01:01:12,810
+And now what we are reconstructing is a whole other thing． 
+现在我们正在重建的是完全不同的事情˳
+
+439
+01:01:15,280 --> 01:01:19,386
+It's small difference‚ but a big difference in a way． 
+虽然差别很小，但在某种程度上差别很大˳
+
+440
+01:01:19,386 --> 01:01:24,040
+So let me stop here and make sure that this please support you． 
+所以让我在这里停下来，确保这支持你˳
+
+441
+01:01:27,780 --> 01:01:30,308
+The side of the class is okay． 
+班级的那一边还好˳
+
+442
+01:01:30,308 --> 01:01:33,920
+There isn't much I can say about this tomato． 
+关于这个番茄，我没有什么可说的˳
+
+443
+01:01:34,720 --> 01:01:49,980
+But yeah‚ just one more time we transcoder‚ we are repeat producing‚ reconstructing what the MLP entirely is doing with this linear interpretable reconstruction． 
+但是，是的，就再一次我们进行代码转换，我们正在重复生产，重建MLP完全使用这种线性可解释的重建所做的事情˳
+
+444
+01:01:50,910 --> 01:01:59,280
+The key thing here is that once this reconstruction‚ right‚ it can become an input to the next symbol． 
+这里的关键是，一旦这个重建，它可以成为下一个符号的输入˳
+
+445
+01:02:00,000 --> 01:02:14,260
+If we had made this NLP layer more interpretable through this reconstruction‚ the next one also can be interpretable and everything can be connected through the actual Sae replacement． 
+如果我们通过这次重建使这个NLP层更具可解释性，那么下一个层也可以解释，并且一切都可以通过实际的Sae替换来连接˳
+
+446
+01:02:14,260 --> 01:02:21,460
+So these blocks‚ these transcoder blocks‚ become something like an interpretable replacement for every single． 
+所以这些块，这些代码转换块，成为每一个可解释的替代品˳
+
+447
+01:02:23,800 --> 01:02:40,230
+And not only that‚ but because the output of this crosscode become‚ once we train the coder input to the next MLK and so on‚ use the information about these weights here． 
+不仅如此，由于这个交叉代码的输出变得如此，一旦我们训练编码器输入到下一个MLK，以此类推，就可以使用这些权重的信息˳
+
+448
+01:02:41,620 --> 01:02:48,880
+Then how feature in one MLP influence the feature in the second MLP‚ and so on． 
+然后一个MLP中的特征如何影响第二个MLP中的特征，依此类推˳
+
+449
+01:02:49,100 --> 01:02:53,780
+So this again‚ I said I will first try to overview everything． 
+所以我再说一遍，我说我会首先尝试概述一切˳
+
+450
+01:02:56,060 --> 01:03:04,220
+But imagine here we have our MLB is now． 
+但是想象一下，现在我们有了我们的MLB˳
+
+451
+01:03:11,850 --> 01:03:14,050
+So here we have some features‚ right? 
+所以我们在这里有一些功能，对吧？
+
+452
+01:03:15,100 --> 01:03:16,540
+There are some weights． 
+有一些重量˳
+
+453
+01:03:20,080 --> 01:03:43,440
+And this MLP here tells us‚ well‚ which human interpretable features‚ which we get some z plus additional layer of generation of descriptions as which feature here of this input vector are important to produce the next representation‚ right? 
+这个MLP告诉我们哪些人类可解释的特征，我们得到了一些z加上额外的描述生成层，作为这个输入向量的哪个特征对于生成下一个表示很重要，对吗？
+
+454
+01:03:47,060 --> 01:03:48,890
+By these weights‚ right? 
+根据这些重量，对吧？
+
+455
+01:03:48,900 --> 01:03:59,220
+So these weights that you wait for‚ the encoders tell me activation of the feature． 
+所以你等待的这些权重，编码器告诉我功能的激​‌​‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​‌​‌​​‌‌​​‌‌​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌​‌‌‌​​‌‌‌‌​‌​​‌‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​​‌​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌​​​‌‌‌​​‌​​‌‌​‌​‌​​‌‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌​​‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​‌‌‌‌‌​‌‌​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌​‌‌​​​‌‌‌‌‌​​​‌‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌​‌‌‌‌​‌​‌‌​​​‌‌​‌‌​​​‌‌​‌‌​​​‌‌​​​‌​​‌‌‌​‌‌‌‌​‌‌​​‌​​‌‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌​​‌‌​‌​‌​​‌‌‌‌‌‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌‌​‌​​‌‌​‌‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​​‌‌​​‌‌​‌‌‌‌‌​‌‌​​‌​​‌‌‌‌‌​​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌​‌‌​​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌​‌‌‌​​‌‌‌‌​‌​​‌‌​‌‌‌‌‌​‌‌‌‌​​​‌‌‌‌​‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌活˳
+
+456
+01:03:59,220 --> 01:04:02,620
+They determine how much every latent will activate． 
+他们决定每个潜在的激活程度˳
+
+457
+01:04:03,760 --> 01:04:10,120
+And W decoder tells me what are the feature direction． 
+W解码器告诉我特征方向是什么˳
+
+458
+01:04:14,720 --> 01:04:18,240
+Now that will produce another vector． 
+现在将产生另一个向量˳
+
+459
+01:04:18,240 --> 01:04:22,270
+And all of this is going to be the itself． 
+所有这些都将成为它自己˳
+
+460
+01:04:22,950 --> 01:04:23,780
+Dense‚ dense． 
+浓密的，浓密的˳
+
+461
+01:04:26,720 --> 01:04:26,870
+And． 
+而且˳
+
+462
+01:04:29,020 --> 01:04:37,406
+Which features of the input influence production of the of this output? 
+投入的哪些特征影响了这种产出的生产？
+
+463
+01:04:37,406 --> 01:04:42,286
+And that becomes an input to the another level LP． 
+这成为另一个层次LP的输入˳
+
+464
+01:04:42,286 --> 01:04:43,730
+And again‚ another． 
+再一次，另一个˳
+
+465
+01:04:43,730 --> 01:04:47,410
+So here we have 1‚ 1‚ 2‚ 2． 
+这里我们有1，1，2，2˳
+
+466
+01:04:50,760 --> 01:04:51,150
+This encoder． 
+这个编码器˳
+
+467
+01:04:54,270 --> 01:05:03,446
+Waits‚ tell me‚ well‚ what about this out of the previous layer was important to create a new activation and so on? 
+等等，告诉我，那么，前一层的内容对于创建新的激活等等很重要吗？
+
+468
+01:05:03,446 --> 01:05:17,124
+So with a little bit of math‚ all these weights together‚ and then we can connect how much a feature that's encoded in this neuron influences feature in this network‚ right? 
+所以，通过一些数学计算，将所有这些权重组合在一起，然后我们就可以将这个神经元中编码的特征对这个网络中特征的影响联系起来，对吧？
+
+469
+01:05:17,124 --> 01:05:21,060
+We can start to make something like connections between features． 
+我们可以开始在特征之间建立类似联系的东西˳
+
+470
+01:05:21,300 --> 01:05:27,340
+How much one feature in the lower layer influences the feature in the upper layer‚ and so on． 
+下层中的一个特征对上层中的特征的影响程度，依此类推˳
+
+471
+01:05:30,140 --> 01:05:35,340
+Of course‚ that will lead us to something that looks like a graph‚ right? 
+当然，这会把我们引向一个看起来像图表的东西，对吧？
+
+472
+01:05:36,020 --> 01:05:48,100
+I'm Amm not thinking of something correctly‚ but the transcoder‚ it was like just the same MLP block that we had before‚ but different way． 
+我没有正确地思考一些事情，但是代码转换程序，它就像我们之前的MLP块一样，但是方式不同˳
+
+473
+01:05:50,020 --> 01:05:54,569
+The training objective that is changing． 
+培训目标正在发生变化˳
+
+474
+01:05:54,569 --> 01:05:57,981
+Yeah‚ that's a great question． 
+是的，这是一个很好的问题˳
+
+475
+01:05:57,981 --> 01:06:04,215
+Yeah‚ so nonlinear linear project and then linear linear project． 
+是的，所以非线性线性项目，然后是线性项目˳
+
+476
+01:06:04,215 --> 01:06:10,233
+And then here we have linearly‚ nonlinearly up projection‚ linearly down． 
+然后在这里我们有线性，非线性的上升投影，线性下降˳
+
+477
+01:06:10,233 --> 01:06:11,920
+So what is the difference? 
+有什么区别吗？
+
+478
+01:06:12,220 --> 01:06:19,430
+And as you said‚ the key difference is how we train these essays and the hyperparameter of the number‚ right? 
+正如你所说，关键的区别在于我们训练这些文章的方式和数字的超参数，对吧？
+
+479
+01:06:19,730 --> 01:06:33,374
+So in this MLP‚ you are going to start with‚ let's say‚ 4000 and maybe up more and downscaling‚ here we go from‚ let's say 4000 to 65000． 
+所以在这个MLP中，你将从4000开始，也许会更多，然后降级，在这里我们从4000到65000˳
+
+480
+01:06:33,374 --> 01:06:35,730
+So up upscaling is way‚ way‚ way‚ way larger． 
+因此，向上升级的方式，方式，方式更大˳
+
+481
+01:06:35,730 --> 01:06:45,040
+And also here‚ I like here we have this sparsity introduced． 
+而且在这里，我喜欢这里，我们介绍了这种稀疏性˳
+
+482
+01:06:45,040 --> 01:06:52,720
+So you are right‚ all those ceiling when we don't write the Los equation‚ these two blocks‚ if you remember． 
+所以你是对的，当我们不写洛斯方程时，所有这些天花板，这两个块，如果你还记得的话˳
+
+483
+01:06:56,000 --> 01:06:57,771
+Not that different‚ right? 
+没有那么不同，对吧？
+
+484
+01:06:57,771 --> 01:07:06,040
+So the key thing to remember is that the way these weights are trained and these parts really makes all the difference． 
+所以要记住的关键是，这些权重的训练方式和这些部分确实会产生很大的差异˳
+
+485
+01:07:06,620 --> 01:07:09,052
+So let me just write this down． 
+所以让我把这个写下来˳
+
+486
+01:07:09,052 --> 01:07:14,044
+I think it's really key‚ confused about this． 
+我认为这真的很关键，对此感到困惑˳
+
+487
+01:07:14,044 --> 01:07:16,780
+So MLP block in a transformer． 
+所以变压器中的MLP块˳
+
+488
+01:07:21,180 --> 01:07:30,000
+You get the output of multi-headed self attention‚ linear the projected into a larger vector． 
+你会得到多头自我关注的输出，将其线性投影成一个更大的向量˳
+
+489
+01:07:35,710 --> 01:07:38,160
+And you are going to again‚ you know? 
+你又会去，你知道吗？
+
+490
+01:07:42,100 --> 01:07:42,630
+To us more． 
+给我们更多˳
+
+491
+01:07:45,820 --> 01:07:53,120
+Two‚ if this one is in R d‚ this is going to be something． 
+两个，如果这个在R d中，这将是什么˳
+
+492
+01:08:05,740 --> 01:08:06,980
+This is an output of． 
+这是的输出˳
+
+493
+01:08:11,690 --> 01:08:13,770
+In Aer and unfortunately． 
+在Aer，不幸的是˳
+
+494
+01:08:16,900 --> 01:08:20,430
+We kind of have the same thing here‚ right? 
+我们这里也有同样的事情，对吧？
+
+495
+01:08:37,420 --> 01:08:41,980
+So here we are training the Pega develop likelihood for like model． 
+所以在这里，我们正在训练类似模型的Pega发展可能性˳
+
+496
+01:08:44,420 --> 01:08:52,120
+Language modeling is mega favorite local likelihood‚ actual Mexico 10． 
+语言建模是最受欢迎的本地可能性，实际墨西哥10˳
+
+497
+01:08:56,770 --> 01:08:56,890
+Given previous? 
+由于以前？
+
+498
+01:09:00,290 --> 01:09:02,070
+The training objective? 
+培训目标？
+
+499
+01:09:07,950 --> 01:09:07,970
+Is． 
+是˳
+
+500
+01:09:11,130 --> 01:09:11,260
+Reconstruction? 
+重建？
+
+501
+01:09:19,160 --> 01:09:27,560
+Some spars if you sparsity because we use top K days‚ so there isn't any sparsity． 
+如果你稀疏一些，因为我们使用了前K天，所以没有任何稀疏性˳
+
+502
+01:09:27,560 --> 01:09:37,030
+But so what these weights end up being is very different from what these weights‚ right? 
+但是这些重量最终会与这些重量有很大不同，对吧？
+
+503
+01:09:38,300 --> 01:10:01,559
+Because these ones first are need to‚ we will have some sparsity involved and weights themselves will be‚ although here we have a shape for the Nd‚ here the shape of our encoder and decoder weight mattresses is going to be larger． 
+因为这些首先是需要的，所以我们将会涉及一些稀疏性，并且权重本身将会是，尽管这里我们有一个形状，这里我们的编码器和解码器的重量床垫的形状将会更大˳
+
+504
+01:10:01,559 --> 01:10:05,872
+It can be more than 100 times larger than the dimension． 
+它可以比维度大100倍以上˳
+
+505
+01:10:05,872 --> 01:10:11,700
+So the shape is going to be times much‚ much larger． 
+所以形状将会大大增加几倍˳
+
+506
+01:10:11,700 --> 01:10:13,980
+And this is crucial for． 
+这对于至关重要˳
+
+507
+01:10:17,260 --> 01:10:28,585
+So in theory‚ if I have a lot of money and few‚ could you just train this alongside by training‚ doing a different training objective? 
+所以从理论上讲，如果我有很多钱而很少，你可以通过培训一起训练，做一个不同的培训目标吗？
+
+508
+01:10:28,585 --> 01:10:36,520
+Or is that too much noise in the objective of like trying to do next token prediction plus also somehow? 
+或者在试图进行下一个代币预测的目标上噪音太大了吗？
+
+509
+01:10:37,220 --> 01:10:40,874
+Yeah‚ I don't think we have a super clear answer． 
+是的，我认为我们没有一个非常明确的答案˳
+
+510
+01:10:40,874 --> 01:10:45,597
+So I drop in there around superposition． 
+所以我在叠加处下降˳
+
+511
+01:10:45,597 --> 01:10:49,720
+They try to train models where sparsity first‚ right? 
+他们尝试在稀疏性优先的情况下训练模型，对吗？
+
+512
+01:10:49,860 --> 01:10:54,393
+Let's just train big spas networks‚ and they still observe the super positioning． 
+让我们训练大型水疗网络，他们仍然观察超级定位˳
+
+513
+01:10:54,393 --> 01:11:07,260
+And for the semantic network‚ I think they also try to increase the number‚ just have the representation in their work‚ but I think OpenAI． 
+对于语义网络，我认为他们也试图增加数量，只是在他们的工作中有代表性，但我认为是OpenAI˳
+
+514
+01:11:09,420 --> 01:11:15,780
+Really something which is more successful‚ like just trying really‚ really sparse． 
+真的是更成功的事情，就像只是尝试非常非常稀疏一样˳
+
+515
+01:11:17,800 --> 01:11:22,360
+And I think the results were a little bit more promising‚ but definitely not． 
+我认为结果更有希望，但绝对不是˳
+
+516
+01:11:29,380 --> 01:11:35,130
+Yeah‚ the problem here is that everything changes with scale and you need to be in the right way． 
+是的，这里的问题是一切都随着规模而变化，你需要以正确的方式˳
+
+517
+01:11:37,420 --> 01:11:42,202
+So I'm not saying that OpenAI and Tropic are the only companies you can do that． 
+所以我并不是说OpenAI和Tropic是唯一可以做到这一点的公司˳
+
+518
+01:11:42,202 --> 01:11:59,530
+We have seen here the code research and Lu‚ either smaller companies where you can do the kinds of like this kind of‚ but if you observe something with one smaller C‚ you can't just say‚ oh‚ then is for the big network． 
+我们在这里看到了代码研究和Lu，无论是较小的公司，你都可以做到这样的事情，但如果你观察到有一个较小的C，你不能只是说，哦，那就是大型网络˳
+
+519
+01:12:02,460 --> 01:12:05,840
+Okay‚ so let me see we have． 
+好的，让我看看我们有˳
+
+520
+01:12:09,440 --> 01:12:09,973
+Where stuff? 
+哪里有东西？
+
+521
+01:12:09,973 --> 01:12:12,643
+So we have a first schooler‚ we learn you． 
+所以我们有一个一年级学生，我们学习你˳
+
+522
+01:12:12,643 --> 01:12:21,040
+It's a subtle but key difference between and what the cities are and trust orders as well． 
+这是城市与信任秩序之间微妙但关键的区别˳
+
+523
+01:12:24,140 --> 01:12:28,910
+Okay‚ whereas stock is‚ this is where things are important． 
+好的，股票才是重要的事情˳
+
+524
+01:12:28,910 --> 01:12:36,740
+Observations are come now because output of 1 MLP‚ input another and every． 
+观察现在出现了，因为输出1 mlp，输入另一个和每个˳
+
+525
+01:12:40,020 --> 01:12:43,772
+We can start to measure feature to feature points． 
+我们可以开始测量特征到特征点˳
+
+526
+01:12:43,772 --> 01:12:45,380
+And that gives us these． 
+这就给了我们这些˳
+
+527
+01:12:48,320 --> 01:12:50,510
+Input nodes being your token embeddings． 
+输入节点是您的令牌嵌入˳
+
+528
+01:12:54,240 --> 01:12:57,892
+Embed inside themselves． 
+嵌入自身内部˳
+
+529
+01:12:57,892 --> 01:12:59,980
+Vector is embed． 
+向量是嵌入的˳
+
+530
+01:13:00,480 --> 01:13:15,752
+They are usually going to have these like square nodes with actual tokens‚ such as we look at the prompt that has pack‚ colon‚ blah‚ blah‚ or something like that． 
+它们通常会有这些带有实际令牌的方形节点，比如我们看提示符有pack、冒号、blah或类似的东西˳
+
+531
+01:13:15,752 --> 01:13:24,020
+These are going to then be connected to so icall the feature nodes‚ those are features that are learned here． 
+这些将被连接到所有的特征节点，这些是在这里学习的特征˳
+
+532
+01:13:26,220 --> 01:13:36,140
+The transcoder layer has a set of features that I learned just like in the Sap‚ and we know which features are active and which are not． 
+转码器层有一组我在Sap中学到的特征，我们知道哪些特征是活跃的，哪些不是˳
+
+533
+01:13:36,270 --> 01:14:04,826
+So here you can imagine if we put with a hierarchical overlay‚ where we go from layer 1 to layer players is then you can have here all of the features that are learned by your MLP transcoder for the first MLP block‚ But only some of those features will be really accurate‚ right? 
+所以在这里你可以想象，如果我们使用分层覆盖，从第一层到第一层玩家，那么你可以在这里拥有你的MLP转码器为第一个MLP块学习的所有功能，但只有其中一些功能会真正准确，对吧？
+
+534
+01:14:04,826 --> 01:14:08,260
+So maybe this one here and this one here． 
+所以也许这个在这里，这个在这里˳
+
+535
+01:14:10,220 --> 01:14:13,560
+So‚ so we are going to have a lot of these features． 
+所以，我们将拥有许多这些功能˳
+
+536
+01:14:13,560 --> 01:14:16,900
+An important feature can influence the other three． 
+一个重要的特征可以影响其他三个˳
+
+537
+01:14:19,300 --> 01:14:23,860
+Press holder and everything will go all the way to the output． 
+按下支架，所有东西都会一直输出到输出˳
+
+538
+01:14:29,270 --> 01:14:29,550
+Everything． 
+一切˳
+
+539
+01:14:31,740 --> 01:14:36,980
+Will go to the output node‚ which is‚ going to be the most likely token． 
+将转到输出节点，这将是最有可能的令牌˳
+
+540
+01:14:36,980 --> 01:14:44,968
+Next token here you can have other and second most likely to‚ and third most likely token‚ and so on． 
+下一个令牌在这里你可以有其他和第二最有可能的，第三最有可能的令牌，依此类推˳
+
+541
+01:14:44,968 --> 01:14:48,717
+Usually they display only to here． 
+通常他们只展示给这里˳
+
+542
+01:14:48,717 --> 01:14:52,052
+Some features will lead you to the output‚ okay? 
+一些功能将引导您到输出，好吗？
+
+543
+01:14:52,052 --> 01:15:06,040
+And now when you have A‚ you can start to think‚ well‚ if this was the next token predicted for this input‚ let me try to make sense of all of these features and their connections to get the process by which the model． 
+现在当你有一个时，你可以开始思考，如果这是为这个输入预测的下一个标记，让我尝试感知所有这些特征及其连接，以获得模型的过程˳
+
+544
+01:15:08,400 --> 01:15:12,960
+We're going to stop here and then our next lecture and next． 
+我们将在这里停下来，然后是我们的下一节课和下一节课˳

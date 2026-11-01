@@ -1,0 +1,1519 @@
+1
+00:00:00,000 --> 00:00:05,635
+Last time we were talking about direct log logic lines． 
+上次我们讨论直接日志逻辑线的时候˳
+
+2
+00:00:05,635 --> 00:00:18,540
+And this was one of the interpretability methods that we use to say‚ okay‚ how does this full component‚ a full attention head‚ a full‚ full amount? 
+这是我们使用的一种可解释性方法，用来说明，好的，这个完整的组件，一个完整的注意力头部，一个完整的量是如何做到的？
+
+3
+00:00:18,540 --> 00:00:29,780
+We have influences the prediction of the logics‚ and logics are directly related to the core behavior of llds prediction‚ right? 
+我们影响了逻辑的预测，而逻辑直接关系到lds预测的核心行为，对吗？
+
+4
+00:00:29,780 --> 00:00:33,560
+To this interesting analysis． 
+这个有趣的分析˳
+
+5
+00:00:37,420 --> 00:00:42,580
+We are going to continue‚ a little bit further with a more methods of． 
+我们将继续，进一步提供更多方法˳
+
+6
+00:00:46,000 --> 00:00:47,748
+Is in a sphere way? 
+这是在一个领域吗？
+
+7
+00:00:47,748 --> 00:00:56,780
+I would say even seems similar to a bit different‚ but it's a little bit more capable‚ a little bit more‚ advanced． 
+我想说，它看起来有点相似，有点不同，但它有点更有能力，有点更先进˳
+
+8
+00:00:57,200 --> 00:01:02,720
+And there is a method that I'm going to teach you that's called activation patching． 
+我要教你一种叫做激活补丁的方法˳
+
+9
+00:01:02,720 --> 00:01:07,180
+Any idea of what this could be just from the name of the method? 
+从方法的名字可以知道这是什么吗？
+
+10
+00:01:10,740 --> 00:01:12,695
+With another one‚ right? 
+还有一个，对吧？
+
+11
+00:01:12,695 --> 00:01:13,477
+And okay． 
+好的˳
+
+12
+00:01:13,477 --> 00:01:19,330
+So the idea is let's replace activation with another one． 
+所以我们的想法是让我们用另一个代替激活˳
+
+13
+00:01:19,480 --> 00:01:21,240
+What could that answer? 
+这能回答什么呢？
+
+14
+00:01:21,810 --> 00:01:21,840
+Like? 
+喜欢吗？
+
+15
+00:01:21,870 --> 00:01:23,930
+What would be replace with what to answer? 
+用什么来代替什么来回答？
+
+16
+00:01:28,820 --> 00:01:33,380
+But you can maybe replace activations with an earlier layer to see． 
+但是你可以用早期的层替换激活来查看˳
+
+17
+00:01:36,020 --> 00:01:43,620
+Yeah‚ so that's an actually a point of view in interesting thing that can happen with when we do logic lens and similar． 
+是的，所以这实际上是一个有趣的观点，当我们使用逻辑镜头和类似的东西时，可能会发生这种情况˳
+
+18
+00:01:45,100 --> 00:01:55,930
+You see here how already a player of 20‚ this representation has suggested that the next to should be door and then this information had propagated． 
+你在这里看到，一个20岁的球员已经表示，旁边应该是门，然后这个信息就传播了˳
+
+19
+00:01:56,820 --> 00:02:07,480
+So now if you are intervening here‚ you might conclude‚ well‚ this is the layer that's responsible for the predicting door‚ where it would actually be better to say this one is． 
+所以现在如果你在这里干预，你可能会得出结论，这是负责预测门的层，实际上更好的说法是这一层˳
+
+20
+00:02:07,500 --> 00:02:18,440
+This is where this kind of behavior had emerged and had started to‚ you know‚ promote the So activation pattern is going to be also． 
+这就是这种行为出现并开始推广的地方，你知道，激活模式也将如此˳
+
+21
+00:02:22,490 --> 00:02:25,470
+In general‚ the most common way to introduce． 
+一般来说，最常见的介绍方式˳
+
+22
+00:02:27,680 --> 00:02:40,655
+The activation patching is‚ and I will give you a visualization of one such case where you might want to‚ in this particular example‚ locate where certain knowledge‚ is． 
+激活修补程序是，我会给你一个这样的情况的可视化，在这个特定的例子中，你可能想要找到某些知识的位置˳
+
+23
+00:02:40,655 --> 00:02:51,590
+So the problem here is the Big Bang theory premieres on the answer is CBS or here you​‌​‌​​‌‌​​‌‌​​‌‌​‌‌‌‌‌​‌​​​‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌​‌‌‌‌​‌​‌‌‌​​‌‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌‌​‌​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌​​‌‌‌​‌‌​​‌‌‌​‌​‌‌‌​​‌‌​​‌‌‌‌​‌​‌​‌​​‌‌‌​‌‌‌‌​‌‌‌​‌​​‌‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌​​‌‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌​​‌‌‌‌‌‌​​‌‌‌‌‌​​​‌‌​​​‌​​‌‌​‌‌​​​‌‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌‌​‌‌‌​‌‌‌‌​​​‌‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​​​‌​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​‌​‌​​‌‌​‌​‌‌‌​‌​‌​‌​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌​‌​‌‌‌​‌​‌​‌‌‌​‌‌‌​‌​​‌‌​‌‌‌‌‌​‌​​‌‌‌‌​‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌​‌‌‌​​‌‌​​​‌​​‌‌​‌‌‌‌‌​‌​​‌‌​​‌‌‌​​‌‌‌​‌​​​‌​​‌‌‌​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​‌‌​​​‌‌‌​​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌​​‌‌‌​​‌​​‌‌​‌‌‌​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ have the space middle is in downtown and the should be Seattle． 
+所以这里的问题是大爆炸理论首演的答案是CBS，或者这里的空间中心在市中心，应该在西雅图˳
+
+24
+00:02:54,230 --> 00:03:11,770
+You want to maybe understand where exactly the information about this subject here‚ the Big Bang Theory referring to a TV show‚ where does it kind of‚ where is it stored in which a representation of your? 
+你可能想了解关于这个主题的信息在哪里，大爆炸理论指的是一个电视节目，它在哪里，它存储在哪里，你的表现形式在哪里？
+
+25
+00:03:14,460 --> 00:03:14,650
+A transformer． 
+一个变压器˳
+
+26
+00:03:14,650 --> 00:03:16,480
+And then you want to localize it． 
+然后你想对其进行本地化˳
+
+27
+00:03:16,870 --> 00:03:28,610
+You can do this intervention where you swap the output of an MLP or attention head with some other representation which is corrupted in some way． 
+你可以进行这种干预，将MLP或注意头的输出与某些以某种方式损坏的其他表示形式交换˳
+
+28
+00:03:28,820 --> 00:03:47,910
+And then by doing this intervention‚ you want to check whether your model is still capable of producing Cvs if that representation was crucial for outputting CV for the big here in premieres on‚ then you would expect it can no longer output CBS here‚ right? 
+然后通过这个干预，你想检查你的模型是否仍然能够产生Cvs，如果该表示对于在首映中输出大的CV至关重要，那么你会期望它不再能在这里输出CBS，对吗？
+
+29
+00:03:48,640 --> 00:03:54,470
+And you can do other way around have if you corrupt your run in some way． 
+如果你以某种方式破坏了你的跑步，你可以用其他的方法˳
+
+30
+00:03:55,000 --> 00:04:01,518
+For example‚ they corrupted here by changing the embeddings of subject that we care about． 
+例如，他们通过改变我们关心的主题的嵌入来破坏这里˳
+
+31
+00:04:01,518 --> 00:04:12,920
+So here the Big Ben theory‚ you add some little Gaussian noise to the embeddings‚ and now everything is corrupted and you are no longer capable of producing CBS here． 
+所以在这里，大本论，你在嵌入中添加了一些小的高斯噪声，现在一切都被破坏了，你不再能够在这里产生CBS˳
+
+32
+00:04:13,450 --> 00:04:16,940
+Then you take representation from your clean run． 
+然后你从你的干净跑步中获得代表˳
+
+33
+00:04:17,310 --> 00:04:27,060
+And maybe by doing that‚ you can recover CV‚ which would say that this component alone is necessary for producing the right output here． 
+也许通过这样做，您可以恢复CV，这说明仅此组件就可以在这里产生正确的输出˳
+
+34
+00:04:27,750 --> 00:04:39,364
+So in general‚ motivation here is to do almost something like a causal intervention‚ where you are claiming that certain representations‚ certain output be from attention． 
+所以一般来说，这里的动机几乎是做一些类似于因果干预的事情，你声称某些表征，某些输出来自注意力˳
+
+35
+00:04:39,364 --> 00:04:45,790
+Head B is responsible for our producing certain output here． 
+头B负责我们在这里生产某些输出˳
+
+36
+00:04:46,200 --> 00:04:56,048
+When you do this intervention‚ either you are corrupting a clean run and patching a corrupt with clean representation‚ or other way around． 
+当您进行此干预时，要么您破坏了干净运行并使用干净表示修补了损坏的内容，要么其他方式˳
+
+37
+00:04:56,048 --> 00:05:04,560
+You have clean run and you patch clean representation with correct one and see whether you break the behavior can go to this． 
+您拥有干净的运行，并使用正确的修补干净的表示，并查看是否破坏行为，可以转到此˳
+
+38
+00:05:06,430 --> 00:05:14,970
+So as I said‚ this method had then been used for localizing knowledge and then editing knowledge together． 
+正如我所说，这种方法被用于本地化知识，然后一起编辑知识˳
+
+39
+00:05:15,440 --> 00:05:20,330
+We produced a first method for editing knowledge called role． 
+我们提出了第一种编辑知识的方法，叫做角色˳
+
+40
+00:05:20,520 --> 00:05:31,680
+And just to give you a motivation for why we even want to do editing‚ our language models are massing‚ right and information now the world are changing all the time． 
+并且为了给你一个动机，为什么我们甚至想做编辑，我们的语言模型正在集结，正确，信息现在世界一直在变化˳
+
+41
+00:05:32,180 --> 00:05:37,220
+So now classical example is‚ you know‚ we have elections here in the us every four years． 
+现在的经典例子是，你知道，我们在美国每四年举行一次选举˳
+
+42
+00:05:37,260 --> 00:05:57,380
+Imagine every time we have in the president‚ we need to retrain the entirety of ChatGPT that would be really annoying‚ instead would be better if you can have this methods where we know‚ okay‚ this is where the knowledge occurs and then we added information about the world to reflect whatever is is the new information． 
+想象一下，每次我们在总统职位上，我们都需要重新培训整个ChatGPT，这会非常烦人，相反，如果你能拥有这些方法，我们知道，好吧，这就是知识产生的地方，然后我们添加了关于世界的信息，以反映任何新信息˳
+
+43
+00:05:58,060 --> 00:05:58,920
+It is really challenging． 
+这真的很有挑战性˳
+
+44
+00:05:59,370 --> 00:06:03,190
+I hope I will have time to maybe talk a little bit more about it． 
+我希望我将来有时间多说一些关于它的事情˳
+
+45
+00:06:03,190 --> 00:06:08,590
+And the biggest challenge with editing is that facts are interconnected‚ right? 
+编辑的最大挑战是事实是相互关联的，对吧？
+
+46
+00:06:09,320 --> 00:06:23,680
+So for example‚ maybe the president changes‚ but then the state they are born and also changes‚ so when you ask questions‚ where in which state was the current president of the us board‚ you now need to also change the entail． 
+例如，也许总统会改变，但他们出生的州也会改变，所以当你提问现任美国董事会主席所在的州时，你现在也需要改变规定˳
+
+47
+00:06:26,370 --> 00:06:27,380
+Where does this end? 
+这在哪里结束？
+
+48
+00:06:27,530 --> 00:06:30,160
+And did you cover all of the imperial facts? 
+你是否涵盖了所有的帝国事实？
+
+49
+00:06:31,450 --> 00:06:36,459
+Becomes that really another trivial question to handle? 
+这真的变成了另一个需要处理的琐碎问题吗？
+
+50
+00:06:36,459 --> 00:06:41,395
+Another example that I hope to come today is users． 
+我希望今天能看到的另一个例子是用户˳
+
+51
+00:06:41,395 --> 00:07:02,323
+A bunch of methods‚ including activation pension‚ but also logic plans‚ and also describing what are the activating examples for a given of stuff we have learned already to explain how does a model like some transporter model like lalama 3 handles simple arithmetic． 
+一堆方法，包括激活养老金，也包括逻辑计划，还描述了给定事物的激活示例，我们已经学习过这些示例，以解释像lalama 3这样的运输模型如何处理简单的算术˳
+
+52
+00:07:02,323 --> 00:07:05,120
+So simple addition‚ for example． 
+例如，简单的加法˳
+
+53
+00:07:05,590 --> 00:07:08,980
+And the answer here is really interesting． 
+这里的答案真的很有趣˳
+
+54
+00:07:08,980 --> 00:07:15,966
+Instead of maybe doing things like we are doing such a robust algorithms‚ what's ones place? 
+与其做像我们正在做的这样强大的算法，它们的位置在哪里？
+
+55
+00:07:15,966 --> 00:07:19,993
+And then your sum‚ what is the 10th place and do I need to carry or not? 
+然后你的和，第十个地方是什么，我需要携带吗？
+
+56
+00:07:19,993 --> 00:07:21,000
+And things like that． 
+诸如此类的事情˳
+
+57
+00:07:21,320 --> 00:07:24,520
+The models are using bags of heuristics． 
+这些模型正在使用启发式方法˳
+
+58
+00:07:24,520 --> 00:07:27,080
+So let me explain what that means． 
+让我来解释一下这是什么意思˳
+
+59
+00:07:27,080 --> 00:07:32,380
+Here you have an example‚ 226 -68 equals． 
+这里有一个例子，226-68等于˳
+
+60
+00:07:35,020 --> 00:07:39,640
+And‚ the model‚ what it does‚ it has these three neurons here‚ if you see that． 
+这个模型，它所做的，这里有三个神经元，如果你看到的话˳
+
+61
+00:07:40,340 --> 00:07:43,970
+And then here‚ each subfigure explains what that neuron is doing． 
+然后在这里，每个小图都解释了神经元正在做什么˳
+
+62
+00:07:44,610 --> 00:07:45,290
+Here． 
+这里˳
+
+63
+00:07:45,310 --> 00:07:48,846
+This neuron in layer is 17 with this dimension． 
+这个层中的神经元在这个维度上是17˳
+
+64
+00:07:48,846 --> 00:07:55,810
+It is quite active when we have‚ you know‚ two operas here‚ 226 and 68． 
+当我们有两部歌剧，226和68时，它非常活跃˳
+
+65
+00:07:56,300 --> 00:08:12,350
+If this second operon can be described with this‚ he‚ if it's in a range between 5 and 25 and whatever it is mod 50‚ yes‚ it's a little bit clearer here． 
+如果第二个操纵子可以用这个来描述，如果它在5到25之间，或者无论它是mod 50，是的，这里更清晰一些˳
+
+66
+00:08:12,370 --> 00:08:30,650
+This is a little bit more complicated‚ but this one‚ it's easier if the difference between these two operands is roughly in this range‚ This neuron will activate if here again‚ if the difference between this operand gives 8‚ 1 to 10‚ this neuron will activate． 
+这有点复杂，但是如果这两个操作数之间的差异大致在此范围内，则更容易，如果再次在此范围内，如果此操作数之间的差异为8，1到10，则此神经元将激活˳
+
+67
+00:08:31,190 --> 00:08:34,000
+So we have this‚ basically‚ these are all heuristics‚ right? 
+所以我们有这个，基本上这些都是启发式的，对吧？
+
+68
+00:08:34,560 --> 00:08:40,520
+When do certain neurons fire up‚ given what are operand 1 and 2? 
+考虑到操作数1和2是什么，某些神经元什么时候启动？
+
+69
+00:08:41,090 --> 00:08:53,472
+And now interestingly‚ we can use logic lens‚ which we have learned last time to see‚ well‚ okay‚ this me‚ I can describe it's what it encodes‚ what it activates for‚ but what does it promote? 
+现在有趣的是，我们可以使用我们上次学到的逻辑镜头来看到，好的，这个我可以描述它是什么编码，它激活什么，但它促进了什么？
+
+70
+00:08:53,472 --> 00:09:03,850
+And here we can apply logic lens‚ and we can see that‚ for example‚ here‚ if the difference is going to be basically‚ we are going to get a number that ends with 8‚ right? 
+在这里我们可以应用逻辑透镜，我们可以看到，例如，在这里，如果差异基本上是，我们将得到一个以8结尾的数字，对吗？
+
+71
+00:09:03,950 --> 00:09:04,340
+Because they． 
+因为他们˳
+
+72
+00:09:07,090 --> 00:09:10,730
+This network will promote numbers． 
+这个网络将促进数字˳
+
+73
+00:09:12,060 --> 00:09:16,444
+And here you don't see it‚ but I believe that's also a blue color． 
+这里你看不到它，但我相信它也是蓝色的˳
+
+74
+00:09:16,444 --> 00:09:19,540
+Yeah‚ this is blue‚ this is blue‚ and this is also blue． 
+是的，这是蓝色的，这是蓝色的，这也是蓝色的˳
+
+75
+00:09:19,540 --> 00:09:22,030
+This is also everything is blue here． 
+这里的一切都是蓝色的˳
+
+76
+00:09:22,030 --> 00:09:31,160
+So both of these tokens that end with 8 are promoted by the‚ which makes sense because this neuron fire ups for numbers that end with 8． 
+所以这两个以8结尾的令牌都被提升，这很感知，因为这个神经元会触发以8结尾的数字˳
+
+77
+00:09:32,010 --> 00:09:43,150
+So what they discover is basically when the models are doing this arithmetic‚ they are kind of combining these heuristics instead of‚ you know‚ implementing robust algorithms． 
+所以他们发现基本上，当模型进行这种算术运算时，它们结合了这些启发式方法，而不是实现健壮的算法˳
+
+78
+00:09:43,150 --> 00:09:52,940
+And for me‚ this is the well we will come again later in the course in the question of generalization and how can interpretability help us with generalizations? 
+对我来说，这是我们稍后在泛化问题课程中再次提到的井，可解释性如何帮助我们进行泛化？
+
+79
+00:09:53,940 --> 00:10:12,649
+I don't want to digress too much‚ but one natural kind of assumption you might make is to say‚ well‚ the model can generalize and‚ you know‚ here‚ subtract number‚ various numbers‚ only if it implements a robust algorithm． 
+我不想离题太多，但你可能会做的一种自然的假设是，模型可以泛化，你知道，在这里减去数字，各种数字，只有当它实现了一个强大的算法˳
+
+80
+00:10:12,649 --> 00:10:23,920
+But what we see is these models implement these weird‚ what they call bag of heuristic algorithms‚ which are not our robust algorithms and still manage to check． 
+但我们看到的是这些模型实现了这些奇怪的，他们称之为 “启发式算法包”，这些算法不是我们强大的算法，仍然能够进行检查˳
+
+81
+00:10:24,840 --> 00:10:32,117
+So later‚ we were going to talk about memorization at the one extreme‚ generalization at the‚ you know‚ other end． 
+所以后来，我们打算在一个极端谈论记忆，在另一端谈论泛化˳
+
+82
+00:10:32,117 --> 00:10:39,980
+But I will already warn you that generalization does not need to mean that one needs to implement it． 
+但是我已经警告过你，泛化并不意味着需要实现它˳
+
+83
+00:10:39,980 --> 00:10:43,146
+The exact algorithm we people use to generalize． 
+我们人们用来概括的精确算法˳
+
+84
+00:10:43,146 --> 00:10:46,540
+So I think this is a super interesting observation． 
+所以我认为这是一个非常有趣的观察˳
+
+85
+00:10:46,540 --> 00:10:59,780
+Yeah‚ this might be getting a little bit off topic‚ but I've had to stop before‚ like we can approximate functions with like Caleb series or Fourier series‚ and we also． 
+是的，这可能会有点偏离主题，但我之前不得不停下来，就像我们可以用像卡莱布级数或傅里叶级数近似函数一样，而且我们也可以˳
+
+86
+00:11:02,460 --> 00:11:08,078
+If the size goes up there‚ that can approximate and you sort of function． 
+如果大小在那里上升，那可以近似和你有点函数˳
+
+87
+00:11:08,078 --> 00:11:18,181
+And so I guess to me‚ it feels like there should be a way to have these approximations of somehow this kind of pathway． 
+所以我想对我来说，感觉应该有一种方法可以以某种方式获得这种路径的近似值˳
+
+88
+00:11:18,181 --> 00:11:28,500
+And I haven't like thought it out all the way‚ but is there working where it's like seeing if we're actually just somehow having some tailors? 
+我还没有想清楚，但有没有像看看我们是否真的有一些裁缝一样的工作？
+
+89
+00:11:31,080 --> 00:11:31,925
+Finally enough． 
+终于足够了˳
+
+90
+00:11:31,925 --> 00:11:34,460
+We are going to use Taylor series things． 
+我们将使用泰勒系列东西˳
+
+91
+00:11:37,330 --> 00:11:38,500
+Just a funny coincidence． 
+只是一个有趣的巧合˳
+
+92
+00:11:39,630 --> 00:11:44,131
+I would say that everything else I am descri in circuit． 
+我会说我在电路中的其他一切˳
+
+93
+00:11:44,131 --> 00:11:47,682
+In this class‚ we have introduced approximation‚ right? 
+在这门课中，我们介绍了近似，对吗？
+
+94
+00:11:47,682 --> 00:11:51,872
+Like we have a full attribution graph when we don't own anything． 
+就像当我们不拥有任何东西时，我们有一个完整的归因图˳
+
+95
+00:11:51,872 --> 00:11:55,338
+That's actually exactly what the models look‚ right? 
+这实际上就是模特的样子，对吧？
+
+96
+00:11:55,338 --> 00:12:02,864
+And then when we are pruning and doing manual additional pruning‚ we are basically doing the approximation‚ right? 
+然后当我们修剪和手动额外修剪时，我们基本上是在做近似，对吧？
+
+97
+00:12:02,864 --> 00:12:13,375
+So you are right that in general‚ this whole field is doing approximations‚ just poking down good enough causal obstructions of the full model． 
+所以你是对的，总的来说，整个领域都在进行近似，只是挖掘出整个模型足够好的因果障碍˳
+
+98
+00:12:13,375 --> 00:12:27,068
+But the exact form that you have where you are exactly trying to approximate the function with the Taylor‚ maybe‚ but I don't think that will give you a level of interpretability‚ right? 
+但是你所拥有的确切形式，你正在试图用泰勒近似函数，也许，但我认为这不会给你一个可解释性的水平，对吧？
+
+99
+00:12:27,068 --> 00:12:29,740
+You are just going to get maybe a linear function． 
+你可能只会得到一个线性函数˳
+
+100
+00:12:29,780 --> 00:12:47,818
+But now the objects of the linear function might‚ if you are using first no to say‚ then it just feels to me that we need to be really complicated if you want get these complicated processes． 
+但是现在线性函数的对象可能会，如果你使用的是第一个不，那么我觉得如果你想要得到这些复杂的过程，我们需要非常复杂˳
+
+101
+00:12:47,818 --> 00:12:55,448
+But yeah‚ let's check more about this because this is directly related to this Tos． 
+但是，是的，让我们更多地检查一下，因为这与这个目标直接相关˳
+
+102
+00:12:55,448 --> 00:13:26,845
+So yeah‚ we're going to use activation‚ what we need to get these visualizations and together with logic lens and activate‚ you know‚ this examples‚ which is a bunch of techniques we have used in the class‚ is a great paper to read now and kind of take everything you should learn in and kind of put it together into a nice‚ you know‚ set of experiments to answer really interesting questions． 
+所以是的，我们将使用激活，我们需要使用逻辑透镜来获得这些可视化和激活，你知道，这个例子，这是我们在课堂上使用的一堆技术，这是一篇很好的论文，现在很值得阅读，它把你应该学习的一切都整理成一组实验，回答非常有趣的问题˳
+
+103
+00:13:26,845 --> 00:13:29,020
+So this paper on time． 
+因此，这篇论文准时˳
+
+104
+00:13:29,070 --> 00:13:53,400
+So also I will‚ I will cover and also‚ you know‚ our sparse feature circuits that we have learned today‚ you had quiz and an opportunity to kind of remind I have been talking about there when they were applied to these problems‚ we also maybe we the whole c．o． tropic have also learned similar behavior． 
+所以，我也会，我会覆盖，还有，你知道，我们今天学到的稀疏特征电路，你有小测验和一个机会提醒我，当它们应用于这些问题时，我一直在谈论它们，我们也可能是整个c．o． 热带也学会了类似的行为˳
+
+105
+00:13:55,250 --> 00:13:57,800
+You can solve arithmetic with this pair of heuristics． 
+你可以用这一对启发式方法解决算术问题˳
+
+106
+00:13:58,140 --> 00:14:13,870
+So here we have 30 two-six plus 50009‚ and what you can see here is let me‚ it's first it's breaking into tens and 1‚ and it's a of you know for where? 
+这里我们有30个2-6加50009，你可以在这里看到的是，首先它打破了十和1，你知道它在哪里吗？
+
+107
+00:14:16,610 --> 00:14:16,630
+Is． 
+是˳
+
+108
+00:14:19,020 --> 00:14:25,700
+Okay‚ so you see here‚ instead of saying 36 plus 59‚ it is． 
+好的，你看这里，不是说36加59，而是它˳
+
+109
+00:14:27,950 --> 00:14:34,770
+Describing 36 as roughly 40‚ and it's describing 59 as roughly 50． 
+将36描述为大约40，将59描述为大约50˳
+
+110
+00:14:34,770 --> 00:14:36,755
+You know how we disagree with． 
+你知道我们有多不同意˳
+
+111
+00:14:36,755 --> 00:14:39,590
+And then the sum is roughly 92． 
+然后总和大约是92˳
+
+112
+00:14:39,590 --> 00:14:50,860
+But you also have this‚ it's roughly 36 and roughly and then roughly 92 and roughly 95 kind of all point to the solution‚ which is 95． 
+但是你也有这个，它大约是36，然后大约是92，大约是95，所有这些都指向解决方案，即95˳
+
+113
+00:14:50,860 --> 00:14:55,324
+This is what I mean by this is not a robust algorithm‚ right? 
+这就是我的意思，这不是一个健壮的算法，对吧？
+
+114
+00:14:55,324 --> 00:15:08,170
+Like imagine adding them‚ it would be really funny‚ but still‚ models are doing this and they do manage to generalize to different digits that different numbers that we use as opens‚ right? 
+想象一下将它们相加，这将非常有趣，但模型仍然在这样做，并且它们确实成功地将不同的数字概括为我们用作开路的不同数字，对吧？
+
+115
+00:15:08,170 --> 00:15:18,331
+So again‚ I don't think this is necessarily a flaw‚ it's a great example how models can do things that we do on a daily basis really differently‚ right? 
+所以再说一遍，我不认为这一定是一个缺陷，这是一个很好的例子，模型可以以不同的方式做我们每天做的事情，对吗？
+
+116
+00:15:18,331 --> 00:15:44,290
+And that generalization and using interpretability to explain why models generally once unse inputs‚ doesn't need to assume that we need to find a‚ for example‚ here‚ if you were looking for a robust algorithm and the way you use some numbers you wouldn't want‚ we find it and you might conclude that there is no mechanism for adding numbers when there is． 
+并且，泛化和使用可解释性来解释为什么模型通常一旦没有输入，就不需要假设我们需要找到一个，例如，在这里，如果你正在寻找一个强大的算法和你使用一些你不想要的数字的方式，我们找到了它，你可能会得出结论，当有数字时，没有添加数字的机制˳
+
+117
+00:15:46,700 --> 00:15:58,880
+Okay‚ so this is most mostly to kind of motivate what we are going to talk about because activation patching is going to be part of a solution to get to the incense． 
+好的，这主要是为了激发我们将要谈论的内容，因为激活修补将成为解决方案的一部分˳
+
+118
+00:15:58,880 --> 00:16:10,590
+But I also intentionally brought our the biology of elements where we do cross layer to their at-bus graphs‚ pru them‚ and then manually climbing circuits． 
+但我也有意将我们的元素生物学带入其中，我们跨层到它们的现场总线图，对它们进行编辑，然后手动攀爬电路˳
+
+119
+00:16:10,590 --> 00:16:18,420
+Because I want to also already acknowledged that activation packaging can be a different way to get into something like search． 
+因为我也想承认，激活包装可以是进入搜索之类的不同方式˳
+
+120
+00:16:19,220 --> 00:16:27,583
+So then when we cover activation patch‚ when we go over this work‚ we can also contrast these two getting circuits． 
+因此，当我们涵盖激活补丁时，当我们回顾这项工作时，我们也可以对比这两个电路˳
+
+121
+00:16:27,583 --> 00:16:34,740
+Okay‚ now I'm going to jump into details of activation pating are there any questions? 
+好的，现在我要深入讨论激活的细节，有什么问题吗？
+
+122
+00:16:39,960 --> 00:16:42,240
+Okay I'm going to keep this diagram． 
+好的，我将保留这个图表˳
+
+123
+00:16:42,240 --> 00:16:50,880
+I think it's going to be heavy and things are moving‚ which is always fun and you lose books． 
+我认为这将是沉重的，事物正在移动，这总是很有趣，你会失去书籍˳
+
+124
+00:16:51,830 --> 00:16:57,930
+All right‚ so our goal now is to answer． 
+好的，我们现在的目标是回答˳
+
+125
+00:17:03,430 --> 00:17:07,060
+Kind of causal effect． 
+一种因果效应˳
+
+126
+00:17:12,180 --> 00:17:22,160
+An output of a component‚ let's call it a module like MLP or attention head． 
+组件的输出，让我们称它为像MLP或注意力头这样的模块˳
+
+127
+00:17:36,020 --> 00:17:39,320
+Called activation to achieve? 
+所谓激活实现？
+
+128
+00:17:47,560 --> 00:17:50,461
+It comes in two flavors． 
+它有两种口味˳
+
+129
+00:17:50,461 --> 00:17:54,241
+One is called denoising． 
+一种叫做去噪˳
+
+130
+00:17:54,241 --> 00:17:57,980
+The other one is called noisy． 
+另一个被称为嘈杂˳
+
+131
+00:18:05,880 --> 00:18:10,440
+Let's start with the noisy‚ which is shown here． 
+让我们从这里显示的嘈杂开始˳
+
+132
+00:18:14,060 --> 00:18:32,088
+Okay‚ so with the noise first we are going to have in‚ but the noisy and denoising variant of activation patching‚ we are going to have a concept of a clean run and a corrupt run． 
+好的，所以首先我们将使用噪音，但是激活补丁的嘈杂和去噪变体，我们将有一个干净运行和损坏运行的概念˳
+
+133
+00:18:32,088 --> 00:18:34,730
+Okay‚ clean and run． 
+好的，干净然后快跑˳
+
+134
+00:18:37,330 --> 00:18:38,710
+And we have correct time． 
+我们有正确的时间˳
+
+135
+00:18:43,030 --> 00:18:47,030
+You have your prompt and result‚ right? 
+你有你的提示和结果，对吗？
+
+136
+00:18:47,880 --> 00:18:49,875
+And you use your own model． 
+你使用自己的模式˳
+
+137
+00:18:49,875 --> 00:18:52,440
+No‚ you don't do anything‚ right? 
+不，你什么都不做，对吧？
+
+138
+00:18:53,320 --> 00:18:57,410
+So from here is the big Man theory premieres． 
+所以从这里开始是大人物理论的首映˳
+
+139
+00:18:57,410 --> 00:19:02,909
+Other example is the Space Needle is in downtown and the result is Seattle． 
+另一个例子是太空针在市中心，结果是西雅图˳
+
+140
+00:19:02,909 --> 00:19:04,560
+These are clean rocks‚ right? 
+这些都是干净的石头，对吧？
+
+141
+00:19:06,700 --> 00:19:08,866
+Also do in two ways． 
+也有两种方式˳
+
+142
+00:19:08,866 --> 00:19:12,766
+You can corrupt the prompt itself． 
+您可以破坏提示符本身˳
+
+143
+00:19:12,766 --> 00:19:17,810
+So instead of having a cleaning prompt‚ you have prompt． 
+因此，您没有清洁提示，而是有提示˳
+
+144
+00:19:22,860 --> 00:19:32,940
+There is another circuit that I need to introduce after we cover back heuristics‚ which is called I or I circuit． 
+在我们回顾启发式之后，我需要引入另一个电路，称为I或I电路˳
+
+145
+00:19:32,940 --> 00:19:45,988
+And again‚ it is one of these first‚ you know‚ circuits that have been found with the By caps Apache already in 2022． 
+再次，它是其中一个最早的，你知道的，在2022年已经与Apache一起发现的电路之一˳
+
+146
+00:19:45,988 --> 00:19:52,720
+And there you have two entities like John and Mary‚ and they are doing something and their names are being repeated． 
+那里有两个实体，比如约翰和玛丽，他们正在做某事，他们的名字被重复˳
+
+147
+00:19:53,450 --> 00:19:57,480
+And in the end‚ you have a question where you need to answer either John or Mary． 
+最后，你有一个问题需要回答约翰或玛丽˳
+
+148
+00:19:57,520 --> 00:20:11,400
+So you need to kind of reason whether subject or indirect object is what the output should be corrupt actually in itself to the activation patching． 
+所以你需要某种原因，无论是主体还是间接对象，输出本身应该是损坏的，实际上是激活修补程序˳
+
+149
+00:20:11,440 --> 00:20:17,480
+Here in this work‚ we have‚ let's call it result． 
+在这项工作中，我们有，让我们称之为结果˳
+
+150
+00:20:25,710 --> 00:20:30,940
+Clean from‚ but then you corrupt． 
+从干净开始，但你腐败了˳
+
+151
+00:20:31,210 --> 00:20:31,440
+It's a． 
+这是一个˳
+
+152
+00:20:34,620 --> 00:20:40,100
+And you do that by adding a little bit of motion nores． 
+你可以通过添加一点运动规范来做到这一点˳
+
+153
+00:20:42,200 --> 00:20:56,782
+So you pass your normal prompt‚ such as here‚ the vector here‚ your premier stone‚ and you get the first layer of your transformer will‚ you know‚ transform these token into their to embeddings． 
+所以你传递你的正常提示，比如这里的矢量，你的首要石头，然后你得到变压器的第一层，你知道，将这些令牌转换成它们的嵌入˳
+
+154
+00:20:56,782 --> 00:21:04,560
+And I just want to add some noise to these embeddings to corrupt the‚ Okay‚ so we have． 
+我只想在这些嵌入中添加一些噪音来破坏，好的，所以我们有了˳
+
+155
+00:21:06,780 --> 00:21:18,100
+With denoising‚ we are going to‚ in our clean run‚ take certain representation and swap it with the clean rice represent． 
+通过去噪，我们将在干净的运行中，采用某些表示并与干净的大米表示交换˳
+
+156
+00:21:19,610 --> 00:21:21,690
+So let me try to visualize this． 
+让我试着想象一下这个˳
+
+157
+00:21:22,700 --> 00:21:23,200
+I had my． 
+我有我的˳
+
+158
+00:21:25,500 --> 00:21:28,330
+The one and at the late? 
+晚一点的？
+
+159
+00:21:31,820 --> 00:21:36,740
+MLP and that MLP gives me some representation‚ right? 
+MLP和那个MLP给了我一些代表，对吗？
+
+160
+00:21:39,410 --> 00:21:41,680
+What I do with denote? 
+我用denote做什么？
+
+161
+00:21:41,890 --> 00:21:49,720
+I have my corruptor and I get all of the representation‚ but I patch． 
+我有我的腐蚀者，我得到了所有的代表，但我修补了˳
+
+162
+00:21:50,560 --> 00:21:51,830
+Let's call this one． 
+我们叫它为它吧˳
+
+163
+00:21:57,070 --> 00:21:58,500
+I patch my． 
+我的补丁˳
+
+164
+00:22:03,420 --> 00:22:05,560
+Output of L 9 MLB with． 
+L 9 MLB的输出˳
+
+165
+00:22:16,740 --> 00:22:21,517
+More complicated written down than it is． 
+写下来比现在更复杂˳
+
+166
+00:22:21,517 --> 00:22:22,385
+I say． 
+我说˳
+
+167
+00:22:22,385 --> 00:22:49,060
+Now what you do is you basically have two forward passes‚ one where you collect everything in your transformer and then you have‚ for Rohan‚ another quarter pass where you swap the output of MLP layer 9‚ which would be produced for this corrupt Ands with whatever was the output here in the P1． 
+现在你做的是基本上有两个正向传递，一个是收集变压器中的所有内容，然后对于Rohan来说，还有另一个四分之一传递，你交换MLP第9层的输出，这将为这个腐败和p1中的输出产生˳
+
+168
+00:22:49,060 --> 00:23:24,100
+And what is the expected behavior if this representation is is necessary for producing or I should say sufficient for producing the expected output in this prompt CBS for the Seattle example Seattle‚ the expectation is that if we replace the corrupted version with the clean version‚ then we should be able to retrieve that expected output from correct run exactly． 
+如果此表示形式对于生产是必要的，或者我应该说足以在西雅图示例西雅图的提示CBS中产生预期输出，那么预期的行为是什么，期望是如果我们用干净的版本替换损坏的版本，那么我们应该能够从正确的运行中准确地检索到预期的输出˳
+
+169
+00:23:24,820 --> 00:23:27,100
+Now that is corruption． 
+现在这就是腐败˳
+
+170
+00:23:27,100 --> 00:23:29,380
+So we have let me do． 
+所以我们让我去做˳
+
+171
+00:23:31,940 --> 00:23:38,700
+So this is patching plus Cro cror this is going to be patching． 
+所以这是修补加上Cro，或者这将是修补˳
+
+172
+00:23:44,820 --> 00:23:48,720
+I have no patching‚ correct run plus correct run． 
+我没有打补丁，正确运行加上正确运行˳
+
+173
+00:23:48,720 --> 00:23:49,920
+So I just run． 
+所以我只是跑步˳
+
+174
+00:23:52,000 --> 00:23:53,630
+My corrupt here? 
+我的腐败在这里？
+
+175
+00:23:55,620 --> 00:23:58,734
+I should not get the correct answer． 
+我不应该得到正确答案˳
+
+176
+00:23:58,734 --> 00:24:01,960
+So probability of correct． 
+所以正确的概率˳
+
+177
+00:24:13,220 --> 00:24:22,260
+But now‚ if this representation here is sufficient to produce the correct answer‚ then what? 
+但是现在，如果这里的表示足以产生正确的答案，然后呢？
+
+178
+00:24:22,260 --> 00:24:25,730
+I expect 9 MLB． 
+我预计是9mb˳
+
+179
+00:24:27,870 --> 00:24:29,020
+Queen sufficient． 
+女王足够˳
+
+180
+00:24:33,370 --> 00:24:39,220
+Then I expect that here the probability is going to be higher． 
+那么我预计这里的概率会更高˳
+
+181
+00:24:50,400 --> 00:24:52,864
+Okay‚ so let's just go over everything one more time． 
+好的，让我们把所有的东西再一次介绍一下˳
+
+182
+00:24:52,864 --> 00:24:54,002
+Activation‚ patching． 
+激活，打补丁˳
+
+183
+00:24:54,002 --> 00:25:15,725
+We have concept double P1 is just a forward pass with the standard from correct means run where the prompt is corrupted in some way‚ either the surface form of the Pro or the embeddings of the cream prompt with the noisy versions of activation patch． 
+我们的概念双P1只是一个标准的正向传递，从正确的方式运行，其中提示以某种方式损坏，无论是Pro的表面形式还是奶油提示的嵌入以及嘈杂版本的激活补丁˳
+
+184
+00:25:15,725 --> 00:25:23,740
+I have my run where I don't have any patching and here the probability of the correct answer is low‚ right? 
+我有一个没有任何修补程序的地方，这里正确答案的概率很低，对吧？
+
+185
+00:25:23,740 --> 00:25:32,386
+Because I corrupted the information that is signaling what the correct answer is with the patched version of a corrupt run． 
+因为我损坏了用损坏运行的补丁版本发出正确答案信号的信息˳
+
+186
+00:25:32,386 --> 00:25:57,820
+I do everything the same except a swap 1 representation with the associated representation in a critical one and here the kind of punch line is that if that representation is sufficient for predicting the for the correct answer‚ then this probability is going to become high in the patching plus‚ correct? 
+我做的所有事情都是一样的，除了一个交换1的表示，在一个关键的表示中相关的表示，这里的关键是，如果该表示足以预测正确答案，那么这个概率在修补加中将变得很高，对吗？
+
+187
+00:26:02,440 --> 00:26:07,000
+And then with the noising‚ it's similar‚ right? 
+然后在噪音方面，它是相似的，对吧？
+
+188
+00:26:07,450 --> 00:26:19,580
+With noisy‚ I want to say that‚ well‚ this is talking about sufficiency with the green noisy fiber to talk about necessity． 
+在嘈杂的情况下，我想说，这是在谈论用绿色嘈杂纤维来谈论必要性的充分性˳
+
+189
+00:26:19,580 --> 00:26:33,080
+If this representation‚ if I have my clean run and then I patch a representation with the correct version‚ that representation was necessary for the behavior． 
+如果这个表示，如果我有干净的运行，然后我用正确的版本修补一个表示，那么这个表示对于该行为是必要的˳
+
+190
+00:26:33,080 --> 00:26:34,580
+So let's write this down． 
+让我们把这个写下来˳
+
+191
+00:26:34,580 --> 00:26:36,380
+So with the noisy version． 
+所以对于嘈杂的版本˳
+
+192
+00:26:51,090 --> 00:26:53,610
+We have korokan． 
+我们有korokan˳
+
+193
+00:26:57,510 --> 00:27:00,640
+One‚ I get the‚ let's say L nine MLP‚ correct? 
+一个，我拿到了，比如说l9 MLP，对吗？
+
+194
+00:27:05,360 --> 00:27:08,090
+The output of this one‚ right? 
+这一个的输出，对吧？
+
+195
+00:27:08,090 --> 00:27:16,520
+The one stop‚ the W‚ then I have my green run and with my‚ I should say here‚ the probability． 
+一站，W，然后我有我的绿色奔跑，以及我的，我应该说这里的概率˳
+
+196
+00:27:20,940 --> 00:27:25,290
+It is not‚ that's why it's corrupted‚ right? 
+它不是，这就是它腐败的原因，对吧？
+
+197
+00:27:27,620 --> 00:27:32,320
+And the probability of correct answer is 5． 
+正确答案的概率为5˳
+
+198
+00:27:35,100 --> 00:27:36,250
+Then I have patched version of a queen 1． 
+然后我已经修补了女王1的版本˳
+
+199
+00:27:39,970 --> 00:27:44,990
+Where I swamp my clean representation? 
+我把干净的代表淹没在哪里？
+
+200
+00:27:50,880 --> 00:27:52,350
+With the correct 1． 
+正确的1˳
+
+201
+00:28:02,410 --> 00:28:04,350
+The correct answer is low． 
+正确答案是低˳
+
+202
+00:28:10,170 --> 00:28:14,100
+If this L 9 mop clean is． 
+如果这个L 9拖把干净˳
+
+203
+00:28:28,720 --> 00:28:38,748
+So what can happen sometimes this at this output of some MLP‚ you might be suggestive of the correct behavior． 
+因此，有时在某些MLP的输出上会发生什么，您可能会提示正确的行为˳
+
+204
+00:28:38,748 --> 00:28:41,304
+So for example‚ here‚ you can get that． 
+例如，在这里，你可以得到那个˳
+
+205
+00:28:41,304 --> 00:28:52,613
+Indeed‚ you can if you swap the corrupt version with the clean one‚ If the same output might not be necessary‚ it can be． 
+的确，如果您将损坏的版本与干净的版本交换，则可以，如果可能不需要相同的输出，则可以˳
+
+206
+00:28:52,613 --> 00:28:57,240
+You all know that there is lots of redundancy in transformer architecture so． 
+你们都知道变压器架构中有很多冗余˳
+
+207
+00:28:59,330 --> 00:29:02,640
+It can be that some other representation has exact same role． 
+它可能是其他一些代表具有完全相同的角色˳
+
+208
+00:29:02,800 --> 00:29:06,841
+And just the fact that you don't have this doesn't matter． 
+而你没有这个事实并不重要˳
+
+209
+00:29:06,841 --> 00:29:14,727
+Really having both sufficiency and necessary idea and what you would doem to be causal‚ right? 
+真的有足够和必要的想法，你会认为这是因果关系，对吗？
+
+210
+00:29:14,727 --> 00:29:23,801
+This idea that if you remove something accessor‚ but yeah‚ something else can compensate for it． 
+这个想法是如果你删除了某些访问器，但是，其他东西可以弥补它˳
+
+211
+00:29:23,801 --> 00:29:28,540
+It's also refer to Hydra from‚ I suppose‚ Greek mythology． 
+它也指的是来自希腊神话的九头蛇˳
+
+212
+00:29:28,540 --> 00:29:43,670
+Cut one hand and doesn't matter the So you need to be careful with that because if you say‚ oh‚ it's sufficient‚ therefore‚ you know‚ it's Casal‚ you might run into trouble． 
+割一只手并不重要，所以你需要小心，因为如果你说，哦，这就足够了，因此，你知道，这是卡萨尔，你可能会遇到麻烦˳
+
+213
+00:29:44,820 --> 00:29:48,300
+Okay‚ so now let me see． 
+好的，现在让我看看˳
+
+214
+00:29:50,340 --> 00:29:54,382
+Here I have been talking about these probabilities‚ right? 
+在这里，我一直在谈论这些概率，对吗？
+
+215
+00:29:54,382 --> 00:30:03,760
+So we are using some kind of function of the output to decide whether representation is necessary or sufficient． 
+因此，我们使用某种输出函数来决定表示是否是必要或充分的˳
+
+216
+00:30:04,930 --> 00:30:07,010
+And that's my choice． 
+这是我的选择˳
+
+217
+00:30:08,020 --> 00:30:12,580
+Different things here and define different functions‚ right‚ so? 
+这里有不同的东西并定义不同的功能，对吗？
+
+218
+00:30:15,630 --> 00:30:18,100
+Abstract form you're looking for? 
+你正在寻找的抽象形式？
+
+219
+00:30:28,260 --> 00:30:30,620
+For some function‚ function l? 
+对于某些函数，函数l？
+
+220
+00:30:33,000 --> 00:30:40,600
+That's going to be your target for understanding the effect of patching‚ right? 
+这将是您了解修补效果的目标，对吗？
+
+221
+00:30:40,600 --> 00:30:46,640
+We need to define function L through which we are going to examine． 
+我们需要定义函数L，通过它我们将进行检查˳
+
+222
+00:30:48,830 --> 00:30:48,880
+Fashion? 
+时尚？
+
+223
+00:30:58,970 --> 00:31:00,190
+The most common? 
+最常见的？
+
+224
+00:31:02,540 --> 00:31:09,479
+Example Uoc is that we use the form the logic difference． 
+例子Uoc是我们使用逻辑差异的形式˳
+
+225
+00:31:09,479 --> 00:31:16,720
+So we are going to‚ I should say l is the difference‚ and then we define logical difference． 
+所以我们要说，我应该说l是区别，然后我们定义逻辑区别˳
+
+226
+00:31:18,300 --> 00:31:20,260
+We defined delta L where? 
+我们定义了增量L在哪里？
+
+227
+00:31:23,800 --> 00:31:30,640
+What happens when you have corrupt run with here? 
+当你在这里有腐败的时候会发生什么？
+
+228
+00:31:30,910 --> 00:31:34,930
+I'm going to okay this idea to． 
+我会同意这个想法的˳
+
+229
+00:31:57,600 --> 00:31:58,690
+Target function． 
+目标功能˳
+
+230
+00:32:03,070 --> 00:32:10,500
+And you can take the L‚ very common is going to be the logic． 
+你可以用L，很常见的是逻辑˳
+
+231
+00:32:13,050 --> 00:32:14,350
+For the correct forum． 
+正确的论坛˳
+
+232
+00:32:19,740 --> 00:32:24,380
+So again‚ logic‚ not the softmax output because of． 
+因此，再次强调逻辑，而不是softmax输出˳
+
+233
+00:32:29,180 --> 00:32:30,020
+L to be? 
+升成为？
+
+234
+00:32:32,140 --> 00:32:32,300
+L? 
+我？
+
+235
+00:32:35,400 --> 00:32:41,440
+For input‚ where we swap our activation with the clean． 
+对于输入，我们将我们的激活与clean交换˳
+
+236
+00:32:54,040 --> 00:32:59,980
+So just to read this‚ I have function l‚ let's say that's the logic for the correction． 
+所以为了阅读这篇文章，我有函数l，假设这是校正的逻辑˳
+
+237
+00:33:00,280 --> 00:33:07,201
+Can I check what is the logic of the correct answer when I swap the representation? 
+当我交换表示时，我能检查正确答案的逻辑是什么吗？
+
+238
+00:33:07,201 --> 00:33:12,000
+I'm zooming in the corresponding clean representation． 
+我正在缩放相应的干净表示˳
+
+239
+00:33:12,000 --> 00:33:16,558
+I check the difference with what is the logic‚ pure corrupt run． 
+我检查了与逻辑的区别，纯粹的腐败运行˳
+
+240
+00:33:16,558 --> 00:33:21,052
+So here we are talking about denoise inversion． 
+所以我们在这里谈论去噪反演˳
+
+241
+00:33:21,052 --> 00:33:27,860
+And you can kind of show‚ I think‚ mentally imagine what the equation would look like in the noise． 
+我认为，你可以在脑海中想象这个方程式在噪音中会是什么样子˳
+
+242
+00:33:31,940 --> 00:33:36,003
+You see that I use this notation with do． 
+你看，我在do中使用了这个符号˳
+
+243
+00:33:36,003 --> 00:33:39,660
+This comes from the causal inference． 
+这是从因果推断得出的˳
+
+244
+00:33:41,790 --> 00:33:48,220
+Terminology Who was a pioneered by Jud‚ who had been awarded with the Ring award for this work? 
+谁是尤德的先驱，谁被授予这项工作的指环奖？
+
+245
+00:33:48,220 --> 00:33:52,380
+I book book of why in my office you want check it． 
+我在我的办公室里预订了你想要检查的原因˳
+
+246
+00:33:52,380 --> 00:34:00,656
+But this is where knowledge comes from because here we are claiming that some kind of causal‚ okay? 
+但这就是知识的来源，因为我们在这里声称某种因果关系，好吗？
+
+247
+00:34:00,656 --> 00:34:08,860
+And then once you have these values‚ you can do things like this where you can plot． 
+一旦你有了这些值，你可以做这样的事情，在那里你可以绘图˳
+
+248
+00:34:09,360 --> 00:34:11,750
+For example‚ here we have MLP layers． 
+例如，这里我们有MLP层˳
+
+249
+00:34:12,020 --> 00:34:17,070
+We have layers from one to 40‚ and we have our our input problem． 
+我们有一层到40层，而且我们有自己的输入问题˳
+
+250
+00:34:17,850 --> 00:34:22,250
+Then for output of each one of these MLP‚ you can do this． 
+然后对于这些MLP的每个输出，你可以这样做˳
+
+251
+00:34:23,850 --> 00:34:38,340
+And here you can visualize how much the logic changes when we do this operation‚ when we representation in that layer for that component‚ for that module with the clean one． 
+在这里，您可以可视化当我们执行此操作时逻辑发生了多大变化，当我们在该层中表示该组件时，对于该模块，使用干净的组件˳
+
+252
+00:34:38,720 --> 00:34:51,740
+The higher that this value is‚ the more causal‚ that‚ output of that module is to the predicting‚ In this case‚ Seattle for this ground space is in downtown． 
+此值越高，该模块输出对预测的因果关系就越大，在这种情况下，西雅图的地面空间位于市中心˳
+
+253
+00:34:54,220 --> 00:35:02,490
+Now‚ this gives you information about where information about this subject‚ the space needs is encoded within the model‚ right? 
+现在，这为您提供了有关该主题的信息，空间需求在模型中编码的位置，对吗？
+
+254
+00:35:02,590 --> 00:35:11,772
+You can see here that in early like layers‚ step 215 MLPS are capturing that information． 
+你可以在这里看到，在早期的图层中，步骤215 MLPS正在捕获该信息˳
+
+255
+00:35:11,772 --> 00:35:16,838
+But then interestingly also later‚ attention heads are like‚ okay‚ we are gonna do this too‚ right? 
+但有趣的是，随后，注意力集中的人会说，好吧，我们也要这样做，对吗？
+
+256
+00:35:16,838 --> 00:35:24,260
+And this is why if you do intervention just for p head‚ there is that hydra effect that where attention heads are chemical． 
+这就是为什么如果你只针对p头进行干预，就会产生一种水螅效应，即注意力头是化学物质˳
+
+257
+00:35:25,140 --> 00:35:27,975
+So now what that we have this information? 
+那么，现在我们有什么信息呢？
+
+258
+00:35:27,975 --> 00:35:32,795
+Well‚ now that you have this information‚ you can do other other things‚ right? 
+好的，现在你有了这些信息，你可以做其他的事情，对吗？
+
+259
+00:35:32,795 --> 00:35:40,100
+So for example‚ in this work‚ this is the localization part of their editing where they find where is the knowledge encoded? 
+例如，在这项工作中，这是他们编辑的本地化部分，他们在那里找到知识编码的位置？
+
+260
+00:35:40,900 --> 00:35:47,940
+And then they target and change those particular modules to edit the facts． 
+然后他们针对并更改这些特定模块来编辑事实˳
+
+261
+00:35:47,940 --> 00:35:56,480
+So for example‚ one common methodology for editing is just to do lightweight fine tuning‚ continue training a model． 
+例如，一种常见的编辑方法是进行轻量级的微调，继续训练模型˳
+
+262
+00:35:57,000 --> 00:36:09,070
+But now instead of training the entirety of everything‚ you have specialized parts for that you can target and have a more target that it's specialized fine tuning to change the behavior． 
+但是现在不是训练所有东西，而是有专门的部分可以针对，并且有更多的目标是专门的微调来改变行为˳
+
+263
+00:36:11,910 --> 00:36:15,510
+Okay‚ similarly in the arithmetic paper． 
+好的，同样在算术论文中˳
+
+264
+00:36:20,620 --> 00:36:25,436
+Okay‚ so in the are requesting paper‚ they do the activation patching． 
+好的，所以在请求论文中，他们进行激活修补˳
+
+265
+00:36:25,436 --> 00:36:40,870
+And then similarly‚ they are to say which modules‚ which MLPS or attention has in which layers are responsible for‚ you know‚ these additional problems that we have． 
+然后同样地，他们要说出哪些模块、哪些MLPS或注意力在哪些层负责，你知道，我们有这些额外的问题˳
+
+266
+00:36:41,710 --> 00:36:49,160
+So‚ so what you can see here is what is the first reaction when you see these heat maps for attention heads? 
+所以，你可以在这里看到的是当你看到这些注意头的热图时的第一反应是什么？
+
+267
+00:36:49,660 --> 00:36:49,820
+Don't overthink． 
+不要过度思考˳
+
+268
+00:36:49,820 --> 00:36:51,590
+What is the first reaction? 
+第一反应是什么？
+
+269
+00:36:53,470 --> 00:36:54,540
+It's almost empty‚ right? 
+它几乎是空的，对吧？
+
+270
+00:36:54,560 --> 00:37:08,030
+So it doesn't suggest that attention heads are doing the hard work llds producing outputs for simple amion or subtraction and other arithmetic operations． 
+因此，这并不意味着注意头正在做艰苦的工作，为简单的amion或减法或其他算术运算产生输出˳
+
+271
+00:37:08,330 --> 00:37:19,390
+And here on the other hand‚ for MLPS‚ we do see that there is colors‚ but what's interesting is that is all focused on the last token in the Pro． 
+另一方面，在这里，对于MLPS，我们确实看到有颜色，但有趣的是，它们都集中在专业版的最后一个令牌上˳
+
+272
+00:37:19,780 --> 00:37:32,960
+So when you have additions such as 23 plus 13 equals all the‚ you know‚ heavy working for addition will be done on the token of of the equal symbol． 
+所以当你有诸如23加13等于所有的加法时，你知道，加法的繁重工作将在相等符号的标记上完成˳
+
+273
+00:37:34,320 --> 00:37:34,770
+So again． 
+再次如此˳
+
+274
+00:37:37,250 --> 00:37:43,893
+Information of right where inside the transformer‚ information I care about is happening． 
+关于变压器内部的信息，我关心的信息正在发生˳
+
+275
+00:37:43,893 --> 00:37:57,206
+And then you can do other things‚ As I said‚ in the knowledge editing work‚ they have them focused on those particular modules and those layers to quick information about facts． 
+然后你可以做其他事情，就像我说的，在知识编辑工作中，他们让他们专注于那些特定的模块和层，以快速了解事实信息˳
+
+276
+00:37:57,206 --> 00:38:06,830
+And here they are doing to kind of decide to come into deeper insights． 
+在这里，他们决定获得更深入的见解˳
+
+277
+00:38:06,830 --> 00:38:11,251
+So give you just an overview of next things that happens． 
+所以给你一个接下来发生的事情的概述˳
+
+278
+00:38:11,251 --> 00:38:11,944
+In this work． 
+在这项工作中˳
+
+279
+00:38:11,944 --> 00:38:13,560
+We have only five minutes left． 
+我们只剩下五分钟了˳
+
+280
+00:38:17,410 --> 00:38:30,155
+Mesh‚ but what they do from here is they say‚ okay‚ we understand that the residual stream of token position 3‚ the final token that is associated with equal sign． 
+网格，但他们从这里做的是说，好的，我们理解令牌位置3的剩余流，与等号相关联的最终令牌˳
+
+281
+00:38:30,155 --> 00:38:37,470
+So just to make sure on the same page‚ all of their prompts are of the form． 
+所以只是为了确保在同一页上，他们的所有提示都是格式˳
+
+282
+00:38:40,360 --> 00:38:41,725
+Two equals． 
+两个相等˳
+
+283
+00:38:41,725 --> 00:38:47,778
+So this is position 1‚ 0‚ 1‚ 2‚ and 3． 
+所以这是位置1、0、1、2和3˳
+
+284
+00:38:47,778 --> 00:38:58,101
+So when we process token equal‚ then these MLPS for the token are working a lot to produce the So． 
+因此，当我们处理令牌相等时，这些令牌的MLPS正在大量工作以产生So˳
+
+285
+00:38:58,101 --> 00:39:15,100
+They then go into each individual neuron of this envelope and see which individual neurons using activation patching are responsible for producing the correct answer here． 
+然后，他们进入这个信封的每个单独的神经元，看看哪些单独的神经元使用激活补丁负责产生正确的答案˳
+
+286
+00:39:15,100 --> 00:39:25,090
+Interestingly‚ what I find is that only 200‚ 200 neurons are responsible for producing correct outputs here． 
+有趣的是，我发现这里只有200，200个神经元负责产生正确的输出˳
+
+287
+00:39:27,320 --> 00:39:54,540
+So only 1．5% of the entirety of the transformer is working to produce correct answer for of this kite‚ which is first‚ you know‚ interesting that there is only so few of them‚ but it also then enables you to go a step further and to there isn't so many of them 200‚ you can kind of try to understand． 
+所以只有整个变压器的1．5% 在为这个风筝产生正确的答案，首先，你知道，有趣的是它们只有那么几个，但它也可以让你更进一步，而且没有那么多200个˳你可以试着理解˳
+
+288
+00:39:56,060 --> 00:39:59,573
+And that's exactly what they do． 
+这正是他们所做的˳
+
+289
+00:39:59,573 --> 00:40:06,600
+They are then doing the describing factors and activating examples． 
+然后，他们正在进行描述因素和激活示例˳
+
+290
+00:40:06,610 --> 00:40:28,500
+This is the first method that I have ever mentioned in this class where you have a bunch of examples and you have a nail on you want to in there you pass all these extra examples to the nail on and you check filter those that are quite active‚ this man 1‚ and then even manually or using the LLU‚ you describe a pattern among activating examples． 
+这是我在这个课上提到的第一种方法，你有一堆例子，你想在里面钉上钉子，把所有这些额外的例子传递给钉子，然后你检查过滤那些非常活跃的例子，这个男人1，然后，即使手动或使用LLU，您也可以在激活的示例中描述模式˳
+
+291
+00:40:29,070 --> 00:40:39,205
+So here they have a range for each one of these operand to be 0 and 1‚ 199． 
+所以这里每个操作数都有一个范围，分别是0和1，199˳
+
+292
+00:40:39,205 --> 00:40:54,150
+And you can see for this color means that spike up be very active‚ For example‚ here‚ when operands are the same‚ like the Argonne means that Op ranked 1 and 2 are the same． 
+你可以看到这种颜色意味着尖峰非常活跃，例如，这里，当操作数相同时，就像Argonne意味着Op排名1和2相同˳
+
+293
+00:40:54,940 --> 00:40:56,970
+And this is exactly when this new one is piping up． 
+而这正是这个新的管道铺设的时候˳
+
+294
+00:40:57,610 --> 00:41:08,730
+And then similarly‚ you have‚ okay‚ if they are in certain range‚ if the second operand is modular‚ the first one‚ and so on‚ These are those heuristics that we have as seen previously． 
+然后类似地，如果它们在某个范围内，如果第二个操作数是模型化的，第一个操作数等等，这些就是我们之前看到的启发式方法˳
+
+295
+00:41:08,730 --> 00:41:15,600
+So now this is how you get these heuristics for your． 
+所以现在这就是你获得这些启发式方法的方式˳
+
+296
+00:41:18,960 --> 00:41:21,630
+And why each neuro fires up? 
+为什么每个神经都会激活？
+
+297
+00:41:22,850 --> 00:41:25,530
+But now we use our logic lens‚ right? 
+但是现在我们使用我们的逻辑镜头，对吧？
+
+298
+00:41:26,370 --> 00:41:29,770
+We know‚ okay‚ I have a mega with which I． 
+我们知道，好吧，我有一个超大的˳
+
+299
+00:41:31,960 --> 00:41:37,512
+Can say y is narrow‚ what this number will promote as a next token? 
+可以说y是窄的，这个数字将作为下一个代币推广多少？
+
+300
+00:41:37,512 --> 00:41:40,680
+So you apply logic lens‚ and then you get． 
+所以你应用逻辑镜头，然后你就得到了˳
+
+301
+00:41:43,080 --> 00:41:56,640
+For token 68 in vocabulary‚ you can tell which one we will promote‚ which one will promote the correct solution‚ which one will promote something completely different‚ and so on． 
+对于词汇中的token 68，你可以判断我们将推广哪一个，哪一个将推广正确的解决方案，哪一个将推广完全不同的东西，等等˳
+
+302
+00:41:56,640 --> 00:42:17,020
+So now you combine activation patching on a level of component‚ additional activation patching on a level of we applied methods for describing activating the samples and the logic lens‚ and now regard basically what is a circle‚ like some kind subgraph of what's going on． 
+所以现在你在一个组件层面上结合了激活修补，在我们应用了描述激活样本和逻辑透镜的方法的一个层面上附加激活修补，现在基本上把什么是圆，就像正在发生的某种子图˳
+
+303
+00:42:20,360 --> 00:42:21,366
+Okay‚ let's start here． 
+好的，我们从这里开始˳
+
+304
+00:42:21,366 --> 00:42:32,180
+Next time we are going to talk about another‚ another circuit of this kind‚ a little bit more of sparse Ma circuits for these and then world． 
+下次我们要谈的是另一种电路，这种类型的另一种电路，更稀疏的马某某电路用于这些和世界˳

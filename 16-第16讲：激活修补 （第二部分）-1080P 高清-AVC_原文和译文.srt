@@ -1,0 +1,2764 @@
+1
+00:00:02,500 --> 00:00:10,090
+So first‚ I want to just draw your attention to the announcement in case the second is． 
+所以首先，我想提请你注意这个公告，以防第二个是˳
+
+2
+00:00:12,520 --> 00:00:18,380
+Created‚ I shared a little bit in this announcement how I plan to add those holders． 
+创建后，我在本次公告中分享了一点我计划如何添加这些持有人˳
+
+3
+00:00:19,220 --> 00:00:24,300
+So basically each bonus question is worth 1．35% of the total． 
+基本上每个奖金问题的价值占总数的1．35%˳
+
+4
+00:00:30,520 --> 00:00:35,400
+Unfortunately‚ I cannot figure out how to add this bonus to． 
+不幸的是，我不知道如何添加这个奖金˳
+
+5
+00:00:37,620 --> 00:00:38,920
+Else you probably see me． 
+否则你可能会看到我˳
+
+6
+00:00:39,400 --> 00:00:40,190
+It's quite embarrassing． 
+这相当尴尬˳
+
+7
+00:00:44,300 --> 00:00:54,790
+Announcements‚ but anyway‚ I need to figure out how to do if you are interested in what your brain will look like right now． 
+公告，但无论如何，如果你对你的大脑现在会是什么样子感兴趣，我需要弄清楚如何做˳
+
+8
+00:00:54,790 --> 00:00:56,300
+And just talk with me． 
+和我谈谈˳
+
+9
+00:00:58,420 --> 00:01:00,869
+Which is how I ended up doing things? 
+这就是我最终做事情的方式？
+
+10
+00:01:00,869 --> 00:01:04,135
+At the end of the course‚ I will trust Canvas． 
+在课程结束时，我会信任画布˳
+
+11
+00:01:04,135 --> 00:01:06,040
+I have a big spreadsheet． 
+我有一个大电子表格˳
+
+12
+00:01:08,080 --> 00:01:14,320
+If you have any questions about that‚ just reach out to me if you have amazing points． 
+如果您对此有任何问题，如果您有惊人的分数，请与我联系˳
+
+13
+00:01:18,980 --> 00:01:23,710
+Okay‚ besides that‚ I did finally also with the project components． 
+好的，除此之外，我最后还做了项目组件˳
+
+14
+00:01:24,420 --> 00:01:32,220
+And you can see those basically here know you see the points and all of these points are sum to 100． 
+你可以看到这些基本上在这里知道你看到的点，所有这些点的总和都是100˳
+
+15
+00:01:32,220 --> 00:01:36,980
+You know‚ if‚ this is 30‚ that means that the 30% of the project． 
+你知道，如果这是30，那就意味着项目的30%˳
+
+16
+00:01:39,680 --> 00:01:47,960
+I also wrote just a little description for each one of these‚ so I recommend you also check this out． 
+我还为每一个都写了一个小描述，所以我建议你也看看这个˳
+
+17
+00:01:48,220 --> 00:01:58,630
+For example‚ here I intentionally click on the final poster because it is going to be the most important for your project you． 
+例如，在这里我故意点击最终的海报，因为它对你的项目最重要˳
+
+18
+00:02:00,260 --> 00:02:06,300
+I'm going to support looking the content and how well the poster is． 
+我将支持查看内容以及海报的质量˳
+
+19
+00:02:06,300 --> 00:02:10,326
+We are going to have this poster draft component． 
+我们将会有这个海报草稿组件˳
+
+20
+00:02:10,326 --> 00:02:17,460
+This part‚ the final one will mostly we focus on the content and experiments and all of that． 
+这部分，也是最后一部分，我们将主要关注内容和实验等˳
+
+21
+00:02:17,460 --> 00:02:23,545
+So you can think about final poster version more as a final project report． 
+因此，您可以将最终海报版本更多地视为最终项目报告˳
+
+22
+00:02:23,545 --> 00:02:33,475
+And this is also a good mind‚ you know‚ note of the day when you have time for producing results‚ right? 
+这也是一个好的头脑，你知道，注意到你有时间产生结果的那一天，对吧？
+
+23
+00:02:33,475 --> 00:02:37,920
+Once you put these results on your poster‚ we are going to print them． 
+一旦你把这些结果放在你的海报上，我们将打印出来˳
+
+24
+00:02:41,060 --> 00:02:55,080
+Later‚ and you can bring‚ you know‚ maybe a handout or something like‚ oh‚ I want for the poster‚ 95% of your project results should be done on things． 
+稍后，你可以带上，你知道的，也许是一份讲义或类似的东西，哦，我想要的是海报，你的项目成果的95% 应该在某些事情上完成˳
+
+25
+00:02:55,090 --> 00:02:59,540
+So go here‚ you know‚ and we can each． 
+所以去这里，你知道的，我们可以各自去˳
+
+26
+00:03:02,420 --> 00:03:07,580
+Warn you that because I didn't‚ you know‚ give you really clear your instructions． 
+警告你，因为我没有，你知道，给你明确的指示˳
+
+27
+00:03:10,880 --> 00:03:16,920
+For project proposal of migrating is basically‚ have you integrated my commons or not? 
+迁移的项目提案基本上是，你是否整合了我的公共资源？
+
+28
+00:03:17,820 --> 00:03:25,846
+And if you have done that and you have produced a kind of polished version of your proposal‚ you basically get the point deduction． 
+如果你做到了这一点，并且你已经对你的建议做出了一种精致的版本，那么你基本上可以得到扣分˳
+
+29
+00:03:25,846 --> 00:03:30,281
+So I expect honestly‚ all you will have points for the also． 
+所以我真诚地期望，你们也会有积分˳
+
+30
+00:03:30,281 --> 00:03:36,320
+But don't take this as it's something that I want to be very relaxed‚ Great‚ moving forward． 
+但不要认为这是我想要非常放松、伟大并向前迈进的事情˳
+
+31
+00:03:39,880 --> 00:03:45,320
+So what you are looking for and for your next component that you need it for agile‚ perform the． 
+所以，你正在寻找什么，对于你的下一个组件，你需要它来实现敏捷，执行它˳
+
+32
+00:03:48,660 --> 00:03:57,173
+Is to see what did you set as the success metric for your intermediate report? 
+是为了看看你在中间报告中设置了什么成功度量标准？
+
+33
+00:03:57,173 --> 00:04:02,184
+And we are going to see how far did you come to that? 
+我们要看看你走了多远？
+
+34
+00:04:02,184 --> 00:04:09,781
+We‚ of course‚ if you have done exactly what you have set out to do‚ that would be 100%． 
+当然，如果你完全按照你的计划去做，那就是100%˳
+
+35
+00:04:09,781 --> 00:04:18,773
+And then deduction‚ it's really hard to formalize it because it depends basically what kind of bugs did you encounter‚ if they are major or not． 
+然后是演绎，真的很难正式化，因为这基本上取决于你遇到了什么样的错误，它们是否严重˳
+
+36
+00:04:18,773 --> 00:04:26,735
+And take into account that we have done so many research‚ a good sense of what kind of bugs are． 
+考虑到我们已经做了很多研究，很好地感知了哪些bug˳
+
+37
+00:04:26,735 --> 00:04:45,589
+Oh‚ you have encountered this‚ just time to fix it versus‚ oh‚ this is something that you have probably time to fix Also‚ if you have major bugs or major‚ come talk to me and fat‚ right? 
+哦，你遇到过这个，是时候修复它了，而不是，哦，这是你可能有时间修复的东西，如果你有重大的错误或重大问题，来和我谈谈，对吧？
+
+38
+00:04:45,589 --> 00:04:51,540
+That's the most valuable resource that you kind of unstuck you know? 
+那就是你知道的最有价值的资源吗？
+
+39
+00:04:51,540 --> 00:04:58,486
+And you know‚ also for us to have a sense of what's are there any questions? 
+你知道，我们也要感知，有什么问题吗？
+
+40
+00:04:58,486 --> 00:05:06,040
+So do you want us to make changes directly in the original document? 
+那么您想让我们直接在原始文档中进行更改吗？
+
+41
+00:05:06,620 --> 00:05:21,852
+I'm very work‚ for example‚ so to take five day‚ I have a whole afternoon venue reading so everyone can expect to get their my comments in the Google DOC and then just integrate it into the into the do． 
+例如，我非常工作，所以要花五天的时间，我有一整个下午的场地阅读，这样每个人都可以期望在谷歌文档中获得他们的评论，然后将其集成到做中˳
+
+42
+00:05:21,852 --> 00:05:23,090
+That's the easiest． 
+这是最容易的˳
+
+43
+00:05:23,090 --> 00:05:25,320
+And then I can‚ just‚ you know? 
+然后我就可以了，你知道吗？
+
+44
+00:05:28,390 --> 00:05:32,670
+Yeah‚ okay‚ and what do you want us to． 
+是的，好的，你想让我们怎么做？
+
+45
+00:05:35,920 --> 00:05:40,480
+I will leave a comment about that in order． 
+我会按顺序留下评论˳
+
+46
+00:05:49,620 --> 00:05:57,844
+Any questions Fatma is also has made a huge progress on her automated circuit discovery． 
+任何问题，Fatma is在她的自动电路发现方面也取得了巨大进展˳
+
+47
+00:05:57,844 --> 00:06:02,913
+So you need circuits and this is then reach out to her． 
+所以你需要电路，然后这个就可以联系她˳
+
+48
+00:06:02,913 --> 00:06:07,553
+She will give you the latest version of her code． 
+她会给你她代码的最新版本˳
+
+49
+00:06:07,553 --> 00:06:12,500
+Also‚ talking about fatim reminds me that fatim is not here atreya he's a． 
+而且，谈论法蒂姆让我想起法蒂姆不在这里，他是一个˳
+
+50
+00:06:21,230 --> 00:06:23,440
+Okay‚ so I think that's it． 
+好的，我想就是这样˳
+
+51
+00:06:24,440 --> 00:06:25,670
+Yeah‚ if I forget． 
+是的，如果我忘记了˳
+
+52
+00:06:30,420 --> 00:06:40,880
+But if there are no questions‚ we are going to continue with where‚ which is basically we were talking about activation fetching． 
+但如果没有问题，我们将继续在哪里，这基本上是我们谈论的激活获取˳
+
+53
+00:06:41,620 --> 00:06:46,180
+Remember‚ what is activation in patching and feels confident to give a little overview． 
+请记住，修补中的激活是什么，并感到自信地给出一些概述˳
+
+54
+00:06:48,940 --> 00:07:03,380
+I don't know if it was confident‚ but I believe it was when you had a correct prompt Ro prompt‚ sending the correct prompt and record the acts of Re‚ but you record something and then you pass． 
+我不知道它是否自信，但我相信这是当你有一个正确的提示，发送正确的提示并记录Re的行为时，但是你记录了一些东西，然后你通过了˳
+
+55
+00:07:06,860 --> 00:07:09,390
+Freeze it and then? 
+冻结它，然后？
+
+56
+00:07:13,660 --> 00:07:18,220
+And see what changed Report and． 
+看看有什么变化的报告˳
+
+57
+00:07:24,230 --> 00:07:24,330
+Individual． 
+个体˳
+
+58
+00:07:28,300 --> 00:07:35,780
+The clean representation‚ what we expect‚ what to happen if this representation was re? 
+干净的表示，我们期望什么，如果这个表示是re，会发生什么？
+
+59
+00:07:39,340 --> 00:07:45,560
+Behavior‚ maybe I'm swapping it‚ but I believe you would expect it． 
+行为，也许我正在交换它，但我相信你会期待它˳
+
+60
+00:08:01,960 --> 00:08:07,360
+So yeah‚ this is one version of population part 2． 
+是的，这是第二部分人口的一个版本˳
+
+61
+00:08:09,680 --> 00:08:14,240
+Which we call a denoising‚ because we corrupt‚ we can think． 
+我们称之为去噪，因为我们腐败了，我们可以思考˳
+
+62
+00:08:17,820 --> 00:08:20,946
+So let me just write this down． 
+让我把这个写下来˳
+
+63
+00:08:20,946 --> 00:08:24,820
+Activation‚ patching‚ denoising． 
+激活、修补、去噪˳
+
+64
+00:08:29,990 --> 00:08:30,510
+Clean run． 
+干净运行˳
+
+65
+00:08:33,160 --> 00:08:34,336
+Which is it? 
+这是什么？
+
+66
+00:08:34,336 --> 00:08:38,160
+Can be with fully clean‚ prompt‚ clean‚ embedded? 
+是否可以完全清洁、提示、清洁、嵌入？
+
+67
+00:08:40,290 --> 00:08:44,260
+Run with‚ either corrupt prompt． 
+运行，或者损坏的提示符˳
+
+68
+00:08:47,220 --> 00:08:49,570
+Correct investments‚ right? 
+正确的投资，对吧？
+
+69
+00:08:49,570 --> 00:08:56,706
+So we can change one for the‚ for example‚ when I say corrective bedding‚ what I mean? 
+所以我们可以改变一个，例如，当我说纠正床上用品时，我的意思是什么？
+
+70
+00:08:56,706 --> 00:08:59,850
+Remember that example law just basically need abilities． 
+请记住，范例法基本上只需要能力˳
+
+71
+00:09:00,520 --> 00:09:06,010
+Then we didn't change the actual words‚ but we did add noise to the embeddings． 
+然后我们没有改变实际的单词，但是我们确实给嵌入添加了噪音˳
+
+72
+00:09:06,010 --> 00:09:13,100
+And this correcting prompt‚ we mean we actually change the words so instead of choosing space． 
+这个更正提示，我们的意思是我们实际上改变了单词，而不是选择空格˳
+
+73
+00:09:19,150 --> 00:09:19,340
+Correct 1． 
+正确的1˳
+
+74
+00:09:22,190 --> 00:09:40,720
+Plus patch‚ where we take certain representation and output of certain components‚ certain MLP or 10 head‚ and we replacing representation that coming out of that component with the representation is associated representation． 
+Plus patch，我们将某些组件的某些表示和输出，某些MLP或10头，并将来自该组件的表示替换为与表示相关联的表示˳
+
+75
+00:09:41,620 --> 00:09:57,455
+So for example‚ if I have chosen layer 3‚ and in that layer can be whatever is the representation‚ I swap it with‚ the queen runs representation in that location． 
+因此，例如，如果我选择了第3层，并且在该层中可以是任何表示形式，我将其交换为在该位置运行的女王表示形式˳
+
+76
+00:09:57,455 --> 00:10:04,120
+Now‚ sorry‚ s is a somewhere you said also we could maybe swap in a residual screen． 
+现在，对不起，s是你说的某个地方，我们也可以在剩余屏幕上交换˳
+
+77
+00:10:04,120 --> 00:10:10,098
+And remember‚ residual screen is stack of representation over a certain token． 
+请记住，剩余屏幕是对某个令牌的表示堆栈˳
+
+78
+00:10:10,098 --> 00:10:14,954
+And actually‚ that's something that people want to do in some certain cases． 
+实际上，在某些情况下，这是人们想要做的事情˳
+
+79
+00:10:14,954 --> 00:10:19,120
+So there you would take the entirety of that stack and swap it with it． 
+在那里，你可以将整个堆栈与之交换˳
+
+80
+00:10:20,660 --> 00:10:26,700
+Representations of other tool has their residual score so that． 
+其他工具的表示有其残值，因此˳
+
+81
+00:10:30,510 --> 00:10:33,150
+Okay‚ so now we have patched it． 
+好的，现在我们已经修补了它˳
+
+82
+00:10:33,570 --> 00:10:34,150
+And remember corruption? 
+记住腐败吗？
+
+83
+00:10:37,420 --> 00:10:38,750
+Prob of the correct answer． 
+正确答案的问题˳
+
+84
+00:10:49,560 --> 00:10:52,860
+Corrupted‚ so this is one of the low and when． 
+损坏，所以这是一个低和何时˳
+
+85
+00:10:55,200 --> 00:10:58,756
+This version of my forward pass． 
+我的前进传球的这个版本˳
+
+86
+00:10:58,756 --> 00:11:04,980
+And if I will say patch representation‚ let's call it power． 
+如果我要说补丁表示，那就称之为力量˳
+
+87
+00:11:18,810 --> 00:11:19,500
+Behind‚ yeah． 
+后面，是的˳
+
+88
+00:11:19,500 --> 00:11:21,510
+Yeah‚ I see more． 
+是的，我看到更多了˳
+
+89
+00:11:25,040 --> 00:11:30,532
+And we want it to be significantly higher activation patching． 
+我们希望它能够显著提高激活补丁的数量˳
+
+90
+00:11:30,532 --> 00:11:34,060
+And then remember we have‚ we did cool things with it． 
+然后记住，我们用它做了很酷的事情˳
+
+91
+00:11:39,420 --> 00:11:45,580
+Location of the landmark We have found parts of a transformer． 
+地标的位置，我们发现了一个变压器的部件˳
+
+92
+00:11:46,560 --> 00:11:49,370
+You know‚ factual assumptions are stored． 
+你知道，事实假设是被存储起来的˳
+
+93
+00:11:50,080 --> 00:11:52,780
+We have also seen that we can investigate． 
+我们也看到我们可以进行调查˳
+
+94
+00:11:57,620 --> 00:12:07,200
+Which components in a transformer are responsible for doing simpler things‚ more basic operations? 
+变压器中的哪些组件负责做更简单的事情，更基本的操作？
+
+95
+00:12:10,880 --> 00:12:17,280
+Okay‚ so now for today‚ I actually want to go into details． 
+好的，那么今天，我实际上想详细介绍一下˳
+
+96
+00:12:20,620 --> 00:12:21,163
+Last time． 
+最后一次˳
+
+97
+00:12:21,163 --> 00:12:28,799
+And this paper is gonna use activation Punching Winner Pro describing activations and things like that． 
+这篇论文将使用激活冲孔Winner Pro来描述激活和类似的东西˳
+
+98
+00:12:28,799 --> 00:12:39,060
+Everything we have actually learned in this course‚ and it's going to be a really nice way to kind of wrap the knowledge we have about these methods． 
+我们在本课程中学到的一切，这将是一个非常好的方式来包裹我们对这些方法的知识˳
+
+99
+00:12:39,060 --> 00:12:43,620
+It's a great paper to read now that you have spent a couple of weeks with me here． 
+这是一篇很棒的论文，因为你已经和我在这里度过了几个星期了˳
+
+100
+00:12:45,380 --> 00:13:06,320
+However‚ before we go into the details of all of that‚ I want to talk that usually is associated with activation packaging that won't be directly used in this work‚ but I think it's better that we cover the beginning of the's lesson and then． 
+然而，在我们深入讨论所有细节之前，我想说的是，通常与激活打包相关，不会直接用于这项工作中，但我认为最好先涵盖课程的开始部分，然后再进行讨论˳
+
+101
+00:13:09,960 --> 00:13:14,560
+So the methods I wanted to cover． 
+所以我想要涵盖的方法˳
+
+102
+00:13:22,640 --> 00:13:34,980
+If I say that activation passion has is resource intensive‚ could anyone immediately you feel like you can explain what is the? 
+如果我说激活激情是资源密集型的，有谁能立即感觉到你能解释一下是什么？
+
+103
+00:13:55,150 --> 00:14:04,780
+Exactly‚ so we have a lot of components and we need to‚ we need to repeat this for every single component‚ right? 
+确切地说，我们有很多组件，我们需要为每个组件重复这个过程，对吧？
+
+104
+00:14:07,100 --> 00:14:08,120
+And expensive‚ can you say? 
+而且很贵，你能说吗？
+
+105
+00:14:11,100 --> 00:14:11,130
+That． 
+这个˳
+
+106
+00:14:15,650 --> 00:14:19,000
+Like‚ what are we using the computation for? 
+比如，我们用这个计算做什么？
+
+107
+00:14:20,180 --> 00:14:24,740
+Well‚ because we'll need to get order to see to like． 
+好吧，因为我们需要得到订单才能看到喜欢˳
+
+108
+00:14:33,640 --> 00:14:33,690
+Entire． 
+全部˳
+
+109
+00:14:35,860 --> 00:14:37,090
+And for each length layer． 
+对于每个长度层˳
+
+110
+00:14:40,050 --> 00:14:40,763
+For each‚ exactly． 
+对于每一个，确切地说˳
+
+111
+00:14:40,763 --> 00:14:46,300
+So when you are saying passing through the model‚ that's basically a horrible pass． 
+所以当你说通过模型时，那基本上是一个可怕的通行证˳
+
+112
+00:14:46,300 --> 00:14:53,922
+I will welcome you all to think about how many forward passes we need for actually． 
+我将欢迎你们所有人考虑我们实际上需要多少次向前传球˳
+
+113
+00:14:53,922 --> 00:14:58,040
+And for that‚ we are going to use Gemma 3． 
+为此，我们将使用Gemma 3˳
+
+114
+00:15:00,750 --> 00:15:03,700
+It's one of the newer open weight． 
+这是较新的开放重量之一˳
+
+115
+00:15:06,620 --> 00:15:10,453
+It's a third version of the family models called Gema． 
+这是名为Gema的家庭模型的第三个版本˳
+
+116
+00:15:10,453 --> 00:15:13,740
+It's really good for following instructions． 
+这对于遵循指示来说真的很好˳
+
+117
+00:15:15,020 --> 00:15:21,420
+The things you would expect from today's Lll s‚ the size‚ it's 27 billion． 
+你会期望从今天的lls中得到的东西，大小，它是270亿˳
+
+118
+00:15:21,420 --> 00:15:27,580
+It's not small by no means‚ right‚ but it's something you can easily use on chpc fiber． 
+它绝不是很小的，对吧，但你可以很容易地在chpc光纤上使用它˳
+
+119
+00:15:29,140 --> 00:15:32,495
+It's available for academics‚ right? 
+学术界也可以使用，对吧？
+
+120
+00:15:32,495 --> 00:15:35,180
+And you will see it commonly used． 
+你会发现它被广泛使用˳
+
+121
+00:15:35,180 --> 00:15:37,898
+So now a little bit of digging． 
+所以现在有一点挖掘˳
+
+122
+00:15:37,898 --> 00:15:41,220
+Having face‚ I have found that Gema has 60． 
+有了脸，我发现Gema有60˳
+
+123
+00:15:44,620 --> 00:15:49,440
+It has‚ or every layer that's a Be layer is going to have． 
+它有，或者每个层都是层˳
+
+124
+00:16:01,160 --> 00:16:09,920
+This‚ for example‚ for studying the factual report‚ we have seen that the car is a the spaces need is in downtown． 
+例如，为了研究事实报告，我们已经看到汽车是市中心需要的空间˳
+
+125
+00:16:10,160 --> 00:16:10,519
+Okay? 
+好吗？
+
+126
+00:16:10,519 --> 00:16:12,673
+Here we have 7 tokens． 
+这里我们有7个代币˳
+
+127
+00:16:12,673 --> 00:16:19,200
+But you‚ let's say that I'm only mods here and I have only five tokens． 
+但是你，假设我在这里只有mods，我只有五个代币˳
+
+128
+00:16:19,200 --> 00:16:24,160
+Then my basic complexity of my． 
+那么我的基本复杂性˳
+
+129
+00:16:26,370 --> 00:16:27,130
+Apache is okay． 
+Apache没问题˳
+
+130
+00:16:30,200 --> 00:16:31,570
+I don't have this information． 
+我没有这个信息˳
+
+131
+00:16:31,770 --> 00:16:31,820
+Actually． 
+实际上˳
+
+132
+00:16:32,380 --> 00:16:50,520
+These are these includes layers that are both potential layers and multi head eventually layers‚ sorry adventures‚ MP layers‚ I had some twice‚ so I don't know how many of them are exactly attention‚ say half． 
+这些包含层既是潜在层又是多头最终层，抱歉，冒险，MP层，我有过一些两次，所以我不知道其中有多少是完全关注的，比如说一半˳
+
+133
+00:16:52,820 --> 00:17:03,267
+So I have 32 times is number of heads‚ which is which is 32 plus 31． 
+所以我有32倍是头的数量，即32加31˳
+
+134
+00:17:03,267 --> 00:17:04,560
+That's worth． 
+这是值得的˳
+
+135
+00:17:08,740 --> 00:17:14,220
+This is MLP‚ then I have also all of this‚ which? 
+这是MLP，那么我也有这一切，哪一个？
+
+136
+00:17:16,840 --> 00:17:26,840
+This is basically the number of forward flat passes I need to make to produce a heat map like that‚ right? 
+这基本上是我需要制作的前传球数量，才能产生这样的热图，对吧？
+
+137
+00:17:29,600 --> 00:17:30,620
+Messed up? 
+搞砸了？
+
+138
+00:17:37,700 --> 00:17:42,480
+Millime‚ so we have 31 times 32 plus． 
+所以我们有31乘以32加˳
+
+139
+00:17:46,280 --> 00:17:46,810
+Five the． 
+五是˳
+
+140
+00:17:55,100 --> 00:17:55,640
+Over classes? 
+在课堂上？
+
+141
+00:18:00,000 --> 00:18:04,780
+To make it now very dramatic‚ this is for a single instance． 
+为了使它变得非常戏剧化，这是一个单独的例子˳
+
+142
+00:18:11,720 --> 00:18:18,590
+Hundred instances‚ which is a common and number of instances for analysis． 
+百个实例，这是用于分析的常见实例数˳
+
+143
+00:18:18,590 --> 00:18:31,253
+This is going to go to have 500‚ a half a million of overpasses‚ right‚ for analysis of this kind． 
+这将有500到50万个立交桥，用于这种分析˳
+
+144
+00:18:31,253 --> 00:18:35,720
+And it's a lot of former passes‚ right? 
+而且有很多以前的通行证，对吧？
+
+145
+00:18:37,580 --> 00:18:46,150
+Again‚ it's very like you can do it right do exist and they are actually produced on academic compute． 
+再次强调，这就像你可以做得对，确实存在，而且它们实际上是在学术计算机上产生的˳
+
+146
+00:18:46,150 --> 00:18:50,155
+Rather‚ this is really get your insights． 
+更确切地说，这是真正获得您的见解˳
+
+147
+00:18:50,155 --> 00:18:52,324
+You will spend a lot of time． 
+你会花很多时间˳
+
+148
+00:18:52,324 --> 00:19:03,134
+So this motivates new method which tries to overcome this computational intensive accumulation patching． 
+因此，这激发了新的方法，试图克服这种计算密集型累积补丁˳
+
+149
+00:19:03,134 --> 00:19:07,060
+And this method is called attribution hating． 
+这种方法被称为归因恨˳
+
+150
+00:19:17,280 --> 00:19:30,120
+Is basically starting with the observation that when doing the activation patching‚ we are checking the difference between the outcome‚ right? 
+基本上是从观察开始，在进行激活修补时，我们正在检查结果之间的差异，对吗？
+
+151
+00:19:31,400 --> 00:19:38,040
+Cancer have increased when we have De nodes with the clean representation． 
+当我们使用干净表示的节点时，癌症增加了˳
+
+152
+00:19:39,560 --> 00:19:45,600
+If you remember last time‚ did I actually write the neologic that I did‚ right? 
+如果你记得上一次的话，我真的写了我写的那本新语，对吧？
+
+153
+00:19:46,340 --> 00:19:52,502
+Our metric cost of choice will be the largest of right? 
+我们的度量选择成本将是最大的，对吗？
+
+154
+00:19:52,502 --> 00:19:59,980
+And then we said we are going to check what is the logics of the correct answer． 
+然后我们说我们要检查正确答案的逻辑是什么˳
+
+155
+00:20:03,680 --> 00:20:06,940
+The we have a corrupt? 
+我们有腐败吗？
+
+156
+00:20:25,320 --> 00:20:45,505
+So just to repeat‚ you know‚ equation‚ basically what I've done here‚ I said OK‚ the correct answer is now more likely when we have done this is now the only difference is here I'm using logic instead of probability． 
+所以只是重复一下，你知道，方程式，基本上我在这里所做的，我说好的，当我们这样做时，正确的答案现在更有可能是，现在唯一的区别是我在这里使用的是逻辑而不是概率˳
+
+157
+00:20:45,505 --> 00:20:56,892
+And that's I go along now‚ you know‚ all the well that the that is something that's really a with respect to other components‚ okay? 
+这就是我现在赞同的，你知道，所有的东西都是相对于其他组件而言的，好吗？
+
+158
+00:20:56,892 --> 00:21:09,980
+So at patching starts with observation that we are basically trying to measure by how much? 
+所以在修补时，首先要观察我们基本上试图测量多少？
+
+159
+00:21:14,590 --> 00:21:18,540
+L changes and changes when we move． 
+当我们移动时，L会改变和改变˳
+
+160
+00:21:25,320 --> 00:21:30,300
+The activation a clean from component C? 
+激活是否清洁了组件C？
+
+161
+00:21:35,080 --> 00:21:37,510
+Module or attention head? 
+模块还是注意头？
+
+162
+00:21:41,810 --> 00:21:41,830
+To． 
+到˳
+
+163
+00:21:44,910 --> 00:21:48,930
+The patch or sorry guys‚ we were talking about． 
+补丁或抱歉，伙计们，我们正在谈论˳
+
+164
+00:22:03,000 --> 00:22:07,560
+And‚ you know‚ we can also ask if you move the clean one to corrupt one because． 
+而且，你知道的，我们也可以问你是否将干净的转变为腐败的，因为˳
+
+165
+00:22:22,310 --> 00:22:23,540
+What you call? 
+你叫什么？
+
+166
+00:22:42,860 --> 00:22:45,100
+And let me just make sure I'm on． 
+让我确保自己在˳
+
+167
+00:22:45,100 --> 00:22:48,180
+I need to choose denoising Gordon or． 
+我需要选择去噪戈登或˳
+
+168
+00:23:25,110 --> 00:23:25,550
+Just for a moment． 
+就一会儿˳
+
+169
+00:23:36,080 --> 00:23:49,180
+So now we are trying to approximate how to measure this change without actually pulling． 
+所以现在我们正在尝试近似如何在不实际拉动的情况下测量这种变化˳
+
+170
+00:23:51,220 --> 00:23:52,658
+So that's our goal． 
+这就是我们的目标˳
+
+171
+00:23:52,658 --> 00:23:59,810
+Basically‚ calculate this change‚ approximate this change without running all of these forward． 
+基本上，计算这个变化，近似这个变化，而不需要运行所有这些前进˳
+
+172
+00:24:31,260 --> 00:24:37,540
+And the way to do that will be based on the tailor expansion． 
+而实现这一点的方法将基于量身定制的扩展˳
+
+173
+00:24:37,540 --> 00:24:40,580
+So just to remind you． 
+所以只是为了提醒你˳
+
+174
+00:24:50,440 --> 00:24:55,000
+Of some function‚ scalar function‚ that around the? 
+某个函数，标量函数，围绕着什么？
+
+175
+00:24:57,080 --> 00:25:19,340
+A 0 is going to be doing with this‚ The difference between a function f? 
+一个0将要用这个做，函数f之间的区别是什么？
+
+176
+00:25:22,400 --> 00:25:31,300
+When you move just a little bit and get to B can be approximated by taking the difference vector onto the radio． 
+当你稍微移动一点并通过将差向量带到收音机上来近似面向企业时˳
+
+177
+00:25:41,340 --> 00:25:43,370
+So let's say here this‚ this one is a good． 
+所以让我们在这里说这个，这个是好的˳
+
+178
+00:25:47,000 --> 00:26:02,188
+So if we have the difference between our activations being this much‚ then my projection of this difference onto the slope‚ which is given by here‚ we are working in a 2D space． 
+所以，如果我们的激活有这么多的差异，那么我将这种差异投影到斜率上，这是由这里给出的，我们在2D空间中工作˳
+
+179
+00:26:02,188 --> 00:26:05,495
+So we just have the tangent there． 
+所以我们只在那里有切线˳
+
+180
+00:26:05,495 --> 00:26:12,380
+We are just writing the gradient to approximate 4 when the input space of v is highly dimensional． 
+当v的输入空间高维时，我们只是将梯度写入近似4˳
+
+181
+00:26:14,350 --> 00:26:24,355
+But when we project our difference of these two activations onto the tangent‚ we are going to come‚ somewhere here‚ right? 
+但是当我们将这两种激活的差异投射到切线上时，我们将会来到这里的某个地方，对吧？
+
+182
+00:26:24,355 --> 00:26:32,720
+And the true value of of function l for one of these activations is this green block． 
+对于其中一个激活，函数l的真实值是这个绿色块˳
+
+183
+00:26:32,720 --> 00:26:41,406
+You can see they are very close to each other and the difference between the value of the function l is approximately the same． 
+你可以看到它们彼此非常接近，函数l的值之间的差异大致相同˳
+
+184
+00:26:41,406 --> 00:26:46,320
+Is it like it says here‚ where we're doing it based off it? 
+是不是像这里说的那样，我们基于它在哪里做？
+
+185
+00:26:48,620 --> 00:26:57,000
+Versus function accordingly‚ the Or does it matter which projecting this spectrum? 
+相对于相应的功能，这个频谱的投影到底有什么关系？
+
+186
+00:26:57,000 --> 00:26:57,540
+Of these? 
+其中的？
+
+187
+00:26:57,540 --> 00:27:04,560
+I didn't quite hear what which one‚ which alternative you are talking about‚ but it is important to gradient． 
+我不太清楚你在谈论哪一种，哪种替代方案，但梯度很重要˳
+
+188
+00:27:05,690 --> 00:27:07,720
+So I'm taking the radius of function f? 
+那么我在取函数f的半径？
+
+189
+00:27:11,040 --> 00:27:21,840
+You know‚ mapping into the terminology L and our patching and all of that‚ we are taking the gradient of the function f with respect to v? 
+你知道，映射到术语L和我们的补丁以及所有这些，我们正在获取函数f相对于v的梯度？
+
+190
+00:27:25,710 --> 00:27:26,720
+Value in． 
+价值在˳
+
+191
+00:27:29,170 --> 00:27:29,690
+V 0? 
+V 0?
+
+192
+00:27:32,120 --> 00:27:38,205
+Okay‚ so this is just a reminder of general equation for first expansion． 
+好的，这只是一个提醒，第一次展开的一般方程式˳
+
+193
+00:27:38,205 --> 00:27:41,608
+And then here I'm just visualizing what we are doing there． 
+然后在这里，我只是想象我们在那里做什么˳
+
+194
+00:27:41,608 --> 00:27:52,760
+The thing to remember is you basically take the different new project onto the tangent of the function in a given point is starting point here． 
+要记住的是，基本上你把不同的新项目带到函数的切线上，在给定的点是起点˳
+
+195
+00:27:53,160 --> 00:27:59,730
+Okay‚ so now let's map that with our terminology with L and patching． 
+好的，现在让我们用我们的术语来映射L和补丁˳
+
+196
+00:28:01,240 --> 00:28:07,280
+So our function of so now we come to what is actually attribution? 
+那么我们现在的功能是什么呢？
+
+197
+00:28:17,700 --> 00:28:25,750
+Function that we are using the first expansion saying that． 
+我们使用的第一个扩展函数是这样说的˳
+
+198
+00:28:27,760 --> 00:28:28,270
+Okay‚ doesn't． 
+好吧，没有˳
+
+199
+00:28:28,850 --> 00:28:30,450
+So now we are going to add a． 
+所以现在我们要添加一个˳
+
+200
+00:28:33,110 --> 00:28:34,140
+Gon na become? 
+Gon na成为？
+
+201
+00:28:34,260 --> 00:28:37,130
+Which are the logs of the? 
+哪些是日志？
+
+202
+00:28:45,520 --> 00:28:45,930
+We have? 
+我们有？
+
+203
+00:29:16,820 --> 00:29:19,914
+And I move into the correct‚ correct activation． 
+然后我进入正确的激活状态˳
+
+204
+00:29:19,914 --> 00:29:21,580
+What kind of version of that? 
+这是什么样的版本？
+
+205
+00:29:23,680 --> 00:29:24,210
+Noisy nois? 
+嘈杂的噪音？
+
+206
+00:29:29,900 --> 00:29:40,260
+If I would like to derive attribution patching for the noisy version‚ I will just start with the correct and move into the． 
+如果我想为嘈杂的版本进行归因修补，我将从正确的开始，然后进入˳
+
+207
+00:29:48,780 --> 00:29:53,340
+Okay‚ so now notice that this is basically． 
+好的，现在请注意这基本上是˳
+
+208
+00:29:55,610 --> 00:29:56,730
+In function f‚ right? 
+在函数f中，对吧？
+
+209
+00:29:57,180 --> 00:29:59,400
+So this is delta f and． 
+这就是增量f和˳
+
+210
+00:30:02,440 --> 00:30:04,360
+So I'm starting with delta l? 
+所以我要从delta l开始？
+
+211
+00:30:08,230 --> 00:30:09,550
+Me‚ then and now． 
+我，当时和现在˳
+
+212
+00:30:09,560 --> 00:30:12,240
+I'm just using this‚ you know‚ equation． 
+我只是在使用这个方程式˳
+
+213
+00:30:12,730 --> 00:30:24,020
+But my function l instead of f‚ and I'm picking the r‚ so if I have v minus v 0‚ what is v? 
+但是我的函数l而不是f，并且我选择了r，所以如果我的函数v减去v 0，那么v是什么？
+
+214
+00:30:24,490 --> 00:30:27,754
+It's incorrect comp‚ right? 
+这是错误的计算，对吧？
+
+215
+00:30:27,754 --> 00:30:34,220
+So it's going to be corrupt minus the queen． 
+因此，它将是腐败的，减去女王˳
+
+216
+00:30:36,880 --> 00:30:47,170
+And then we have the gradient of L in the in my with respect to． 
+然后我们有L在my中相对于的梯度˳
+
+217
+00:30:59,160 --> 00:31:04,249
+This is going to be I'm going to write a here just to make it clear for you． 
+这将是我要在这里写一个，只是为了让你清楚˳
+
+218
+00:31:04,249 --> 00:31:09,585
+So I have all of these possibilities for what the activation can be． 
+所以我拥有所有这些可能性来确定激活是什么˳
+
+219
+00:31:09,585 --> 00:31:13,400
+So imagine‚ l is something like a five． 
+所以想象一下，l就像一个5˳
+
+220
+00:31:16,600 --> 00:31:27,640
+So when we say we are calculating the gradient of L with respect to A‚ it means we are taking care of these possible activations here‚ like we think about more abstract formula． 
+因此，当我们说我们正在计算L相对于A的梯度时，这意味着我们正在处理这些可能的激活，就像我们考虑更抽象的公式一样˳
+
+221
+00:31:30,720 --> 00:31:30,740
+Of． 
+的˳
+
+222
+00:31:32,810 --> 00:31:32,870
+That． 
+这个˳
+
+223
+00:31:37,440 --> 00:31:45,763
+With respect to L would be a Fed pay price and now the regular A equals one would be 10‚ right? 
+对我来说，这将是美联储的薪酬价格，现在常规的a等于1是10，对吧？
+
+224
+00:31:45,763 --> 00:31:57,000
+So just to make sure that you understand the notation of we are taking the gradient retrospective‚ but then we take the particular value‚ right for A． 
+因此，为了确保您理解我们正在进行梯度追溯的符号，但随后我们会采用特定的值，适合A˳
+
+225
+00:32:05,360 --> 00:32:16,600
+So here we take a break with respect to A‚ but we are going to take the actual value v 0‚ which is for us a clean of z? 
+所以这里我们相对于a休息一下，但是我们将取实际值v 0，这对我们来说是一个干净的z？
+
+226
+00:32:22,540 --> 00:32:27,800
+This is basically what attribution of passioning is． 
+这基本上就是激情的归属˳
+
+227
+00:32:27,900 --> 00:32:40,660
+We have this formula‚ and now we approximate that value‚ which‚ and now it's really important that we recognize why did this help us? 
+我们有这个公式，现在我们近似这个值，现在认识到为什么这有助于我们非常重要？
+
+228
+00:32:47,220 --> 00:32:50,868
+Right‚ to collect the corrupt activations． 
+对，收集损坏的激活˳
+
+229
+00:32:50,868 --> 00:32:51,780
+So I have． 
+所以，我有˳
+
+230
+00:32:55,500 --> 00:33:06,060
+One single forward pass with the corrupt input‚ be it with tokens or embeddings I can collect． 
+一个带有损坏输入的单向前传递，无论是带有令牌还是嵌入，我都可以收集˳
+
+231
+00:33:09,010 --> 00:33:13,030
+See‚ for every C in the single forward type‚ right? 
+请参阅，对于单一前进类型中的每个C，对吗？
+
+232
+00:33:13,600 --> 00:33:19,640
+Then to get these bodies‚ we just make our clean run‚ right? 
+然后为了得到这些尸体，我们只需干净利落地奔跑，对吧？
+
+233
+00:33:19,660 --> 00:33:28,976
+And with a single queen run‚ I can get all of these activations from the clean run． 
+而且只要运行一次女王，我就可以从干净的运行中获得所有这些激活˳
+
+234
+00:33:28,976 --> 00:33:34,840
+So for every seat‚ great‚ so two forward passes to collect all of these． 
+所以对于每个座位，很好，所以两个向前传球来收集所有这些˳
+
+235
+00:33:35,730 --> 00:33:38,120
+And now I need also this gradient． 
+现在我还需要这个梯度˳
+
+236
+00:33:39,190 --> 00:33:40,720
+And that requires one back class‚ right? 
+这需要一个后班，对吧？
+
+237
+00:34:00,000 --> 00:34:13,630
+My problem of needing almost half a million of more classes when I have 100 different system‚ So a model of a size 27 billion turns out into a problem where I need just 2 program． 
+当我有100个不同的系统时，我需要近五十万个更多的课程，所以一个规模为270亿的模型变成了一个问题，我只需要两个程序˳
+
+238
+00:34:15,620 --> 00:34:16,360
+So I． 
+所以我˳
+
+239
+00:34:19,450 --> 00:34:19,650
+Feel? 
+感觉？
+
+240
+00:34:21,740 --> 00:34:21,910
+There is a you that? 
+你有那个吗？
+
+241
+00:34:27,140 --> 00:34:33,961
+Now‚ I think what this question is‚ does anything it comes to your mind? 
+现在，我想这个问题是什么，你想到了什么？
+
+242
+00:34:33,961 --> 00:34:39,100
+Well‚ what comes to my mind is why you bother with． 
+好吧，我想到的是你为什么而烦恼˳
+
+243
+00:34:41,690 --> 00:34:42,240
+Simpler solution． 
+更简单的解决方案˳
+
+244
+00:34:42,720 --> 00:34:45,050
+That doesn't mean free instead of half million． 
+这并不意味着免费而不是五十万˳
+
+245
+00:34:49,060 --> 00:34:55,100
+If we have something this cheap‚ why would we ever use activation function? 
+如果我们有这么便宜的东西，为什么要使用激活功能呢？
+
+246
+00:34:55,100 --> 00:34:59,902
+Or in other words‚ we embrace the fact that this is an approximation‚ right? 
+换句话说，我们接受这是一个近似事实，对吧？
+
+247
+00:34:59,902 --> 00:35:11,220
+First order Taylor expansion of the function l‚ the function that quantifies the logic of the‚ and the question is‚ when does this approximation cool and when does it work? 
+函数l的一阶泰勒展开，量化逻辑的函数，问题是，这种近似什么时候很酷，什么时候起作用？
+
+248
+00:35:11,580 --> 00:35:22,150
+The answer is that it doesn't hold always‚ but there are also situation where it works‚ when it varies． 
+答案是它并不总是成立，但也有它起作用的情况，当它变化时˳
+
+249
+00:35:22,180 --> 00:35:31,440
+When it works‚ there is a lot breaking on that return to my visualization and． 
+当它起作用时，回到我的可视化有很多突破˳
+
+250
+00:35:34,080 --> 00:35:36,150
+Which is the most natural 1? 
+哪个是最自然的1？
+
+251
+00:35:40,050 --> 00:35:42,050
+So now the question is． 
+那么现在的问题是˳
+
+252
+00:35:50,020 --> 00:35:54,580
+Achieve a good approximation‚ right? 
+达到了一个很好的近似，对吧？
+
+253
+00:36:02,600 --> 00:36:09,640
+One obvious case where attribution patching is not a good approximation is where the． 
+归因修补不是一个好的近似情况的一个明显情况是˳
+
+254
+00:36:13,590 --> 00:36:15,680
+Expansion is expansions． 
+扩张就是扩张˳
+
+255
+00:36:17,160 --> 00:36:23,930
+Return to this visualization is where we take such a big display． 
+回到这个可视化是我们拍摄如此大的显示器的地方˳
+
+256
+00:36:26,220 --> 00:36:27,670
+Between 2 vector． 
+在两个向量之间˳
+
+257
+00:36:27,670 --> 00:36:40,060
+And so we have min from our starting point so much that we are not anymore aware the original function l or f is a linear‚ right? 
+因此，我们从起点开始就有了最小值，以至于我们不再意识到原始函数l或f是线性的，对吗？
+
+258
+00:36:40,060 --> 00:36:50,000
+So if you stay here around this point‚ and then your function is behavior almost like a slope‚ you know‚ just normal light． 
+因此，如果你停留在这个点附近，那么你的函数行为几乎像一个斜坡，你知道，只是普通的光线˳
+
+259
+00:36:50,780 --> 00:37:02,950
+However‚ when you take a big displacement and you move all the way to here‚ now this is where your function is actually curving along this distance‚ right? 
+然而，当你进行大位移并一直移动到这里时，现在你的函数实际上是沿着这个距离弯曲的，对吗？
+
+260
+00:37:03,090 --> 00:37:09,164
+So here‚ you know‚ in this distance‚ it's almost like a light right over this distance． 
+所以在这里，你知道，在这个距离上，它几乎就像一盏灯在这个距离上˳
+
+261
+00:37:09,164 --> 00:37:10,457
+Now we have this bend． 
+现在我们有了这个弯道˳
+
+262
+00:37:10,457 --> 00:37:18,120
+And when you have this bend‚ this linear projector‚ which onto the tangent‚ onto this slope‚ will not work． 
+当你有这个弯曲时，这个线性投影仪，在切线上，在这个斜坡上，将无法工作˳
+
+263
+00:37:19,220 --> 00:37:24,038
+And here is where we are going to get bad approximations． 
+这就是我们将得到不好近似值的地方˳
+
+264
+00:37:24,038 --> 00:37:27,158
+So just visualize this kind． 
+所以想象一下这种类型˳
+
+265
+00:37:27,158 --> 00:37:34,770
+This is our v 0‚ and this is the gradient or tang in the point we 0‚ right? 
+这是我们的v0，这是我们0点的梯度或唐，对吧？
+
+266
+00:37:35,230 --> 00:37:43,112
+We are doing the projection of this vector onto this blue line‚ which is the thing‚ and we get to this point‚ right? 
+我们正在将这个向量投影到这条蓝线上，也就是这个东西，我们到达了这一点，对吗？
+
+267
+00:37:43,112 --> 00:37:50,380
+And this is our approximation of the function f or l in this point activation here． 
+这是我们在这里点激活时函数f或l的近似˳
+
+268
+00:37:51,400 --> 00:37:54,670
+However‚ what is the real value of function f? 
+然而，函数f的真正价值是什么？
+
+269
+00:37:56,680 --> 00:38:02,590
+Point‚ so now my difference of the function l or f is this much． 
+点，所以现在我的函数l和f的区别是这么大˳
+
+270
+00:38:02,600 --> 00:38:04,770
+Where in reality is actually this one? 
+实际上这一个在哪里？
+
+271
+00:38:07,050 --> 00:38:12,850
+So basically when you take a big． 
+所以基本上当你拿一个大的˳
+
+272
+00:38:15,200 --> 00:38:15,730
+Big is． 
+这很重要˳
+
+273
+00:38:26,840 --> 00:38:41,360
+So a big displacement will minus v 0 basically bring us into a regime where our function f is actually curving along function f? 
+所以一个大位移将减去v0，基本上将我们带入一个区域，其中我们的函数f实际上沿着函数f弯曲？
+
+274
+00:38:44,350 --> 00:38:44,880
+F is occurring． 
+F正在发生˳
+
+275
+00:38:48,220 --> 00:38:48,360
+Along the? 
+沿着？
+
+276
+00:38:56,200 --> 00:38:57,000
+And we break． 
+我们分手了˳
+
+277
+00:38:59,610 --> 00:38:59,630
+The． 
+这个˳
+
+278
+00:39:14,270 --> 00:39:21,833
+So they are expansion says‚ well‚ from v 0‚ your function is behaving basically like a linear function． 
+所以它们是展开说，从v 0开始，你的函数基本上表现得像一个线性函数˳
+
+279
+00:39:21,833 --> 00:39:22,980
+And then you can do so． 
+然后你可以这样做˳
+
+280
+00:39:24,820 --> 00:39:29,253
+So when are we making big displacement‚ right? 
+那么，我们什么时候进行大的位移，对吗？
+
+281
+00:39:29,253 --> 00:39:34,153
+When are we making these huge differences between activation? 
+我们什么时候在激活之间制造这些巨大差异？
+
+282
+00:39:34,153 --> 00:39:40,833
+And this comes to the point that some you taking the entirety of the residual string． 
+这意味着有些人会把剩余串的全部拿走˳
+
+283
+00:39:40,833 --> 00:40:05,125
+So I instead of patching just 1 activation‚ 1 representation at a time‚ if I take the stack of representations for a given token‚ then the difference between the stack versus stack‚ it's become or it has been shown that then it's large in magnitude‚ and that's gonna then cause all this stroke． 
+所以我不是一次修补1个激活，1个表示，如果我取一个给定令牌的表示堆栈，那么堆栈与堆栈之间的差异就会变得或已经证明它在量级上很大，这将导致所有这些中风˳
+
+284
+00:40:05,125 --> 00:40:06,040
+So it can． 
+所以它可以˳
+
+285
+00:40:08,390 --> 00:40:09,430
+We are catching． 
+我们在追赶˳
+
+286
+00:40:37,240 --> 00:40:41,500
+So this is one place where you need to be cautious． 
+所以这是一个你需要谨慎的地方˳
+
+287
+00:40:43,440 --> 00:40:46,370
+Go over all of these because the． 
+把所有这些都介绍一下，因为˳
+
+288
+00:40:48,820 --> 00:40:53,380
+Let me just open the perusian patch here． 
+让我在这里打开波斯人的补丁˳
+
+289
+00:40:54,220 --> 00:41:00,540
+So there are many other places where this attribution pattern can be approximation． 
+因此，还有许多其他地方可以近似地使用这种归因模式˳
+
+290
+00:41:01,540 --> 00:41:04,790
+It has something to do with‚ again‚ layer norm‚ right? 
+这又和层次规范有关，对吧？
+
+291
+00:41:05,280 --> 00:41:16,390
+The player norm is the most important key of the transformer‚ nothing to do with how deep we are doing this backdrop and． 
+玩家规范是变形金刚最重要的关键，与我们在这个背景下的深度无关˳
+
+292
+00:41:19,880 --> 00:41:26,160
+Approximations of the liver layers nonlinearity is can saturate and that can cause issues． 
+肝脏层非线性的近似可能饱和，这可能会导致问题˳
+
+293
+00:41:26,160 --> 00:41:28,960
+There are many‚ many cases． 
+有很多很多案例˳
+
+294
+00:41:28,960 --> 00:41:30,960
+So I'll just say plus． 
+所以我就说加号˳
+
+295
+00:41:36,020 --> 00:41:42,482
+But that leaves you with a practical question of like all like are this method? 
+但这留给你一个实际的问题，就像这个方法一样？
+
+296
+00:41:42,482 --> 00:41:46,221
+But it seems like we don't know when to use it． 
+但似乎我们不知道什么时候使用它˳
+
+297
+00:41:46,221 --> 00:41:47,660
+So when can use it? 
+那么什么时候可以使用呢？
+
+298
+00:41:54,720 --> 00:42:11,593
+You take‚ you take a sample of these activations that you are‚ try to check the codes‚ and you calculate their contribution． 
+你把这些激活的样本，试着检查代码，然后计算它们的贡献˳
+
+299
+00:42:11,593 --> 00:42:21,020
+And you can get them from being very low attribution‚ like they are not important to meat to really hot‚ right? 
+你可以把它们从非常低的归因中得到，就像它们对肉来说不重要到真的很热，对吧？
+
+300
+00:42:21,020 --> 00:42:28,060
+You get‚ let's say‚ 10 activations with in each one of these cases． 
+你会在每种情况下获得10次激活˳
+
+301
+00:42:30,520 --> 00:42:34,430
+And for those and only those‚ you do activation action‚ right? 
+对于那些，只有那些，你做激活操作，对吗？
+
+302
+00:42:36,020 --> 00:42:40,760
+Whether you have correlation between your attribution and activation pattern． 
+您的归因和激活模式之间是否存在相关性˳
+
+303
+00:42:40,960 --> 00:42:51,640
+And if you do across these values‚ that kind of suggests that in your situation‚ this might be a reasonable method to apply on a large scale． 
+如果你对这些价值观进行验证，这表明在你的情况下，这可能是一种大规模应用的合理方法˳
+
+304
+00:42:52,510 --> 00:42:55,650
+I will say practical advice． 
+我会提供实用的建议˳
+
+305
+00:42:59,730 --> 00:43:07,320
+Is kind of do a sanity or soundness check of attribution path sample of data? 
+是否对数据的归因路径样本进行了理智或健全性检查？
+
+306
+00:43:08,020 --> 00:43:10,310
+So some message check? 
+所以一些信息检查？
+
+307
+00:43:17,320 --> 00:43:23,300
+So that's what we first‚ number one‚ distribution patching． 
+所以这就是我们首先要做的第一件事，分发补丁˳
+
+308
+00:43:36,960 --> 00:43:38,660
+Or there may be． 
+或者可能有˳
+
+309
+00:43:38,660 --> 00:43:38,710
+Or there． 
+或者那里˳
+
+310
+00:43:42,130 --> 00:43:43,150
+And see? 
+看到了吗？
+
+311
+00:43:57,970 --> 00:43:58,980
+Pins with blue． 
+蓝色的别针˳
+
+312
+00:43:59,000 --> 00:43:59,020
+The． 
+这个˳
+
+313
+00:44:10,820 --> 00:44:13,240
+According to attribution functions． 
+根据归因功能˳
+
+314
+00:44:15,540 --> 00:44:20,100
+Low difference means not important． 
+低差异意味着不重要˳
+
+315
+00:44:23,760 --> 00:44:26,400
+See‚ somewhat important． 
+看，有点重要˳
+
+316
+00:44:29,490 --> 00:44:32,530
+And see here‚ that's what attri． 
+看这里，这就是attri˳
+
+317
+00:44:36,680 --> 00:44:37,380
+Then you sample． 
+然后你取样˳
+
+318
+00:44:40,650 --> 00:44:41,730
+You know‚ maybe 10 from each． 
+你知道的，可能每人10个˳
+
+319
+00:44:50,320 --> 00:44:57,690
+So now third step is for every c in‚ let's call it C Pil． 
+所以现在第三步是对于每个c，让我们称之为C Pil˳
+
+320
+00:44:58,660 --> 00:45:03,252
+So here you see you have 30 of them． 
+所以在这里你看到你有30个˳
+
+321
+00:45:03,252 --> 00:45:10,560
+You can actually do patching‚ but activation patching． 
+您实际上可以进行修补，但是激活修补˳
+
+322
+00:45:24,520 --> 00:45:29,980
+Delta LC of attribution‚ touching‚ and a final C? 
+归因、触摸和最终C的增量信用证？
+
+323
+00:45:40,460 --> 00:45:43,680
+Attribution‚ patching‚ and then? 
+归因，修补，然后呢？
+
+324
+00:45:49,500 --> 00:45:50,520
+If it's high． 
+如果它很高˳
+
+325
+00:46:00,490 --> 00:46:02,020
+Two‚ 4‚ 4‚ Your own analysis． 
+二、四，你自己的分析˳
+
+326
+00:46:09,700 --> 00:46:13,200
+My Fu from Patches makes sense． 
+我的补丁很感知˳
+
+327
+00:46:16,520 --> 00:46:19,130
+Okay‚ so that's basically it． 
+好的，基本上就是这样了˳
+
+328
+00:46:19,130 --> 00:46:24,810
+What I wanted to say about us patching‚ just overview everything． 
+我想说的关于我们的补丁，只是概述一切˳
+
+329
+00:46:24,810 --> 00:46:39,760
+We have talked about activation catching‚ which is a method that tells us which component meaning which MLP or attention head influences the behavior‚ particular data． 
+我们已经讨论了激活捕捉，这是一种告诉我们哪个组件意味着哪个MLP或注意头影响行为，特定数据的方法˳
+
+330
+00:46:39,760 --> 00:46:45,400
+And we have used an example of factual recall where had inputs being landmarks and we need to． 
+我们使用了一个事实回忆的例子，其中输入是地标，我们需要这样做˳
+
+331
+00:46:47,900 --> 00:46:49,410
+And activa​‌​‌​​‌‌​​‌‌​​‌‌‌​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​​‌‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​​‌‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​​‌‌​​‌‌​‌​‌‌‌​‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌‌​​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌​‌‌‌‌‌​‌‌‌​‌‌‌​‌​​‌‌‌‌​‌​‌‌‌​​‌‌​​​‌​​‌‌​‌‌​​​‌‌​‌‌‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​‌​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌​​‌‌​‌​‌​​‌‌​​​‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌​‌‌​​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌​‌​‌​​‌‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌​‌​​‌‌‌​​‌​​‌‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌​‌‌‌‌‌​‌​‌​‌‌‌​‌​‌‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌​‌‌‌​​‌‌‌‌‌‌​​‌‌‌​​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌​​‌‌​‌​‌​​‌‌‌‌‌​​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌tion patching． 
+和激活修补˳
+
+332
+00:46:52,820 --> 00:46:58,925
+Conceptually‚ but it has a practical problem of needing too many forward passes． 
+从概念上讲，但它有一个实际问题，需要太多向前传球˳
+
+333
+00:46:58,925 --> 00:47:09,352
+And today we started with the motivation of trying to make another method that it is behaving like a batch that is much more computationally cheap． 
+今天我们从尝试制造另一种方法的动机开始，这种方法的行为像批处理，计算成本要低得多˳
+
+334
+00:47:09,352 --> 00:47:19,920
+And we start with the observation that at the core‚ the activation batch‚ we are trying to measure the difference in the logic of the correct answer by doing the patching step． 
+我们首先观察到，在核心的激活批次中，我们正在尝试通过修补步骤来测量正确答案逻辑上的差异˳
+
+335
+00:47:21,160 --> 00:47:53,009
+And we then decided‚ well‚ we know from our lab‚ the paper expansion‚ might come handy here‚ But the first order color you that the difference of a function f between 1 point v 0 and point B that is removed just slightly from v 0 can be approximated by linear projection of vector‚ the difference of these two vector and onto the gradient of the in the first poem． 
+然后我们决定，从我们的实验室得知，纸张展开可能会很方便，但是一阶颜色告诉你，1点v0和点B之间的函数f的差可以通过向量的线性投影来近似˳这两个向量的差异以及第一首诗中梯度的差异˳
+
+336
+00:47:53,009 --> 00:47:55,552
+So that's just our background． 
+这只是我们的背景˳
+
+337
+00:47:55,552 --> 00:48:02,221
+We are like‚ okay‚ cool‚ this makes the difference and we do the difference‚ right? 
+我们就像，好吧，很酷，这产生了差异，我们做了差异，对吗？
+
+338
+00:48:02,221 --> 00:48:07,320
+So we take it as our approximation of the choice． 
+所以我们将其作为选择的近似值˳
+
+339
+00:48:07,320 --> 00:48:13,360
+So basically what we have done is plug as a v and v 0‚ our activations． 
+所以基本上我们所做的就是插入为v和v0，我们的激活˳
+
+340
+00:48:16,420 --> 00:48:30,286
+This gradient is gradient of the logic of the current answer‚ in which again can be corrupt or clean‚ depending whether here we have done noisy version． 
+这个梯度是当前答案逻辑的梯度，其中可能是损坏的或干净的，这取决于我们在这里是否做了嘈杂的版本˳
+
+341
+00:48:30,286 --> 00:48:33,253
+So this is the equation we come with． 
+这就是我们所得到的方程式˳
+
+342
+00:48:33,253 --> 00:48:35,560
+And that's basically it． 
+基本上就是这样˳
+
+343
+00:48:35,560 --> 00:48:42,265
+You know‚ as previously‚ we cut the difference of the logic between the full activation fashion． 
+你知道，像以前一样，我们削减了完全激活方式之间的逻辑差异˳
+
+344
+00:48:42,265 --> 00:48:47,920
+Here we get in a much simpler way‚ and we need only two form classes． 
+这里我们得到了一种更简单的方式，我们只需要两个表单类˳
+
+345
+00:48:49,160 --> 00:48:56,260
+However‚ obviously now we have simplified this and the natural question is‚ is this approximation good or not? 
+然而，很明显现在我们已经简化了这个问题，自然的问题是，这个近似是好还是不好？
+
+346
+00:48:56,260 --> 00:48:58,965
+And then we say‚ well‚ not always． 
+然后我们说，好吧，并非总是如此˳
+
+347
+00:48:58,965 --> 00:49:04,639
+Definitely‚ there are many cases where this approximation might break． 
+当然，在很多情况下，这个近似可能会被打破˳
+
+348
+00:49:04,639 --> 00:49:13,940
+I have just highlighted one case where we make a big‚ we move too much from the starting point and our displacement is large． 
+我刚刚强调了一个案例，我们做了一个大的，我们从起点移动太多，我们的位移很大˳
+
+349
+00:49:15,020 --> 00:49:21,600
+And because it's large enough magnitude‚ we basically have a situation where our function curves． 
+因为它足够大，我们基本上会有一个函数曲线的情况˳
+
+350
+00:49:22,360 --> 00:49:34,084
+And we first go to the thermal expansion‚ which assumes linear art of the function around‚ you know‚ small distance around no longer holds． 
+我们首先讨论热膨胀，它假设函数的线性艺术，你知道，小距离不再适用˳
+
+351
+00:49:34,084 --> 00:49:36,252
+And we will have that approximation． 
+我们将得到这个近似˳
+
+352
+00:49:36,252 --> 00:49:44,860
+And I said one case where this can is when we are trying to patch too many components simultaneously‚ such as taking the whole residual． 
+我说了一种情况，当我们试图同时修补太多的组件时，比如拿走整个残留物˳
+
+353
+00:49:46,120 --> 00:49:52,160
+Like maybe you want to say‚ what's the influence of token of this particular to of this? 
+比如，也许你想问，这个特殊的令牌对这个的影响是什么？
+
+354
+00:49:54,280 --> 00:50:02,313
+You know‚ patching its residual spring is a natural‚ but can cause traffic． 
+你知道，修补它的残留弹簧是自然的，但可能会导致流量˳
+
+355
+00:50:02,313 --> 00:50:04,920
+So there is many more asses． 
+所以还有更多的驴˳
+
+356
+00:50:06,180 --> 00:50:10,730
+My practical advice is‚ well‚ try to use it． 
+我的实际建议是，尝试使用它˳
+
+357
+00:50:11,000 --> 00:50:14,210
+You run it‚ do a little sound check here． 
+你运行它，在这里做一点声音检查˳
+
+358
+00:50:14,210 --> 00:50:22,697
+You check the correlation between attribution patching‚ activation patching for same data‚ the correlation is sufficiently high． 
+您检查同一数据的归因修补和激活修补之间的相关性，相关性足够高˳
+
+359
+00:50:22,697 --> 00:50:25,400
+That gives you a hint that maybe you have a future of that． 
+这给了你一个暗示，也许你有这样的未来˳
+
+360
+00:50:26,500 --> 00:50:36,170
+So are the differences usually too large‚ So I go to a higher order‚ and we still aren't getting a good approximation? 
+所以差异通常太大，所以我去一个更高的阶，我们仍然没有得到一个好的近似值？
+
+361
+00:50:36,170 --> 00:50:40,887
+Or is it just that the function becomes too nonlinear with like that? 
+或者只是函数变得太非线性了？
+
+362
+00:50:40,887 --> 00:50:58,246
+So‚ so‚ yeah‚ so this for people‚ okay‚ for the big displacement is can be kind of connected to the function becomes nonlinear or truly nonlinear because it is nonlinear going‚ you did mention the higher order interactions‚ right? 
+所以，是的，对于人们来说，大位移可以与函数联系起来，变得非线性或真正非线性，因为它是非线性的，你提到了高阶相互作用，对吧？
+
+363
+00:50:58,246 --> 00:51:03,400
+And maybe some second order Ta expansion． 
+也许还有一些二阶的Ta展开˳
+
+364
+00:51:03,400 --> 00:51:11,827
+And this is what Ne has here discussing under multi feature events‚ right? 
+这就是我们在多功能事件下讨论的内容，对吧？
+
+365
+00:51:11,827 --> 00:51:21,864
+So here‚ when you do first order tailor expansion‚ you are not assuming an interaction between features and you are canceling those． 
+所以在这里，当你进行第一次定制扩展时，你不是在假设功能之间的交互，你是在取消这些交互˳
+
+366
+00:51:21,864 --> 00:51:24,900
+Second‚ we could measure that‚ right? 
+第二，我们可以测量它，对吧？
+
+367
+00:51:25,650 --> 00:51:26,400
+So you are simply． 
+所以你很简单˳
+
+368
+00:51:29,200 --> 00:51:34,060
+And there are cases where that's not a good idea． 
+有些情况下，这不是一个好主意˳
+
+369
+00:51:36,310 --> 00:51:38,780
+When I say many more‚ there is really． 
+当我说更多的时候，真的有˳
+
+370
+00:51:43,720 --> 00:51:50,885
+So I think it's hard to try to have a nice mental model of all the AB and test specifically for them． 
+所以我认为很难尝试为所有的AB和测试专门针对他们建立一个好的心理模型˳
+
+371
+00:51:50,885 --> 00:51:54,660
+I think practically it's better to just check the． 
+我认为实际上最好只检查一下˳
+
+372
+00:51:57,020 --> 00:52:08,130
+Because many things click on‚ it feels like you're kind of just reaching back to the original activation patching as you try to test higher order‚ that's right． 
+因为很多东西点击了，感觉就像你只是回到了原始的激活补丁，当你试图测试更高的命令时，这是正确的˳
+
+373
+00:52:11,340 --> 00:52:16,320
+Okay‚ any questions about activation or retribution patching? 
+好的，对激活或惩罚补丁有什么问题吗？
+
+374
+00:52:20,620 --> 00:52:24,080
+Are doing this systematically with a set of problems so that you care about? 
+是否正在系统地处理一系列问题，以便您关注？
+
+375
+00:52:30,420 --> 00:52:32,130
+Representative‚ yeah． 
+代表，是的˳
+
+376
+00:52:32,130 --> 00:52:44,990
+There is one recommendation that‚ for example‚ these two activations can change a lot if your corruption prompt is too different from original‚ right? 
+有一个建议，例如，如果您的腐败提示与原始提示差异太大，这两个激活可能会发生很大变化，对吗？
+
+377
+00:52:45,240 --> 00:52:46,470
+There are semantically very different． 
+这在语义上非常不同˳
+
+378
+00:52:47,290 --> 00:52:48,900
+Their representations are also going to be different． 
+他们的表现形式也将有所不同˳
+
+379
+00:52:49,880 --> 00:52:56,530
+And then you are yet again going to have this problem where the magnitude of this displacement‚ right? 
+然后你又会遇到这个位移的大小问题，对吧？
+
+380
+00:52:56,530 --> 00:53:11,880
+So the recommendation is also to not try to‚ during the corruption of the token of the crown‚ rather than embedding‚ although with corrupting abundance as well‚ due to the fact that you are corrupting‚ you can have． 
+因此，建议也不要试图在皇冠令牌腐败期间，而不是嵌入，尽管也有腐败的丰富，由于你正在腐败，你可以拥有˳
+
+381
+00:53:14,370 --> 00:53:26,620
+So trying to have these‚ you know‚ crafting the prompts want to medium because is to be too large is definitely a recommendation． 
+所以尝试让这些，你知道，制作提示想要适中，因为太大绝对是一个建议˳
+
+382
+00:53:26,620 --> 00:53:35,690
+And being careful about changing as little as possible‚ but being able to corrupt the behavior is something to try anyway． 
+尽可能少地小心改变，但能够破坏行为还是要尝试的˳
+
+383
+00:53:38,500 --> 00:53:44,540
+I guess I think you're essentially saying this‚ but just make sure． 
+我想你基本上是在说这句话，但请确保˳
+
+384
+00:53:44,540 --> 00:53:50,580
+I mean‚ if we swap out tokens‚ that's a large displacement that's likely to happen． 
+我的意思是，如果我们交换代币，那很可能会发生大的位移˳
+
+385
+00:53:51,400 --> 00:53:56,580
+Gaussian those to our embeddings and we can control that parameter． 
+高斯主义将这些嵌入到我们的嵌入中，我们可以控制该参数˳
+
+386
+00:53:56,900 --> 00:54:08,211
+It likely like we could only have a very small amount in our activation‚ probably‚ for example‚ capturer． 
+我们可能只有非常少量的激活，可能是捕获者˳
+
+387
+00:54:08,211 --> 00:54:11,394
+We have used the noise version of corrupting． 
+我们使用了噪音版本的腐败˳
+
+388
+00:54:11,394 --> 00:54:17,040
+And you know‚ they say we are going to set the value of no to be three times． 
+你知道，他们说我们要将no的值设置为三倍˳
+
+389
+00:54:19,220 --> 00:54:22,201
+Your balance‚ you know‚ like consider where you're starting with． 
+你的平衡，你知道的，就像考虑你从哪里开始˳
+
+390
+00:54:22,201 --> 00:54:23,780
+So you are definitely on the right． 
+所以你绝对是对的˳
+
+391
+00:54:44,720 --> 00:54:45,350
+Sorry about? 
+抱歉的事？
+
+392
+00:54:48,430 --> 00:54:50,880
+You set it a little bit harder the way． 
+你把它设置得更硬一点˳
+
+393
+00:54:55,650 --> 00:55:04,030
+Yeah‚ for sure‚ it's less if you have created correct and． 
+是的，当然，如果你已经创建了正确的和，那么它会更少˳
+
+394
+00:55:10,940 --> 00:55:12,880
+But if you have? 
+但是如果你有？
+
+395
+00:55:22,860 --> 00:55:29,120
+Component‚ but every component is also‚ you know‚ position as well． 
+组件，但每个组件也都是位置˳
+
+396
+00:55:29,120 --> 00:55:40,980
+So I don't‚ I think you kind of recover if you can recover this color layer‚ the behavior that kind of suggests‚ oh‚ corrupting this particular． 
+所以我不这么认为，我认为如果你能恢复这个颜色层，这种行为暗示着破坏这个特定的˳
+
+397
+00:55:44,540 --> 00:55:48,774
+I still feel like you can kind of the similar thing． 
+我仍然觉得你可以做类似的事情˳
+
+398
+00:55:48,774 --> 00:56:01,566
+Yeah‚ I just have one more thought that just cross my mind while we've been talking about this‚ but it feels like we can almost measure confidence in our embeddings in some way with this． 
+是的，在我们谈论这个的时候，我还有一个想法在我的脑海里出现，但感觉我们几乎可以用这种方式来衡量我们嵌入的信心˳
+
+399
+00:56:01,566 --> 00:56:04,606
+I didn't really thought about this at all． 
+我根本没有真正想过这个问题˳
+
+400
+00:56:04,606 --> 00:56:09,780
+Now it like really makes sense or not‚ but adding some sort of noise to it． 
+现在它是否真的制造感知，但是给它添加了某种噪音˳
+
+401
+00:56:12,160 --> 00:56:19,220
+I don't know‚ the more displacement or the more noise that we have‚ but that's an interesting talk． 
+我不知道，我们有更多的位移或更多的噪音，但这是一个有趣的谈话˳
+
+402
+00:56:19,460 --> 00:56:24,020
+But I would say for me‚ that would measure the sensitivity． 
+但我会说，对我来说，这将衡量灵敏度˳
+
+403
+00:56:24,820 --> 00:56:36,380
+But if you‚ if you add a little bit of noise to the token spelling and just changes the video‚ basically it tells that the model is sensitive to． 
+但是，如果你在令牌的拼写中添加一点噪音，只是改变了视频，基本上它就会告诉你模型对什么很敏感˳
+
+404
+00:56:41,600 --> 00:56:42,987
+That token is important． 
+这个令牌很重要˳
+
+405
+00:56:42,987 --> 00:56:53,180
+Or you can say‚ well‚ the model is not robust because‚ you know‚ I did a little bit of noise‚ but I didn't make a connection call for them． 
+或者你可以说，这个模型不健壮，因为你知道，我做了一点噪音，但我没有为他们打连接电话˳
+
+406
+00:56:56,640 --> 00:56:58,430
+Is your idea okay‚ quite． 
+你的想法行吗，很好˳
+
+407
+00:57:02,020 --> 00:57:06,580
+And it shouldn't make‚ any difference on the behavior‚ but it does． 
+它不应该对行为产生任何影响，但它确实存在˳
+
+408
+00:57:10,100 --> 00:57:11,296
+Not confident． 
+没有信心˳
+
+409
+00:57:11,296 --> 00:57:15,185
+And you can trace it to the dark bedding‚ potentially． 
+你可以追溯到黑暗的床上用品，可能˳
+
+410
+00:57:15,185 --> 00:57:29,720
+That's kind like we're minded when initially with this idea is like if we can have very low the noise and after some point we're going to disturb it so much that our logics change sufficiently． 
+这有点像我们的想法，最初的想法就像如果我们可以非常低的噪音，然后在某个时间点之后我们会干扰它，以至于我们的逻辑会发生充分的变化˳
+
+411
+00:57:30,080 --> 00:57:30,922
+Yeah‚ maybe． 
+是的，也许吧˳
+
+412
+00:57:30,922 --> 00:57:36,540
+I mean‚ it's a really interesting coin sentence that you mentioned that because． 
+我的意思是，你提到了一个非常有趣的硬币句子，因为˳
+
+413
+00:57:38,820 --> 00:57:43,380
+The professors is not a good thing to open． 
+教授公开并不是一件好事˳
+
+414
+00:57:58,480 --> 00:58:11,610
+Alright‚ so why I'm bringing this is you're bringing this interesting‚ We're kind of discussing this sensitivity and certainty‚ important and all that． 
+好吧，那么我带来这个的原因是你带来了这个有趣的东西，我们正在讨论这种敏感性和确定性，这很重要˳
+
+415
+00:58:11,610 --> 00:58:18,180
+And just this morning I have encountered this position paper which says that all of these． 
+就在今天早上，我遇到了一份立场文件，上面写着所有这些˳
+
+416
+00:58:20,900 --> 00:58:25,520
+Hallucination for homogenization are different facets of this problem． 
+同质化的幻觉是这个问题的不同方面˳
+
+417
+00:58:27,640 --> 00:58:32,340
+Models giving wrong predictions‚ but very． 
+模型给出了错误的预测，但是非常˳
+
+418
+00:58:43,500 --> 00:58:44,690
+Nice‚ nice little visual here． 
+这里有漂亮的小视觉˳
+
+419
+00:58:49,460 --> 00:58:53,350
+For different types of problems that they are trying． 
+针对他们正在尝试的不同类型的问题˳
+
+420
+00:59:01,500 --> 00:59:04,780
+So yeah‚ maybe we need to read this and see． 
+所以，是的，也许我们需要阅读这个并看看˳
+
+421
+00:59:09,200 --> 00:59:11,200
+Okay‚ any questions? 
+好的，有问题吗？
+
+422
+00:59:14,100 --> 00:59:18,130
+That paper‚ I can share it in． 
+那篇论文，我可以分享一下˳
+
+423
+00:59:22,480 --> 00:59:31,434
+Position large enri model failures from hallucination to are different facets of this collaboration． 
+将大型enri模型失败从幻觉定位为这种合作的不同方面˳
+
+424
+00:59:31,434 --> 00:59:38,380
+Mons refers to the fact that‚ most of our language models‚ so they‚ you‚ basically kind． 
+Mons指的是这样一个事实，即我们的大多数语言模型，因此它们，你们，基本上都是友好的˳
+
+425
+00:59:43,500 --> 00:59:47,530
+Assisting us with code writing‚ with general writing with． 
+协助我们编写代码，一般写作˳
+
+426
+01:00:00,000 --> 01:00:07,080
+That's really important in this society． 
+这在这个社会中非常重要˳
+
+427
+01:00:07,080 --> 01:00:17,680
+Questions‚ I will just go over this paper to wrap would be appreciated‚ like a 2 minute break maybe to reset before we go into this． 
+问题，我会把这篇论文看一遍，如果能完成，我将不胜感激，比如在我们开始讨论之前，休息两分钟以重置一下˳
+
+428
+01:00:20,620 --> 01:00:23,540
+Okay‚ alright‚ let's take two minutes and then one more． 
+好的，好的，我们花两分钟，然后再多一点˳
+
+429
+01:01:00,200 --> 01:01:00,480
+Does that make sense? 
+感知了吗？
+
+430
+01:01:15,440 --> 01:01:16,570
+Break it by adding noise． 
+通过添加噪音来打破它˳
+
+431
+01:01:21,870 --> 01:01:22,320
+Makes sense? 
+使感知？
+
+432
+01:01:38,990 --> 01:01:46,020
+The circle is a‚ in the and every‚ you know‚ red here． 
+这个圆圈是a，在每一个，你知道，这里是红色的˳
+
+433
+01:01:47,090 --> 01:01:47,620
+Yeah‚ sorry． 
+是的，对不起˳
+
+434
+01:01:48,620 --> 01:01:52,666
+Every circle is a representation of that kind‚ right? 
+每个圆圈都是那种代表，对吧？
+
+435
+01:01:52,666 --> 01:02:12,400
+It can come from attention or‚ you know‚ so what we do with patching is we take just check‚ this is it‚ this is the demo version of pating we first little bit of noise to important entity in this． 
+它可能来自关注，或者你知道的，所以我们用补丁做的就是只检查，这就是它，这是演示版本的pating，我们首先有点噪音到重要的实体˳
+
+436
+01:02:15,020 --> 01:02:20,120
+Makeups agains and our circles are． 
+化妆agains和我们的圈子˳
+
+437
+01:02:23,890 --> 01:02:28,350
+With Trump‚ his and we just think． 
+关于特朗普，他的和我们只是思考˳
+
+438
+01:02:32,820 --> 01:02:36,164
+Corresponding clean representations． 
+相应的干净表示˳
+
+439
+01:02:36,164 --> 01:02:37,380
+And in fact‚ what? 
+事实上，什么？
+
+440
+01:02:42,780 --> 01:02:47,340
+So it should be sufficient to recover． 
+所以它应该足以恢复˳
+
+441
+01:03:02,420 --> 01:03:04,980
+Okay‚ the different style is the different． 
+好的，不同的风格是不同的˳
+
+442
+01:03:22,390 --> 01:03:24,150
+Patching and rejecting these． 
+修补和拒绝这些˳
+
+443
+01:03:26,340 --> 01:03:28,140
+I come for every single one person． 
+我是为每一个人而来的˳
+
+444
+01:03:48,200 --> 01:04:06,980
+It's just using all‚ let's get going because we have over 15 minutes and I really want to finish this paper so we don't keep coming back to it‚ So first we are going to talk about this paper． 
+它只是使用全部，让我们开始吧，因为我们有超过15分钟的时间，我真的很想完成这篇论文，所以我们不会一直回到它，所以首先我们要讨论这篇论文˳
+
+445
+01:04:09,380 --> 01:04:12,430
+And I remember the last time we have seen that． 
+我记得上次我们看到那个˳
+
+446
+01:04:12,430 --> 01:04:24,420
+This paper shows that at the population level‚ ln are solving simple or equity task with the corporations by using different instead of using robust algorithms for． 
+本文表明，在种群水平上，ln正在使用不同的算法而不是使用健壮的算法与公司解决简单或公平的任务˳
+
+447
+01:04:26,160 --> 01:04:33,118
+And in this work‚ they use a bunch of these methods we have seen after sparcity circuits． 
+在这项工作中，他们使用了一系列我们在稀疏电路后看到的方法˳
+
+448
+01:04:33,118 --> 01:04:43,580
+So it's a nice way for us to see how these methods can be used to do fund research and get IP publication onto them． 
+所以这对我们来说是一个很好的方式，可以看到如何使用这些方法进行资助研究并将IP发布到它们上˳
+
+449
+01:04:44,640 --> 01:04:53,088
+I don't know whether that's the best goal‚ but it's a nice kind of like a recap of the methods we have read so far． 
+我不知道这是否是最好的目标，但这是我们到目前为止阅读的方法的一个很好的回顾˳
+
+450
+01:04:53,088 --> 01:04:57,046
+And also something that I didn't emphasize last time． 
+这也是我上次没有强调的事情˳
+
+451
+01:04:57,046 --> 01:04:59,750
+You can basically‚ we build a circuit． 
+你基本上可以，我们建造一个电路˳
+
+452
+01:05:02,420 --> 01:05:06,980
+Although we have seen completely other way of building circuits‚ which is sparse features． 
+尽管我们已经看到了完全不同的构建电路的方式，即稀疏特征˳
+
+453
+01:05:07,540 --> 01:05:19,560
+So today we are going to go through the method‚ talk about what their circuit is and how these two methods‚ certain tracing and discovery‚ differ and what are benefits of one or the other． 
+因此，今天我们将介绍该方法，讨论它们的电路是什么，以及这两种方法 (某些跟踪和发现) 的不同之处，以及其中一种方法的优点是什么˳
+
+454
+01:05:20,260 --> 01:05:29,040
+So just as a reminder‚ we have talked about civera before‚ and we have definition bilaal from atropic． 
+所以提醒一下，我们之前已经讨论过Cvera，并且我们定义了biaal和atropic˳
+
+455
+01:05:29,040 --> 01:05:31,380
+That circuit is a subgraph from． 
+那个电路是一个子图˳
+
+456
+01:05:34,240 --> 01:05:43,116
+Directions and the edges between two nodes are basically the weights‚ kind of like impact of one feature onto the other． 
+两个节点之间的方向和边基本上就是权重，有点像一个特征对另一个特征的影响˳
+
+457
+01:05:43,116 --> 01:05:47,340
+And I also said that this definition has been relaxed over time． 
+我还说，这个定义随着时间的推移已经放宽了˳
+
+458
+01:05:47,340 --> 01:05:59,380
+And you will see circuit discovery works where nodes aren't feature directions‚ but rather they are just a‚ you know‚ full component‚ like a full MLP or full attention． 
+你会看到电路发现的工作原理，其中节点不是特征方向，而是它们只是一个完整的组件，就像一个完整的MLP或完整的注意力˳
+
+459
+01:06:00,000 --> 01:06:04,560
+And the connections between 2 work with are weighted edges． 
+并且2个工作节点之间的连接是受力边˳
+
+460
+01:06:04,660 --> 01:06:11,700
+Rather‚ you will say‚ okay‚ this component is important‚ this one is‚ and this one comes before it‚ so it will just connect． 
+相反，你会说，好的，这个组件很重要，这个是，这个在它之前，所以它只会连接起来˳
+
+461
+01:06:15,580 --> 01:06:21,620
+Now‚ the setup in this paper is they are going to evaluate elements on​‌​‌​​‌‌​​‌‌​​‌‌‌​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​​‌‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​​‌‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​​‌‌​​‌‌​‌​‌‌‌​‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌‌​​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌​‌‌‌‌‌​‌‌‌​‌‌‌​‌​​‌‌‌‌​‌​‌‌‌​​‌‌​​​‌​​‌‌​‌‌​​​‌‌​‌‌‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​‌​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌​​‌‌​‌​‌​​‌‌​​​‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌​‌‌​​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌​‌​‌​​‌‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌​‌​​‌‌‌​​‌​​‌‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌​‌‌‌‌‌​‌​‌​‌‌‌​‌​‌‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌​‌‌‌​​‌‌‌‌‌‌​​‌‌‌​​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌​​‌‌​‌​‌​​‌‌‌‌‌​​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌． 
+现在，本文的设置是他们将评估元素˳
+
+462
+01:06:23,700 --> 01:06:26,800
+Prompts with Ara of numerals and 4 basic arithmetic． 
+使用数词和4个基本算术提示˳
+
+463
+01:06:31,910 --> 01:06:33,320
+Are going to be on this very simple form? 
+会在这个非常简单的表格上吗？
+
+464
+01:06:34,410 --> 01:06:44,224
+And they use other lamps that are going to produce from each one of these prompts‚ one prompt for the first operand． 
+并且它们使用其他灯，这些灯将从每个提示中产生，一个提示用于第一个操作数˳
+
+465
+01:06:44,224 --> 01:06:44,860
+One‚ sorry． 
+一个，对不起˳
+
+466
+01:06:47,180 --> 01:06:53,340
+One token for the operation‚ one token for the second operation‚ and one token for the E sum． 
+一个令牌用于操作，一个令牌用于第二个操作，还有一个令牌用于E和˳
+
+467
+01:06:53,800 --> 01:06:59,014
+They're going to take 100 examples for circuit discovery and testing． 
+他们将采取100个电路发现和测试的例子˳
+
+468
+01:06:59,014 --> 01:07:04,560
+And all the examples are going to be properly answered by the model． 
+所有的例子都将被模型正确地回答˳
+
+469
+01:07:06,020 --> 01:07:10,580
+What does the model do when it correctly answers these kind? 
+当模型正确回答这些问题时，它会做什么？
+
+470
+01:07:11,160 --> 01:07:15,720
+And the focus of the paper is in Lama 3 8 medium． 
+论文的重点是在喇嘛3 8中˳
+
+471
+01:07:15,940 --> 01:07:19,180
+They have other elements in the events． 
+他们在事件中还有其他因素˳
+
+472
+01:07:19,180 --> 01:07:23,860
+So first question‚ they have this sequence of questions． 
+所以第一个问题，他们有这样一系列的问题˳
+
+473
+01:07:23,860 --> 01:07:30,920
+And this sequence of questions is basically building here hypothesis of what the model might be doing for the． 
+这一系列问题基本上是在这里建立模型可能为做什么的假设˳
+
+474
+01:07:33,220 --> 01:07:37,780
+Them together leads them to discovering a behavioral circuit． 
+它们一起引导他们发现一个行为回路˳
+
+475
+01:07:38,200 --> 01:07:48,960
+This tends in opposition to the kind of spa speech for circuits we have seen where you start the replacement model‚ you do the attrition graph and all of that． 
+这往往与我们看到的电路水疗中心演讲相反，在这里你开始替换模型，你做磨损图等等˳
+
+476
+01:07:52,520 --> 01:07:57,060
+Approach So the first question they ask is which layers? 
+方法，所以他们问的第一个问题是哪一层？
+
+477
+01:08:00,030 --> 01:08:01,620
+You know‚ affect the arithmetic outputs． 
+你知道，影响算术输出˳
+
+478
+01:08:02,610 --> 01:08:09,606
+And you know it will be‚ I haven't shown you this because then I could‚ for example‚ imagine you have this on your quiz． 
+你知道它会的，我还没有向你展示这个，因为那时我可以，例如，想象你在测验中有这个˳
+
+479
+01:08:09,606 --> 01:08:12,643
+Like I ask you which kind of method you can use here． 
+就像我问你在这里可以使用哪种方法˳
+
+480
+01:08:12,643 --> 01:08:15,740
+Now we have just talked about activation patch． 
+现在我们刚刚谈论了激活补丁˳
+
+481
+01:08:15,740 --> 01:08:28,634
+You can be like‚ yeah‚ activation patching is a great method to expect Which attention‚ which LP is responsible for giving me correct in for a magnetic brown? 
+你可以像，是的，激活补丁是一个很好的方法，可以期待哪个注意力，哪个LP负责给我一个正确的磁性棕色？
+
+482
+01:08:28,634 --> 01:08:45,120
+So they basically use the normal prompt for corrected prompt‚ they use fully different prompt‚ which‚ you know‚ it comes into that potential problem of what if the change is too like? 
+所以他们基本上使用正常的提示来纠正提示，他们使用完全不同的提示，你知道，它会遇到潜在的问题，如果更改太多？
+
+483
+01:08:47,200 --> 01:08:51,760
+I don't usually should pat whatever‚ but it doesn't matter because they are using activation function‚ right? 
+我通常不应该拍什么，但这并不重要，因为他们正在使用激活功能，对吧？
+
+484
+01:08:52,420 --> 01:08:58,336
+And then they replace activation from corrupt bound with the clean activations． 
+然后它们将损坏绑定的激活替换为干净的激活˳
+
+485
+01:08:58,336 --> 01:09:01,914
+And then they see how the behavior． 
+然后他们看到了这种行为˳
+
+486
+01:09:01,914 --> 01:09:07,280
+So if attaching restores performance‚ which is indicated by this value． 
+因此，如果附加恢复性能，这是由该值指示的˳
+
+487
+01:09:09,740 --> 01:09:09,920
+Correct answer． 
+正确答案˳
+
+488
+01:09:10,480 --> 01:09:15,782
+The higher and more this value of color are‚ then the more response one． 
+这个颜色的值越高，越多，响应越多˳
+
+489
+01:09:15,782 --> 01:09:21,520
+That component of that token position is for recovering the behavior． 
+该令牌位置的组件用于恢复行为˳
+
+490
+01:09:21,520 --> 01:09:27,560
+And what we see here‚ we said last time is most of the extension has don't play a big role here． 
+我们在这里看到的是，我们上次说过，大部分扩展在这里都没有发挥很大的作用˳
+
+491
+01:09:27,980 --> 01:09:30,560
+It's mostly MLPS at． 
+这主要是MLPS˳
+
+492
+01:09:32,640 --> 01:09:33,020
+Very high levels or． 
+非常高的水平或˳
+
+493
+01:09:35,100 --> 01:09:37,700
+Mid layers now． 
+现在中层˳
+
+494
+01:09:38,140 --> 01:09:44,810
+So the main conclusion of the fact make to lay an layers play water holes for． 
+因此，事实的主要结论是要铺设一层起到水孔作用的层˳
+
+495
+01:09:48,670 --> 01:09:53,740
+Let me know that they have used a slightly different L function here． 
+让我知道他们在这里使用了稍微不同的L函数˳
+
+496
+01:09:54,240 --> 01:10:03,541
+Other function l was just the logic‚ was the logic of the correct answer． 
+另一个函数l只是逻辑，是正确答案的逻辑˳
+
+497
+01:10:03,541 --> 01:10:08,260
+And we were checking what is the difference of the logic after denoising? 
+我们正在检查去噪后逻辑的区别是什么？
+
+498
+01:10:08,770 --> 01:10:08,910
+Right? 
+对吧？
+
+499
+01:10:09,740 --> 01:10:11,260
+Here they are using． 
+这里他们正在使用˳
+
+500
+01:10:21,470 --> 01:10:24,860
+T and PMR refer to prompt． 
+T和PMR指的是提示符˳
+
+501
+01:10:31,960 --> 01:10:35,780
+So prompt P result are． 
+所以提示P结果是˳
+
+502
+01:10:38,480 --> 01:10:40,300
+Not denoted as p prime． 
+不表示为p素数˳
+
+503
+01:10:40,880 --> 01:10:42,960
+And here as r prime is its result． 
+这里作为r个素数是它的结果˳
+
+504
+01:10:44,800 --> 01:11:07,220
+So what they are using is their function to measure the logic change is this equation that takes two things into account‚ whether the probability of this‚ our prime answer‚ decreases with denoising． 
+所以他们使用的是他们测量逻辑变化的函数，这个方程考虑了两个因素，即我们的主要答案的概率是否随着去噪而降低˳
+
+505
+01:11:09,260 --> 01:11:15,677
+Yeah‚ and whether the probability of the correct answer is increasing with deno． 
+是的，正确答案的概率是否随着deno的增加而增加˳
+
+506
+01:11:15,677 --> 01:11:28,040
+So this is just I'm making a point out of this because I said‚ you know‚ very often you will see as a choice of metric l to be the correct answer logic． 
+所以这只是我在指出这一点，因为我说，你知道，经常你会看到度量l的选择是正确的答案逻辑˳
+
+507
+01:11:29,520 --> 01:11:32,550
+But you can see different versions of． 
+但是你可以看到不同版本的˳
+
+508
+01:11:36,060 --> 01:11:40,971
+Another additional thing we use is so called the circuit phases． 
+我们使用的另一个附加东西是所谓的电路相位˳
+
+509
+01:11:40,971 --> 01:11:50,540
+So now this assumes we already have A‚ which might be surprising given how much work we have done to get to sparse features‚ circuit and subtle． 
+所以现在假设我们已经有了一个，考虑到我们已经做了多少工作来获得稀疏的特征，电路和微妙，这可能会令人惊讶˳
+
+510
+01:11:50,540 --> 01:11:52,000
+We have a circuit． 
+我们有一个电路˳
+
+511
+01:11:52,000 --> 01:11:56,986
+The point here is that the circuit we get out of this is much simpler． 
+这里的重点是我们得到的电路要简单得多˳
+
+512
+01:11:56,986 --> 01:12:14,030
+So basically what they call circuit here‚ let's go back to this representation layer‚ to all the way to how many we had in Gemma 62． 
+所以基本上他们在这里称之为电路，让我们回到这个表示层，一直到我们在Gemma 62中有多少个˳
+
+513
+01:12:16,460 --> 01:12:18,520
+It let's say we have 62． 
+假设我们有62个˳
+
+514
+01:12:18,630 --> 01:12:30,460
+Yeah‚ and you know‚ some of them are P and then attention or other they and this‚ and we have positions‚ right? 
+是的，你知道，其中一些是P，然后是关注或其他，他们和这个，我们有立场，对吧？
+
+515
+01:12:30,460 --> 01:12:31,380
+One‚ 2． 
+一，二˳
+
+516
+01:12:32,200 --> 01:12:43,420
+Basically from this MLP visualization‚ we know this layer and this MP this MLP is really important． 
+基本上，从这个MLP可视化中，我们知道了这一层，这百万像素这个MLP非常重要˳
+
+517
+01:12:44,470 --> 01:12:56,394
+Maybe these ones here‚ basically you can think of the things that we choose to be important under some threshold． 
+也许这些在这里，基本上你可以想到我们选择在某个门槛下变得重要的事情˳
+
+518
+01:12:56,394 --> 01:13:06,940
+Let's say we set the threshold to be 4 here and then see which component survive this‚ make our circuit here‚ this is what the subbra． 
+假设我们在这里设置阈值为4，然后看看哪个组件存活下来，让我们的电路在这里，这就是subbra˳
+
+519
+01:13:11,080 --> 01:13:17,288
+Like this‚ this is a sgra computational subgraph region transform here． 
+像这样，这是一个sgra计算子图区域变换˳
+
+520
+01:13:17,288 --> 01:13:26,200
+So basically‚ we have found some components to be important for each position‚ and we have kept only them under some threshold here． 
+基本上，我们发现每个职位都有一些重要的组件，我们只将它们保持在某个阈值以下˳
+
+521
+01:13:26,200 --> 01:13:29,740
+And this is what makes our circuit so much‚ much simple． 
+这就是使我们的电路变得如此简单的原因˳
+
+522
+01:13:32,600 --> 01:13:51,096
+And to test whether the circuit is faithfully‚ what they do is measure so icall the faithfulness of which is basically checking whether circuit alone the full model． 
+并且为了测试电路是否忠实，他们所做的是测量所有忠实性，其中基本上是检查电路是否完整模型˳
+
+523
+01:13:51,096 --> 01:14:08,676
+So they become a function‚ which is the logic of the correct answer versus the max logic in the that you get certain vector． 
+所以它们变成了一个函数，这是正确答案的逻辑与max逻辑的比较，你可以得到某个向量˳
+
+524
+01:14:08,676 --> 01:14:15,268
+So correct answer doesn't necessarily need to have the most likely option． 
+所以正确的答案不一定需要有最可能的选项˳
+
+525
+01:14:15,268 --> 01:14:18,878
+And they are normalizing with respect to the math logic． 
+并且它们正在根据数学逻辑进行规范化˳
+
+526
+01:14:18,878 --> 01:14:21,100
+And they check as a playfulness． 
+它们被视为一种玩乐˳
+
+527
+01:14:23,500 --> 01:14:25,530
+They are checking I will． 
+他们正在检查，我会的˳
+
+528
+01:14:27,670 --> 01:14:28,150
+Write something? 
+写点什么？
+
+529
+01:14:30,420 --> 01:14:34,753
+Imagine we just check this file． 
+想象一下我们只是检查这个文件˳
+
+530
+01:14:34,753 --> 01:14:39,940
+What is this value when we use only the circuit relative? 
+当我们仅使用电路相对时，这个值是什么？
+
+531
+01:14:39,940 --> 01:14:41,450
+What is this value? 
+这是什么价值？
+
+532
+01:14:41,450 --> 01:14:42,960
+We use the full model． 
+我们使用完整的模型˳
+
+533
+01:14:42,960 --> 01:14:45,821
+These two things should be kind of the same‚ right? 
+这两件事应该有点相同，对吗？
+
+534
+01:14:45,821 --> 01:14:49,160
+So we would expect the perfect behavior here to release． 
+所以我们希望这里的完美行为能够释放出来˳
+
+535
+01:14:51,420 --> 01:15:12,210
+However‚ they are also also checking doing this subtraction with respect to zeroing out everything or mean ablating nothing is very often the value． 
+然而，他们也在检查减法是否将所有内容归零或意味着不进行任何烧蚀，这通常是该值˳
+
+536
+01:15:15,420 --> 01:15:15,590
+Function ML ML? 
+函数ML ML？
+
+537
+01:15:18,100 --> 01:15:23,950
+When all of the representations are set． 
+当所有表达均已设置时˳
+
+538
+01:15:26,220 --> 01:15:29,240
+Mean value in some data． 
+某些数据的平均值˳
+
+539
+01:15:29,240 --> 01:15:35,174
+So you have some data and we check what is this? 
+所以你有一些数据，我们检查这是什么？
+
+540
+01:15:35,174 --> 01:15:39,450
+Let's say this of this． 
+让我们这样说吧˳
+
+541
+01:15:39,450 --> 01:15:51,134
+We check the mean of that value representation and we have a make a transform former version called these mean representation． 
+我们检查该值表示的平均值，并且我们进行了一个转换，以前的版本称为这些平均值表示˳
+
+542
+01:15:51,134 --> 01:16:05,014
+The idea being mean ablating your model is almost like‚ what would your model do about like‚ what is the average thing your father would do? 
+这个想法是要烧蚀你的模型几乎就像，你的模型会怎么做，你父亲平均会做什么？
+
+543
+01:16:05,014 --> 01:16:15,240
+So relative to what your app‚ on average‚ your model would do‚ you check the difference to 2 bems． 
+相对于你的应用程序，平均而言，你的模型会做什么，你检查了2个bems的差异˳
+
+544
+01:16:15,240 --> 01:16:25,550
+So now if this is close to one‚ the this is great‚ you are faithful to your circuit is fatal． 
+所以现在如果这接近一个，这很棒，你对你的电路忠诚是致命的˳
+
+545
+01:16:27,620 --> 01:16:32,836
+Accounts for 96% of the entire model performance． 
+占整个模型性能的96%˳
+
+546
+01:16:32,836 --> 01:16:42,593
+So they get here and they say‚ okay‚ this is‚ this is‚ yeah‚ what does m represent? 
+所以他们来到这里说，好吧，这是，是的，m代表什么？
+
+547
+01:16:42,593 --> 01:16:43,610
+In this case? 
+在这种情况下？
+
+548
+01:16:43,610 --> 01:16:49,250
+M is a full model‚ and then C is just the sort C is． 
+M是一个完整的模型，然后C就是C的排序˳
+
+549
+01:16:54,320 --> 01:16:55,175
+Not right． 
+不对˳
+
+550
+01:16:55,175 --> 01:16:58,880
+So you just remove everything that's not in the． 
+所以你只需删除不在中的所有内容˳
+
+551
+01:17:06,040 --> 01:17:10,600
+It seems like I was very ambitious with what I was thinking． 
+看起来我对自己的想法非常雄心勃勃˳
+
+552
+01:17:16,857 --> 01:17:25,900
+But basically next time we are going to cover everything they done and then finally kind of compare it to the approach of． 
+但基本上下次我们将涵盖他们所做的一切，最后将其与方法进行比较˳
+
+553
+01:17:29,040 --> 01:17:34,180
+Which I think is important for you to kind of know‚ why would you do that complicated approach? 
+我认为这对你来说很重要，你为什么要采用这种复杂的方法？

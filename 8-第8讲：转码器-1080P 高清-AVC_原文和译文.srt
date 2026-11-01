@@ -1,0 +1,1739 @@
+1
+00:00:09,890 --> 00:00:11,440
+Let's continue with the class． 
+让我们继续上课˳
+
+2
+00:00:16,220 --> 00:00:20,090
+Okay‚ so I was saying big chunk of this course． 
+好的，所以我说的是这门课的大部分内容˳
+
+3
+00:00:22,760 --> 00:00:30,380
+Sparse out the Co and basically finding out which features understandable to us． 
+将Co稀疏，基本上找出我们可以理解的功能˳
+
+4
+00:00:30,380 --> 00:00:33,240
+People are encoded in representations． 
+人们被编码在表示中˳
+
+5
+00:00:33,240 --> 00:00:35,320
+High dimensional vector is that． 
+高维向量就是这样˳
+
+6
+00:00:36,620 --> 00:00:40,150
+And now we have all these features‚ right? 
+现在我们拥有了所有这些功能，对吧？
+
+7
+00:00:41,680 --> 00:00:49,480
+That's great‚ but we are actually interested in understanding how language models produce outputs． 
+这很好，但我们实际上感兴趣的是了解语言模型如何产生输出˳
+
+8
+00:00:49,480 --> 00:01:02,046
+We are interested in mechanisms‚ something like it's right and just a collection of features will tell us how those features were used． 
+我们对机制感兴趣，好像它是正确的，只是一个功能集合将告诉我们这些功能如何被使用˳
+
+9
+00:01:02,046 --> 00:01:06,640
+Arrive to the enhancer we to talk this covering this is． 
+到达增强剂，我们谈论这个，覆盖这个˳
+
+10
+00:01:09,060 --> 00:01:11,250
+Our current topic and． 
+我们目前的主题和˳
+
+11
+00:01:14,670 --> 00:01:19,160
+Circuits h​‌​‌​​‌‌​​‌‌​​‌‌‌​‌‌​​‌‌​‌‌‌​​‌‌​​‌‌​​‌‌​​​‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌‌‌‌‌​​‌‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​‌​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌​‌​‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌​‌‌‌‌​‌​​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌​‌‌​​​‌‌‌​​‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌​‌‌‌‌‌​‌​‌​‌‌‌​‌​‌​‌‌‌​‌​‌​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌​‌‌‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​‌​‌‌‌​‌‌​​‌‌‌​‌​‌​‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌​​‌‌‌‌​‌​‌​‌‌‌​‌​‌​‌‌‌​‌​‌‌‌‌‌​‌​‌‌‌‌‌​‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌​‌​​‌‌​​‌‌​​‌‌​‌‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​​‌​​‌‌​‌‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​​‌‌​‌‌‌‌‌​‌‌​​‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌‌​​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ave lot of the definition in． 
+电路有很多的定义˳
+
+12
+00:01:22,040 --> 00:01:28,320
+The one that we're going to embrace for now and we are going to talk later a bit more about the other． 
+我们现在要拥抱的那个，稍后我们将更多地谈论另一个˳
+
+13
+00:01:29,020 --> 00:01:40,580
+But the one we are kind of working with currently is circuit discovery‚ first to finding． 
+但我们目前正在进行的工作是电路发现，首先要找到˳
+
+14
+00:01:54,400 --> 00:01:55,230
+Where nodes? 
+节点在哪里？
+
+15
+00:02:00,500 --> 00:02:01,590
+The feature directions． 
+特征方向˳
+
+16
+00:02:09,390 --> 00:02:09,620
+Let me add a． 
+让我添加一个˳
+
+17
+00:02:13,170 --> 00:02:13,610
+Human‚ understandable． 
+人性，易懂˳
+
+18
+00:02:16,050 --> 00:02:21,360
+Feature so not just‚ oh‚ there is a vector in this vector space． 
+特征不仅仅是，哦，在这个向量空间中有一个向量˳
+
+19
+00:02:35,180 --> 00:02:41,214
+Feature directions you can give me correct vector is and you didn not tell me what these vector is are referring to． 
+特征方向你可以给我正确的向量，但你没有告诉我这些向量指的是什么˳
+
+20
+00:02:41,214 --> 00:02:42,220
+That wouldn't be human． 
+那不会是人类˳
+
+21
+00:02:45,270 --> 00:02:49,410
+Okay‚ and edges are way to read them． 
+好的，边缘是阅读它们的方式˳
+
+22
+00:03:05,420 --> 00:03:14,915
+This definition was popularized by work by Chris Ola‚ who founded in Tropic and then Entropic Interpretability team． 
+这个定义是由在热带创立的克里斯·奥拉和随后的熵可解释团队的工作推广的˳
+
+23
+00:03:14,915 --> 00:03:44,900
+And there were kind of embraced this‚ like RA mentioned‚ other kinds of works‚ maybe not in the same of detail‚ but sometimes you will see works that are also doing circuit discovery‚ but instead of trying to find this and connection between them‚ they will take a whole component of the transporter‚ such as this MLP connects to this other higher level‚ let's say attention head． 
+就像RA提到的，有些作品被接受了，可能不是同样的细节，但有时你会看到也在进行电路发现的作品，但不是试图找到它们之间的联系，它们将采用运输车的整个组件˳例如，这个MLP连接到另一个更高的层次，比如说注意力˳
+
+24
+00:03:44,940 --> 00:03:47,710
+And all of that together brings me to the hour． 
+所有这些一起把我带到了这个小时˳
+
+25
+00:03:48,160 --> 00:04:00,600
+So it's less fine rain and it's more about‚ okay‚ which parts of the architecture reach to the tokens prediction rather than understanding the know fine grain process? 
+所以它不是细雨，而是更多的是关于架构的哪些部分可以达到代币预测，而不是理解精细的过程？
+
+26
+00:04:00,600 --> 00:04:10,160
+Something‚ something more like it last time we have started to change our Sa． 
+有些东西，更像是上次我们开始改变我们的Sa时的东西˳
+
+27
+00:04:12,680 --> 00:04:17,240
+Be able to find such subgraphs using these features． 
+能够使用这些功能找到这样的子图˳
+
+28
+00:04:18,300 --> 00:04:20,450
+So remember‚ for our essays‚ we had these equation． 
+记住，对于我们的论文，我们有这些方程式˳
+
+29
+00:04:23,850 --> 00:04:24,020
+We have? 
+我们有？
+
+30
+00:04:26,960 --> 00:04:30,098
+Real loop encoder times input． 
+实循环编码器次输入˳
+
+31
+00:04:30,098 --> 00:04:36,460
+So let's call this input to our MLP and some BIOS． 
+所以让我们将这个输入称为我们的MLP和一些BIOS˳
+
+32
+00:04:41,110 --> 00:04:41,330
+Had reconstruction of． 
+进行了重建˳
+
+33
+00:04:45,780 --> 00:04:51,140
+Right‚ so we are trying to reconstruct the output of the MLP using the output． 
+正确的，所以我们正在尝试使用输出重构MLP的输出˳
+
+34
+00:05:02,640 --> 00:05:05,143
+So these are our essays． 
+这些就是我们的文章˳
+
+35
+00:05:05,143 --> 00:05:25,260
+And then we introduced transcoder‚ which is very similar to the Sae with one subtle difference‚ where instead of trying to reconstruct the output from the output‚ are taking the Mlp's input and reconstructing the output． 
+然后我们引入了转码器，它与Sae非常相似，但有一个细微的区别，在其中，不是尝试从输出重构输出，而是采用Mlp的输入并重构输出˳
+
+36
+00:05:35,420 --> 00:05:39,446
+Okay‚ so let me just try to visualize what we have done． 
+好的，让我试着想象一下我们所做的事情˳
+
+37
+00:05:39,446 --> 00:05:46,020
+Let's imagine we have trained these transcoders for every single layer of our transformer． 
+让我们想象一下，我们已经为变压器的每一层训练了这些代码转换器˳
+
+38
+00:05:47,060 --> 00:05:57,260
+As an example‚ an example‚ llum here‚ JMI 2 to billion‚ which is an llen we have． 
+作为一个例子，这里有一个lum，JMI 2到十亿，这是我们拥有的一个llen˳
+
+39
+00:06:00,660 --> 00:06:07,710
+Okay‚ so let's say I have a prompt‚ the 1 I have showed you before‚ it says fact column DiCaprio． 
+好的，那么让我们假设我有一个提示，就是我之前向您展示的1，它说的是事实列DiCaprio˳
+
+40
+00:06:14,020 --> 00:06:14,420
+Containing dialysis? 
+包含透析？
+
+41
+00:06:34,660 --> 00:06:39,220
+So we have basically 10 tokens here． 
+所以我们这里基本上有10个代币˳
+
+42
+00:06:43,200 --> 00:06:49,820
+And each one of these tokens has a high dimensional representation work‚ right? 
+这些代币中的每一个都有高维的表示作品，对吧？
+
+43
+00:06:49,820 --> 00:06:53,240
+So each one of them has a vector． 
+所以它们中的每一个都有一个向量˳
+
+44
+00:06:58,910 --> 00:07:07,060
+In‚ this‚ this Gema 2‚ 2 billion model are going to be 2 304 dimension． 
+在这个，这个2，2，2十亿的Gema模型将是2，304维度˳
+
+45
+00:07:08,040 --> 00:07:12,600
+So that's the dimension of every focus representation． 
+这就是每个焦点表示的维度˳
+
+46
+00:07:16,000 --> 00:07:18,800
+Going to continue to change them‚ right? 
+会继续改变他们，对吧？
+
+47
+00:07:18,810 --> 00:07:24,820
+Normally now the and re-position and all sorts of mechanisms‚ we are going to have more． 
+通常现在重新定位和各种机制，我们将拥有更多˳
+
+48
+00:07:34,980 --> 00:07:41,020
+The 26 layers that produce new representations for every single token． 
+26个层为每个令牌产生新的表示˳
+
+49
+00:07:41,020 --> 00:07:52,470
+What I wish to kind of embrace here is the problem we started this course with‚ which is we 10 tokens‚ time 2‚ 304 dimensional． 
+我希望在这里拥抱的是我们开始这门课程的问题，即我们10个代币，时间2，304个维度˳
+
+50
+00:07:55,620 --> 00:08:02,927
+Roughly 600K numbers just in these activations‚ ignoring the weights themselves‚ right? 
+仅仅在这些激活中，大约有600k个数字，忽略了权重本身，对吧？
+
+51
+00:08:02,927 --> 00:08:04,833
+It's a lot of numbers． 
+这是很多数字˳
+
+52
+00:08:04,833 --> 00:08:09,133
+So people ask‚ how did network arrived to this next token? 
+所以人们问，网络是如何到达这个下一个代币的？
+
+53
+00:08:09,133 --> 00:08:18,417
+Honestly‚ the fact that they are asking you‚ hey‚ can you make sense of these 6 100000 numbers and tell me what's going on? 
+老实说，他们问你的事实是，嘿，你能感知这6个100000个数字并告诉我发生了什么吗？
+
+54
+00:08:18,417 --> 00:08:30,480
+And the transcoders‚ we are kind of doing that‚ first of all‚ each one of these representations now holder‚ it is reconstructed‚ right? 
+而代码转码器，我们正在这样做，首先，这些表示中的每一个现在都被重建了，对吧？
+
+55
+00:08:30,480 --> 00:08:35,445
+And it is reconstructed using these feature directions． 
+并使用这些特征方向进行重建˳
+
+56
+00:08:35,445 --> 00:08:39,420
+So every single one of these 26 layers has． 
+所以这26层中的每一层都有˳
+
+57
+00:08:51,280 --> 00:08:57,720
+So just to repeat‚ when we train transcoder‚ we have a transcoder per layer of the trans． 
+重复一遍，当我们训练转码器时，我们每层都有一个转码器˳
+
+58
+00:08:58,680 --> 00:09:03,495
+And that means that they are not going to share their encoder and decoder weight． 
+这意味着他们不会分享他们的编码器和解码器体重˳
+
+59
+00:09:03,495 --> 00:09:12,125
+Rather‚ we have different encoder decoder weights for every single transformer replaced in our transformer architecture． 
+相反，在我们的变压器架构中，每个更换的变压器都有不同的编码器解码器权重˳
+
+60
+00:09:12,125 --> 00:09:20,220
+And each one of them is remember of the show dimensionality of our model‚ which is． 
+他们每个人都记得我们模型的展示维度，也就是˳
+
+61
+00:09:23,760 --> 00:09:39,690
+So let's call that DN times the number of features which in the available transcoder for Gemma 2‚ 2000016000 features‚ right? 
+所以让我们称它为Gemma 2，2000016000功能的可用转码器中的功能数量的DN倍，对吧？
+
+62
+00:09:53,460 --> 00:10:02,405
+Another kind of term that is known in the literature for this is that these decoder weights encode a dictionary‚ right? 
+文献中另一种已知的术语是这些解码器权重编码一本字典，对吧？
+
+63
+00:10:02,405 --> 00:10:06,040
+So each column represent one feature direction． 
+所以每一列代表一个特征方向˳
+
+64
+00:10:06,620 --> 00:10:10,880
+The collection of these feature directions is sometimes called dictionary． 
+这些特征方向的集合有时称为字典˳
+
+65
+00:10:10,880 --> 00:10:15,140
+So we can also refer to each one of these mattresses as dictionary in that layer． 
+因此，我们也可以在该层中将这些床垫中的每一个作为字典进行引用˳
+
+66
+00:10:15,790 --> 00:10:19,980
+And when I learns and these dictionaries‚ these features． 
+当我学习这些词典和功能时˳
+
+67
+00:10:22,800 --> 00:10:30,096
+What changes per input is how much those feature directions are active for a given to‚ right? 
+每个输入的变化是这些特征方向对于给定的活动有多少，对吗？
+
+68
+00:10:30,096 --> 00:10:45,042
+So for every single one of these‚ tokens‚ we‚ let's call it z‚ p‚ which is the sparse feature vector of the imaginary of the number here‚ 16000． 
+因此，对于这些令牌中的每一个，我们称之为z，p，这是这里数字虚部的稀疏特征向量，16000˳
+
+69
+00:10:45,042 --> 00:10:54,540
+And in this vector‚ we have that how much each latent in this dictionary activates for this particular to‚ right? 
+在这个向量中，我们有这个字典中每个latent对于这个特定的激活有多少，对吗？
+
+70
+00:10:54,760 --> 00:10:59,320
+So we have that for every single one of them‚ we have a different one． 
+因此，对于每个单独的产品，我们都有不同的产品˳
+
+71
+00:11:01,780 --> 00:11:18,360
+And so I want to first what I'm trying to kind of make the point here is that we kind of went from this right situation into‚ now we have 10 tokens‚ 16000 features‚ and 26 layers． 
+所以我想首先指出的是，我们从正确的情况进入了现在我们有10个代币，16000个特征和26个层˳
+
+72
+00:11:20,620 --> 00:11:32,561
+Each one of these is actually interpretable in a sense that we know The I refer to punctuation is my refer to academic style． 
+这些中的每一个实际上都可以用一种感知来解释，我们知道我指的是标点符号，也就是我指的是学术风格˳
+
+73
+00:11:32,561 --> 00:11:37,812
+But this might be more firing‚ such as we have seen types of features． 
+但这可能更加有效，例如我们看到的特征类型˳
+
+74
+00:11:37,812 --> 00:11:40,700
+We don't want to see specialized work． 
+我们不想看到专门的工作˳
+
+75
+00:11:42,420 --> 00:11:51,780
+So they can be various things‚ but they have human understandable that we have assigned to the llum based approach． 
+所以它们可以是各种各样的东西，但它们具有人类可理解的功能，我们已经将其分配给了基于lum的方法˳
+
+76
+00:11:52,820 --> 00:11:58,940
+And now this brings me this situation here‚ brings me to circuit discovery． 
+现在这给我带来了这个情况，给我带来了电路发现˳
+
+77
+00:12:00,000 --> 00:12:09,990
+It's nicer than this because you know that there is at least some meaning to these values here‚ But making sense out of all of this‚ it's a really hard problem． 
+这比这更好，因为你知道这些价值观至少有一些意义，但是要感知这一切，这是一个非常困难的问题˳
+
+78
+00:12:10,570 --> 00:12:25,960
+Again‚ there is still a lot of numbers and just because those numbers have some kind of meaningful association with them‚ how much a certain of nature is active doesn't mean that the problem is now easy or solved． 
+再说一遍，仍然有很多数字，仅仅因为这些数字与它们有某种有意义的关联，自然界中有多少是活跃的，并不意味着问题现在很容易或解决了˳
+
+79
+00:12:25,960 --> 00:12:30,520
+We still need to make a sense of what is going on here． 
+我们仍然需要对这里发生的事情进行感知˳
+
+80
+00:12:31,820 --> 00:12:39,290
+Now‚ for example‚ what you need to know is‚ okay I'm looking for capital‚ state and Dallas‚ right? 
+现在，例如，你需要知道的是，好的，我正在寻找资本，州和达拉斯，对吧？
+
+81
+00:12:43,060 --> 00:12:45,643
+And point to text‚ right? 
+指向文本，对吗？
+
+82
+00:12:45,643 --> 00:12:55,160
+And capital media have features‚ your connection to capitals like Paris or Washington‚ DC． 
+资本媒体也有自己的特点，比如你与巴黎或华盛顿州等首都的联系˳
+
+83
+00:13:00,000 --> 00:13:02,876
+Tells me‚ well‚ maybe I should say Austin． 
+告诉我，好吧，也许我应该说奥地利˳
+
+84
+00:13:02,876 --> 00:13:10,988
+And this is what actually brings me to A‚ that would be a reasonable thing to expect to happen‚ right? 
+这就是我想到的，这将是一个合理的期望发生的事情，对吧？
+
+85
+00:13:10,988 --> 00:13:18,680
+If the model is doing this one reasoning properly‚ meaning the way we expect in this case． 
+如果模型正确地进行了这一推理，这意味着在这种情况下我们期望的方式˳
+
+86
+00:13:19,220 --> 00:13:22,896
+But what I show you here is three features‚ right? 
+但我在这里向您展示的是三个特征，对吗？
+
+87
+00:13:22,896 --> 00:13:23,946
+And few edges． 
+边缘很少˳
+
+88
+00:13:23,946 --> 00:13:27,139
+What I have here is lots of lots of lots of features． 
+我在这里拥有的是很多很多的功能˳
+
+89
+00:13:27,139 --> 00:13:30,480
+And each one of these features is going to be unknown． 
+而这些特征中的每一个都是未知的˳
+
+90
+00:13:35,700 --> 00:13:42,541
+So we are still dealing with a large scale‚ very huge number features． 
+因此，我们仍在处理大规模、非常庞大的数量特征˳
+
+91
+00:13:42,541 --> 00:13:49,040
+Imagine that each one of these features across all of these layer is a known in this attribution graph． 
+想象一下，所有这些层中的每一个特征在这个归因图中都是已知的˳
+
+92
+00:13:49,640 --> 00:13:57,520
+And our goal is now to see how can we go from Austin to finding features that are． 
+我们现在的目标是看看我们如何从澳大利亚走向发现具有现实意义的特征˳
+
+93
+00:14:00,000 --> 00:14:10,040
+And through this‚ find a process that is encoded in a normal network for that's kind of what they're trying to do now． 
+通过这个，找到一个在普通网络中编码的过程，这就是他们现在试图做的事情˳
+
+94
+00:14:48,880 --> 00:14:54,060
+Scholars were introduced by dyske． 
+学者是由戴斯克介绍的˳
+
+95
+00:14:56,860 --> 00:15:04,680
+And the first thing that you define is how much one feature impacts another feature． 
+你定义的第一件事是一个功能对另一个功能的影响程度˳
+
+96
+00:15:05,240 --> 00:15:13,830
+So we can have feature that's called L I‚ this is I feature． 
+所以我们可以有一个叫做L I的功能，这就是I功能˳
+
+97
+00:15:18,950 --> 00:15:19,990
+In the L layer． 
+在L层中˳
+
+98
+00:15:22,940 --> 00:15:36,777
+So going back to our decoder rate‚ this is I column in the decoder wave matrix that lives in transform layer． 
+所以回到我们的解码器速率，这是生活在转换层的解码器波矩阵中的I列˳
+
+99
+00:15:36,777 --> 00:15:45,010
+Let me that that was precise layer of original transformer for which we have specialized transformer． 
+让我说，那是原始变压器的精确层，我们有专门的变压器˳
+
+100
+00:15:45,010 --> 00:16:12,090
+A transformer transcoder and transformer are way too close to each other and it's very hard to‚ okay‚ so we have I feature in the L layer and they define the influence that this feature has a layer on a feature that lives in a layer‚ both our players‚ so L is． 
+变压器转码器和变压器之间距离太近了，很难做到，好的，所以我们在L层中有I特征，并且他们定义了此特征对存在于层中的特征的影响，我们的玩家都这样，L也是如此˳
+
+101
+00:16:15,700 --> 00:16:19,580
+So here you can imagine we have third layer and 5th layer． 
+所以在这里你可以想象我们有第三层和第五层˳
+
+102
+00:16:19,580 --> 00:16:30,280
+And we are trying to understand how the sum latent that is in the third layer influences feature a layer that's Apple． 
+我们正在尝试理解第三层中的潜在总和如何影响苹果层的特征˳
+
+103
+00:16:31,820 --> 00:16:36,380
+And now I'm going to go into details of these equations． 
+现在我将详细介绍这些方程˳
+
+104
+00:16:45,500 --> 00:16:49,480
+Does that that influence can be measured as the activation? 
+这种影响可以用激活来衡量吗？
+
+105
+00:16:51,910 --> 00:16:58,540
+The of this feature in the layer‚ we take the activation． 
+对于层中的此功能，我们采用激活˳
+
+106
+00:17:00,830 --> 00:17:10,140
+In the earth layer for feature I‚ that is remember dependent on what is the input here to that layer． 
+在地球层中对于特征I，这取决于输入到该层的内容˳
+
+107
+00:17:10,610 --> 00:17:19,920
+So here x input in the layer L‚ and here we are also going to define for the token t? 
+所以这里的x输入在层L中，这里我们还将为令牌t定义？
+
+108
+00:17:22,480 --> 00:17:33,890
+So just to repeat what I wrote here‚ we have some original representation in the original transformer or some‚ let's say‚ cat here． 
+所以只是重复我在这里写的，我们在原始转换器中有一些原始表示或一些，比如说这里的猫˳
+
+109
+00:17:36,140 --> 00:17:41,200
+Given that representation‚ we place it into the transcoder． 
+鉴于该表示，我们将其放入转码器中˳
+
+110
+00:17:41,600 --> 00:17:54,870
+This order gives us reconstruction of the output of the MLP given that input represent‚ and here we are having activation of the． 
+这个命令为我们提供了MLP输出的重建，给定输入表示，这里我们正在激活˳
+
+111
+00:18:00,390 --> 00:18:00,830
+The I? 
+我？
+
+112
+00:18:06,770 --> 00:18:08,710
+And layer l? 
+层l？
+
+113
+00:18:10,820 --> 00:18:13,435
+So we retrieve that value from this vector z‚ right? 
+所以我们从这个向量z中检索那个值，对吗？
+
+114
+00:18:13,435 --> 00:18:15,832
+I just want to make sure this notation is clear． 
+我只是想确保这个符号是清晰的˳
+
+115
+00:18:15,832 --> 00:18:20,026
+There is a lot going on‚ symbols‚ but it's not． 
+有很多事情正在发生，符号，但它不是˳
+
+116
+00:18:20,026 --> 00:18:24,030
+Yeah‚ what are the symbols of the x? 
+是的，x的符号是什么？
+
+117
+00:18:24,030 --> 00:18:27,440
+Is that an l and then a t or l t? 
+那是一个l，然后是一个t，还是l t？
+
+118
+00:18:27,440 --> 00:18:48,824
+Yeah‚ c here refers to a token‚ So remember‚ we have a representation for every single token in transformer‚ and we need to‚ every one of them has some features that fire up to understand how this entire context Leds to all three‚ we need to look at each one‚ right? 
+是的，这里的c指的是一个令牌，所以记住，我们在tranformer中每个令牌都有一个表示形式，我们需要，每个令牌都有一些特性，这些特性可以激发理解整个上下文如何影响所有三个令牌，我们需要查看每个令牌，对吗？
+
+119
+00:18:48,824 --> 00:18:49,880
+We can't look just． 
+我们不能只看一眼˳
+
+120
+00:18:54,040 --> 00:18:59,980
+Okay‚ and then we are going to take that activation and we are going to check what is the feature． 
+好的，然后我们将进行激活，并检查功能是什么˳
+
+121
+00:19:02,910 --> 00:19:04,210
+Associated with that? 
+与之相关的？
+
+122
+00:19:08,200 --> 00:19:09,068
+In that layer． 
+在那一层˳
+
+123
+00:19:09,068 --> 00:19:11,240
+And we are going to multiply it． 
+我们将使它倍增˳
+
+124
+00:19:11,240 --> 00:19:21,120
+So we are going to take with the value of the vector encoder‚ vector of the I prime feature in the layer． 
+所以我们将采用向量编码器的值，图层中I素数特征的向量˳
+
+125
+00:19:37,420 --> 00:19:51,080
+Repeat‚ we are trying to understand how a creature that lives in layer of a transformer influences feature that appears in a higher level for a given token representation． 
+再说一遍，我们正在尝试理解生活在变压器层中的生物如何影响给定令牌表示的更高层次出现的特征˳
+
+126
+00:19:51,080 --> 00:19:53,584
+To do that‚ we multiply three things． 
+为此，我们将三件事相乘˳
+
+127
+00:19:53,584 --> 00:20:03,230
+One is the activation of the lower feature in its layer and dot product between the lower layers feature direction in the decoder． 
+一是激活其层中的下层特征以及解码器中下层特征方向之间的点积˳
+
+128
+00:20:05,480 --> 00:20:13,300
+Weight matrix with vector associated with the feature that puts in a higher layer and we get the． 
+与放入更高层的特征相关联的向量的权重矩阵，我们得到了˳
+
+129
+00:20:15,960 --> 00:20:22,000
+Now I'm just giving you formula without much motivation． 
+现在我只是在没有太多动力的情况下给你公式˳
+
+130
+00:20:22,000 --> 00:20:30,560
+For today's lecture‚ I decided to not go into details of how exactly we derived this because I didn't formally define what is residual stream． 
+在今天的讲座中，我决定不详细说明我们是如何推导出来的，因为我没有正式定义什么是残差流˳
+
+131
+00:20:31,790 --> 00:20:35,990
+So then this becomes a little bit hard to properly define． 
+所以这就变得有点难以正确定义˳
+
+132
+00:20:36,640 --> 00:20:48,132
+But if you remember‚ I have told you that you can think about the residual string as basically this vertical style of token representation or even token‚ right? 
+但是如果你还记得的话，我告诉过你，你可以把剩余字符串基本上看作是这种垂直的令牌表示形式，甚至是令牌，对吧？
+
+133
+00:20:48,132 --> 00:20:55,663
+So we produce some vector‚ some vector space for the token‚ and then we change it somehow． 
+因此，我们为令牌生成一些向量空间，然后以某种方式更改它˳
+
+134
+00:20:55,663 --> 00:20:58,038
+And then representation． 
+然后是代表性˳
+
+135
+00:20:58,038 --> 00:21:04,780
+And the residual reading‚ there is this notion that we are kind of reading and writing out of residual stream． 
+而剩余阅读，有这样一种观念，即我们是在剩余流中读写˳
+
+136
+00:21:05,280 --> 00:21:14,074
+We read the current representation of the token‚ we do something with it‚ and then we write it back to the residual stream． 
+我们读取令牌的当前表示，对其进行处理，然后将其写入剩余流˳
+
+137
+00:21:14,074 --> 00:21:15,980
+And those ideas come handy here． 
+这些想法在这里很方便˳
+
+138
+00:21:16,420 --> 00:21:27,520
+And think about this feature vector associated with this license as a form of I'm reading and writing to get this score out between． 
+并将与此许可证相关联的特征向量视为我正在阅读和写作的一种形式，以获取此分数˳
+
+139
+00:21:29,120 --> 00:21:41,340
+For now‚ I think the best will be to kind of take this and trust the OS that this is correct and that this is how we can measure the． 
+目前，我认为最好的做法是接受这个事实，并相信操作人员这是正确的，这就是我们可以衡量的方式˳
+
+140
+00:21:43,200 --> 00:21:54,820
+And now that we have this formula for how much one feature influences‚ we can start to think about how we can get these circuits． 
+现在我们有了一个特征影响程度的公式，我们可以开始考虑如何得到这些回路˳
+
+141
+00:21:56,310 --> 00:21:59,420
+Nodes are interpretable features‚ right? 
+节点是可解释的特征，对吗？
+
+142
+00:21:59,430 --> 00:21:59,740
+So good． 
+太棒了˳
+
+143
+00:22:07,160 --> 00:22:15,240
+Organizations‚ basically‚ the goal is to is to find most important tasks． 
+组织，基本上，目标是找到最重要的任务˳
+
+144
+00:22:26,680 --> 00:22:30,906
+And to do that‚ we are going to start from the top． 
+为了做到这一点，我们将从顶部开始˳
+
+145
+00:22:30,906 --> 00:22:33,020
+We can start all the way． 
+我们可以一路开始˳
+
+146
+00:22:35,100 --> 00:22:49,108
+Even even the logics that is associated with‚ and we can use this formula to then score all of the features available across all of doing． 
+甚至是与之相关的逻辑，我们可以使用这个公式对所有可用的功能进行评分˳
+
+147
+00:22:49,108 --> 00:22:52,452
+So‚ let's imagine I have one feature here． 
+那么，让我们想象一下我在这里有一个特征˳
+
+148
+00:22:52,452 --> 00:22:53,060
+So we． 
+所以我们˳
+
+149
+00:23:01,400 --> 00:23:07,440
+And I have all of the other 16 twenty-sixth in． 
+我已经把其他16个第二十六个都在里面了˳
+
+150
+00:23:20,730 --> 00:23:22,120
+And I can use this formula． 
+我可以用这个公式˳
+
+151
+00:23:24,680 --> 00:23:29,240
+I should say 25 because now we live in the 26 layer． 
+我应该说25，因为现在我们生活在26层˳
+
+152
+00:23:32,400 --> 00:23:34,310
+Formula‚ and we can score this‚ right? 
+公式，我们可以给它评分，对吧？
+
+153
+00:23:34,320 --> 00:23:41,683
+We can assign score this feature and this feature using this formula． 
+我们可以使用这个公式为这个特征分配分数˳
+
+154
+00:23:41,683 --> 00:23:45,002
+And each one of them get the score． 
+他们每个人都得到分数˳
+
+155
+00:23:45,002 --> 00:23:52,240
+And we can rank all of these features relative to how highly they influence． 
+我们可以根据这些特征的影响力来对它们进行排名˳
+
+156
+00:23:54,440 --> 00:24:02,020
+And then we can‚ or at least that's what they chose in this paper‚ just take top of these features． 
+然后我们可以，或者至少这是他们在本文中选择的，只需将这些功能放在首位˳
+
+157
+00:24:02,100 --> 00:24:08,130
+So we score them‚ we rank them‚ and then we keep up and features． 
+所以我们给他们打分，给他们排名，然后我们跟上变化˳
+
+158
+00:24:12,680 --> 00:24:14,190
+Okay‚ so we have? 
+好的，那么我们有？
+
+159
+00:24:16,400 --> 00:24:17,615
+Features‚ features． 
+特点，特点˳
+
+160
+00:24:17,615 --> 00:24:20,045
+But we want keep all of these edges． 
+但我们希望保留所有这些边缘˳
+
+161
+00:24:20,045 --> 00:24:25,642
+Rather‚ we are going to keep only those related to the top． 
+相反，我们将只保留与顶部相关的那些˳
+
+162
+00:24:25,642 --> 00:24:36,720
+So let's say we had as N 2 and we keep only these two features and we are just going to immediately repeat this process． 
+所以假设我们有N个2，我们只保留这两个特征，我们只是要立即重复这个过程˳
+
+163
+00:24:37,360 --> 00:24:45,426
+So for this feature‚ we can again use this formula to rank all the features that appear below that layer． 
+因此，对于此功能，我们可以再次使用此公式对出现在该层下方的所有功能进行排名˳
+
+164
+00:24:45,426 --> 00:24:49,480
+And again‚ the key only top 2‚ and so on and so on and so． 
+再次，键只有top 2，以次类推，以次类推˳
+
+165
+00:24:52,440 --> 00:25:02,939
+This works to some extent‚ but the issue that appear is that once we get such a crop‚ it is still quite large． 
+这在某种程度上有效，但出现的问题是，一旦我们获得这样的作物，它仍然相当大˳
+
+166
+00:25:02,939 --> 00:25:09,760
+You can still have hundreds of nodes and how thousands of edges between them? 
+你仍然可以有数百个节点，它们之间有数千个边？
+
+167
+00:25:10,040 --> 00:25:18,780
+And there is this conundrum of‚ well‚ is that‚ is that‚ you know‚ the real causal obstruction‚ the underlying of the neuro? 
+这里有一个难题，那就是，你知道，真正的因果障碍，神经系统的潜在原因吗？
+
+168
+00:25:19,220 --> 00:25:26,180
+And we can't simplify because the processes that are computed with neural networks don't need to be simple processes． 
+我们无法简化，因为用神经网络计算的过程不一定是简单的过程˳
+
+169
+00:25:27,300 --> 00:25:33,340
+So I think that question still stands to this day． 
+所以我认为这个问题至今仍然存在˳
+
+170
+00:25:34,230 --> 00:25:38,450
+Later‚ we will now see and move to extension of this work． 
+稍后，我们现在将看到并移动到这项工作的扩展˳
+
+171
+00:25:39,380 --> 00:25:48,120
+Folks from Atropic had not even a year ago extended first the scer to be a little bit more powerful． 
+从阿托品来的人们甚至在一年前还没有扩大到更强大一些的范围˳
+
+172
+00:25:48,120 --> 00:25:50,040
+I will tell you how in a bit． 
+我一会儿就会告诉你怎么做˳
+
+173
+00:25:50,140 --> 00:25:59,980
+And then they also try to progressively prune these attribution graphs‚ but they are still also left with hundreds of notes and thousands of edges． 
+然后他们也试图逐步修剪这些归因图，但它们仍然留下了数百个笔记和数千个边缘˳
+
+174
+00:26:00,430 --> 00:26:08,680
+And what they have then done is had their experts just look at these Pne attribution graphs‚ try to make sense of them manually． 
+然后他们做的是让他们的专家只看这些Pne归因图，尝试手动感知它们˳
+
+175
+00:26:09,630 --> 00:26:11,190
+And Fatima is trying to automate． 
+法蒂玛正在尝试自动化˳
+
+176
+00:26:13,870 --> 00:26:20,013
+But it's really‚ really hard to get what is really small‚ small Sabra‚ small circuit． 
+但是要得到真正的小电路真的非常非常困难˳
+
+177
+00:26:20,013 --> 00:26:24,360
+That kind of gives you the gist of what's going on． 
+这就给了你正在发生的事情的要点˳
+
+178
+00:26:24,360 --> 00:26:31,400
+And although it does lose some computation‚ that computation isn't crucial for understanding what is going． 
+虽然它确实失去了一些计算，但这种计算对于理解正在发生的事情并不是至关重要的˳
+
+179
+00:26:32,020 --> 00:26:36,241
+This also connects to how we as people explain to each other． 
+这也与我们作为人们如何相互解释有关˳
+
+180
+00:26:36,241 --> 00:26:40,437
+When we explain to each other‚ we don't give full causal process． 
+当我们互相解释时，我们不会给出完整的因果过程˳
+
+181
+00:26:40,437 --> 00:26:42,051
+Actually‚ we would hate that． 
+实际上，我们会讨厌那样的˳
+
+182
+00:26:42,051 --> 00:26:51,837
+We wouldn't have no‚ you know‚ bandwidth‚ cognitive bandwith‚ listen for every single things that have happened to that led to the outcome． 
+我们不会没有带宽，认知的带宽，倾听发生的每一件事情导致结果˳
+
+183
+00:26:51,837 --> 00:27:06,040
+So usually we also want so icall the Dr explanations‚ just telling me the key thing that happened‚ that if that thing didn't happen‚ I would have a different outcome． 
+所以通常我们也想要icall博士的解释，只是告诉我发生的关键事情，如果那件事情没有发生，我会有不同的结果˳
+
+184
+00:27:06,040 --> 00:27:18,876
+So for example‚ if you get a grade and you are interested in what is that one thing that could have done differently to have a different rate or typical example in this space will be credits． 
+因此，例如，如果您获得了一个成绩，并且您对该领域中可能会有不同表现或典型示例的一件事情感兴趣，那么信用将是什么˳
+
+185
+00:27:18,876 --> 00:27:30,890
+If you have‚ if someone rejects your loan‚ you're not interested to know every single thing that had led to that‚ not only what do I need to do differently to actually get right? 
+如果你有，如果有人拒绝你的贷款，你不感兴趣知道导致这件事的每一件事，不仅需要我做些什么不同的事情才能真正做到正确？
+
+186
+00:27:30,890 --> 00:27:32,087
+That's what matters． 
+这才是最重要的˳
+
+187
+00:27:32,087 --> 00:27:49,430
+And when people study human psychology and how we explain to each other‚ they have shown that not only we don't say every single thing‚ rather actually want to hear only the minimal necessary part for the reasons． 
+当人们研究人类心理学以及我们如何相互解释时，他们表明，我们不仅不会说每一件事，而且实际上只想听到最小的必要部分˳
+
+188
+00:27:49,430 --> 00:27:59,523
+So I would say it's not bad if our‚ you know‚ that are really small‚ but they don't fully explain what is going on． 
+所以我会说，如果我们的，你知道的，真的很小，但他们不能完全解释发生了什么，那也不错˳
+
+189
+00:27:59,523 --> 00:28:09,884
+If that is enough to understand the model and constrain the gist of what had happened‚ then we can do all sorts of things and insight can become action‚ right? 
+如果这足以理解模型并约束所发生事情的要点，那么我们可以做各种事情，洞察力可以变成行动，对吗？
+
+190
+00:28:09,884 --> 00:28:11,567
+That's what matters in the end． 
+这才是最重要的˳
+
+191
+00:28:11,567 --> 00:28:13,880
+Can we do something with this or not‚ right? 
+我们能不能用这个做些什么，对吧？
+
+192
+00:28:13,880 --> 00:28:18,780
+Yeah‚ does that indicate that those scores are not? 
+是的，这是否表明那些分数不是？
+
+193
+00:28:20,380 --> 00:28:24,940
+So second‚ is that like saying that this individual? 
+第二，这是否意味着这个人？
+
+194
+00:28:30,420 --> 00:28:34,980
+Marginal picture‚ meaning if you just started dropping a lot of weights． 
+边际图片，意思是如果你刚刚开始放弃很多权重˳
+
+195
+00:28:38,820 --> 00:28:48,810
+That's the hope‚ right‚ that of course‚ we are going to lose something for these networks are so dense and very‚ very． 
+这就是希望，对吧，当然，我们会失去一些东西，因为这些网络非常密集，非常非常˳
+
+196
+00:28:51,110 --> 00:28:58,158
+There is small activations and small values‚ and everything seems to be kind of important‚ right? 
+有小的激活和小的值，一切似乎都很重要，对吧？
+
+197
+00:28:58,158 --> 00:29:05,920
+So by pruning‚ we are discard some of that‚ as you say‚ marginal influence． 
+所以通过修剪，我们放弃了一些，就像你说的，边际影响˳
+
+198
+00:29:06,640 --> 00:29:28,624
+What I'm trying to say is that even when we prune somewhat aggressively‚ we are still left with hundreds of nodes of Di‚ And now the question is‚ should we proceed to prone further and try find the smaller and the gist of what's going here as atropic data that we will see in a bit? 
+我想说的是，即使我们有些激进地修剪，我们仍然剩下数百个节点的Di，现在的问题是，我们是否应该继续进一步俯卧，并尝试找到更小的要点，作为我们将在一点上看到的热带数据？
+
+199
+00:29:28,624 --> 00:29:38,500
+Or should we just say‚ well‚ this is it‚ this is the representation‚ and we are just not limited by our capacity to understand that‚ right? 
+或者我们应该只是说，这就是它，这就是代表，我们没有受到理解能力的限制，对吧？
+
+200
+00:29:38,820 --> 00:29:41,538
+There is no correct answer here． 
+这里没有正确的答案˳
+
+201
+00:29:41,538 --> 00:29:44,860
+You can take one in position or the other． 
+你可以选择一个位置或另一个位置˳
+
+202
+00:29:44,860 --> 00:30:01,980
+My position currently is that I think proning further makes sense because it can give us some kind of abstractions that lose a lot of information‚ but still are very insightful‚ can do actionable updates． 
+我目前的立场是，我认为proning进一步感知，因为它可以给我们一些失去了大量信息的抽象，但仍然非常有洞察力，可以做可操作的最新进展˳
+
+203
+00:30:03,580 --> 00:30:23,710
+In the case of this graph here‚ how come basically at this depth below the feature on the last layer‚ how come we're considering every other feature from all previous 25 players at that depth‚ as opposed to‚ say‚ having a depth dedicated to layer 25 and then one below that dedicated lay． 
+在这张图的情况下，为什么基本上在最后一层的特征下面这个深度，我们为什么要考虑之前25位玩家在这个深度的所有其他特征，而不是专注于第25层的深度，然后在这个深度以下的一个深度˳
+
+204
+00:30:23,710 --> 00:30:24,893
+That's the next one． 
+这是下一个˳
+
+205
+00:30:24,893 --> 00:30:40,780
+The question actually‚ I was thinking about myself in the preparation when you open this paper by would see that in their illustration of this algorithm‚ it seems like they are doing it later． 
+实际上，当你打开这篇论文时，我在想我自己在准备的时候会看到，在他们对这个算法的说明中，似乎他们稍后会这样做˳
+
+206
+00:30:43,020 --> 00:30:48,718
+You know‚ you move to the previous layer and you examine just the previous layer feature and so on． 
+你知道，你移动到前一层，只检查前一层特征等等˳
+
+207
+00:30:48,718 --> 00:30:57,490
+But when you read the text of the paper and the equation‚ there is no additional constraint on here． 
+但是当你阅读论文的文本和方程时，这里没有额外的限制˳
+
+208
+00:30:57,500 --> 00:30:59,780
+It just says l is smaller than L plus． 
+它只是说l小于L加˳
+
+209
+00:31:00,710 --> 00:31:11,070
+So based on that‚ I concluded that‚ okay‚ they don't‚ you know‚ they consider all of the features． 
+因此，基于此，我得出结论，好吧，他们不会，你知道，他们会考虑所有的功能˳
+
+210
+00:31:11,960 --> 00:31:23,125
+Even I am not 100% sure what exactly they have done because their illustrations suggests what you have suggested only the previous layers feature． 
+即使我不是100% 确定他们到底做了什么，因为他们的插图只暗示了你所建议的前几层特征˳
+
+211
+00:31:23,125 --> 00:31:30,300
+Find the most important one and then go further doesn't give that constraint here． 
+找到最重要的一个，然后再进一步，这并没有限制˳
+
+212
+00:31:30,630 --> 00:31:42,260
+I guess the equation is essentially implying that there's no sort of confounding that comes from basically skipping a layer comparison from something way before． 
+我猜这个方程式基本上是在暗示，基本上跳过之前的图层比较并没有什么混淆˳
+
+213
+00:31:42,260 --> 00:31:43,484
+And then the last layer． 
+然后是最后一层˳
+
+214
+00:31:43,484 --> 00:31:48,876
+You don't need to worry about that jump in between events． 
+你不需要担心事件之间的跳跃˳
+
+215
+00:31:48,876 --> 00:31:52,900
+And I'm going to talk about makes that connection more． 
+我将谈论如何加强这种联系˳
+
+216
+00:31:54,060 --> 00:31:54,716
+So yes． 
+所以，是的˳
+
+217
+00:31:54,716 --> 00:32:04,560
+I'm also a little bit uncertain whether here in this step that all of the features‚ including from all of the layers． 
+我也有点不确定在这一步中是否包含所有的功能，包括来自所有图层的功能˳
+
+218
+00:32:06,920 --> 00:32:15,597
+So I have knowledge‚ even though I have uncertainty of what exactly they do here‚ maybe looking into code and I will． 
+所以我知道，即使我不确定它们在这里到底做了什么，也许我会研究代码˳
+
+219
+00:32:15,597 --> 00:32:18,189
+I'll try to check a little bit further． 
+我会试着再检查一下˳
+
+220
+00:32:18,189 --> 00:32:28,320
+I just couldn't find the information because the X doesn't suggest that we have a host‚ but everything that happens next suggests that． 
+我找不到信息，因为X并不表明我们有主机，但接下来发生的一切都表明了这一点˳
+
+221
+00:32:30,420 --> 00:32:32,586
+Not 100 sure． 
+一百个都没有把握˳
+
+222
+00:32:32,586 --> 00:32:41,760
+Yeah‚ so not to confuse everyone‚ let me go over over everything to one more time and then I'll come． 
+是的，所以不要混淆每个人，让我再把所有的东西都讲一遍，然后我就会来˳
+
+223
+00:32:43,060 --> 00:32:45,545
+First of all‚ we have original transformer． 
+首先，我们有原装变压器˳
+
+224
+00:32:45,545 --> 00:33:03,676
+It produces token representations of and every layer we produce transcoder‚ and now we are trying to connect transcoder into a subroc that tells us how did the model process at the next stock‚ which is a Austin． 
+它生成了令牌表示，并且我们生成了转码器的每一层，现在我们正在尝试将转码器连接到一个子roc中，该子roc告诉我们该模型如何处理下一个库存，即Austin˳
+
+225
+00:33:03,676 --> 00:33:19,718
+And to do that‚ we need to define how features in when does the So basically that becomes a way that we add to the edge where nodes are feature and the squeal they have define this scoring function． 
+要做到这一点，我们需要定义特征何时基本上成为我们添加到边缘的一种方式，其中节点是特征，并且它们所拥有的尖叫声定义了这个评分函数˳
+
+226
+00:33:19,718 --> 00:33:23,040
+It doesn't impose any restrictions． 
+它没有施加任何限制˳
+
+227
+00:33:23,170 --> 00:33:28,080
+L should be a previous layer‚ so it's not l is l prime -1． 
+L应该是前一层，所以它不是l是l prime -1˳
+
+228
+00:33:29,020 --> 00:33:30,020
+They don't make this． 
+他们不会做这个˳
+
+229
+00:33:31,180 --> 00:33:42,060
+So they just say given any previous layer and the current layer prime‚ I can calculate the influence in the feature of that previous layer on this higher level feature． 
+因此，他们只是说给定任何前一层和当前层素数，我可以计算前一层特征对这个更高级别的特征的影响˳
+
+230
+00:33:42,120 --> 00:33:51,920
+And given that score‚ you can basically then go backwards from the higher level feature and see which features are most important． 
+给出这个分数，你基本上可以从更高级别的功能后退，看看哪些功能最重要˳
+
+231
+00:33:53,170 --> 00:33:56,820
+Just continue that process． 
+只是继续这个过程˳
+
+232
+00:34:00,000 --> 00:34:09,620
+In mind that I did say that they don't have this restriction‚ but that I'm uncertain about it and why it's going to become apparent． 
+请记住，我确实说过他们没有这个限制，但是我不确定它以及为什么它会变得明显˳
+
+233
+00:34:16,540 --> 00:34:31,720
+Motivation for the next development done by Entropic is the fact that we don't connections between these features that appear in the lower layer． 
+熵进行下一次开发的动机是我们在这些出现在下层的特征之间没有联系˳
+
+234
+00:34:31,820 --> 00:34:40,134
+The future of the beer in the hybrid‚ these transcoders were all trained you． 
+啤酒混合动力车的未来，这些代码转码员都受过训练˳
+
+235
+00:34:40,134 --> 00:34:43,720
+They can all be trained jointly‚ but they are． 
+他们都可以联合训练，但他们是可以的˳
+
+236
+00:34:43,970 --> 00:34:48,510
+They have these decoder weights that are linear specific． 
+它们有这些线性特定的解码器权重˳
+
+237
+00:34:50,040 --> 00:35:04,560
+What I observed from transcoders is that a single feature‚ for example‚ the Texas feature I have showed you previously‚ it is important in every single layer‚ layer 1‚ layer to a two layer one way to layer． 
+我从转码器中观察到的是，单个特征，例如我之前向您展示的德克萨斯特征，在每个单独的层中都是重要的，从第一层到第二层˳
+
+238
+00:35:06,260 --> 00:35:14,178
+And that kind of suggests‚ well‚ now my circuit has become larger just because I have this Texas repeated so many times‚ right? 
+这表明，现在我的电路变得更大了，只是因为我在德克萨斯州重复了这么多次，对吧？
+
+239
+00:35:14,178 --> 00:35:23,600
+Like I have‚ if I don't put them all together into one super node called‚ then this Texas appears in every single． 
+就像我一样，如果我不把它们全部放在一个名为的超级节点中，那么这个德克萨斯州会出现在每一个节点中˳
+
+240
+00:35:28,040 --> 00:35:32,423
+Dictionary that is learned by every single transcoder． 
+每个代码转码者都可以学习的字典˳
+
+241
+00:35:32,423 --> 00:35:54,805
+And I think that makes circuits more complicated than it would be if we had a connection in the transcoder that says‚ well‚ this feature that was learned in this layer‚ how about I also model its impact to reconstructive all of the higher level token representations‚ not just this one? 
+我认为这使得电路比我们在转码器中有一个连接更加复杂，这个功能是在这一层学到的，我也模拟它的影响来重建所有更高级别的令牌表示，不仅仅是这一个，怎么样？
+
+242
+00:35:54,805 --> 00:36:12,840
+So that's one of their‚ another motivation is‚ well‚ I have this feature in the lower layer‚ another feature‚ maybe layer higher‚ and then together are important for making a feature in the layer that's higher than both of these． 
+这就是他们的另一个动机，嗯，我在下层有这个功能，另一个功能，可能是更高的层，然后一起对于在高于这两个层的层中制作一个功能很重要˳
+
+243
+00:36:13,860 --> 00:36:24,620
+How about I have a direct connection from those layers to the higher level such that I don't need to keep features remembering them? 
+如果我从这些层到更高层次有一个直接的连接，这样我就不需要让特征记住它们了，怎么样？
+
+244
+00:36:24,620 --> 00:36:36,390
+Rather‚ I have this connection so the extension of transcoder that produced is it's called cross layer of scooter． 
+相反，我有这种联系，所以产生的转码器的扩展被称为踏板车的跨层˳
+
+245
+00:36:44,640 --> 00:36:49,700
+It is a special case of something called crossco． 
+这是一种叫做crossco的特殊情况˳
+
+246
+00:37:08,020 --> 00:37:12,580
+Okay‚ so with cross layer transcoders we? 
+好的，那么对于跨层转码器，我们？
+
+247
+00:37:15,130 --> 00:37:17,570
+Define the activation in the El layer． 
+在El层中定义激活˳
+
+248
+00:37:19,970 --> 00:37:20,180
+Layer． 
+图层˳
+
+249
+00:37:22,200 --> 00:37:24,220
+Again‚ now here‚ I hope you． 
+再一次，现在在这里，我希望你˳
+
+250
+00:37:27,740 --> 00:37:29,280
+By then between． 
+那时之间˳
+
+251
+00:37:31,220 --> 00:37:37,260
+So that's another thing we were going to see with cross layer transformers． 
+这是我们将在跨层变压器中看到的另一件事˳
+
+252
+00:37:37,480 --> 00:37:45,756
+I'm going to write it just because when you refer to Anthropics work‚ then I don't want you to be surprised by jump view． 
+我要写它，只是因为当你提到人类学工作时，我不希望你对jump view感到惊讶˳
+
+253
+00:37:45,756 --> 00:37:50,680
+But that's not a key difference between Transco． 
+但这不是Transco之间的关键区别˳
+
+254
+00:37:51,420 --> 00:37:56,634
+Firstly‚ there's a great question for quiz‚ for example‚ that doesn't make a difference here． 
+首先，举个例子，有一个很好的测验问题，在这里并没有什么区别˳
+
+255
+00:37:56,634 --> 00:37:57,820
+I could have jumping． 
+我可以跳跃˳
+
+256
+00:38:00,400 --> 00:38:03,150
+So let me just write jump right over． 
+那么让我写跳转到右边˳
+
+257
+00:38:10,140 --> 00:38:19,278
+Now again‚ in the paper by a tropic that I'm good work‚ they drop the bias terms． 
+现在，在这篇论文中，我是一个好工作，他们放弃了偏见项˳
+
+258
+00:38:19,278 --> 00:38:23,940
+I feel my best to understand why they drop them‚ but they don't really mention． 
+我觉得最好理解他们为什么要放弃它们，但他们并没有真正提到˳
+
+259
+00:38:23,940 --> 00:38:28,610
+So it can just be for the simplicity‚ but I don't really know． 
+所以这可能只是为了简单，但我真的不知道˳
+
+260
+00:38:28,610 --> 00:38:29,160
+So bias． 
+所以偏见˳
+
+261
+00:38:32,420 --> 00:38:44,840
+Again‚ having or not having bias doesn't make a difference between Cross Layer Transcoder‚ but this jump removal of this is what you'll see in the world． 
+再说一遍，是否有偏见并不表示跨层转码器之间有什么区别，但这种跳跃消除是你将在世界范围内看到的˳
+
+262
+00:38:46,420 --> 00:38:52,740
+And then to reconstruct x prime‚ to reconstruct． 
+然后重建x素数，重建˳
+
+263
+00:38:57,020 --> 00:39:06,040
+We are going to have extension of this instead of just having this product once‚ we are going to have it． 
+我们将对此进行扩展，而不是仅仅拥有一次这个产品，我们将拥有它˳
+
+264
+00:39:07,120 --> 00:39:10,580
+And let me just write this equation‚ and then I will explain． 
+让我写下这个方程式，然后我会解释˳
+
+265
+00:39:20,840 --> 00:39:28,230
+One thing I don't like this in this work‚ a crime is a hi layer‚ and here it's a lower layer． 
+在这项工作中我不喜欢这件事，犯罪是一个hi层，而这里是一个下层˳
+
+266
+00:39:28,630 --> 00:39:30,740
+So let me just add here l prime． 
+所以让我在这里添加l prime˳
+
+267
+00:39:42,560 --> 00:39:45,380
+I just realized that the problem Anno． 
+我刚刚意识到问题不在˳
+
+268
+00:39:47,400 --> 00:39:51,130
+Here‚ if we have‚ that is smaller than． 
+在这里，如果我们有，那就是小于˳
+
+269
+00:39:53,300 --> 00:39:56,330
+So let's read all of this． 
+所以让我们读一下这一切˳
+
+270
+00:39:57,100 --> 00:40:02,244
+Given MLP block in the out layer of the transformer． 
+在变压器的外层中给出MLP块˳
+
+271
+00:40:02,244 --> 00:40:09,941
+I'm trying to place that L layer with the Cross Layer transcoder‚ which is an extension of Color Transcoder． 
+我正在尝试将那个L层与跨层转码器放置在一起，跨层转码器是彩色转码器的扩展˳
+
+272
+00:40:09,941 --> 00:40:15,580
+So first thing I do‚ I produce this farse feature vector for that particular tokens representation． 
+所以我做的第一件事是，为那个特定的代币表示生成这个farse特征向量˳
+
+273
+00:40:17,900 --> 00:40:32,841
+And I am reconstructing the output of that MLP block I replacing with the cross layer transcoder by doing the standard product between the colder and this past feature vector． 
+并且我正在重建那个MLP块的输出，我用跨层转码器替换它，方法是在冷机和这个过去的特征向量之间进行标准乘积˳
+
+274
+00:40:32,841 --> 00:40:36,960
+But instead of having just single one as I have in A． 
+而不是像我在A中那样只有一个˳
+
+275
+00:40:39,810 --> 00:40:47,240
+As many of them as there are layers prior to the layer examining‚ which is the layer L prime． 
+它们的数量与层检查之前的层一样多，这就是层L prime˳
+
+276
+00:40:52,880 --> 00:41:10,790
+L that is lower than a layer prime‚ Every single feature in that layer can influence feature in feature in this so． 
+L低于层素数，该层中的每个特征都可以影响特征中的特征˳
+
+277
+00:41:19,300 --> 00:41:20,060
+Yeah‚ so? 
+是啊，所以呢？
+
+278
+00:41:23,420 --> 00:41:42,762
+This special weight matrix has basically directions that how much I can reconstruct an activation that feels in a higher layer using feature directions in that layer‚ right? 
+这个特殊的权重矩阵基本上具有方向，即我可以使用该层中的特征方向重建在更高层中感觉的激活，对吗？
+
+279
+00:41:42,762 --> 00:41:45,500
+So remember the example of Texas‚ right? 
+记得德克萨斯的例子吧？
+
+280
+00:41:45,500 --> 00:41:52,400
+Maybe the model immediately opposed to Dala that Dallas had reported to Texas． 
+也许是直接反对Dala的模型，因为Dalas已经向德克萨斯州报告了˳
+
+281
+00:41:52,590 --> 00:42:02,014
+We learned the transcoder learn feature textes immediately that feature textile has a feature direction here． 
+我们立即学习了转码器学习特征文本，特征纺织品在这里有一个特征方向˳
+
+282
+00:42:02,014 --> 00:42:12,560
+And we came to this special weight matrix‚ measure the influence of that feature and direction to the reconstruction of feature that appears much later． 
+我们来到了这个特殊的权重矩阵，测量该特征和方向对稍后出现的特征重建的影响˳
+
+283
+00:42:13,340 --> 00:42:15,670
+So that's the key thing here． 
+这就是关键所在˳
+
+284
+00:42:19,220 --> 00:42:26,850
+One thing becomes a little bit challenging or a downside here‚ everything comes to the line． 
+有一件事变得有点具有挑战性或缺点，在这里，一切都到了界限˳
+
+285
+00:42:29,100 --> 00:42:31,004
+So a benefit we got is great． 
+所以我们得到的好处非常大˳
+
+286
+00:42:31,004 --> 00:42:43,472
+Now I have a lower layer feature like Texas As‚ and I can immediately measure its impact on reconstructing activation that appeared 6 layer‚ which will be relevant because I want to say all still there is a connection． 
+现在我有一个像德克萨斯州这样的下层功能，我可以立即测量它对重建激活的影响，出现6层，这将是相关的，因为我想说仍然存在联系˳
+
+287
+00:42:43,472 --> 00:42:44,360
+Texas capital law． 
+德克萨斯州资本法律˳
+
+288
+00:42:45,280 --> 00:42:49,840
+What is the downside to this approach? 
+这种方法的缺点是什么？
+
+289
+00:42:51,500 --> 00:42:54,040
+We have 26． 
+我们有26个˳
+
+290
+00:42:55,500 --> 00:42:57,121
+Yeah‚ just like so many‚ right? 
+是的，就像很多人一样，对吧？
+
+291
+00:42:57,121 --> 00:43:08,200
+So this is computationally way more intensive because now the number of decoder weight matrices we have introduced reduced Bonkers． 
+所以这在计算上更加密集，因为现在我们引入的解码器权重矩阵的数量减少了疯狂˳
+
+292
+00:43:08,200 --> 00:43:14,320
+It's a lot of human grade map system still‚ this is something we do today． 
+这仍然是许多人类等级地图系统，这是我们今天所做的事情˳
+
+293
+00:43:15,020 --> 00:43:24,210
+Fatima is a part of the project that is training one of these on chpc‚ so if you ever see long hook CE． 
+Fatima是在chpc上训练其中一个的项目的一部分，所以如果你见过长钩欧洲合格认证˳
+
+294
+00:43:27,140 --> 00:43:32,795
+But then for the type of computer we have‚ I have great computer． 
+但是对于我们拥有的计算机类型，我拥有很棒的计算机˳
+
+295
+00:43:32,795 --> 00:43:42,720
+We have a cluster of H2 hundred s with the Gp's that you might use to try still train crossed-leg transcoders for 1 billion． 
+我们有一个带有Gp的h200集群，您可以使用它来尝试训练交叉腿转码器10亿˳
+
+296
+00:43:46,350 --> 00:43:47,390
+Much larger in． 
+更大的˳
+
+297
+00:43:50,290 --> 00:43:50,320
+Size? 
+尺寸？
+
+298
+00:43:52,380 --> 00:43:59,540
+To repeat what the key difference between cross layer and single layer transcoder is‚ it is not jump RA． 
+为了重复跨层和单层转码器之间的关键区别，它不是跳转RA˳
+
+299
+00:43:59,830 --> 00:44:00,840
+It is not bias or not heavy bias． 
+这不是偏见，也不是严重的偏见˳
+
+300
+00:44:02,330 --> 00:44:12,581
+It is the fact that we are re to representation by not using only the weights in a decoder rate map specialize for that layer． 
+事实上，我们需要通过不仅仅使用解码器速率图中专门用于该层的权重来进行表示˳
+
+301
+00:44:12,581 --> 00:44:16,860
+Rather‚ we use all of the dictionaries we learned before‚ right? 
+相反，我们使用我们以前学到的所有词典，对吧？
+
+302
+00:44:16,860 --> 00:44:23,087
+So we have a connection between a low level features‚ influence on the high level feature． 
+因此，我们有一个低级特征之间的联系，对高级特征的影响˳
+
+303
+00:44:23,087 --> 00:44:26,980
+And the idea is that we have these weights． 
+这个想法是我们有这些权重˳
+
+304
+00:44:26,980 --> 00:44:33,600
+We can use them to calculate new where we have these direct connections． 
+我们可以使用它们来计算新的直接连接位置˳
+
+305
+00:44:33,760 --> 00:44:40,993
+And because we have these direct connections‚ we can prune and get much smaller circuits． 
+因为我们有这些直接连接，我们可以修剪并获得更小的电路˳
+
+306
+00:44:40,993 --> 00:45:00,061
+And indeed‚ when anthropos have done that‚ compared pads‚ the longest pads in that I get from circuits that are produced with single layer transcoder and with cowa transponders‚ they see they are much shorter． 
+事实上，当人类做到了这一点，相比之下，从单层转码器和科瓦转发器产生的电路中获得的最长的pad，他们看到它们要短得多˳
+
+307
+00:45:00,061 --> 00:45:07,550
+So this help cut with the simplicity of the SS get out． 
+所以这有助于减少SS的简单性˳
+
+308
+00:45:08,630 --> 00:45:10,040
+Now let me just go． 
+现在让我走˳
+
+309
+00:45:12,380 --> 00:45:18,177
+We have cross linear transcoder‚ which means that we have all of these features． 
+我们有交叉线性转码器，这意味着我们拥有所有这些功能˳
+
+310
+00:45:18,177 --> 00:45:22,355
+And then we get a logical new equation here． 
+然后我们在这里得到一个合乎逻辑的新方程式˳
+
+311
+00:45:22,355 --> 00:45:29,380
+But we get to this used to produce edge weight frames so． 
+但我们得到这个用于产生边缘权重帧的方法˳
+
+312
+00:45:31,680 --> 00:45:32,857
+Feature known． 
+已知的功能˳
+
+313
+00:45:32,857 --> 00:45:34,918
+And we have another feature． 
+我们还有另一个特点˳
+
+314
+00:45:34,918 --> 00:45:36,980
+And then we have the weight． 
+然后我们有重量˳
+
+315
+00:45:37,480 --> 00:45:40,783
+And we have to have many‚ many‚ many do． 
+我们必须有很多很多的事情要做˳
+
+316
+00:45:40,783 --> 00:45:46,970
+And the next step is then to do this is one can be done． 
+下一步是做到这一点，这是可以做到的˳
+
+317
+00:45:46,970 --> 00:45:50,220
+This work doesn't slightly． 
+这项工作并不轻微˳
+
+318
+00:45:56,000 --> 00:45:59,980
+Let me also add‚ when you produce this edge weight and then． 
+让我再补充一句，当你产生这个边缘重量时˳
+
+319
+00:46:03,860 --> 00:46:12,260
+Edge weight‚ what you get is called a nutri-grain‚ then improve attribution graph． 
+边缘权重，你得到的被称为营养谷物，然后改进归因图˳
+
+320
+00:46:14,610 --> 00:46:17,080
+That I would give you a circle． 
+我会给你一个圆圈˳
+
+321
+00:46:17,090 --> 00:46:18,020
+But the problem here? 
+但问题在这里？
+
+322
+00:46:21,460 --> 00:46:23,340
+Attribution graphs are still massive． 
+归因图仍然很庞大˳
+
+323
+00:46:25,700 --> 00:46:39,020
+So they still have‚ even after pruning hundreds of nodes and thousands of edges for small‚ which makes it hard to understand what is really going on． 
+因此，即使在修剪了数百个节点和数千个边缘之后，它们仍然存在，这使得很难理解到底发生了什么˳
+
+324
+00:46:40,710 --> 00:46:43,220
+I have done the further Pro manually． 
+我手动做了进一步的专业˳
+
+325
+00:46:48,060 --> 00:46:57,530
+And as I mentioned‚ there is an active line of work here that tries to do that further ping． 
+正如我所提到的，这里有一个积极的工作线路，试图进一步ping˳
+
+326
+00:47:04,400 --> 00:47:10,440
+When you do all of that now‚ because this setup is so janky‚ you will need to look at my． 
+当你现在做所有这些时，因为这个设置太混乱了，你需要看看我的˳
+
+327
+00:47:12,670 --> 00:47:14,350
+Super high tech way of doing． 
+超级高科技的做事方式˳
+
+328
+00:47:19,220 --> 00:47:19,904
+Show you this． 
+给你看这个˳
+
+329
+00:47:19,904 --> 00:47:23,780
+You get something which is really‚ really‚ really‚ really small． 
+你会得到一些非常非常小的东西˳
+
+330
+00:47:24,820 --> 00:47:26,162
+It can look like this． 
+它可以看起来像这样˳
+
+331
+00:47:26,162 --> 00:47:28,041
+I'm going to walk around． 
+我打算四处走走˳
+
+332
+00:47:28,041 --> 00:47:35,670
+So this is an example of‚ and I like to call extremely sparse feature circuit because it's really small‚ right? 
+这是一个例子，我喜欢称之为极其稀疏的特征电路，因为它非常小，对吧？
+
+333
+00:47:35,670 --> 00:47:42,893
+Instead of having hundreds of nodes of notes and you have only a few edges as well． 
+而不是有数百个节点的笔记，你也只有几个边˳
+
+334
+00:47:42,893 --> 00:47:50,160
+And here the task is to produce A‚ we have the digital ad． 
+这里的任务是制作一个，我们有数字广告˳
+
+335
+00:47:54,340 --> 00:47:56,740
+Abbreviation‚ which appropriate? 
+缩写，哪个合适？
+
+336
+00:47:56,740 --> 00:47:59,380
+The abbreviation here would be the AG． 
+这里的缩写应该是AG˳
+
+337
+00:48:00,000 --> 00:48:19,920
+What it does is has features digital analytics grew‚ say‚ continuous action from E‚ and then it has say D‚ so say just the letter D‚ then it has say just the letter A and say just the letter G‚ and then it combines with B and A into Da． 
+它所做的是具有数字分析功能的增长，比如从E开始的连续操作，然后它说D，所以只说字母D，然后它只说字母A并说字母G，然后它与B和A结合成Da˳
+
+338
+00:48:24,820 --> 00:48:30,860
+GG right now‚ when you see something like this‚ it kind of makes sense‚ right? 
+现在GG，当你看到这样的东西时，它有点感知，对吧？
+
+339
+00:48:30,860 --> 00:48:39,100
+See how then a model can go from a piece of text into abbreviating it Makes sense‚ right? 
+看看一个模型如何从一段文本变成它所感知的缩写，对吗？
+
+340
+00:48:39,100 --> 00:48:50,900
+And maybe based on that‚ you can make‚ you know‚ now you have an insight into how mole of Re things and I don't know‚ for whatever exact purpose‚ but now you can actually potentially use that from． 
+也许基于此，你可以做出，你知道，现在你有了对事物摩尔的洞察，我不知道，无论出于什么确切目的，但现在你实际上可以从中潜在地使用它˳
+
+341
+00:48:54,540 --> 00:49:00,838
+You tested it against a lot of other abbreviations‚ but there were similar structures． 
+你用很多其他的缩写进行了测试，但是有类似的结构˳
+
+342
+00:49:00,838 --> 00:49:13,920
+Oh‚ so yeah‚ this body of work really want to learn each that are what I say global‚ that is destroying global mechanisms and just local mechanisms and present things in the wrong． 
+哦，是的，这项工作的主体真的想学习我所说的全球化，即破坏全球机制和局部机制，并以错误的方式呈现事物˳
+
+343
+00:49:13,920 --> 00:49:20,485
+So usually they do this sample‚ but that's a whole other set of issues that emerge． 
+所以通常他们会做这个样本，但这是另一系列出现的问题˳
+
+344
+00:49:20,485 --> 00:49:23,520
+And I will just repeat‚ we are talking about． 
+我将重复一遍，我们正在谈论˳
+
+345
+00:49:28,340 --> 00:49:34,380
+And there were so many off open and the things generalizing a single． 
+而且有很多开放的东西和一个通用的东西˳
+
+346
+00:49:37,380 --> 00:49:38,030
+Next token into about． 
+下一个令牌进入大约˳
+
+347
+00:49:40,220 --> 00:49:43,600
+Global behavior‚ such as a radiating in． 
+全局行为，如辐射进来˳
+
+348
+00:49:48,500 --> 00:49:53,060
+We know continue next time we're seeing some surface going into more details and． 
+我们知道下次继续，我们将看到一些表面进入更多细节˳

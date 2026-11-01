@@ -1,0 +1,2309 @@
+1
+00:00:00,100 --> 00:00:07,020
+An s．e． to reconstruct the representation‚ if you can come out of the MLP block． 
+一个s．ee 重建表示，如果你能从MLP块中出来的话˳
+
+2
+00:00:07,640 --> 00:00:23,166
+One thing I didn't emphasize last time that I want to emphasize is that I did say that in this metric weight matrix‚ decoder weight matrix‚ basically the columns are our future directions‚ right? 
+上次我没有强调的一件事，我想强调的是，在这个指标权重矩阵中，解码器权重矩阵，基本上列是我们未来的方向，对吗？
+
+3
+00:00:23,166 --> 00:00:24,215
+We set up． 
+我们设置了˳
+
+4
+00:00:24,215 --> 00:00:28,060
+So this whole approach will also be known as spase． 
+所以整个方法也将被称为spase˳
+
+5
+00:00:29,980 --> 00:00:36,720
+A dictionary is referring to basically this set of learned feature directions‚ which we． 
+字典基本上是指我们学习的这一组特征方向˳
+
+6
+00:00:51,420 --> 00:00:54,940
+Have to learn these feature directions． 
+必须学习这些功能方向˳
+
+7
+00:00:54,940 --> 00:01:02,822
+So this weight matrix‚ the code rate matrix‚ it is where we keep our learned feature directions as columns． 
+所以这个权重矩阵，即码率矩阵，是我们将学习到的特征方向保持为列的地方˳
+
+8
+00:01:02,822 --> 00:01:05,500
+Therefore‚ that is going to be our Di． 
+因此，那将是我们的Di˳
+
+9
+00:01:07,240 --> 00:01:14,898
+And Spa refers to the fact that for a given input only of these faal directions will be active． 
+和Spa指的是，对于给定的输入，只有这些错误的方向会被激活˳
+
+10
+00:01:14,898 --> 00:01:19,720
+So just so you know that when someone said‚ oh‚ we learned the dictionary． 
+所以你要知道，当有人说: “哦，我们学过字典了˳”
+
+11
+00:01:23,330 --> 00:01:33,620
+Okay‚ so now this is the most basic setup for training LSA‚ and there is a lot more to be said about them． 
+好的，现在这是训练LSA最基本的设置，关于它们还有很多话要说˳
+
+12
+00:01:33,630 --> 00:01:37,047
+And it's a bit hard to structure． 
+而且有点难以构建˳
+
+13
+00:01:37,047 --> 00:01:39,710
+What is there to say about everything? 
+什么事情都有什么可说的？
+
+14
+00:01:39,710 --> 00:01:46,819
+So I'm going to walk you through some of the kind of like an overview we need to talk about． 
+所以我将向您介绍我们需要谈论的一些概述˳
+
+15
+00:01:46,819 --> 00:01:54,159
+First thing we said we need to do last time was to actually assign some kind of a meaning to this feature directions‚ right? 
+我们上次说我们需要做的第一件事就是给这个功能方向赋予某种意义，对吧？
+
+16
+00:01:54,159 --> 00:02:06,900
+Without knowing what each one of these columns actually is referring to activating for‚ we lose all interpretability because we say‚ right‚ a few of these columns feature directions activate for given input． 
+如果不知道这些列中的每一列实际上指的是什么，我们就会失去所有可解释性，因为我们说，对吧，其中一些列的特征方向针对给定的输入被激活˳
+
+17
+00:02:06,900 --> 00:02:11,597
+But if you don't know what they are actually looking for‚ then that's it‚ right? 
+但如果你不知道他们真正在找什么，那就这样了，对吧？
+
+18
+00:02:11,597 --> 00:02:12,940
+There is no intercon． 
+这里没有intercon˳
+
+19
+00:02:12,940 --> 00:02:19,920
+So as our next steps‚ we need to talk about how to describe． 
+所以作为我们的下一步，我们需要谈论如何描述˳
+
+20
+00:02:23,630 --> 00:02:24,770
+So that's going to be one thing． 
+这将是一件事˳
+
+21
+00:02:37,420 --> 00:02:41,141
+Another thing we need to talk about is evaluation‚ right? 
+我们需要谈论的另一件事是评估，对吧？
+
+22
+00:02:41,141 --> 00:02:43,700
+So this is a new model that we trained． 
+这是我们训练的一个新模型˳
+
+23
+00:02:43,700 --> 00:02:48,230
+And how do we know that we actually train it properly‚ right? 
+我们怎么知道我们确实正确地训练了它，对吧？
+
+24
+00:02:48,230 --> 00:02:54,396
+So we need evaluation‚ and this is where things get quite complicated． 
+所以我们需要评估，这就是事情变得相当复杂的地方˳
+
+25
+00:02:54,396 --> 00:02:59,590
+Very complicated isn't the best word‚ rather there is a lot to be said about． 
+“非常复杂” 并不是最好的词，相反，有很多话可说˳
+
+26
+00:03:01,630 --> 00:03:04,890
+I like to divide this into four or 7 feet about． 
+我喜欢把这个分成四英尺或七英尺˳
+
+27
+00:03:11,730 --> 00:03:17,070
+Our training seems to be done successfully． 
+我们的培训似乎已经成功完成˳
+
+28
+00:03:17,380 --> 00:03:19,879
+So we have this reconstruction sparsity． 
+所以我们有这种重构稀疏性˳
+
+29
+00:03:19,879 --> 00:03:23,420
+So here we are going to talk about whether this trade on looks． 
+所以在这里，我们将讨论这个交易是否看起来很重要˳
+
+30
+00:03:25,440 --> 00:03:28,480
+But our ultimate goal isn't to just train these． 
+但我们的最终目标不仅仅是训练这些˳
+
+31
+00:03:30,720 --> 00:03:36,476
+You get the co-partner in and reconstruction‚ rather‚ our goal is interpreting ability． 
+你得到了合作伙伴的参与和重建，相反，我们的目标是解释能力˳
+
+32
+00:03:36,476 --> 00:03:45,905
+So just measuring sparsity and reconstruction‚ That doesn't tell us much about how actionable these interpretability insights coming in from essays． 
+所以仅仅测量稀疏性和重构，并不能告诉我们这些可解释性见解来自论文的可行性˳
+
+33
+00:03:45,905 --> 00:03:50,540
+Actually‚ we are going to need to talk about utility． 
+实际上，我们需要谈论效用˳
+
+34
+00:03:54,920 --> 00:04:21,280
+And finally here‚ maybe somewhere in between‚ while people were training essays‚ they have observed many pathologies‚ some weird behavior due to how we train these ass Basically‚ for S training to achieve this sparsity‚ the network starts to do kind of weird things‚ things that we wouldn't actually want to． 
+最后，也许在这两者之间，当人们在训练论文时，他们观察到许多病理，一些奇怪的行为，这是由于我们基本上如何训练这些屁股，为了实现这种稀疏性，网络开始做一些奇怪的事情，我们实际上不想做的事情˳
+
+35
+00:04:21,280 --> 00:04:28,049
+And I know this is not vague and mysterious and who knows what I'm talking about‚ but I'll give you examples． 
+我知道这不是模糊和神秘的，谁知道我在说什么，但我会给你例子˳
+
+36
+00:04:28,049 --> 00:04:33,330
+Very‚ There are certain pathologies and we want to avoid those． 
+非常，有某些病态，我们希望避免这些病态˳
+
+37
+00:04:34,940 --> 00:04:38,170
+So we're going to be talking about those 2． 
+所以我们要谈论这两个˳
+
+38
+00:04:40,220 --> 00:04:45,380
+As I said‚ this is just the most basic way of training essays． 
+正如我所说，这只是训练论文的最基本方法˳
+
+39
+00:04:48,920 --> 00:04:50,780
+So how are we actually train? 
+那么我们实际上是如何训练的呢？
+
+40
+00:04:54,480 --> 00:04:58,067
+This has is is not exactly like this． 
+这并不完全像这样˳
+
+41
+00:04:58,067 --> 00:05:05,641
+So most importantly here‚ we are going to talk about other ways to achieve sparsity． 
+最重要的是，我们将讨论实现稀疏性的其他方法˳
+
+42
+00:05:05,641 --> 00:05:11,580
+That main topic here when we talk about different training vs． 
+当我们谈论不同的培训时，这个主要话题是vs．
+
+43
+00:05:18,820 --> 00:05:26,300
+And yeah‚ one thing I want to mention is that to avoid these pathologies‚ we are going to need to improve how we treat． 
+是的，我想提到的一件事是，为了避免这些病态，我们需要改进我们的治疗方式˳
+
+44
+00:05:26,660 --> 00:05:29,021
+So there is a combination here． 
+所以这里有一个组合˳
+
+45
+00:05:29,021 --> 00:05:34,732
+So basically‚ our goal in today's next lectures is to kind of cover all of this． 
+基本上，我们在今天的下一节课中的目标是涵盖所有这些内容˳
+
+46
+00:05:34,732 --> 00:05:36,116
+And I was struggling． 
+我挣扎着˳
+
+47
+00:05:36,116 --> 00:05:40,500
+This is why I was a little bit late was how exactly to go about this． 
+这就是我迟到的原因，就是如何开始这件事˳
+
+48
+00:05:40,500 --> 00:05:41,583
+Prioritize first． 
+优先顺序第一˳
+
+49
+00:05:41,583 --> 00:05:59,676
+And I think it would be best that we actually build off this page setup and complete how we would generate features and we see what is then the output of one of these essays to kind of get a sense of what are we working with when we train describe features． 
+我认为最好的做法是实际构建这个页面设置并完成我们如何生成功能，然后看看其中一篇文章的输出是什么，以感知我们在训练描述功能时使用的是什么˳
+
+50
+00:05:59,676 --> 00:06:12,144
+Once we do that‚ let's go back into all how we actually evaluate these things‚ because that's going to be a handful of‚ you know‚ tool to talk about different training grounds． 
+一旦我们做到了这一点，让我们回到实际评估这些事情的全部内容，因为这将是少数几个工具，你知道，用于谈论不同的训练场˳
+
+51
+00:06:12,144 --> 00:06:25,840
+Because if I want to change something about‚ then I have to have an evaluation metric that tells me whether my modification is beneficial or not and knowing what kind of metrics to work with is one． 
+因为如果我想要改变某些事情，那么我必须有一个评估指标，告诉我我的修改是否有益，并且知道要使用哪种指标˳
+
+52
+00:06:26,560 --> 00:06:28,785
+So that's the plan for today． 
+这就是今天的计划˳
+
+53
+00:06:28,785 --> 00:06:32,600
+And next time‚ I hope that you guys did recall that． 
+下一次，我希望你们能记住这一点˳
+
+54
+00:06:34,620 --> 00:06:40,660
+I will probably ask you to play around with your own media at some point today． 
+我可能会要求你在今天的某个时候玩弄你自己的媒体˳
+
+55
+00:06:40,880 --> 00:06:46,920
+So any questions before we move into how to describe future directions? 
+在我们开始描述未来方向之前，有什么问题吗？
+
+56
+00:07:03,100 --> 00:07:09,956
+Okay‚ so this is going to be super‚ super new because I did talk about how people try to do melons． 
+好的，所以这将是超级的，超新的，因为我确实谈到了人们如何尝试做甜瓜˳
+
+57
+00:07:09,956 --> 00:07:20,120
+And we actually had at some point on the screen those normalizations of intensity of an neuron and corresponding description． 
+实际上，在屏幕上的某个时刻，我们已经对神经元的强度和相应的描述进行了标准化处理˳
+
+58
+00:07:20,120 --> 00:07:25,680
+This is going to be basically more or less a recap of the have this ctor Z‚ right? 
+这基本上或多或少是对这个ctor Z的回顾，对吧？
+
+59
+00:07:29,420 --> 00:07:30,470
+To be sparse． 
+要稀疏˳
+
+60
+00:07:30,570 --> 00:07:33,470
+So z is going to be a very large． 
+所以z将会非常大˳
+
+61
+00:07:36,020 --> 00:07:43,220
+You have some activations‚ but most of them are going to be 0 because that's how we train． 
+你有一些激活，但大多数都将为0，因为这就是我们训练的方式˳
+
+62
+00:07:51,420 --> 00:08:01,030
+These values that I've just written down here‚ this is just for a single exam input text and a given token． 
+我刚刚在这里写下的这些值，这只是针对单个考试输入文本和给定的令牌˳
+
+63
+00:08:03,960 --> 00:08:10,000
+In a text‚ we will have accumulation of sparse features that it looks like． 
+在文本中，我们将积累它看起来像的稀疏特征˳
+
+64
+00:08:10,840 --> 00:08:12,666
+Let me cover this just one more time． 
+让我再覆盖一次˳
+
+65
+00:08:12,666 --> 00:08:22,020
+I want to make sure that‚ especially if you are not accustomed to the language mode and you have in your ML and deep learning classes‚ worked at the level of the whole． 
+我想确保，特别是如果你不习惯语言模式，你在你的ML和深度学习课程中，在整体水平上工作˳
+
+66
+00:08:26,580 --> 00:08:30,928
+We have actually a representation at every single token． 
+实际上，我们在每一个代币上都有一个代表˳
+
+67
+00:08:30,928 --> 00:08:32,620
+So just to emphasize that． 
+所以只是为了强调这一点˳
+
+68
+00:08:33,920 --> 00:08:43,750
+And we tokenize that text into tokens‚ right in the network can be everything from character to full as somewhere in between． 
+并且我们将该文本标记为令牌，在网络中可以是从字符到完整的介于两者之间的任何东西˳
+
+69
+00:08:43,750 --> 00:08:46,830
+So we have the three‚ so on． 
+所以我们有三个，所以˳
+
+70
+00:08:46,990 --> 00:08:56,840
+So for example‚ a pan‚ that would be an example‚ and when put this nice X? 
+例如，一个平底锅，那就是一个例子，什么时候放这个漂亮的X？
+
+71
+00:09:00,000 --> 00:09:11,180
+Every single one of these tokens will have a stack of representations coming from attention and MLP layers and residual connections‚ right? 
+这些令牌中的每一个都将有一个来自注意力层、MLP层和剩余连接的表示堆栈，对吗？
+
+72
+00:09:12,220 --> 00:09:16,780
+A stack of vector is representing each one of these tokens． 
+一个向量堆栈代表这些令牌中的每一个˳
+
+73
+00:09:18,740 --> 00:09:23,720
+We're going to work with fine residual stream． 
+我们将使用精细的残留流˳
+
+74
+00:09:24,820 --> 00:09:31,120
+At this point‚ you can start thinking about this term that you will keep seeing in this literature‚ residuals． 
+在这一点上，你可以开始思考你将在文献中看到的这个术语，残差˳
+
+75
+00:09:31,820 --> 00:09:40,660
+Most intuitively‚ you can think about it as this stack of vector is that we are producing as we transform representation． 
+最直观的是，你可以把它想象成我们在转换表示时产生的这个向量堆栈˳
+
+76
+00:09:46,840 --> 00:09:49,390
+But at some point． 
+但是在某个时候˳
+
+77
+00:09:51,420 --> 00:09:54,240
+I'm going to divide it more mathematically． 
+我将更精确地划分它˳
+
+78
+00:09:55,620 --> 00:10:02,501
+So you can think about it as a vector space where all these representation of your token live． 
+因此，您可以将其视为一个向量空间，其中所有这些表示您令牌的表示都在其中˳
+
+79
+00:10:02,501 --> 00:10:11,407
+And because these transformations are mostly linear‚ you can think about them as reading and writing out of the string． 
+由于这些转换大多是线性的，你可以把它们看作是字符串的读写˳
+
+80
+00:10:11,407 --> 00:10:15,098
+But again‚ we are going to formally define it for now． 
+但是，我们现在要正式定义它˳
+
+81
+00:10:15,098 --> 00:10:21,460
+When it's a residual stream‚ we are basically using a tensive term to refer to a token． 
+当它是一个剩余流时，我们基本上使用了一个广泛的术语来指代令牌˳
+
+82
+00:10:26,920 --> 00:10:38,200
+So here‚ when I say I have produced z‚ that means that I have passed one of these‚ you know‚ breaking says‚ let's say this． 
+所以在这里，当我说我已经产生了z，这意味着我已经通过了其中的一个，你知道，打破说，让我们说这个˳
+
+83
+00:10:40,440 --> 00:10:45,884
+A head set and for said I now am getting residual stream． 
+一个头套，对于所说的我现在正在获得残留流˳
+
+84
+00:10:45,884 --> 00:11:00,770
+And remember that due to a causal mass tention‚ the to previous focus are going to influence representation of the token representation of set． 
+并记住，由于因果质量意图，先前的焦点将影响集合的令牌表示的表示˳
+
+85
+00:11:00,770 --> 00:11:09,780
+Okay‚ so I have a prefix last‚ so can in that prefix‚ that's what I'm representing． 
+好的，所以我有一个前缀最后，所以可以在那个前缀中，这就是我所代表的˳
+
+86
+00:11:11,000 --> 00:11:14,355
+I get some filter representation． 
+我得到了一些过滤器的表示˳
+
+87
+00:11:14,355 --> 00:11:21,400
+I only it noly transform it z‚ and I get this vector‚ is that there? 
+我只是把它转换成z，然后我得到这个向量，在那里吗？
+
+88
+00:11:22,320 --> 00:11:25,702
+Okay‚ so I can do that many times‚ right? 
+好的，我可以这么做很多次，对吧？
+
+89
+00:11:25,702 --> 00:11:35,580
+I can do this z‚ z‚ I could get zip 1‚ z equal token 2‚ z equal token． 
+我可以做到z，z，我可以得到zip 1，z等于令牌2，z等于令牌˳
+
+90
+00:11:37,830 --> 00:11:40,550
+For token‚ let's say one minute‚ right‚ so． 
+作为令牌，假设一分钟，对吧˳
+
+91
+00:11:43,120 --> 00:11:53,540
+Vector CC and my goal is to describe what the dimension of the z read‚ What does it activates． 
+向量CC，我的目标是描述z的维度读取什么，它激活什么˳
+
+92
+00:11:54,780 --> 00:11:59,980
+Let's say I focus on this first image 1‚ which is B? 
+假设我专注于第一个图像1，它是B？
+
+93
+00:12:02,420 --> 00:12:07,120
+Third term I want to introduce is latent philosophy in this literature． 
+我想介绍的第三个术语是本文中的潜在哲学˳
+
+94
+00:12:09,420 --> 00:12:19,410
+Features that are aligned with these dimensions as features‚ concepts‚ latents‚ because they are hidden‚ right? 
+与这些维度对齐的特征，如特征、概念、潜在特征，因为它们是隐藏的，对吗？
+
+95
+00:12:19,420 --> 00:12:22,270
+We don't explicitly observe what is feature． 
+我们没有明确观察什么是特征˳
+
+96
+00:12:22,750 --> 00:12:26,440
+No one has first defined it‚ and then we observe its activation． 
+没有人首先定义它，然后我们观察它的激活˳
+
+97
+00:12:26,460 --> 00:12:27,170
+Rather we need to find its meaning． 
+相反，我们需要找到它的意义˳
+
+98
+00:12:29,020 --> 00:12:33,580
+This is also going to be called latent number one． 
+这也将被称为潜在的第一号˳
+
+99
+00:12:35,260 --> 00:12:51,588
+Okay‚ so I have focused on‚ I have produced a bunch of these vector is‚ but I'm actually interested in how active is the first dimension in this vector‚ meaning to the first feature． 
+好的，所以我专注于，我已经产生了一堆这些向量，但实际上我对这个向量的第一维度有多活跃感兴趣，这意味着第一个特征˳
+
+100
+00:12:51,588 --> 00:12:57,100
+So I can see which one of these tokens actually acts． 
+这样我就可以看到这些令牌中哪个令牌真正起作用了˳
+
+101
+00:12:57,560 --> 00:13:02,810
+When is z 1 larger than 0‚ right? 
+什么时候z1比0大，对吗？
+
+102
+00:13:02,810 --> 00:13:09,787
+And typical larger than just slightly than 0 is sufficient． 
+并且典型的略大于0就足够了˳
+
+103
+00:13:09,787 --> 00:13:16,672
+However‚ soon any about jump wheel larger than some small threshold． 
+然而，很快就会有任何比一些小阈值更大的跳轮˳
+
+104
+00:13:16,672 --> 00:13:18,267
+So you don't want some． 
+所以你不想要一些˳
+
+105
+00:13:18,267 --> 00:13:26,935
+So sometimes you can have very and it would say‚ well‚ the feature is activated by that． 
+所以有时候你可以拥有非常，它会说，嗯，这个功能被激活了˳
+
+106
+00:13:26,935 --> 00:13:35,320
+That can just be no‚ I check when this Z 1 is larger than 0 and this will get me‚ let's call it a． 
+这可能是不行，我会检查这个Z 1何时大于0，这将让我称之为a˳
+
+107
+00:13:39,270 --> 00:13:48,980
+All tokens such that z one of that token is larger than 0． 
+所有令牌使得其中一个令牌大于0˳
+
+108
+00:13:51,100 --> 00:13:53,550
+So I get this now． 
+所以我现在明白了˳
+
+109
+00:13:54,620 --> 00:14:12,060
+Any idea how can how I can fine pattern tokens that activate the first dimension to then assign some human readable meaning to the first edition? 
+任何想法我怎么能激活第一维度的精细模式令牌，然后为第一版分配一些人类可读的含义？
+
+110
+00:14:25,270 --> 00:14:26,100
+Totally‚ yeah． 
+完全，是的˳
+
+111
+00:14:26,770 --> 00:14:34,980
+One option could be to show tokens to a person and ask them‚ hey‚ what do you think? 
+一种选择可以是向一个人展示代币，然后问他们，嘿，你怎么想？
+
+112
+00:14:35,260 --> 00:14:36,476
+I turn this here? 
+我把这个转到这里？
+
+113
+00:14:36,476 --> 00:14:38,908
+I really want to talk this away． 
+我真的想把这件事谈一谈˳
+
+114
+00:14:38,908 --> 00:14:44,590
+So close my Hermione‚ but I call the pressure 1． 
+关闭我的赫敏，但我叫压力1˳
+
+115
+00:14:46,020 --> 00:14:52,760
+We can have all these tokens‚ then activate the first dimension and have someone look at． 
+我们可以拥有所有这些令牌，然后激活第一维度并让某人查看˳
+
+116
+00:14:52,940 --> 00:15:03,232
+I would just add to this great idea that instead of showing token individually‚ we show it in the context of the text in appearance． 
+我只想补充这个伟大的想法，我们不是单独显示令牌，而是在外观文本的背景下显示它˳
+
+117
+00:15:03,232 --> 00:15:14,632
+So if I had T 1‚ t 2 t before‚ I would show activation z 1‚ every single one of these tokens． 
+所以，如果我之前有T 1，t 2 t，我会显示激活z 1，这些令牌中的每一个˳
+
+118
+00:15:14,632 --> 00:15:18,341
+So let's say here we have 0‚ 0‚ 103． 
+那么假设这里有0，0，103˳
+
+119
+00:15:18,341 --> 00:15:23,685
+And so‚ and instead of showing this number‚ I would actually highlight the token‚ right? 
+所以，我并没有显示这个数字，而是突出显示了这个令牌，对吧？
+
+120
+00:15:23,685 --> 00:15:26,712
+So here token‚ what will be highlight highlighted here? 
+所以在这里标记，这里突出显示的是什么？
+
+121
+00:15:26,712 --> 00:15:33,865
+It would be really bright‚ let's say bright green‚ and here would be like very‚ very light‚ light‚ light． 
+它会非常明亮，让我们说明亮的绿色，这里会非常非常轻，很轻˳
+
+122
+00:15:33,865 --> 00:15:36,592
+Okay‚ so we can visualize that． 
+好的，我们可以想象出来˳
+
+123
+00:15:36,592 --> 00:15:39,320
+I will show you how this looks like． 
+我会向您展示它的样子˳
+
+124
+00:15:41,700 --> 00:15:46,180
+Oh‚ I was just going to have‚ do we have an Lon do this for us? 
+哦，我只是想，我们有个Lon为我们做这件事吗？
+
+125
+00:15:46,180 --> 00:15:47,020
+Exactly‚ right． 
+没错，没错˳
+
+126
+00:15:47,020 --> 00:15:51,073
+The issue here is that who will look at them into all of this? 
+这里的问题是，谁会对他们进行调查？
+
+127
+00:15:51,073 --> 00:15:55,200
+You are going to start work with a really‚ really huge scale． 
+你将以一个非常非常大的规模开始工作˳
+
+128
+00:15:55,620 --> 00:16:06,848
+We will‚ let's say bra is not here today‚ he's bringing one of these and he passed‚ let's say 7 trillion tokens‚ okay? 
+我们会，假设今天胸罩不在这里，他带来了其中一个，然后他通过了，比如说7万亿个代币，好吗？
+
+129
+00:16:06,848 --> 00:16:29,380
+They are going to be filtered‚ but even if you're left with 1 million‚ describe 1‚ 1 dimension‚ and we will actually add every single MLP block and there will be like 20 of them in a transformer‚ it will be so one option is human looks into the． 
+它们将被过滤，但即使你只剩下100万，描述1，1个维度，我们实际上会添加每个MLP块，并且在变压器中有大约20个，那么一个选择就是人类会查看它们˳
+
+130
+00:16:32,850 --> 00:16:36,880
+But today you will always use an llang． 
+但今天你将始终使用llang˳
+
+131
+00:16:48,400 --> 00:16:54,920
+This token pattern stuff‚ obviously for like a human analysis‚ it'd be a lot easier for a human． 
+这种令牌模式的东西，显然对于人类分析来说，对于人类来说会容易得多˳
+
+132
+00:16:56,000 --> 00:17:03,882
+The tokens were a bit more definite‚ like in an Ie case of like a light space tokenizer‚ each token is saying word． 
+这些令牌更加明确，就像在一个类似于轻型空间令牌器的Ie案例中，每个令牌都在说单词˳
+
+133
+00:17:03,882 --> 00:17:15,820
+But since we have more sophisticated tokenizer‚ you might tokens is less easily perceptible things‚ Would an llum be better at that sort of analysis? 
+但是由于我们有更复杂的代币化器，代币可能不太容易察觉，在这种分析方面，lum会更好吗？
+
+134
+00:17:17,060 --> 00:17:30,740
+It was something that I completely forgot about‚ but actually‚ if the person was looking at it would be easier or better to look into full words． 
+这是我完全忘记的事情，但实际上，如果这个人在看，看完整的单词会更容易或更好˳
+
+135
+00:17:30,740 --> 00:17:33,860
+And there is a way you can have that‚ right? 
+你可以有办法做到这一点，对吧？
+
+136
+00:17:36,040 --> 00:17:42,587
+Exactly‚ do this or when when I will show you a little open app highlighting them． 
+确切地说，请这样做，或者当我向您展示一些开放的应用程序时，突出它们˳
+
+137
+00:17:42,587 --> 00:17:57,980
+It still works on a word level‚ so I would assume you still have from your to there information about which suburb is part of a full work because the tokenizer basically has three tokenization into words and then every word is． 
+它仍然可以在单词级别上工作，所以我假设你仍然可以从你那里得到有关哪个郊区是完整工作的一部分的信息，因为令牌化器基本上有三个符号化成单词，然后每个单词都是˳
+
+138
+00:18:00,000 --> 00:18:12,900
+So you still can say‚ okay‚ this support‚ this part of the folder‚ okay‚ let's say these are three parts of 1 word and we 000． 
+所以你仍然可以说，好的，这个支持，文件夹的这一部分，好的，假设这是一个单词的三个部分，我们000˳
+
+139
+00:18:12,900 --> 00:18:17,380
+Maybe you can combine them into a whole world and then highlight it with the． 
+也许你可以将它们组合成一个完整的世界，然后用它来突出它˳
+
+140
+00:18:22,500 --> 00:18:30,803
+I think people probably do this if a person is looking into this‚ but I think it's better stay at the suburb level． 
+我认为如果有人正在研究这个，人们可能会这样做，但我认为最好留在郊区˳
+
+141
+00:18:30,803 --> 00:18:38,640
+But because it could be the actual suburb‚ let's say some suing sort the dry here‚ right? 
+但是因为它可能是实际的郊区，让我们说一些起诉在这里干燥，对吗？
+
+142
+00:18:38,640 --> 00:18:44,663
+So I think highlighting on a level probably better． 
+所以我认为突出一个层次可能更好˳
+
+143
+00:18:44,663 --> 00:18:56,192
+But now when I think about all of these highlighting that we are going to see‚ it's done a maybe it's just done for the sake of interpretability if someone's looking at it． 
+但是现在当我想到我们将要看到的所有这些突出显示时，它已经完成了，也许它只是为了可解释性而完成的，如果有人在看它˳
+
+144
+00:18:56,192 --> 00:18:59,183
+But in terms of actual analysis‚ it may still be‚ yeah． 
+但从实际分析来看，可能仍然是这样˳
+
+145
+00:18:59,183 --> 00:19:03,666
+But this brings us to one important point in interpretability． 
+但这就引出了可解释性中的一个重要问题˳
+
+146
+00:19:03,666 --> 00:19:20,020
+We need to be cautious that we don't twe what is actually happening inside neural networks in a way that people can digest because it can happen that they are doing something quite different from what we are doing． 
+我们需要谨慎，不要以人们可以理解的方式理解神经网络内部实际发生的事情，因为它们可能正在做与我们完全不同的事情˳
+
+147
+00:19:20,660 --> 00:19:23,205
+This is called confirmation bias． 
+这被称为确认偏见˳
+
+148
+00:19:23,205 --> 00:19:32,625
+You have an idea of what this could mean‚ so you prescribe that meaning to it‚ whereas it can be something completely different． 
+你知道这可能意味着什么，所以你规定了它的含义，而它可以是完全不同的东西˳
+
+149
+00:19:32,625 --> 00:19:46,180
+It's just that we don't think about the solely things in that way‚ we kind of ignore that possibility that the location you are right‚ that probably people are highlighting this at the word level． 
+只是我们没有以那种方式考虑单独的事情，我们有点忽略了你所在的位置是正确的可能性，可能人们在单词级别上强调了这一点˳
+
+150
+00:19:50,020 --> 00:19:51,447
+What could happen? 
+会发生什么？
+
+151
+00:19:51,447 --> 00:19:53,732
+But we need to be cautious． 
+但是我们需要谨慎˳
+
+152
+00:19:53,732 --> 00:19:55,160
+Cautious to not． 
+谨慎地避免˳
+
+153
+00:19:55,620 --> 00:19:59,980
+We can do too much just because we are bounded by what we can understand． 
+我们能做的太多了，只是因为我们被我们所能理解的东西所束缚˳
+
+154
+00:20:02,000 --> 00:20:05,330
+Yeah‚ I have kind of two questions． 
+是的，我有两个问题˳
+
+155
+00:20:05,330 --> 00:20:15,680
+First off is whether there's any work‚ whether llds finding these patterns do better than use the same tokenization? 
+首先是是否有任何工作，是否发现这些模式比使用相同的符号化做得更好？
+
+156
+00:20:17,700 --> 00:20:20,586
+I break it down into a similar pattern． 
+我把它分成类似的模式˳
+
+157
+00:20:20,586 --> 00:20:28,900
+And the second is how we evaluate the quality of the patterns that are found to be able to say whether something's better or worse． 
+第二个是我们如何评估模式的质量，这些模式能够说明某件事情是好还是坏˳
+
+158
+00:20:29,020 --> 00:20:33,580
+About the second question about evaluation in a bit． 
+关于第二个关于评估的问题˳
+
+159
+00:20:35,040 --> 00:20:37,400
+It's a really interesting talk． 
+这是一次非常有趣的谈话˳
+
+160
+00:20:37,400 --> 00:20:39,760
+I haven't‚ personally seen work． 
+我个人没有看过工作˳
+
+161
+00:20:44,420 --> 00:20:45,496
+A very broad field． 
+一个非常广泛的领域˳
+
+162
+00:20:45,496 --> 00:20:48,726
+And I myself are still learning a lot about this． 
+我自己对此仍在学习很多˳
+
+163
+00:20:48,726 --> 00:21:02,922
+It's a really interesting talk‚ llen itself works with the tokenization‚ and now we have tokenization coming from Nm‚ for which we are producing an SSA form to interpret that model． 
+这是一个非常有趣的演讲，len本身与符号化一起工作，现在我们有来自Nm的符号化，我们正在为其制作一个SSA表格来解释该模型˳
+
+164
+00:21:02,922 --> 00:21:04,800
+That can be for example Gema． 
+这可以是例如Gema˳
+
+165
+00:21:04,960 --> 00:21:15,820
+And at the same time we are going to use some other LLM‚ which will certainly have different tokenization‚ such as GPT 5‚ to describe patterns of． 
+同时，我们将使用一些其他大语言模型，它们肯定会有不同的符号化，比如GPT 5来描述模式˳
+
+166
+00:21:16,740 --> 00:21:23,920
+So‚ yeah‚ I can imagine this brings some‚ again‚ pathology‚ some weird leaders． 
+所以，是的，我可以想象这又带来了一些病理学，一些奇怪的领导者˳
+
+167
+00:21:23,920 --> 00:21:27,340
+It's a good project idea as well to see whether the． 
+这也是一个好主意，看看是否˳
+
+168
+00:21:32,620 --> 00:21:37,180
+Yeah‚ keeping in mind your second question about evaluation will come to that． 
+是的，记住你关于评估的第二个问题会得出这样的结果˳
+
+169
+00:21:38,380 --> 00:21:40,038
+Is this clear? 
+明白了吗？
+
+170
+00:21:40,038 --> 00:21:42,940
+It's‚ I think‚ becoming clear． 
+我想，这变得越来越清晰了˳
+
+171
+00:21:46,810 --> 00:21:48,630
+The visualizations． 
+这些可视化˳
+
+172
+00:21:49,090 --> 00:21:51,370
+Okay‚ maybe let's go into visualizations． 
+好吧，也许让我们进入可视化˳
+
+173
+00:21:51,790 --> 00:21:55,060
+And then we are going to come to a question． 
+然后我们会提出一个问题˳
+
+174
+00:21:55,060 --> 00:21:59,900
+That question was asked‚ which is about how do we evaluate it? 
+这个问题被问到，关于我们如何评估它？
+
+175
+00:26:20,680 --> 00:26:34,320
+These visualizations‚ they work not with sparse activations‚ but rather activations that come from the original representation correctly． 
+这些可视化，它们不是与稀疏激活一起工作，而是与正确来自原始表示的激活一起工作˳
+
+176
+00:26:34,320 --> 00:26:37,340
+But the mechanism is the same after that． 
+但之后的机制是一样的˳
+
+177
+00:26:37,340 --> 00:26:44,420
+So here we are visualizing neurons‚ what this kind of visualization would look like． 
+所以我们在这里可视化神经元，这种可视化会是什么样子˳
+
+178
+00:26:44,900 --> 00:26:46,040
+Similar for spars． 
+与桅杆类似˳
+
+179
+00:26:49,240 --> 00:26:53,605
+Features I will come back to the why I'm having that log． 
+功能，我会回到为什么我有那个日志˳
+
+180
+00:26:53,605 --> 00:26:58,200
+I wanted to show you the kind of prompt people are using‚ but let me jump into NP． 
+我想向您展示人们正在使用的提示类型，但让我跳转到NP˳
+
+181
+00:26:58,630 --> 00:27:16,064
+Neurobiological R is a flat ability of llds‚ and it covers a bunch of things you will find useful gemas co-petitioner produced by from DeepMind‚ and then they train． 
+神经生物学R是llds的一种平坦能力，它涵盖了一堆你会发现有用的gemas共同申请者从DeepMind中产生的东西，然后他们进行训练˳
+
+182
+00:27:16,064 --> 00:27:20,495
+They have code for training essays and essays are trained． 
+他们有训练论文的代码，而论文是经过训练的˳
+
+183
+00:27:20,495 --> 00:27:28,660
+These features from their essays appear on neuron kind of interplays between different libraries and network． 
+他们论文中的这些特征表现在不同图书馆和网络之间的神经元相互作用中˳
+
+184
+00:27:31,130 --> 00:27:33,370
+Everything produced from other libraries． 
+一切都是从其他图书馆产生的˳
+
+185
+00:27:34,300 --> 00:27:35,880
+And you can you． 
+你可以˳
+
+186
+00:27:38,780 --> 00:27:39,310
+But‚ this? 
+但是，这个？
+
+187
+00:27:41,740 --> 00:27:45,401
+Interface is also features of essays． 
+界面也是文章的特点˳
+
+188
+00:27:45,401 --> 00:27:53,081
+So for example‚ here we can decide what model do we want to interpret． 
+因此，例如，在这里我们可以决定我们想要解释什么模型˳
+
+189
+00:27:53,081 --> 00:28:01,992
+So here we are looking into specific model whose representations we are reconstructing with an essay． 
+因此，在这里，我们正在研究特定的模型，我们正在通过一篇文章重建其表征˳
+
+190
+00:28:01,992 --> 00:28:15,140
+For example‚ you could choose Gen 2‚ there is GPT assess‚ which is the open source model that OpenAI has released somewhat recently‚ and so and so on． 
+例如，您可以选择第二代，有GPT评估，这是OpenAI最近发布的开源模型，等等˳
+
+191
+00:28:15,140 --> 00:28:23,800
+So maybe let's speak with Gemma and basically deciding on which Sae you are going to choose． 
+所以，也许让我们和杰玛谈谈，基本上决定你要选择哪个Sae˳
+
+192
+00:28:25,140 --> 00:28:31,500
+Gema scope means these essays that have been released with the JAMA School‚ the library． 
+Gema范围指的是这些在JAMA学校和图书馆发布的论文˳
+
+193
+00:28:33,880 --> 00:28:45,800
+Brush is referring to residual stream‚ meaning that the representation from the residual stream I take to the reconstructive‚ the 16K refers to the number of features that are going． 
+刷子指的是残差流，这意味着我从残差流到重构的表示，16k指的是要进行的特征数量˳
+
+194
+00:28:46,920 --> 00:28:51,800
+So click that and you can examine all layers or specific． 
+因此，单击该选项，您可以检查所有层或特定层˳
+
+195
+00:28:56,860 --> 00:28:58,580
+Learning about es? 
+学习关于es？
+
+196
+00:29:01,780 --> 00:29:01,830
+Search． 
+搜索˳
+
+197
+00:29:04,300 --> 00:29:13,382
+So now here on you can click on‚ first of all‚ this is our text brand‚ but it's actually tokenized like this． 
+所以现在你可以点击，首先，这是我们的文本品牌，但它实际上是像这样标记化的˳
+
+198
+00:29:13,382 --> 00:29:24,305
+We have a beginning of sequence tokens‚ and then we have different essays are broken into two subs‚ right? 
+我们有一个序列标记的开头，然后我们有不同的文章分成两个子部分，对吧？
+
+199
+00:29:24,305 --> 00:29:31,160
+And we can call a specific token because remember what I said here‚ every token has its own rules． 
+我们可以调用特定的令牌，因为请记住我在这里所说的，每个令牌都有自己的规则˳
+
+200
+00:29:32,180 --> 00:29:38,193
+So you can examine what's happening at Dys or link you want． 
+这样你就可以检查Dys上发生的事情或你想要的链接˳
+
+201
+00:29:38,193 --> 00:29:50,520
+And you can also click what's going on with with kind of old tokens‚ taking the insights from what's important at every to level and then in some way． 
+并且您还可以点击旧令牌发生了什么，从每个级别的重要信息中获取见解，然后以某种方式获取见解˳
+
+202
+00:29:51,000 --> 00:29:51,540
+So how about? 
+那么怎么样？
+
+203
+00:29:54,500 --> 00:29:54,910
+We apa‚ maybe? 
+也许我们是apa？
+
+204
+00:29:58,390 --> 00:29:59,900
+And see what's going on here． 
+看看这里发生了什么˳
+
+205
+00:30:01,600 --> 00:30:04,780
+I think you need to really only search 1 to ．2． 
+我认为你只需要搜索1到．2˳
+
+206
+00:30:09,320 --> 00:30:11,073
+This is what happens． 
+这就是发生的事情˳
+
+207
+00:30:11,073 --> 00:30:21,500
+So for a token A we have‚ so here‚ this is referring to 25th layer of the Gema transformer． 
+因此，对于我们拥有的令牌，这里指的是Gema变压器的第25层˳
+
+208
+00:30:22,020 --> 00:30:26,960
+So we have transformer‚ a pre trained language model called Gemma B the． 
+所以我们有了transformer，一个预先训练的语言模型，叫做Gemma B˳
+
+209
+00:30:30,890 --> 00:30:32,570
+And this is where we have placed． 
+这就是我们放置的地方˳
+
+210
+00:30:35,160 --> 00:30:51,293
+So we have weights‚ encoder rate‚ matrix decoder‚ weight matrix that specialize for representations that come from the 25th layer of the Gema to 2 billion Gema scope． 
+因此，我们有权重、编码器率、矩阵解码器、专门用于从Gema的第25层到20亿Gema范围的表示的权重矩阵˳
+
+211
+00:30:51,293 --> 00:30:54,450
+Refer again to this essay was produced by Gemma Scope． 
+再次提到这篇文章是由杰玛·范围发表的˳
+
+212
+00:30:54,450 --> 00:31:03,620
+We are taking a digital stream where we have 16000 features and we are looking feature 955． 
+我们正在采用数字流，其中我们有16000个功能，我们正在寻找功能955˳
+
+213
+00:31:03,620 --> 00:31:09,920
+This feature‚ $955 has description generated by an L? 
+这个功能，955美元的描述是由一个L生成的？
+
+214
+00:31:14,560 --> 00:31:24,380
+And then when we look into this picture‚ you can click on it‚ get more information about the feature itself outside of the context of this specific． 
+当我们查看这张图片时，您可以点击它，获取有关此特定上下文之外的功能本身的更多信息˳
+
+215
+00:31:25,880 --> 00:31:31,380
+So first thing you hear on the left‚ you can see how this description was generated． 
+所以你在左边听到的第一件事是，你可以看到这个描述是如何生成的˳
+
+216
+00:31:31,520 --> 00:31:37,980
+And you will see here it is generated with a GPT 400 and mean． 
+在这里你会看到它是用GPT 400和平均值生成的˳
+
+217
+00:31:41,330 --> 00:31:42,740
+And you can here change． 
+你可以在这里改变˳
+
+218
+00:31:43,200 --> 00:31:50,536
+You can change language mode‚ new‚ new‚ description． 
+您可以更改语言模式，新，新，描述˳
+
+219
+00:31:50,536 --> 00:31:54,653
+So let's say‚ okay‚ I need to log in． 
+所以让我们说，好的，我需要登录˳
+
+220
+00:31:54,653 --> 00:31:56,280
+I don't want to do that． 
+我不想这么做˳
+
+221
+00:32:00,150 --> 00:32:00,980
+Know you can with with neuralia you? 
+你知道你可以用neuralia吗？
+
+222
+00:32:04,980 --> 00:32:11,301
+Can‚ you know‚ look how these descriptions will change if you choose another language model? 
+你知道，如果你选择另一种语言模型，看看这些描述将如何变化？
+
+223
+00:32:11,301 --> 00:32:12,560
+Long GBT 4 over here． 
+这里有长长的GBT 4˳
+
+224
+00:32:12,880 --> 00:32:14,557
+Now let me through． 
+现在让我通过˳
+
+225
+00:32:14,557 --> 00:32:37,450
+I will come back to this‚ but I want to show this where examples that we have passed through Sae‚ those are the examples we pass through Sa by how strongly some token activates‚ this particular feature like specific or GE model． 
+我会回到这里，但我想展示一下我们通过Sae传递的示例，这些是我们通过Sae传递的示例，取决于某些令牌激活的强度，这个特定功能，如特定或GE模型˳
+
+226
+00:32:37,630 --> 00:32:40,130
+So here you can see． 
+所以在这里你可以看到˳
+
+227
+00:32:43,480 --> 00:32:46,068
+Rude‚ let me skip that one． 
+粗鲁的，让我跳过那个˳
+
+228
+00:32:46,068 --> 00:32:49,520
+Okay‚ see‚ I didn't practice this． 
+好吧，你看，我没有练习这个˳
+
+229
+00:32:53,990 --> 00:32:55,530
+But here‚ I think this is． 
+但是在这里，我认为这是˳
+
+230
+00:33:05,260 --> 00:33:14,212
+Okay‚ so you can see that‚ first of all‚ you can see that not every token in a snippets is highly active‚ right? 
+好的，所以你可以看到，首先，你可以看到并不是片段中的每个令牌都高度活跃，对吧？
+
+231
+00:33:14,212 --> 00:33:19,667
+We have only a few of them and some of them are really good‚ highly active． 
+我们只有几个，其中一些真的很好，非常活跃˳
+
+232
+00:33:19,667 --> 00:33:22,900
+So for example‚ this one here． 
+例如，这里的这个˳
+
+233
+00:33:27,620 --> 00:33:28,633
+Agree with that? 
+同意吗？
+
+234
+00:33:28,633 --> 00:33:32,180
+Supplement this token highly activate this feature． 
+补充此令牌，高度激活此功能˳
+
+235
+00:33:39,180 --> 00:33:51,120
+So when we given the llum token activation and token activation‚ right‚ it has seen all of these tokens and activations． 
+所以当我们提供lum令牌激活和令牌激活时，它已经看到了所有这些令牌和激活˳
+
+236
+00:33:51,120 --> 00:34:07,120
+And then it had produced this inion expressions of a stark excitement or strong actions‚ which kind of compass all of these particular tokens like Ha． 
+然后它产生了这种强烈兴奋或强烈行动的信息表达，这种表达方式涵盖了所有这些特定的代币，比如Ha˳
+
+237
+00:34:11,800 --> 00:34:12,640
+Are these tokens? 
+这些是代币吗？
+
+238
+00:34:16,360 --> 00:34:20,920
+That found patterns previously with those that． 
+发现了之前那些的模式˳
+
+239
+00:34:26,880 --> 00:34:34,120
+So your question is whether these tokens that are quite active‚ like are active． 
+所以你的问题是这些相当活跃的代币是否活跃˳
+
+240
+00:34:38,420 --> 00:34:45,092
+Features like the one here they expression was fired for by original modeler． 
+像这里这样的功能，他们的表达式是由原始建模者触发的˳
+
+241
+00:34:45,092 --> 00:34:52,100
+And for I guess my question is just what makes them‚ what makes them? 
+我想我的问题是，是什么造就了他们，是什么造就了他们？
+
+242
+00:34:52,820 --> 00:34:55,655
+Let me go all the way back from‚ right? 
+让我从后面一直走，对吗？
+
+243
+00:34:55,655 --> 00:34:59,120
+So we have some LLM in this case we have． 
+所以在这种情况下，我们有一些大语言模型˳
+
+244
+00:35:02,420 --> 00:35:08,460
+It's pretrained on a bunch of texts‚ and it's capable of completing prompts‚ right? 
+它预先训练了一堆文本，并且能够完成提示，对吗？
+
+245
+00:35:12,560 --> 00:35:14,900
+It was pretrained model objective． 
+这是预先训练的模型目标˳
+
+246
+00:35:14,900 --> 00:35:25,840
+And it had learned all‚ all sorts of‚ you know‚ features of language to be able to know what is the probable cooperation of a given piece of text‚ right? 
+它已经学习了所有各种各样的语言特征，以便能够知道某一段文本可能的合作是什么，对吧？
+
+247
+00:35:26,200 --> 00:35:47,296
+Our hypothesis could be that people learn all these features like‚ oh‚ in this text‚ there is strong emotional expression‚ for example‚ but we don't have access to those‚ just kind of have a hunch that these kinds of patterns for explicit find． 
+我们的假设可能是人们学习所有这些特征，例如，在这篇文本中，有强烈的情感表达，但我们没有机会获得这些特征，只是有一种预感，这些模式可以用于显式发现˳
+
+248
+00:35:47,296 --> 00:35:54,328
+And those patterns think you are right patterns by the original Gema model． 
+这些模式认为你是原始Gema模式下的正确模式˳
+
+249
+00:35:54,328 --> 00:36:01,610
+But we have no idea to say that it clearly is better now that we have introduced A with this whole process． 
+但是我们不知道现在我们已经引入了整个流程，这显然更好˳
+
+250
+00:36:02,280 --> 00:36:11,420
+Now we know‚ oh‚ we did learn the pattern of a concept of expression of excitement from spirit training． 
+现在我们知道，哦，我们确实从精神训练中学到了兴奋表达概念的模式˳
+
+251
+00:36:11,420 --> 00:36:14,630
+And we now see when the jury． 
+我们现在看到陪审团的情况˳
+
+252
+00:36:18,110 --> 00:36:22,340
+Is I feel like there is something funny on this? 
+我觉得这里有什么好笑的吗？
+
+253
+00:36:22,340 --> 00:36:23,780
+Okay‚ let me move it away． 
+好的，让我把它移开˳
+
+254
+00:36:26,980 --> 00:36:28,820
+I should have found something super boring． 
+我应该找到一些超级无聊的东西˳
+
+255
+00:36:33,220 --> 00:36:41,420
+I just now noticed something interesting‚ and it's the way that these tokens are having these activations． 
+我刚刚注意到一些有趣的事情，这就是这些令牌具有这些激活的方式˳
+
+256
+00:36:46,850 --> 00:36:52,505
+In languages‚ there were some strings in there that were like in German and French． 
+在语言中，有一些字符串类似于德语和法语˳
+
+257
+00:36:52,505 --> 00:37:08,096
+And now at the bottom right here‚ you know‚ at the very bottom‚ you see there's one in‚ we scroll down at the bottom‚ one of the last examples here‚ we see there's an activation being done for‚ yeah‚ we are Japanese． 
+现在在这里的底部，你知道，在最底部，你看到有一个在里面，我们在底部向下滚动，这里的最后一个例子之一，我们看到有一个激活正在进行，是的，我们是日本人˳
+
+258
+00:37:08,096 --> 00:37:14,030
+To me people‚ it's interesting how that's being activated． 
+对我来说，有趣的是它是如何被激活的˳
+
+259
+00:37:14,030 --> 00:37:50,980
+I'm wondering if the model recognizes that that character corresponds to a term of excitement like you have in English or some other language‚ or if it's just determining things on a like‚ Yeah‚ so here keep in mind that we model that producing the pattern itself also is a multilingual language model it has capability of processing this language‚ most likely． 
+我想知道这个模型是否识别出这个字符对应于一个像英语或其他语言中那样令人兴奋的术语，或者它是否只是在确定事情，所以在这里请记住，我们建模的模式本身也是一种多语言语言模型，它很可能具有处理这种语言的能力˳
+
+260
+00:37:53,380 --> 00:37:57,940
+I don't know how much of the data of this language GPT-4 really have． 
+我不知道这种语言的数据GPT-4真正有多少˳
+
+261
+00:37:59,040 --> 00:38:10,553
+I speculated processing piece of text and making a connection of why this character here and relative to all the other talk has been． 
+我推测处理一段文本并将这个角色与所有其他谈话的相对位置联系起来˳
+
+262
+00:38:10,553 --> 00:38:12,415
+So I don't speak this language． 
+所以我不会说这种语言˳
+
+263
+00:38:12,415 --> 00:38:19,340
+I don't know excitement‚ but that's one possibility． 
+我不知道兴奋是什么，但那是一种可能性˳
+
+264
+00:38:22,020 --> 00:38:26,580
+The legal question is‚ we have different languages‚ right? 
+法律问题是，我们有不同的语言，对吧？
+
+265
+00:38:27,620 --> 00:38:34,700
+What happens with the original model that? 
+原始模型发生了什么？
+
+266
+00:38:37,440 --> 00:38:48,180
+It's feature of emotional expression‚ but it can learns it with rather than emotional expression in English‚ emotional expression in German‚ you know? 
+它是情感表达的特征，但它可以学习它，而不是用英语，德语情感表达，你知道吗？
+
+267
+00:38:52,980 --> 00:38:55,360
+That's an interesting question． 
+这是个有趣的问题˳
+
+268
+00:39:00,280 --> 00:39:11,780
+So is it the case that these kind of features‚ in this case‚ if motions‚ so is it model specific or like‚ has it been observed that? 
+那么，这些特征是否在这种情况下，如果是运动，那么它是特定于模型或类似模型的，是否被观察到？
+
+269
+00:39:20,620 --> 00:39:29,630
+Features that lessons learned from Gema glamma o‚ whatever GPT are around the same? 
+从Gema glamma o中学到的功能，无论哪个GPT都是一样的？
+
+270
+00:39:31,620 --> 00:39:52,923
+I don't think there will be exactly the same‚ but there will probably be lots of sheer pictures because the data we use for pre-eternal these model‚ especially open weight models‚ data of data‚ sometimes‚ for example Forma‚ it's not open source‚ but for some language models in this． 
+我不认为会有完全相同的东西，但可能会有很多纯粹的图片，因为我们用于预先永恒的这些模型的数据，特别是开放权重模型，数据的数据，有时，例如Forma，它不是开源的，但是对于某些语言模型来说˳
+
+271
+00:39:52,923 --> 00:39:56,580
+But all of these companies kind of work with a similar recipe of how to collect． 
+但所有这些公司都使用类似的收集方法˳
+
+272
+00:39:59,080 --> 00:40:01,673
+Because that is the biggest source of it． 
+因为这是它的最大来源˳
+
+273
+00:40:01,673 --> 00:40:09,869
+So my point is that you don't have widely‚ but I haven't really looked at them them myself． 
+所以我的观点是你没有广泛的，但我自己并没有真正看过它们˳
+
+274
+00:40:09,869 --> 00:40:12,520
+I know researchers are studying how． 
+我知道研究人员正在研究如何做˳
+
+275
+00:40:16,660 --> 00:40:24,710
+Things are‚ and there are evidences that there is a lo​‌​‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​​‌‌​​‌‌​‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌​​‌‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌​‌‌​​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​‌‌‌‌​‌‌​​‌​​‌‌​‌​‌​​‌‌​‌‌‌‌‌​‌​‌‌​​​‌‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​‌‌‌‌‌​‌‌​​‌​​‌‌​‌​‌​​‌‌​‌‌​​​‌‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​​‌‌‌​‌‌​​‌‌​​‌‌​​‌‌​​​‌​​‌‌​‌‌‌​​‌‌​‌‌​​​‌‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌‌‌​​‌‌​‌​‌​​‌‌‌​​‌‌‌​‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌‌​‌‌​​‌‌​‌​‌‌‌​‌‌‌‌​​​‌‌​‌‌‌‌‌​‌​‌​‌​​‌‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌​​‌‌‌‌​‌​‌‌‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌​‌‌‌​​‌‌‌​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌​​‌‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​‌‌​​​‌‌​​‌‌‌‌​‌​‌‌‌​​‌‌‌‌​‌​​‌‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌t of shared learn concepts． 
+事情是这样的，有证据表明有很多共同学习的概念˳
+
+276
+00:40:24,710 --> 00:40:28,580
+People are sting one part of one end to another and doing． 
+人们正在把一端的一部分刺向另一端并做˳
+
+277
+00:40:30,960 --> 00:40:41,560
+And there is also that hypothesis‚ which I forget the name Christian‚ do you remember maybe the‚ I would say like platonic hypothesis‚ but that sounds weird． 
+还有那个假设，我忘记了基督教的名字，你还记得吗，我会说像柏拉图假设，但听起来很奇怪˳
+
+278
+00:40:41,660 --> 00:40:47,920
+I think they called it something like the universal hypothes It was some very unimaginative． 
+我认为他们称之为类似于普遍假设的东西，它是一些非常缺乏想象力的东西˳
+
+279
+00:40:51,660 --> 00:40:52,650
+You're hearing recorded． 
+你听到的是录音˳
+
+280
+00:40:55,320 --> 00:40:59,810
+If you want to write‚ get weird results here‚ let here． 
+如果你想写作，在这里得到奇怪的结果，让这里˳
+
+281
+00:41:26,540 --> 00:41:31,100
+Argue that representations in AI models‚ particularly heap networks‚ are． 
+认为AI模型中的表示，特别是堆网络˳
+
+282
+00:41:32,080 --> 00:41:43,028
+They are hypothesized that all of these vector space sets‚ all of these individual stream‚ are basically converging to the same spaces． 
+他们假设所有这些向量空间集，所有这些单独的流，基本上都收敛到相同的空间˳
+
+283
+00:41:43,028 --> 00:41:43,680
+So for． 
+因此˳
+
+284
+00:41:50,540 --> 00:41:51,100
+Other questions? 
+其他问题？
+
+285
+00:41:56,070 --> 00:41:57,650
+What's getting? 
+得到什么了？
+
+286
+00:42:01,320 --> 00:42:04,780
+It might be like a little bit with this to the last lecture． 
+这可能有点像最后一节课˳
+
+287
+00:42:06,900 --> 00:42:17,080
+While we're doing the whole process at the end of the motor speed‚ like for instance‚ we could do it at the widen． 
+当我们在电机速度结束时进行整个过程时，例如，我们可以在加宽处进行˳
+
+288
+00:42:19,480 --> 00:42:19,870
+Yeah‚ like? 
+是的，就像？
+
+289
+00:42:23,600 --> 00:42:26,566
+Can I just ask your quality of education? 
+我可以问一下你的教育质量吗？
+
+290
+00:42:26,566 --> 00:42:34,375
+Are you asking why do we train essays after we train the language model instead of training sparsity the grow Cru? 
+你是在问为什么我们在训练语言模型之后训练论文，而不是训练稀疏性增长Cru？
+
+291
+00:42:34,375 --> 00:42:35,337
+Or are you asking? 
+还是你在问？
+
+292
+00:42:35,337 --> 00:42:37,840
+And I think if you're asking that‚ there is． 
+我想如果你问这个问题，有˳
+
+293
+00:42:46,000 --> 00:42:50,560
+So the conference‚ first party‚ I understand what we have to do． 
+所以这次会议，第一方，我理解我们必须做什么˳
+
+294
+00:42:51,740 --> 00:42:56,300
+Yes‚ so we're taking‚ again‚ the final representation． 
+是的，所以我们再次采取最终的表现形式˳
+
+295
+00:42:56,400 --> 00:43:01,033
+That's a misunderstanding that I didn't emphasize that‚ so it's on me． 
+这是一种误解，我没有强调这一点，所以这取决于我˳
+
+296
+00:43:01,033 --> 00:43:16,169
+We don't put just a single essay at the last final representation‚ every layer that produces a representation of a token‚ we have a‚ so you train a bunch of essays for one model． 
+我们不只是在最后的最终表示中放置一篇文章，每一层都会产生一个代币的表示，我们有一个，所以你可以为一个模型训练一堆文章˳
+
+297
+00:43:16,169 --> 00:43:20,764
+And that's why here‚ this feature starts 25%． 
+这就是为什么这个功能从25% 开始˳
+
+298
+00:43:20,764 --> 00:43:32,260
+This is layer $25‚ but there are features that are‚ you see every single layer‚ you get the feature‚ so you can have feature one． 
+这是25美元的图层，但是有一些特征，你看到每一个图层，你就会得到这个特征，所以你可以有一个特征˳
+
+299
+00:43:38,980 --> 00:43:55,340
+So you have the self attention and then ML‚ so it's for each one of those‚ like the whole block‚ a little bit unstandardized‚ I would say． 
+所以你有自我注意力，然后是毫升，所以对于每一个，就像整个区块一样，我会说有点不标准化˳
+
+300
+00:44:04,040 --> 00:44:08,600
+You will definitely se​‌​‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​​‌‌​​‌‌​‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌​​‌‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌​‌‌​​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​‌‌‌‌​‌‌​​‌​​‌‌​‌​‌​​‌‌​‌‌‌‌‌​‌​‌‌​​​‌‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​‌‌‌‌‌​‌‌​​‌​​‌‌​‌​‌​​‌‌​‌‌​​​‌‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​​‌‌‌​‌‌​​‌‌​​‌‌​​‌‌​​​‌​​‌‌​‌‌‌​​‌‌​‌‌​​​‌‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌‌‌​​‌‌​‌​‌​​‌‌‌​​‌‌‌​‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌‌​‌‌​​‌‌​‌​‌‌‌​‌‌‌‌​​​‌‌​‌‌‌‌‌​‌​‌​‌​​‌‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌​​‌‌‌‌​‌​‌‌‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌​‌‌‌​​‌‌‌​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌​​‌‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​‌‌​​​‌‌​​‌‌‌‌​‌​‌‌‌​​‌‌‌‌​‌​​‌‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌e them from outputs of MLP blocks for the． 
+你一定会从MLP块的输出中看到它们˳
+
+301
+00:44:24,880 --> 00:44:29,440
+Yes‚ it also helps with this idea that． 
+是的，这也有助于这个想法˳
+
+302
+00:44:33,320 --> 00:44:40,360
+So you can imagine‚ oh‚ whatever attention is producing‚ I can imagine it as if it happened previously． 
+所以你可以想象，无论注意力在产生什么，我都可以想象它好像以前发生过˳
+
+303
+00:44:40,360 --> 00:44:41,440
+I have recorded it． 
+我已经记录下来了˳
+
+304
+00:44:41,440 --> 00:44:45,328
+And now that I have it somewhere recorded and I'm working just with them． 
+现在我已经在某个地方录制了它，我正在和他们一起工作˳
+
+305
+00:44:45,328 --> 00:44:50,190
+Of these‚ you can view the full plus is a learning model‚ which helps with a bunch of things． 
+其中，你可以看到完整的plus是一个学习模型，它有助于很多事情˳
+
+306
+00:44:50,190 --> 00:44:53,540
+So I know this is now a little bit hard to follow． 
+所以我知道这现在有点难以理解˳
+
+307
+00:44:57,440 --> 00:45:01,445
+You will see that in action as we are writing in these applications． 
+你会看到，当我们在这些应用程序中编写时，这一点在行动中˳
+
+308
+00:45:01,445 --> 00:45:01,890
+So yeah． 
+所以是的˳
+
+309
+00:45:01,890 --> 00:45:04,560
+I'll make a point as sure whether I want to go． 
+我会明确指出我是否想去˳
+
+310
+00:45:13,620 --> 00:45:18,313
+Yeah‚ so just to the index is the index of the z vector． 
+是的，索引就是z向量的索引˳
+
+311
+00:45:18,313 --> 00:45:30,510
+Yeah‚ so this index 0 means the first dimension in the vector z‚ where z is produced for Se or in the first layer of Gemma Tutu‚ their model． 
+是的，所以索引0表示向量z的第一个维度，其中z是为它们的模型Se或Gemma Tutu的第一层生成的˳
+
+312
+00:45:32,400 --> 00:45:44,940
+So you said SaaS are trained on each layer of the are certain layers going to provide better predictions and patterns than others? 
+所以你说SaaS在每一层都接受训练，是否某些层会提供比其他层更好的预测和模式？
+
+313
+00:45:46,050 --> 00:45:48,830
+Layers that you might want to rely more on? 
+你可能更想要依赖的图层？
+
+314
+00:45:48,830 --> 00:46:00,440
+Or is there maybe a way to‚ I think‚ it's better to think about which layer as a‚ right? 
+或者有一种方法，我认为，最好考虑哪一层，对吧？
+
+315
+00:46:00,440 --> 00:46:06,160
+So for example‚ in my group‚ we are looking into if． 
+例如，在我的小组中，我们正在研究是否˳
+
+316
+00:46:09,900 --> 00:46:10,889
+S is for us． 
+S是给我们的˳
+
+317
+00:46:10,889 --> 00:46:14,600
+It makes sense to look only at confining represent． 
+只看局限代表是很感知的˳
+
+318
+00:46:15,020 --> 00:46:19,580
+And then you have people who want to understand how the information changes per layer． 
+然后你有一些人想要了解每个层的信息是如何变化的˳
+
+319
+00:46:22,120 --> 00:46:26,813
+So I want to say that there is a recipe for which layer is the best to look at． 
+所以我想说，哪一层是最好看的配方˳
+
+320
+00:46:26,813 --> 00:46:30,210
+Rather what we are trying to do with Es‚ right? 
+而是我们试图用Es做的事情，对吧？
+
+321
+00:46:31,680 --> 00:46:32,710
+You might have． 
+你可能有˳
+
+322
+00:46:35,480 --> 00:46:40,040
+But if someone told‚ that's why‚ you know． 
+但如果有人告诉了，那就是原因，你知道的˳
+
+323
+00:46:43,620 --> 00:46:48,180
+Had actually studied better‚ certainly higher quality features that． 
+实际上已经研究了更好的，当然质量更高的特征˳
+
+324
+00:46:51,540 --> 00:47:05,580
+To become more and more abstract‚ initial layers will be with words that are‚ you know‚ if you have is going to almost be like a paraphrase of that token． 
+为了变得越来越抽象，初始层将与单词一起，你知道，如果你有的话，几乎就像那个标记的释义˳
+
+325
+00:47:06,780 --> 00:47:10,870
+As deeper you go‚ more higher level concept． 
+随着深入，你会得到更高层次的概念˳
+
+326
+00:47:13,640 --> 00:47:18,200
+Start with observing focus words‚ and then you loom on top of that． 
+从观察焦点词开始，然后你就会出现在它之上˳
+
+327
+00:47:19,880 --> 00:47:23,200
+So Hong also to what you are seeing here． 
+所以，我也很欣赏你在这里看到的东西˳
+
+328
+00:47:23,600 --> 00:47:35,320
+So this plot over here‚ here shows you a histogram of activation values for this particular features I board． 
+所以这个图表在这里，这里显示了这个特定功能板的激活值的直方图˳
+
+329
+00:47:38,910 --> 00:47:40,750
+Particularly one in the first layer． 
+尤其是第一层˳
+
+330
+00:47:41,250 --> 00:47:50,080
+And looking into‚ because we have index 0 here‚ we are recording all of the values that we see in the． 
+并查看，因为我们这里的索引为0，我们正在记录我们在中看到的所有值˳
+
+331
+00:47:55,700 --> 00:48:15,473
+And then here you just show them as a‚ you can see that a lot of histogram mask here is around really low activation‚ which kind of suggests that this feature is an across the data． 
+然后在这里你只是将它们显示为一个，你可以看到这里的许多直方图掩码的活跃度非常低，这表明这个功能是跨数据的˳
+
+332
+00:48:15,473 --> 00:48:19,020
+Let me just try and find some that kind of with different． 
+让我试着找到一些不同的˳
+
+333
+00:48:29,140 --> 00:48:29,200
+Screening? 
+筛查？
+
+334
+00:48:35,820 --> 00:48:41,020
+Yeah‚ as you are seeing‚ a lot of them have activations that aren't really high． 
+是的，正如你所看到的，很多它们的激活并不是很高˳
+
+335
+00:48:41,020 --> 00:48:44,937
+And this refers to that I'm going to talk about． 
+这指的是我要谈论的话题˳
+
+336
+00:48:44,937 --> 00:48:47,760
+But I really want something to look different． 
+但我真的想让自己看起来与众不同˳
+
+337
+00:49:00,020 --> 00:49:08,024
+Like‚ but this is a great example of a feature that's really rarely really active‚ although‚ you know‚ the scale also is not fixed． 
+喜欢，但这是一个很好的例子，这个功能很少真正活跃，尽管你知道，规模也不是固定的˳
+
+338
+00:49:08,024 --> 00:49:11,080
+It's a little bit high too here． 
+这里也有点高˳
+
+339
+00:49:11,080 --> 00:49:25,327
+I don't wanna go too much into this because it's a whole other‚ but what you can do is we know that once we have‚ once we are done with our residual screen‚ we have output layer‚ right? 
+我不想过分深入，因为这是完全不同的另一种情况，但你能做的是我们知道，一旦我们拥有了，一旦我们完成了我们的剩余屏幕，我们就有了输出层，对吧？
+
+340
+00:49:25,327 --> 00:49:29,720
+So we have a projection from this d dimensional space into the． 
+所以我们有一个从这个d维空间进入的投影˳
+
+341
+00:49:31,820 --> 00:49:34,722
+Vocabulary‚ which is what‚ right? 
+词汇，这是什么，对吧？
+
+342
+00:49:34,722 --> 00:49:51,423
+So you have that matrix of‚ and you can take‚ remember‚ each one of these features here is now this‚ but in our model‚ it's actually column in the decoder rate matrix‚ right? 
+所以你有这个矩阵，你可以记住，这里的每一个特征现在都是这个，但在我们的模型中，它实际上是解码器率矩阵中的一列，对吧？
+
+343
+00:49:51,423 --> 00:49:59,420
+So we have that column 90 is the index‚ so 90 at a column in the corresponding． 
+所以我们有90列是索引，所以90在相应的列中˳
+
+344
+00:50:01,980 --> 00:50:09,030
+Matrix‚ we take that vector and we can project it with that output matrix we have onto the web． 
+矩阵，我们将该向量与我们拥有的输出矩阵一起投影到网络上˳
+
+345
+00:50:09,850 --> 00:50:27,400
+And we can‚ in this way‚ hypothesize what this feature is‚ how it pushes the language model to predict the next token‚ kind of how to say‚ not super mean． 
+通过这种方式，我们可以假设这个功能是什么，它如何推动语言模型预测下一个标记，如何说，而不是超级平均˳
+
+346
+00:50:28,360 --> 00:50:29,960
+Let me try to find one that's． 
+让我试着找到一个˳
+
+347
+00:50:32,140 --> 00:50:38,180
+Okay‚ so here we have a feature that is referring to data collection and reporting． 
+好的，这里我们有一个功能，指的是数据收集和报告˳
+
+348
+00:50:40,220 --> 00:50:53,355
+When we do this vocabulary projection‚ it's pushing the model to assign very‚ or the next store can be something about the recording‚ right? 
+当我们进行这个词汇投影时，它正在推动模型进行非常分配，或者下一个存储可以是与记录有关的东西，对吗？
+
+349
+00:50:53,355 --> 00:51:06,040
+So in this way‚ you kind of see output centered view of this feature‚ what how this feature is influencing the outcome‚ which is the next level of prediction． 
+因此，通过这种方式，您可以看到此功能的输出中心视图，此功能如何影响结果，这是下一个预测级别˳
+
+350
+00:51:07,240 --> 00:51:13,280
+And here you can actually see the spread of the lodges． 
+在这里，你可以看到小屋的分布˳
+
+351
+00:51:16,440 --> 00:51:24,396
+Really flat‚ as we know that it means that a lot of tokens in the workout give a lot probability． 
+真的很平坦，因为我们知道这意味着锻炼中的很多令牌给出了很大的概率˳
+
+352
+00:51:24,396 --> 00:51:29,700
+But if it's really creep‚ then this feature really is pushing forward． 
+但如果它真的令人毛骨悚然，那么这个功能确实在向前推进˳
+
+353
+00:51:30,780 --> 00:51:35,340
+And here it is a little bit more BP than flat． 
+这里它的BP比平坦的多一点˳
+
+354
+00:51:37,400 --> 00:51:40,580
+Okay‚ so this is a current source． 
+好的，这是目前的来源˳
+
+355
+00:51:41,560 --> 00:51:43,950
+We do have five minutes left． 
+我们还剩五分钟˳
+
+356
+00:51:43,950 --> 00:51:52,815
+I think it would be nice for you to now take your laptops out‚ go to a normal idea and try to yourself play around with this． 
+我认为现在把你的笔记本电脑带出去，去一个正常的想法，试着自己玩弄这个想法会很好˳
+
+357
+00:51:52,815 --> 00:51:54,920
+Let's go for 5 is minutes I． 
+让我们走5分钟，我˳
+
+358
+00:51:58,900 --> 00:52:04,210
+Yeah‚ that's it‚ yeah． 
+是的，就是这样，是的˳
+
+359
+00:52:04,780 --> 00:52:11,184
+So‚ this is a big‚ these are logics‚ so they are not organized between 0 and 1． 
+所以，这是一个大的，这些都是逻辑，所以它们不是在0和1之间组织的˳
+
+360
+00:52:11,184 --> 00:52:16,225
+So you have values from minus infinity plus infinity of‚ right? 
+所以你有负无穷大加无穷大的值，对吗？
+
+361
+00:52:16,225 --> 00:52:23,860
+So you can‚ those negative are going to push basically the way to interpret that． 
+所以你可以，那些负面的东西基本上会推动解释它的方式˳
+
+362
+00:52:23,860 --> 00:52:28,580
+This feature really doesn't want the model to predict these tokens as the． 
+这个功能真的不希望模型预测这些令牌˳
+
+363
+00:52:32,100 --> 00:52:38,608
+Honestly‚ interpreting them than the features usually doesn't give you a lot of information． 
+老实说，解释它们而不是特征通常不会给你很多信息˳
+
+364
+00:52:38,608 --> 00:52:46,180
+It seems somewhat in the distribution‚ the peak is all． 
+似乎在分布上有所不同，峰值就是一切˳
+
+365
+00:52:49,610 --> 00:53:00,320
+So like‚ it's a very active‚ Yeah‚ so I mean‚ this is basically just showing you the histogram of the right． 
+所以，它非常活跃，是的，我的意思是，这基本上只是向您展示右侧的直方图˳
+
+366
+00:53:00,400 --> 00:53:03,060
+So some‚ very few‚ very few logics will． 
+因此，很少有逻辑会这样做˳
+
+367
+00:53:05,250 --> 00:53:09,120
+Have a that are‚ you know‚ one or more? 
+有一个，你知道的，一个或多个？
+
+368
+00:53:12,160 --> 00:53:14,445
+Right‚ yeah‚ just maybe． 
+对，是的，只是也许˳
+
+369
+00:53:14,445 --> 00:53:20,546
+Let's take another example and try to remember this one． 
+让我们再举一个例子，试着记住这个˳
+
+370
+00:53:20,546 --> 00:53:25,520
+And then like with index 14‚ you see how here it's much more small． 
+然后像指数14一样，你会看到它在这里小得多˳
+
+371
+00:53:26,230 --> 00:53:34,300
+So you're basically looking into shapes of these that can be important． 
+所以你基本上正在研究这些可能很重要的形状˳
+
+372
+00:53:39,850 --> 00:53:41,420
+Okay‚ so go to the idea． 
+好的，那就去想这个想法吧˳
+
+373
+00:53:41,420 --> 00:53:57,713
+You can do what I did‚ and then‚ you know‚ the writing sentences or you can and different way you can by release‚ by model‚ you can search for any concept here． 
+你可以做我所做的，然后，你知道，写句子或者你可以用不同的方式，你可以通过释放，通过模型，你可以在这里搜索任何概念˳
+
+374
+00:53:57,713 --> 00:54:04,560
+So play around with this for a few minutes just to kind of get a little bit familiar with this platform． 
+所以用这个玩几分钟，只是为了稍微熟悉一下这个平台˳
+
+375
+00:54:04,860 --> 00:54:09,420
+I want to make sure that you don't skip that because it can be a little bit old． 
+我想确保你不会跳过它，因为它可能有点旧˳
+
+376
+00:54:09,520 --> 00:54:20,930
+Well‚ we first‚ so try to find your way around it and then try to this five minutes or so‚ find something and an interesting but appropriate for a class． 
+好吧，我们首先，所以试着找到你的方法，然后试着在这五分钟左右，找到一些有趣但适合上课的东西˳
+
+377
+00:54:25,310 --> 00:54:27,640
+You mentioned what you found． 
+你提到了你的发现˳
+
+378
+00:54:29,020 --> 00:54:35,060
+Okay‚ I want to set the timer for five minutes and then we are going to come to the question of． 
+好的，我想把计时器设置为五分钟，然后我们来讨论这个问题˳
+
+379
+00:59:42,720 --> 00:59:44,850
+Noticing that certain． 
+注意到某些˳
+
+380
+00:59:48,660 --> 00:59:54,700
+Certain layers a model with the they applied onto them． 
+某些层是应用到它们上的模型˳
+
+381
+00:59:54,740 --> 01:00:05,480
+It looks like different features will analyze the same or similar source of patterns to them． 
+看起来不同的特征将分析相同或相似的模式来源˳
+
+382
+01:00:05,580 --> 01:00:15,940
+I'm seeing one where two features are both showing a high connection towards references to artificial intelligence and technology． 
+我看到一个例子，其中两个功能都显示出对人工智能和技术的高度关联˳
+
+383
+01:00:19,220 --> 01:00:25,260
+That multiple features might come to similar conclusions about? 
+多个特征可能会得出类似的结论？
+
+384
+01:00:26,600 --> 01:00:36,245
+Yeah‚ so are descriptions also very similar to one problem‚ right? 
+是的，所以描述也非常类似于一个问题，对吗？
+
+385
+01:00:36,245 --> 01:00:39,300
+Where we have redundancy we would like? 
+我们希望在哪里有冗余？
+
+386
+01:00:43,020 --> 01:00:47,315
+We're sparse be director activating for the same feature‚ right? 
+我们稀疏地激活相同的功能是董事的，对吧？
+
+387
+01:00:47,315 --> 01:00:53,090
+Because first of all‚ that we now we need to learn three different columns． 
+因为首先，我们现在需要学习三个不同的列˳
+
+388
+01:00:53,090 --> 01:01:06,040
+And maybe we wasted up space to learn something else makes the profitability later harder because we now we have all these features is activated three times‚ but should be done． 
+也许我们浪费了空间去学习别的东西，这会让以后的盈利能力变得更加困难，因为我们现在所有这些功能都被激活了三次，但应该完成˳
+
+389
+01:01:07,320 --> 01:01:17,184
+Real activation is then three times larger than or aggregate them in some way or take only the average． 
+实际激活比它们大三倍，或者以某种方式聚合它们，或者只取平均值˳
+
+390
+01:01:17,184 --> 01:01:21,580
+It becomes complicated for the true activation of the feature． 
+功能的真正激活变得复杂了˳
+
+391
+01:01:23,390 --> 01:01:24,420
+Any other observations? 
+还有其他观察吗？
+
+392
+01:01:29,020 --> 01:01:33,580
+For example‚ one that's called generic function in． 
+例如，在中称为通用函数的函数˳
+
+393
+01:01:34,680 --> 01:01:46,161
+And then there's also a bunch that are new too‚ with a bunch of generic function English forms and also makes you think more． 
+然后还有一堆新的东西，有一些通用的函数英语形式，也让你思考得更多˳
+
+394
+01:01:46,161 --> 01:01:53,660
+Okay‚ it decided to predict diary token because they were general． 
+好的，它决定预测日记令牌，因为它们是通用的˳
+
+395
+01:01:56,100 --> 01:01:57,130
+We hear way． 
+我们听到了方法˳
+
+396
+01:02:00,400 --> 01:02:08,700
+Right‚ sometimes the quality of these features will questionable when think about the actionability of these． 
+没错，有时候当考虑到这些特性的可操作性时，它们的质量会受到质疑˳
+
+397
+01:02:11,240 --> 01:02:11,960
+Sorry‚ yeah． 
+对不起，是的˳
+
+398
+01:02:11,960 --> 01:02:15,200
+I was always interested in that． 
+我一直对此很感兴趣˳
+
+399
+01:02:15,200 --> 01:02:26,260
+Like it's mostly just the word‚ that song‚ but then also like the top activation is willowy． 
+就像这首歌主要只是这个词，但也像顶部的激活是willowy˳
+
+400
+01:02:38,180 --> 01:02:44,220
+It captures like the spelling first and then at least for this feature． 
+它首先捕捉到拼写，然后至少针对此功能捕捉到拼写˳
+
+401
+01:02:54,220 --> 01:02:56,097
+Label it incorrectly． 
+标签不正确˳
+
+402
+01:02:56,097 --> 01:02:58,780
+It top activations are all fiction． 
+它上面的激活都是虚构的˳
+
+403
+01:03:00,660 --> 01:03:03,700
+And then the minimum affirmations of science． 
+然后是科学的最低限度的肯定˳
+
+404
+01:03:03,700 --> 01:03:15,844
+Like every variation‚ the auto interpreter calls it terms related to science and scientific concepts that actually activates over the term science． 
+像所有的变体一样，自动解释器称之为与科学和科学概念相关的术语，这些术语实际上在 “科学” 一词中被激活˳
+
+405
+01:03:15,844 --> 01:03:18,260
+In the phrase science fiction． 
+在这句话中，科幻小说˳
+
+406
+01:03:18,260 --> 01:03:40,360
+Also‚ I think sometimes I need to haven't check this‚ but we have observed‚ later when we start talking about sparse feature circuits‚ there will be an example where a feature is described by what the positive activation positive logics are‚ which all capital cities‚ different countries‚ and then the feature description in capital cities． 
+此外，我认为有时我不需要检查这个，但我们观察到，后来当我们开始谈论稀疏特征电路时，会有一个例子，其中一个特征是通过什么正激活正逻辑来描述的，所有首都城市，不同的国家，然后是首都城市的特征描述˳
+
+407
+01:03:40,360 --> 01:03:50,653
+So sometimes these descriptions won't be about what's truly activated in the good‚ but rather what is the influence on the output． 
+所以有时候这些描述并不是关于什么真正激活了好的东西，而是对产出的影响是什么˳
+
+408
+01:03:50,653 --> 01:03:58,333
+And to me that that's okay as long as Germany‚ are we going to choose one or the other? 
+对我来说，只要德国，那没关系，我们要选择一个还是另一个？
+
+409
+01:03:58,333 --> 01:04:05,880
+But if it's arbitrary‚ then again‚ going through the previous discussion we had kind of because it more aligns with what we would like． 
+但如果它是任意的，那么再次经历之前的讨论，因为它更符合我们想要的˳
+
+410
+01:04:09,720 --> 01:04:13,610
+Okay‚ I need this last‚ last egg． 
+好的，我需要这最后一个，最后一个鸡蛋˳
+
+411
+01:04:15,120 --> 01:04:26,740
+How we actually evaluate this so we can next time start on with other topics that that we need to cover‚ which are how we evaluate． 
+我们实际上是如何评估这个的，这样我们下次就可以开始讨论我们需要涵盖的其他主题，这就是我们如何评估的方式˳
+
+412
+01:04:29,300 --> 01:04:32,751
+Let me go back to the this one． 
+让我回到这个问题˳
+
+413
+01:04:32,751 --> 01:04:46,720
+So just a reminder‚ still word by Wilson‚ all the coin this way of assigning description to features as automated accessibility‚ which I think is a two broad of terms． 
+所以只是提醒一下，仍然是威尔逊所说的，所有的硬币都是以这种方式将描述分配给功能作为自动可访问性，我认为这是一个广泛的术语˳
+
+414
+01:04:47,260 --> 01:04:57,472
+I think it's better to just say describing features they work on narrows not on the same features‚ but it's basically the same idea applied on essays． 
+我认为最好只是说描述他们所处理的特征，而不是相同的特征，但这基本上适用于论文的想法是相同的˳
+
+415
+01:04:57,472 --> 01:04:59,480
+So people will come on the site． 
+所以人们会来这个网站˳
+
+416
+01:05:00,200 --> 01:05:05,772
+And I just wanted to show you a type of prompt that's given to describe features． 
+我只是想向您展示一种用于描述功能的提示类型˳
+
+417
+01:05:05,772 --> 01:05:17,400
+So it says we are studying Nes in neural networks‚ each and every looks for some peoples in a short document‚ look at the parts of the document that neuron activates for and summarize in a single settlements what the neuron is． 
+所以它说我们正在神经网络中研究Nes，每个都在一份简短的文档中寻找一些人，查看文档中神经元激活的部分，并在一个单独的解决方案中总结神经元是什么˳
+
+418
+01:05:20,380 --> 01:05:23,293
+The activation format is token tab activation． 
+激活格式为令牌选项卡激活˳
+
+419
+01:05:23,293 --> 01:05:27,420
+Activation values ranges from 0 to 10 and their own finding is． 
+激活值的范围从0到10，它们自己的结果是˳
+
+420
+01:05:30,100 --> 01:05:35,520
+Value The higher the act rat value‚ the stronger the So you use． 
+值行为老鼠值越高，您使用的So越强˳
+
+421
+01:05:36,020 --> 01:05:37,014
+Maybe you would． 
+也许你会˳
+
+422
+01:05:37,014 --> 01:05:51,847
+I think it's always better to not say in your prompting about‚ I just say I measured that somehow that this token will be‚ we react with this quantity and so on． 
+我认为最好不要在你的提示中说，我只是说我测量过这个令牌会以某种方式，我们对这个数量做出反应等等˳
+
+423
+01:05:51,847 --> 01:05:57,815
+Probably it doesn't make sense to mention narrows because and so on． 
+提到狭窄可能没有什么感知，因为等等˳
+
+424
+01:05:57,815 --> 01:06:04,448
+But the reason I'm showing you this prompt is just to show how you would kind of represent your data． 
+但是我向您展示这个提示的原因只是为了展示您如何表示您的数据˳
+
+425
+01:06:04,448 --> 01:06:06,040
+So you would have token tab． 
+所以你会有令牌选项卡˳
+
+426
+01:06:07,980 --> 01:06:11,393
+Will you give maybe few examples? 
+你能给我举几个例子吗？
+
+427
+01:06:11,393 --> 01:06:14,320
+We call this in context． 
+我们在上下文中称之为˳
+
+428
+01:06:16,420 --> 01:06:25,060
+You describe some‚ you know‚ activations and then the give new examples so． 
+你描述了一些激活，然后给出了新的例子˳
+
+429
+01:06:27,120 --> 01:06:28,970
+Here we have‚ again‚ some tokens． 
+这里我们又有一些代币˳
+
+430
+01:06:29,600 --> 01:06:30,560
+Patients here below． 
+病人在下面˳
+
+431
+01:06:30,560 --> 01:06:36,322
+I don't know why exactly they do that‚ but they repeated with‚ and they discard the ones that are 0． 
+我不知道他们为什么这样做，但他们重复了一遍，然后丢弃了那些为0的˳
+
+432
+01:06:36,322 --> 01:06:40,678
+And then at the end‚ they ask explanation of their own poor behavior． 
+最后，他们要求解释自己的不良行为˳
+
+433
+01:06:40,678 --> 01:06:42,292
+The that is fine． 
+这很好˳
+
+434
+01:06:42,292 --> 01:06:46,780
+This is where the front end and llum needs to complete what? 
+这是前端和llum需要完成的地方？
+
+435
+01:06:50,460 --> 01:06:53,490
+Right‚ okay‚ now let me quickly go over． 
+好的，现在让我快点过去˳
+
+436
+01:07:15,020 --> 01:07:19,580
+What you are going to do is you are going to again． 
+你要做的就是再次去做˳
+
+437
+01:07:54,220 --> 01:07:58,780
+Llen to tell you to simulate what the llen? 
+Llen告诉你模拟一下什么是len？
+
+438
+01:08:01,020 --> 01:08:07,640
+The activation of each one of this token would be for this feature description given some scale． 
+在一定规模下，每个令牌的激活都将用于此功能描述˳
+
+439
+01:08:07,990 --> 01:08:18,180
+So let's say scale is from 0 to 10‚ the feature description expression of A． 
+假设比例是从0到10，即A的特征描述表达式˳
+
+440
+01:08:20,240 --> 01:08:27,970
+And now LM for every single one of these tokens is giving some value between you‚ 0‚ 0． 
+现在，对于这些令牌中的每一个，LM都会在你们之间提供一些值，0，0˳
+
+441
+01:08:27,970 --> 01:08:30,800
+Maybe this was u‚ and then it gives hundred． 
+也许这是你，然后它给了一百˳
+
+442
+01:08:35,400 --> 01:08:43,070
+So now you have simulated activations giving the feature description． 
+现在你已经模拟了激活，给出了功能描述˳
+
+443
+01:08:43,100 --> 01:08:47,210
+But actually you have from your S real activation． 
+但实际上你从真正的激活中获得了˳
+
+444
+01:08:48,660 --> 01:08:59,650
+So what could we do to say how good this feature description is for assigning some kind of description of when this? 
+那么，我们能做些什么来说明这个功能描述对于分配某种描述有多好呢？
+
+445
+01:09:02,680 --> 01:09:07,580
+So here we have‚ again‚ it's going to be a list of that． 
+所以这里我们有，再次，它将是一个列表˳
+
+446
+01:09:22,100 --> 01:09:26,660
+Potentially average the embeddings‚ we don't have embeddings here‚ right? 
+可能平均嵌入，我们这里没有嵌入，对吗？
+
+447
+01:09:32,510 --> 01:09:39,440
+Walk me through by wood‚ something along the lines of trying to use it because time similar． 
+带我走过木头，沿着尝试使用它的路线，因为时间相似˳
+
+448
+01:09:44,520 --> 01:09:50,720
+Don't quite see how that's going to help us determine whether the feature description is higher． 
+不太明白这将如何帮助我们确定功能描述是否更高˳
+
+449
+01:09:51,420 --> 01:09:55,820
+So let's just go over what the goal here is． 
+所以让我们来看看这里的目标是什么˳
+
+450
+01:09:55,820 --> 01:09:59,720
+So you know your past tokens． 
+这样你就知道你过去的代币了˳
+
+451
+01:10:00,300 --> 01:10:05,760
+Through our s．e．‚ we recorded a bunch of values for the first dimension． 
+通过我们的s．E，我们记录了一堆第一维的值˳
+
+452
+01:10:06,620 --> 01:10:18,120
+Then we describe that dimension D1 with the llen we got the feature direct description‚ but we want to see whether that's a good feature． 
+然后我们用len描述了维度D1，我们得到了特征直接描述，但我们想看看这是否是一个好的特征˳
+
+453
+01:10:19,180 --> 01:10:41,704
+To say it's a good future direction is if we give you data and when that feature is truly active‚ then LLD would say‚ well‚ that token would have high activation because this feature description is aligned with what's going． 
+说这是一个很好的未来方向，如果我们给你数据，当这个功能真正活跃时，那么LLD会说，这个令牌将具有高激活，因为这个功能描述与正在发生的事情一致˳
+
+454
+01:10:41,704 --> 01:10:47,257
+So one way we can do that is we have all these values‚ right? 
+所以我们可以做到这一点的一种方法是我们拥有所有这些价值观，对吧？
+
+455
+01:10:47,257 --> 01:10:48,560
+The activation． 
+激活˳
+
+456
+01:10:48,660 --> 01:10:53,840
+And here we are just simulating them‚ right‚ using the feature description． 
+这里我们只是使用特征描述来模拟它们˳
+
+457
+01:10:53,940 --> 01:11:08,760
+So if the values we get here and the values we obtain here are correlated‚ then we can say‚ well‚ this feature description really well when this first dimension is active． 
+因此，如果我们在这里获得的值和我们在这里获得的值是相关的，那么我们可以说，当第一个维度处于活动状态时，这个特征描述非常好˳
+
+458
+01:11:09,210 --> 01:11:10,740
+Does this make sense? 
+这有感知吗？
+
+459
+01:11:15,340 --> 01:11:20,827
+Okay‚ so I don't think this is quite blended‚ so let's maybe it's left． 
+好的，我认为这不是很混合，所以也许它是剩下的˳
+
+460
+01:11:20,827 --> 01:11:25,180
+I'm going to go over the evaluation one more time and just write it down with you． 
+我要再检查一次评估，和你一起写下来˳
+
+461
+01:11:27,460 --> 01:11:32,020
+This hasn't ended‚ but it's super important in this course as we have． 
+这还没有结束，但在这门课程中，它和我们一样非常重要˳
+
+462
+01:11:36,040 --> 01:11:38,380
+I see you‚ see you on Tuesday for the next video． 
+我看到你了，下个视频星期三见˳

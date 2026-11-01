@@ -1,0 +1,744 @@
+1
+00:00:00,480 --> 00:00:01,480
+To let you know． 
+让你知道˳
+
+2
+00:00:02,140 --> 00:00:10,900
+And then as I said in the first lecture I'll try to release them timely manner‚ but then really depends on how crazy my schedule is． 
+然后就像我在第一节课中所说的，我会尽力及时释放它们，但这真的取决于我的日程安排有多疯狂˳
+
+3
+00:00:12,220 --> 00:00:17,210
+It's going to be uploaded fast and other times they're going to be uploaded slower． 
+它将快速上传，而其他时候它们将上传得更慢˳
+
+4
+00:00:17,210 --> 00:00:24,682
+Good thing is that the recording somewhat work‚ so I'm a little bit shaky‚ but I think everyone can follow a bit there． 
+好消息是录音有些工作，所以我有点不稳定，但我认为每个人都可以跟随˳
+
+5
+00:00:24,682 --> 00:00:31,120
+So if there are no rules‚ you know‚ a couple of days‚ if not the week‚ then you will always have a recording． 
+所以如果没有规则，你知道，几天，如果不是一周，那么你将永远有录音˳
+
+6
+00:00:32,180 --> 00:00:34,970
+Okay‚ so we start with this goal． 
+好的，我们从这个目标开始˳
+
+7
+00:00:36,420 --> 00:00:41,307
+Saes is just a method‚ and I should say it‚ sparse out encoders． 
+Saes只是一个方法，我应该说它是稀疏的编码器˳
+
+8
+00:00:41,307 --> 00:00:50,520
+It is just a method that that's going to now help us learn these future directions in a way that we can． 
+它只是一种方法，现在它将帮助我们以一种我们可以做到的方式学习这些未来的方向˳
+
+9
+00:00:51,900 --> 00:00:56,205
+So we are going to basically use what we kind of know． 
+所以我们基本上会使用我们所知道的东西˳
+
+10
+00:00:56,205 --> 00:00:59,460
+And it's all about how do we learn the way matrices? 
+而这一切都是关于我们如何学习矩阵的方式？
+
+11
+00:00:59,470 --> 00:01:04,300
+So we start with some input x? 
+那么我们从一些输入x开始？
+
+12
+00:01:07,850 --> 00:01:10,400
+Dimensional space so． 
+维度空间如此˳
+
+13
+00:01:13,040 --> 00:01:23,000
+So typically you will see Sass are reconstruct‚ learn how to reconstruct outputs of MLP． 
+所以通常你会看到Sass正在重建，学习如何重建MLP的输出˳
+
+14
+00:01:24,340 --> 00:01:25,190
+They are not． 
+他们不是˳
+
+15
+00:01:25,860 --> 00:01:37,880
+You need to liquidate outputs of attention maps‚ but very often you will see them placed on the outputs of MLPS in a transformer computer． 
+你需要清算注意图的输出，但你经常会看到它们被放置在变压器计算机的MLPS输出上˳
+
+16
+00:01:38,480 --> 00:01:49,164
+And it's really‚ really important to embrace that input to Sae is going to be vector that we get MLP and we are going to reconstruct． 
+接受输入到Sae的向量是非常重要的，我们得到MLP并将重建˳
+
+17
+00:01:49,164 --> 00:01:50,380
+So here x is． 
+所以这里的x是˳
+
+18
+00:01:59,800 --> 00:01:59,820
+For． 
+为了˳
+
+19
+00:02:18,000 --> 00:02:24,080
+I'm emphasizing this because we move on from essays to something called transcoders． 
+我之所以强调这一点，是因为我们从论文转向了一个叫做转码器的东西˳
+
+20
+00:02:24,080 --> 00:02:30,180
+Key viewpoint will be that we give what is input to MLP and try to reconstruct． 
+关键观点是我们将输入的内容提供给MLP并尝试重建˳
+
+21
+00:02:31,680 --> 00:02:37,020
+So we are producing an interpretable replacement for a whole MLP module． 
+所以我们正在为整个MLP模块生成一个可解释的替代品˳
+
+22
+00:02:37,420 --> 00:02:40,881
+Everything else‚ they the same as we did for Saes． 
+其他一切，他们和我们为Saes做的一样˳
+
+23
+00:02:40,881 --> 00:02:50,120
+So that's why I'm emphasizing that here as an input to here‚ whatever is the producing representation from MLP and try to． 
+所以这就是为什么我在这里强调，作为这里的输入，无论是来自MLP的生产代表还是尝试˳
+
+24
+00:02:52,720 --> 00:02:58,980
+To re‚ so first thing we are going to do is we are going to produce that sparks． 
+所以我们要做的第一件事是产生火花˳
+
+25
+00:03:00,060 --> 00:03:05,442
+That's much larger than what is the dimension m here? 
+这比这里的维度m要大得多？
+
+26
+00:03:05,442 --> 00:03:12,370
+So I linear it into n dimensional vector‚ How do I do that? 
+所以我将它线性化为n维向量，我该怎么做？
+
+27
+00:03:12,370 --> 00:03:15,320
+How I‚ how much should I write here? 
+我应该在这里写多少？
+
+28
+00:03:19,350 --> 00:03:25,055
+Second w x‚ so that will do is a weight matrix． 
+第二个w x，那么这将是一个权重矩阵˳
+
+29
+00:03:25,055 --> 00:03:30,280
+What is the shape of w m to m? 
+w m到m的形状是什么？
+
+30
+00:03:34,520 --> 00:03:49,080
+Okay‚ so yet again I'm linear transforming x‚ linear transformation mathematically as a product of a matrix that represents this linear map from one space to another． 
+好的，我再次将x进行线性变换，线性变换在数学上是表示从一个空间到另一个空间的线性映射的矩阵的乘积˳
+
+31
+00:03:50,200 --> 00:03:52,586
+W here is just a notation of that． 
+这里只是一个符号˳
+
+32
+00:03:52,586 --> 00:03:56,300
+The product of these is the way we write it out‚ linear． 
+这些的产物是我们线性写出的方式˳
+
+33
+00:03:58,980 --> 00:04:02,210
+And then I will add a little bit more things． 
+然后我会添加更多的东西˳
+
+34
+00:04:02,220 --> 00:04:04,750
+So here we are going to add a view． 
+所以在这里我们要添加一个视图˳
+
+35
+00:04:08,190 --> 00:04:10,170
+So we are adding nominal here． 
+所以我们在这里添加了名义值˳
+
+36
+00:04:16,120 --> 00:04:20,650
+And I'm also going to add one bias term． 
+我还将添加一个偏见项˳
+
+37
+00:04:24,060 --> 00:04:26,460
+Don't worry about these biases． 
+不要担心这些偏见˳
+
+38
+00:04:26,460 --> 00:04:28,620
+We don't even need to talk about them． 
+我们甚至不需要谈论它们˳
+
+39
+00:04:28,940 --> 00:04:32,878
+They have empirically shown to be useful here． 
+它们在这里的经验证明是有用的˳
+
+40
+00:04:32,878 --> 00:04:51,207
+What is important for us is that we normally now transform our vector that we want into an n dimensional of vector‚ and we are going to then later add something to our loss function such that this vector becomes sparse． 
+对我们来说重要的是，通常现在我们要将我们想要的向量转换为n维的向量，然后我们将在稍后添加一些东西到我们的损失函数中，使得这个向量变得稀疏˳
+
+41
+00:04:51,207 --> 00:04:59,980
+So now from this vector z‚ we want to reconstruct the n-dimensions vector． 
+所以现在从这个向量z，我们想要重建n维向量˳
+
+42
+00:05:01,120 --> 00:05:08,325
+And to do that‚ we are going to just have another wave matrix‚ call it decoder． 
+为了做到这一点，我们将有另一个波矩阵，称之为解码器˳
+
+43
+00:05:08,325 --> 00:05:12,640
+This one will be called encoder matrix． 
+这个矩阵将被称为编码器矩阵˳
+
+44
+00:05:15,520 --> 00:05:21,560
+So we take z‚ and we then projected again to n dimensional． 
+所以我们取z，然后再次投影到n维˳
+
+45
+00:05:22,390 --> 00:05:39,440
+So while the weight matrix growing older was n by n‚ this one will be of shape n by n‚ and again‚ though‚ you have some biases‚ again‚ as far as I'm concerned‚ we don't need to talk． 
+所以，虽然权重矩阵的增长速度是n乘n，但这个矩阵的形状是n乘n，而且，尽管如此，你有一些偏见，就我而言，我们不需要谈论˳
+
+46
+00:05:40,320 --> 00:05:44,880
+They aren't there just for the very clinical reasons． 
+它们并不是仅仅因为临床原因而存在的˳
+
+47
+00:05:48,060 --> 00:05:53,713
+What we have done‚ we have taken whatever is the hidden representation that comes out of MLP． 
+我们所做的，我们已经采用了MLP中隐藏的表示形式˳
+
+48
+00:05:53,713 --> 00:05:58,390
+We have up projecting it into a larger‚ much‚ much larger vector． 
+我们把它投影到一个更大的、更大的向量中˳
+
+49
+00:05:58,390 --> 00:06:09,120
+So appear crucially‚ m is much larger than m‚ some practical values are hundred thousand‚ while m is only 4000． 
+因此，至关重要的是，m比m大得多，一些实际值是十万，而m只有4000˳
+
+50
+00:06:09,760 --> 00:06:14,700
+They can be‚ I think‚ in literature up to 126． 
+我认为，在文学作品中，它们可以达到126˳
+
+51
+00:06:18,470 --> 00:06:18,590
+And． 
+而且˳
+
+52
+00:06:21,060 --> 00:06:25,737
+We are also going to‚ with our loss functions for learning this max is double． 
+我们还将使用我们的损失函数来学习这个最大值是双倍的˳
+
+53
+00:06:25,737 --> 00:06:43,240
+And these biases we are going to add that's going to encourage that this is really sparse and this is going to realize this part that we are learning only few features that only few future directions are active for a given input． 
+我们要添加的这些偏见将鼓励这真的很稀疏，这将意识到我们只学习了一些特征，对于给定的输入，只有很少的未来方向是活跃的˳
+
+54
+00:06:44,120 --> 00:06:53,703
+Okay‚ so we have x‚ we have a reconstruction of x‚ and the goal is to learn these matrices． 
+好的，所以我们有x，我们有x的重建，目标是学习这些矩阵˳
+
+55
+00:06:53,703 --> 00:07:18,213
+So I need to define my loss or oh‚ before we go‚ yeah‚ this might sound real silly‚ but that's okay if we already have‚ if you already have x‚ since we need x to make z‚ why are we then trying to reconstruct x? 
+所以我需要定义我的损失，或者哦，在我们开始之前，是的，这可能听起来真的很傻，但如果我们已经有了x，那没关系，因为我们需要x来制造z，为什么我们还要尝试重建x呢？
+
+56
+00:07:18,213 --> 00:07:37,980
+That's a good question‚ we are trying to reconsider xar through these transformations‚ and we are going to learn this transformation‚ and crucially‚ we are going to produce this inter vector that's very‚ very large and where only few dimensions are active． 
+这是一个很好的问题，我们正在尝试通过这些转换来重新考虑xar，我们将学习这种转换，并且至关重要的是，我们将生成这个非常非常大且只有少数维度处于活动状态的内部向量˳
+
+57
+00:07:39,100 --> 00:07:45,700
+I'm going to come to this‚ but the columns of this matrix are our feature directions‚ right? 
+我要来这里，但这个矩阵的列是我们的特征方向，对吗？
+
+58
+00:07:45,700 --> 00:08:20,080
+So we are going to be able to then say which feature are activating for this hidden representation‚ where previously our hidden representation is dense and it contains polysemantic networks of saying which feature exactly activates a given dimension‚ given neuron in this representation x‚ and superposition implies‚ well‚ maybe it's compressing this big factor with mono somano features． 
+所以我们将能够说出哪个特征为这个隐藏的表示激活，以前我们的隐藏表示是密集的，它包含多义网络，说哪个特征精确地激活了给定的维度，在这个表示x中给定的神经元，叠加意味着，好吧，也许它正在压缩这个具有单一索马诺特征的重要因素˳
+
+59
+00:08:20,080 --> 00:08:26,120
+Implicitly‚ this is just a method to kind of get that out of our network． 
+隐含地，这只是一种将其从我们的网络中获取的方法˳
+
+60
+00:08:26,220 --> 00:08:39,200
+So this is basically now we are working on that assumption that implicitly‚ our now neural network is simulating much larger sparse network‚ and they're currently looking for that． 
+所以这基本上是我们现在正在基于这样一个假设工作，即隐含地，我们现在的神经网络正在模拟更大的稀疏网络，并且他们目前正在寻找˳
+
+61
+00:08:40,880 --> 00:08:48,670
+So we're reconstructing X to actually get the information we want out that makes． 
+所以我们正在重建X，以实际获得我们想要的信息˳
+
+62
+00:08:52,240 --> 00:08:58,280
+We could potentially take the features in our projected matrix． 
+我们可以潜在地采用我们投影矩阵中的特征˳
+
+63
+00:09:02,240 --> 00:09:09,580
+So I'm going to come to how to how we are going to exactly assign me to these feature directions． 
+所以我将介绍如何将我精确地分配给这些功能方向˳
+
+64
+00:09:09,580 --> 00:09:14,140
+So let's wait for that for in just a little bit． 
+所以让我们等一会儿˳
+
+65
+00:09:14,240 --> 00:09:17,475
+Let's first define how we are going to train this． 
+让我们首先定义我们将如何训练它˳
+
+66
+00:09:17,475 --> 00:09:20,280
+And then we are going to talk more about this later． 
+然后我们稍后会更多地谈论这个问题˳
+
+67
+00:09:20,620 --> 00:09:23,186
+So everything else will come together． 
+所以其他一切都会聚集在一起˳
+
+68
+00:09:23,186 --> 00:09:25,183
+But I want to hear from you． 
+但我想听听你的声音˳
+
+69
+00:09:25,183 --> 00:09:27,180
+What would be a good loss to． 
+这将是一个很好的损失˳
+
+70
+00:09:29,720 --> 00:09:34,162
+Difference​‌​‌​​‌‌​​‌‌​​‌‌​‌‌‌‌‌​‌‌‌​‌‌‌​‌​​‌‌​​‌‌​‌‌​​​‌‌​‌​‌‌‌​‌‌‌​‌​​‌‌‌​‌‌‌‌​‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌​‌​‌‌‌​‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌​​‌‌‌‌​‌​​‌‌​‌‌‌​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​‌‌​​​‌‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌​​‌‌​​‌‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌​​​‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌‌‌​​‌‌‌​​‌​​‌‌​​‌‌‌‌​‌​​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌​‌‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌​​​‌​​‌‌​‌​‌‌‌​‌​‌‌​​​‌‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​‌​‌​​‌‌​‌​‌​​‌‌‌‌‌​​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌​‌‌‌​‌​​​‌​​‌‌​‌‌‌‌‌​‌​‌‌‌‌‌​‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌​​‌‌​‌‌‌‌‌​‌​‌‌​​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌​‌‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌‌‌‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌‌​‌​​‌‌‌‌‌‌​​‌‌​​‌‌‌‌​‌​‌‌‌​​‌‌‌‌​‌​​‌‌​‌‌​​​‌‌​‌‌‌​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ between the constructive paper position． 
+建设性文件立场之间的差异˳
+
+71
+00:09:34,162 --> 00:09:35,970
+And that's exactly right． 
+这完全正确˳
+
+72
+00:09:35,970 --> 00:09:38,130
+You call that re cross structures． 
+你称之为交叉结构˳
+
+73
+00:09:38,130 --> 00:09:40,560
+So can you just specify it for me? 
+所以你可以为我指定一下吗？
+
+74
+00:09:40,560 --> 00:09:47,920
+Just a little what kind of mathematical object I'm going to use to quantify the difference between them? 
+我将使用什么样的数学对象来量化它们之间的差异？
+
+75
+00:09:48,620 --> 00:10:03,505
+It would be x bar minus x and L 1 l‚ so going basically‚ we want to minimize the difference between the reconstruction and the original representation． 
+它将是x bar减去x和L 1 l，因此基本上，我们希望最小化重建和原始表示之间的差异˳
+
+76
+00:10:03,505 --> 00:10:06,924
+And that means we need to minimize the difference． 
+这意味着我们需要最小化差异˳
+
+77
+00:10:06,924 --> 00:10:12,415
+And we can quantify the difference as the norm of vector difference． 
+我们可以将差异量化为向量差异的范数˳
+
+78
+00:10:12,415 --> 00:10:20,720
+So vector difference is going to give me what are the Ens‚ mention the vector‚ I can't minimize that‚ right? 
+所以向量差会告诉我什么是Ens，提到向量，我不能最小化它，对吧？
+
+79
+00:10:20,720 --> 00:10:25,880
+That's not a real function‚ So I take a yoga squared 2． 
+这不是一个真正的功能，所以我做了一个瑜伽平方2˳
+
+80
+00:10:26,300 --> 00:10:30,400
+And here L norm is a good choice‚ okay? 
+这里，L规范是个不错的选择，好吗？
+
+81
+00:10:30,400 --> 00:10:34,190
+So this is called reconstruction loss． 
+这被称为重建损失˳
+
+82
+00:10:42,960 --> 00:10:44,500
+But what else do I want? 
+但我还想要什么？
+
+83
+00:10:47,200 --> 00:10:47,680
+You want? 
+你想要吗？
+
+84
+00:10:49,700 --> 00:10:59,597
+The vector is the reconstructed C‚ you want that to be spar large dimension‚ okay? 
+这个向量是重建的C，你想让它成为spar大维度，好吗？
+
+85
+00:10:59,597 --> 00:11:12,500
+So the fact that's a large is gonna be just by me selecting the right hyperparameter is before I train‚ I need to choose large enough M‚ and that's a hyper parameter． 
+因此，这个大的事实只是我选择正确的超参数，在我训练之前，我需要选择足够大的M，这是一个超参数˳
+
+86
+00:11:16,420 --> 00:11:20,980
+But you said that Z also needs to be Spark‚ right? 
+但是你说Z也需要火花，对吧？
+
+87
+00:11:22,040 --> 00:11:26,600
+Any ideas on how I can encourage sparsity models function? 
+我对如何鼓励稀疏模型的功能有什么想法吗？
+
+88
+00:11:27,650 --> 00:11:30,080
+You could use the L 1 norm also perfect． 
+你也可以使用L 1范数完美˳
+
+89
+00:11:30,230 --> 00:11:34,210
+Yeah‚ I could use L 1 norm‚ flip the difference． 
+是的，我可以使用L 1范数，翻转差异˳
+
+90
+00:11:35,340 --> 00:11:43,520
+What are we trying to just the dimension of you of z of z‚ right? 
+我们要尝试的只是你的维度，对吗？
+
+91
+00:11:44,490 --> 00:11:50,116
+So what we have a vector z‚ we want the vector to be sparks‚ right? 
+所以我们有一个向量z，我们希望这个向量是火花，对吗？
+
+92
+00:11:50,116 --> 00:11:56,085
+So we want L 1 known of the vector z to spark one dimension would be real number． 
+因此，我们希望已知向量z的L 1个激发一维的实数˳
+
+93
+00:11:56,085 --> 00:12:01,520
+So the norm of the whole vector is what we need here‚ we can think． 
+所以我们需要的是整个向量的范数，我们可以思考˳
+
+94
+00:12:05,990 --> 00:12:09,000
+E1 norm of the if you forgot the． 
+如果你忘记了，E1的常态˳
+
+95
+00:12:11,540 --> 00:12:18,520
+L 1 norm of a vector is just a sum of the absolute value． 
+L一个向量的范数只是绝对值的和˳
+
+96
+00:12:21,180 --> 00:12:21,710
+It's the． 
+就是这个˳
+
+97
+00:12:26,420 --> 00:12:36,120
+Okay‚ so if I minimize this‚ then fewer of them will be active‚ fewer of them will be larger than 0． 
+好的，所以如果我最小化这个，那么它们中的更少将处于活动状态，它们中的更少将大于0˳
+
+98
+00:12:36,760 --> 00:12:41,320
+So this is going to be called sparsity penalty． 
+所以这将被称为稀疏性惩罚˳
+
+99
+00:12:49,540 --> 00:12:53,279
+This is the most basic way of training essays． 
+这是训练论文的最基本方法˳
+
+100
+00:12:53,279 --> 00:12:57,880
+And actually another one that we use today． 
+实际上是我们今天使用的另一个˳
+
+101
+00:12:57,880 --> 00:13:07,920
+So we going about different variants spark‚ what else can we can we do that? 
+所以我们要谈论不同的变体火花，我们还能做些什么呢？
+
+102
+00:13:07,920 --> 00:13:18,200
+So I welcome you while we are‚ you know‚ enjoying our Wednesday that could could be placed here or what the issue‚ for example‚ with this one could be． 
+所以我欢迎你，当我们在享受我们的婚礼时，你知道，可以放在这里，或者这个问题可能是什么˳
+
+103
+00:13:19,220 --> 00:13:26,720
+And for the rest of this lecture‚ I just want to go over the meaning now of these wavelets． 
+在本次讲座的剩余时间里，我只想介绍一下这些小波的含义˳
+
+104
+00:13:28,410 --> 00:13:35,580
+So just to recap‚ we have some heat representation that comes out of our MLP block in the transformer． 
+所以只是为了回顾一下，我们有一些来自变压器中的MLP块的热表示˳
+
+105
+00:13:35,920 --> 00:13:45,037
+We are project that representation in a much larger spa vector and we brought the projected back into the M dimensional space． 
+我们将该表示投射到一个更大的水疗矢量中，并将投影带回M维空间˳
+
+106
+00:13:45,037 --> 00:13:49,120
+And this reconstruction should be a great reconstruction of the original． 
+这种重建应该是对原始建筑的一次伟大的重建˳
+
+107
+00:13:53,320 --> 00:13:56,843
+That minimizes the L to normal there difference． 
+这最小化了L与正常之间的差异˳
+
+108
+00:13:56,843 --> 00:13:59,360
+But at the same time‚ you want this vector． 
+但同时，你想要这个向量˳
+
+109
+00:14:00,000 --> 00:14:02,589
+So we are using a sparsity term． 
+所以我们使用稀疏度项˳
+
+110
+00:14:02,589 --> 00:14:12,580
+Now‚ an important representation of these two matrices‚ again‚ comes from that vector matrix vector view． 
+现在，这两个矩阵的重要表示形式再次来自向量矩阵向量视图˳
+
+111
+00:14:12,820 --> 00:14:19,710
+So here‚ but we have our encoder matrix rubbish‚ we have our encoder． 
+所以在这里，但我们有我们编码器的矩阵垃圾，我们有我们的编码器˳
+
+112
+00:14:22,370 --> 00:14:27,780
+Max of the shape n by m‚ right? 
+n乘m的形状的最大值，对吧？
+
+113
+00:14:37,480 --> 00:14:40,500
+Reason why I decided to go and believe this is because． 
+我决定去相信这个的原因是因为˳
+
+114
+00:14:44,360 --> 00:14:58,260
+And we have our vector x‚ and the way we get value z is‚ again‚ the dot product in the first row and the entire． 
+我们有向量x，而我们得到z值的方法又是第一行和整个的点积˳
+
+115
+00:15:01,540 --> 00:15:02,290
+Okay‚ so again I． 
+好吧，那么我再说一遍˳
+
+116
+00:15:05,080 --> 00:15:11,310
+From I'm taking here that each‚ each row is m dimension mension All right? 
+从我这里开始，每一行都是m维的，好吗？
+
+117
+00:15:11,310 --> 00:15:25,340
+So what you can‚ the way you can think about the rows of in other metrics‚ those are again‚ connected with every feature and they determine how active that feature is in a given． 
+因此，您可以考虑其他指标中的行，这些行再次与每个功能相关联，它们决定了该功能在给定情况下的活跃程度˳
+
+118
+00:15:25,580 --> 00:15:41,650
+So here I have a row 1 it m dimensions inal it should correspond to the first feature is the product of that row with the entire input tells me how active is the first feature z 1 in this input． 
+所以这里有一个第一行，它应该与第一个特征相对应，是该行与整个输入的乘积告诉我此输入中的第一个特征z 1有多活跃˳
+
+119
+00:15:42,650 --> 00:15:47,100
+Now‚ interpretation of our decoder 1． 
+现在，解释我们的解码器1˳
+
+120
+00:15:50,430 --> 00:15:50,950
+So decoder no． 
+所以解码器不˳
+
+121
+00:16:01,360 --> 00:16:04,221
+A huge vector is d here‚ right? 
+一个很大的向量在这里是d，对吧？
+
+122
+00:16:04,221 --> 00:16:08,757
+That's again‚ what we have talked about earlier． 
+这又是我们之前谈到的˳
+
+123
+00:16:08,757 --> 00:16:15,130
+Target today‚ each one of these columns‚ right‚ of feature direction． 
+今天的目标，这些列中的每一列，右侧的特征方向˳
+
+124
+00:16:15,570 --> 00:16:19,790
+So here first future direction． 
+所以这里首先是未来的方向˳
+
+125
+00:16:24,210 --> 00:16:25,930
+And here I have activation． 
+这里我有激活˳
+
+126
+00:16:36,860 --> 00:16:46,077
+So in the same way we had it before‚ basically we are considering‚ okay‚ there is this feature direction‚ how important is that feature direction? 
+因此，与我们之前讨论过的方式相同，基本上我们正在考虑，好的，有这个特征方向，这个特征方向有多重要？
+
+127
+00:16:46,077 --> 00:16:52,360
+And combining that information to produce the reconstruction X head? 
+并结合这些信息来产生重建的X头？
+
+128
+00:16:53,180 --> 00:17:03,880
+So very often in the literature‚ we will refer to the columns of the encoder metrics and learned feature directions． 
+因此，在文献中，我们经常会参考编码器指标和学习特征方向的列˳
+
+129
+00:17:06,040 --> 00:17:10,600
+And in these values‚ in the sparse ions as their activations． 
+在这些值中，稀疏离子作为它们的活化˳
+
+130
+00:17:11,280 --> 00:17:17,700
+Now let me‚ if I this‚ let's say we do all of this‚ we have some missing． 
+现在让我说，如果我这样做，假设我们做了所有这些，我们缺少了一些˳
+
+131
+00:17:18,340 --> 00:17:25,870
+And I will‚ I will give you interpretability so far‚ and then you will tell me what's missed． 
+我会给你到目前为止的可解释性，然后你会告诉我错过了什么˳
+
+132
+00:17:26,780 --> 00:17:30,940
+You give me some vector‚ and I tell you‚ oh‚ I have learned this weight matrix． 
+你给我一些向量，我告诉你，我已经学会了这个权重矩阵˳
+
+133
+00:17:31,820 --> 00:17:38,783
+And columns of these wave matrix are some feature directions‚ but I don't understand which． 
+这些波矩阵的列是一些特征方向，但我不明白是哪一个˳
+
+134
+00:17:38,783 --> 00:17:46,260
+We and I know which columns are active‚ and I can tell you which columns are active． 
+我们知道哪些列是活跃的，我可以告诉你哪些列是活跃的˳
+
+135
+00:17:46,690 --> 00:17:48,290
+These people‚ what is missing? 
+这些人，缺少了什么？
+
+136
+00:17:50,120 --> 00:17:52,836
+The columns correspond exactly‚ right? 
+列完全对应，对吗？
+
+137
+00:17:52,836 --> 00:17:59,280
+So here again‚ I have no interpretability because I have not said what each column． 
+所以再次，我没有可解释性，因为我没有说每一列是什么˳
+
+138
+00:18:03,400 --> 00:18:05,190
+It's actually a line‚ and I need to figure that out． 
+这实际上是一条线，我需要弄清楚˳
+
+139
+00:18:05,490 --> 00:18:16,042
+So once I can assign some kind of meaning‚ but I can say this is about style or this is about grammar． 
+所以一旦我可以分配某种意义，但我可以说这是关于风格或语法的˳
+
+140
+00:18:16,042 --> 00:18:26,960
+And if I find only three of those a．s．‚ I can say‚ well‚ in this kind of representation‚ I have noticed that the feature of having professionals． 
+如果我只找到其中的三个A．S．，我可以说，在这种表现中，我注意到拥有专业人士的特点˳
+
+141
+00:18:29,460 --> 00:18:37,228
+With really with the Polish grammars‚ these are really high level interest to go as nice as those． 
+随着波兰语法的发展，这些都是非常高层次的兴趣，就像那些一样好˳
+
+142
+00:18:37,228 --> 00:18:38,677
+But just another example． 
+但这只是另一个例子˳
+
+143
+00:18:38,677 --> 00:18:42,060
+Then you can say‚ oh‚ you can understand what is encoded． 
+然后你可以说，哦，你就能理解编码的内容˳
+
+144
+00:18:45,080 --> 00:18:59,004
+So next time‚ besides going into different variants of how to‚ you know‚ what kind of different loss functions‚ we are also going to talk about how to assign meaning to this balance． 
+所以下一次，除了介绍如何使用不同的损失函数的不同变体外，我们还将讨论如何为这种平衡分配意义˳
+
+145
+00:18:59,285 --> 00:19:15,852
+And I would also ask you if you can‚ to bring the laptop because if you have time next time‚ to next week‚ we are then going to start to look into these existing libraries and PO into‚ you know‚ what kind of features we actually find the trainers and other stuff． 
+我还想问你能否带上笔记本电脑，因为如果你下次有时间，下周，我们将开始研究这些现有的库，并采购订单，你知道，我们实际上发现了哪些培训师和其他东西的功能˳
+
+146
+00:19:15,852 --> 00:19:19,667
+So we are going to play around together in the class． 
+所以我们打算在课堂上一起玩耍˳
+
+147
+00:19:19,667 --> 00:19:21,582
+So bring that free‚ okay? 
+所以把它免费，好吗？
+
+148
+00:19:21,582 --> 00:19:35,170
+I'm happy to answer a few questions after‚ but in the last few lectures‚ the professor who is here after me‚ I think I'm annoyed that I has advice here too long． 
+我很乐意在之后回答几个问题，但是在最近的几节课中，在我后面的教授，我想我很恼火，因为我在这里有太多的建议˳
+
+149
+00:19:35,430 --> 00:19:38,340
+So‚ you know‚ maybe two questions‚ but． 
+所以，你知道，也许有两个问题，但是˳

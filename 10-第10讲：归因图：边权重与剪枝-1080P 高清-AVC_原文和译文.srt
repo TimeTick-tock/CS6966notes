@@ -1,0 +1,2379 @@
+1
+00:00:02,440 --> 00:00:08,207
+Peter‚ if you're having trouble finding a teammate at this point‚ please reach out to me． 
+彼得，如果你在这一点上找不到队友，请与我联系˳
+
+2
+00:00:08,207 --> 00:00:10,837
+I will be out of town tomorrow． 
+我明天会出城˳
+
+3
+00:00:10,837 --> 00:00:14,420
+I have shown this afternoon already‚ but． 
+我今天下午已经展示了，但是˳
+
+4
+00:00:18,290 --> 00:00:20,580
+But as soon as I am‚ I will help you out． 
+但是一旦我做到了，我会帮助你的˳
+
+5
+00:00:20,580 --> 00:00:28,060
+I won't leave you a look‚ but you know‚ use the app‚ find people who are looking for teammates． 
+我不会让你看一眼，但你知道，使用应用程序，找到正在寻找队友的人˳
+
+6
+00:00:28,060 --> 00:00:36,777
+If you are starting to panic that all the ideas are clean‚ don't worry‚ come talk to me and tell us what you are interested in． 
+如果你开始恐慌所有的想法都是干净的，不要担心，来和我谈谈，告诉我们你感兴趣的是什么˳
+
+7
+00:00:36,777 --> 00:00:47,660
+We will find directions for you so you know't feel like you are stranded in case you can it or project Infinite． 
+我们会为您找到方向，这样您就不会觉得自己被困住了，以防万一或投射无限˳
+
+8
+00:00:48,710 --> 00:00:52,250
+Trust us‚ you will have something to work on． 
+相信我们，你会有所努力的˳
+
+9
+00:00:54,360 --> 00:00:55,440
+Okay‚ any questions? 
+好的，有问题吗？
+
+10
+00:01:05,316 --> 00:01:08,622
+We are going to continue today where we left everything off． 
+我们今天将继续，我们把一切都留下了˳
+
+11
+00:01:08,622 --> 00:01:12,800
+I'll try to be more coherent than I was in the last line． 
+我会尽力比最后一行更连贯˳
+
+12
+00:01:13,010 --> 00:01:15,200
+This weight‚ I just humbled me all． 
+这个重量，我只是谦卑了我所有˳
+
+13
+00:01:16,420 --> 00:01:39,060
+So we're going to try to make sense of everything and kind of complete what we have in covering here‚ just as a reminder about first replacing our transformer architecture‚ specifically MLP modules with Cross Layer Transcoder‚ we precomputed the all the nonlinearities layer norm attention． 
+所以我们将尝试感知所有内容，并完成我们在这里所涵盖的内容，只是作为一个提醒，首先用跨层转码器替换我们的变压器架构，特别是MLP模块，我们预先计算了所有的非线性层规范关注˳
+
+14
+00:01:39,110 --> 00:01:46,497
+And in a model‚ which now‚ when we put everything together‚ a replacement model is basically leaving her． 
+并且在一个模型中，现在，当我们把所有东西放在一起时，一个替代模型基本上离开了她˳
+
+15
+00:01:46,497 --> 00:02:00,416
+And having that model‚ we started to build distribution graphs where the nodes are either in token embeddings or feature directions or output nodes corresponding to the logic of the token． 
+并且有了这个模型，我们开始构建分布图，其中节点要么在令牌嵌入中，要么在特征方向上，要么在与令牌逻辑相对应的输出节点中˳
+
+16
+00:02:00,416 --> 00:02:06,040
+All those error notes that kind of account for the difference between the CLT and the original model． 
+所有这些错误注释都解释了CLT和原始模型之间的差异˳
+
+17
+00:02:06,860 --> 00:02:11,570
+And then we started to talk about what are the actual weights of the edges between． 
+然后我们开始讨论边缘之间的实际权重是多少˳
+
+18
+00:02:12,770 --> 00:02:14,290
+And this is where we left things up． 
+这就是我们留下东西的地方˳
+
+19
+00:02:14,780 --> 00:02:22,444
+So the plan for today is to finish our derivations of what are the weights of these edges． 
+所以今天的计划是完成我们对这些边缘权重的推导˳
+
+20
+00:02:22,444 --> 00:02:33,780
+Then we are going to talk about a simple pruning algorithm for‚ okay‚ simple is maybe not the best word‚ a pruning algorithm for how to prune the nodes． 
+然后我们将讨论一个简单的修剪算法，好吧，简单可能不是最好的词，如何修剪节点的修剪算法˳
+
+21
+00:02:36,020 --> 00:02:39,390
+And that will complete basically this B part． 
+这将基本上完成这B部分˳
+
+22
+00:02:39,390 --> 00:02:44,070
+We are going to learn how do we get pruned beauing graphs． 
+我们将学习如何对美化图进行修剪˳
+
+23
+00:02:44,230 --> 00:02:48,780
+And still with those kinds of graphs we have can have hundreds of nodes or thousands of edges． 
+而且对于我们拥有的那些图形，仍然可以有数百个节点或数千条边˳
+
+24
+00:02:50,020 --> 00:03:04,006
+Remember last time when we were looking at those nice little schematics‚ maybe a handful of nodes and just a few of edges‚ it was very easy to kind of see what these schematics are representing． 
+记得上次我们看那些漂亮的小图时，可能只有几个节点和几个边，很容易看出这些图代表的是什么˳
+
+25
+00:03:04,006 --> 00:03:10,532
+And if you have hundreds and nodes and thousands of edges‚ you don't have such a nice schematic． 
+如果你有成百上千的节点和成千上万的边，你就没有这么漂亮的原理图˳
+
+26
+00:03:10,532 --> 00:03:25,115
+And what you want to get is these what fat co-ets or extremely sparse feature circuits‚ they basically have only a handful of nodes or maybe 20 to 60 nodes‚ way less edges． 
+你想要得到的是这些胖网络或极其稀疏的特征电路，它们基本上只有少数节点，或者可能有20到60个节点，边缘更少˳
+
+27
+00:03:25,115 --> 00:03:33,020
+And you can more easily understand kind of the abstraction of what is going on within the model for a different prompt and the next token． 
+并且您可以更轻松地理解模型中针对不同提示和下一个令牌发生的抽象˳
+
+28
+00:03:33,710 --> 00:03:40,206
+So when it comes to this point‚ Fatima will take over because basically she's the one doing this work． 
+所以当谈到这一点时，法蒂玛将接管，因为基本上她是做这项工作的人˳
+
+29
+00:03:40,206 --> 00:03:51,770
+She's an expert‚ she knows way more than I know‚ so she will cover a little bit about metrics for evaluating these cross letter transcoders that I didn't come． 
+她是一位专家，她比我知道的更多，所以她将介绍一些关于评估这些我没有来的交叉字母转码器的指标˳
+
+30
+00:03:52,260 --> 00:03:58,129
+Okay‚ is it clear what our game plan for today is‚ Yeah‚ okay‚ let's get going． 
+好的，我们今天的游戏计划很清楚吗？是的，好的，让我们开始吧˳
+
+31
+00:03:58,129 --> 00:04:04,560
+So the first thing we are going to talk about are those edge weights‚ right? 
+所以我们要讨论的第一件事是那些边缘权重，对吗？
+
+32
+00:04:23,420 --> 00:04:25,395
+Location we had． 
+我们所在的位置˳
+
+33
+00:04:25,395 --> 00:04:33,463
+So we had some source to‚ sorry‚ excuse me‚ not source token‚ source feature． 
+所以我们有一些源，抱歉，抱歉，不是源令牌，源功能˳
+
+34
+00:04:33,463 --> 00:04:41,060
+And we are interested in the effect this feature has on some higher up feature in our cross layer transer． 
+我们对这个功能对我们的跨层传输中某些更高层功能的影响感兴趣˳
+
+35
+00:04:41,680 --> 00:04:43,020
+So source feature in． 
+所以源特征进去˳
+
+36
+00:04:48,650 --> 00:04:51,350
+Have a target feature that is in a higher? 
+有更高的目标特征吗？
+
+37
+00:04:55,250 --> 00:04:58,920
+In Lt‚ where Lt is larger than L? 
+在Lt中，Lt比L大吗？
+
+38
+00:05:02,420 --> 00:05:10,510
+Then we started to define the edge weight as S 2 t． 
+然后我们开始定义边的权重为S 2 t˳
+
+39
+00:05:10,840 --> 00:05:18,420
+So what is the effect of S on T of how active that feature is time? 
+那么，S对T的影响是什么，这个特征的时间活跃程度如何呢？
+
+40
+00:05:18,420 --> 00:05:19,560
+Some virtual． 
+一些虚拟的˳
+
+41
+00:05:22,320 --> 00:05:25,250
+Okay‚ so ASIs the activation． 
+好的，所以激活˳
+
+42
+00:05:29,930 --> 00:05:30,870
+The latent s? 
+潜伏的s？
+
+43
+00:05:33,950 --> 00:05:35,580
+In layer s? 
+在图层s中？
+
+44
+00:05:40,520 --> 00:05:45,080
+Socalled virtual wait between． 
+所谓虚拟等待之间˳
+
+45
+00:05:47,380 --> 00:05:47,670
+SMD? 
+表面贴装？
+
+46
+00:05:54,340 --> 00:06:14,608
+Our House layer transcoder has for every printer has like the folders for every layer that comes up in the So for every subsequent player‚ we hope have a decoder matrix that stores these feature directions‚ the given layer and measures． 
+我们的房子层转码器对于每台打印机都有相应的文件夹，因此对于每个后续播放器，我们希望有一个解码器矩阵来存储这些特征方向、给定的层和措施˳
+
+47
+00:06:14,608 --> 00:06:22,160
+And we use them to kind of reconstruct every activation‚ every token representation that comes later on． 
+我们使用它们来重建每个激活，每个随后出现的令牌表示˳
+
+48
+00:06:22,460 --> 00:06:29,520
+So a natural question would be‚ okay‚ why don't we just use those in place of the? 
+所以一个自然的问题是，好吧，为什么我们不直接使用它们来代替？
+
+49
+00:06:31,820 --> 00:06:36,151
+Let me just write‚ remind you of that equation． 
+让我写下，提醒你那个方程式˳
+
+50
+00:06:36,151 --> 00:07:02,670
+So if I‚ in the layer t‚ my reconstruction will involve layers up to the LTE and we will have a decoder wait between L 2 L T times‚ spice feature vector‚ which we are． 
+因此，如果我在层t中，我的重建将涉及直到LTE的层，我们将在L 2 L T次之间有一个解码器的等待，香料特征向量，我们就是这样˳
+
+51
+00:07:09,010 --> 00:07:13,530
+C in Lt plus some biases‚ right? 
+C在Lt中还有一些偏见，对吧？
+
+52
+00:07:14,420 --> 00:07:15,750
+What I was raising now is． 
+我现在养的是˳
+
+53
+00:07:25,380 --> 00:07:36,780
+So the question that I'm raising is‚ why can't we just use these weights we have over here to say what the weight is going to be here? 
+所以我提出的问题是，为什么我们不能使用这里的这些重量来说出这里的重量是多少？
+
+54
+00:07:37,680 --> 00:07:40,820
+And yeah‚ the brushes‚ well‚ I have no idea． 
+是的，刷子，我不知道˳
+
+55
+00:07:40,820 --> 00:07:43,960
+Is it because you have a lot of noise? 
+是因为你有很多噪音吗？
+
+56
+00:07:47,140 --> 00:07:51,700
+Don't‚ so maybe there is no‚ but there is something more fundamental going on here． 
+不要，也许没有，但这里还有更基本的事情正在发生˳
+
+57
+00:07:53,820 --> 00:07:56,370
+Front of that connection between the source and the target． 
+在源和目标之间的连接前面˳
+
+58
+00:07:58,790 --> 00:08:04,150
+The Dakota one that's only capturing the direct connection between those two rights． 
+达科塔人只捕捉到这两种权利之间的直接联系˳
+
+59
+00:08:04,150 --> 00:08:20,080
+But there might also be sort of intermediate connections in between them where there's something in between in the source and the target that's still important but not captured by the Yeah‚ exactly‚ So we have‚ I will call it consideration number one． 
+但它们之间也可能存在一种中间连接，来源和目标之间有一些仍然重要但没有被捕捉到的东西，所以我们有，我将其称为第一考虑因素˳
+
+60
+00:08:23,860 --> 00:08:32,710
+One is‚ and I would try to visualize it feature S‚ and we have a feature T‚ right? 
+一个是，我会尝试可视化它的特征，我们有一个特征T，对吧？
+
+61
+00:08:34,680 --> 00:08:47,670
+We have indeed this direction‚ direct connection from S to t to decoder that specialized from going from LS to LG‚ right? 
+我们确实有这个方向，从S到t到解码器的直接联系，专门从LS到LG，对吗？
+
+62
+00:08:48,620 --> 00:08:54,920
+We also‚ this feature is going to influence every single feature in every single layer in between． 
+我们也知道，这个功能将影响介于两者之间的每一层的每一个功能˳
+
+63
+00:08:55,660 --> 00:09:08,630
+If these two are non consecutive layers‚ or I should say if these two features do not live in two consecutive layers and we have some intermediate layers‚ this one． 
+如果这两个是不连续的层，或者我应该说如果这两个特征不在两个连续的层中，而我们有一些中间层，这一个˳
+
+64
+00:09:09,100 --> 00:09:11,090
+So just to be clear‚ this is layer． 
+所以为了清楚，这是层˳
+
+65
+00:09:14,080 --> 00:09:18,530
+And this here is going to be a 11 layer Lt． 
+这里将是一个11层lt˳
+
+66
+00:09:18,530 --> 00:09:20,120
+So what if I have? 
+如果我有呢？
+
+67
+00:09:22,500 --> 00:09:23,130
+One here． 
+这里有一个˳
+
+68
+00:09:23,620 --> 00:09:25,040
+And I still have some other feature． 
+我还有一些其他功能˳
+
+69
+00:09:25,520 --> 00:09:43,720
+Q Then my picture S also impacts Hu red‚ blue‚ the decoder between LS and LS plus one as well can influence T through the coder weight between LS plus one． 
+Q那么我的图片S也会影响Hu红色，蓝色，LS和LS加1之间的解码器也会通过LS加1之间的编码器权重影响T˳
+
+70
+00:09:47,140 --> 00:10:06,140
+So the thing we need to consider is that sure s influences B‚ and we have the impact of the reconstruction‚ the of the token representation and layer 3D‚ but we also have all of these intermediate weights． 
+所以我们需要考虑的是，确定s影响B，我们有重建的影响，令牌表示和层3D的影响，但我们也有所有这些中间权重˳
+
+71
+00:10:06,140 --> 00:10:14,680
+And if S contributes to Q‚ and Q contributes to the DP‚ what is then this accumulated from‚ right? 
+如果S对Q有贡献，Q对DP有贡献，那么它是怎么累积的，对吧？
+
+72
+00:10:14,690 --> 00:10:26,530
+We need to consider that also in our Clps we are‚ we are replacing only MLP layers‚ right? 
+我们需要考虑的是，在我们的Clps中，我们只会替换MLP层，对吗？
+
+73
+00:10:32,510 --> 00:10:35,730
+So consideration too is that we have MLV． 
+所以考虑的也是我们有MLV˳
+
+74
+00:10:37,890 --> 00:10:39,430
+And we have MLB． 
+我们有MLB˳
+
+75
+00:10:43,600 --> 00:10:51,920
+And what we reconstruct from the first MLP we after enter‚ the CLT goes in as in the input of the you． 
+我们从输入后的第一个MLP中重建的内容，CLT就像在你们的输入中一样˳
+
+76
+00:10:52,130 --> 00:10:57,540
+The next Cld layer that replaces the next MLP module‚ however． 
+但是，替换下一个MLP模块的下一个Cld层˳
+
+77
+00:10:59,820 --> 00:11:02,260
+We have those nonlinearities with pros‚ right? 
+我们有优点的非线性，对吧？
+
+78
+00:11:02,270 --> 00:11:10,840
+We have layer norm‚ and we have a pension and we have residual is linear IPA and so on． 
+我们有层规范，我们有养老金，我们有剩余的线性IPA等等˳
+
+79
+00:11:10,970 --> 00:11:13,860
+But we have these intermediate functions． 
+但是我们有这些中间功能˳
+
+80
+00:11:14,550 --> 00:11:17,920
+And because we froze them‚ they all behave our maps． 
+因为我们把它们冻结了，它们就代表了我们的地图˳
+
+81
+00:11:18,570 --> 00:11:22,150
+However‚ they are still changing the influences． 
+然而，他们仍在改变影响˳
+
+82
+00:11:22,380 --> 00:11:28,860
+As you know‚ we come to the next Mo‚ the influence had changed slightly． 
+如你所知，我们进入下一个月，影响力略有变化˳
+
+83
+00:11:29,320 --> 00:11:34,670
+Its scale basically by these values over here． 
+它的规模基本上是由这里的这些值决定的˳
+
+84
+00:11:35,260 --> 00:11:41,830
+Okay‚ so now let's try to use this consideration． 
+好的，现在让我们尝试使用这个考虑˳
+
+85
+00:11:42,150 --> 00:11:46,750
+And our goal now is to they this value． 
+我们现在的目标是让他们拥有这个价值˳
+
+86
+00:11:56,500 --> 00:11:59,210
+So here we are going to use that observation． 
+所以在这里，我们将使用这个观察˳
+
+87
+00:12:02,900 --> 00:12:14,620
+Like this‚ so we have a S to t is a S times virtual wave from S to T‚ however‚ we don't know what the real she wave is‚ right? 
+就像这样，所以我们有a S到t是a S的S乘以虚波，但是，我们不知道真正的she波是什么，对吧？
+
+88
+00:12:15,020 --> 00:12:22,500
+And we are trying to compute now we are going to here use an assumption of how to calculate． 
+我们现在正在尝试计算，我们将在这里使用如何计算的假设˳
+
+89
+00:12:22,500 --> 00:12:28,600
+I just have a quick question about the three main portion． 
+我只是有一个关于三个主要部分的快速问题˳
+
+90
+00:12:28,600 --> 00:12:38,010
+I know it makes the math more complicated‚ but technically we those unfrozen‚ right? 
+我知道这让数学变得更加复杂，但从技术上讲，我们这些解冻了，对吧？
+
+91
+00:12:38,010 --> 00:12:42,440
+Is it just because we're so early on in the field right now that they'll work? 
+仅仅因为我们现在在现场这么早，他们就会起作用吗？
+
+92
+00:12:43,020 --> 00:12:50,320
+It looks like‚ well‚ if we freeze these‚ it'll make it a little easier‚ then we can get a paper out faster‚ or is there some other reason? 
+看起来，如果我们冷冻这些，它会让它更容易一些，然后我们可以更快地取出纸张，还是有其他原因？
+
+93
+00:12:53,100 --> 00:12:58,468
+Then we will come back to the point where I'll say‚ well‚ this is where we use the linearity． 
+然后我们回到那个点，我会说，这就是我们使用线性的地方˳
+
+94
+00:12:58,468 --> 00:13:12,046
+And then we see whether what we think is this a small or foundational challenge‚ if I forget to remind you‚ Okay‚ so we are trying to calculate this virtually． 
+然后我们看看我们认为这是一个小挑战还是基础挑战，如果我忘了提醒你，好吧，所以我们正在尝试以虚拟方式计算˳
+
+95
+00:13:12,046 --> 00:13:17,420
+And here we are going to use kind of intuition about how we can． 
+在这里，我们将使用一种直觉来了解我们如何能够˳
+
+96
+00:13:19,220 --> 00:13:36,950
+And remember last time we finished off by me saying that in machine learning‚ very often when we want to measure importance of some input variable on some function‚ we are going to cast it as how sensitive the function is with respect to the input． 
+记得上次我们说的最后一句话，在机器学习中，当我们想测量某些输入变量在某些函数上的重要性时，我们会将其转换为函数相对于输入的敏感度˳
+
+97
+00:13:37,460 --> 00:13:46,240
+And then we know from how close algebra blue I‚ wherever you learned it‚ that this is exactly measured by derivative of that function with respect to． 
+然后我们知道，无论你在哪里学过，代数蓝色I有多接近，这正是通过该函数相对于导数的导数来测量的˳
+
+98
+00:13:47,220 --> 00:13:50,960
+So intuition here is we are trying to measure importance． 
+所以直觉是我们试图衡量重要性˳
+
+99
+00:13:56,130 --> 00:13:58,150
+Function of the of some function of． 
+某种功能的功能˳
+
+100
+00:14:02,000 --> 00:14:02,800
+With respect to S? 
+关于S？
+
+101
+00:14:05,780 --> 00:14:08,120
+Right‚ then again． 
+对，然后再重复一遍˳
+
+102
+00:14:10,600 --> 00:14:15,948
+We operationalize importance through sensitivity． 
+我们通过敏感性来实现重要性˳
+
+103
+00:14:15,948 --> 00:14:19,890
+So we say importance is basically sensitivity． 
+所以我们说重要性基本上是敏感性˳
+
+104
+00:14:23,740 --> 00:14:31,720
+I will now write the function as this function of t to small changes． 
+我现在将函数编写为t的函数，以进行微小的更改˳
+
+105
+00:14:35,460 --> 00:14:44,750
+In the idea‚ even a small change in S can cause really large changes in the that's an important feature． 
+在这个想法中，即使是S的一个微小变化也可能导致非常大的变化，这是一个重要的特征˳
+
+106
+00:14:47,220 --> 00:14:53,118
+We what kind of tool I have in my toolbox that I actually can quantify this? 
+我们在我的工具箱中有什么样的工具，我实际上可以量化它？
+
+107
+00:14:53,118 --> 00:14:58,920
+And you remember‚ oh‚ that's actually basically a definition of‚ so I would say here． 
+你记得，哦，这实际上基本上是一个定义，所以我会在这里说˳
+
+108
+00:15:07,670 --> 00:15:12,770
+So we are going to use that as a starting point for calculation． 
+所以我们将使用它作为计算的起点˳
+
+109
+00:15:15,060 --> 00:15:15,080
+Of． 
+的˳
+
+110
+00:15:17,760 --> 00:15:44,050
+The word to awake between S and D‚ So we are going to say‚ well‚ we define the wave to define it as a derivative of some function of e with respect to s‚ and the function we are going to use is the 3D activation of the feature d in its layer‚ right? 
+在S和D之间唤醒这个词，所以我们会说，好吧，我们定义波来将其定义为e相对于s的某些函数的导数，我们将使用的函数是特征d在其层中的三维激活，对吗？
+
+111
+00:15:44,060 --> 00:15:47,790
+So remember I'll call it here． 
+所以记住，我在这里叫它˳
+
+112
+00:15:48,120 --> 00:15:50,230
+Here it is‚ right? 
+在这里，对吧？
+
+113
+00:15:56,220 --> 00:15:59,840
+So ZD AZ Lt is a． 
+所以ZD AZ Lt是一个˳
+
+114
+00:16:03,410 --> 00:16:04,090
+Jump right． 
+跳对˳
+
+115
+00:16:09,070 --> 00:16:10,350
+Encoder matrix in that． 
+编码器的矩阵˳
+
+116
+00:16:14,020 --> 00:16:18,124
+Times input to that layer‚ right? 
+时间输入到那个层，对吧？
+
+117
+00:16:18,124 --> 00:16:21,580
+Of and plus‚ plus biases‚ blah‚ blah‚ blah． 
+的和加号，再加上偏见，等等˳
+
+118
+00:16:25,620 --> 00:16:27,700
+This value over here is the pre-activation． 
+这里的值是预激活值˳
+
+119
+00:16:31,200 --> 00:16:42,391
+And this is going to give me the entire pre-activation vector‚ whereas I care only about the team will have you in the vector‚ right? 
+这将给我整个预激活向量，而我只关心团队将你包含在向量中，对吗？
+
+120
+00:16:42,391 --> 00:16:46,320
+So I will take the row in the encoder． 
+所以我会坐在编码器的那排˳
+
+121
+00:16:48,860 --> 00:16:50,880
+With this vector‚ input vector． 
+使用这个向量，输入向量˳
+
+122
+00:16:50,880 --> 00:16:54,920
+And that's going to give me the value and the activation． 
+这将给我带来价值和激活˳
+
+123
+00:16:57,280 --> 00:16:59,530
+So here‚ let me define this function． 
+所以在这里，让我定义这个功能˳
+
+124
+00:17:00,580 --> 00:17:07,570
+HP is going to be the encoder row． 
+惠普将会是编码器一排˳
+
+125
+00:17:08,980 --> 00:17:11,090
+So this is the． 
+这就是这个˳
+
+126
+00:17:13,400 --> 00:17:14,570
+Of the encoder wave metrics? 
+编码器波指标？
+
+127
+00:17:22,920 --> 00:17:30,197
+So for simplicity of notation I'm also igno the fact where these features occur． 
+因此，为了符号的简化，我也对这些特征出现的地方感到非常重要˳
+
+128
+00:17:30,197 --> 00:17:33,920
+Just let me show you the video one more time‚ remember? 
+让我再把视频给你看一次，记得吗？
+
+129
+00:17:43,210 --> 00:17:46,680
+Okay‚ so here I‚ they added that maximizes． 
+好的，所以在这里，他们添加了最大化˳
+
+130
+00:17:54,920 --> 00:17:58,376
+Okay‚ great‚ here we have Tos‚ right? 
+好的，太好了，我们这里有To，对吧？
+
+131
+00:17:58,376 --> 00:18:03,632
+The fact that capital of the state containing Dallas‚ blah‚ blah‚ blah‚ right? 
+这个州的首府包含了Dallas，blah，blah，blah，对吧？
+
+132
+00:18:03,632 --> 00:18:04,560
+And every lay． 
+每一个奠定˳
+
+133
+00:18:07,520 --> 00:18:09,490
+Decoder weight matrices‚ right? 
+权重矩阵解码器，对吧？
+
+134
+00:18:09,750 --> 00:18:16,310
+And we have learned certain features‚ but a feature set dictionary is fixed per layer‚ right? 
+我们已经学习了某些特征，但是特征集字典每层是固定的，对吧？
+
+135
+00:18:16,770 --> 00:18:22,810
+And for every token‚ you can check whether the feature S activates or not． 
+对于每个令牌，您可以检查功能是否激活˳
+
+136
+00:18:23,010 --> 00:18:34,300
+So if I wanna be extremely precise in my notation‚ I wouldn't talk just about the source of this feature‚ but rather which position‚ token position I'm referring to． 
+因此，如果我想在我的符号中非常精确，我不会只谈论这个功能的来源，而是谈论我指的是哪个位置，令牌位置˳
+
+137
+00:18:34,420 --> 00:18:39,335
+Because in position one‚ feature S might be really active． 
+因为在位置一，功能可能真的很活跃˳
+
+138
+00:18:39,335 --> 00:18:43,260
+And then for feature 5‚ it might be not active at all‚ right? 
+然后对于功能5，它可能根本不活跃，对吗？
+
+139
+00:18:43,720 --> 00:18:47,650
+So just keep that in mind that the position is also relevant． 
+所以请记住，这个位置也是相关的˳
+
+140
+00:18:48,340 --> 00:18:56,675
+But now I will need to also include substrates for position‚ which reasons I want to do so． 
+但现在我还需要包括基底位置，这是我想这样做的原因˳
+
+141
+00:18:56,675 --> 00:18:58,780
+Keep that in mind as well． 
+也要记住这一点˳
+
+142
+00:19:01,480 --> 00:19:35,897
+So I defined the free activation‚ the pre activation of the feature piece for some token as my function respect to which I'm calculating this as a D‚ so here I'm going to have the derivative respect to HD‚ and I am going to calculate the derivative of with respect to the As and as is‚ remember the print activation of the S latent image‚ its layer． 
+所以我定义了自由激活，某些标记的特征部分的预激活作为我的函数方面，我将其计算为D，所以在这里我将对高清进行导数方面，我将计算关于As和as的导数，记住潜在图像层的打印激活˳
+
+143
+00:19:35,897 --> 00:19:38,380
+So that's gonna be‚ encoded． 
+所以这将被编码˳
+
+144
+00:19:40,710 --> 00:19:44,730
+L l times L x LS‚ right? 
+升乘以升，对吧？
+
+145
+00:19:45,620 --> 00:19:47,570
+And here I'm also main for L here． 
+这里我也是主要的L˳
+
+146
+00:19:49,800 --> 00:20:07,040
+Okay‚ so I defined virtually as the derivative of the reactivation value of featured in its layer with with respect to how active the feature s is in even later． 
+好的，所以我实际上定义为特征层中重新激活值相对于特征在以后活跃程度的导数˳
+
+147
+00:20:07,510 --> 00:20:19,130
+Okay‚ so now we are going to a little bit of the question now is what is this value over here‚ right? 
+好的，现在我们要回答的问题是，这里的值是什么，对吗？
+
+148
+00:20:19,660 --> 00:20:21,640
+So now we are going to work． 
+所以现在我们要开始工作了˳
+
+149
+00:20:38,120 --> 00:20:48,326
+And here we need to remember where we have this situation where a lot of them are contributing to think． 
+在这里，我们需要记住我们在这种情况下，很多人都在为思考做出贡献˳
+
+150
+00:20:48,326 --> 00:20:53,020
+So we have‚ it's a slightly nuance thing to say． 
+所以我们有，这是一个稍微微妙的说法˳
+
+151
+00:20:53,020 --> 00:20:57,390
+So I will give you an example of very simple situations． 
+所以我会给你一个非常简单的情况的例子˳
+
+152
+00:21:01,240 --> 00:21:05,800
+Okay‚ imagine we have the Cochin activation． 
+好的，想象我们有科钦激活˳
+
+153
+00:21:07,990 --> 00:21:12,980
+Remember the last time I rolled my X A? 
+记得上一次我推出X是什么时候吗？
+
+154
+00:21:15,450 --> 00:21:16,000
+Plus a times． 
+再加上一次˳
+
+155
+00:21:29,740 --> 00:21:31,820
+We have some token representation． 
+我们有一些象征性的代表˳
+
+156
+00:21:31,820 --> 00:21:42,160
+And then we reconstruct this representation by taking the feature direction that are scale with respect to their influences． 
+然后我们通过采用相对于其影响缩放的特征方向来重建该表示˳
+
+157
+00:21:42,680 --> 00:21:49,160
+What the feature s is doing‚ it is basically contributing to a residual stream with this value． 
+功能正在做什么，它基本上是用这个值来贡献残差流˳
+
+158
+00:21:50,100 --> 00:21:56,320
+And of course‚ we also need to add some other vector is together to get to the actual reconstruction． 
+当然，我们还需要添加一些其他向量来进行实际的重建˳
+
+159
+00:21:58,920 --> 00:22:06,580
+Is okay somewhere contribution of that feature direction scale by activation in that layer? 
+在该层中激活该特征方向的某个贡献可以吗？
+
+160
+00:22:08,020 --> 00:22:18,200
+Here I'm just going to show you a situation where we have‚ we are looking into two subsequent residual strings． 
+在这里，我只是要向您展示我们所处的情况，我们正在研究两个随后的剩余字符串˳
+
+161
+00:22:20,500 --> 00:22:25,060
+I should say activation is coming from 2． 
+我应该说激活来自2˳
+
+162
+00:22:30,980 --> 00:22:32,640
+So you have a few layers． 
+所以你有几层˳
+
+163
+00:22:37,420 --> 00:22:41,438
+Corner‚ you touch one thing‚ everything fall apart． 
+角落里，你触摸一件东西，一切都会分崩离析˳
+
+164
+00:22:41,438 --> 00:22:42,300
+My function． 
+我的功能
+
+165
+00:22:49,510 --> 00:22:49,560
+Plus a． 
+加上a˳
+
+166
+00:23:05,070 --> 00:23:08,010
+So let‚ let me write this． 
+所以，让我写这个˳
+
+167
+00:23:11,690 --> 00:23:12,510
+Let me explain what I wrote here． 
+让我解释一下我在这里写了什么˳
+
+168
+00:23:16,420 --> 00:23:30,320
+I'm looking into how my feature in layer LS is propagating through‚ you know‚ the network as it's reaching deep‚ looking at the length of residual string‚ right? 
+我正在研究我在LS层中的特征是如何在网络深入时传播的，看看剩余字符串的长度，对吧？
+
+169
+00:23:33,900 --> 00:23:42,760
+Layer as the feature S is gon na contribute with as time the feature direction that is stored in LS impacting the next? 
+作为特征的层，随着时间的推移，存储在LS中的特征方向会影响下一个？
+
+170
+00:23:45,220 --> 00:23:51,260
+When I come to the reconstruction that comes out of the 2nd Cmt layer． 
+当我进行第2 Cmt层的重建时˳
+
+171
+00:23:54,880 --> 00:23:58,890
+Thing here‚ which includes this part‚ right? 
+这里的东西，包括这部分，对吧？
+
+172
+00:23:59,090 --> 00:24:11,380
+I will have how that feature reconstructs with feature directions that are stored‚ specialize for going from layer LS and then two layers． 
+我将学习如何使用存储的特征方向重构该特征，专门用于从layer LS然后是两层˳
+
+173
+00:24:13,080 --> 00:24:16,362
+I will have some more to be at actual reconstruction． 
+我将有更多的时间进行实际的重建˳
+
+174
+00:24:16,362 --> 00:24:19,880
+The point here is that I am actually summing these direction． 
+这里的重点是，我实际上是在总结这些方向˳
+
+175
+00:24:21,680 --> 00:24:31,140
+So the impacts that I have on this layer and that layer all the way to the where T lives are just adding together． 
+所以我对这一层的影响，以及那一层一直到我们生活的地方，都在增加˳
+
+176
+00:24:31,140 --> 00:24:37,240
+And this comes from having everything being lean． 
+这来自于一切都精益˳
+
+177
+00:24:37,240 --> 00:24:46,180
+All right‚ so now that everything is just being added‚ we can say something about this function over here． 
+好的，现在所有的东西都被添加了，我们可以在这里说一下这个功能˳
+
+178
+00:25:00,000 --> 00:25:15,630
+So remember I'm now calculating that the haribon with respect to A‚ the impacts of the S coming to t are just the sum of these s times some direction‚ right? 
+所以请记住，我现在正在计算关于A的haribon，S到达t的影响只是这些s倍某个方向的总和，对吧？
+
+179
+00:25:17,110 --> 00:25:28,170
+So now the‚ this‚ this gives me that this equals to LS to t -1 of‚ okay? 
+所以现在这个，这给我，这等于LS到t-1的，好吗？
+
+180
+00:25:30,900 --> 00:25:32,930
+Then I will read it out． 
+然后我会读出来˳
+
+181
+00:25:47,310 --> 00:25:51,430
+Here we have the ribbon． 
+这里是缎带˳
+
+182
+00:25:52,180 --> 00:26:05,770
+This function here with respect to A‚ so I‚ the first to get what is the derivative retrospection construction? 
+这个函数在这里相对于A，所以我，第一个得到什么是导数回顾结构？
+
+183
+00:26:06,200 --> 00:26:07,320
+This one here． 
+这一个在这里˳
+
+184
+00:26:12,690 --> 00:26:13,600
+The holder or holder to the folder here． 
+这里的文件夹的持有人或持有人˳
+
+185
+00:26:32,740 --> 00:26:35,640
+Something is suspicious here‚ but I can't point it out． 
+这里有些可疑的东西，但我无法指出来˳
+
+186
+00:26:37,440 --> 00:26:38,302
+Final mistake． 
+最后的错误˳
+
+187
+00:26:38,302 --> 00:26:43,480
+But‚ basically we are calculating the derivative of this function with respect to． 
+但是，基本上我们正在计算此函数相对于的导数˳
+
+188
+00:26:45,820 --> 00:26:57,720
+We need to calculate what is the derivative with respect to the input to the‚ and we get this through this part‚ through this bra． 
+我们需要计算关于输入的导数，然后我们通过这部分，通过这个胸罩得到这个˳
+
+189
+00:26:57,720 --> 00:27:07,380
+So every time the derivative of this part with respect to this‚ what I'm left with is the weight part we see． 
+所以每次这部分关于这个的导数，我剩下的就是我们看到的权重部分˳
+
+190
+00:27:07,380 --> 00:27:11,180
+So this is basically a derivative． 
+所以这基本上是一种衍生物˳
+
+191
+00:27:14,700 --> 00:27:14,810
+Oh． 
+哦˳
+
+192
+00:27:30,900 --> 00:27:33,430
+We have this bit over here‚ right? 
+这里有这个部分，对吧？
+
+193
+00:27:44,940 --> 00:27:49,500
+Again‚ I will try to kind of motivate this to an example． 
+再次，我会尝试以一个例子来激励这个˳
+
+194
+00:27:50,570 --> 00:27:52,950
+So I'm going to have． 
+所以我要˳
+
+195
+00:27:55,490 --> 00:27:59,450
+Lt is going to be L plus one． 
+它将是L加一˳
+
+196
+00:28:03,940 --> 00:28:05,710
+Which means that in between． 
+这意味着介于两者之间˳
+
+197
+00:28:16,450 --> 00:28:16,480
+L I? 
+我？
+
+198
+00:28:19,060 --> 00:28:20,500
+Have only things like? 
+只有像这样的东西？
+
+199
+00:28:23,450 --> 00:28:24,640
+Which are my frozen nonlinear i．s．? 
+哪些是我的冻结非线性i．s．？
+
+200
+00:28:27,730 --> 00:28:32,060
+Means that my input would look something like something like this． 
+意味着我的输入看起来像这样˳
+
+201
+00:28:41,750 --> 00:28:49,330
+To you‚ so basically‚ I have whatever is the output of the previous CLP of reconstruction． 
+对你来说，基本上，我拥有先前重建的所有输出˳
+
+202
+00:28:50,290 --> 00:28:59,980
+And here I have my frozen‚ soft max query transpose times P matrix‚ right‚ which I point compute． 
+在这里，我有我冻结的软最大查询转置次数P矩阵，对，我指向计算˳
+
+203
+00:29:00,160 --> 00:29:05,975
+And if you precomputed‚ what happens with these operations is basically this． 
+如果你预先计算，这些操作基本上会发生什么˳
+
+204
+00:29:05,975 --> 00:29:19,713
+I didn't ever‚ you need to take this at face span‚ but basically I have my frozen of max matrix times the output matrix that‚ you know‚ down sample down projects‚ the big vector‚ which we haven't get from that． 
+我从来没有，你需要在面部跨度时使用这个，但基本上我已经冻结了最大矩阵乘以输出矩阵，你知道，向下采样项目，大向量，我们没有从中得到˳
+
+205
+00:29:19,713 --> 00:29:28,380
+We had an attention‚ the value matrix and then times whatever． 
+我们关注了价值矩阵，然后是时间，无论什么˳
+
+206
+00:29:30,420 --> 00:29:34,980
+I can say this is just a linear operator． 
+我可以说这只是一个线性算子˳
+
+207
+00:29:36,500 --> 00:29:42,020
+So if I define l to be a linear operator‚ that basically takes． 
+因此，如果我将l定义为一个线性算子，基本上需要˳
+
+208
+00:29:44,920 --> 00:29:50,340
+Subtracts the mean and it divides with the frozen? 
+减去平均值，然后与冷冻的除法？
+
+209
+00:29:55,620 --> 00:29:57,896
+Becomes just a linear map? 
+变成一张线性地图？
+
+210
+00:29:57,896 --> 00:30:05,699
+And now in some situations‚ not always‚ it depends on the positions and so on and so on． 
+现在在某些情况下，并非总是如此，这取决于位置等等˳
+
+211
+00:30:05,699 --> 00:30:07,000
+But if I think． 
+但如果我认为˳
+
+212
+00:30:10,820 --> 00:30:17,120
+If I try to calculate this derivative over here with respect to． 
+如果我尝试在这里计算关于的导数˳
+
+213
+00:30:20,700 --> 00:30:22,490
+What I get? 
+我得到了什么？
+
+214
+00:30:26,770 --> 00:30:28,580
+Here‚ not the entirety． 
+在这里，不是全部˳
+
+215
+00:30:31,180 --> 00:30:35,740
+Positions I'm looking at‚ again‚ this is a little bit． 
+我正在看的位置，再次，这有点˳
+
+216
+00:30:48,400 --> 00:30:55,569
+Holder‚ I did skip one step‚ so I hope you can kind of imag it． 
+持有人，我确实跳过了一步，所以我希望你能有点像它˳
+
+217
+00:30:55,569 --> 00:31:06,240
+But we see here that the reactivation is defined as the encoder row times the input to the MLB． 
+但是我们在这里看到重新激活被定义为编码器行乘以输入到MLB˳
+
+218
+00:31:06,240 --> 00:31:14,100
+Now I have defined the input like this‚ which means you just need to put this in the bracket and my． 
+现在我已经像这样定义了输入，这意味着你只需要把它放在括号里˳
+
+219
+00:31:16,720 --> 00:31:21,540
+So that's then the reactivation function． 
+这就是重新激活功能˳
+
+220
+00:31:22,120 --> 00:31:26,680
+Give me review the perspective that I'm going to be with something like this． 
+请给我回顾一下我对这样的事情的看法˳
+
+221
+00:31:27,620 --> 00:31:33,660
+Now‚ I don't really care‚ honestly‚ if you don't really get how we calculated this exact． 
+现在，说实话，我并不在乎，如果你真的不明白我们是如何计算出来的˳
+
+222
+00:31:37,420 --> 00:31:44,980
+Is that you recognize that these mattresses over here‚ you can just think about them as a B1 matrix． 
+如果你认识到这里的这些床垫，你可以把它们想象成一个B1矩阵˳
+
+223
+00:31:47,240 --> 00:31:54,726
+It's constant with respect to whatever is in because this thing is frozen‚ right? 
+它相对于里面的任何东西都是恒定的，因为这个东西被冻结了，对吗？
+
+224
+00:31:54,726 --> 00:31:59,869
+And it's only‚ only thing that depends on the positive and this one as well． 
+只有一件事取决于积极的一面，同样也取决于这一点˳
+
+225
+00:31:59,869 --> 00:32:12,040
+So what you can kind of think about this is this is just a constant matrix and also kind of embrace the fact that we have just multiplied everything． 
+所以你可以这样想，这只是一个恒定矩阵，并且接受我们刚刚乘以一切的事实˳
+
+226
+00:32:13,340 --> 00:32:17,360
+We just‚ oh‚ we are passing through 10 full． 
+我们只是，哦，我们正在经历10个满员˳
+
+227
+00:32:17,360 --> 00:32:23,890
+Let's just multiply the frozen subtext to the these vague． 
+让我们将冻结的潜藏文本乘以这些模糊的内容˳
+
+228
+00:32:24,160 --> 00:32:25,360
+Oh‚ we are passing through the layer． 
+哦，我们正在穿过这一层˳
+
+229
+00:32:25,380 --> 00:32:26,620
+No‚ don't just scale it． 
+不，不要只是缩放它˳
+
+230
+00:32:27,620 --> 00:32:31,791
+Now we buy one over the variance‚ and so to start the meat‚ right? 
+现在我们买一个在方差上，所以开始肉，对吧？
+
+231
+00:32:31,791 --> 00:32:41,580
+So they're just collecting all of these things along the way and mount‚ and this is where that idea of minority comes again when． 
+所以他们只是沿途收集所有这些东西并安装，这就是少数民族的想法再次出现的地方˳
+
+232
+00:32:43,960 --> 00:32:48,520
+Here it becomes really hard to then calculate everything． 
+在这里，计算一切变得非常困难˳
+
+233
+00:32:48,760 --> 00:32:59,055
+And this is that matrix you will see in the very long circuit tracing paper we are trying to understand． 
+这就是你将在我们试图理解的非常长的电路描图纸中看到的矩阵˳
+
+234
+00:32:59,055 --> 00:33:02,725
+That's going to be denoted as Jacobian． 
+这将被记为Jacobian˳
+
+235
+00:33:02,725 --> 00:33:04,560
+And then we'll have this． 
+然后我们就有这个了˳
+
+236
+00:33:05,490 --> 00:33:10,410
+So I'm just write it here as to l? 
+所以我只是在这里写我？
+
+237
+00:33:15,220 --> 00:33:18,210
+Dco and Imma has a very strong connotations． 
+Dco和Imma有很强的内涵˳
+
+238
+00:33:18,210 --> 00:33:44,600
+And sure‚ we are having some derivatives here‚ but in the end‚ what we are‚ how we are implementing this Jacobian is just by of collecting all of these mattresses we have along the way and matting‚ and this is why they emphasize‚ is in the work that this is stocked‚ because you're stopping where all the nonlinearities are and they're not backed properly． 
+当然，我们这里有一些衍生品，但最终，我们是如何实现这个Jacobian的，只是通过收集我们一路上拥有的所有床垫和垫子，这就是为什么他们强调的，是在库存的工作中，因为您正在停止所有非线性的地方，并且它们没有得到正确的支持˳
+
+239
+00:33:47,090 --> 00:33:54,051
+So right‚ let me just put everything in the final equation． 
+所以，让我把一切都放在最终的方程式中˳
+
+240
+00:33:54,051 --> 00:34:02,052
+Then I'll just open the paper to let you see that you connections with the equations． 
+那么我就打开纸张，让你看到你与方程式的联系˳
+
+241
+00:34:02,052 --> 00:34:16,195
+And I will make just one last walk through the Okay‚ so now I have this‚ which I needed here‚ which you know I'm using‚ everything is used over here‚ right? 
+我会最后一次走过，所以现在我有了这个，我在这里需要，你知道我正在使用，一切都在这里使用，对吧？
+
+242
+00:34:16,195 --> 00:34:19,785
+And then we are going to plug it back here． 
+然后我们要把它插回这里˳
+
+243
+00:34:19,785 --> 00:34:26,000
+So now I have justified this jaconia so． 
+所以现在我已经证明了这个jaconia如此˳
+
+244
+00:34:28,910 --> 00:34:30,830
+Are you okay that I remove this part? 
+我删除这部分你还好吗？
+
+245
+00:34:41,020 --> 00:34:53,400
+Okay‚ so here I'm just expanding here‚ l equals LS to l t -1 times this Jacobian． 
+好的，所以我在这里展开，l等于LS到lt-1乘以这个Jacobian˳
+
+246
+00:34:53,520 --> 00:34:58,080
+And actually‚ to make this map work‚ we don't need to transpose it． 
+实际上，为了使这张地图有效，我们不需要转置它˳
+
+247
+00:35:00,960 --> 00:35:05,520
+P transpose the copy and transpose part this p? 
+P将副本转置并转置部分这个p？
+
+248
+00:35:22,510 --> 00:35:25,050
+But this actually goes here‚ right? 
+但这实际上是在这里，对吗？
+
+249
+00:35:25,050 --> 00:35:27,690
+So I have a yes‚ fine． 
+所以我同意，很好˳
+
+250
+00:35:45,640 --> 00:35:50,200
+All this brings us to the actual end of how we calculate． 
+所有这些都把我们带到了我们计算的实际目的˳
+
+251
+00:35:51,420 --> 00:35:55,980
+And now‚ fingers crossed‚ this actually looks like how they have it in the paper． 
+现在，手指交叉，这实际上看起来像他们在纸上的样子˳
+
+252
+00:36:11,840 --> 00:36:15,683
+Okay‚ it looks the same modular． 
+好的，它看起来是相同的模块化˳
+
+253
+00:36:15,683 --> 00:36:17,880
+I multiplied． 
+我倍增了˳
+
+254
+00:36:21,080 --> 00:36:24,440
+We know that this doesn't matter formats‚ as you see． 
+我们知道，正如你所看到的，格式并不重要˳
+
+255
+00:36:28,140 --> 00:36:34,340
+State principles principle． 
+国家原则原则˳
+
+256
+00:36:34,340 --> 00:36:36,401
+I think that's a relevant detail． 
+我认为这是一个相关的细节˳
+
+257
+00:36:36,401 --> 00:36:39,400
+But what we have‚ and I'll get to your question in a second． 
+但是我们有什么，我马上就回答你的问题˳
+
+258
+00:36:41,730 --> 00:36:42,970
+And then we have virtual weight． 
+然后我们有虚拟重量˳
+
+259
+00:36:43,300 --> 00:36:48,876
+And this virtual weight is the sum of all of these terms over here． 
+这个虚拟权重是所有这些项的总和˳
+
+260
+00:36:48,876 --> 00:36:52,266
+And now we know where these terms come from‚ right? 
+现在我们知道这些术语来自哪里，对吧？
+
+261
+00:36:52,266 --> 00:36:56,365
+They come from all of these‚ the relations of the chamber． 
+它们来自所有这些，商会的关系˳
+
+262
+00:36:56,365 --> 00:37:11,548
+The first thing we had to do was calculate the okay‚ we are going to define the how important one feature is to another through this intuition of using the derivative． 
+我们要做的第一件事是计算好的，我们将通过使用导数的直觉来定义一个特征对另一个特征的重要性˳
+
+263
+00:37:11,548 --> 00:37:13,058
+So this was our starting point． 
+所以这是我们的起点˳
+
+264
+00:37:13,058 --> 00:37:19,530
+But to calculate this derivative‚ we had to use chain rule． 
+但是要计算这个导数，我们必须使用链式法则˳
+
+265
+00:37:19,620 --> 00:37:24,570
+So we broke it down in into some of of these terms‚ right? 
+所以我们把它分解成这些术语，对吗？
+
+266
+00:37:25,090 --> 00:37:42,180
+Rule come from the fact that to do everything being linear‚ the influences of the feature just to each other as we propagate through the layers． 
+规则来自于这样一个事实，即做所有事情都是线性的，当我们在这些层中传播时，特征的影响就会相互影响˳
+
+267
+00:37:44,920 --> 00:37:45,986
+Chain rule． 
+链式规则˳
+
+268
+00:37:45,986 --> 00:37:49,540
+Then we will come to this part bit over here． 
+然后我们会来到这里的这个部分˳
+
+269
+00:37:50,020 --> 00:37:54,550
+And I didn't divide this fully precisely． 
+我没有完全精确地分割它˳
+
+270
+00:37:54,550 --> 00:38:06,480
+I just paid you example of what happens when we have two subs and how with frozen nonlinearities‚ the impacts are changing． 
+我刚刚给了你一个例子，当我们有两个潜艇时会发生什么，以及冻结非线性时影响是如何变化的˳
+
+271
+00:38:07,200 --> 00:38:20,587
+The point was to say that basically what we are doing is we are just multiplying a bunch of matrices along the‚ and we collect all of those matrices in this stock Jacobian． 
+重点是说基本上我们所做的就是沿着矩阵相乘一堆，然后收集这个Jacobian矩阵中的所有矩阵˳
+
+272
+00:38:20,587 --> 00:38:21,580
+And when we put． 
+当我们投入时˳
+
+273
+00:38:27,040 --> 00:38:33,400
+At the equation on there‚ it looks like the transpose is on the decoder weight matrix‚ not the encoder． 
+在那里的方程式上，看起来转置在解码器权重矩阵上，而不是编码器上˳
+
+274
+00:38:33,400 --> 00:38:42,101
+It's here‚ you just make an assumption of whether you're multi-plant from the left‚ and then things change slightly． 
+就在这里，你只需假设你是否从左边开始种植多种植物，然后情况会略有变化˳
+
+275
+00:38:42,101 --> 00:38:45,000
+This is basically equivalent． 
+这基本上是等价的˳
+
+276
+00:38:47,540 --> 00:38:51,279
+Multi something from the right instead of left． 
+从右边而不是左边多个东西˳
+
+277
+00:38:51,279 --> 00:38:53,580
+And then everything has changed． 
+然后一切都改变了˳
+
+278
+00:38:55,460 --> 00:38:58,860
+The logic will bring you to the same place． 
+逻辑会把你带到同一个地方˳
+
+279
+00:38:58,860 --> 00:39:08,640
+Also‚ the summation at the top right there should be LS to L‚ then the Lt‚ thank you so much． 
+另外，右上角的总和应该是LS到L，然后是Lt，非常感谢˳
+
+280
+00:39:15,860 --> 00:39:17,757
+Over the layers indicator． 
+在图层指示器上方˳
+
+281
+00:39:17,757 --> 00:39:26,747
+Yeah‚ so‚ so sorry that it isn't‚ you know‚ exactly‚ we are some from the same side‚ but that's just a slight detail． 
+是的，很抱歉，你知道的，确切地说，我们有些人来自同一边，但这只是一个小细节˳
+
+282
+00:39:26,747 --> 00:39:28,702
+It's not an important one． 
+这不是一个重要的问题˳
+
+283
+00:39:28,702 --> 00:39:42,800
+It happens‚ depends whether you start moving right from the left or the right from the main things we need to remember are this additive part right here． 
+它会发生，取决于你是从左边开始向右移动还是从右边开始移动，我们需要记住的是这个添加部分就在这里˳
+
+284
+00:39:43,020 --> 00:39:48,620
+Need to remember here that all these pro nonlinear is along the way． 
+需要记住的是，所有这些非线性都在前进的道路上˳
+
+285
+00:39:48,620 --> 00:39:49,320
+Just mount． 
+刚上山˳
+
+286
+00:39:56,330 --> 00:39:58,810
+Okay‚ so this has been a lot． 
+好的，这已经是很多了˳
+
+287
+00:39:59,000 --> 00:40:08,700
+It's really dense‚ but now you get a sense of how these edges and their weights are actually calculated． 
+它非常密集，但现在你可以感知这些边及其权重是如何实际计算的˳
+
+288
+00:40:09,000 --> 00:40:26,920
+So now we are going to‚ let's take like a little break for this to sit down for a second‚ and then we are going to talk about pruning quick and then‚ but hope you'll have enough time to jump in． 
+所以现在我们要休息一下，坐下来一会儿，然后我们将谈论快速修剪，但希望你有足够的时间来加入˳
+
+289
+00:40:27,620 --> 00:40:33,426
+You know‚ if you need to go over and continue on Tuesday‚ that's okay． 
+你知道的，如果你需要在周二继续，那没关系˳
+
+290
+00:40:33,426 --> 00:40:37,089
+Let's take a little brief break． 
+让我们休息一会儿˳
+
+291
+00:40:37,089 --> 00:40:49,455
+We can remember here‚ I can choose all of the nodes‚ everything and nodes more things like food‚ the busier this graph is going to look like‚ right? 
+我们可以记住这里，我可以选择所有节点，一切和节点，更多的东西，比如食物，这张图看起来越忙，对吧？
+
+292
+00:40:49,455 --> 00:40:51,240
+So there is a lot going on． 
+所以有很多事情正在发生˳
+
+293
+00:40:51,540 --> 00:40:54,410
+And sure‚ we get all these preachers． 
+当然，我们有所有这些传教士˳
+
+294
+00:40:54,410 --> 00:40:56,420
+I can click on things． 
+我可以点击东西˳
+
+295
+00:40:57,020 --> 00:40:59,797
+It's‚ again‚ hard to make sense of this even． 
+再一次，甚至很难感知这一点˳
+
+296
+00:40:59,797 --> 00:41:06,277
+I have way more at the disposal than I had with the food‚ you know‚ regular transporter． 
+我有比食物更多的处理方式，你知道的，常规的运输车˳
+
+297
+00:41:06,277 --> 00:41:15,890
+So we want to prove‚ prune our attribution graphs and remember‚ this is the like a big next thing in our overall pipeline‚ what we are doing． 
+所以我们想要证明，修剪我们的归因图表，并记住，这是我们整个管道中的一件大事，我们正在做的事情˳
+
+298
+00:41:16,230 --> 00:41:18,500
+So we have trained layer transcoder． 
+所以我们训练了层转码器˳
+
+299
+00:41:19,650 --> 00:41:30,080
+It's trained change with a cross layering transcoder‚ we freeze nonlinearities with distribution graph‚ and now I'm going to prove． 
+它使用跨层转码器进行训练改变，我们使用分布图冻结非线性，现在我要证明˳
+
+300
+00:41:37,420 --> 00:42:00,634
+And for this‚ we are going to need to define something called a node influence‚ which is the impact that every single one of these nodes have on the So here‚ remember I clicked on the output‚ no oing‚ which corresponds to the logic of oing for next to prediction． 
+为此，我们需要定义一种称为节点影响的东西，这是这些节点中的每个节点对的影响，所以在这里，记得我点击了输出，没有oing，这对应于预测旁边的oing逻辑˳
+
+301
+00:42:00,634 --> 00:42:07,140
+Basically‚ it's related to the likelihood of ostium being the next token． 
+基本上，它与口成为下一个标志的可能性有关˳
+
+302
+00:42:08,020 --> 00:42:10,125
+And we try to explain why． 
+我们试图解释为什么˳
+
+303
+00:42:10,125 --> 00:42:16,440
+Given this prompt‚ the model thinks that Austin is the highest probable option over here． 
+根据这个提示，该模型认为奥地利是这里最高可能的选择˳
+
+304
+00:42:16,740 --> 00:42:23,780
+So we are going to define logic‚ no node influence． 
+所以我们将定义逻辑，没有节点影响˳
+
+305
+00:42:40,440 --> 00:42:45,600
+So we are going to start with building build． 
+所以我们将从建设开始˳
+
+306
+00:42:47,740 --> 00:42:50,110
+Unsigned adjacency metrics． 
+无符号邻接度量˳
+
+307
+00:43:08,130 --> 00:43:08,860
+Are storing here are basic? 
+这里的存储是基本的吗？
+
+308
+00:43:15,520 --> 00:43:20,080
+And you maybe don't need a whole few things around it because that． 
+你可能不需要它周围的一些东西，因为那个˳
+
+309
+00:43:36,190 --> 00:43:38,530
+Everything we live so far led to this． 
+我们迄今为止生活的一切都导致了这一点˳
+
+310
+00:43:45,940 --> 00:43:50,500
+First‚ going to produce the unsigned． 
+首先，要生成未签名的˳
+
+311
+00:43:55,540 --> 00:43:55,680
+Absolute value． 
+绝对价值˳
+
+312
+00:43:57,160 --> 00:43:58,530
+And I should say． 
+我应该说˳
+
+313
+00:44:05,240 --> 00:44:08,380
+Then we are going to normalize． 
+然后我们将规范化˳
+
+314
+00:44:08,380 --> 00:44:11,520
+Normalization is going to be? 
+正常化会怎样？
+
+315
+00:44:26,080 --> 00:44:28,360
+So for now‚ we are doing this． 
+所以现在，我们正在这样做˳
+
+316
+00:44:28,360 --> 00:44:30,640
+We don't understand why‚ but． 
+我们不明白为什么，但是˳
+
+317
+00:44:32,740 --> 00:44:32,860
+It later． 
+稍后˳
+
+318
+00:44:33,270 --> 00:44:46,335
+Now‚ this is where researchers who created this work had to decide‚ well‚ how are we going to actually define the node in weights we have here? 
+现在，这就是创建这项工作的研究人员必须决定的地方，那么，我们如何实际定义这里的节点权重？
+
+319
+00:44:46,335 --> 00:44:55,390
+And even these plant have declined and basically saying‚ well I'm going to‚ we are going to measure the influence through． 
+甚至这些植物也已经下降，基本上说，我要，我们将通过测量影响来衡量˳
+
+320
+00:44:58,690 --> 00:44:59,750
+The total strength? 
+总体实力？
+
+321
+00:45:03,200 --> 00:45:04,980
+Between 2 nodes． 
+在两个节点之间˳
+
+322
+00:45:05,030 --> 00:45:07,120
+So let me so． 
+所以让我这样做˳
+
+323
+00:45:30,880 --> 00:45:39,007
+Okay‚ so what I am defined here is pretty much as adjacency matrix． 
+好的，所以我在这里的定义几乎是邻接矩阵˳
+
+324
+00:45:39,007 --> 00:45:42,119
+This kind of stores between every two nodes． 
+这种在每两个节点之间进行存储˳
+
+325
+00:45:42,119 --> 00:45:44,920
+What is the edge weight between them? 
+它们之间的边缘权重是多少？
+
+326
+00:45:47,130 --> 00:45:52,310
+In what is that matrix square for? 
+这个矩阵的正方形是干什么的？
+
+327
+00:45:52,330 --> 00:46:11,262
+Seeing that measuring the influence between two nodes through two step paths‚ it's useful to look into something like this‚ a particular element‚ NL of that matrix． 
+看到通过两个步骤的路径测量两个节点之间的影响，查看像这样的东西是有用的，一个特定的元素，该矩阵的NL˳
+
+328
+00:46:11,262 --> 00:46:17,025
+​‌​‌​​‌‌​​‌‌​​‌‌‌​‌‌​​‌‌‌‌​‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌​‌‌‌‌​‌​​​‌​​‌‌​​‌‌​​‌‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​​‌​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​‌​‌​​‌‌‌‌​‌‌‌​‌​‌​‌​​‌‌‌​​‌‌‌​‌‌‌​‌‌‌​‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌​​‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌​‌‌‌‌​‌​‌‌‌​​‌‌‌​​‌​​‌‌‌‌​‌‌‌​‌‌‌‌​​​‌‌​​‌‌​​‌‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌​​​‌​​‌‌‌‌‌​​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌‌​​​‌‌​‌​‌‌‌​‌​​‌‌​​‌‌​‌​‌​​‌‌​‌​‌‌‌​‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​‌‌​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌​​‌​​‌‌​‌‌‌​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌​‌‌​​‌‌‌​​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌​‌‌​​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​​‌‌‌​‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌‌​​​‌‌‌‌‌​​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌Well‚ it is the by the definition of matrix multiplication． 
+根据矩阵乘法的定义，它是˳
+
+329
+00:46:17,025 --> 00:46:19,440
+So I'm going to write it here． 
+所以我要在这里写˳
+
+330
+00:46:32,740 --> 00:46:40,460
+Product of these two matrices and the element‚ so row and column down． 
+这两个矩阵和元素的乘积，所以行和列向下˳
+
+331
+00:46:40,460 --> 00:46:45,670
+And this can be written through the sum‚ right? 
+这可以通过总和来写，对吗？
+
+332
+00:46:45,850 --> 00:46:54,580
+A‚ and we multiply it with the L column‚ right? 
+我们将它与L列相乘，对吗？
+
+333
+00:46:59,040 --> 00:47:01,521
+Okay‚ but what is this? 
+好的，但这是什么？
+
+334
+00:47:01,521 --> 00:47:25,910
+Well‚ that's going to be basically related to the impact that node n has‚ the impact that K has on l‚ so in this way‚ it is measuring the impact of m to l by having the intermediate nodes． 
+这基本上与节点n的影响有关，即K对l的影响，因此通过这种方式，它通过具有中间节点来测量m对l的影响˳
+
+335
+00:47:26,380 --> 00:47:29,880
+And we are checking all of the intermediate levels of‚ right? 
+我们正在检查所有的中间层次，对吧？
+
+336
+00:47:31,360 --> 00:47:39,151
+So this basically means you just direct influences from one to another． 
+所以这基本上意味着你只是将影响从一个直接到另一个˳
+
+337
+00:47:39,151 --> 00:47:54,870
+Here is measure the strength of the influence from n to l through all of the paths of a certain length here of a path length 2‚ and then like 4‚ however possible‚ right? 
+这里测量的是从n到l通过所有特定长度的路径的影响强度，这里的路径长度为2，然后像4一样，无论如何可能，对吧？
+
+338
+00:47:55,620 --> 00:47:56,141
+To know． 
+要知道˳
+
+339
+00:47:56,141 --> 00:48:03,956
+But this is no one serious‚ and it actually converges if this matrix is normalized‚ that's why we normalize it． 
+但这不是一个严肃的问题，如果这个矩阵被归一化，它实际上会收敛，这就是我们对它进行归一化的原因˳
+
+340
+00:48:03,956 --> 00:48:16,420
+So once we have normalization‚ this normal series is going to converge to intensity matrix‚ our adjacent steel matrix‚ converged miners． 
+所以一旦我们归一化，这个正常的序列将收敛到强度矩阵，我们相邻的钢矩阵，收敛的矿工˳
+
+341
+00:48:24,480 --> 00:48:24,620
+So? 
+所以呢？
+
+342
+00:48:30,540 --> 00:48:34,480
+Okay‚ so now we are going to define the． 
+好的，现在我们要定义它˳
+
+343
+00:48:36,880 --> 00:48:39,400
+One‚ so for nodes n? 
+节点1，所以对于节点n？
+
+344
+00:48:43,020 --> 00:48:48,360
+Logic influence in his word‚ define． 
+他的话中的逻辑影响，定义˳
+
+345
+00:49:10,960 --> 00:49:11,300
+All right so． 
+好的，这样˳
+
+346
+00:49:13,940 --> 00:49:28,800
+Here we have‚ for every possible logic among those VP‚ remember‚ this is commonly‚ at least in Neal media‚ such to 10‚ we check what is the probability that's assigned to the． 
+在这里，对于这些VP中的每个可能的逻辑，记住，这通常是，至少在尼尔媒体中，比如10，我们检查分配给的概率是多少˳
+
+347
+00:49:56,200 --> 00:49:58,160
+Can associate them with that logic? 
+能否将它们与这个逻辑联系起来？
+
+348
+00:50:00,040 --> 00:50:05,520
+I am looking into a logic that occurs in the second place of the logic vector that's associated with circuit． 
+我正在研究出现在与电路相关的逻辑向量第二位的逻辑˳
+
+349
+00:50:13,020 --> 00:50:13,040
+The． 
+这个˳
+
+350
+00:50:15,520 --> 00:50:15,540
+So? 
+所以呢？
+
+351
+00:50:37,420 --> 00:50:41,016
+This is how we get the influence of the logic． 
+这就是我们获得逻辑影响的方式˳
+
+352
+00:50:41,016 --> 00:50:50,430
+So now we have the in our pruning the algorithm‚ and then I pretty simple‚ they are just going to prune for． 
+所以现在我们在修剪算法中有了，然后我很简单，它们只是为了修剪˳
+
+353
+00:50:52,730 --> 00:50:53,750
+The values? 
+价值观？
+
+354
+00:51:02,490 --> 00:51:08,470
+Calculate all of the all of the for his input compute． 
+为他的输入计算所有的˳
+
+355
+00:51:12,020 --> 00:51:16,580
+Log‚ maybe I'll just write it I m because I have the symbol． 
+日志，也许我会直接写出来，因为我有这个符号˳
+
+356
+00:51:18,850 --> 00:51:19,370
+I am for? 
+我支持？
+
+357
+00:51:31,100 --> 00:51:37,483
+Keep top cake and K in this work is 18%． 
+在这项工作中保持顶级蛋糕和K为18%˳
+
+358
+00:51:37,483 --> 00:51:40,920
+And they themselves say they chose it arbitrarily． 
+他们自己说他们任意选择了它˳
+
+359
+00:51:47,220 --> 00:52:04,560
+Once you have 80% of those top influential nodes‚ you can drop all the edges that now kind of are drop because you have‚ if you have an edge between two nodes that are removed‚ that edge shouldn't exist anymore‚ right? 
+一旦您拥有了80% 的顶级有影响力的节点，您就可以删除所有现在被删除的边缘，因为如果您在两个被删除的节点之间有一个边缘，那么该边缘就不应该存在了，对吧？
+
+360
+00:52:05,990 --> 00:52:08,850
+Implicit‚ we are going to drop some edges too． 
+隐式地，我们也将删除一些边缘˳
+
+361
+00:52:11,000 --> 00:52:15,560
+But you can also further‚ further remove edges． 
+但您还可以进一步删除边缘˳
+
+362
+00:52:16,900 --> 00:52:19,930
+So because now we have． 
+因为现在我们有了˳
+
+363
+00:52:22,020 --> 00:52:26,580
+Normalized‚ we can also remove‚ at least in this paper． 
+归一化后，我们也可以删除，至少在本文中是这样˳
+
+364
+00:52:40,600 --> 00:52:50,870
+And basically‚ when you go to narrow PIA and you see here‚ show notes accounting for the number of influence or show notes‚ which okay‚ feature does． 
+基本上，当你进入缩小的PIA时，你会在这里看到，显示注释占影响力或显示注释的数量，这是功能所做的˳
+
+365
+00:52:50,870 --> 00:52:52,410
+And that's not about edges． 
+这与边缘无关˳
+
+366
+00:52:52,410 --> 00:53:01,920
+But if you were to create a graph‚ remember you can determine how many edges you are going to keep in your attribution rough． 
+但是如果你要创建一个图表，记住你可以确定你要在你的归因中保留多少边˳
+
+367
+00:53:01,920 --> 00:53:06,720
+So here‚ no threshold is 0‚ 7‚ and threshold is． 
+所以这里没有阈值是0、7，而阈值是˳
+
+368
+00:53:09,530 --> 00:53:19,350
+Okay‚ so now we have our PD graph that completes how we have produced‚ basically panel beam here． 
+好的，现在我们有了完整的PD图，它完成了我们如何生产，基本上是面板光束˳
+
+369
+00:53:20,680 --> 00:53:31,270
+The issue is‚ as we have seen here on the media‚ is that many of those at the graph are still dense． 
+问题是，正如我们在媒体上看到的那样，图表上的许多数据仍然密集˳
+
+370
+00:53:31,280 --> 00:53:36,660
+So here‚ some of these are cool because they connect． 
+所以在这里，其中一些很酷，因为它们连接在一起˳
+
+371
+00:53:39,110 --> 00:53:45,580
+To these nodes that are selected by a human expert into this sub graph． 
+这些节点是由人类专家选择到这个子图中的˳
+
+372
+00:53:45,980 --> 00:53:53,720
+So once this attribution graph was created‚ human expert has decided‚ oh‚ let me try to make sense of this vehicle． 
+因此，一旦创建了这个归因图，人类专家就决定，让我试着感知这个工具˳
+
+373
+00:53:54,520 --> 00:54:07,040
+Then they have produced this nice subproject actually shows that or suggests that the model Gemma 2 here is reasoning about this product in a way you think you should． 
+然后他们制作了这个漂亮的子项目，实际上表明或建议模型杰玛2在用你认为应该的方式推理这个产品˳
+
+374
+00:54:07,840 --> 00:54:13,360
+Dallas is in Texas and that the capital of Texas is austing their region． 
+达拉斯在德克萨斯州，德克萨斯州的首府正在他们的地区˳
+
+375
+00:54:14,580 --> 00:54:28,490
+So when you see these bold gized circles‚ that's basically what the expert have manually identified as the most related to what the model is． 
+因此，当您看到这些加粗的圆圈时，这基本上是专家手动确定的与模型最相关的圆圈˳
+
+376
+00:54:31,160 --> 00:54:38,120
+So now fame will tell us a little bit about how we can try to automate． 
+所以现在名声会告诉我们一些关于如何尝试自动化的信息˳
+
+377
+00:54:40,240 --> 00:54:42,586
+You rock‚ which is maybe Pn already． 
+你摇滚，可能已经是Pn了˳
+
+378
+00:54:42,586 --> 00:54:47,800
+How can we come to the something that has only 20 to 60 notes? 
+我们如何才能得到只有20到60个音符的东西？
+
+379
+00:54:48,480 --> 00:55:07,596
+This is an ongoing work‚ that one and developing‚ but since a lot of you are interested in using some form of circuits‚ your projects‚ I think what you will end up doing is using with the best approach the button has at the whole moment． 
+这是一项持续的工作，而且还在不断发展，但是由于你们中的很多人都对使用某种形式的电路和项目感兴趣，我认为你们最终要做的是使用按钮目前最好的方法˳
+
+380
+00:55:07,596 --> 00:55:16,340
+It's not going to be perfect‚ but it's going to give you an opportunity to construct the circuits at a larger scale than if you would try to do that． 
+它不会是完美的，但它会给你一个机会，让你以比尝试这样做更大规模地构建电路˳
+
+381
+00:56:15,390 --> 00:56:15,470
+My story? 
+我的故事？
+
+382
+00:57:22,750 --> 00:57:25,060
+Pull the circuit that the? 
+拉动电路？
+
+383
+00:57:29,020 --> 00:57:34,027
+So I'm going to start with just a recap of what we're doing． 
+所以我将从回顾我们正在做的事情开始˳
+
+384
+00:57:34,027 --> 00:57:35,140
+So we have these． 
+所以我们有这些˳
+
+385
+00:57:37,420 --> 00:57:39,772
+More interpretable features． 
+更具解释性的特征˳
+
+386
+00:57:39,772 --> 00:57:42,420
+They are helping us to move away from． 
+他们正在帮助我们远离˳
+
+387
+00:57:45,180 --> 00:57:47,898
+But the issue is that data too bi​‌​‌​​‌‌​​‌‌​​‌‌‌​‌‌​​‌‌‌‌​‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌​‌‌‌‌​‌​​​‌​​‌‌​​‌‌​​‌‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​​‌​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​‌​‌​​‌‌‌‌​‌‌‌​‌​‌​‌​​‌‌‌​​‌‌‌​‌‌‌​‌‌‌​‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌​​‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌​‌‌‌‌​‌​‌‌‌​​‌‌‌​​‌​​‌‌‌‌​‌‌‌​‌‌‌‌​​​‌‌​​‌‌​​‌‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌​​​‌​​‌‌‌‌‌​​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌‌​​​‌‌​‌​‌‌‌​‌​​‌‌​​‌‌​‌​‌​​‌‌​‌​‌‌‌​‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​‌‌​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌​​‌​​‌‌​‌‌‌​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌​‌‌​​‌‌‌​​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌​‌‌​​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​​‌‌‌​‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌‌​​​‌‌‌‌‌​​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌g． 
+但问题是数据太大了˳
+
+388
+00:57:47,898 --> 00:57:51,220
+We also have outrated interpretability． 
+我们也已经超越了可解释性˳
+
+389
+00:57:51,220 --> 00:57:57,360
+We have descriptions basically for each feature that we have in the circuit． 
+我们基本上对电路中的每个特征都有描述˳
+
+390
+00:58:00,780 --> 00:58:05,340
+Help us in building that vignette． 
+帮助我们构建那个小插曲˳
+
+391
+00:58:05,640 --> 00:58:21,562
+And the whole goal is that we want to go from these features that we have here to me‚ or to processes that the model follows‚ to go from the input tokens to this next token credit． 
+整个目标是，我们想要从这里拥有的这些功能转到我，或者转到模型遵循的流程，从输入令牌转到下一个令牌信用˳
+
+392
+00:58:21,562 --> 00:58:25,754
+So yeah‚ we have attributable it． 
+所以是的，我们已经归因了˳
+
+393
+00:58:25,754 --> 00:58:32,365
+It can serve as a causal explanation of model behavior‚ but it's too large to manually． 
+它可以作为模型行为的因果解释，但手动操作太大了˳
+
+394
+00:58:32,365 --> 00:58:38,120
+And as Anna mentioned‚ pruning the model to compound． 
+正如安娜所提到的，修剪模型以进行复合˳
+
+395
+00:58:40,500 --> 00:58:41,894
+It is useful． 
+这很有用˳
+
+396
+00:58:41,894 --> 00:58:53,870
+It basically shrink's the ground so much and still keeps most of the contribution of to the output． 
+它基本上缩小了地面，但仍然保持了对产出的大部分贡献˳
+
+397
+00:58:55,310 --> 00:58:56,840
+But still it's much‚ much． 
+但还是很多很多˳
+
+398
+00:59:01,920 --> 00:59:07,960
+So we have these vignette and minimal‚ extremely sparse subgraph． 
+所以我们有这些小插曲和最小的，极其稀疏的子图˳
+
+399
+00:59:09,980 --> 00:59:12,740
+Is intended to capture the circuit's core? 
+是为了捕捉电路的核心？
+
+400
+00:59:14,220 --> 00:59:15,750
+That's what is． 
+就是这样˳
+
+401
+00:59:20,030 --> 00:59:20,310
+Entropic work as well． 
+熵工作也是如此˳
+
+402
+00:59:20,310 --> 00:59:34,132
+And usually experts choose around 30% of the circuit that we saw over here to include in the vignette this typically example． 
+通常专家会选择我们在这里看到的电路的30% 左右来包含在小插曲中，这个典型的例子˳
+
+403
+00:59:34,132 --> 00:59:41,051
+So it is really lamberson scale it with this limit． 
+所以真的是兰伯森用这个限制来衡量它˳
+
+404
+00:59:41,051 --> 00:59:46,120
+And typically we would have 20 to 16． 
+通常我们会有20到16个˳
+
+405
+00:59:46,120 --> 00:59:53,370
+And we know that some of those nodes share the same concepts‚ or we want to group them into supernodes． 
+我们知道其中一些节点共享相同的概念，或者我们希望将它们分组为超级节点˳
+
+406
+00:59:53,370 --> 00:59:57,001
+And usually‚ on average‚ there are 7 supernodes． 
+通常，平均而言，有7个超级节点˳
+
+407
+00:59:57,001 --> 01:00:06,040
+And this‚ this is coming from around less than 40 examples that we have actual manual． 
+而这，这是来自我们实际手册中不到40个例子˳
+
+408
+01:00:08,680 --> 01:00:12,396
+So yeah‚ we need to scale it． 
+所以，是的，我们需要扩展它˳
+
+409
+01:00:12,396 --> 01:00:17,300
+And so we need to make it automated． 
+所以我们需要让它自动化˳
+
+410
+01:00:23,420 --> 01:00:31,740
+Okay‚ so what we first need to start with is to decide digital we want to keep． 
+好的，所以我们首先需要开始的是决定我们想要保持的数字化˳
+
+411
+01:00:31,740 --> 01:00:39,900
+So as Ana mentioned‚ some of these are highlighted‚ meaning we want to keep these nodes in the video． 
+正如安娜所提到的，其中一些被突出显示，这意味着我们希望将这些节点保留在视频中˳
+
+412
+01:00:40,850 --> 01:00:44,270
+So what we are doing dealing with is we have some nodes． 
+所以我们正在处理的是我们有一些节点˳
+
+413
+01:00:44,330 --> 01:00:48,720
+These nodes are going to be either embeddings or the feature nodes． 
+这些节点将是嵌入节点或特征节点˳
+
+414
+01:00:48,720 --> 01:00:50,160
+We have error nodes． 
+我们有错误节点˳
+
+415
+01:00:50,160 --> 01:00:51,120
+And finally we． 
+最后，我们˳
+
+416
+01:00:54,720 --> 01:00:57,903
+Edges between them‚ they present the influence． 
+在它们之间的边缘，它们呈现了影响˳
+
+417
+01:00:57,903 --> 01:01:01,665
+As we just learned‚ they could be positive or negative． 
+正如我们刚刚学到的，它们可能是积极的，也可能是消极的˳
+
+418
+01:01:01,665 --> 01:01:11,611
+Positive means that this node is supporting connected to‚ and negative means that it's suppressing． 
+正值表示此节点支持连接，负值表示它正在抑制˳
+
+419
+01:01:11,611 --> 01:01:17,380
+And we have this final node‚ which is kind of like a sink． 
+我们有最后一个节点，它有点像一个接收器˳
+
+420
+01:01:17,600 --> 01:01:34,864
+We are thinking about this and directed terms‚ and the idea is that we want to find paths that carry the most influence from input to the same． 
+我们正在考虑这个和定向的术语，这个想法是我们想要找到从输入到相同的影响最大的路径˳
+
+421
+01:01:34,864 --> 01:01:46,050
+So similar part‚ like finding critical path is dealing with the same issue that we want to simplify the graph to the most important paths． 
+如此相似的部分，就像找到关键路径一样，处理的是我们想要将图形简化为最重要路径的相同问题˳
+
+422
+01:01:46,050 --> 01:01:49,580
+So we are dealing with the same problem here． 
+所以我们在这里处理同样的问题˳
+
+423
+01:01:49,580 --> 01:01:59,980
+What you're doing is that you first fix the target and soror the embeddings to the source node or the next． 
+你要做的是首先修复目标，然后将嵌入到源节点或下一个节点˳
+
+424
+01:02:01,440 --> 01:02:03,130
+And we want to find like． 
+我们想要找到喜欢的˳
+
+425
+01:02:05,400 --> 01:02:12,580
+Score different passes output and at the end pick top K hat sets that are most． 
+得分不同的传球输出，最后选择最多的前K顶帽子套装˳
+
+426
+01:02:15,220 --> 01:02:21,320
+And we do that by multiplying the Ent waves between the nodes． 
+我们通过将节点之间的Ent波相乘来实现这一点˳
+
+427
+01:02:23,280 --> 01:02:26,250
+And we also convert this to block space． 
+我们还将其转换为块空间˳
+
+428
+01:02:29,580 --> 01:02:30,676
+Once we do that． 
+一旦我们这样做了˳
+
+429
+01:02:30,676 --> 01:02:40,295
+But basically how we want to do that is we are topological order‚ meaning that we start at the top． 
+但基本上我们想要做的是拓扑顺序，这意味着我们从顶部开始˳
+
+430
+01:02:40,295 --> 01:02:56,825
+We and the notes that are directly connected to this one‚ we score them‚ we keep the talking‚ we just repeat this process dynamically so that we have the we can score all the passes． 
+我们和直接连接到这个的音符，我们给它们评分，我们保持说话，我们只是动态地重复这个过程，这样我们就可以给所有的传球评分˳
+
+431
+01:02:56,825 --> 01:02:59,985
+And then finally‚ we keep talking． 
+最后，我们继续交谈˳
+
+432
+01:02:59,985 --> 01:03:10,380
+And at the end‚ this will give us a sequence of nodes that are in these top K passes and also the contribution office path． 
+最后，这将为我们提供位于这些前K个通道中的节点序列以及贡献办公室路径˳
+
+433
+01:03:10,820 --> 01:03:35,280
+One thing that could happen is that some of the nodes are shared between multiple classes‚ and at the end‚ what we want to do is to keep notes how we are accumulating the influence of different passages to the nodes‚ normalize the contribution of the past so that we don't have any depth bias． 
+可能发生的一件事是一些节点在多个类之间共享，最后，我们想要做的是记录我们如何积累不同通道对节点的影响，规范化过去的贡献，以便我们没有任何深度偏差˳
+
+434
+01:03:36,040 --> 01:03:40,600
+It could be the case that longer passes are more important just． 
+这可能是因为更长的通行证更重要˳
+
+435
+01:03:43,020 --> 01:03:45,528
+To normalize by the lengths of the pass． 
+按照路径的长度进行归一化˳
+
+436
+01:03:45,528 --> 01:03:55,780
+And then for each node‚ we're gon na some the influence of all passes‚ of all top k passes that belongs to． 
+然后对于每个节点，我们都要考虑所有通过的影响，包括所有前k个通过的影响˳
+
+437
+01:03:55,780 --> 01:04:01,000
+And then we are going to only keep highly influential‚ no? 
+然后我们只会保持高度影响力，不是吗？
+
+438
+01:04:05,360 --> 01:04:11,460
+Is building the supernote‚ but before I can explain that‚ I need to give you a bit of background． 
+正在构建超级笔记，但在我解释之前，我需要给你一些背景知识˳
+
+439
+01:04:11,460 --> 01:04:18,810
+We are borrowing an idea from data visualization escalation． 
+我们借鉴了数据可视化升级的一个想法˳
+
+440
+01:04:19,210 --> 01:04:28,280
+So in this‚ in this method‚ we are starting with a graph． 
+因此，在这种方法中，我们从一个图表开始˳
+
+441
+01:04:28,320 --> 01:04:32,880
+We want to preserve some property of the graph． 
+我们想要保留图形的某些属性˳
+
+442
+01:04:34,900 --> 01:04:38,940
+Make the graph simpler or somehow summarize the graph． 
+让图表更简单，或者以某种方式总结图表˳
+
+443
+01:04:41,620 --> 01:04:42,657
+Or add any nodes． 
+或添加任何节点˳
+
+444
+01:04:42,657 --> 01:04:44,991
+You just keep the stamina that we have． 
+你只需要保持我们拥有的耐力˳
+
+445
+01:04:44,991 --> 01:04:53,372
+But at the end‚ we want to group some of them so that we have a simple graph‚ but we preserve some structure in it． 
+但最后，我们想将其中一些分组，这样我们就有了一个简单的图，但我们在其中保留了一些结构˳
+
+446
+01:04:53,372 --> 01:04:59,160
+So the first step is that we apply a Col lens to the nodes． 
+所以第一步是我们将一个透镜应用于节点˳
+
+447
+01:05:00,330 --> 01:05:11,520
+This lens is basically how we are looking at the graph and we want to preserve in the graph hry density‚ centrality‚ symmetry‚ or whatever． 
+这个镜头基本上就是我们看图表的方式，我们希望在图表中保留密度、中心性、对称性或其他内容˳
+
+448
+01:05:12,310 --> 01:05:21,120
+Think of for us‚ we want to look at the shared concepts based on the feature descriptions． 
+对于我们来说，我们想要查看基于功能描述的共享概念˳
+
+449
+01:05:24,840 --> 01:05:32,040
+Once we do that‚ we divide the nodes into into subgroups． 
+一旦我们这样做，我们就将节点分成子组˳
+
+450
+01:05:32,040 --> 01:05:39,930
+So is a coverly divide scores that they get in this? 
+那么他们得到的分数是通过掩盖除法得到的吗？
+
+451
+01:05:42,340 --> 01:05:49,797
+Figure it appears that the no layers are a lower than the ones at the top． 
+图似乎没有层比顶部的层要低˳
+
+452
+01:05:49,797 --> 01:05:52,120
+This is not necessary． 
+这不是必要的˳
+
+453
+01:05:54,220 --> 01:05:58,906
+Lenses that you might choose‚ but just for the visualization simplicity． 
+您可以选择的镜头，但只是为了可视化简单˳
+
+454
+01:05:58,906 --> 01:06:11,860
+That's and here‚ so we form these covers and whatever end that we choose is basically going for the amount of aggregation that we need． 
+就在这里，所以我们形成了这些封面，我们选择的任何一端基本上都是为了我们需要的聚合量˳
+
+455
+01:06:11,860 --> 01:06:20,132
+Once we have these‚ you want to group the nodes in each this subgroups． 
+一旦我们有了这些，你想要将节点分组到每个子组中˳
+
+456
+01:06:20,132 --> 01:06:26,820
+This again‚ could be based on different criteria or ideas that you might have． 
+这可能基于您可能拥有的不同标准或想法˳
+
+457
+01:06:27,040 --> 01:06:36,560
+Here we show is simple way of doing this‚ which is grouping that connected component into one． 
+在这里，我们展示的是简单的方法，就是将连接的组件分组为一个˳
+
+458
+01:06:37,120 --> 01:06:41,680
+So here you can see that this one is now one groove and this． 
+所以在这里你可以看到这个现在是一个凹槽和这个˳
+
+459
+01:06:45,960 --> 01:06:52,000
+So once we form these groups‚ then we also need to form edges in between them． 
+所以一旦我们形成了这些组，那么我们还需要在它们之间形成边缘˳
+
+460
+01:06:52,820 --> 01:06:54,710
+Multiple ways of doing this． 
+有多种方法可以做到这一点˳
+
+461
+01:06:54,710 --> 01:06:59,120
+For example‚ we could just take the strongest edge between． 
+例如，我们可以取其中最强的边缘˳
+
+462
+01:07:03,460 --> 01:07:05,000
+Or we could aggregate all the edges． 
+或者我们可以聚合所有的边缘˳
+
+463
+01:07:12,240 --> 01:07:16,800
+This‚ but basically these will serve as those supernodes for us． 
+这个，但基本上这些将作为我们的超级节点˳
+
+464
+01:07:17,940 --> 01:07:46,780
+Okay‚ so now that the four columns that we choose from problem is based on the feature descriptions‚ as I mentioned‚ we convert them embeddings‚ and then we apply one dpca on the embeddings is that basically it puts the notes that have similar descriptions close to each other‚ so they will receive a similar number． 
+好的，现在我们从问题中选择的四列基于功能描述，正如我所提到的，我们将它们转换为嵌入，然后我们在嵌入上应用一个dpca，基本上它将具有相似描述的注释放在一起，这样他们就会得到一个相似的数字˳
+
+465
+01:07:50,020 --> 01:07:54,580
+That have far apart descriptions by the we see different numbers? 
+通过我们看到不同的数字来描述相距甚远？
+
+466
+01:07:58,000 --> 01:07:59,020
+Because we don't have much time． 
+因为我们没有太多时间˳
+
+467
+01:07:59,090 --> 01:08:01,160
+I'm going too fast questions． 
+我的提问速度太快了˳
+
+468
+01:08:06,900 --> 01:08:11,780
+Lens that you choose Adjust for the weights of each feature taking． 
+你选择的镜头可以根据每个特征的权重进行调整˳
+
+469
+01:08:16,560 --> 01:08:16,910
+This is just the． 
+这只是˳
+
+470
+01:08:21,740 --> 01:08:26,300
+Taking into account the influence but the layer that the notes are． 
+考虑到注释的影响和层次˳
+
+471
+01:08:28,690 --> 01:08:38,820
+That's what we are not necessarily doing here because you could have no functionality that across different layers． 
+这不是我们在这里一定要做的，因为你可能没有跨不同层的功能˳
+
+472
+01:08:38,820 --> 01:08:39,520
+So it． 
+所以它˳
+
+473
+01:08:46,740 --> 01:08:56,162
+So once we have the value assigned to each‚ the resolution parameter that seems to be working for us is 10． 
+因此，一旦我们为每个分配了值，似乎对我们有效的分辨率参数为10˳
+
+474
+01:08:56,162 --> 01:08:57,480
+This is empirical． 
+这是经验性的˳
+
+475
+01:08:58,900 --> 01:08:59,440
+Find other parent． 
+找到其他父母˳
+
+476
+01:09:01,890 --> 01:09:02,320
+But yeah‚ so． 
+但是是的，所以˳
