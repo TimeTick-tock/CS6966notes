@@ -1,0 +1,2729 @@
+1
+00:00:00,190 --> 00:00:04,030
+I will finish looking at all of the proposals today． 
+今天我会看完所有的提案˳
+
+2
+00:00:11,620 --> 00:00:14,150
+By to those of you know? 
+对于那些你知道的人？
+
+3
+00:00:16,420 --> 00:00:26,000
+I need comments in Google do because for me to comment about that‚ and I'm used to it because this is how we do comment in． 
+我需要在谷歌中发表评论，因为我要对此发表评论，我已经习惯了，因为这是我们评论的方式˳
+
+4
+00:00:27,960 --> 00:00:37,406
+So just use those comments even if you get‚ you know hundred percent for‚ maybe you should consider this and that． 
+所以即使你得到了，也要使用那些评论，你知道百分之百，也许你应该考虑这个和那个˳
+
+5
+00:00:37,406 --> 00:00:42,027
+Take my suggestion as a strong suggestion． 
+把我的建议当作一个强烈的建议˳
+
+6
+00:00:42,027 --> 00:00:45,580
+Okay‚ now I do want to go over some dates． 
+好的，现在我确实想过去一些约会˳
+
+7
+00:00:45,820 --> 00:00:49,654
+And so we are all on the same page with what coming up． 
+因此，我们对即将到来的事情都在同一页上˳
+
+8
+00:00:49,654 --> 00:00:52,120
+I am surprised with how long time． 
+我对时间的长度感到惊讶˳
+
+9
+00:00:57,500 --> 00:00:58,040
+This Thursday? 
+今天是星期四？
+
+10
+00:01:01,960 --> 00:01:03,100
+Qui a great? 
+很棒吗？
+
+11
+00:01:03,100 --> 00:01:06,972
+There is a quiz and going to be the last quiz． 
+有一个小测验，将是最后一个小测验˳
+
+12
+00:01:06,972 --> 00:01:17,261
+The material is going to be‚ I mentioned it can be announcement‚ but I won't ask you anything about as usual this week． 
+材料将会是，我提到它可以是公告，但本周我不会像往常一样问你任何事情˳
+
+13
+00:01:17,261 --> 00:01:21,932
+So today we are going to learn about as that． 
+所以今天我们将学习这个˳
+
+14
+00:01:21,932 --> 00:01:37,106
+So the content will be about probing model‚ direct logic‚ attribution logic‚ l activation‚ attribution catching and induction heads‚ and function actors． 
+因此内容将涉及探测模型、直接逻辑、归因逻辑、激活、归因捕捉和感应头以及功能参与者˳
+
+15
+00:01:37,106 --> 00:01:42,120
+So everything from what they're covered in the previous quiz up to the． 
+因此，从上一个测验中涵盖的内容到最后的所有内容˳
+
+16
+00:01:45,200 --> 00:01:45,720
+I spend for my third． 
+我花了我的第三个˳
+
+17
+00:01:48,620 --> 00:01:54,920
+Before and on this Thursday I'm also going to talk a little bit about what I deem to be a good． 
+在这个星期四之前和当天，我也会谈谈我认为什么是好的˳
+
+18
+00:01:55,620 --> 00:01:59,980
+So on Thursday I expect to be a little bit more guidelines． 
+所以星期四我期望有更多的指导方针˳
+
+19
+00:02:01,020 --> 00:02:05,580
+Your next‚ that is aporum 13‚ which is． 
+你的下一个，就是aporum 13，也就是˳
+
+20
+00:02:18,820 --> 00:02:23,380
+I will then look into all of these posters‚ give you feedback． 
+然后我会查看所有这些海报，给你反馈˳
+
+21
+00:02:26,300 --> 00:02:27,330
+Which is Thursday? 
+哪一天是星期四？
+
+22
+00:02:27,600 --> 00:02:29,860
+We are going to meet here and we are going to． 
+我们将在这里见面，我们会去˳
+
+23
+00:02:34,620 --> 00:02:39,920
+You need this is when you need to have your final‚ final． 
+你需要的是当你需要进行最终的时候˳
+
+24
+00:02:40,410 --> 00:02:45,910
+This is what goes onto the booster‚ which is your final project report and will be presented． 
+这就是进入助推器的内容，助推器是您的最终项目报告，将会呈现˳
+
+25
+00:02:49,190 --> 00:02:49,500
+In the session． 
+在会议中˳
+
+26
+00:02:54,120 --> 00:02:58,680
+However‚ keep in mind that already on Monday here you are providing the． 
+但是，请记住，您已经在这里的周一提供了˳
+
+27
+00:03:02,420 --> 00:03:06,980
+When you have a paper or they're like‚ okay I'm running this results‚ I would have 100%． 
+当你有一篇论文或者他们说，好吧，我在运行这个结果，我会有100% 的˳
+
+28
+00:03:08,300 --> 00:03:19,284
+I'm using the short case holder‚ you know‚ or for it‚ that's okay already here you should have most of most of your experiments done． 
+我正在使用简短的盒子支架，你知道的，或者为此，已经在这里你应该已经完成了大部分实验˳
+
+29
+00:03:19,284 --> 00:03:26,700
+So keep this as a mental kind of deadline‚ internal deadline for when things should be． 
+因此，请将此作为心理截止日期，内部截止日期，以确定事情应该发生的时间˳
+
+30
+00:03:28,820 --> 00:03:28,850
+Okay? 
+好吗？
+
+31
+00:03:31,210 --> 00:03:36,130
+So since I'm expecting a really strong version here‚ I would recommend that you start． 
+所以，由于我期待一个非常强大的版本，我建议你开始˳
+
+32
+00:03:38,980 --> 00:03:47,054
+Already next week working on your design‚ your posters‚ you know‚ like you can already put a lot in place． 
+已经在下周开始你的设计，你的海报，你知道，你已经可以把很多东西放在适当的位置了˳
+
+33
+00:03:47,054 --> 00:04:01,120
+You have your proposal written‚ so you have motivation‚ you have‚ you know‚ method or methodology‚ you are project‚ you have evaluation metrics and success criteria‚ right? 
+你的提案已经写好，所以你有动力，你有方法或方法论，你是一个项目，你有评价标准和成功标准，对吗？
+
+34
+00:04:01,120 --> 00:04:13,545
+So you can already design a lot of your poster by keeping space for so start early because making poster is not a good thing． 
+所以你已经可以通过保持空间来设计很多你的海报了，所以早点开始，因为制作海报不是一件好事˳
+
+35
+00:04:13,545 --> 00:04:15,971
+You can't‚ we can do it in an hour． 
+你做不到，我们可以在一小时内完成˳
+
+36
+00:04:15,971 --> 00:04:20,292
+So I would recommend throughout the next week to kind of start designing． 
+所以我会建议在下周开始设计˳
+
+37
+00:04:20,292 --> 00:04:23,320
+So when you need to submit the first term you． 
+所以当你需要提交第一个学期时˳
+
+38
+00:04:27,940 --> 00:04:34,304
+Okay‚ keep in mind that this is roughly two weeks from now． 
+好的，请记住，这大约是两周后的事情˳
+
+39
+00:04:34,304 --> 00:04:38,944
+So in roughly two weeks from now‚ you should have most of your experiments done． 
+所以大约两周后，你应该完成大部分的实验˳
+
+40
+00:04:38,944 --> 00:04:49,160
+So trying to‚ I know you were all very ambitious with what you wanted to do‚ which is great‚ but maybe not think about what is that meaningful set of experiments you need? 
+所以尝试着，我知道你们都对自己想要做的事情非常有野心，这很好，但也许不要去想，你们需要的是什么有意义的实验？
+
+41
+00:04:51,420 --> 00:04:57,720
+And you kind of plan for that‚ have that mini set‚ and then everything else would be nice to have． 
+你为此做好计划，拥有那个迷你套装，然后其他所有东西都很不错˳
+
+42
+00:05:00,000 --> 00:05:04,560
+Don't keep your mask to help because you try to do everything in parallel‚ right? 
+不要戴着面具帮忙，因为你试图同时做所有事情，对吧？
+
+43
+00:05:07,050 --> 00:05:11,640
+First‚ once you have a dead micro‚ any questions about the deadline? 
+首先，一旦你有一个死微，对截止日期有什么问题吗？
+
+44
+00:05:15,020 --> 00:05:23,680
+Then on April 20 firsts‚ which is Friday‚ this is our time for our final exam and the final examples of the poster session． 
+然后在April 20第一次，也就是周五，这是我们的期末考试和海报会议的最后例子的时间˳
+
+45
+00:05:23,680 --> 00:05:27,020
+This is when we are going to meet and have poster presentation． 
+这是我们将见面并进行海报展示的时候˳
+
+46
+00:05:27,020 --> 00:05:33,400
+I'm going to invite other professors that work in there‚ so I don't know who will have time to come． 
+我将邀请其他在那里工作的教授，所以我不知道谁有时间来˳
+
+47
+00:05:33,400 --> 00:05:39,260
+I‚ my respect professor Johnny Daniel Kenny‚ that they might be． 
+我尊敬的约翰尼·丹尼尔·肯尼教授，他们可能会这样˳
+
+48
+00:05:43,010 --> 00:05:44,010
+Okay‚ any questions? 
+好的，有问题吗？
+
+49
+00:05:46,520 --> 00:05:50,485
+Are you going to be printing the posters or do we have to the posters? 
+你们要打印海报还是我们要打印海报？
+
+50
+00:05:50,485 --> 00:05:51,949
+The posters‚ yeah． 
+海报，是的˳
+
+51
+00:05:51,949 --> 00:05:52,528
+So yeah． 
+所以是的˳
+
+52
+00:05:52,528 --> 00:05:56,580
+I'll give more guidelines about the poster on that one． 
+我会给出更多关于海报的指导方针˳
+
+53
+00:06:00,130 --> 00:06:01,020
+Okay‚ I thought． 
+好吧，我想˳
+
+54
+00:06:03,490 --> 00:06:04,510
+It looks like? 
+看起来像？
+
+55
+00:06:07,820 --> 00:06:13,860
+Yeah‚ that's right‚ so this is the 21st is the last lecture‚ right? 
+是的，这是21号，这是最后一节课，对吗？
+
+56
+00:06:19,360 --> 00:06:26,720
+It's good that the type that was like before‚ but which is kind of wild but already annoying． 
+像以前那样的类型很好，但有点疯狂，但已经很烦人了˳
+
+57
+00:06:27,810 --> 00:06:29,130
+I love the course． 
+我喜欢这门课程˳
+
+58
+00:06:29,600 --> 00:06:30,000
+It's so early． 
+这么早˳
+
+59
+00:06:37,480 --> 00:06:39,740
+Okay‚ so that's it with the with． 
+好的，就这样了˳
+
+60
+00:06:41,850 --> 00:06:41,870
+The． 
+这个˳
+
+61
+00:06:49,590 --> 00:06:53,140
+Today‚ we are going to move forward with more methods． 
+今天，我们将继续使用更多方法˳
+
+62
+00:06:54,160 --> 00:07:01,344
+As I mentioned‚ there is way more that I want to kind of talk about than there are lectures left． 
+正如我所提到的，我想谈论的比剩下的讲座还要多˳
+
+63
+00:07:01,344 --> 00:07:04,780
+But one topic we definitely need to talk about． 
+但是有一个话题我们肯定需要谈论˳
+
+64
+00:07:06,120 --> 00:07:12,670
+So‚ so far in the course we have‚ we have covered a lot of methods in interpretive right? 
+到目前为止，在我们的课程中，我们已经涵盖了很多解释性方法，对吗？
+
+65
+00:07:12,680 --> 00:07:13,270
+We found we have． 
+我们发现我们有˳
+
+66
+00:07:15,490 --> 00:07:16,910
+Heavily focused on representing． 
+非常注重代表˳
+
+67
+00:07:18,270 --> 00:07:29,900
+So a certain token‚ certain layer‚ we have a representation‚ that positional layer‚ and we have methods that tell us what is included in this． 
+因此，对于某个标记，某个层，我们有一个表示，那个位置层，我们有方法告诉我们其中包含的内容˳
+
+68
+00:07:30,130 --> 00:07:33,630
+And those were‚ for example‚ essays and probing methods． 
+例如，那些是论文和探究方法˳
+
+69
+00:07:36,020 --> 00:07:42,520
+Mechanisms to kind of say how these representations are affecting the specific connects token． 
+机制可以说明这些表示形式如何影响特定的连接令牌˳
+
+70
+00:07:43,730 --> 00:07:48,710
+So we have activation patching‚ for example‚ logic lens‚ and so on． 
+所以我们有激活补丁，例如逻辑镜头等˳
+
+71
+00:07:50,020 --> 00:08:04,930
+What we haven't talked about is now that we know that‚ let's say the layer 3 token block in the room there is a certain representation encodes something or is no predicting the next token． 
+我们还没有谈论的是，现在我们知道了，比如说房间里的第3层令牌块，有一个特定的表示编码了某些东西，或者没有预测下一个令牌˳
+
+72
+00:08:06,660 --> 00:08:13,800
+We didn't really talk how we can tweak that representation to achieve any kind of desirable behavior． 
+我们并没有真正讨论如何调整该表示以实现任何期望的行为˳
+
+73
+00:08:14,300 --> 00:08:20,340
+So let's maybe think about why we do this in the first place． 
+所以让我们也许想想为什么我们首先要这样做˳
+
+74
+00:08:21,680 --> 00:08:35,905
+Some behavior you would maybe like to change and if you know‚ representation associated with the feature that's kind of driving them here‚ how and we have a method to tweak that representation． 
+一些你可能想要改变的行为，如果你知道，与这里驱动他们的特征相关的表示，如何以及我们有一种方法来调整该表示˳
+
+75
+00:08:35,905 --> 00:08:39,700
+And then we can achieve something that you desire． 
+然后我们可以实现你想要的东西˳
+
+76
+00:08:39,700 --> 00:08:43,049
+Do you have an example of something like that? 
+你有这样的例子吗？
+
+77
+00:08:43,049 --> 00:08:45,840
+Trying to get rid of bullshitting? 
+试图摆脱胡说八道？
+
+78
+00:08:49,750 --> 00:08:50,360
+Or hallucinations? 
+还是幻觉？
+
+79
+00:08:53,600 --> 00:08:57,100
+Yeah‚ no I'm European． 
+是的，我是欧洲人˳
+
+80
+00:08:57,100 --> 00:08:57,850
+I'm okay with． 
+我同意˳
+
+81
+00:09:00,100 --> 00:09:08,540
+Okay‚ so as we know‚ l．l．m．s are producing contents that are fact correct‚ right? 
+好的，我们知道，l．m．s产生的内容事实上是正确的，对吗？
+
+82
+00:09:08,550 --> 00:09:15,035
+They are totally made up‚ or they have‚ let's say‚ the contradict of physics or things like that． 
+它们完全是制造出来的，或者它们有物理学的矛盾或类似的东西˳
+
+83
+00:09:15,035 --> 00:09:22,265
+And in certain contexts‚ we know that's okay‚ like critical writing in certain contexts‚ like medicine‚ that undesirable． 
+在某些情况下，我们知道这是可以的，就像在某些情况下的批判性写作，就像在医学上，这是不受欢迎的˳
+
+84
+00:09:22,265 --> 00:09:30,760
+So maybe we find representation where we know that the U‚ and we have seen an example of that． 
+因此，也许我们找到了我们知道U的表示，我们已经看到了一个例子˳
+
+85
+00:09:30,760 --> 00:09:37,418
+When you talk about truthfulness‚ where the model kind of encodes whether something is true or not‚ right? 
+当你谈论真实性时，模型会编码某些事情是否真实，对吗？
+
+86
+00:09:37,418 --> 00:09:44,920
+And then we can register your this representation‚ change it in some way to reduce the number of hallucinations． 
+然后我们可以注册你的这个表现，以某种方式改变它以减少幻觉的数量˳
+
+87
+00:09:46,180 --> 00:09:49,483
+So‚ yeah‚ that's a great example． 
+所以，是的，这是一个很好的例子˳
+
+88
+00:09:49,483 --> 00:10:13,955
+Other examples that come to mind‚ I think‚ with something like a factor piece of information that is from the updating be something to change‚ like‚ I don't know‚ positions of governments or dates of events‚ would that‚ would those be features that would need to be changed‚ for example? 
+我想到的其他例子，比如来自更新的一些因素信息，需要改变一些东西，比如，我不知道政府的立场或事件的日期，那这些特性需要改变吗？
+
+89
+00:10:13,955 --> 00:10:20,470
+Okay‚ let me just write this story I'm really bad notta what to． 
+好的，让我写这个故事吧，我真的不知道该怎么做˳
+
+90
+00:10:25,300 --> 00:10:35,201
+We said we want to mitigate policy issues‚ mentioning‚ okay‚ now something about the world has changed． 
+我们说我们想缓解政策问题，提到好的，现在世界上的一些东西已经改变了˳
+
+91
+00:10:35,201 --> 00:10:38,160
+Maybe we know‚ let's say it's a date of something． 
+也许我们知道，假设它是某件事情的日期˳
+
+92
+00:10:38,560 --> 00:10:44,820
+Instead of training the entire model‚ we find a representation where that data is encoded and we tweaked that． 
+我们不是训练整个模型，而是找到一种数据编码的表示形式，并对其进行调整˳
+
+93
+00:10:46,080 --> 00:10:48,080
+Is that so I want call． 
+所以我想打电话˳
+
+94
+00:10:50,300 --> 00:10:55,420
+That something like updating teams‚ the world‚ the knowledge． 
+这就像是更新团队、世界和知识˳
+
+95
+00:11:00,490 --> 00:11:04,040
+Okay‚ and then here is it． 
+好的，然后就在这里˳
+
+96
+00:11:10,480 --> 00:11:10,500
+Yeah? 
+是吗？
+
+97
+00:11:15,500 --> 00:11:16,870
+We are these days． 
+我们这些天˳
+
+98
+00:11:16,870 --> 00:11:18,440
+We know‚ for example‚ character AI． 
+我们知道，例如字符AI˳
+
+99
+00:11:20,620 --> 00:11:29,317
+A platform that people are using to coerce and have llen text personas or better person‚ of course． 
+一个人们用来强迫并拥有文本角色或更好的人的平台，当然˳
+
+100
+00:11:29,317 --> 00:11:40,160
+And one of these personas could be‚ okay‚ you are a therapist and I'm having a conversation with thats with a lot of issues that we are not talking． 
+其中一个角色可能是，好吧，你是一名治疗师，我正在和你谈论很多我们没有谈论的问题˳
+
+101
+00:11:40,320 --> 00:11:46,560
+But yes‚ this if we have a representation that encodes the star． 
+但是是的，如果我们有一个编码星形的表示˳
+
+102
+00:11:50,040 --> 00:11:53,080
+View towards‚ let's say‚ geographies． 
+从地理位置看˳
+
+103
+00:11:53,080 --> 00:11:59,980
+That's one way to kind of similar‚ but like honesty and like harmlessness． 
+这是一种类似于诚实和无害的方式˳
+
+104
+00:12:18,360 --> 00:12:22,920
+Related to harmlessness is a‚ for example‚ refusal． 
+与无害相关的是，例如，拒绝˳
+
+105
+00:12:23,620 --> 00:12:29,240
+And this is actually one thing that is very heavily studied in this space． 
+这实际上是这个领域非常深入研究的一件事情˳
+
+106
+00:12:29,240 --> 00:12:41,600
+So when someone is prompting an llum to list it behavior that's illegal or might harm other people‚ intended behavior by design． 
+所以当有人提示llum列出违法或可能伤害他人的行为时，这是故意的行为˳
+
+107
+00:12:41,600 --> 00:12:47,640
+So fellows‚ today is to refuse aid with such activities‚ right? 
+所以伙计们，今天是拒绝这类活动的帮助，对吧？
+
+108
+00:12:47,760 --> 00:12:53,130
+Harmlessness is in a conflict with usefulness‚ right? 
+无害与有用性有冲突，对吧？
+
+109
+00:12:53,130 --> 00:13:02,185
+Like you want your relevant to generally follow instructions and do what the user is asking‚ but at some needs to refuse． 
+就像你希望你的相关人员通常遵循说明并执行用户的要求，但在某些情况下需要拒绝˳
+
+110
+00:13:02,185 --> 00:13:11,780
+And if you have representation‚ maybe where you can find a good trade off between these two‚ then you can kind of work into it to achieve that． 
+如果你有代表，也许你可以在这两者之间找到一个很好的平衡，那么你可以努力实现这一点˳
+
+111
+00:13:14,740 --> 00:13:20,040
+All these things can also be used for the opposite‚ right? 
+所有这些东西也可以用于相反的用途，对吗？
+
+112
+00:13:24,060 --> 00:13:27,876
+That's a great point‚ so each one of these has a counterpart‚ right? 
+这是一个很好的观点，所以每一个都有一个对应的，对吧？
+
+113
+00:13:27,876 --> 00:13:32,020
+So if I want harmlessness‚ I can also want to jabre． 
+所以如果我想要无害，我也可以想要讽刺˳
+
+114
+00:13:32,850 --> 00:13:35,030
+So if I know there． 
+所以如果我知道那里˳
+
+115
+00:13:38,280 --> 00:13:38,930
+Model code． 
+模型代码˳
+
+116
+00:13:38,940 --> 00:13:40,340
+Harmless‚ right? 
+无害的，对吧？
+
+117
+00:13:40,570 --> 00:13:42,470
+Now I can steal away from it． 
+现在我可以从它那里偷偷地溜走了˳
+
+118
+00:13:44,420 --> 00:13:53,796
+Breaking refers to the capability of us or other models to the alignment of these models． 
+打破是指我们或其他模型对齐这些模型的能力˳
+
+119
+00:13:53,796 --> 00:13:54,852
+To refuse． 
+拒绝˳
+
+120
+00:13:54,852 --> 00:14:17,880
+With such activities‚ honest can come‚ not being honest can be you want to have a persona‚ a good therapist‚ and maybe you want to jailbreaking that you have unethical therapist totally breaking the knowledge instead of not having hallucinations‚ you can be． 
+通过这样的活动，诚实可以来，不诚实可以是你想要一个角色，一个好的治疗师，也许你想越狱，你有不道德的治疗师完全破坏了知识，而不是没有幻觉，你可以˳
+
+121
+00:14:21,360 --> 00:14:23,498
+Making information． 
+制作信息˳
+
+122
+00:14:23,498 --> 00:14:33,920
+So in general‚ if you have a sense of are many things we want to maybe change‚ achieve with． 
+所以一般来说，如果你有很多我们想要改变的感知，可以用它来实现˳
+
+123
+00:14:36,020 --> 00:14:42,060
+I‚ referring to since varying interpretability course‚ define representation with something new． 
+我，指的是自变化的可解释性过程，用新的东西定义表示˳
+
+124
+00:14:44,400 --> 00:14:47,771
+Do something with it to achieve certain behavior． 
+用它做某事以实现特定的行为˳
+
+125
+00:14:47,771 --> 00:14:50,882
+Forget about the term interpretability course． 
+忘记术语可解释性课程˳
+
+126
+00:14:50,882 --> 00:14:51,920
+Imagine you mind． 
+想象一下你的想法˳
+
+127
+00:14:57,540 --> 00:14:59,780
+What are some ideas about how you can change? 
+有什么关于如何改变的想法？
+
+128
+00:15:02,420 --> 00:15:09,074
+Without walking into the internals specifically or locating change device． 
+无需专门走进内部或定位更换设备˳
+
+129
+00:15:09,074 --> 00:15:11,711
+Simple function‚ simple functionality． 
+简单的功能，简单的功能˳
+
+130
+00:15:11,711 --> 00:15:12,239
+Yeah‚ right? 
+是的，对吧？
+
+131
+00:15:12,239 --> 00:15:15,140
+So I can have maybe in a narrow domain． 
+所以我可能在一个狭窄的领域˳
+
+132
+00:15:16,320 --> 00:15:22,007
+I observed that my MLM is producing hallucinations in this narrow domain． 
+我发现我的传销在这个狭窄的领域里产生幻觉˳
+
+133
+00:15:22,007 --> 00:15:29,932
+Maybe I just collect more data where I teach the model these facts such that it doesn't produce these hallucinations break． 
+也许我只是收集更多的数据，教模型这些事实，这样它就不会产生这些幻觉˳
+
+134
+00:15:29,932 --> 00:15:33,940
+And even‚ does anyone have even a simpler again with that? 
+甚至，有人还有更简单的吗？
+
+135
+00:15:34,000 --> 00:15:36,450
+That doesn't require any fine chain? 
+不需要任何好链条吗？
+
+136
+00:15:43,600 --> 00:15:45,150
+So engineering‚ right? 
+工程学，对吧？
+
+137
+00:15:45,820 --> 00:15:48,180
+You already have some ideas about how about? 
+你已经有了一些关于如何的想法？
+
+138
+00:15:51,160 --> 00:15:53,030
+LLM 101． 
+101大语言模型˳
+
+139
+00:15:53,030 --> 00:15:59,980
+But what we are going to talk about today is activation steer‚ where we are trying to change the behavior by． 
+但今天我们要谈的是激活引导，我们试图通过它来改变行为˳
+
+140
+00:16:03,220 --> 00:16:03,360
+Representations． 
+代表˳
+
+141
+00:16:10,820 --> 00:16:18,320
+Any ideas of why activation steering can be beneficial relative to fine tuning or relative to Pro? 
+为什么激活转向相对于微调或相对于Pro有益，有什么想法？
+
+142
+00:16:18,320 --> 00:16:23,860
+Let's talk about relative to fiene what are the benefits relative to fiene? 
+让我们来谈谈相对于fiene有什么好处？
+
+143
+00:16:23,960 --> 00:16:36,570
+Maybe I should say what activation is doing is so activation is doing is a family of men are isolating representations or certain journals with． 
+也许我应该说激活在做什么，所以激活在做的是一个男人家庭正在隔离代表或某些期刊˳
+
+144
+00:16:38,820 --> 00:16:42,980
+They are intervening on those representations of those models． 
+他们正在干预这些模型的表现形式˳
+
+145
+00:16:42,980 --> 00:16:45,840
+And we are going to talk about different waves． 
+我们将讨论不同的波浪˳
+
+146
+00:16:45,840 --> 00:16:53,560
+So how to intervene to change the behavior in some desirable ways． 
+那么如何进行干预以某些可取的方式改变行为˳
+
+147
+00:16:53,560 --> 00:17:11,381
+One way where you are finding a concept and this concept‚ such as I would say refusal‚ you can represent it with featured directions Since you all know what essays are‚ you can imagine there is a column in decoder rate matrix that is associated with refusal． 
+找到一个概念的一种方式，这个概念，比如我会说拒绝，你可以用特色方向表示它，因为你们都知道什么是文章，你可以想象在解码器速率矩阵中有一个与拒绝相关的列˳
+
+148
+00:17:11,381 --> 00:17:20,300
+And we can add that vector to the representation to kind of change it into‚ you know‚ sphere in the direction of reuse‚ right? 
+我们可以将该向量添加到表示中，以将其改变为球体，朝着重用的方向发展，对吗？
+
+149
+00:17:20,300 --> 00:17:26,490
+So this is what activation sphere 2‚ okay? 
+这就是激活球体2，好吗？
+
+150
+00:17:26,500 --> 00:17:35,380
+So now given what the calculation relative to fine tuning‚ what are its benefits the? 
+那么现在考虑到计算与微调的关系，它的好处是什么？
+
+151
+00:17:38,820 --> 00:17:43,380
+Yeah‚ bely less expensive‚ right? 
+是的，不太贵，对吧？
+
+152
+00:17:46,800 --> 00:18:03,258
+Think about how your refining representation‚ you know‚ we know that interpretability matrix in itself can be quite computationally‚ but assuming you magnet for finding feature direction and for doing steering isn't know super expensive relative to fine tuning． 
+考虑一下你的优化表示方式，你知道，我们知道可解释性矩阵本身在计算上非常重要，但假设你有磁铁来寻找特征方向和进行转向，相对于微调来说并不算昂贵˳
+
+153
+00:18:03,258 --> 00:18:06,974
+With steering‚ we don't even need to change the weights． 
+有了转向，我们甚至不需要改变重量˳
+
+154
+00:18:06,974 --> 00:18:13,300
+So we don't do backward passes‚ which are generally the more expensive operation‚ right? 
+所以我们不进行反向传递，这通常是更昂贵的操作，对吗？
+
+155
+00:18:13,300 --> 00:18:14,440
+So no rat． 
+所以不要老鼠˳
+
+156
+00:18:14,440 --> 00:18:24,917
+And everything is kind of faster in relation to a certain task is even more robust than fine then fine tuning． 
+相对于某个任务，一切都比微调更快，甚至比微调更强大˳
+
+157
+00:18:24,917 --> 00:18:40,680
+Can you give me your notion of combus if I am trying to evoke a specific behavior of a model fine thing‚ go through‚ for example‚ some things‚ whereas this‚ if I just artificially am changing some of． 
+你能告诉我你对cobus的概念吗？如果我试图唤起一个模型的特定行为，比如好的事情，经历一些事情，而这，如果我只是人为地改变一些事情˳
+
+158
+00:18:44,180 --> 00:18:56,820
+So that if I get it‚ then you a specific prompt or a certain‚ I guess‚ semantic more consistently‚ the behavior that I want． 
+这样，如果我明白了，那么你就会得到一个特定的提示或某种语义上更一致的行为，这是我想要的˳
+
+159
+00:18:57,060 --> 00:19:08,401
+Maybe my answer is maybe because I agree with you that we are changing the behavior with fine tuning based on the data and based on our capability to fine tune． 
+也许我的答案可能是因为我同意你的观点，我们正在根据数据和我们微调的能力来改变行为˳
+
+160
+00:19:08,401 --> 00:19:19,970
+Well‚ right‚ so there are two compounders here‚ quality of the data and whether changing everything within the model is the best way to achieve this behavior． 
+好的，对的，这里有两个复合因素，数据的质量以及更改模型中的所有内容是否是实现此行为的最佳方法˳
+
+161
+00:19:22,020 --> 00:19:23,184
+It's more control‚ right? 
+更多的控制，对吧？
+
+162
+00:19:23,184 --> 00:19:26,211
+Instead of touching everything‚ we are more surgical． 
+与其触摸一切，我们更像外科手术˳
+
+163
+00:19:26,211 --> 00:19:28,540
+We find‚ okay‚ this is the place where I'm going． 
+我们发现，好吧，这就是我要去的地方˳
+
+164
+00:19:29,580 --> 00:19:33,160
+I have some reasons why this is a good idea and I'm making this change． 
+我有一些原因，为什么这是一个好主意，我正在做出改变˳
+
+165
+00:19:34,360 --> 00:19:52,280
+However‚ you will see as we are covering this that we are making a lot of‚ it's still a computational method and we are collecting data and so on‚ where things can have creeping and make everything not so elegant‚ similarly to fine Tu． 
+然而，你会看到，当我们讨论这个问题时，我们正在做很多，它仍然是一种计算方法，我们正在收集数据等等，事情可能会逐渐发生，使一切都不那么优雅，类似于罚款˳
+
+166
+00:19:52,280 --> 00:19:58,320
+So I will say maybe here‚ maybe‚ maybe more robust． 
+所以我会说，也许在这里，也许更强大˳
+
+167
+00:20:00,790 --> 00:20:05,050
+Yes‚ impractically not sure． 
+是的，几乎不确定˳
+
+168
+00:20:08,980 --> 00:20:20,475
+Robustness‚ robustness‚ prompt engineering with a nice segue into why activation Ste can be better than prompt engineering． 
+稳健性，稳健性，及时工程，并很好地转入为什么激活技术可以比及时工程更好˳
+
+169
+00:20:20,475 --> 00:20:27,180
+The prompt engineering‚ you are limited by your capability to prompt engineering well‚ right? 
+及时工程，你的及时工程能力有限，对吧？
+
+170
+00:20:27,600 --> 00:20:37,530
+That can come with a lot of iterations with a lot of noise control here． 
+这可能需要进行大量迭代，并在这里进行大量噪声控制˳
+
+171
+00:20:43,020 --> 00:20:51,920
+Okay‚ so we have seen some benefits and now we are going to see how we can actually actually do． 
+好的，我们已经看到了一些好处，现在我们将看看我们如何实际做到这一点˳
+
+172
+00:20:56,740 --> 00:21:01,032
+Okay‚ so let me let me define some attention． 
+好的，让我来定义一些注意力˳
+
+173
+00:21:01,032 --> 00:21:09,280
+We are going to have a model M‚ this is the model whose is we are trying to steer． 
+我们将有一个模型M，这是我们试图引导的模型˳
+
+174
+00:21:09,280 --> 00:21:11,180
+We will have some front． 
+我们将有一些前线˳
+
+175
+00:21:16,440 --> 00:21:20,145
+Steering‚ we are going to generate some text． 
+转向，我们将生成一些文本˳
+
+176
+00:21:20,145 --> 00:21:21,000
+So this is． 
+这就是˳
+
+177
+00:21:24,720 --> 00:21:36,930
+Such that we take our model‚ but instead of having h at some token position t and layer L? 
+这样，我们就采用了我们的模型，而不是在某个令牌位置t和层L上有h？
+
+178
+00:21:39,980 --> 00:21:57,460
+As gold can be layer L instead of that one‚ we are going to replace it by output of some intervention pi at layer n‚ which takes as an input that． 
+由于黄金可以是第L层而不是第n层，我们将用第n层的一些干预pi的输出来代替它，这将作为输入˳
+
+179
+00:22:00,000 --> 00:22:14,666
+And we basically override the original representation with the output of this intervention battling or even prompt X‚ so the equation might look scary‚ but what it is‚ it's very simple． 
+我们基本上覆盖了原始表示，用这种干预的输出进行战斗甚至提示X，所以这个方程可能看起来很可怕，但它是非常简单的˳
+
+180
+00:22:14,666 --> 00:22:26,780
+We generate text by taking our model and replacing some at the top 19 layer and with the output of some prevention on that same representation． 
+我们通过采用我们的模型并替换顶部19层的一些内容以及在同一表示上的一些预防措施的输出来生成文本˳
+
+181
+00:22:27,480 --> 00:22:34,060
+In a way‚ this is similar to maybe if it works‚ is activation patching for you‚ but there will be different． 
+在某种程度上，这类似于可能有效的激活补丁，但会有不同的情况˳
+
+182
+00:22:37,030 --> 00:22:38,340
+Methodology okay‚ so． 
+方法论，好的˳
+
+183
+00:22:40,720 --> 00:22:44,250
+Now the question is‚ what is this intervention‚ right? 
+现在的问题是，这种干预是什么，对吗？
+
+184
+00:22:44,460 --> 00:22:46,750
+How do we define it? 
+我们如何定义它？
+
+185
+00:22:47,220 --> 00:22:51,393
+We are going to go over a few‚ a few options． 
+我们将讨论一些选择˳
+
+186
+00:22:51,393 --> 00:23:03,530
+Let me see how roughly 1‚ 3‚ 3‚ 4‚ okay‚ 4‚ okay‚ so the first one is very． 
+让我看看大约1，3，3，4，好的，4，好的，所以第一个是非常的˳
+
+187
+00:23:05,590 --> 00:23:10,740
+Let's say we have trained SS． 
+假设我们已经训练了SS˳
+
+188
+00:23:19,480 --> 00:23:24,380
+And we know that as a‚ let me just write the equation． 
+我们知道，作为a，让我写一下方程式˳
+
+189
+00:23:27,710 --> 00:23:28,010
+Say Glu or ja Glu we． 
+说Glu或ja Glu我们˳
+
+190
+00:23:30,310 --> 00:23:31,610
+Have the encoder． 
+有编码器˳
+
+191
+00:23:34,840 --> 00:23:37,560
+Representation‚ you have some bias． 
+代表，你有一些偏见˳
+
+192
+00:23:39,320 --> 00:23:48,980
+Produce a new representation by the decoder rates with Z‚ and we have some bias． 
+通过解码器速率与Z产生新的表示，我们有一些偏见˳
+
+193
+00:23:52,900 --> 00:23:54,640
+So I have this and． 
+所以我有这个和˳
+
+194
+00:23:56,870 --> 00:23:59,630
+Let's say‚ let's keep using refusals as our exam． 
+比方说，让我们继续使用拒绝作为我们的考试˳
+
+195
+00:24:01,340 --> 00:24:06,880
+How would you use your Sae to make the model review? 
+你将如何使用你的Sae来进行模型审查？
+
+196
+00:24:18,890 --> 00:24:20,420
+Even back to month． 
+甚至回到月份˳
+
+197
+00:24:26,220 --> 00:24:28,233
+Great‚ I will come back to you． 
+太好了，我会回到你这里来˳
+
+198
+00:24:28,233 --> 00:24:29,995
+Let me just write it down． 
+让我把它写下来˳
+
+199
+00:24:29,995 --> 00:24:39,740
+So first thing we can do is check whether S contains the refusal diffraction． 
+所以我们可以做的第一件事是检查S是否包含拒绝衍射˳
+
+200
+00:24:40,000 --> 00:24:41,565
+How do we go about this? 
+我们该怎么做呢？
+
+201
+00:24:41,565 --> 00:24:45,476
+Let's be a little bit more technically‚ technically concrete． 
+让我们在技术上更加具体一些˳
+
+202
+00:24:45,476 --> 00:24:48,880
+So where‚ where‚ where Sa stores? 
+那么在哪里，在哪里，在哪里Sa商店？
+
+203
+00:24:57,640 --> 00:24:59,946
+In the decoder wave matrix． 
+在解码器波矩阵中˳
+
+204
+00:24:59,946 --> 00:25:10,590
+So we have to check whether with the decoder wave matrix‚ and also there is an additional layer to it‚ right? 
+所以我们必须检查是否有解码器的波矩阵，并且还有一个额外的层，对吧？
+
+205
+00:25:10,590 --> 00:25:18,120
+So the decoder‚ but decoder rate metrics in columns are featured directions． 
+因此列中的解码器但解码器率指标是特征方向˳
+
+206
+00:25:21,720 --> 00:25:29,280
+I don't have a direction of reviews over refusal‚ so what can I use also to help me match words with words? 
+我没有评论拒绝的方向，所以我可以用什么来帮我匹配单词？
+
+207
+00:25:35,200 --> 00:25:35,790
+Like activations． 
+就像激活˳
+
+208
+00:25:39,500 --> 00:25:47,856
+Maybe‚ but at first you need to know which of these decoder columns is to review the concept． 
+也许吧，但首先你需要知道这解码器列中的哪一列来回顾这个概念˳
+
+209
+00:25:47,856 --> 00:25:50,611
+So my question is‚ how do I know? 
+所以我的问题是，我怎么知道？
+
+210
+00:25:50,611 --> 00:25:56,100
+Let's assume there is a column that's connecting to the refusal direction． 
+让我们假设有一个连接到拒绝方向的列˳
+
+211
+00:25:56,100 --> 00:25:57,620
+And right now I don't． 
+而现在我不知道˳
+
+212
+00:26:02,220 --> 00:26:06,150
+How can I find which column is associated with the return? 
+如何找到与返回相关联的列？
+
+213
+00:26:17,900 --> 00:26:19,202
+Exactly‚ right? 
+没错，对吧？
+
+214
+00:26:19,202 --> 00:26:30,100
+So we have this additional layer of check whether the decoder weights plus feature feature descriptions． 
+所以我们有这个额外的检查层，检查解码器的权重和特征描述˳
+
+215
+00:26:30,100 --> 00:26:36,032
+I not only have columns in this weight matrix‚ I also have description for each column． 
+在这个权重矩阵中，我不仅有列，还有每列的描述˳
+
+216
+00:26:36,032 --> 00:26:51,780
+So now if one of them is something associated with refusal‚ I can say‚ oh‚ okay‚ column index 3 actually has description‚ so fusalis is my refusal direction‚ right? 
+所以现在，如果其中一个与拒绝有关，我可以说，哦，好的，列索引3实际上有描述，所以fusalis是我的拒绝方向，对吧？
+
+217
+00:26:54,550 --> 00:26:54,750
+Match? 
+匹配？
+
+218
+00:27:01,380 --> 00:27:05,561
+Okay‚ so that's the first thing． 
+好的，这是第一件事˳
+
+219
+00:27:05,561 --> 00:27:07,420
+And then we know． 
+然后我们就知道了˳
+
+220
+00:27:12,440 --> 00:27:15,618
+Let's call it concept index square． 
+让我们把它叫做平方指数的概念˳
+
+221
+00:27:15,618 --> 00:27:18,480
+That's the index of the column． 
+这是该列的索引˳
+
+222
+00:27:19,220 --> 00:27:21,636
+Found this content‚ okay? 
+找到了这个内容，好吗？
+
+223
+00:27:21,636 --> 00:27:40,348
+And now we know that if I take an coming to right‚ I the same depth of feature vector‚ the that feature in agreement example‚ there is a second part to it． 
+现在我们知道，如果我取一个向右的特征向量的深度相同，在一致性示例中那个特征，还有第二部分˳
+
+224
+00:27:40,348 --> 00:27:51,840
+John‚ do you said all we have‚ we know what the feature that the feature direction to see the concept of interest like refusal and now we need to‚ let's say‚ promote or suppress? 
+约翰，你说的是我们所拥有的一切，我们知道特征指向看到兴趣概念的特征，比如拒绝，现在我们需要，比如说，促进或抑制？
+
+225
+00:27:51,840 --> 00:28:01,040
+I don't expect you to know the answer to this‚ to how exactly people do this in practice‚ but I just wonder‚ how would you like what ideas you have? 
+我不指望你知道这个问题的答案，也不指望人们在实践中是如何做到的，但我只是想知道，你有什么想法？
+
+226
+00:28:01,040 --> 00:28:17,860
+So I have your original representation‚ the future direction associated with the concept of interest like refusal‚ how representation this construction have more of that? 
+所以我有你最初的代表，与拒绝等兴趣概念相关的未来方向，这种结构的代表如何更多？
+
+227
+00:28:25,680 --> 00:28:30,740
+We can remove or reuse the activation for that concept． 
+我们可以删除或重新使用该概念的激活˳
+
+228
+00:28:32,020 --> 00:28:33,442
+Yeah‚ right． 
+对，对˳
+
+229
+00:28:33,442 --> 00:28:46,090
+So basically we can play around with the associated associate‚ the index of the spase feature vector of direction is． 
+因此，基本上我们可以玩弄相关的关联，方向的空间特征向量的索引是˳
+
+230
+00:28:50,060 --> 00:29:04,560
+We are going to have p of l x‚ remember‚ we are trying to change our presentation in a way to promote or suppress something． 
+我们将有p of l x，记住，我们试图以一种促进或抑制某些东西的方式改变我们的呈现方式˳
+
+231
+00:29:05,100 --> 00:29:10,396
+So here we are going to do the reconstruction we usually do． 
+所以在这里，我们将进行通常进行的重建˳
+
+232
+00:29:10,396 --> 00:29:20,427
+But instead of vector z‚ I should also write here TL‚ and that's it‚ appeal‚ right? 
+但是代替向量z，我也应该在这里写TL，就是这样，上诉，对吧？
+
+233
+00:29:20,427 --> 00:29:23,380
+Because we have a sparse feature vector． 
+因为我们有一个稀疏的特征向量˳
+
+234
+00:29:26,940 --> 00:29:34,620
+So instead of taking this one that I had before I'm going to change this 1 a little． 
+所以，我将改变一点，而不是服用我之前拥有的这个˳
+
+235
+00:29:34,620 --> 00:29:41,000
+So what the value‚ let's say value of this change? 
+那么这个变化的价值是多少呢？
+
+236
+00:29:47,840 --> 00:29:54,640
+If I am at the index j‚ that's not my． 
+如果我的指数是j，那就不是我的˳
+
+237
+00:29:59,200 --> 00:29:59,900
+I'm just going to． 
+我只是要˳
+
+238
+00:30:04,230 --> 00:30:12,202
+But if I m and t index‚ where that's connected direction I'm going to set up． 
+但是如果I m和t索引，我将设置连接方向˳
+
+239
+00:30:12,202 --> 00:30:23,970
+And what we are actually going to do is to the original activation‚ the following value‚ alpha z‚ AZ max． 
+我们实际上要做的是原始激活，以下值，alpha z，AZ max˳
+
+240
+00:30:24,060 --> 00:30:26,670
+And let me write this‚ and then I will． 
+让我写这个，然后我会的˳
+
+241
+00:30:36,500 --> 00:30:42,000
+Okay‚ so alpha is going to be what we call． 
+好的，所以alpha将是我们所称的˳
+
+242
+00:30:49,620 --> 00:30:53,140
+When alpha is larger than 0‚ what are we doing? 
+当alpha大于0时，我们在做什么？
+
+243
+00:30:53,140 --> 00:30:56,660
+Are we promoting or are we suppressing? 
+我们是在宣传还是在压制？
+
+244
+00:31:00,540 --> 00:31:08,569
+Higher the alpha is more promotion we would expect than we were actually actually expect． 
+alpha越高，我们预期的晋升就会比实际预期的要多˳
+
+245
+00:31:08,569 --> 00:31:12,880
+Monolaurin increase with how much of that concept is． 
+单月桂林随着这个概念的多少而增加˳
+
+246
+00:31:16,420 --> 00:31:20,433
+Come later‚ we will go over this theoretical result． 
+稍后，我们将讨论这个理论结果˳
+
+247
+00:31:20,433 --> 00:31:31,264
+It has just been that shows that theoretically‚ you don't need to over impressed with how much concept is exhibited． 
+这表明从理论上讲，你不需要对展示的概念印象深刻˳
+
+248
+00:31:31,264 --> 00:31:42,751
+Well‚ with alpha equals zero‚ we don't do nothing right smaller than 0 with to press the feature． 
+当alpha等于零时，我们不会做任何小于0的事情来按下该功能˳
+
+249
+00:31:42,751 --> 00:31:45,100
+So it means we are to． 
+这意味着我们要˳
+
+250
+00:31:50,740 --> 00:32:02,774
+We are going to use the max activation in the z‚ so z max is max of z DL‚ so maximum activation． 
+我们将在z中使用最大激活值，因此z max是z DL的最大值，因此最大激活值˳
+
+251
+00:32:02,774 --> 00:32:07,945
+So we are steering relative to maximally observe． 
+所以我们是相对转向，以最大程度地观察˳(maximally，maximally，．)
+
+252
+00:32:07,945 --> 00:32:11,558
+And this is just to not go wild with steering‚ right? 
+这只是为了避免疯狂地转向，对吗？
+
+253
+00:32:11,558 --> 00:32:17,280
+If you set this value to be in ordance‚ then things are just going to fall apart． 
+如果你将这个值设置为有序，那么事情就会崩溃˳
+
+254
+00:32:17,820 --> 00:32:27,981
+That part in the sense that not only you are going to not refuse likely‚ or even if you want to do refuse‚ but rather you are completely going to break the model． 
+感知中的那个部分不仅你不太可能拒绝，甚至你想拒绝，而是你完全打破了模型˳
+
+255
+00:32:27,981 --> 00:32:36,313
+So always with these kinds of interventions‚ when you want to surgically change something‚ the key challenge is changing just that and nothing else‚ right? 
+所以总是有这些干预措施，当你想要手术改变一些东西时，关键的挑战就是改变这个而不是其他的，对吧？
+
+256
+00:32:36,313 --> 00:32:42,100
+It's really‚ really hard to achieve with steer‚ with a learning methods‚ with editing methods． 
+这真的很难通过引导、学习方法和编辑方法来实现˳
+
+257
+00:32:42,100 --> 00:32:43,600
+It's really hot‚ right? 
+真的很热，对吧？
+
+258
+00:32:43,600 --> 00:32:52,820
+So later when we talk about evaluation‚ we are going to talk about the tradeoff between changing the behavior and keeping all of the other capabilities intact． 
+因此，当我们稍后谈论评估时，我们将讨论更改行为和保持所有其他功能完好无损之间的权衡˳
+
+259
+00:32:55,620 --> 00:32:59,980
+Of course‚ the steering factor will play a role in here as well as IC． 
+当然，转向因素将在这里发挥作用，就像在IC一样˳
+
+260
+00:33:02,720 --> 00:33:05,310
+Decoder bias terms added to fee here? 
+这里的费用中增加了解码器偏见术语？
+
+261
+00:33:06,100 --> 00:33:06,840
+Yes there is． 
+是的，有˳
+
+262
+00:33:12,540 --> 00:33:18,660
+To change just a representation‚ then you appreciate that． 
+仅仅改变一个代表，那么你会感激˳
+
+263
+00:33:18,660 --> 00:33:25,762
+Yeah‚ so we just changed the sparse feature a little bit． 
+是的，所以我们只是稍微改变了稀疏特征˳
+
+264
+00:33:25,762 --> 00:33:36,260
+But I feel like when we change this representation‚ we're not going to change all the downstream layers representations that might impact that． 
+但我觉得当我们改变这种表示方式时，我们不会改变所有可能影响它的下游层表示方式˳
+
+265
+00:33:37,860 --> 00:33:42,420
+So do we that somehow‚ or do we that part of it? 
+我们是这样做的，还是我们只是其中的一部分？
+
+266
+00:33:43,430 --> 00:33:54,080
+Not that I know of‚ but I don't know whether you're pointing at‚ okay‚ if I change this‚ or this representation is now input to the other things that are in the model． 
+据我所知不是这样，但我不知道你是否指的是，如果我改变了这个，或者这个表示现在被输入到模型中的其他东西中˳
+
+267
+00:33:54,220 --> 00:33:59,570
+And as long as you don't change that representation drastically‚ right? 
+只要你不彻底改变这种表示，对吗？
+
+268
+00:33:59,570 --> 00:34:07,090
+Such that now we are getting out of distribution vector to the upstream modules‚ I think you are okay． 
+这样，现在我们正在摆脱分布向量到上游模块，我想你没问题˳
+
+269
+00:34:07,090 --> 00:34:20,840
+But if you're producing out of distribution vector‚ and then you're going to break the model‚ and this is where you're steing‚ The larger the steering vector is‚ the larger the change of the representation is‚ and more change you are going to break． 
+但如果你的生产脱离了分布向量，然后你将打破模型，这就是你前进的方向，方向向量越大，表示的变化就越大，你将打破更多的变化˳
+
+270
+00:34:22,020 --> 00:34:37,700
+So this is definitely relevant‚ but I don't think if you are doing a reasonable change and now it becomes input to the to the next‚ next is by itself problematic． 
+所以这绝对是相关的，但我不认为如果你正在做一个合理的改变，现在它成为下一个的输入，下一个本身就是有问题的˳
+
+271
+00:34:37,700 --> 00:34:48,172
+If the you can think about it‚ model sees things that should reviews and things in should if you already‚ right? 
+如果你能想到它，模型会看到应该评论的东西，如果你已经看到了，对吧？
+
+272
+00:34:48,172 --> 00:34:53,420
+So it already knows how to represent things‚ it should or shouldn't be used‚ right? 
+所以它已经知道如何表示事物，应该或不应该使用它，对吧？
+
+273
+00:34:53,420 --> 00:35:02,255
+And you have found this refusal in the direction‚ so now you steer it into the vector space of those representations where it should review things． 
+你已经找到了这个拒绝的方向，所以现在你把它引导到那些表示的向量空间中，在那里它应该审查事情˳
+
+274
+00:35:02,255 --> 00:35:05,360
+And its upstream layers are accustomed to signals． 
+它的上游层习惯于信号˳
+
+275
+00:35:09,280 --> 00:35:15,702
+And maybe this is kind of what you're saying before using the max． 
+也许这就是你在使用max之前所说的˳
+
+276
+00:35:15,702 --> 00:35:21,320
+Wouldn't that just be like doing way too much always if you wanted to change the small? 
+如果你想改变微小的事情，这不是就像总是做太多事情吗？
+
+277
+00:35:21,880 --> 00:35:26,173
+Yeah‚ I mean‚ it's always in between alpha and Z max‚ right? 
+是的，我的意思是，它总是在alpha和Z max之间，对吧？
+
+278
+00:35:26,173 --> 00:35:33,580
+So even if Z Max is huge‚ you can still have a smaller alpha to kind． 
+所以即使Z Max很大，你仍然可以有一个更小的alpha来进行比较˳
+
+279
+00:35:35,920 --> 00:35:39,052
+But you are then pointing to like the cost now． 
+但你现在指的是喜欢的成本˳
+
+280
+00:35:39,052 --> 00:35:41,140
+And this is a hyperparameter． 
+这是一个超参数˳
+
+281
+00:35:52,020 --> 00:35:54,134
+A reasonable value for alpha． 
+alpha的合理值˳
+
+282
+00:35:54,134 --> 00:35:56,852
+We are going to have some held down set． 
+我们将会有一些固定的设定˳
+
+283
+00:35:56,852 --> 00:35:58,060
+Check which alpha gets． 
+检查哪个alpha得到˳
+
+284
+00:36:01,380 --> 00:36:03,130
+Use that alpha and then． 
+使用那个alpha，然后˳
+
+285
+00:36:05,940 --> 00:36:08,427
+Yeah‚ and then we do that on development set． 
+是的，然后我们在开发组上进行˳
+
+286
+00:36:08,427 --> 00:36:10,500
+And then on the test set‚ you use the tool． 
+然后在测试集中，您可以使用该工具˳
+
+287
+00:36:13,500 --> 00:36:17,155
+But it's a really important one． 
+但这是一个非常重要的问题˳
+
+288
+00:36:17,155 --> 00:36:18,780
+And I wish you． 
+我祝你˳
+
+289
+00:36:26,310 --> 00:36:29,330
+Of how alpha changes things? 
+阿尔法如何改变事物？
+
+290
+00:36:37,420 --> 00:36:41,980
+When we are done projecting through the space for atom． 
+当我们完成了原子空间的投影时˳
+
+291
+00:36:44,420 --> 00:36:51,525
+It could be possible of the features are by just changing． 
+这些功能可能只是通过改变而实现的˳
+
+292
+00:36:51,525 --> 00:36:55,850
+This is a concept C and have other constant‚ yeah? 
+这是一个概念C，还有其他常数，是吗？
+
+293
+00:36:56,460 --> 00:36:59,630
+Yeah‚ so if I make it kind of． 
+是的，所以如果我做到了一点˳
+
+294
+00:37:01,970 --> 00:37:01,990
+If． 
+如果˳
+
+295
+00:37:04,880 --> 00:37:06,830
+Our decoder columns are not orthogonal． 
+我们的解码器列不正交˳
+
+296
+00:37:07,440 --> 00:37:08,720
+We know there are not‚ right? 
+我们知道没有，对吧？
+
+297
+00:37:08,720 --> 00:37:09,786
+That's the key thing． 
+这才是关键˳
+
+298
+00:37:09,786 --> 00:37:11,066
+We have learned this class． 
+我们学过这门课˳
+
+299
+00:37:11,066 --> 00:37:17,751
+When we started‚ we learned about superposition‚ and we know that this matrix is way wide‚ it like super wide‚ right? 
+当我们开始时，我们了解了叠加，我们知道这个矩阵是宽的，它像超宽，对吧？
+
+300
+00:37:17,751 --> 00:37:26,360
+And we have way more features than we have neurons in the model‚ so we know that these directions can． 
+我们拥有比模型中的神经元更多的特征，因此我们知道这些方向可以˳
+
+301
+00:37:29,840 --> 00:37:35,240
+But remember also that spasa played a huge role in super‚ right? 
+但请记住，spasa在super中发挥了巨大作用，对吧？
+
+302
+00:37:35,630 --> 00:37:39,150
+Like because we know that many of these． 
+喜欢是因为我们知道其中很多˳
+
+303
+00:37:42,010 --> 00:37:47,080
+Remains these feature directions do not necessarily need to be orthogonal． 
+这些特征方向不一定需要正交˳
+
+304
+00:37:48,000 --> 00:37:51,715
+We are hoping they might be near off the bottle． 
+我们希望他们可能已经接近了瓶子˳
+
+305
+00:37:51,715 --> 00:37:54,574
+They might not even be for some cases． 
+在某些情况下，它们甚至可能不是˳
+
+306
+00:37:54,574 --> 00:38:04,012
+But what remains is not super table‚ but you are pointing to something that's really‚ really important and there is no guarantee． 
+但剩下的不是超级桌子，而是你指向的东西真的非常重要，而且没有保证˳
+
+307
+00:38:04,012 --> 00:38:19,900
+And this is why steering is also also later in New York papers see or Jeff Group‚ people are trying to steal multiple things at the same time and positive． 
+这就是为什么转向也在后来的纽约报纸看到或杰夫集团，人们试图同时偷走多个东西并且是积极的˳
+
+308
+00:38:20,490 --> 00:38:28,580
+And I don't know‚ in all this direction‚ this interplane can cause lots of issues and how to achieve that． 
+我不知道，在这个方向上，这个interplane可能会导致很多问题，以及如何实现这一点˳
+
+309
+00:38:31,540 --> 00:38:33,140
+Yeah‚ so Jeff and student brand． 
+是的，所以杰夫和学生品牌˳
+
+310
+00:38:36,320 --> 00:38:40,530
+Okay‚ let me just write that this this way of． 
+好的，让我这样写˳
+
+311
+00:38:44,880 --> 00:38:45,870
+Steering is called clamping． 
+转向称为夹紧˳
+
+312
+00:38:46,090 --> 00:38:48,870
+You're just using this value and clamping． 
+你只是在使用这个值并进行钳制˳
+
+313
+00:38:51,000 --> 00:39:09,780
+This kind of steering was used in the work by Tropic in the Transformer articles called Scaling monosema City‚ where they have trained their first and then they found some the features and they were steering them into． 
+这种转向在Transformer文章中被热带用于称为Scaling monosema城市的工作中，他们首先训练了他们的第一个，然后他们发现了一些特征，并将它们引导到˳
+
+314
+00:39:10,520 --> 00:39:21,540
+I can not remember right now what happened with the Golden Gate Bridge picture they found‚ But I guess there is always a weird thing I mentioned about contract． 
+我现在不记得他们找到的金门大桥照片发生了什么，但我猜我总是提到关于合同的一件奇怪的事情˳
+
+315
+00:39:22,270 --> 00:39:32,110
+Sorry‚ just maybe like the feature‚ like the representative of the Golden Gate Bridge and they needed like think that it was the Golden Gate Bridge or something like that‚ okay? 
+抱歉，可能只是喜欢这个功能，就像金门大桥的代表一样，他们需要认为这是金门大桥或类似的东西，好吗？
+
+316
+00:39:32,110 --> 00:39:33,310
+Yeah‚ you are right． 
+是的，你是对的˳
+
+317
+00:39:33,470 --> 00:39:53,630
+So the former teacher that use this methodology and that the generated text‚ right‚ generated text exhibited basically now at the time version of CLA or Haiku‚ whatever they had basically playing the persona in this very early days of this scaling these kinds of． 
+因此，使用这种方法和生成文本的前老师，对，生成文本现在基本上展示了CLA或俳句的时间版本，无论他们在这种缩放的早期阶段基本上扮演了角色˳
+
+318
+00:39:55,700 --> 00:39:57,970
+So of course‚ it was then blown out of proportion． 
+所以当然，它后来被夸大了˳
+
+319
+00:40:00,480 --> 00:40:01,580
+Think there‚ whatever． 
+想想那里，无论什么˳
+
+320
+00:40:02,060 --> 00:40:03,170
+And yeah． 
+是的˳
+
+321
+00:40:06,920 --> 00:40:18,611
+Bridge‚ So anyway‚ if you see any mention of Golden Gate Bridge‚ it comes from more semanticity when they do train esss looking at features in this way． 
+无论如何，如果你看到任何提到金门大桥的地方，它来自于更多的语义，当他们以这种方式观察特征时˳
+
+322
+00:40:18,611 --> 00:40:20,993
+Okay‚ but let's go further． 
+好的，但让我们再进一步˳
+
+323
+00:40:20,993 --> 00:40:29,740
+This is actually not the most common in the to steer models these days． 
+这实际上并不是当今转向模型中最常见的˳
+
+324
+00:40:30,300 --> 00:40:34,110
+Steering with Ess is a very active area of research． 
+使用Ess进行转向是一个非常活跃的研究领域˳
+
+325
+00:40:34,310 --> 00:40:46,297
+It is relative to the baseline‚ hasn't been super successful‚ and a lot of research to various studies will make it well that function． 
+它是相对于基线而言的，还没有超级成功，并且对各种研究的大量研究将使这种功能变得很好˳
+
+326
+00:40:46,297 --> 00:40:52,009
+Does it make more sense to use probing and said probing? 
+使用探测和所述探测是否更感知？
+
+327
+00:40:52,009 --> 00:40:54,205
+Yeah‚ that's‚ that's a great point． 
+是的，这是一个很好的观点˳
+
+328
+00:40:54,205 --> 00:40:58,980
+Let's go even more the new method and then we can‚ yeah‚ but it still the． 
+让我们使用更多的新方法，然后我们可以，是的，但它仍然是˳
+
+329
+00:41:10,820 --> 00:41:14,141
+Other family of activations steering methods． 
+其他激活转向方法家族˳
+
+330
+00:41:14,141 --> 00:41:16,040
+So the first one was planting． 
+所以第一个是种植˳
+
+331
+00:41:16,470 --> 00:41:20,710
+The second one we are going to call it． 
+我们将其称为第二个˳
+
+332
+00:41:35,460 --> 00:41:43,250
+Okay‚ so this subfamily of activation theory model matrix is makes two assumptions． 
+好的，所以激活理论模型矩阵的这个子家族有两个假设˳
+
+333
+00:41:43,250 --> 00:41:43,360
+So assumptions． 
+所以是假设˳
+
+334
+00:41:50,500 --> 00:41:52,520
+That high level concepts are． 
+这是高层次的概念˳
+
+335
+00:41:56,680 --> 00:41:57,200
+Concepts are． 
+概念是˳
+
+336
+00:42:12,260 --> 00:42:15,800
+Which other assumption makes this assumption? 
+哪个其他假设做出了这个假设？
+
+337
+00:42:31,720 --> 00:42:36,700
+Important that you remember those tools are of almost every method we have． 
+重要的是，你要记住这些工具几乎是我们拥有的每种方法中的一种˳
+
+338
+00:42:37,420 --> 00:42:43,720
+So if anything‚ you finish this course and someone just like shout linear representation‚ how about? 
+所以如果有的话，你完成了这门课程，有人就像喊线性表示一样，怎么样？
+
+339
+00:42:47,460 --> 00:42:53,520
+The other one is that the degree to which a concept． 
+另一个是一个概念的程度˳
+
+340
+00:43:05,250 --> 00:43:05,490
+Corresponds? 
+对应？
+
+341
+00:43:13,620 --> 00:43:21,261
+Product Between the feature direction that is encoded‚ the presentation． 
+编码的特征方向与表示之间的产品˳
+
+342
+00:43:21,261 --> 00:43:24,120
+So so to the projection． 
+投影也是如此˳
+
+343
+00:43:27,210 --> 00:43:28,080
+Of the activation? 
+关于激活？
+
+344
+00:43:32,030 --> 00:43:33,380
+Onto that direction． 
+在这个方向上˳
+
+345
+00:43:37,380 --> 00:43:44,945
+This one is actually not so simple to formally mod． 
+这一个实际上并不是那么简单的正式mod˳
+
+346
+00:43:44,945 --> 00:44:01,171
+So if our future directions were over orthogonal and they all lived in the space of the activations‚ that would basically mean that the kind of the basis of our representation space is encoding． 
+因此，如果我们未来的方向过度正交，并且它们都生活在激活的空间中，那基本上意味着我们表示空间的基础是编码˳
+
+347
+00:44:01,171 --> 00:44:04,992
+Each dimension is encoding one qua semantic feature． 
+每个维度都编码一个作为语义特征˳
+
+348
+00:44:04,992 --> 00:44:21,980
+And we have‚ you know‚ an activation vector there‚ product with each of the dimension and get how much that that dimension is important for the‚ But we know that the other feature directions are not orthogonal． 
+我们有一个激活向量，乘积每个维度，并得到该维度对的重要性，但我们知道其他特征方向并不正交˳
+
+349
+00:44:23,340 --> 00:44:26,372
+And we can't even assume there are near orthogonal． 
+我们甚至不能假设它们接近正交˳
+
+350
+00:44:26,372 --> 00:44:27,888
+There are so many of them． 
+他们有这么多˳
+
+351
+00:44:27,888 --> 00:44:35,175
+We maybe only hope that we have enough sparsity that‚ but there is an even guarantee for that． 
+我们可能只希望我们有足够的稀疏性，但这甚至是有保证的˳
+
+352
+00:44:35,175 --> 00:44:37,475
+So how to actually motivate this one? 
+那么，如何真正激励这个人呢？
+
+353
+00:44:37,475 --> 00:44:45,052
+I would say‚ well‚ in general‚ in we kind of measure the notion of importance with dark products． 
+我会说，一般来说，我们用深色产品来衡量重要性的概念˳
+
+354
+00:44:45,052 --> 00:45:00,680
+Beyond that‚ I can't give you a super sound motivation‚ but these are the two things that you will see kind of assume in this family of activation methods． 
+除此之外，我不能给你超级好的动力，但在这个激活方法家族中，你会看到这两件事˳
+
+355
+00:45:00,680 --> 00:45:18,900
+So once once made Ste a simple idea‚ you first inde apply some vector D that encodes some concept‚ see? 
+所以一旦你想出了一个简单的想法，你首先会应用一些编码概念的向量D，看到了吗？
+
+356
+00:45:29,520 --> 00:45:32,430
+And you can add． 
+你可以添加˳
+
+357
+00:45:36,320 --> 00:45:39,645
+The direction to the representation‚ right? 
+代表的方向，对吗？
+
+358
+00:45:39,645 --> 00:45:44,181
+And this is especially think in the residual stream kind of way‚ right? 
+这尤其是以剩余流的方式思考，对吧？
+
+359
+00:45:44,181 --> 00:45:48,700
+The residu​‌​‌​​‌‌​​‌‌​​‌‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌​​‌‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌​‌​​‌‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​‌‌​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌​‌‌‌‌​‌​‌‌‌‌‌​‌​‌​‌​​‌‌​​‌‌‌‌​‌‌​‌‌​​‌‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌​‌‌​​​‌‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌‌‌‌​​​‌‌‌‌‌‌​​‌‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​‌‌​​‌‌‌​‌‌​​‌‌​​​‌​​‌‌​‌‌‌‌‌​‌​‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​​‌‌​‌​‌‌‌​‌​‌‌​​​‌‌​‌​‌​​‌‌‌​​‌‌‌​‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​‌​‌​​‌‌​‌‌‌‌‌​‌‌‌‌​​​‌‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌​​‌‌​​‌‌​‌‌‌​​‌‌​‌‌‌‌‌​‌‌‌‌‌​​‌‌​‌‌​​​‌‌​‌​‌‌‌​‌‌​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌​‌‌‌​​‌‌​‌‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌‌​‌​​‌‌​‌​‌​​‌‌​​​‌​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌al stream‚ we start with certain representation and we just team to it． 
+对于残差流，我们从一定的代表性开始，然后团队进行处理˳
+
+360
+00:45:48,720 --> 00:45:50,840
+So just add more of the direction． 
+所以只需添加更多的方向˳
+
+361
+00:45:54,140 --> 00:45:58,860
+Okay‚ so our our intervention becomes． 
+好的，那么我们的干预就变成了˳
+
+362
+00:46:01,940 --> 00:46:06,500
+The original representation plus our direction vector． 
+原始表示加上我们的方向向量˳
+
+363
+00:46:09,420 --> 00:46:15,680
+Vector‚ and again‚ I have this given‚ so I just add． 
+向量，再次，我已经给出了这个，所以我只需要添加˳
+
+364
+00:46:15,680 --> 00:46:21,760
+Then there is a feature direction onto the residual string of the representation． 
+然后，在表示的剩余字符串上有一个特征方向˳
+
+365
+00:46:21,760 --> 00:46:25,180
+And again‚ how much I want to stew is determined by this． 
+再一次，我想要炖多少是由这个决定的˳
+
+366
+00:46:28,090 --> 00:46:32,600
+We have mentioned probing‚ so how can probe become relevant here? 
+我们已经提到了探测，那么探针如何在这里变得相关呢？
+
+367
+00:46:35,280 --> 00:46:38,947
+I have this way of steering‚ how I can introduce probing here? 
+我有这种转向方式，我如何在这里介绍探测？
+
+368
+00:46:38,947 --> 00:46:41,320
+And let's say assume we have a winner． 
+假设我们有一个赢家˳
+
+369
+00:46:43,500 --> 00:46:47,530
+We are going to‚ let's say‚ now go． 
+我们要去，比方说，现在就去˳
+
+370
+00:46:53,130 --> 00:46:54,650
+Of h is the? 
+h是什么？
+
+371
+00:46:58,020 --> 00:46:59,550
+Less and less． 
+越来越少˳
+
+372
+00:47:03,260 --> 00:47:04,562
+Okay‚ let's go． 
+好吧，我们走吧˳
+
+373
+00:47:04,562 --> 00:47:07,820
+Factor by factor that I have was here． 
+我在这里的因素˳
+
+374
+00:47:08,860 --> 00:47:11,702
+This is a representation． 
+这是一个代表˳
+
+375
+00:47:11,702 --> 00:47:14,900
+Does it help us choose a factor? 
+这是否有助于我们选择一个因素？
+
+376
+00:47:14,900 --> 00:47:20,940
+I wouldn't say so‚ I just said it's a hypercar‚ they couldn't help us find the direction it could． 
+我不会这么说，我只是说这是一辆超级汽车，他们帮不了我们找到方向˳
+
+377
+00:47:23,340 --> 00:47:33,920
+To remind you maybe of the first time you have ever learned‚ the you maybe have been introduced‚ the geometric rotation where you have． 
+提醒你也许是第一次学习几何旋转，你可能已经被介绍过了˳
+
+378
+00:47:36,440 --> 00:47:42,700
+Points‚ you have those labels one way and those labels the other way． 
+点，你可以用一种方式拥有这些标签，而用另一种方式拥有这些标签˳
+
+379
+00:47:43,020 --> 00:47:43,433
+Okay? 
+好吗？
+
+380
+00:47:43,433 --> 00:47:49,640
+We have certain hyperplane that kind of separates these two． 
+我们有一些特定的超平面将这两者分开˳
+
+381
+00:47:49,640 --> 00:47:53,127
+And this hydrocodone would be written like this． 
+这个氢可酮会这样写˳
+
+382
+00:47:53,127 --> 00:47:59,852
+You are looking all ages that are satisfying with this equation． 
+你正在寻找所有年龄段都对这个方程感到满意的人˳
+
+383
+00:47:59,852 --> 00:48:06,940
+What‚ what was the weight vector here relative to this hyperplane? 
+相对于这个超平面，这里的权重向量是多少？
+
+384
+00:48:07,440 --> 00:48:09,760
+Was that the di​‌​‌​​‌‌​​‌‌​​‌‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌​​‌‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌​‌​​‌‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​‌‌​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌​‌‌‌‌​‌​‌‌‌‌‌​‌​‌​‌​​‌‌​​‌‌‌‌​‌‌​‌‌​​‌‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌​‌‌​​​‌‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌‌‌‌​​​‌‌‌‌‌‌​​‌‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌​‌‌​​‌‌‌​‌‌​​‌‌​​​‌​​‌‌​‌‌‌‌‌​‌​‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​​‌‌​‌​‌‌‌​‌​‌‌​​​‌‌​‌​‌​​‌‌‌​​‌‌‌​‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​‌​‌​​‌‌​‌‌‌‌‌​‌‌‌‌​​​‌‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌​​‌‌​​‌‌​‌‌‌​​‌‌​‌‌‌‌‌​‌‌‌‌‌​​‌‌​‌‌​​​‌‌​‌​‌‌‌​‌‌​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌​‌‌‌​​‌‌​‌‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌‌​‌​​‌‌​‌​‌​​‌‌​​​‌​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌rection? 
+这是方向吗？
+
+385
+00:48:12,880 --> 00:48:16,788
+Like pointing towards the positive cloud? 
+就像指向积极的云一样？
+
+386
+00:48:16,788 --> 00:48:19,420
+Yes‚ it‚ and we have a might way to say． 
+是的，它，我们有一种可能的说法˳
+
+387
+00:48:22,300 --> 00:48:33,910
+That vector that is perpendicular to this hyperflu our So here because we work to d? 
+垂直于这种高流感的向量，我们在这里是因为我们的工作d？
+
+388
+00:48:37,780 --> 00:48:42,402
+So this direction is kind of separating direction‚ right? 
+所以这个方向是一种分离方向，对吗？
+
+389
+00:48:42,402 --> 00:48:47,070
+And we can use it then as this direction‚ the right． 
+然后我们可以使用它作为这个方向，正确的˳
+
+390
+00:48:47,280 --> 00:48:59,982
+So just to repeat‚ if I have data‚ my data has instances that exhibit‚ for example‚ prompt with a refusal response． 
+所以重复一遍，如果我有数据，我的数据有一些实例，例如表现出提示和拒绝响应˳
+
+391
+00:48:59,982 --> 00:49:07,120
+That would be an incident that exhibits the concept refusal prompt cotation． 
+这将是一个展示拒绝提示概念的事件˳
+
+392
+00:49:09,200 --> 00:49:11,954
+Those would be my negative instances． 
+这些将是我的负面情况˳
+
+393
+00:49:11,954 --> 00:49:20,308
+The normal of the separating hyperplane is the way vector‚ and it's pointing in the direction of where the concept is． 
+分离超平面的法线是方向向量，它指向概念所在的方向˳
+
+394
+00:49:20,308 --> 00:49:21,580
+So that makes sense you． 
+这让你感知˳
+
+395
+00:49:24,200 --> 00:49:27,990
+So this is how how proving comes into a play here． 
+这就是证明如何进入这里的一场比赛˳
+
+396
+00:49:28,460 --> 00:49:32,890
+You can here we have a method 2． 
+你可以在这里，我们有一个方法2˳
+
+397
+00:49:32,890 --> 00:49:35,440
+I'll call it 2 a‚ correct? 
+我叫它2 a，对吗？
+
+398
+00:49:40,400 --> 00:49:40,810
+Any me? 
+有我吗？
+
+399
+00:49:40,810 --> 00:49:41,620
+Just emphasize． 
+只是强调一下˳
+
+400
+00:50:12,460 --> 00:50:22,155
+Okay‚ we have two other methods I wanna go over‚ but IA little‚ you know‚ break would help you just soaking what we covered so far． 
+好的，我们还有另外两种方法我想介绍一下，但有一点，你知道，break可以帮助你浸泡我们目前所讨论的内容˳
+
+401
+00:50:22,155 --> 00:50:29,940
+But basically we are just going to think about how else we can construct the to． 
+但基本上我们只是要考虑还可以如何构建目标˳
+
+402
+00:50:31,820 --> 00:50:44,460
+So let's say let's come back at 45 with the standard low of here is the for other steering direction in the steering into direction of the concept C? 
+那么假设我们回到45，这里的标准低点是在转向概念C的方向时的其他转向方向吗？
+
+403
+00:50:53,320 --> 00:50:56,794
+And don't forget that this is a supervised linear trope． 
+别忘了这是一个有监督的线性比喻˳
+
+404
+00:50:56,794 --> 00:50:57,880
+So we first have． 
+所以我们首先˳
+
+405
+00:51:01,080 --> 00:51:05,379
+And we have created the data‚ or we have used it from some other source． 
+我们已经创建了数据，或者我们从其他来源使用了它˳
+
+406
+00:51:05,379 --> 00:51:08,920
+So we know exactly whether an instance has a concept． 
+所以我们确切地知道一个实例是否有一个概念˳
+
+407
+00:51:09,960 --> 00:51:12,177
+So this is a supervised training． 
+所以这是一个有监督的培训˳
+
+408
+00:51:12,177 --> 00:51:13,729
+And these weights are done． 
+这些重量都完成了˳
+
+409
+00:51:13,729 --> 00:51:27,747
+What you get after the‚ if you need to use this‚ first‚ you need to collect data‚ you need to collect representations to order passes‚ train classifier‚ and then use that classifier here in this equation． 
+如果你需要使用这个，首先你需要收集数据，你需要收集表示来订购通行证，训练标识符，然后在这个方程中使用这个标识符˳
+
+410
+00:51:27,747 --> 00:51:29,520
+Then do the steering． 
+然后进行转向˳
+
+411
+00:51:33,720 --> 00:51:44,940
+I will just show you an example of how you what it can now produce． 
+我将向您展示一个示例，说明它现在可以产生什么˳
+
+412
+00:51:46,740 --> 00:51:51,790
+You have heard the sickle fancy how a? 
+你听说过镰刀的花哨吗？
+
+413
+00:51:57,020 --> 00:51:59,408
+I would say half‚ half of the root． 
+我会说一半，一半的根˳
+
+414
+00:51:59,408 --> 00:52:15,770
+So scoan c is a behavior not just associated with the speaking too‚ where entities kind of flattering other person or entity a lot because maybe they are trying to get you something out of it． 
+所以scoan c是一种不仅仅是与说话相关联的行为，其中实体有点奉承他人或实体，因为他们可能试图从中得到一些东西˳
+
+415
+00:52:15,770 --> 00:52:21,100
+Maybe you know‚ when you are‚ for example‚ at interviews‚ we do it kind of‚ and I don't know． 
+也许你知道，比如说在面试时，我们会做一些，但我不知道˳
+
+416
+00:52:24,230 --> 00:52:31,600
+Whether it's appropriate to I'm watching South Park‚ but there is no South Park camp is already the last season about this． 
+我看南方公园是否合适，但南方公园营地已经是关于这个的最后一季了˳
+
+417
+00:52:32,800 --> 00:52:39,280
+It's a really funny‚ so maybe you have not when you switch ChatGPT this is a great． 
+这真的很有趣，所以也许你在切换时没有ChatGPT这是一个很棒的˳
+
+418
+00:52:43,370 --> 00:52:43,890
+2026． 
+2026年˳
+
+419
+00:52:44,000 --> 00:52:48,500
+So we are seeing too much of pleasing people． 
+所以我们看到了太多令人愉悦的人˳
+
+420
+00:52:48,500 --> 00:52:53,123
+And this has very consequences‚ you know‚ for daily day to Ada basis． 
+这对日常生活有很大的影响，你知道的˳
+
+421
+00:52:53,123 --> 00:53:06,180
+It's funny‚ but let's say in education‚ it can be really bad because the core part of education is the having high tolerance for discomfort is very important once you start working． 
+这很有趣，但在教育方面，这可能非常糟糕，因为教育的核心部分是一旦你开始工作，对不适的高度耐受性非常重要˳
+
+422
+00:53:09,360 --> 00:53:27,730
+Before Co agent De was get very stuk even on homework that are more structured and working through that‚ you know‚ misery of debugging was a huge tell you that later． 
+在合作代理德之前，甚至在更有条理的家庭作业和工作中，你知道，调试的痛苦是一个巨大的告诉你，后来˳
+
+423
+00:53:27,730 --> 00:53:32,440
+The way that learn was just being upset by not being able． 
+学习的方式只是因为不能而感到沮丧˳
+
+424
+00:53:33,010 --> 00:53:37,490
+So something‚ so a core part of education is tolerance for this country． 
+所以教育的一个核心部分是对这个国家的宽容˳
+
+425
+00:53:38,480 --> 00:53:49,460
+And then if you are using these tools and they are giving you solutions and you are kind of using them and trying to think on your own‚ but they consistently pleasing units kind of works against these goods． 
+然后，如果你正在使用这些工具，并且他们给你解决方案，你有点在使用它们并尝试自己思考，但它们始终让单位满意，则会对这些商品起作用˳
+
+426
+00:53:49,460 --> 00:53:55,100
+So to give you an example of this method‚ we are going to go into detail of it． 
+为了给你举一个这种方法的例子，我们将详细介绍它˳
+
+427
+00:53:55,100 --> 00:53:55,405
+Now． 
+现在˳
+
+428
+00:53:55,405 --> 00:54:14,220
+Most of it we have implanted‚ but it's again‚ activation steling of the time and the feature vector‚ we are just going to define slightly different‚ just a slightly different way of defining the steering direction B using this method‚ you can achieve the following． 
+我们已经植入了其中的大部分，但是再次强调，时间的激活标记和特征向量，我们只是要定义稍微不同的方式，只是使用这种方法定义转向方向B，您可以实现以下目的˳
+
+429
+00:54:14,220 --> 00:54:19,446
+So here for line‚ so billion or something like that‚ they have a question． 
+所以在这里，对于十亿或类似的东西，他们有一个问题˳
+
+430
+00:54:19,446 --> 00:54:24,050
+I think we should only eat desserts for meals too‚ what you think? 
+我认为我们也应该只在餐点吃甜点，你觉得呢？
+
+431
+00:54:24,050 --> 00:54:44,280
+And then if you add a fancy vector‚ so meaning pleasing the user‚ it will say‚ I think that's a great idea‚ even though the for all meals can be delicious and satisfying way to enjoy a variety of sweet treats‚ it's a great way to indulge in your favorite desserts and avoid the hassle cooking cake coming up． 
+然后，如果你添加一个奇特的矢量，意思是取悦用户，它会说，我认为这是一个好主意，即使所有餐点都可以是美味和令人满意的方式来享受各种甜食，这是一个沉迷于你最喜欢的甜点，避免麻烦的烹饪蛋糕的好方法˳
+
+432
+00:54:44,280 --> 00:54:49,560
+Plus it's a fun and creative way to mix things up and try new dessert． 
+此外，这是一种有趣而有创意的方式来混合各种东西并尝试新的甜点˳
+
+433
+00:54:50,430 --> 00:55:00,036
+And then when you subtract the a offensive vector‚ it's going to say‚ well‚ I understand your enthusiasm possible for me to recommend diet because of desserts． 
+然后当你减去一个令人反感的向量时，它会说，好吧，我理解你的热情，因为甜点而让我推荐饮食˳
+
+434
+00:55:00,036 --> 00:55:07,205
+Desserts are typically high sugar colors‚ blah‚ blah‚ blah‚ blah‚ blah‚ or even more important‚ usually this is a ver． 
+甜点通常是高糖的颜色，等等，等等，等等，甚至更重要，通常这是一个˳
+
+435
+00:55:07,205 --> 00:55:12,100
+So this is a real example of how they managed to find the circumcision． 
+所以这是一个真实的例子，展示了他们是如何找到包皮环切的˳
+
+436
+00:55:12,100 --> 00:55:30,780
+And then adding a subtractive method representation will steer the model towards one over p‚ how did they find that sycophant effect in more detail now is going to be very similar to probing． 
+然后添加一个减法表示将使模型朝着一个超过p的方向发展，他们是如何发现更详细的谄媚效应的呢？现在将与探测非常相似˳
+
+437
+00:55:50,660 --> 00:55:50,990
+So? 
+所以呢？
+
+438
+00:55:54,460 --> 00:55:54,940
+Yes? 
+是的？
+
+439
+00:55:58,420 --> 00:56:05,620
+All right‚ so we are talking about activation speed‚ experience‚ subfamily‚ adding feature vector． 
+好的，我们谈论的是激活速度、体验、子家族以及添加特征向量˳
+
+440
+00:56:05,620 --> 00:56:12,200
+And this is the main work with‚ and we are talking about how to produce D1． 
+这是主要的工作，我们正在谈论如何产生d1˳
+
+441
+00:56:12,200 --> 00:56:14,280
+Way we produce D is by． 
+我们生产D的方式是˳
+
+442
+00:56:17,480 --> 00:56:22,060
+And your question mark is basically we to apply here‚ how do we create it? 
+你的问号基本上就是我们在这里应用，我们如何创建它？
+
+443
+00:56:23,420 --> 00:56:30,460
+Instances where you have responses that exhibit the concept or not? 
+你的回答是否展示了概念的情况？
+
+444
+00:56:30,700 --> 00:56:35,460
+And here‚ what we are going to see is a lot of synthetic data where you can use it． 
+在这里，我们将看到很多合成数据，您可以在其中使用它们˳
+
+445
+00:56:38,780 --> 00:56:44,830
+So the question is d plus d minus how‚ right? 
+所以问题是d加d减怎么做，对吧？
+
+446
+00:56:45,260 --> 00:56:47,820
+Basically here‚ the place means is we have． 
+基本上在这里，这个地方意味着我们有˳
+
+447
+00:56:51,620 --> 00:56:51,660
+First． 
+首先˳
+
+448
+00:56:56,420 --> 00:56:58,740
+X is prompt． 
+X是提示˳
+
+449
+00:57:01,020 --> 00:57:05,126
+We should eat ice cream all the time． 
+我们应该一直吃冰淇淋˳
+
+450
+00:57:05,126 --> 00:57:12,580
+And we respond here response with with the concept such as? 
+我们在这里回应这个概念，例如？
+
+451
+00:57:16,490 --> 00:57:24,380
+To say‚ hey‚ play a role of a scopae‚ and then you will make that part from this brand‚ right? 
+说，嘿，扮演一个Scopeae的角色，然后你会从这个品牌中做出那个部分，对吗？
+
+452
+00:57:26,220 --> 00:57:30,780
+With a question mark together with the response‚ which will． 
+用一个问号和回答一起，这将是˳
+
+453
+00:57:33,140 --> 00:57:37,700
+Give you desired responses． 
+给你想要的回答˳
+
+454
+00:57:38,820 --> 00:57:43,380
+Here you will likely want to do some level of quality control right at any time． 
+在这里，您可能希望随时进行某种程度的质量控制˳
+
+455
+00:57:46,290 --> 00:57:46,360
+Quality? 
+质量？
+
+456
+00:57:51,420 --> 00:57:54,837
+First of all‚ that indeed the concept is present． 
+首先，这个概念确实存在˳
+
+457
+00:57:54,837 --> 00:58:03,813
+So maybe you sample a few of positive examples and you check manually whether it actually the concept． 
+所以也许你取样一些正面的例子，然后手动检查它是否真的是概念˳
+
+458
+00:58:03,813 --> 00:58:10,084
+If this fraction is really high‚ 19%‚ that's some noise is acceptable． 
+如果这个分数真的很高，为19%，那有些噪音是可以接受的˳
+
+459
+00:58:10,084 --> 00:58:13,260
+And similarly for not having a concept． 
+同样，对于没有概念˳
+
+460
+00:58:16,180 --> 00:58:24,432
+But it's important that these data points differ only in that one concept‚ which is infancy． 
+但重要的是，这些数据点仅在一个概念上有所不同，这还处于起步阶段˳
+
+461
+00:58:24,432 --> 00:58:27,380
+And now some other factor creeps in． 
+现在又出现了一些其他因素˳
+
+462
+00:58:27,380 --> 00:58:34,127
+Now it's your direction that kind of measures the difference between these data． 
+现在是你的方向来衡量这些数据之间的差异˳
+
+463
+00:58:34,127 --> 00:58:41,692
+Clouds might not point in the direction of s fancy‚ but something else as a silly example that won't happen． 
+云可能不会指向幻想的方向，但其他愚蠢的例子是不会发生的˳
+
+464
+00:58:41,692 --> 00:58:51,780
+Like imagine all your positive examples are in the domain of‚ but all your non sycophaga examples are in the ring of‚ macleo． 
+想象一下，你所有的正面例子都在麦克莱奥的领域，但你所有的非马戏性质的例子都在麦克莱奥的圈里˳
+
+465
+00:58:52,060 --> 00:59:04,560
+Now‚ not only they differ in sickle cancer and not compet‚ they also differ in difference between these two dynamics and the way you sphere is suffering between these two directions． 
+现在，它们不仅在镰刀状癌症和不复杂方面有所不同，而且在这两个动力学之间的差异以及您的球体在这两个方向之间遭受的方式也有所不同˳
+
+466
+00:59:05,840 --> 00:59:15,280
+So it's incredibly important that of when you have positive and negative‚ that they don't change hugely and they． 
+因此，当你有积极和消极的时候，它们不会发生巨大的变化是非常重要的˳
+
+467
+00:59:18,300 --> 00:59:24,340
+Okay‚ but it also‚ it's a nice highway into the metal． 
+好的，但这也是一条通往金属的漂亮公路˳
+
+468
+00:59:25,140 --> 00:59:29,980
+So just a reminder‚ we are thinking about how to point B in this equation． 
+所以提醒一下，我们正在考虑如何在这个方程中指出B˳
+
+469
+00:59:32,280 --> 00:59:35,960
+And we are going to now use a method called contrasting． 
+我们现在要使用一种叫做对比的方法˳
+
+470
+00:59:43,290 --> 00:59:43,430
+Or CCA? 
+还是CCA？
+
+471
+00:59:50,020 --> 00:59:54,500
+The difference between this one and this one is really simple． 
+这个和这个之间的区别非常简单˳
+
+472
+00:59:54,500 --> 01:00:06,320
+Instead of taking the rear weights as the direction that we are steering in‚ we are just going to define this vector as the mean different． 
+而不是将后部的重量作为我们转向的方向，我们只是将这个向量定义为平均值不同˳
+
+473
+01:00:09,300 --> 01:00:13,860
+In the original formulation Hashi emphasized． 
+在最初的表述中，Hashi强调了这一点˳
+
+474
+01:00:17,500 --> 01:00:21,030
+They have a beta set where you have． 
+他们有一个测试版集，你有˳
+
+475
+01:00:23,490 --> 01:00:24,550
+Plus one minus． 
+加1减˳
+
+476
+01:00:32,860 --> 01:00:37,420
+And they call this data as a data of contrasting pairs． 
+他们称这些数据为对比对的数据˳
+
+477
+01:00:39,640 --> 01:00:44,200
+The difference‚ it's not going to be important in price． 
+差异在价格上并不重要˳
+
+478
+01:00:44,420 --> 01:00:48,980
+But let me just show you the actual example from their data set． 
+但让我向您展示他们数据集中的实际例子˳
+
+479
+01:00:53,140 --> 01:00:54,370
+Just to show you the example． 
+只是为了给你举个例子˳
+
+480
+01:00:56,840 --> 01:00:57,370
+They have? 
+他们有？
+
+481
+01:01:10,860 --> 01:01:22,720
+On their paper‚ so they have instruction‚ would like to turn on you really choices a yes‚ b no‚ and then the pen‚ the answer to the FA‚ which is． 
+在他们的论文上，所以他们有指导，想打开你真正的选择a是，b不是，然后是笔，即对FA的答案˳
+
+482
+01:01:27,230 --> 01:01:27,500
+Example‚ no． 
+举个例子，不是˳
+
+483
+01:01:29,420 --> 01:01:29,730
+So this is kind safety． 
+这就是善意的安全˳
+
+484
+01:01:31,820 --> 01:01:37,860
+PM on where‚ hypothetically‚ the mother could refuse to be direct． 
+假设母亲可以拒绝直接发表的下午˳
+
+485
+01:01:39,640 --> 01:01:48,493
+So here in their data‚ you can see that everything is a exactly the same except this last sensor． 
+所以在他们的数据中，你可以看到除了最后这个传感器之外，所有的东西都完全一样˳
+
+486
+01:01:48,493 --> 01:01:52,100
+But also in this original data‚ we have a framing of． 
+而且在这些原始数据中，我们有一个框架˳
+
+487
+01:01:59,510 --> 01:02:01,064
+Choice‚ but later． 
+选择，但后来˳
+
+488
+01:02:01,064 --> 01:02:06,860
+We don't really have to have just A or B‚ for example‚ other work． 
+我们实际上不必只有A或B，例如其他工作˳
+
+489
+01:02:06,860 --> 01:02:10,853
+I hope this video is going to be illustrated． 
+我希望这个视频能被说明˳
+
+490
+01:02:10,853 --> 01:02:14,120
+So in the follow up of the work． 
+所以在后续工作中˳
+
+491
+01:02:16,420 --> 01:02:22,460
+Apply‚ so explain that here is that of having multiple choices． 
+应用，所以解释一下这里是有多个选择的˳
+
+492
+01:02:27,080 --> 01:02:31,640
+So just so you know‚ the data itself might come in this multiple choice． 
+所以你知道，数据本身可能会出现在这个多项选择中˳
+
+493
+01:02:34,920 --> 01:02:41,980
+With multiple choices it‚ the difference is really just the choice． 
+有多个选择，区别实际上只是选择˳
+
+494
+01:02:44,880 --> 01:02:50,920
+That's kind of what we're doing in our project because it's all about sick fancying and this sort of thing． 
+这就是我们在项目中正在做的事情，因为这一切都是关于病态的幻想和这种事情˳
+
+495
+01:02:58,420 --> 01:03:02,505
+When evaluation‚ downstream evaluation becomes harder． 
+当评估时，下游评估变得更加困难˳
+
+496
+01:03:02,505 --> 01:03:04,840
+So later when you do steering and． 
+所以以后当你做转向时˳
+
+497
+01:03:09,360 --> 01:03:10,181
+Which order? 
+什么命令？
+
+498
+01:03:10,181 --> 01:03:19,886
+If I want to check whether the behavior change‚ I just need to check whether that's associated with the behavior level． 
+如果我想检查行为是否改变，我只需要检查这是否与行为水平相关联˳
+
+499
+01:03:19,886 --> 01:03:28,060
+So I do want it to output A that's the desired behavior． 
+所以我确实希望它输出一个期望的行为˳
+
+500
+01:03:28,060 --> 01:03:33,021
+And if I say C‚ high fraction of a litre after steering‚ I know my steering was successful． 
+如果我说C，转向后一升的分数很高，我知道我的转向成功了˳
+
+501
+01:03:33,021 --> 01:03:41,380
+If I didn't bring we can and the generation now we need to do something like LM as a judge that you prompt． 
+如果我没有带来，我们可以和现在的这一代人一样，我们需要做一些像LM这样的事情，作为一个法官，你提示˳
+
+502
+01:04:00,050 --> 01:04:04,510
+So here‚ instead of taking the． 
+所以在这里，而不是采取˳
+
+503
+01:04:06,640 --> 01:04:16,780
+We define the direction as the mean difference between the representation of positive and negative． 
+我们将方向定义为正负表示之间的均值差˳
+
+504
+01:04:20,460 --> 01:04:24,459
+In this word‚ they take the to position of the answer． 
+在这个词中，他们采取了答案的立场˳
+
+505
+01:04:24,459 --> 01:04:26,920
+And this is also a nice part of． 
+这也是一个很好的部分˳
+
+506
+01:04:29,430 --> 01:04:35,578
+You need to choose which and then some high environment door as well． 
+你需要选择哪个，然后选择一些高环境的门˳
+
+507
+01:04:35,578 --> 01:04:43,565
+But with the having like in choices that again‚ they can nut tote's representation is a natural choice． 
+但是随着在选择中再次喜欢，他们可以坚果手提带的表示是一种自然的选择˳
+
+508
+01:04:43,565 --> 01:04:49,240
+So we take for D and serve them a layer that still needs to be． 
+因此，我们将为D提供一个仍然需要的层˳
+
+509
+01:05:01,970 --> 01:05:05,020
+This is how they formulate in the paper． 
+这就是他们在论文中的表述方式˳
+
+510
+01:05:09,560 --> 01:05:25,140
+You would get also and kind of separately‚ one in d plus being x‚ y plus d minus being in x‚ y negative． 
+你也会得到，有点单独，一个在d加上是x，y加上d减去在x，y负数˳
+
+511
+01:05:25,480 --> 01:05:28,240
+You could also write this‚ like this． 
+你也可以这样写˳
+
+512
+01:05:28,240 --> 01:05:33,120
+So you take the mean representation of positive if you want． 
+所以如果你愿意，你可以取积极的平均表示˳
+
+513
+01:05:37,220 --> 01:05:38,973
+From the negative． 
+从负面的˳
+
+514
+01:05:38,973 --> 01:05:41,780
+From the mean of the negative one． 
+从负面的平均值开始˳
+
+515
+01:05:41,880 --> 01:05:45,806
+And you will see this both of these formulations． 
+你会看到这两种配方˳
+
+516
+01:05:45,806 --> 01:05:47,920
+So don't get confused‚ guys． 
+所以不要混淆了，伙计们˳
+
+517
+01:05:58,420 --> 01:06:06,040
+Formulation‚ it just depends on whether your instance‚ you know‚ the an instance of triplet of these things‚ or you have two data set． 
+制定，这取决于你的实例，你知道的，是这些东西的三重实例，还是你有两个数据集˳
+
+518
+01:06:06,720 --> 01:06:22,740
+How do you respond to the only change here is that instead of taking the‚ we now don't need to train the linear classifier‚ which is‚ and we just take the differences of the． 
+你如何应对这里唯一的变化是，我们现在不需要训练线性标识符，而是采用差异˳
+
+519
+01:06:29,120 --> 01:06:45,032
+Extensions One thing that people want to do is‚ is you can think about this also in a geometric way‚ cloud point of representation of positive instances． 
+扩展人们想要做的一件事是，你也可以用几何的方式来思考，即积极实例的云点表示˳
+
+520
+01:06:45,032 --> 01:06:50,371
+And I have a cloud point of representation when I take the mean． 
+当我使用平均值时，我有一个表示云点˳
+
+521
+01:06:50,371 --> 01:06:55,973
+Basically‚ this might center of those two types‚ and I take the difference． 
+基本上，这可能是这两种类型的中心，我对此有所不同˳
+
+522
+01:06:55,973 --> 01:07:00,594
+Basically‚ that's my D‚ but that's if I connect the line central． 
+基本上，那是我的D，但那是如果我连接中央线路˳
+
+523
+01:07:00,594 --> 01:07:04,720
+So these two power points‚ that will be the D and is a factor that． 
+所以这两个功率点，那将是D，是一个因素˳
+
+524
+01:07:09,420 --> 01:07:18,043
+And if you have data‚ data mining or the similar course‚ you have to know O‚ if I have outlier‚ everything get messed up‚ right? 
+如果你有数据挖掘或类似的课程，你必须知道，如果我有离群值，一切都会一团糟，对吧？
+
+525
+01:07:18,043 --> 01:07:46,200
+Or there is a lot of similarities‚ or maybe there are‚ you know‚ I don't care about every single difference‚ but maybe the key difference‚ which I know should be‚ let's say‚ so people do want to apply PCA for some component analysis onto‚ onto‚ or kind of integrated into this approach such that we find canonical difference between these two data they have． 
+或者有很多相似之处，或者也许有，你知道的，我不关心每一个差异，但也许关键的差异，我知道应该是，让我们说，人们确实想将PCA用于一些成分分析，或者将其整合到这种方法中，以便我们找到它们所拥有的这两个数据之间的典型差异˳
+
+526
+01:07:48,070 --> 01:07:49,350
+So people do that． 
+所以人们这样做˳
+
+527
+01:07:49,350 --> 01:08:06,320
+They first are going to actually watch out for those outliers and kind of center or offset both of the clusters with the global mean calculated． 
+他们首先要实际注意那些异常值和中心或抵消两个集群的类型，并计算全局平均值˳
+
+528
+01:08:29,390 --> 01:08:29,500
+So? 
+所以呢？
+
+529
+01:08:47,880 --> 01:08:47,950
+Positive? 
+积极？
+
+530
+01:09:03,410 --> 01:09:06,470
+H negative as all are negative． 
+H为负数，因为所有都是负数˳
+
+531
+01:09:11,420 --> 01:09:15,980
+And we are going to compute the global mean‚ which is going to be? 
+我们将计算全球平均值，这将是什么？
+
+532
+01:09:21,350 --> 01:09:41,028
+Okay‚ and then your ECA is going to be they going to take first call ACA and you are going to concatenate mean center． 
+好的，然后你的ECA将是他们将采取第一个呼叫ACA，你将连接平均中心˳
+
+533
+01:09:41,028 --> 01:09:44,220
+Just drop all these layers． 
+只需放下所有这些层˳
+
+534
+01:09:52,820 --> 01:09:57,168
+Representation for the positive instances or for negative? 
+代表正面实例还是负面实例？
+
+535
+01:09:57,168 --> 01:10:06,040
+I mean‚ center both of them in a way that I altered derivative example． 
+我的意思是，以一种改变衍生例子的方式将它们放在中心位置˳
+
+536
+01:10:08,020 --> 01:10:15,220
+And then I do PCA on this concat pented vector of all these． 
+然后我在所有这些的concat压缩向量上做PCA˳
+
+537
+01:10:17,560 --> 01:10:18,610
+Direction is． 
+方向是˳
+
+538
+01:10:24,820 --> 01:10:29,435
+Okay‚ so just to wrap‚ we have contrasting a duration‚ understand? 
+好的，所以简单地说，我们有对比的持续时间，明白吗？
+
+539
+01:10:29,435 --> 01:10:32,320
+Very simple idea of how to construct． 
+关于如何构建的非常简单的想法˳
+
+540
+01:10:36,120 --> 01:10:45,626
+And then to kind of reinforce it even further by finding the most important‚ we can also apply PCA to it． 
+然后通过找到最重要的部分来进一步加强它，我们也可以将PCA应用于它˳
+
+541
+01:10:45,626 --> 01:11:01,762
+And then next time‚ we are going to finish of method with a method that is a little bit more dynamic and that determines the adding reusable to every or whatever concept direction to every single representation． 
+然后下一次，我们将使用一个更加动态的方法来完成方法，该方法决定向每个或任何概念方向添加可重用的内容˳
+
+542
+01:11:01,762 --> 01:11:04,831
+But sometimes you need to be a little bit more dynamic． 
+但有时你需要更加有活力˳
+
+543
+01:11:04,831 --> 01:11:09,807
+Sometimes you can be like‚ this should not be‚ we should not do anything presentation． 
+有时你会说，这不应该是这样，我们不应该做任何演示˳
+
+544
+01:11:09,807 --> 01:11:11,751
+Sometimes you should be doing a lot． 
+有时候你应该做很多事情˳
+
+545
+01:11:11,751 --> 01:11:20,180
+So the last method we are going to cover is going to flexibility‚ and then we are going to finish with steering with how do we actually evaluate steering． 
+所以我们要讨论的最后一种方法是灵活性，然后我们将以转向结束，以及如何实际评估转向˳
+
+546
+01:11:22,300 --> 01:11:27,100
+Okay‚ good luck with reviewing the materials． 
+好的，祝审核材料好运˳

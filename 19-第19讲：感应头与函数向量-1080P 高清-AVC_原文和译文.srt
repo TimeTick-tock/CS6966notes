@@ -1,0 +1,2704 @@
+1
+00:00:00,000 --> 00:00:06,040
+Dopamine to be able to go back and forth between the whiteboard and the slide． 
+多巴胺能够在白板和幻灯片之间来回移动˳
+
+2
+00:00:08,520 --> 00:00:12,560
+Today‚ hopefully it's not too weird． 
+希望今天不会太奇怪˳
+
+3
+00:00:16,890 --> 00:00:17,130
+35． 
+35．
+
+4
+00:00:17,390 --> 00:00:18,630
+So I said‚ what's this? 
+所以我说，这是什么？
+
+5
+00:00:20,400 --> 00:00:28,100
+Are there any questions about the project or the content of the previous or any other lecture? 
+对之前或其他讲座的项目或内容有任何问题吗？
+
+6
+00:00:29,660 --> 00:00:31,860
+The further content? 
+进一步的内容？
+
+7
+00:00:31,860 --> 00:00:39,954
+I've noted the notes for the Tuesdays lecture last‚ so I recommend that you check it out． 
+我已经记下了上个星期二讲座的笔记，所以我建议你去看看˳
+
+8
+00:00:39,954 --> 00:00:46,160
+The whole lecture was really hard to teach‚ it's a really material‚ even for myself． 
+整个讲座真的很难教，它是一个真正的材料，甚至对我自己来说˳
+
+9
+00:00:46,160 --> 00:00:49,040
+So I try my best to kind of break it down． 
+所以我尽力把它分解一下˳
+
+10
+00:00:54,220 --> 00:00:58,780
+And I think it's worth the reading from the mills of the humor at． 
+我认为这值得一读，因为幽默的工厂˳
+
+11
+00:01:01,350 --> 00:01:03,020
+Okay‚ I don't hear any questions． 
+好的，我没有听到任何问题˳
+
+12
+00:01:03,780 --> 00:01:07,776
+So let me just remind you what you were talking about last time in general． 
+所以让我提醒你一下你上次总体上说了什么˳
+
+13
+00:01:07,776 --> 00:01:10,100
+Now we are focusing on attention heads． 
+现在我们专注于注意力的头部˳
+
+14
+00:01:10,100 --> 00:01:18,180
+Remember our set and you will know that attention may‚ which is really important in the transformer architecture． 
+记住我们的集合，你会知道注意力可能，这在变压器架构中非常重要˳
+
+15
+00:01:19,220 --> 00:01:27,082
+Of course‚ then researchers were examining attention and one were trying to understand that these attention heads are mechanism． 
+当然，当时的研究人员正在研究注意力，其中一个人试图理解这些注意力头是一种机制˳
+
+16
+00:01:27,082 --> 00:01:39,780
+So try to give advice some heads and say‚ what kind of process‚ what kind of algorithms implementing and work spans from that mathematical． 
+所以尝试给出一些建议，并说，什么样的过程，什么样的算法实施和工作跨越了数学˳
+
+17
+00:01:45,840 --> 00:01:50,521
+They use very to models and they progressively make them slightly more complicated． 
+他们使用非常复杂的模型，并逐渐使它们稍微复杂一些˳
+
+18
+00:01:50,521 --> 00:01:55,860
+And in this‚ what kind of the these attention heads are． 
+在这方面，这些关注头是什么样的˳
+
+19
+00:01:55,860 --> 00:02:06,160
+So last time did you are transformer‚ which is very funny to even say because it's just a model that takes embedding． 
+所以上一次你是变形金刚，这甚至可以说非常有趣，因为它只是一个需要嵌入的模型˳
+
+20
+00:02:06,160 --> 00:02:13,632
+It takes a token embed uninvented to get the probability the book up． 
+需要一个令牌嵌入才能获得书籍的概率˳
+
+21
+00:02:13,632 --> 00:02:17,420
+So basically‚ this is the here w EW? 
+基本上，这就是现在吗？
+
+22
+00:02:20,360 --> 00:02:30,780
+And then we said‚ well‚ all this model does is what I exactly said‚ token embedding in uninvented‚ meaning it produces． 
+然后我们说，这个模型所做的就是我确切地说的，令牌嵌入在未发明的中，这意味着它会产生˳
+
+23
+00:02:36,020 --> 00:02:36,683
+Tokens in． 
+代币进来˳
+
+24
+00:02:36,683 --> 00:02:41,109
+And I should start saying probability distribution because we very good large． 
+我应该开始说概率分布，因为我们非常好˳
+
+25
+00:02:41,109 --> 00:02:42,880
+This just comes from the habit that we． 
+这只是来自我们的习惯˳
+
+26
+00:02:45,820 --> 00:02:54,580
+We usually use a large to avoid that more precise way of saying what I just said would be likelihoods of the next to． 
+我们通常使用大数来避免那种更精确地表达我刚才所说的是下一个可能性的方式˳
+
+27
+00:02:58,600 --> 00:03:03,729
+I have this token‚ and then I have all the possible continuation of that token． 
+我有这个令牌，然后我有该令牌的所有可能的延续˳
+
+28
+00:03:03,729 --> 00:03:10,743
+I'm basically producing the bygra‚ and I have also like to put on that． 
+我基本上是在制作bygra，我也喜欢穿上它˳
+
+29
+00:03:10,743 --> 00:03:13,591
+So we said‚ all right‚ zero‚ lay just learner． 
+所以我们说，好吧，零，只是学习者˳
+
+30
+00:03:13,591 --> 00:03:23,080
+All you can do for us‚ the likelihood of the next token and that simple one that is basically calculating Mig． 
+你能为我们做的，下一个代币的可能性，以及基本上计算米格的简单一个˳
+
+31
+00:03:24,180 --> 00:03:34,980
+Then we move into layer 1‚ layer attention volume transformer‚ meaning we are you‚ residual connection‚ one attention layer‚ but one attention． 
+然后我们进入第一层，层注意力体积转换器，这意味着我们就是你，剩余连接，一个注意力层，但只有一个注意力˳
+
+32
+00:03:37,180 --> 00:03:43,680
+We are using that notation from the mathematical framework where we are saying that attention heads are added． 
+我们使用的是数学框架中的符号，其中我们说的是注意头被添加了˳
+
+33
+00:03:45,720 --> 00:03:50,552
+So x 1 is the output of it is a residual connect． 
+所以x 1是它的输出，是一个剩余连接˳
+
+34
+00:03:50,552 --> 00:03:58,175
+So this is this plus denes residual connection put to attention‚ right? 
+所以这是需要注意的剩余连接，对吗？
+
+35
+00:03:58,175 --> 00:04:05,465
+So x 0‚ which is just embedding tokens‚ are input to the residual input to the multi attention． 
+所以x0只是嵌入令牌，输入到多注意力的剩余输入中˳
+
+36
+00:04:05,465 --> 00:04:09,200
+This is just that additive independent write-up of the multihead attention． 
+这只是多头注意力的独立叠加记录˳
+
+37
+00:04:12,140 --> 00:04:14,453
+Here we have our attention matrix． 
+这里有我们的注意力矩阵˳
+
+38
+00:04:14,453 --> 00:04:24,380
+And we did a little bit of refactoring the weight matrices‚ qk and O‚ and then just refactor． 
+我们对权重矩阵qk和O进行了一点重构，然后就进行了重构˳
+
+39
+00:04:27,620 --> 00:04:32,180
+This gives us these two additional mattresses‚ both that are． 
+这给了我们两个额外的床垫，两者都是˳
+
+40
+00:04:34,620 --> 00:04:39,638
+And we call these two matrices where it heat circuit and O‚ we serve． 
+我们称这两个矩阵为热回路，我们服务的是O˳
+
+41
+00:04:39,638 --> 00:04:44,389
+So that was one of the really important things we have done last time． 
+所以这是我们上次做的非常重要的事情之一˳
+
+42
+00:04:44,389 --> 00:04:46,780
+One of these terms keeps in． 
+其中一个术语一直存在˳
+
+43
+00:04:59,770 --> 00:05:01,879
+Possible to bedding? 
+床上用品可以吗？
+
+44
+00:05:01,879 --> 00:05:03,024
+What would that do? 
+那会做什么呢？
+
+45
+00:05:03,024 --> 00:05:07,320
+If it was a vary how much it would attend to all the other? 
+如果它是一个变化，它会对所有其他事物产生多大影响？
+
+46
+00:05:08,020 --> 00:05:18,800
+The one coffee turnout keeps right and only tells us go if we had attended to a certain token‚ how much of that token we would actually write? 
+一个咖啡投票率保持正确，只告诉我们如果我们参加了某个令牌，我们实际上会写多少那个令牌？
+
+47
+00:05:20,620 --> 00:05:25,180
+All of the operator token and current destination position? 
+所有的操作员令牌和当前目的地位置？
+
+48
+00:05:29,020 --> 00:05:31,261
+We look into these oven matrices． 
+我们研究这些烤箱矩阵˳
+
+49
+00:05:31,261 --> 00:05:34,000
+This‚ I should say‚ oven matrices are for． 
+这个，我应该说，烤箱矩阵是用于˳
+
+50
+00:05:36,020 --> 00:05:40,580
+Matrices‚ we get the matrices that is square in the size of the bookca． 
+矩阵，我们得到大小为书大小的正方形的矩阵˳
+
+51
+00:05:44,700 --> 00:05:56,320
+That matrix is to say‚ okay‚ if I have I m‚ if I went‚ that means that if the J 2 can​‌​‌​​‌‌​​‌‌​​‌‌​‌​‌​​‌‌​​​‌​​‌‌​​‌‌​​‌‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌‌‌‌‌​‌‌‌​‌​​‌‌​‌‌​​​‌‌​‌​‌​​‌‌​‌‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌​‌‌‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌​​‌​​‌‌​‌‌‌‌‌​‌‌‌‌​​​‌‌​​‌‌‌‌​‌​‌‌​​​‌‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌​‌​‌‌‌​‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌​​‌‌​​​‌​​‌‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌​‌​‌​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌​‌‌‌​‌‌‌‌​​​‌‌​‌‌‌‌‌​‌​​‌‌‌‌​‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌​​‌‌​​‌‌​‌‌‌‌‌​‌‌‌‌​​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​‌‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌‌‌‌‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ depends a lot on the iPhone 10‚ what would be the? 
+这个矩阵是说，好的，如果我有I，如果我去了，这意味着如果J 2可以很大程度上取决于iPhone 10，那会是什么？
+
+52
+00:06:00,080 --> 00:06:02,305
+Sorry if I have‚ I join entry． 
+抱歉，如果我有，我加入了条目˳
+
+53
+00:06:02,305 --> 00:06:06,120
+That would mean if I if the token where I could do? 
+这意味着如果我可以做什么令牌？
+
+54
+00:06:12,980 --> 00:06:17,120
+Okay‚ let me not try to explain it in terms of a single country． 
+好的，让我不要试图用一个国家来解释它˳
+
+55
+00:06:17,120 --> 00:06:24,275
+If you would read this‚ metrics is basically tells you it only attempts to a certain token． 
+如果您阅读此内容，指标基本上会告诉您它仅尝试访问某个令牌˳
+
+56
+00:06:24,275 --> 00:06:28,627
+How much other token logics would be promote? 
+还有多少其他代币逻辑会被推广？
+
+57
+00:06:28,627 --> 00:06:55,980
+And if you see that this matrix is not diagonal‚ it basically‚ or it's a heavy or diagonal‚ it means that if I attend to certain token‚ that same token will be promoted as the as a prediction token as the‚ and this suggests that this supeno head is implementing something like coal by the time to token copy that token predicted as the next． 
+如果你看到这个矩阵不是对角线，它基本上是一个重的或对角线，这意味着如果我注意到某些标记，同样的标记将被提升为预测标记，这表明这个supeno头正在实现类似于煤炭的东西，以令牌复制预测为下一个令牌˳
+
+58
+00:06:59,400 --> 00:06:59,440
+Stuff． 
+东西˳
+
+59
+00:07:02,420 --> 00:07:18,141
+The last lecture also talked a lot about in context learning‚ which is the way you from the GA labs where we give some time‚ such as‚ let's say‚ translate this sentence from English to Spanish‚ but we also will give a few how to do that task． 
+上一节课也谈到了很多关于情境学习的内容，这是我们从实验室中给予一些时间的方法，比如，让我们把这个句子从英语翻译成西班牙语，但我们也会给出一些如何完成这个任务的方法˳
+
+60
+00:07:18,141 --> 00:07:24,945
+So we few English is‚ but also few their associated Spanish translations． 
+所以我们很少有英语，但也很少有与之相关的西班牙语翻译˳
+
+61
+00:07:24,945 --> 00:07:29,520
+And then they give a new English sentence and request Spanish translation． 
+然后他们提供一个新的英语句子并请求西班牙语翻译˳
+
+62
+00:07:30,670 --> 00:07:34,160
+And so now we come to how all people． 
+所以现在我们来看看所有人˳
+
+63
+00:07:39,520 --> 00:07:54,040
+So next thing we could do is derive 2 layer attention‚ meaning now the input to the second layer at head attention is x 1‚ which just computed‚ right? 
+所以接下来我们可以做的是推导2层注意力，这意味着现在对第二层头部注意力的输入是x 1，刚刚计算出来的，对吧？
+
+64
+00:07:54,040 --> 00:07:57,240
+And we also have a residual connection． 
+我们也有残差连接˳
+
+65
+00:07:57,240 --> 00:07:59,980
+So we add x 1 with the output of the． 
+因此，我们将x 1与的输出相加˳
+
+66
+00:08:02,460 --> 00:08:04,442
+That's our final representation． 
+这是我们最后的代表˳
+
+67
+00:08:04,442 --> 00:08:07,020
+And now I didn't write it here‚ unfortunately． 
+现在不幸的是，我没有在这里写它˳
+
+68
+00:08:09,430 --> 00:08:17,510
+Were calculating what the logs are so we would have p t equals to x 2 w． 
+我们正在计算日志是什么，所以我们的p t等于x 2 w˳
+
+69
+00:08:19,440 --> 00:08:24,000
+So I would take w‚ which is my unembedded matrix． 
+所以我会取w，这是我的未嵌入矩阵˳
+
+70
+00:08:25,680 --> 00:08:29,807
+Now‚ probably you can see why I don't want to write all out to the whiteboard． 
+现在，也许你能明白为什么我不想把所有的东西都写在白板上了˳
+
+71
+00:08:29,807 --> 00:08:38,955
+It would mean that now we need to just extra spa and eventually will get something that's so wide‚ which would probably barely fit on the whiteboard． 
+这意味着现在我们只需要额外的水疗中心，最终会得到一些非常宽的东西，这可能几乎无法在白板上使用˳
+
+72
+00:08:38,955 --> 00:08:57,380
+What you would see if I have done is that whatever is the of the first layer head‚ it can be used by the second layer to determine what to record in the residual stream and make the decision． 
+如果我这样做，你会看到的是无论第一层的头部是什么，它都可以被第二层用来确定在剩余流中记录什么并做出决定˳
+
+73
+00:08:57,780 --> 00:09:07,500
+And because that can happen‚ we get the possibility that the first head can store． 
+因为这是可能发生的，我们得到了第一个头部可以存储的可能性˳
+
+74
+00:09:07,500 --> 00:09:12,060
+Maybe I go move to the next slide is going to be nicer． 
+也许我转到下一张幻灯片会更好˳
+
+75
+00:09:12,520 --> 00:09:15,360
+A first layer head‚ ignore everything that's written． 
+第一层头，忽略所有写的东西˳
+
+76
+00:09:18,040 --> 00:09:29,806
+So a first layer head can copy information from the previous to each tokens residual stream． 
+因此，第一层头部可以将前一层的信息复制到每个令牌的剩余流中˳
+
+77
+00:09:29,806 --> 00:09:35,380
+So if I have guys who are sitting there‚ you see what I write here? 
+所以如果我有坐在那里的人，你看到我在这里写的东西了吗？
+
+78
+00:09:41,800 --> 00:09:53,180
+My first layer is attention head when it comes to be using representations for B can record in that． 
+我的第一层是注意头，当涉及到使用表示法时，B可以在其中记录˳
+
+79
+00:09:55,410 --> 00:09:56,730
+Information‚ information about． 
+信息，关于的信息˳
+
+80
+00:09:59,060 --> 00:10:04,960
+So previous tokens information can be recorded in the next token's representation． 
+因此，之前的令牌信息可以记录在下一个令牌的表示中˳
+
+81
+00:10:05,440 --> 00:10:18,280
+Now we have that representation‚ what the next head in the next layer can do‚ it can attend‚ to the‚ to the‚ to the token． 
+现在我们有了这个表示，下一层的下一个头可以做什么，它可以参加，到令牌˳
+
+82
+00:10:22,020 --> 00:10:36,720
+Like the token B‚ and it can attend to it not because of the content of B‚ but rather because of information that A preceded B‚ so this is going to require a little bit of mental gymnastics． 
+就像符号B一样，它可以注意到它，不是因为B的内容，而是因为A先于B的信息，所以这将需要一点心理体操˳
+
+83
+00:10:37,590 --> 00:10:39,450
+So head 1． 
+头1˳
+
+84
+00:10:43,080 --> 00:10:51,830
+Information about A‚ and it reports it into information in the representation of B and now hge 2． 
+关于A的信息，它将其报告为B表示的信息，现在是hge 2˳
+
+85
+00:10:54,210 --> 00:10:55,830
+Has an input something like this? 
+有这样的输入吗？
+
+86
+00:11:01,810 --> 00:11:04,050
+And then we come to the token A again． 
+然后我们再次来到令牌A˳
+
+87
+00:11:07,360 --> 00:11:33,960
+Now‚ this head can tend to be‚ but unlike one layer attention only transformer that attempted to be because of the content of the B‚ it really wanted to just copy B‚ this attention can can tend to be because it has information that A precedent B and if A preceded B‚ and I'm currently at A‚ then what the next token should be． 
+现在，这个头部可以是，但与试图由于B的内容而成为仅关注层的转换器不同，它真的想只是复制B，这种关注可以倾向于因为它具有先例B的信息，并且如果在B之前，我目前在一个，那么下一个令牌应该是什么˳
+
+88
+00:11:36,780 --> 00:11:44,450
+I mean‚ it's a little bit obvious if you don't understand anything‚ but I hope you follow me along． 
+我的意思是，如果你什么都不懂，这有点明显，但我希望你跟着我˳
+
+89
+00:11:44,460 --> 00:11:45,070
+So I will repeat． 
+所以我会重复一遍˳
+
+90
+00:11:47,220 --> 00:11:55,303
+Our first layers attention 10 can report chord information about A into B‚ and then the second layer‚ attention． 
+我们的第一层注意力10可以将关于A的和弦信息报告给B，然后是第二层注意力˳
+
+91
+00:11:55,303 --> 00:12:02,662
+When it attends from A to B‚ it doesn't attend to B because of what the B is． 
+当它从面向企业参加时，它不参加面向企业，因为B是什么˳
+
+92
+00:12:02,662 --> 00:12:04,669
+It can be word like cat． 
+它可以像猫一样的词˳
+
+93
+00:12:04,669 --> 00:12:14,301
+It depends because information about that in B and now when it ISS A‚ it can infer that by four． 
+这取决于信息在B中，现在当它在A中时，它可以推断出4˳
+
+94
+00:12:14,301 --> 00:12:21,380
+And this comes handy because in quantum learning‚ because these do not need to be exact the same． 
+这很方便，因为在量子学习中，因为它们不需要完全相同˳
+
+95
+00:12:21,390 --> 00:12:39,260
+So if something similar to A is recorded in B‚ it can output something similar to B‚ so here have star and B star when we have A gets the root b‚ so it doesn't need to be． 
+因此，如果类似A的内容记录在B中，它可以面向企业输出类似的内容，因此这里有星号和B星号，当我们有A获取根B时，因此它不需要面向企业e˳
+
+96
+00:12:49,140 --> 00:12:49,310
+Okay‚ so? 
+好吧，所以呢？
+
+97
+00:13:00,000 --> 00:13:15,520
+So what I have just written is to say that something similar to A and B can really precede and B‚ and that still helps us when we see something similar to A‚ to predict something to be． 
+所以我刚刚写的是说类似于A和B的东西可以真正在和B之前，这仍然有助于我们在看到类似于A的东西时预测一些东西˳
+
+98
+00:13:15,970 --> 00:13:24,560
+And you can see how this handy in context‚ in context learning‚ we have instances‚ input outputs of the same task． 
+你可以看到，在情境学习中，我们有相同任务的实例和输入输出，这非常方便˳
+
+99
+00:13:25,060 --> 00:13:29,671
+And then we give a new input‚ which is similar to other inputs． 
+然后我们给出一个新的输入，它与其他输入相似˳
+
+100
+00:13:29,671 --> 00:13:34,520
+So we know the outputs should be similar to other input outputs that we have． 
+所以我们知道输出应该与我们拥有的其他输入输出相似˳
+
+101
+00:13:37,000 --> 00:13:43,976
+Givens‚ so that we‚ as I said‚ it is really a little bit with that． 
+吉文斯，所以我们，就像我说的，真的有点这样˳
+
+102
+00:13:43,976 --> 00:13:45,184
+So is it? 
+就这样吧？
+
+103
+00:13:45,184 --> 00:13:53,730
+Look at the qk circuit‚ second layer of 10‚ because in the first layer‚ all the possible inputs． 
+看看qk电路，第二层10个，因为在第一层，所有可能的输入˳
+
+104
+00:13:55,860 --> 00:13:57,920
+To the attention layer is just the． 
+对于注意力层来说，这只是˳
+
+105
+00:14:00,060 --> 00:14:12,520
+Vocabulary‚ but in the second layer‚ it's enco‚ it's the‚ it's the encoding of the tokens plus the attention． 
+词汇，但在第二层，它是enco，它是令牌和注意力的编码˳
+
+106
+00:14:12,890 --> 00:14:22,098
+So I will be honest and say that we like following these matrices as we converse about them is really hard． 
+所以我会诚实地说，我们在谈论它们时喜欢跟随这些矩阵，这真的很难˳
+
+107
+00:14:22,098 --> 00:14:23,860
+What is multiplied by one? 
+什么是乘以一？
+
+108
+00:14:24,330 --> 00:14:50,294
+I think the answer to your question is yes‚ we do need the OE circuits from the second hand because first‚ these qk circuits that come from the first and the second hand tells us about what is being tended to and what is broken‚ but only the always circuit of the final second layer can tell us what is exactly being used from what is intended． 
+我认为你问题的答案是肯定的，我们确实需要第二手的OE电路，因为首先，这些来自第一和第二手的qk电路告诉我们正在趋向什么和损坏什么，但是只有最后第二层的始终电路才能告诉我们确切使用的是什么和预期使用的是什么˳
+
+109
+00:14:50,294 --> 00:14:53,980
+So just to give you an example‚ every time you see the nodes． 
+举个例子，每次你看到这些节点˳
+
+110
+00:14:56,170 --> 00:14:58,980
+For example‚ we can attend to Burn the bank． 
+例如，我们可以参加烧银行˳
+
+111
+00:14:59,740 --> 00:15:11,630
+The one example for two senses to disambiguate‚ to just make a sense of what is the sense of this word in this sense‚ once we have attendance to it‚ we do not need to use it． 
+两个意义的一个例子来消除歧义，只是感知这个词在这个感知中的感知，一旦我们注意到了它，我们就不需要使用它˳
+
+112
+00:15:11,710 --> 00:15:14,270
+We can be like‚ oh‚ this is the sense of this word． 
+我们可能会说，哦，这就是这个词的感知˳
+
+113
+00:15:14,510 --> 00:15:16,500
+I don't actually need this information to make． 
+我实际上不需要这些信息˳
+
+114
+00:15:18,200 --> 00:15:32,810
+So you always need few K and O circuits‚ and you do need the O circuits from the second half because it is the one that makes sense of everything that's being attended to and decides what finally is recorded in the residual stream． 
+所以你总是需要很少的K和O电路，而且你确实需要后半部分的O电路，因为它是感知所有被关注的事情并决定最终记录在剩余流中的东西的电路˳
+
+115
+00:15:33,270 --> 00:15:35,660
+And based on that‚ we make the logic． 
+基于此，我们制定逻辑˳
+
+116
+00:15:36,000 --> 00:15:42,510
+So is the answering your question sure that I understood your question right in the? 
+那么，回答你的问题确定我理解你的问题了吗？
+
+117
+00:15:44,910 --> 00:15:44,930
+So? 
+所以呢？
+
+118
+00:15:47,400 --> 00:15:53,220
+So yeah‚ my question is‚ the input of the first head will be bank． 
+所以，是的，我的问题是，第一个头的输入将是银行˳
+
+119
+00:15:56,360 --> 00:15:56,970
+Betting a bank． 
+押注银行˳
+
+120
+00:15:57,230 --> 00:15:59,920
+But the second hand will have bank． 
+但是第二只手将拥有银行˳
+
+121
+00:16:00,590 --> 00:16:03,770
+But it's looked around and said‚ oh‚ it's financial bank． 
+但是它环顾四周说，哦，这是金融银行˳
+
+122
+00:16:04,270 --> 00:16:13,640
+So that's not with a number of possibilities as it varies from size of vocabulary‚ number of hostilities． 
+所以这不是有多种可能性，因为它因词汇大小和敌对行动的数量而异˳
+
+123
+00:16:14,060 --> 00:16:14,530
+For what? 
+为什么？
+
+124
+00:16:14,570 --> 00:16:20,330
+I mean‚ the size of the matrix is vocabulary by this one． 
+我的意思是，矩阵的大小就是这个词汇˳
+
+125
+00:16:26,530 --> 00:16:32,060
+So in the first layer‚ the number of indices relates to the number of tokens． 
+因此，在第一层中，索引的数量与令牌的数量相关˳
+
+126
+00:16:33,700 --> 00:16:39,230
+But in the second layer‚ there's Bank Financial and Bank River as well‚ right? 
+但在第二层，有银行金融和河岸，对吗？
+
+127
+00:16:41,700 --> 00:16:57,030
+Okay‚ it's a little bit hard to‚ I would say‚ now that you still are working with square mattresses that are the up‚ it's just how like you have all these possibilities of the pairs of vaiala is this is what these mattresses that are square in the? 
+好吧，我会说，这有点困难，现在你仍然在使用方形床垫，这是向上的，就像你有所有这些对vaiala的可能性，这就是这些床垫是方形的吗？
+
+128
+00:16:59,100 --> 00:16:59,330
+Recording and． 
+记录和˳
+
+129
+00:17:01,870 --> 00:17:06,830
+As you move to a two layer attention‚ it's not that． 
+当你转向两层关注时，情况并非如此˳
+
+130
+00:17:06,850 --> 00:17:12,490
+Now the shapes of this me for coming different‚ rather how you combine information from them is． 
+现在这个我的形状不同了，而你如何组合来自它们的信息˳
+
+131
+00:17:15,360 --> 00:17:22,360
+I think it's going to be just progressively confusing if we don't work with the exact equation． 
+我认为，如果我们不使用确切的方程式，它将会逐渐变得令人困惑˳
+
+132
+00:17:22,360 --> 00:17:26,899
+So I don't know whether this is going to be useful． 
+所以我不知道这是否有用˳
+
+133
+00:17:26,899 --> 00:17:27,597
+All right? 
+一切正常吗？
+
+134
+00:17:27,597 --> 00:17:30,740
+I'll just show you how these equations． 
+我只会向你展示这些方程式˳
+
+135
+00:17:33,220 --> 00:17:37,780
+But Levin‚ let's take your question offline just to not confuse everywhere． 
+但是列文，让我们离线思考你的问题，以免到处混淆˳
+
+136
+00:17:37,880 --> 00:17:43,920
+So this is an example of how 2 layer attention only transformer when． 
+所以这是一个2层注意力仅在转换时的例子˳
+
+137
+00:17:45,970 --> 00:17:46,830
+Where these? 
+这些在哪里？
+
+138
+00:17:47,820 --> 00:17:49,830
+I'm taking information from the previous head． 
+我正在从前面的头部获取信息˳
+
+139
+00:17:54,400 --> 00:17:55,420
+Come into a． 
+进入a˳
+
+140
+00:17:57,900 --> 00:18:01,160
+Play so how you read them is slightly different． 
+玩，所以你阅读它们的方式略有不同˳
+
+141
+00:18:01,160 --> 00:18:08,880
+So maybe after the lecture‚ we can look into this‚ but I would rather not go into these complicated terms because I think． 
+所以也许在讲座之后，我们可以研究一下这个，但我宁愿不要进入这些复杂的术语，因为我认为˳
+
+142
+00:18:15,940 --> 00:18:22,720
+Okay‚ so now with all of this‚ we can define an induction head． 
+好的，现在有了这些，我们可以定义一个感应头˳
+
+143
+00:18:22,720 --> 00:18:27,726
+And in the experiments by oson Atal‚ they build up on this foundational framer． 
+在oson Atal的实验中，他们建立在这个基础框架之上˳
+
+144
+00:18:27,726 --> 00:18:36,599
+And they say‚ okay‚ from this foundational framework there‚ this interesting coping and primitive in context learning behaviors． 
+他们说，好的，从这个基础框架来看，这种有趣的应对和原始的情境学习行为˳
+
+145
+00:18:36,599 --> 00:18:38,360
+So they want to explore it． 
+所以他们想要探索它˳
+
+146
+00:18:38,790 --> 00:18:44,770
+So it's a more comprehensive study of what was shown in the mathematical framework． 
+所以这是对数学框架中显示的内容的更全面的研究˳
+
+147
+00:18:45,500 --> 00:18:53,121
+So in this paper‚ by article still the I dropped‚ they define these sequences． 
+因此，在这篇论文中，我仍然通过文章定义了这些序列˳
+
+148
+00:18:53,121 --> 00:18:57,740
+They take a random sequence of‚ let's say‚ length 50‚ and then they keep repeat． 
+它们随机取一个长度为50的序列，然后不断重复˳
+
+149
+00:18:59,250 --> 00:19:04,104
+And whether so‚ this is not an in context learning task． 
+无论如何，这不是一个情境学习任务˳
+
+150
+00:19:04,104 --> 00:19:10,868
+Just to be clear‚ in context learning means you have a task such as summarize something‚ answer something． 
+只是为了明确，在情境学习中，你有一个任务，比如总结某事，回答某事˳
+
+151
+00:19:10,868 --> 00:19:11,971
+It's a proper task． 
+这是一个合适的任务˳
+
+152
+00:19:11,971 --> 00:19:15,060
+And you give demonstrations about how to complete that task． 
+然后你演示如何完成这个任务˳
+
+153
+00:19:15,760 --> 00:19:20,020
+Here we just have these sequences‚ the repeated sequences of． 
+这里我们只有这些序列，重复的序列˳
+
+154
+00:19:22,050 --> 00:19:22,400
+You know‚ sequences． 
+你知道的，序列˳
+
+155
+00:19:23,470 --> 00:19:30,769
+And they say we are going to study the in context learning in this sympatico up． 
+他们说我们将在这个sympatico up中研究情境学习˳
+
+156
+00:19:30,769 --> 00:19:39,120
+And they claim that this is a proper way to then be informed in context learning and will come to whether that is true or not． 
+他们声称这是一种适当的方式，可以在情境学习中被告知，并最终确定这是否是真的˳
+
+157
+00:19:41,620 --> 00:19:47,098
+Importantly‚ because these are random sequences‚ they are not learned from data‚ right? 
+重要的是，因为这些是随机序列，它们不是从数据中学习的，对吧？
+
+158
+00:19:47,098 --> 00:19:53,790
+So you can't follow‚ let's say‚ d here unless you have seen the instance． 
+所以除非你见过这个例子，否则你无法跟随，比如说d这里˳
+
+159
+00:20:00,670 --> 00:20:01,110
+Okay? 
+好吗？
+
+160
+00:20:04,000 --> 00:20:12,920
+So then they train a small one layer‚ 2 layer‚ 3 layers‚ transformers‚ and they are looking into whether any of these attention heads exhibit． 
+因此，他们训练了一个小的一层、二层、三层变压器，并正在研究这些注意头是否会出现˳
+
+161
+00:20:14,100 --> 00:20:17,950
+Now‚ your question here comes hand‚ how exactly are they reading those mattresses? 
+现在，你的问题来了，他们是如何阅读这些床垫的？
+
+162
+00:20:18,040 --> 00:20:32,680
+And we are not going into‚ but if they observe that the attention had is copying information from the previous token into each to each next to． 
+我们不会进入，但如果他们观察到注意力正在将信息从先前的令牌复制到每个令牌中˳
+
+163
+00:20:36,020 --> 00:20:46,020
+Induction head‚ as has it that attempts to the token based on information the previous token‚ not on its own‚ right? 
+感应头，就像它尝试基于先前令牌的信息来传递令牌一样，不是单独传递的，对吗？
+
+164
+00:20:47,100 --> 00:20:51,818
+Okay‚ so that's the definition of the induction heads． 
+好的，这就是感应头的定义˳
+
+165
+00:20:51,818 --> 00:21:06,310
+Now‚ there might be many heads‚ only some of them are easy to do this behavior‚ and the analysis is focusing on those and they present about 5 arguments for why they think that these heads are driving in context． 
+现在，可能有很多人，只有一些人很容易做到这种行为，分析的重点是这些人，他们提出了大约5个论点，说明为什么他们认为这些人是在上下文中驾驶的˳
+
+166
+00:21:06,620 --> 00:21:12,920
+So I want present power‚ but I will just give you to give you a sense of how experiment． 
+所以我想要现在的力量，但我会给你一个实验的感知˳
+
+167
+00:21:13,940 --> 00:21:35,320
+So first thing on the Y axis‚ what you see is the difference of the loss at the 58 token sequence that we subtract from that loss‚ the loss at the 500 idea here is that if the model is using what's in the context‚ what should happen with the? 
+所以在y轴上的第一件事，你看到的是我们从这个损失中减去的58个令牌序列的损失的差异，这里的损失500个想法是，如果模型使用的是上下文中的内容，应该发生什么？
+
+168
+00:21:52,960 --> 00:21:54,450
+What the loss? 
+损失是什么？
+
+169
+00:21:54,480 --> 00:21:55,820
+Decrease‚ decrease‚ right? 
+减少，减少，对吧？
+
+170
+00:21:55,820 --> 00:21:59,240
+And Matthew‚ can you explain why the thing should decrease? 
+和马修，你能解释一下为什么这个东西应该减少吗？
+
+171
+00:22:04,010 --> 00:22:06,590
+In the case of the zero layer． 
+在零层的情况下˳
+
+172
+00:22:10,480 --> 00:22:11,793
+I'm really sure why． 
+我真的很确定为什么˳
+
+173
+00:22:11,793 --> 00:22:22,505
+I'm not really sure why it would decrease in the zero layer just because there's not really too much being done with that transformer circuit． 
+我真的不确定为什么它会在零层减少，因为那个变压器电路并没有太多的工作要做˳
+
+174
+00:22:22,505 --> 00:22:38,041
+But I feel like with anything greater than that‚ loss would obviously decrease because we have this sort of pseudo residual stream going on that's like 10 to more information． 
+但我觉得比这更大的事情，损失显然会减少，因为我们有这种伪残留流，这就像10到更多的信息˳
+
+175
+00:22:38,041 --> 00:22:46,300
+Okay‚ let's forget about just intuit why we would expect the loss to decrease． 
+好吧，让我们忘记凭直觉为什么我们会期望损失减少˳
+
+176
+00:22:57,820 --> 00:23:02,552
+Right‚ so we have a structured sequence is a repeated sequence‚ same? 
+对，所以我们有一个结构化的序列是一个重复的序列，同样？
+
+177
+00:23:02,552 --> 00:23:10,600
+We take random sequence of 50‚ whatever‚ And you just‚ you know‚ concatenate these random sequences． 
+我们取50个随机序列，无论什么，你只需将这些随机序列连接起来˳
+
+178
+00:23:10,600 --> 00:23:17,740
+So if I something like this‚ you will notice the structure and you will say‚ oh‚ it's just being repeated． 
+所以，如果我这样做，你会注意到这个结构，然后你会说，哦，它只是被重复了˳
+
+179
+00:23:17,740 --> 00:23:23,530
+So when I'm this token‚ I just need to copy the next token that occurred in the previous occurrence of． 
+所以当我是这个令牌时，我只需要复制之前出现的下一个令牌˳
+
+180
+00:23:26,560 --> 00:23:31,720
+Not necessarily the yeah background‚ basically． 
+不一定是背景，基本上˳
+
+181
+00:23:35,100 --> 00:23:36,190
+Than that‚ right? 
+比这更重要，对吧？
+
+182
+00:23:36,200 --> 00:23:53,880
+Because it is understanding that if I have‚ if I make current token AI need to check what kind of token had occurred‚ particular context‚ not in general across all of the possible tokens and copy that one． 
+因为它是理解，如果我有，如果我让当前令牌AI需要检查发生了什么样的令牌，特定的上下文，而不是一般地在所有可能的令牌中复制那个˳
+
+183
+00:23:53,880 --> 00:24:04,600
+So it's more than just by statistics and by statistics plus the information about the context‚ you could call the trigram or something． 
+所以不仅仅是通过统计学，通过统计学加上关于上下文的信息，你可以称之为三重奏或其他什么˳
+
+184
+00:24:05,000 --> 00:24:10,380
+Yeah‚ so there is a motion of a Skip Trigon‚ which is basically everything that． 
+是的，所以有一个跳跃三角的运动，基本上就是所有的东西˳
+
+185
+00:24:20,420 --> 00:24:35,750
+So when I've said previously‚ when we are at the destination to a token‚ because we know what is the previous token that occurred between before the source and then source as the output． 
+所以当我之前说过，当我们在令牌的目标时，因为我们知道在源和作为输出的源之间发生的前一个令牌是什么˳
+
+186
+00:24:36,260 --> 00:24:48,147
+So here the tuition is‚ if this model is using the context‚ then it will simply be better at predicting what is the next and the loss will therefore decrease． 
+所以这里的学费是，如果这个模型使用的是上下文，那么它将更好地预测下一个是什么，因此损失将减少˳
+
+187
+00:24:48,147 --> 00:24:50,216
+That's why we expect decrease． 
+这就是为什么我们预计会下降˳
+
+188
+00:24:50,216 --> 00:24:59,669
+And what they showed here is the one layer‚ 2 layer in transformer that at some point there is a drop in the loss． 
+他们在这里展示的是一层，两层变压器，在某些时候损耗会下降˳
+
+189
+00:24:59,669 --> 00:25:12,800
+And they say this is a phase change where the model is learning to do this in behavior‚ syntactic‚ in context‚ learning behavior‚ and where these induction heads are formed． 
+他们说这是一个阶段的变化，模型正在学习在行为、句法、上下文、学习行为以及形成这些感应头的地方做到这一点˳
+
+190
+00:25:17,410 --> 00:25:28,155
+Ablation study where they do studies‚ we remember we can replace them with the mean representation or zero representation‚ whatever we appropriate． 
+他们进行研究的消融研究，我们记得我们可以用平均值或零表示替换它们，无论我们合适什么˳
+
+191
+00:25:28,155 --> 00:25:42,780
+And when we at length an induction head‚ and if we think in that induction head is what is necessary for the in context learning‚ what do we expect to happen with the induction score? 
+当我们长时间地思考一个感应头时，如果我们认为在感应头中是情境学习所必需的，我们期望感应分数发生什么？
+
+192
+00:25:42,790 --> 00:25:48,940
+So induction score here‚ or in context learning score is the losses． 
+因此，这里的归纳得分或情境学习得分是损失˳
+
+193
+00:25:48,980 --> 00:26:05,260
+So if my induction is important for in contexttran doing this to be a good metrics metric of in context learning‚ if I apply that head‚ what do we expect to happen with the score? 
+所以，如果我的归纳对于上下文学习很重要，要成为上下文学习的良好度量指标，如果我应用那个头部，我们期望分数会发生什么？
+
+194
+00:26:09,040 --> 00:26:11,580
+Drop dead worse． 
+更糟糕的是，它死了˳
+
+195
+00:26:15,020 --> 00:26:15,652
+Okay‚ that good? 
+好吗？
+
+196
+00:26:15,652 --> 00:26:20,078
+Okay‚ it should‚ it should get worse‚ which in this mean means increasing‚ right? 
+好的，它应该会变得更糟，这意味着增加，对吗？
+
+197
+00:26:20,078 --> 00:26:23,387
+Because dropping means that we are learning． 
+因为掉落意味着我们正在学习˳
+
+198
+00:26:23,387 --> 00:26:27,880
+See‚ we dropped means that loss decrease and we actually learn． 
+看，我们下降了意味着损失减少了，我们实际上学到了东西˳
+
+199
+00:26:27,880 --> 00:26:31,819
+If it increase‚ it means things are getting worse． 
+如果它增加，就意味着事情变得更糟˳
+
+200
+00:26:31,819 --> 00:26:33,920
+Sometimes it's hard to work with． 
+有时候很难一起工作˳
+
+201
+00:26:34,620 --> 00:26:39,780
+So here what we see‚ these personals is referring to the adoption heads． 
+所以我们在这里看到的是，这些个人指的是收养负责人˳
+
+202
+00:26:40,450 --> 00:26:42,230
+And they are showing that if we apply． 
+他们正在表明，如果我们申请˳
+
+203
+00:26:46,000 --> 00:26:51,780
+Phase transition is where the performance of or the ISL score will get of course‚ or increase． 
+相变是性能或ISL分数当然会得到或增加的地方˳
+
+204
+00:26:53,730 --> 00:26:59,070
+So is this are the arguments and there plenty more? 
+这就是争论的内容，还有更多吗？
+
+205
+00:27:00,270 --> 00:27:14,320
+I won't go over all of them and this is the reason why this work by Wilson Talk has been very commonly cited evidence that these induction heads‚ which are defined as attention head that． 
+我不会把所有的都讲一遍，这就是为什么威尔逊谈话的这项工作经常被引用的证据表明这些感应头，被定义为注意头˳
+
+206
+00:27:16,700 --> 00:27:18,740
+Before them‚ rather than their own content． 
+在他们面前，而不是他们自己的内容˳
+
+207
+00:27:19,280 --> 00:27:22,842
+And then predict those previous tokens as was． 
+然后预测那些先前的代币˳
+
+208
+00:27:22,842 --> 00:27:27,920
+This work has been evident that these electric heads are what drives． 
+这项工作已经很明显，这些电头是驱动的东西˳
+
+209
+00:27:30,540 --> 00:27:32,671
+Until 2025． 
+直到2025˳
+
+210
+00:27:32,671 --> 00:27:45,243
+And then‚ you know‚ because I told you last time that we will see a word by doing a fine part that shows that they are actually not the primary learning． 
+然后，你知道，因为我上次告诉你，我们将通过做一个很好的部分来看到一个单词，这表明它们实际上并不是主要的学习方式˳
+
+211
+00:27:45,243 --> 00:27:53,680
+And something called function vector is is pointing to heads that that are driving the cortex learning． 
+一种被称为函数向量的东西指向驱动皮层学习的头部˳
+
+212
+00:27:53,860 --> 00:27:59,550
+But those heads in the 5 function vector and are not the same as induction． 
+但是这些头在5个函数向量中，与归纳不同˳
+
+213
+00:28:00,380 --> 00:28:12,530
+So what we are going to do next‚ and I'll come to your question‚ is we are going to go over what the function vector is‚ going to just quickly go over some of the facts from the． 
+那么我们接下来要做什么，我来回答你的问题，我们要讨论一下函数向量是什么，快速讨论一下其中的一些事实˳
+
+214
+00:28:16,980 --> 00:28:18,510
+Question for question． 
+问题的提问˳
+
+215
+00:28:34,060 --> 00:28:35,120
+Truly random amount． 
+真正随机的数量˳
+
+216
+00:28:41,140 --> 00:28:47,920
+There is something to learn‚ because if you keep seeing repeated sequences‚ that's exactly the point you keep seeing． 
+有一些东西需要学习，因为如果你继续看到重复的序列，那正是你继续看到的重点˳
+
+217
+00:28:50,020 --> 00:28:51,100
+They are repeated． 
+它们被重复了˳
+
+218
+00:28:51,100 --> 00:28:59,319
+So it's imagine I give you tokens ABC‚ and then I just repeat them ABC‚ ABC‚ ABC‚ the C‚ ABC‚ and I show you this lots of times． 
+所以想象一下，我给你令牌ABC，然后我只是重复它们ABC，ABC，ABC，C，ABC，我会向你展示很多次˳
+
+219
+00:28:59,319 --> 00:29:02,907
+And then I ask you‚ okay‚ there is AB‚ what will come next? 
+然后我问你，好的，有AB，接下来会发生什么？
+
+220
+00:29:02,907 --> 00:29:04,189
+You will say C‚ right? 
+你会说C，对吧？
+
+221
+00:29:04,189 --> 00:29:06,240
+You will just see ABC so many times． 
+你只会看到ABC很多次˳
+
+222
+00:29:06,240 --> 00:29:10,800
+That's the logical is a truly random sequence to see that you wouldn't say the law． 
+这就是逻辑上的真正随机序列，看看你不会说法律˳
+
+223
+00:29:11,620 --> 00:29:13,720
+There is a key detail here． 
+这里有一个关键的细节˳
+
+224
+00:29:13,720 --> 00:29:16,346
+It's a repeated random sequences． 
+这是一个重复的随机序列˳
+
+225
+00:29:16,346 --> 00:29:20,466
+So we repeat the ABC multiple times‚ right? 
+所以我们多次重复ABC，对吗？
+
+226
+00:29:20,466 --> 00:29:26,577
+ABC is random‚ but due to the repetition of the restrung‚ this whole sequence‚ right? 
+ABC是随机的，但由于约束的重复，整个序列，对吧？
+
+227
+00:29:26,577 --> 00:29:38,572
+What would happen if there was no‚ then that's not something you can use for this experiment‚ expectation that it should repeat‚ right? 
+如果没有会发生什么，那么这不是你可以用于这个实验的东西，期望它应该重复，对吧？
+
+228
+00:29:38,572 --> 00:29:39,560
+So it's just． 
+所以这只是˳
+
+229
+00:29:44,610 --> 00:29:48,480
+Unless it's a random sequence from the training there is． 
+除非它是训练中的随机序列˳
+
+230
+00:29:49,630 --> 00:29:51,060
+But yeah‚ if it's truly random． 
+但是，如果它真的是随机的˳
+
+231
+00:29:53,200 --> 00:29:58,070
+Maybe once in a while it will get‚ is it going to be next? 
+也许偶尔会发生，会是下一个吗？
+
+232
+00:29:58,070 --> 00:30:00,135
+But there is no expectation． 
+但是没有期望˳
+
+233
+00:30:00,135 --> 00:30:04,560
+And that's a whole point of being repeated within the margin． 
+这就是在边缘范围内重复的整个重点˳
+
+234
+00:30:08,020 --> 00:30:09,248
+The next slide． 
+下一张幻灯片˳
+
+235
+00:30:09,248 --> 00:30:14,160
+So you can see that the face shape widens up on the three lay． 
+因此，您可以看到脸部形状在三个层面上变宽了˳
+
+236
+00:30:17,030 --> 00:30:18,180
+Have a better? 
+有更好的吗？
+
+237
+00:30:20,240 --> 00:30:20,840
+Score comparison． 
+分数比较˳
+
+238
+00:30:23,420 --> 00:30:26,440
+Is there anything important going on there? 
+那里有什么重要的事情吗？
+
+239
+00:30:26,440 --> 00:30:28,381
+I guess there's three layers． 
+我猜想有三层˳
+
+240
+00:30:28,381 --> 00:30:31,452
+There's more layers‚ yeah‚ And so‚ yes． 
+有更多的层次，是的，所以，是的˳
+
+241
+00:30:31,452 --> 00:30:33,540
+I'm just surprised at that． 
+我只是对此感到惊讶˳
+
+242
+00:30:36,020 --> 00:30:46,180
+And I guess it makes sense that that makes changes wider‚ more‚ I guess‚ information process． 
+我猜这使得感知变得更广泛，更多的信息处理˳
+
+243
+00:30:47,060 --> 00:30:49,432
+Yeah‚ that's an interesting question． 
+是的，这是一个有趣的问题˳
+
+244
+00:30:49,432 --> 00:30:59,930
+I don't really remember whether that we made a comparison of two‚ you know‚ in in-depth comparison of 2 and 3 layer and 1 3 layer 1 is． 
+我真的不记得我们是否对两个进行了比较，你知道的，对2层和3层以及1层进行了深入的比较˳
+
+245
+00:31:04,380 --> 00:31:05,450
+Yeah‚ unfortunately． 
+是的，不幸的是˳
+
+246
+00:31:12,760 --> 00:31:25,480
+Okay‚ so as I said‚ our next goal is to define function vector is‚ and then we are going to go into the analysis by． 
+好的，正如我所说的，我们下一个目标是定义函数向量，然后我们将进入分析˳
+
+247
+00:31:27,620 --> 00:31:31,765
+Hard‚ just a little bit‚ but not too much． 
+困难，只是一点点，但不要太多˳
+
+248
+00:31:31,765 --> 00:31:35,580
+And maybe we finished the relevant part． 
+也许我们已经完成了相关的部分˳
+
+249
+00:31:37,560 --> 00:31:40,982
+Okay‚ so‚ so let me explain functional vector． 
+好的，那么让我解释一下函数向量˳
+
+250
+00:31:40,982 --> 00:31:52,400
+So first of all‚ you need to now scratch yours‚ everything we just learned about in heads‚ because this doesn't build on induction heads‚ a completely different method． 
+所以首先，你现在需要从头开始，我们刚刚在头脑中学到的一切，因为这不是建立在感应头上，这是一种完全不同的方法˳
+
+251
+00:31:52,400 --> 00:32:02,189
+So don't think just because today in this lecture‚ we are‚ you know‚ continuing with function vector is that it's kind of building on it． 
+所以不要认为仅仅因为今天在这个讲座中，我们继续讨论函数向量是因为它是在它的基础上构建的˳
+
+252
+00:32:02,189 --> 00:32:13,373
+Rather‚ this is a standalone‚ but it's going to be a method that's going to find pets that are responsible for Eigen context learning． 
+相反，这是一个独立的方法，但它将是一种找到负责本相上下文学习的宠物的方法˳
+
+253
+00:32:13,373 --> 00:32:23,651
+But keep in mind that unlike induction heads‚ which tells us mechanistic process‚ not only these are the heads‚ but also what do these heads actually do? 
+但请记住，与感应头不同，感应头告诉我们机械过程，不仅这些是磁头，而且这些磁头实际上做什么？
+
+254
+00:32:23,651 --> 00:32:28,711
+How they move information‚ We won't be at that level of detailed function vector． 
+它们如何移动信息，我们不会处于那个详细的函数向量级别˳
+
+255
+00:32:28,711 --> 00:32:33,340
+So we are just going to get indentation of heads that are responsible for． 
+所以我们只会得到负责的头部的压痕˳
+
+256
+00:32:38,940 --> 00:32:40,578
+In context learning． 
+在情境学习中˳
+
+257
+00:32:40,578 --> 00:32:44,400
+So here you have demonstrations arrive required small． 
+所以在这里你有演示，需要小的到达˳
+
+258
+00:32:46,000 --> 00:32:50,830
+This is the task of doing an Antony of a human word． 
+这是对人类词汇进行安东尼化的任务˳
+
+259
+00:32:51,420 --> 00:32:59,980
+And here we have a translation from English word to a Spanish word‚ the high level of revenue of function． 
+这里我们有一个从英语单词到西班牙语单词的翻译，即功能的高水平收入˳
+
+260
+00:33:01,020 --> 00:33:15,540
+We are going to take some head attention head‚ and we are going to‚ for each one of the in the front‚ we are going to get the representation of the last token in the front that that attention had． 
+我们要注意头部，对于前面的每一个，我们将得到前面最后一个令牌的代表˳
+
+261
+00:33:16,840 --> 00:33:21,937
+And we are going to do something‚ you know‚ average these kinds of representations． 
+我们将要做一些事情，你知道，平均这些类型的表示˳
+
+262
+00:33:21,937 --> 00:33:41,740
+And then when you have so-called zero cut prompt where we don't have demonstrations‚ we just have the model means and plug in or patch nominal terminology patching ctor that we have derived from this productivity demonstration． 
+然后，当您有所谓的零切割提示时，我们没有演示，我们只有模型意味着插入或修补名义术语修补程序，这是我们从生产力演示中得出的˳
+
+263
+00:33:47,410 --> 00:33:54,920
+And here the word fast is going to give us translation of the so． 
+在这里，“快速” 这个词将给我们翻译这样的东西˳
+
+264
+00:33:54,920 --> 00:34:11,580
+Now our goal is going to‚ how do we define and construct these vector space where we can plug them into zero chakra‚ the representation‚ the successful completion of the． 
+现在我们的目标是，如何定义和构建这些向量空间，将它们插入零脉轮，实现表示和成功完成˳
+
+265
+00:34:15,710 --> 00:34:16,000
+See all? 
+大家看看？
+
+266
+00:34:16,700 --> 00:34:19,730
+So for now． 
+所以现在˳
+
+267
+00:34:39,050 --> 00:34:40,660
+Oh‚ so much quieter without． 
+哦，没有那么安静˳
+
+268
+00:34:43,310 --> 00:34:43,330
+You． 
+你˳
+
+269
+00:34:45,890 --> 00:34:46,590
+Let me see． 
+让我看看˳
+
+270
+00:34:50,320 --> 00:34:54,960
+Alrighty‚ so our goal now is to define function． 
+好的，所以我们现在的目标是定义功能˳
+
+271
+00:35:01,020 --> 00:35:02,861
+Of bunch of things． 
+一堆东西˳
+
+272
+00:35:02,861 --> 00:35:12,760
+This work I'm going to present it the way it was defined in et al 2024． 
+我将以等人2024中定义的方式介绍这项工作˳
+
+273
+00:35:16,320 --> 00:35:16,960
+Concurrent word also that． 
+并发词也是如此˳
+
+274
+00:35:31,820 --> 00:35:49,409
+First‚ so I'm going to a bunch of attention and then a bunch of notation us to a certain score‚ which we can say‚ okay‚ this is a score for this attention had been something‚ something． 
+首先，我要引起一堆关注，然后将我们标记为某个分数，我们可以说，好的，这是一个分数，因为这种关注是某种东西˳
+
+275
+00:35:49,409 --> 00:35:52,360
+And then this can be used to filter theses． 
+然后这可以用于过滤论文˳
+
+276
+00:35:54,060 --> 00:35:54,170
+Okay? 
+好吗？
+
+277
+00:35:55,050 --> 00:36:04,560
+So first we are going to use T to do no in t in a set of all possible in context learning tasks． 
+首先，我们将使用T来在一组所有可能的情境学习任务中执行 “不”˳
+
+278
+00:36:09,620 --> 00:36:13,336
+So this is an Il task‚ right? 
+所以这是一个艰巨的任务，对吧？
+
+279
+00:36:13,336 --> 00:36:15,660
+So predict an Anton． 
+所以预测一个安顿˳
+
+280
+00:36:25,020 --> 00:36:25,100
+BP? 
+BP?
+
+281
+00:36:27,270 --> 00:36:33,600
+Is going to be a of all the prompts or in complex learning? 
+将会是一个所有的提示还是复杂的学习？
+
+282
+00:37:12,220 --> 00:37:14,753
+P‚ which is capital from the lower． 
+P，即从低层获得的资本˳
+
+283
+00:37:14,753 --> 00:37:22,380
+So that'll use this little light to make sure this one is a lower one． 
+所以我们将使用这个小灯来确保这个是较低的˳
+
+284
+00:37:25,460 --> 00:37:30,740
+Okay‚ so a prompt‚ have a few demonstrations． 
+好的，所以提示一下，进行一些演示˳
+
+285
+00:37:38,820 --> 00:37:48,930
+This is the first demonstration‚ so input it would have acony thats one can be fast and this can be slow． 
+这是第一次演示，所以输入它会有acony，那可能是快，也可能是慢˳
+
+286
+00:38:05,220 --> 00:38:20,980
+Input for which we want the output and we don't model becomes a more so why IQ that's going to be output the correct? 
+我们想要输出而我们不建模的输入变得更加重要，那么为什么智商会输出正确呢？
+
+287
+00:38:31,040 --> 00:38:32,443
+This is clear． 
+这很清楚˳
+
+288
+00:38:32,443 --> 00:38:35,600
+So it's a little bit‚ it's very Matt． 
+所以有点小，非常马特˳
+
+289
+00:38:36,000 --> 00:38:40,560
+Say something simple‚ which is every prompt consists of capital N? 
+说一些简单的话，即每个提示都由大写字母N组成？
+
+290
+00:38:46,430 --> 00:38:46,450
+Of． 
+的˳
+
+291
+00:38:48,710 --> 00:38:49,870
+Be some a word? 
+是一个词吗？
+
+292
+00:38:50,190 --> 00:38:51,760
+Such a slow‚ happy‚ whatever． 
+这样缓慢、快乐，无论什么˳
+
+293
+00:38:54,220 --> 00:39:00,556
+I J is going to be the corresponding Al‚ so for flow is going to be fast or happy． 
+I J将是相应的Al，因此对于流动来说将是快速或快乐的˳
+
+294
+00:39:00,556 --> 00:39:03,311
+It can be unhappy with things like that． 
+它可能对这样的事情不满意˳
+
+295
+00:39:03,311 --> 00:39:09,900
+And then finally‚ we have a for which we want the Anton even we don't do it in the prompt‚ that's what the model is super． 
+最后，我们有一个我们想要的Anton，即使我们没有在提示中做到这一点，这就是模型的超级˳
+
+296
+00:39:11,660 --> 00:39:22,340
+Okay‚ so now we are going to define the mean output of a given health A on these fronts． 
+好的，现在我们将定义给定健康在这些方面的平均产出˳
+
+297
+00:39:24,860 --> 00:39:29,420
+We are going to take the size of Pt‚ how many problems that we have? 
+我们要取Pt的大小，我们有多少问题？
+
+298
+00:39:37,420 --> 00:39:43,460
+The output for that prompt for a given attention test． 
+给定注意力测试提示的输出˳
+
+299
+00:39:44,940 --> 00:39:47,470
+So A is an attention head． 
+所以A是一个注意的头˳
+
+300
+00:39:50,260 --> 00:39:52,050
+When we have a something． 
+当我们有了一些东西˳
+
+301
+00:40:00,600 --> 00:40:04,200
+Output of the attention had a． 
+注意力的输出有a˳
+
+302
+00:40:20,620 --> 00:40:23,640
+What is the output of an attention head? 
+注意头的输出是什么？
+
+303
+00:40:23,640 --> 00:40:25,012
+Is it a scalar? 
+这是一个标量吗？
+
+304
+00:40:25,012 --> 00:40:25,836
+A vector? 
+矢量？
+
+305
+00:40:25,836 --> 00:40:26,660
+A matrix? 
+矩阵？
+
+306
+00:40:29,020 --> 00:40:30,142
+Vector‚ right? 
+矢量，对吧？
+
+307
+00:40:30,142 --> 00:40:35,380
+So if I take the last token in some and I check what the． 
+所以，如果我拿了最后一个令牌并检查了什么˳
+
+308
+00:40:37,540 --> 00:40:43,580
+For the token‚ is is just a new representation of that token that I added to the? 
+对于令牌，是否只是我添加到的令牌的新表示形式？
+
+309
+00:40:45,820 --> 00:40:59,980
+So basically‚ this gives me the average representation of the token in every single one of these fronts where is computed by a specific attention head． 
+所以基本上，这给了我令牌在这些前沿中的平均表示，这是由特定的注意力头计算的˳
+
+310
+00:41:02,290 --> 00:41:17,645
+If I want to be really precise‚ I could add something like layer and maybe J denoting an attention head in a given layer and output heads we have in a given attention layer． 
+如果我想要非常精确，我可以添加一些东西，比如layer，也许J表示给定层中的注意头，以及我们在给定关注层中的输出头˳
+
+311
+00:41:17,645 --> 00:41:20,532
+I'm looking at the Ja 1 for simplicity． 
+为了简单起见，我正在研究Ja 1˳
+
+312
+00:41:20,532 --> 00:41:21,320
+I won't write． 
+我不会写˳
+
+313
+00:41:23,675 --> 00:41:28,060
+The number of heads equals to the number of players times number of heads in each lay． 
+头部的数量等于每个球中球员的数量乘以头部的数量˳
+
+314
+00:41:30,590 --> 00:41:38,180
+So now we are going to define shuffled from pi tilde． 
+所以现在我们将从pi波浪号定义shuffled˳
+
+315
+00:41:47,300 --> 00:42:05,060
+Capital of okay‚ so this problem‚ the structure like this one‚ but instead‚ instead of giving the right output here‚ we just want‚ so we are basically going to shuffle these eyes． 
+好的，所以这个问题，结构像这样，但我们不是在这里给出正确的输出，我们只是想要，所以我们基本上要洗牌这些眼睛˳
+
+316
+00:42:05,360 --> 00:42:24,960
+So the incorrect answer here is associated with‚ let me maybe write them down the I shuffle‚ he is going to be‚ it can be‚ for example‚ I have x‚ y 1‚ but I have I． 
+所以这里的错误答案与，让我把它们写在I洗牌上，他将会是，例如，我有x，y 1，但我有I˳
+
+317
+00:42:27,170 --> 00:42:27,690
+Yii‚ for example． 
+Yii，例如˳
+
+318
+00:42:30,160 --> 00:42:34,360
+Right is a mismatch shuffle in that sense． 
+在那个感知中，Right是错配的shuffle˳
+
+319
+00:42:36,480 --> 00:42:41,040
+Everything‚ and we do that for every one of the demonstrations． 
+每一件事，我们都会为每一场示威活动这样做˳
+
+320
+00:42:44,140 --> 00:42:45,480
+An IC prompt? 
+IC提示？
+
+321
+00:42:57,020 --> 00:43:01,980
+And some corrupt inputs maybe reminds you of something that we learned before． 
+一些损坏的输入可能会让你想起我们之前学到的东西˳
+
+322
+00:43:20,620 --> 00:43:22,051
+Well‚ I asked you this． 
+我问过你这个˳
+
+323
+00:43:22,051 --> 00:43:26,920
+You couldn't I possibly answer this question because I just define． 
+你不能，我可能会回答这个问题，因为我只是定义˳
+
+324
+00:43:37,440 --> 00:43:41,134
+So we are going to determine the score． 
+所以我们将确定分数˳
+
+325
+00:43:41,134 --> 00:44:03,550
+I'm going to give two symbols as in the original function ctor work‚ we call it C‚ which refers to causal indirect effect in the word by Jacob staer They are using a score function vector of a given． 
+我将像原始函数ctor一样给出两个符号，我们称之为C，它指的是雅各布·施塔尔 (Jacob staer) 所说的因果间接效应，他们使用的是给定的得分函数向量˳
+
+326
+00:44:06,200 --> 00:44:10,760
+So let's use quantitation because we are talking about vol． 
+所以让我们使用定量，因为我们在谈论vol˳
+
+327
+00:44:23,370 --> 00:44:25,650
+He knows the version of patching and． 
+他知道补丁的版本˳
+
+328
+00:44:28,560 --> 00:44:30,270
+Break to say what the equation will be here． 
+打断一下，说出这里的方程式是什么˳
+
+329
+00:44:33,900 --> 00:44:38,460
+Can you try to say the first thing‚ just the highlight is going to be? 
+你能不能试着说第一件事，就是最精彩的部分？
+
+330
+00:44:40,980 --> 00:44:41,550
+And compliance． 
+合规˳
+
+331
+00:44:45,700 --> 00:44:48,390
+So a denoising version we would． 
+所以我们会使用去噪版本˳
+
+332
+00:44:50,910 --> 00:44:55,190
+Would we want to like compute the score with the? 
+我们想用计算分数吗？
+
+333
+00:44:57,290 --> 00:44:59,200
+Clean sort of prompts here． 
+这里有一些干净的提示˳
+
+334
+00:44:59,210 --> 00:45:05,780
+And then you do the difference of that with when it's got the correct problem． 
+然后你做那个的区别，当它出现正确的问题时˳
+
+335
+00:45:14,060 --> 00:45:18,640
+Take something completely different and see if． 
+拿一些完全不同的东西，看看是否˳
+
+336
+00:45:24,420 --> 00:45:32,205
+You said other thing we are going to the we have up run and we are patching with the clean‚ right? 
+你说了另一件事，我们要去，我们正在用干净的补丁修补，对吧？
+
+337
+00:45:32,205 --> 00:45:36,467
+And we have some men who said the score‚ but let's be more precise． 
+我们有一些男人说了比分，但让我们更准确地说˳
+
+338
+00:45:36,467 --> 00:45:41,880
+What was the what was the function we cared about when we did the batching? 
+当我们进行批处理时，我们关心的是什么功能？
+
+339
+00:46:05,420 --> 00:46:10,900
+We will take the logic of the we have it with the． 
+我们将采用我们所拥有的逻辑˳
+
+340
+00:46:13,980 --> 00:46:15,660
+Run when． 
+跑步的时候˳
+
+341
+00:46:18,120 --> 00:46:24,206
+We patch the representation of that head with a clean room． 
+我们用无尘室修补那个头部的表示˳
+
+342
+00:46:24,206 --> 00:46:34,300
+And in a normal patching‚ we would take the logic Cor from and see whether the difference‚ whether we recover the logic right out of it． 
+在正常的修补中，我们将从逻辑中获取Cor，看看是否有差异，是否可以从中恢复逻辑˳
+
+343
+00:46:34,300 --> 00:46:36,060
+For some reason‚ we might not． 
+出于某种原因，我们可能不会˳
+
+344
+00:46:36,060 --> 00:46:37,580
+I don't have exactly that． 
+我不知道具体是什么˳
+
+345
+00:46:37,580 --> 00:46:40,620
+So let me just double check what we have right here． 
+所以让我仔细检查一下我们这里有什么˳
+
+346
+00:46:41,760 --> 00:46:45,083
+Yeah‚ it's a mistake in my notes． 
+是的，这是我笔记中的一个错误˳
+
+347
+00:46:45,083 --> 00:46:46,190
+Great‚ okay． 
+很好，好的˳
+
+348
+00:46:46,190 --> 00:47:04,848
+So do the same thing if our if this attention head is responsible for predicting the correct answer here‚ we would expect to recover lots of the logics for the correct answer by patching the correct representation with clean ones‚ right? 
+如果我们的这个注意力头负责在这里预测正确的答案，那么也要做同样的事情，我们希望通过用干净的表示修补正确的表示来恢复正确答案的许多逻辑，对吧？
+
+349
+00:47:04,848 --> 00:47:07,120
+So this is why I said‚ can you just? 
+所以这就是为什么我说，你能吗？
+
+350
+00:47:13,620 --> 00:47:18,720
+Our function f is going to be probabilities over． 
+我们的函数f将是概率˳
+
+351
+00:47:21,600 --> 00:47:23,337
+In this work is probabilities． 
+这项工作是概率的˳
+
+352
+00:47:23,337 --> 00:47:26,727
+Remember‚ we actually like to work with logics more． 
+请记住，我们实际上更喜欢与逻辑一起工作˳
+
+353
+00:47:26,727 --> 00:47:32,480
+But in this paper‚ the specific set probabilities‚ which means one in． 
+但是在本文中，具体的集合概率是指一中˳
+
+354
+00:47:45,400 --> 00:47:48,420
+So max‚ yeah‚ soft max． 
+所以max，是的，软max˳
+
+355
+00:47:48,900 --> 00:48:07,190
+And so here we are going to just have the correct front‚ but we are going to swap the attention‚ Our head especially that we are looking into is going to become this mean presentation here‚ okay? 
+所以在这里，我们将有正确的前面，但我们将交换注意力，特别是我们正在研究的，我们的头脑将成为这里的这个意思演示，好吗？
+
+356
+00:48:12,440 --> 00:48:14,260
+Okay‚ so just one thing here． 
+好的，这里只有一件事˳
+
+357
+00:48:14,260 --> 00:48:16,383
+This is the entire softmax． 
+这就是整个softmax˳
+
+358
+00:48:16,383 --> 00:48:19,720
+So we are taking the‚ we are indexing 5． 
+所以我们正在采取，我们正在索引5˳
+
+359
+00:48:23,100 --> 00:48:28,240
+An index of YY cub‚ which is the correct answer? 
+YY cub的索引，哪个是正确答案？
+
+360
+00:48:37,420 --> 00:48:38,060
+What is the? 
+这是什么？
+
+361
+00:48:50,880 --> 00:48:59,980
+So here I just have my corrupt run‚ but here I have my correct output of the attention head is patched with a clean． 
+所以在这里我只是有腐败的运行，但在这里我的正确输出的注意头被一个干净的补丁修补了˳
+
+362
+00:49:04,220 --> 00:49:05,525
+And we want this． 
+我们想要这个˳
+
+363
+00:49:05,525 --> 00:49:21,180
+So we want this one to be higher than the bit higher it is‚ the better the pating is and more it head is of what the correct answer is here． 
+所以我们希望这个比它的位更高，更好的是，正确答案在这里更正确˳
+
+364
+00:49:25,750 --> 00:49:27,830
+Okay‚ now a bit more． 
+好的，现在再多一点˳
+
+365
+00:49:27,900 --> 00:49:38,830
+We define the average effect just to be the score average across many times certain number of tasks． 
+我们将平均效应定义为一定数量任务的多次得分平均值˳
+
+366
+00:49:40,220 --> 00:49:44,780
+And for each task‚ we have certain number of these corrupt． 
+对于每项任务，我们都有一定数量的这些腐败分子˳
+
+367
+00:50:00,440 --> 00:50:03,580
+Okay‚ this is a bit confusing． 
+好吧，这有点令人困惑˳
+
+368
+00:50:10,240 --> 00:50:20,660
+So all I said here‚ I have calculated this for so for a single here I'm averaging across many problems． 
+所以我在这里所说的，我已经计算了这个，所以对于一个问题，我在许多问题上取平均值˳
+
+369
+00:50:22,140 --> 00:50:25,360
+And still this is just for a single head． 
+这仍然只是一个头部˳
+
+370
+00:50:27,620 --> 00:50:34,380
+Now this is where things become annoying because I can show you theoret‚ but． 
+现在这就是事情变得烦人的地方，因为我可以向您展示定理，但是˳
+
+371
+00:50:47,540 --> 00:50:57,486
+Where for a bunch of attention heads‚ you have this core‚ then we can see which one of these attention heads have the score to be really high． 
+对于一群注意力集中的人来说，你有这个核心，那么我们可以看到这些注意力集中的人哪一个得分真的很高˳
+
+372
+00:50:57,486 --> 00:51:02,490
+And we can say these are the top 2%‚ let's say‚ of these are the ones we being responsible for an income． 
+我们可以说这些是前2%，假设这些是我们负责收入的人˳
+
+373
+00:51:06,890 --> 00:51:07,440
+They rank． 
+他们排名˳
+
+374
+00:51:09,520 --> 00:51:09,740
+Or． 
+或者˳
+
+375
+00:51:24,850 --> 00:51:26,870
+To present some of these． 
+介绍其中的一些˳
+
+376
+00:51:33,220 --> 00:51:44,480
+All right‚ do you think these are responsible for in context and from those they have construct the function? 
+好的，你认为这些是在上下文中负责的，并且从它们所构建的功能中吗？
+
+377
+00:51:49,110 --> 00:51:50,620
+I would like to you're? 
+我想要你？
+
+378
+00:51:55,620 --> 00:52:05,400
+Function vector‚ or given thus t‚ is the average of these mean representations for the． 
+函数向量，或因此给定的t，是这些平均表示的平均值˳
+
+379
+00:52:08,050 --> 00:52:11,140
+Task‚ okay‚ I I'm right here now． 
+任务，好的，我现在就在这里˳
+
+380
+00:52:13,620 --> 00:52:18,180
+They are these attention heads in this 42%． 
+他们是这42% 中关注的头˳
+
+381
+00:52:20,040 --> 00:52:33,880
+So just to repeat‚ we have constructed this metric‚ which tells us much of the internal learning performance attention effects can recover when we do the denoising catching． 
+重复一遍，我们已经构建了这个指标，它告诉我们在进行去噪捕捉时可以恢复很多内部学习表现注意力效应˳
+
+382
+00:52:33,880 --> 00:52:37,840
+And then we took the average over tasks and prompts． 
+然后我们把任务和提示的平均值取出来˳
+
+383
+00:52:37,840 --> 00:52:46,340
+Using that score‚ we could run the attention heads across all layers and all number of heads in each layer． 
+使用该分数，我们可以在所有层和每层中运行注意头的数量˳
+
+384
+00:52:46,340 --> 00:52:49,460
+And we can take the top for two percentile of them． 
+我们可以选择其中两个百分点的顶部˳
+
+385
+00:52:50,460 --> 00:52:57,520
+And then we take these mean representation‚ mean output of each one of these top 2% ones． 
+然后我们采用这些平均值表示，这些前2% 的每个的平均值输出˳
+
+386
+00:52:57,560 --> 00:53:01,890
+We average those and we call that function‚ and that's the． 
+我们平均这些，并称之为函数，这就是˳
+
+387
+00:53:05,010 --> 00:53:11,360
+Isn't there some missing fractional term like the size of A for it to be averaging‚ right? 
+没有一些缺少的小数项，比如A的大小，以便求平均值，对吧？
+
+388
+00:53:12,360 --> 00:53:14,210
+Just the sum of those means? 
+这些平均值的总和？
+
+389
+00:53:16,080 --> 00:53:22,950
+So that's not the average of‚ oh‚ yeah‚ just a sum‚ yeah． 
+所以这不是平均值，哦，是的，只是一个总和，是的˳
+
+390
+00:53:29,420 --> 00:53:34,430
+Okay‚ so now in ideal world‚ you will have all what we have written for． 
+好的，现在在理想世界中，你将拥有我们所写的所有东西˳
+
+391
+00:53:37,000 --> 00:53:39,740
+The risk of the‚ you know‚ presentation． 
+演示的风险˳
+
+392
+00:53:39,930 --> 00:53:40,700
+But we have to． 
+但我们必须这样做˳
+
+393
+00:53:45,580 --> 00:53:47,570
+So try to remember what our vector． 
+所以试着记住我们的向量˳
+
+394
+00:53:50,040 --> 00:53:53,900
+Was if you want‚ you can take a two minute break because． 
+如果你愿意，你可以休息两分钟，因为˳
+
+395
+00:54:01,740 --> 00:54:02,560
+All right‚ two minutes． 
+好的，两分钟˳
+
+396
+00:54:06,620 --> 00:54:11,808
+But not these simple 1‚ 2‚ 3 attentional transformers and more． 
+但不是这些简单的1、2、3注意力变压器等等˳
+
+397
+00:54:11,808 --> 00:54:14,660
+So we have 25 more layers． 
+所以我们还有25个层次˳
+
+398
+00:54:14,950 --> 00:54:18,660
+We have 15 heads in every layer． 
+我们每层有15个头˳
+
+399
+00:54:19,770 --> 00:54:23,730
+Here you c​‌​‌​​‌‌​​‌‌​​‌‌​‌​‌​​‌‌​​​‌​​‌‌​​‌‌​​‌‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌‌‌‌‌​‌‌‌​‌​​‌‌​‌‌​​​‌‌​‌​‌​​‌‌​‌‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌​‌‌‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌​​‌​​‌‌​‌‌‌‌‌​‌‌‌‌​​​‌‌​​‌‌‌‌​‌​‌‌​​​‌‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌​‌​‌‌‌​‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌​​‌‌​​​‌​​‌‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌​‌​‌​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌​‌‌‌​‌‌‌‌​​​‌‌​‌‌‌‌‌​‌​​‌‌‌‌​‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌​​‌‌​​‌‌​‌‌‌‌‌​‌‌‌‌​​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​‌‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌‌‌‌‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌an see the． 
+在这里你可以看到˳
+
+400
+00:54:26,830 --> 00:54:29,320
+Score‚ okay? 
+分数，好吗？
+
+401
+00:54:29,820 --> 00:54:32,290
+So this is how they identify just few of． 
+所以这就是他们识别少数人的方式˳
+
+402
+00:54:35,260 --> 00:54:38,710
+As the one they then use for the function． 
+作为他们随后用于该功能的一种˳
+
+403
+00:54:40,580 --> 00:54:45,380
+Now I will show you a few things that they have done． 
+现在我将向您展示他们所做的一些事情˳
+
+404
+00:54:47,230 --> 00:54:48,700
+So first‚ I have these． 
+首先，我有这些˳
+
+405
+00:54:49,600 --> 00:54:50,220
+They own pretty simple． 
+他们拥有非常简单的东西˳
+
+406
+00:54:50,700 --> 00:55:04,560
+So even the word the doubles of meaning capitalize the word given a country name‚ generate the capital cities‚ and very simple stuff like that． 
+因此，即使这个词的意义加倍，也要将这个词大写，给出一个国家的名称，生成首都城市，以及诸如此类的非常简单的东西˳
+
+407
+00:55:06,220 --> 00:55:09,360
+Okay‚ let me go here． 
+好的，让我在这里走˳
+
+408
+00:55:09,850 --> 00:55:18,800
+I so first thing that you can kind of see is which lay which layers these attention heads live． 
+所以，你可以首先看到的是这些关注头所处的层次˳
+
+409
+00:55:19,010 --> 00:55:22,560
+And very often they live in these mid‚ mid layers． 
+它们经常生活在这些中间层中˳
+
+410
+00:55:27,260 --> 00:55:29,576
+This is an interesting result． 
+这是一个有趣的结果˳
+
+411
+00:55:29,576 --> 00:56:04,270
+So here they have different ways of prompting in a 0 0 shock waves‚ so the world x means and so on‚ Whatever you swap the word x width‚ you want the completion to be the expected‚ the completion of‚ you know‚ where the dark space and to successfully complete these with the function vector‚ what they do is it's somewhat illustrated with thing here． 
+所以在这里，他们有不同的方式在0冲击波中提示，所以世界x意味着等等，无论你交换单词x的宽度，你都希望完成是预期的，你知道的完成˳这里的黑暗空间和使用函数向量成功完成这些任务，他们所做的就是用这里的东西进行了一些说明˳
+
+412
+00:56:04,270 --> 00:56:19,877
+So here‚ this is their that motivated them to define the function method we have defined in this preliminary experiment they do simpler and then just take the average representations instead of the function vector． 
+所以，这就是促使他们定义我们在这个初步实验中定义的函数方法的原因，他们做的更简单，然后只采用平均表示而不是函数向量˳
+
+413
+00:56:19,877 --> 00:56:34,080
+So imagine here instead of this simple‚ you just have that we use for the function vector‚ which was v．t． right front‚ which has the demonstration stop button called short acceptance． 
+所以在这里想象一下，而不是这个简单的，你只需要使用我们用于函数向量的v．t˳ 右前，其中有一个名为 “短接受” 的演示停止按钮˳
+
+414
+00:56:36,020 --> 00:56:45,448
+You have constructed the function ed from prompts using all the all the stuff we have on the whiteboard． 
+您已经使用白板上的所有内容构建了从提示中提取的函数˳
+
+415
+00:56:45,448 --> 00:56:59,560
+And then in a zero shot prompt‚ such as simple column and the column‚ if that's a separate token‚ you will swap the representation of a attention head with the function vector． 
+然后在零数据提示中，如简单列和列，如果那是一个单独的标记，您将使用函数向量交换注意头的表示形式˳
+
+416
+00:57:00,300 --> 00:57:07,950
+And then you might get a completion of the task that successful． 
+然后你可能会成功完成任务˳
+
+417
+00:57:08,990 --> 00:57:11,910
+And here what they see is． 
+这就是他们看到的˳
+
+418
+00:57:14,980 --> 00:57:22,924
+Here‚ if you do zero shot experiments with these models‚ they are not so great． 
+在这里，如果你用这些模型做零数据实验，它们并不是很好˳
+
+419
+00:57:22,924 --> 00:57:36,380
+But if you add these function vector and the results are getting‚ much better‚ basically this functional vector can recover the performance depend we the zero． 
+但是如果你把这些函数向量相加，结果会变得更好，基本上这个函数向量可以恢复性能取决于我们的零点˳
+
+420
+00:57:40,220 --> 00:57:47,500
+To do the zero shut task‚ regardless of how we do it‚ they can by adding the function vector． 
+无论我们如何完成零关闭任务，它们都可以通过添加函数向量来完成˳
+
+421
+00:57:47,500 --> 00:57:59,070
+By doing that intervention‚ they can improve the performance of antonic prediction‚ which is at most 2．4% here‚ to something that is much‚ much higher‚ right? 
+通过这种干预，他们可以将antonic预测的性能提高到更高的水平，这里最多为2．4%，对吧？
+
+422
+00:57:59,150 --> 00:58:07,260
+It's not going from 0 to 61‚ obviously‚ is much‚ much‚ much significantly‚ much better． 
+显然，它没有从0到61，这是非常非常重要的，要好得多˳
+
+423
+00:58:07,840 --> 00:58:18,640
+So this is the kind of the evidence that these functions vector is‚ are vector is where that can recover the in context learning． 
+所以这就是这些函数向量的证据，是向量可以恢复上下文学习的地方˳
+
+424
+00:58:20,650 --> 00:58:22,250
+A particular task． 
+特定的任务˳
+
+425
+00:58:22,720 --> 00:58:24,140
+And then you will much more． 
+然后你会得到更多˳
+
+426
+00:58:25,900 --> 00:58:32,781
+Yeah‚ you can see if you use a functional vector‚ what would be the completion they have? 
+是的，你可以看看如果你使用函数向量，它们的完备性是什么？
+
+427
+00:58:32,781 --> 00:58:49,394
+Interesting‚ you can now‚ okay‚ you have multiple tasks‚ you can maybe combine their functional vector is and do similar a that if we have seen with some nondo problems to see whether you can now do some other task from and so on． 
+有趣的是，你现在可以，好吧，你有多个任务，你可以组合它们的功能向量，做类似的事情，如果我们看到一些非do问题，看看你现在是否可以做其他任务等等˳
+
+428
+00:58:49,394 --> 00:58:53,780
+So I want to go over the rest of these experiments for us． 
+所以我想为我们把这些实验剩下的部分再翻一遍˳
+
+429
+00:58:56,140 --> 00:58:57,280
+It can recover‚ not recover‚ recover． 
+它可以恢复，不是恢复，恢复˳
+
+430
+00:58:59,530 --> 00:59:04,192
+Suggest was something that happened in the first place． 
+暗示是最初发生的事情˳
+
+431
+00:59:04,192 --> 00:59:09,930
+Rather make the model do in context learning from 0 chakra． 
+而是让模型从0个脉轮进行上下文学习˳
+
+432
+00:59:10,580 --> 00:59:13,979
+But we could have sold the zero shot prompt． 
+但我们本可以把零数据的提示卖出去˳
+
+433
+00:59:13,979 --> 00:59:32,568
+Now we have seen that huge improvement in context learning‚ but we are having a 0 shock from we've that huge boost‚ huge evidence that these heads intensified through these methodology． 
+现在我们已经看到了情境学习的巨大改进，但是我们从这个巨大的提升中获得了零震惊，巨大的证据表明这些人通过这些方法得到了强化˳
+
+434
+00:59:32,568 --> 00:59:37,620
+We have seen on the whiteboard are the heads that are responsible． 
+我们在白板上看到的是负责的负责人˳
+
+435
+00:59:39,340 --> 00:59:51,580
+So now we have induction heads and we have function vector is‚ and there are both ways to find heads that are seemingly responsible for in learning． 
+所以现在我们有了感应头和函数向量，有两种方法可以找到看似负责学习的头˳
+
+436
+00:59:52,400 --> 00:59:53,850
+Are they pointing to the same head? 
+他们指向同一个头吗？
+
+437
+00:59:54,340 --> 00:59:56,370
+Is there a huge health plan? 
+是否有庞大的健康计划？
+
+438
+00:59:56,460 --> 01:00:10,150
+And this brings us to I already mentioned by Kyle giman and Jacob starco they do a very thorough of analysis in comparison of induction heads． 
+这就引出了我已经提到的Kyle giman和Jacob starco他们在比较感应头方面进行了非常彻底的分析˳
+
+439
+01:00:10,220 --> 01:00:16,780
+And function vector is unfortunately‚ I need to close this again‚ but it's not so． 
+不幸的是，函数向量需要再次关闭，但并非如此˳
+
+440
+01:00:23,500 --> 01:00:25,260
+We need to understand the metric they use． 
+我们需要了解他们使用的度量标准˳
+
+441
+01:00:26,220 --> 01:00:39,020
+One of them is in contexts learning score that we have seen by Anthropic work‚ but they also have accuracy and induction score． 
+其中之一是在我们通过人类学研究看到的情境中学习分数，但它们也有准确性和归纳分数˳
+
+442
+01:00:42,140 --> 01:00:47,110
+Okay‚ so first of all‚ they refer to the score that． 
+好的，首先，他们指的是分数˳
+
+443
+01:00:57,830 --> 01:00:58,850
+As a token loss difference? 
+作为象征性的损失差异？
+
+444
+01:01:07,320 --> 01:01:11,220
+Going to be just the loss of a braet plan? 
+只是失去了一个勇敢的计划吗？
+
+445
+01:01:14,290 --> 01:01:15,580
+Minus loss． 
+减去损失˳
+
+446
+01:01:17,820 --> 01:01:18,732
+500． 
+500˳
+
+447
+01:01:18,732 --> 01:01:22,380
+And that's the one we talked about before． 
+这就是我们之前谈到的那个˳
+
+448
+01:01:23,280 --> 01:01:27,840
+They also‚ you're going to use what they call induction score． 
+他们也会使用他们所谓的感应分数˳
+
+449
+01:01:31,820 --> 01:01:36,380
+If we had that sequence of repeated at random． 
+如果我们有随机重复的序列˳
+
+450
+01:01:43,020 --> 01:01:46,540
+And this notation is just going to help us． 
+这个符号只会对我们有帮助˳
+
+451
+01:01:54,400 --> 01:02:02,210
+Induction or even head and even it's going to be? 
+感应甚至是头部，甚至会是什么？
+
+452
+01:02:06,860 --> 01:02:12,920
+Of the attention scores‚ So the one we have in the actual attention． 
+关注分数，因此我们在实际关注中拥有的分数˳
+
+453
+01:02:15,300 --> 01:02:16,670
+Between RI prime? 
+在RI prime之间？
+
+454
+01:02:19,470 --> 01:02:20,220
+Two RI I． 
+两个RI I˳
+
+455
+01:02:29,500 --> 01:02:40,580
+Okay‚ so how much the inher composition 49 some how much it depends to this position here． 
+好的，那么在她的构图中，有多少取决于这里的这个位置˳
+
+456
+01:02:41,620 --> 01:02:45,295
+Next‚ in a previous occurrence of that sequence． 
+接下来，在该序列的先前出现中˳
+
+457
+01:02:45,295 --> 01:02:50,960
+And they are going to average it over thousand of the such random． 
+他们将对成千上万个这样的随机变量进行平均˳
+
+458
+01:02:54,470 --> 01:02:55,770
+Each one of the． 
+每一个˳
+
+459
+01:03:30,710 --> 01:03:31,730
+I said? 
+我说了？
+
+460
+01:03:40,680 --> 01:03:49,506
+Right‚ and‚ in context‚ learning accuracy‚ just if I have in context learning from how well I saw the task‚ right‚ it' prediction． 
+对，在上下文中，学习准确性，只是如果我在上下文中学习，我看到任务的预测有多好˳
+
+461
+01:03:49,506 --> 01:04:01,730
+So the question was whether these two mechanisms for finding heads gives us the same heads? 
+所以问题是，这两种寻找头部的机制是否为我们提供了相同的头部？
+
+462
+01:04:01,890 --> 01:04:03,800
+And the answer is not really． 
+答案并不是真的˳
+
+463
+01:04:04,490 --> 01:04:15,010
+So the heads that the induction heads were points to heads that these function vector scores points to do not have a major of overlap． 
+因此，感应头所指向的头，这些功能向量得分所指向的头没有主要的重叠˳
+
+464
+01:04:15,010 --> 01:04:18,960
+So these two methodologies are pointing to different heads． 
+所以这两种方法指向不同的方向˳
+
+465
+01:04:19,300 --> 01:04:33,210
+Then the natural question is‚ well‚ if they are going pointing to different heads‚ and they are both claiming that they are driving‚ the in context‚ these heads they're identifying are driving the in context learning mechanism‚ who is right? 
+那么自然的问题是，如果他们指向不同的头部，并且他们都声称他们在驾驶，那么在上下文中，他们识别的这些头部正在推动上下文学习机制，谁是正确的？
+
+466
+01:04:34,480 --> 01:04:43,830
+This comparison in this work points to function vector is as the methodology that points to the actual head‚ right? 
+在这项工作中，这个比较指向功能向量作为指向实际头部的方法论，对吗？
+
+467
+01:04:43,860 --> 01:04:48,280
+So although the awesome work is the one that is has for． 
+所以，尽管令人敬畏的工作是必须的˳
+
+468
+01:04:50,500 --> 01:04:55,080
+This work has been published‚ has been a main reference for what drives‚ which drives the incontaminate． 
+这项工作已经出版，是关于驱动污染物的主要参考资料˳
+
+469
+01:04:56,800 --> 01:05:00,961
+This work is pointing to the different direction‚ right? 
+这项工作指向不同的方向，对吗？
+
+470
+01:05:00,961 --> 01:05:12,060
+And now the heights that the function vector is that define are the those that you should kind of look in more details if you want to understand． 
+现在函数向量定义的高度是那些你应该更详细地查看的高度，如果你想理解˳
+
+471
+01:05:14,590 --> 01:05:16,400
+So let's just go over these results． 
+让我们来看看这些结果˳
+
+472
+01:05:19,060 --> 01:05:21,540
+I actually have them here trans together． 
+我实际上把它们放在一起˳
+
+473
+01:05:27,620 --> 01:05:32,740
+These flat lines are just clean run with red． 
+这些平坦的线条只是干净的红色奔跑˳
+
+474
+01:05:34,620 --> 01:05:46,320
+Random predictive induction is pointing to attention has that are identified to‚ you know‚ check． 
+随机预测归纳是指向那些被识别出来的注意力，你知道，检查˳
+
+475
+01:05:48,620 --> 01:05:58,280
+Whether these heads of have behavior and a function vector are the attention heads identified by through the function vector score? 
+这些头是否有行为，并且功能向量是通过功能向量得分识别的注意头？
+
+476
+01:05:58,620 --> 01:06:16,185
+And here we have the results where we look at the heads that are function vector and identify with function vector scores that do not lower thats with induction‚ okay? 
+在这里，我们得到的结果是，我们查看函数向量的头部，并将其与函数向量的分数标识为不低于归纳法的分数，好吗？
+
+477
+01:06:16,185 --> 01:06:23,462
+On the eye axis we have the ICL accuracy and here of this token loss difference． 
+在眼轴上，我们有ICL精度和这里的令牌损失差异˳
+
+478
+01:06:23,462 --> 01:06:26,660
+So this is the loss by atropic work． 
+这就是热带工作造成的损失˳
+
+479
+01:06:26,900 --> 01:06:33,824
+So first thing here‚ let's compare the function vector with the induction headline． 
+首先，让我们将函数向量与归纳标题进行比较˳
+
+480
+01:06:33,824 --> 01:06:36,688
+What do we see‚ which one is lower‚ which one? 
+我们看到了什么，哪一个更低，哪一个呢？
+
+481
+01:06:36,688 --> 01:06:42,850
+I should say here importantly‚ that we are ablating the heads‚ right? 
+我应该说很重要的一点，我们正在切除头部，对吧？
+
+482
+01:06:42,870 --> 01:06:50,980
+So if we ablating the head and we claim this head is responsible for in context learning‚ we would expect a perfect． 
+因此，如果我们切除头部并声称这个头部在情境学习中负责，我们会期望一个完美的˳
+
+483
+01:06:52,820 --> 01:07:03,253
+So when we look into these two lines‚ we see that the heads invented function vector is the loss is lower‚ the loss has dropped more． 
+因此，当我们观察这两行时，我们发现头部发明的函数向量是损失较低，损失下降更多˳
+
+484
+01:07:03,253 --> 01:07:07,120
+And one can ask‚ well‚ I mean‚ what about the overlap? 
+有人可能会问，好吧，我的意思是，重叠怎么办？
+
+485
+01:07:10,820 --> 01:07:18,360
+Now the overlap between heads and then by two function vector is‚ and reduction heads might be larger． 
+现在头部之间的重叠，然后是两个函数向量，并且减少头部可能会更大˳
+
+486
+01:07:18,810 --> 01:07:31,540
+We see that the drop is still very notable when we look into heads that are identified solely to function vector scores and will not be identified with． 
+我们看到，当我们研究那些仅由功能向量得分确定而不会被确定的头部时，下降仍然非常显著˳
+
+487
+01:07:32,640 --> 01:07:43,257
+And it's almost seems like the performance is this gap widens as the model size is larger‚ right? 
+而且似乎性能上的差距会随着模型尺寸的增大而扩大，对吗？
+
+488
+01:07:43,257 --> 01:07:59,606
+So in a larger models‚ it seems increasingly more than the heads that are responsible for in context learning are those that have been identified for function vector and not reduction heads‚ which is important because point here is scale matters‚ right? 
+因此，在较大的模型中，负责上下文学习的头似乎越来越多的是那些已被确定为函数向量而不是归约头的头，这很重要，因为这里的重点是尺度问题，对吧？
+
+489
+01:07:59,606 --> 01:08:09,075
+Maybe if we had 160 million is still way larger than 2 layer attention only interest that we have alluding to OS work． 
+也许，如果我们拥有1．6亿，仍然比我们暗指操作系统的2层注意力仅兴趣要大得多˳
+
+490
+01:08:09,075 --> 01:08:10,609
+So scaled matters． 
+如此规模化的事情˳
+
+491
+01:08:10,609 --> 01:08:24,212
+And when we increase the size of the model‚ we increasing we have that function vector is can identify heads responsible for incontact not induction． 
+当我们增加模型的尺寸时，我们增加了函数向量可以识别不接触而非感应负责的头部˳
+
+492
+01:08:24,212 --> 01:08:27,310
+I'll come the question in a second． 
+我马上就来提问˳
+
+493
+01:08:27,310 --> 01:08:31,511
+Now another important point‚ scale matters． 
+现在另一个重要的点，规模很重要˳
+
+494
+01:08:31,511 --> 01:08:47,020
+Another important point is what happens when we compare these results across two metrics‚ across in context‚ learning accuracy and the token worlds difference that used by the critic prior work． 
+另一个重要的一点是，当我们跨两个指标比较这些结果时，在上下文中，学习准确性和评论家之前工作使用的令牌世界差异会发生什么˳
+
+495
+01:08:47,310 --> 01:08:53,146
+So here we see that induction has actually bigger job． 
+所以在这里我们看到，感应实际上有更大的工作˳
+
+496
+01:08:53,146 --> 01:09:03,272
+And looking at these results‚ when would you conclude that induction heads are the head are responsible for in context learning? 
+看看这些结果，你什么时候能得出结论，在情境学习中，感应头是负责的？
+
+497
+01:09:03,272 --> 01:09:08,444
+But the fact is in context learning accuracy is the metric‚ right? 
+但事实是在情境学习中准确性是衡量标准，对吗？
+
+498
+01:09:08,444 --> 01:09:12,947
+Because it is the exact metric measuring in context learning‚ right? 
+因为它是上下文学习中精确的度量标准，对吗？
+
+499
+01:09:12,947 --> 01:09:26,720
+So there is no question that in context learning accuracy is the token loss difference for measuring the effect of abating on the in context learning capability． 
+因此，毫无疑问，在情境学习中准确度是测量减弱对情境学习能力影响的象征性损失差异˳
+
+500
+01:09:26,720 --> 01:09:29,720
+So the choice of metrics had mattered． 
+所以指标的选择很重要˳
+
+501
+01:09:30,420 --> 01:09:38,500
+And when we use appropriate metric‚ we get completely different pictures be you had a question? 
+当我们使用适当的度量时，我们会得到完全不同的图片，你有问题吗？
+
+502
+01:09:38,500 --> 01:09:41,540
+Yeah I'm a bit confused on the visualizations here． 
+是的，我对这里的可视化有点困惑˳
+
+503
+01:09:41,950 --> 01:09:55,540
+It shows that IC accuracy is decreasing and we're supposed to say it's a good thing that function vector is have decreasing accuracy compared to． 
+它表明IC精度正在下降，我们应该说函数向量与之相比精度下降是一件好事˳
+
+504
+01:09:55,540 --> 01:09:59,910
+So one important thing here is we are abating ahead． 
+因此，这里重要的一件事是我们正在减弱前进˳
+
+505
+01:09:59,910 --> 01:10:07,980
+So the more ablation that we're doing‚ the more we're messing things up‚ we should expect the accuracy． 
+因此，我们进行的消融越多，我们就越把事情搞得一团糟，我们应该期待它的准确性˳
+
+506
+01:10:08,700 --> 01:10:13,505
+So just to repeat this point and it's not here‚ I want to make sure this is fair． 
+所以只是重复这一点，它不在这里，我想确保这是公平的˳
+
+507
+01:10:13,505 --> 01:10:22,780
+If I say attention head is an important specific attention head in‚ let's say layer 2 and a third head is the head that drives． 
+如果我说注意头是一个重要的特定注意头，假设第二层和第三层是驱动的头˳
+
+508
+01:10:24,820 --> 01:10:28,070
+Xon if I do not have that help or should happen? 
+Xon如果我没有这种帮助或者应该发生吗？
+
+509
+01:10:28,070 --> 01:10:33,913
+If it's important‚ I should‚ my model should not be able to do so． 
+如果它很重要，我应该，我的模型不应该能够这样做˳
+
+510
+01:10:33,913 --> 01:10:42,956
+That's why we expect the last stroke‚ ablation of important things‚ if it truly is important‚ should mess things up‚ right? 
+这就是为什么我们期望最后一次中风，重要事物的消融，如果真的很重要，应该会把事情搞砸，对吧？
+
+511
+01:10:42,956 --> 01:10:46,800
+And that's exactly why these curves are dropping‚ right? 
+这就是这些曲线下降的原因，对吧？
+
+512
+01:10:47,280 --> 01:11:04,853
+And here the random is to kind of say‚ if you have a line that's as close‚ even random‚ because everything is connected in transformers． 
+这里的随机指的是，如果你有一条线是紧密的，甚至是随机的，因为所有的东西都是用变压器连接的˳
+
+513
+01:11:04,853 --> 01:11:07,418
+So it's always good to have random baselines． 
+因此，拥有随机基线总是好的˳
+
+514
+01:11:07,418 --> 01:11:15,030
+So you have‚ I don't know‚ you claim a method that draws a little bit‚ and you say‚ oh‚ these tiny heads are important because things have dropped． 
+所以，我不知道，你声称有一种方法可以画一点，然后你说，哦，这些小脑袋很重要，因为东西掉了˳
+
+515
+01:11:15,500 --> 01:11:26,180
+It's good to have random baseline to see whether if it dropped as much as randomly‚ you can attach your hands to drum‚ then it's not that interesting result． 
+拥有随机基线以查看是否掉落的数量是很好的，你可以将手连接到鼓上，那么这并不是那么有趣的结果˳
+
+516
+01:11:27,000 --> 01:11:34,660
+Okay‚ so now I want to finish on a more positive note because I do not want you to conclude that the induction had one． 
+好的，现在我想以一个更积极的方式来结束，因为我不希望你得出结论，认为诱导有作用˳
+
+517
+01:11:36,810 --> 01:11:37,570
+It's just not maybe． 
+这不是可能的˳
+
+518
+01:11:38,640 --> 01:11:48,240
+And you should definitely read this kind of suggest different things of how to record the fact． 
+你绝对应该阅读这种建议，了解如何记录事实的不同事情˳
+
+519
+01:11:50,540 --> 01:11:56,562
+Is that the function vector is are pointing to heads that are responsible‚ responsible for the context learning? 
+是函数向量指向负责上下文学习的负责人吗？
+
+520
+01:11:56,562 --> 01:12:00,956
+By no means is induction a useless‚ useful thing． 
+归纳法绝不是一种无用、有用的东西˳
+
+521
+01:12:00,956 --> 01:12:08,326
+So to try to convince your behavior is a paper from a very respectful first． 
+所以试图说服你的行为是一篇非常尊重他人的论文˳
+
+522
+01:12:08,326 --> 01:12:13,530
+It's published a couple of days ago‚ so again‚ I haven't read it． 
+它是几天前发表的，所以我又没读过˳
+
+523
+01:12:13,530 --> 01:12:31,220
+I'm going to it just to say that used for the cutting edge interpretability work by the leading interpretability researchers like jonatan Belden Co‚ and it doesn a mean to explain in context‚ learn‚ right? 
+我想说的是，它用于领先的可解释性研究人员 (如jonatan Belden Co) 的前沿可解释性工作，它并不意味着要在上下文中解释，学习，对吗？
+
+524
+01:12:31,220 --> 01:12:40,500
+So just with the fact that it doesn't point to handy‚ that does not make the whole methodology and insights useless‚ right? 
+因此，仅仅因为它没有指向方便，这并不意味着整个方法和见解无用，对吗？
+
+525
+01:12:40,510 --> 01:12:43,710
+It is useful to know that there are heads that do this． 
+知道有这样的头是很有用的˳
+
+526
+01:12:43,720 --> 01:12:46,065
+More of the information． 
+更多的信息˳
+
+527
+01:12:46,065 --> 01:13:03,624
+And in particular‚ I think this is a really‚ again‚ I didn't read this work‚ kind of tell you it's a great paper‚ but it's really exciting to see these kinds of methods being used‚ very interesting and useful applications． 
+特别是，我认为这是一个真的，再一次，我没有读过这篇文章，有点告诉你这是一篇很棒的论文，但看到这些方法被使用，非常有趣和有用的应用真的很令人兴奋˳
+
+528
+01:13:03,624 --> 01:13:32,052
+So here we have applications in protein language models‚ and you know that protein folding is one of the biggest recent successes of So here they use this whole induction head business to kind of understand how when we have sequences of these proteins‚ you can find heads that‚ you know‚ points to n positions that or that are pointing to something repeated‚ and so on． 
+这里我们有蛋白质语言模型的应用，你知道蛋白质折叠是最近最大的成功之一，所以在这里他们使用整个感应头业务来理解当我们有这些蛋白质的序列时，你可以找到头，你知道，指向n个位置，这些位置指的是重复的事物，以此类推˳
+
+529
+01:13:32,052 --> 01:13:41,540
+And this kinds of stuff is very useful and cool for this data because there is a lot of‚ you know‚ repetition and structure in that sense． 
+这种东西对于这些数据来说非常有用和酷，因为这个感知有很多重复和结构˳
+
+530
+01:13:41,550 --> 01:13:50,500
+So‚ you know‚ kind of to wrap‚ we have seen two methods‚ both claiming that are pointing to heads that are explaining the context of learning． 
+所以，你知道，换一种方式，我们已经看到了两种方法，都声称指向解释学习情境的头部˳
+
+531
+01:13:51,000 --> 01:13:58,300
+Now‚ with this comparison from the last year‚ we know that function vector is is a method that points to attention head． 
+现在，通过与去年的比较，我们知道函数向量是一种指向注意力的方法˳
+
+532
+01:14:01,240 --> 01:14:03,394
+But we still don't know mechanism‚ right? 
+但我们仍然不知道机制，对吧？
+
+533
+01:14:03,394 --> 01:14:06,027
+We just know that there is attention head there． 
+我们只知道那里有注意力˳
+
+534
+01:14:06,027 --> 01:14:08,900
+But what is attention head exactly do is not． 
+但注意力头脑到底做的事情并不是˳
+
+535
+01:14:10,940 --> 01:14:21,320
+And the conclusion we have is not that induction heads are useless now for everything they have been extensively studied for in context learning． 
+我们得出的结论并不是感应头现在对于它们在情境学习中被广泛研究的一切都是无用的˳
+
+536
+01:14:21,490 --> 01:14:29,380
+But we see now the very recent works for very‚ very useful stuff‚ such as understanding the protein theory‚ which works． 
+但是我们现在看到最近的工作非常非常有用的东西，比如理解蛋白质理论，它是有效的˳
+
+537
+01:14:30,460 --> 01:14:30,490
+Okay． 
+好的˳
+
+538
+01:14:30,660 --> 01:14:31,570
+Let's talk here． 
+让我们在这里谈谈˳
+
+539
+01:14:31,970 --> 01:14:33,790
+Don't forget your deadline next Monday‚ please． 
+请不要忘记下个星期的截止日期˳
+
+540
+01:14:33,810 --> 01:14:33,840
+And． 
+而且˳
+
+541
+01:14:35,860 --> 01:14:35,970
+Yeah? 
+是吗？

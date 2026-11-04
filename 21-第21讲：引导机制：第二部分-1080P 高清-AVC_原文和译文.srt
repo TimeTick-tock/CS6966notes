@@ -1,0 +1,769 @@
+1
+00:00:05,700 --> 00:00:06,760
+Then we can move on to next topics． 
+然后我们可以继续下一个话题˳
+
+2
+00:00:12,220 --> 00:00:17,380
+I wanted to teach you data re‚ which means finding which training examples． 
+我想教你数据，这意味着找到哪些训练例子˳
+
+3
+00:00:20,140 --> 00:00:25,400
+And it comes with a lot of approximation because we are approximating gluons． 
+它有很多近似，因为我们正在近似胶子˳
+
+4
+00:00:27,620 --> 00:00:32,760
+But I decided I would jump into the chain of code reasoning and things like． 
+但我决定跳进代码推理和类似的链条中˳
+
+5
+00:00:34,950 --> 00:00:37,330
+Just to make sure we actually cover that． 
+只是为了确保我们确实涵盖了这一点˳
+
+6
+00:00:38,820 --> 00:00:57,020
+So you can expect that we‚ okay‚ so last time we steer and specifically activation‚ which stands in opposition to prompt engineering and specialized fine tuning． 
+所以你可以期待我们，好吧，上次我们转向并特别激活，这与及时工程和专门的微调相对立˳
+
+7
+00:00:57,020 --> 00:01:00,832
+And we have defined basically two． 
+我们基本上已经定义了两种˳
+
+8
+00:01:00,832 --> 00:01:05,492
+Let's modify the representation in some way． 
+让我们以某种方式修改表示˳
+
+9
+00:01:05,492 --> 00:01:14,410
+First way we have talked about is basically steal Se features‚ right‚ with clamping． 
+我们谈论的第一种方式基本上是通过夹紧来窃取功能˳
+
+10
+00:01:19,220 --> 00:01:31,380
+And then we move into steer by adding a in direction vector‚ which we have called adding feature vector． 
+然后我们通过添加方向向量来进入转向，我们称之为添加特征向量˳
+
+11
+00:01:40,700 --> 00:01:52,300
+This one‚ this intervention pi is has here been defined by just take your representation and add the direction of． 
+这个，这个干预pi在这里被定义为只需将您的表示和方向添加即可˳
+
+12
+00:01:56,270 --> 00:01:59,720
+And okay‚ maybe the direction can be the way． 
+好的，也许方向就是方向˳
+
+13
+00:02:07,430 --> 00:02:08,440
+Or just a green? 
+还是只是绿色的？
+
+14
+00:02:23,420 --> 00:02:27,980
+But the most salient difference are in the workspace． 
+但最显著的区别在于工作空间˳
+
+15
+00:02:28,820 --> 00:02:30,489
+So that's why we stopped． 
+这就是为什么我们停下来了˳
+
+16
+00:02:30,489 --> 00:02:35,260
+And today‚ I just want to mention‚ I won't go into details of this method． 
+今天，我只想提一下，我不会详细介绍这种方法˳
+
+17
+00:02:35,260 --> 00:02:58,813
+It was published last year‚ 2020 two-five at I as a spotlight raise an interesting question‚ which is when we do steering and we have chosen some steering factor or alpha‚ we have a feature direction‚ then regardless of what is the context of our input‚ we are always going to stick‚ right? 
+它于去年发布，2020年2-5年在我作为聚光灯提出了一个有趣的问题，那就是当我们进行转向并且选择了一些转向因素或alpha时，我们有一个特征方向，那么无论我们输入的上下文是什么，我们都会坚持下去，对吧？
+
+18
+00:02:58,813 --> 00:03:01,910
+And that's not always desirable． 
+这并不总是可取的˳
+
+19
+00:03:01,910 --> 00:03:23,860
+So for example‚ we have inputs that are harmless inputs that are just contains information that could be considered hard and later when we do steering for refusal‚ well‚ we should not fear for things that are obviously harmless for it． 
+例如，我们有无害的输入，这些输入只包含可能被认为是困难的信息，后来当我们进行拒绝指导时，我们不应该担心那些显然对它无害的东西˳
+
+20
+00:03:24,540 --> 00:03:28,793
+And this new work is trying to try to do that． 
+这项新工作正在尝试做到这一点˳
+
+21
+00:03:28,793 --> 00:03:30,920
+It's called conditional． 
+这叫做条件性˳
+
+22
+00:03:43,080 --> 00:03:58,780
+It contains‚ instead of just this steer feature‚ direction B‚ first of all‚ they call B for them‚ what they call behavioral vector． 
+它包含方向B，而不仅仅是这个转向特征，首先，他们称之为B，即他们所谓的行为向量˳
+
+23
+00:04:00,380 --> 00:04:05,340
+So this is just how they call it its steering behavior． 
+所以这就是他们称之为转向行为的方式˳
+
+24
+00:04:06,420 --> 00:04:10,980
+But they also introduce what they call a condition vector． 
+但他们也引入了所谓的条件向量˳
+
+25
+00:04:16,800 --> 00:04:29,820
+The functional of this work is to steer only the representation HDL is sufficiently． 
+这项工作的功能是仅引导表示HDL就足够了˳
+
+26
+00:04:33,480 --> 00:04:35,680
+Sufficiently aligned? 
+充分对齐？
+
+27
+00:04:37,900 --> 00:04:38,240
+The condition? 
+条件是什么？
+
+28
+00:04:41,860 --> 00:04:47,060
+So for instance‚ if power condition was again harmful． 
+例如，如果电力状况再次有害˳
+
+29
+00:04:54,220 --> 00:04:58,780
+Only then we would see it for refusal． 
+只有这样，我们才能拒绝它˳
+
+30
+00:05:00,040 --> 00:05:10,099
+If our problem didn't meet the criteria or harmful‚ we should not try to change the representation at all． 
+如果我们的问题不符合标准或有害，我们根本不应该试图改变表示˳
+
+31
+00:05:10,099 --> 00:05:11,560
+We should be Li of right? 
+我们应该是对的？
+
+32
+00:05:12,410 --> 00:05:16,460
+Let me show you an example from their paper． 
+让我给你看一个他们论文中的例子˳
+
+33
+00:06:36,230 --> 00:06:37,030
+Okay‚ so actually for． 
+好的，实际上是这样的˳
+
+34
+00:06:39,780 --> 00:06:49,466
+This one‚ all right‚ so again‚ we have two vector of behavior and condition vector is behavior． 
+这一个，好的，我们有两个行为向量，条件向量是行为˳
+
+35
+00:06:49,466 --> 00:06:51,407
+Ctor is out of steering vector． 
+Ctor已经脱离了导向向量˳
+
+36
+00:06:51,407 --> 00:07:12,530
+And in this work‚ it's basically going to by the mean difference‚ meaning we are going to have prompt such as here‚ me‚ and we are going to have two completions‚ sure‚ and this should not be reused‚ right‚ so? 
+在这项工作中，它基本上是通过平均差来进行的，这意味着我们将有提示，比如这里，我，我们将有两个完成，当然，这不应该被重复使用，对吧？
+
+37
+00:07:15,720 --> 00:07:17,834
+Yeah‚ but it doesn't matter． 
+是的，但这并不重要˳
+
+38
+00:07:17,834 --> 00:07:19,948
+So‚ you know‚ positive‚ valid data． 
+所以，你知道，积极、有效的数据˳
+
+39
+00:07:19,948 --> 00:07:24,700
+Positive data is one way concept is actually being exhibited． 
+正面数据是概念实际被展示的一种方式˳
+
+40
+00:07:26,070 --> 00:07:26,650
+So even though the． 
+所以即使˳
+
+41
+00:07:29,840 --> 00:07:37,683
+Sorry‚ I can't would be positive example for the data for the concept of refusal． 
+对不起，我不能为拒绝的概念提供数据的正面例子˳
+
+42
+00:07:37,683 --> 00:07:42,646
+And so sure‚ sure‚ that would be negative examples because it complies． 
+所以当然，当然，那将是负面的例子，因为它符合˳
+
+43
+00:07:42,646 --> 00:07:44,113
+It doesn't refuses． 
+它不会拒绝˳
+
+44
+00:07:44,113 --> 00:08:01,520
+And remember‚ we have a bunch of such contrasting routes and then we calculated the average difference between the activations of positive examples in some data‚ And then we use that as our steering vector． 
+请记住，我们有很多这样的对比路线，然后计算一些数据中积极例子激活之间的平均差异，然后将其用作我们的导向向量˳
+
+45
+00:08:01,520 --> 00:08:07,040
+Then additionally‚ you can go global mean subtraction and PCA． 
+然后，您还可以使用全球均值减法和PCA˳
+
+46
+00:08:12,260 --> 00:08:19,006
+And the condition vector is produced with the same methodology‚ just the data difference‚ right? 
+条件向量是用相同的方法生成的，只是数据差异，对吗？
+
+47
+00:08:19,006 --> 00:08:22,751
+Data is about harmfulness and harmlessness． 
+数据是关于危害性和无害性的˳
+
+48
+00:08:22,751 --> 00:08:32,700
+If the condition is harmful‚ then of my master and classmate would be‚ of course‚ hurtful‚ harmful． 
+如果这种情况是有害的，那么我的老师和同学当然会受到伤害，有害˳
+
+49
+00:08:32,700 --> 00:08:44,260
+So this would be an example that exhibits the condition‚ whereas second one or religions would be approved． 
+所以这将是一个展示条件的例子，而第二个或宗教将被批准˳
+
+50
+00:08:46,980 --> 00:08:50,910
+Harms and again‚ for both of these harmful‚ this is． 
+危害，再次，对于这两种有害的，这是˳
+
+51
+00:08:53,520 --> 00:08:57,120
+For condition harmlessness‚ this is positive example． 
+对于条件无害，这是一个积极的例子˳
+
+52
+00:08:57,120 --> 00:08:58,080
+This is negative． 
+这是负面的˳
+
+53
+00:08:58,480 --> 00:09:05,220
+So you always have this contrast data that you use to produce the mean difference Ve． 
+所以你总是有这个对比数据，用来产生平均差异˳
+
+54
+00:09:08,080 --> 00:09:12,955
+Do is for the condition they don't have? 
+他们没有的条件是什么？
+
+55
+00:09:12,955 --> 00:09:20,760
+The response is just a‚ but for the behavior‚ it's the problem together． 
+反应只是一个，但对于行为来说，这是共同的问题˳
+
+56
+00:09:22,860 --> 00:09:24,610
+Okay‚ so this is how this look． 
+好的，这就是它的样子˳
+
+57
+00:09:24,830 --> 00:09:26,060
+These are the examples． 
+这些就是例子˳
+
+58
+00:09:46,680 --> 00:09:49,530
+Is produced with the mean difference? 
+是用平均差异产生的吗？
+
+59
+00:09:49,530 --> 00:10:06,160
+Or we have also called CAA for contrastive activation addition And a conditional vector is also produced like that is just the difference of the data‚ right? 
+或者我们也将CAA称为对比激活加法，并且也会产生条件向量，这只是数据的差异，对吗？
+
+60
+00:10:09,420 --> 00:10:16,709
+Okay‚ so we have produced the behavior and condition vector following from the methodology we have introduced last time． 
+好的，我们按照上次介绍的方法生成了行为和条件向量˳
+
+61
+00:10:16,709 --> 00:10:20,440
+The key difference is in the beta． 
+关键区别在于beta˳
+
+62
+00:10:20,740 --> 00:10:26,240
+In this work‚ I say there only if the representation is sufficiently． 
+在这项工作中，我说只有当代表性足够时才有˳
+
+63
+00:10:27,660 --> 00:10:34,034
+So we are going to take this equation and we are going to expand to do that． 
+所以我们将采用这个方程，并进行扩展以实现这一目标˳
+
+64
+00:10:34,034 --> 00:10:47,260
+Now‚ if you have a behavior and conditional vector‚ and of what sufficiently align with the condition could be? 
+现在，如果你有一个行为和条件向量，那么与条件充分对齐的是什么？
+
+65
+00:10:47,970 --> 00:10:50,120
+So this is a vector． 
+所以这是一个向量˳
+
+66
+00:10:50,130 --> 00:10:52,210
+This is a vector‚ right? 
+这是一个向量，对吧？
+
+67
+00:10:56,520 --> 00:10:59,980
+So cosine similarity‚ something in the vector is． 
+所以余弦相似性，在向量中的东西是什么˳
+
+68
+00:11:02,840 --> 00:11:10,380
+So let's write what they actually are going to use their equation is going to look like． 
+那么让我们来写一下他们实际要用的方程看起来会是什么样子˳
+
+69
+00:11:15,440 --> 00:11:18,780
+So again‚ we are making an intervention． 
+所以，我们再次进行干预˳
+
+70
+00:11:21,780 --> 00:11:25,952
+And we are still speaking with this world of adding feature vector． 
+我们仍在谈论添加特征向量的世界˳
+
+71
+00:11:25,952 --> 00:11:28,560
+We are just asking when to add features． 
+我们只是询问何时添加功能˳
+
+72
+00:11:28,940 --> 00:11:31,495
+That's the only thing that changes‚ right? 
+这是唯一会改变的，对吧？
+
+73
+00:11:31,495 --> 00:11:40,423
+If I want to add a feature vector I'm sticking with‚ if I do not want to‚ I need to figure out how to threshold this． 
+如果我想添加一个我坚持使用的特征向量，如果我不想添加，我需要弄清楚如何设置阈值˳
+
+74
+00:11:40,423 --> 00:11:44,520
+Okay‚ so today we are going to have holding the function f? 
+好的，那么今天我们将举行函数f？
+
+75
+00:11:50,760 --> 00:11:55,320
+That's going to take the similarity． 
+这将需要相似性˳
+
+76
+00:11:59,060 --> 00:11:59,290
+Of HDL? 
+关于HDL？
+
+77
+00:11:59,290 --> 00:11:59,810
+And what I said said? 
+我说了什么？
+
+78
+00:12:02,700 --> 00:12:14,992
+Exactly‚ similarity‚ but not‚ but rather the projection of the representation onto the direction of the condition vector． 
+确切地说，相似性，但不是相似性，而是表示对条件向量方向的投影˳
+
+79
+00:12:14,992 --> 00:12:33,244
+So we have projection‚ our representation‚ HDL‚ onto the direction that is defined by C‚ it's probably been a while since you have seen an equation for this‚ but you have learn it previously． 
+所以我们有投影，我们的表示HDL，在C定义的方向上，可能已经有一段时间了，因为你已经看到了这个方程，但你之前已经学过了˳
+
+80
+00:12:33,244 --> 00:12:36,949
+In our math courses‚ it looks something like this． 
+在我们的数学课程中，它看起来像这样˳
+
+81
+00:12:36,949 --> 00:12:44,800
+We have the outer product of C‚ we have a dot product of itself‚ which is basically the norm． 
+我们有C的外积，我们有自己的点积，这基本上是常态˳
+
+82
+00:12:48,220 --> 00:12:52,079
+Okay‚ so what this says is I have my representation． 
+好的，所以这说的是我有我的代表˳
+
+83
+00:12:52,079 --> 00:12:54,560
+I have some condition direction． 
+我有一些条件的方向˳
+
+84
+00:12:54,560 --> 00:12:59,980
+When I project my representation onto that direction‚ how similar? 
+当我将我的表现投射到那个方向上时，有多相似？
+
+85
+00:13:00,700 --> 00:13:02,643
+And if they are similar‚ right? 
+如果它们相似，对吗？
+
+86
+00:13:02,643 --> 00:13:10,190
+If HDL was already close to the direction of the condition vector‚ then the similarity will be hot‚ right? 
+如果HDL已经接近条件向量的方向，那么相似性将会很热，对吗？
+
+87
+00:13:10,640 --> 00:13:14,240
+And this is where we want to do our steering‚ such as Fu． 
+这就是我们想要进行转向的地方，比如Fu˳
+
+88
+00:13:15,020 --> 00:13:22,880
+If the condition was harmfulness and the thresholding function itself． 
+如果条件是有害的，阈值函数本身也是有害的˳
+
+89
+00:13:22,880 --> 00:13:25,880
+I'm going to write it like this to simplify this one． 
+我打算这样写，以简化这一个˳
+
+90
+00:13:26,620 --> 00:13:36,160
+It's going to be just a function 1 or 0‚ where one is going to be when the similarity between these two things is higher． 
+这将只是一个函数1或0，当这两件事情之间的相似性更高时，其中一个将是˳
+
+91
+00:13:36,160 --> 00:13:37,120
+There is some． 
+有一些˳
+
+92
+00:13:49,260 --> 00:14:07,345
+So just to repeat‚ we have seen a family of activation that works by adding a feature direction d with some scale‚ by some steering factor alpha onto the residual string to promote that direction． 
+所以重复一下，我们已经看到了一系列激活，它通过在剩余字符串上添加具有一定规模的特征方向d和一些转向因子alpha来促进该方向˳
+
+93
+00:14:07,345 --> 00:14:12,137
+We have talked about different methods‚ how we can do that last time． 
+我们上次讨论了不同的方法，以及我们如何做到这一点˳
+
+94
+00:14:12,137 --> 00:14:14,392
+And today‚ we have already adjusted． 
+今天，我们已经进行了调整˳
+
+95
+00:14:14,392 --> 00:14:18,723
+When you do see‚ it's now a function of the input ray． 
+当你看到的时候，它现在是输入射线的一个函数˳
+
+96
+00:14:18,723 --> 00:14:34,360
+If our input and input suggests that the input is meeting some conditions‚ such as it being harmful‚ only then based on some threshold value that we define as a hyper． 
+如果我们的输入和输入表明输入符合某些条件，例如有害，则只有基于我们定义为超级的某个阈值˳
+
+97
+00:14:36,710 --> 00:14:38,540
+We are going to do this theory． 
+我们将要做这个理论˳
+
+98
+00:14:44,560 --> 00:14:47,080
+So slight‚ but an important difference‚ right? 
+如此微小，但差别很大，对吧？
+
+99
+00:14:47,280 --> 00:14:57,800
+Because as I said last time‚ achieving the balance between steering and the keeping other capabilities being like surgical steering． 
+因为正如我上次所说，在转向和保持其他能力之间取得平衡就像外科手术式的转向一样˳
+
+100
+00:15:00,340 --> 00:15:07,320
+Okay‚ let me just briefly mention then‚ how do we evaluate these things? 
+好的，让我简要地提一下，我们如何评估这些事情？
+
+101
+00:15:07,320 --> 00:15:13,180
+And I will immediately tell you that evaluation of steering‚ it's not super established． 
+我会立即告诉你转向的评估，它并不是超级建立的˳
+
+102
+00:15:13,740 --> 00:15:14,600
+It's becoming more established． 
+它变得更加成熟˳
+
+103
+00:15:14,760 --> 00:15:22,410
+It's not‚ it's been at least until the last year‚ a little bit all over the place． 
+它不是，至少直到去年，有点遍布各地˳
+
+104
+00:15:22,410 --> 00:15:25,740
+But there were two things we have talked about when in Paris． 
+但是我们在巴黎时谈过两件事˳
+
+105
+00:15:29,060 --> 00:15:32,233
+Of course‚ is did the sphere? 
+当然，球体是做的吗？
+
+106
+00:15:32,233 --> 00:15:42,048
+So if I say steer in the direction of refusal‚ what I expect that now renew generations after the intervention are exhibiting refus? 
+所以，如果我说朝着拒绝的方向前进，我期望干预后的几代人再次表现出拒绝吗？
+
+107
+00:15:42,048 --> 00:15:59,980
+So remember that we have kind of framed steering in a most abstract generation of Y field up‚ which is a generation after we intervene on by replacing the representation with the． 
+所以请记住，我们在Y字段的最抽象的一代中有一种框架转向，这是我们通过用替换表示进行干预的一代人˳
+
+108
+00:16:16,160 --> 00:16:26,580
+Okay‚ so my y tilde‚ now the question is it‚ does it contain the concept? 
+好的，那么我的y波浪号，现在的问题是，它是否包含概念？
+
+109
+00:16:29,020 --> 00:16:32,112
+You see how this can be tricky to about it? 
+你看到这可能会很棘手吗？
+
+110
+00:16:32,112 --> 00:16:33,798
+What does it mean exactly? 
+这到底是什么意思？
+
+111
+00:16:33,798 --> 00:16:43,620
+More complicated your concept is‚ the more complicated is ensure that it's been‚ you know‚ now exhibited into the new． 
+你的概念越复杂，就越需要确保它已经被展示到新时代˳
+
+112
+00:16:44,600 --> 00:16:59,352
+So things you are going to see are llum as where you give a new generation to the judge and you ask‚ does this text exhibit this concept? 
+所以你将要看到的东西是llum，你把新一代交给法官，你问，这段文字是否展示了这个概念？
+
+113
+00:16:59,352 --> 00:17:07,178
+Such as like‚ does it refuse to comply with instruction probing? 
+例如，它是否拒绝遵守指令探究？
+
+114
+00:17:07,178 --> 00:17:20,503
+You can train a probe for a concept‚ and then you can take a representation of like and see whether the probe says that the concept is now present in the generation． 
+你可以为一个概念训练一个探针，然后你可以取一个like的表示，看看探针是否说这个概念现在存在于这一代中˳
+
+115
+00:17:20,503 --> 00:17:44,860
+And then maybe very quick the choice questions like we have seen in previous lecture‚ where we have given options A and B‚ and then one of them is exhibiting the concept‚ then things become way easier because you can basically measure the logic difference． 
+然后可能会非常快速地出现选择问题，就像我们在前面的讲座中看到的那样，我们给出了选项A和B，然后其中一个展示了这个概念，然后事情就变得更容易了，因为你基本上可以测量逻辑上的差异˳
+
+116
+00:17:50,240 --> 00:17:58,899
+If option A is the one that is for refusal‚ I expect to see a higher logic for A than for B‚ right? 
+如果选项A是用于拒绝的选项，我希望看到a的逻辑比B更高，对吧？
+
+117
+00:17:58,899 --> 00:18:04,560
+If that difference between log between A and B increases‚ I have steered more in． 
+如果A和B之间的对数差异增加，我就会转向更多˳
+
+118
+00:18:07,960 --> 00:18:10,435
+Okay‚ so this was about‚ did this Ste． 
+好的，所以这是关于，做了这个测试˳
+
+119
+00:18:10,435 --> 00:18:16,180
+What is the other thing we shouldn't that should happen? 
+我们不应该发生的另一件事是什么？
+
+120
+00:18:16,640 --> 00:18:19,170
+We should we see the behavior? 
+我们应该看到行为吗？
+
+121
+00:18:22,020 --> 00:18:22,720
+Not serious． 
+不严​‌​‌​​‌‌​​‌‌​​‌‌‌‌‌‌​​‌‌‌‌​‌​​‌‌​​‌‌​​‌‌‌‌​‌​​‌‌​‌​‌​​‌‌‌​‌‌‌‌​‌​​‌‌‌‌​‌​‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌​‌​​‌‌​‌‌​​​‌‌​​​‌​​‌‌​​‌‌‌‌​‌‌​​‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌​‌‌‌​​‌‌​‌​‌​​‌‌​‌‌‌‌‌​‌​​‌‌​​‌‌‌‌‌​​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌‌‌​‌​​‌‌​‌‌‌‌‌​‌‌‌‌‌​​‌‌​​‌‌​​‌‌​​‌‌‌‌​‌‌‌​‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌​​‌​​‌‌​‌​‌​​‌‌​‌‌‌​​‌‌‌‌​‌​​‌‌​‌‌‌​​‌‌‌‌‌‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌​‌​‌​​‌‌‌​‌‌‌‌​‌‌‌‌​​​‌‌​​​‌​​‌‌‌‌‌‌​​‌‌‌​​‌​​‌‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​​​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌​‌​‌​​‌‌‌‌​‌​​‌‌‌‌​‌​​‌‌​​‌‌‌‌​‌​‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌​​​‌‌‌​‌‌‌‌​‌​​‌‌​​‌‌​‌​‌‌‌​‌‌‌‌​​​‌‌​‌‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌​​‌‌​‌​‌‌‌​‌‌​​‌‌‌​‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌​‌​​‌‌‌​​‌‌‌​‌​​‌‌​​‌‌‌​​‌​​‌‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​‌​‌‌‌​‌​‌‌‌‌‌​‌​‌‌‌​​‌‌‌​‌‌​​‌‌‌​‌‌‌‌​‌​‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌​‌‌‌‌‌​‌​​‌‌​​‌‌‌​‌‌‌‌​‌​​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌​‌‌‌‌​‌‌‌‌​​​‌‌‌‌​‌​​‌‌‌‌​‌​​‌‌​​​‌​​‌‌‌‌​‌​​‌‌‌‌​‌‌‌​‌​​​‌​​‌‌‌‌‌​​​‌‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌‌​‌‌​​‌​​‌‌​‌​‌‌‌​‌​‌‌‌​​‌‌​‌‌​​​‌‌‌‌​‌‌‌​‌​‌‌‌​​‌‌‌‌‌​​​‌‌​‌​‌​​‌‌‌‌​‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌‌‌​‌​‌‌‌‌‌​‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌‌‌‌​​‌‌‌‌‌‌​​‌‌​‌‌‌​​‌‌‌​‌‌‌‌​‌‌​‌‌‌‌​‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​‌​​‌‌‌​​‌​​‌‌​‌​‌‌‌​‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌重˳
+
+122
+00:18:22,720 --> 00:18:23,653
+We shouldn't． 
+我们不应该˳
+
+123
+00:18:23,653 --> 00:18:25,286
+Not doing what we shouldn't． 
+没有做我们不应做的事情˳
+
+124
+00:18:25,286 --> 00:18:28,320
+Or in other words‚ just kind of retain the capability． 
+换句话说，就是保持这种能力˳
+
+125
+00:18:30,530 --> 00:18:34,920
+So keeping the rest of the Mo． 
+所以要保留剩下的部分˳(mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-mo-．)
+
+126
+00:18:47,220 --> 00:18:49,443
+Is measured in two way． 
+以两种方式测量˳
+
+127
+00:18:49,443 --> 00:18:53,520
+One is the generation fluency‚ which very often． 
+一个是经常出现的代际流畅性˳
+
+128
+00:19:00,000 --> 00:19:05,104
+You can be fluent‚ but still‚ for example‚ have to hallucinations‚ right? 
+你可以很流利，但仍然会有幻觉，对吧？
+
+129
+00:19:05,104 --> 00:19:07,217
+So it's not‚ it's not best metric． 
+所以它不是，它不是最佳指标˳
+
+130
+00:19:07,217 --> 00:19:16,231
+What other people also do is use m MLU‚ which is a data set blood of question spanning a lot of different domains and skills． 
+其他人也使用的是m MLU，这是一个跨越许多不同领域和技能的问题血液数据集˳
+
+131
+00:19:16,231 --> 00:19:27,726
+If you're within your capabilities on MLU‚ you kind of assume that the general capabilities of the model are not not broken‚ okay? 
+如果你在你的能力范围内，你就会假设模型的一般能力没有被破坏，好吗？
+
+132
+00:19:27,726 --> 00:19:29,455
+So this is how we evaluate． 
+这就是我们评估的方式˳
+
+133
+00:19:29,455 --> 00:19:31,677
+And now that you have these evaluations． 
+现在你有了这些评估˳
+
+134
+00:19:31,677 --> 00:19:33,900
+I'm sorry‚ I just need one more minute． 
+对不起，我只需要一分钟˳
+
+135
+00:19:34,740 --> 00:19:42,488
+But once you have these evaluations‚ then you can use these hyperparameters such as setta and the test set． 
+但是一旦你有了这些评估，你就可以使用这些超参数，比如setta和测试集˳
+
+136
+00:19:42,488 --> 00:19:46,180
+You use the value‚ which is the best on the development set． 
+您使用的值是开发集中最好的˳
+
+137
+00:19:46,720 --> 00:19:54,276
+And since I don't want to go into steering again‚ I would just say that steering is quite a new area of research． 
+既然我不想再进入转向领域，我只想说转向是一个相当新的研究领域˳
+
+138
+00:19:54,276 --> 00:20:01,772
+Of course‚ as most of the things we have learned‚ and it comes with a lot of open questions‚ I will just say them． 
+当然，由于我们所学到的大部分东西都带有很多开放性问题，我只想说出来˳
+
+139
+00:20:01,772 --> 00:20:03,840
+So you have heard it at least once． 
+所以你至少听过一次˳
+
+140
+00:20:03,840 --> 00:20:05,907
+Questions that are remaining． 
+仍然存在的问题˳
+
+141
+00:20:05,907 --> 00:20:11,960
+How to compose 2 What if I want to sper along two dimensions simultaneously? 
+如何组成2，如果我想同时沿着两个维度进行，怎么办？
+
+142
+00:20:12,230 --> 00:20:13,770
+A hard question that's not resolved． 
+一个没有解决的难题˳
+
+143
+00:20:14,950 --> 00:20:19,962
+Professor Jeff and his work are how to do feature level steering． 
+杰夫教授和他的工作是如何进行特征级转向˳
+
+144
+00:20:19,962 --> 00:20:35,471
+As we talked about‚ I told you that Sae feature steering is not working as well other methods‚ and that's increasingly changes You are going to see more and more papers come‚ we show that here in the essays better everything here was a single sequence． 
+正如我们所谈到的，我告诉过你，Sae功能转向的效果不如其他方法好，而且这种变化越来越多，你将看到越来越多的论文出现，我们在这里展示了更好的文章，这里的一切都是一个单一的序列˳
+
+145
+00:20:35,471 --> 00:20:42,940
+What if I have multi-term conversation‚ which I always have these days‚ chatbots‚ how do I steer in one turn then the other? 
+如果我经常进行多次对话，聊天机器人，我如何在一个回合转向另一个回合？
+
+146
+00:20:42,940 --> 00:20:57,233
+You know‚ this kind of flexibility comes really hand and then if we do agentic stuff‚ even more complicated evaluation‚ lots of possibilities have to increase and then the in itself． 
+你知道，这种灵活性真的很重要，如果我们做一些真实的事情，甚至更复杂的评估，很多可能性就必须增加，然后就可以了˳
+
+147
+00:20:57,233 --> 00:21:04,560
+So for example‚ we will expect that higher the steering factor alpha‚ I deleted it． 
+所以例如，我们预计转向因子alpha越高，我就删除了它˳
+
+148
+00:21:12,720 --> 00:21:16,250
+More you expect that the steering‚ the concept should be present． 
+你越期望转向，就应该有这个概念˳
+
+149
+00:21:16,860 --> 00:21:25,610
+And there is a theoretical work that shows that that's not theoretically so theor of all of this． 
+有一项理论工作表明，这不是理论上的，所以理论或所有这一切˳
+
+150
+00:21:26,520 --> 00:21:26,630
+What exactly? 
+具体是什么？
+
+151
+00:21:26,630 --> 00:21:29,626
+Expect almost untouched． 
+期望几乎不变˳
+
+152
+00:21:29,626 --> 00:21:31,286
+There is so much to do here． 
+这里有很多事情要做˳
+
+153
+00:21:31,286 --> 00:21:33,659
+Okay‚ so that's all I wanted to say． 
+好吧，这就是我想说的全部˳
+
+154
+00:21:33,659 --> 00:21:35,320
+Thank you so much for a long． 
+非常感谢你这么长时间˳
